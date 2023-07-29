@@ -1,0 +1,12 @@
+uuid: through-learn-more
+name: Block learn more
+type: mixin
+handle: Blocks\Through\LearnMore
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block learn more
+        comment: Editable in section settings

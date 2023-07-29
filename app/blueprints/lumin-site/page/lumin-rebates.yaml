@@ -1,0 +1,16 @@
+uuid: pages-lumin-rebates
+handle: Pages\LuminRebates
+type: single
+name: Lumin Lsp
+drafts: true
+
+navigation:
+    label: Lumin Rebates
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminRebates

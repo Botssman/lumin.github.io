@@ -1,0 +1,39 @@
+<div class="scoreboard-item title-value">
+    <h4><?= __("Server Name") ?></h4>
+    <p class="oc-icon-server"><?= e($formModel->server_name) ?></p>
+    <p class="description">
+        <a href="<?= $formModel->endpoint_url ?>" target="_blank"><?= e(Str::limit($formModel->endpoint_url, 50)) ?></a>
+        (<a href="<?= Backend::url('rainlab/deploy/servers/update/'.$formModel->id) ?>"><?= __("update") ?></a>)
+    </p>
+</div>
+<div class="scoreboard-item title-value">
+    <h4><?= __("Beacon Status") ?></h4>
+    <?php if ($formModel->status_code === $formModel::STATUS_ACTIVE): ?>
+        <p class="oc-icon-check"><?= __("Active") ?></p>
+    <?php endif ?>
+    <?php if ($formModel->status_code === $formModel::STATUS_READY): ?>
+        <p class="oc-icon-cloud-upload"><?= __("Ready") ?></p>
+    <?php endif ?>
+    <?php if ($formModel->status_code === $formModel::STATUS_LEGACY): ?>
+        <p class="oc-icon-life-ring"><?= __("Legacy") ?></p>
+    <?php endif ?>
+    <?php if ($formModel->status_code === $formModel::STATUS_UNREACHABLE): ?>
+        <p class="oc-icon-chain-broken"><?= __("Unreachable") ?></p>
+    <?php endif ?>
+    <p class="description">
+        <a
+            href="javascript:;"
+            data-request="onTestBeacon"
+            data-stripe-load-indicator><?= __("Check Beacon") ?></a>
+        <?= $formModel->beacon_version ? '('.e($formModel->beacon_version).')' : '' ?>
+    </p>
+</div>
+<?php if ($formModel->last_deploy_at): ?>
+    <div class="scoreboard-item title-value">
+        <h4><?= __("Current Version") ?></h4>
+        <p>v<?= $formModel->last_version ?: __('Unknown') ?></p>
+        <p class="description" title="<?= $formModel->last_deploy_at->diffForHumans() ?>">
+            <?= __("updated") ?>: <?= $formModel->last_deploy_at->toFormattedDateString() ?>
+        </p>
+    </div>
+<?php endif ?>

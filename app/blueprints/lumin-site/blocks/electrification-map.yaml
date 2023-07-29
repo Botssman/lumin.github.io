@@ -1,0 +1,22 @@
+uuid: sections-electrification-map
+name: Section electrification map
+type: mixin
+handle: Blocks\ElectrificationMap
+
+fields:
+    electrification_map_title:
+        label: Title
+        type: text
+    electrification_map_image_map:
+        label: Map
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    electrification_map_image_marker:
+        label: Marker
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    electrification_map_die:
+        label: Die
+        type: text

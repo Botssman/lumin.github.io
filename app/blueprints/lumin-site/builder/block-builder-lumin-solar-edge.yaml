@@ -1,0 +1,74 @@
+uuid: block-builder-lumin-solar-edge
+handle: BlockBuilderLuminSolarEdge
+type: mixin
+name: Builder Lumin Solar Edge
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            solar_edge_main:
+                name: Main section
+                description: Main section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\SolarEdgeMain
+            solar_edge_works:
+                name: Block how it works
+                description: Block how it works
+                icon: icon-home
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\SolarEdgeWork
+            solar_edge_integrates:
+                name: Solar edge integrates
+                description: Block solar edge integrates
+                icon: icon-calendar-plus-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\SolarEdgeIntegrates
+            solar_edge_map:
+                name: Solar edge map
+                description: Block solar edge map
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\SolarEdgeMap
+            feedbacks:
+                name: Block feedbacks
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Feedbacks
+            learn_more:
+                name: Demand response learn more
+                description: Block demand response learn more
+                icon: icon-info
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\LearnMore
+            questions:
+                name: Block question
+                icon: icon-question
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Questions
+            have_questions:
+                name: Block have question
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\HaveQuestions

@@ -1,0 +1,23 @@
+uuid: sections-lsp-home
+name: Home section lumin lsp
+type: mixin
+handle: Blocks\LspHome
+
+fields:
+    lsp_home_title:
+        label: Title
+        type: text
+    lsp_home_subtitle:
+        label: Subtitle
+        type: text
+    lsp_home_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    lsp_home_text_btn_video:
+        label: Text button video
+        type: text
+    lsp_home_link:
+        label: Link button video
+        type: text

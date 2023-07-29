@@ -1,0 +1,16 @@
+uuid: pages-lumin-meet
+handle: Pages\LuminMeet
+type: single
+name: Lumin Meet
+drafts: true
+
+navigation:
+    label: Lumin Meet
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminMeet

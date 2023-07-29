@@ -1,0 +1,97 @@
+uuid: block-builder-lumin-lsp
+handle: BlockBuilderLuminLsp
+type: mixin
+name: Builder Lumin Lsp
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            lsp_home:
+                name: Home section
+                description: Home section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspHome
+            lsp_new_device:
+                name: New device
+                description: Block add new device
+                icon: icon-inbox
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspNewDevice
+            lsp_integrates:
+                name: Lsp integrates
+                description: Block lsp integrates
+                icon: icon-calendar-plus-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspIntegrates
+            lsp_map:
+                name: Lsp map
+                description: Block lsp map
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspMap
+            lsp_installer:
+                name: Lsp installer
+                description: Block installer
+                icon: icon-skyatlas
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspInstaller
+            lsp_landscape:
+                name: Lsp landscape
+                description: Block landscape
+                icon: icon-table
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspLandscape
+            project:
+                name: Lsp project
+                description: Block project
+                icon: icon-calendar-check-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Project
+            technical_spec:
+                name: Block technical specifications
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\TechnicalSpec
+            estimator:
+                name: Block lumin edge estimator
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Estimator
+            questions:
+                name: Block question
+                icon: icon-question
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Questions
+            have_questions:
+                name: Block have question
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\HaveQuestions

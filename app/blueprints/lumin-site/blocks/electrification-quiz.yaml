@@ -1,0 +1,34 @@
+uuid: sections-electrification-quiz
+name: Section electrification quiz
+type: mixin
+handle: Blocks\ElectrificationQuiz
+
+fields:
+    electrification_quiz_title:
+        label: Title
+        type: text
+    electrification_quiz_rep:
+        type: repeater
+        form:
+            fields:
+                step:
+                    label: Number list
+                    type: text
+                    span: left
+                text:
+                    label: Text list
+                    type: text
+                    span: right
+                lists_radio:
+                    type: repeater
+                    form:
+                        fields:
+                            step:
+                                label: Number list
+                                type: text
+                                span: left
+                            image:
+                                label: Radio image
+                                type: mediafinder
+                                mode: image
+                                maxItems: 1

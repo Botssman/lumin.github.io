@@ -1,0 +1,29 @@
+uuid: sections-lumin-demand-response-works
+name: Main section lumin demand works
+type: mixin
+handle: Blocks\DemandResponseWorks
+
+fields:
+    demand_response_works_title:
+        label: Title
+        type: text
+    demand_response_works_title_lists:
+        label: Title lists
+        type: text
+    demand_response_works_lists:
+        type: repeater
+        form:
+            fields:
+                number:
+                    label: Number list
+                    type: text
+                    span: left
+                text:
+                    label: Text list
+                    type: text
+                    span: right
+    demand_response_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

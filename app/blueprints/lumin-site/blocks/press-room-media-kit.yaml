@@ -1,0 +1,39 @@
+uuid: sections-lumin-press-room-media-kit
+name: Main section lumin press-room-media-kit
+type: mixin
+handle: Blocks\PressRoomMediaKit
+
+fields:
+    press_room_media_kit_title:
+        label: Title
+        type: text
+    press_room_media_kit_subtitle:
+        label: Subtitle
+        type: text
+    press_room_media_kit_rep:
+        type: repeater
+        form:
+            fields:
+                icon:
+                    label: Icon
+                    type: mediafinder
+                    maxItems: 1
+                    span: left
+                    mode: image
+                title_list:
+                    label: Title list
+                    type: text
+                text_list:
+                    label: Text list
+                    type: textarea
+                text_link_list:
+                    label: Text link
+                    type: text
+                link_list:
+                    label: Link
+                    type: text
+    press_room_media_kit_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

@@ -1,0 +1,14 @@
+uuid: sections-lumin-contact-us-form
+name: Main section lumin contact us form
+type: mixin
+handle: Blocks\ContactUsForm
+
+fields:
+    contact_us_form_title:
+        label: Title
+        type: text
+    contact_us_form_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

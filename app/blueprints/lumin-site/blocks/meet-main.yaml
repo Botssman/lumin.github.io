@@ -1,0 +1,9 @@
+uuid: sections-lumin-meet-main
+name: Main section meet main
+type: mixin
+handle: Blocks\MeetMain
+
+fields:
+    rebates_main_title:
+        label: Title
+        type: text

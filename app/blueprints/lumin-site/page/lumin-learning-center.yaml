@@ -1,0 +1,16 @@
+uuid: pages-lumin-learning-center
+handle: Pages\LuminLearningCenter
+type: single
+name: Lumin Learning Center
+drafts: true
+
+navigation:
+    label: Lumin Learning Center
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminLearningCenter

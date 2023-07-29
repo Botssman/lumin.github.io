@@ -1,0 +1,12 @@
+uuid: lumin-estimator
+name: Block estimator
+type: mixin
+handle: Blocks\LuminEstimator
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block estimator
+        comment: Editable in section settings

@@ -1,0 +1,20 @@
+uuid: sections-lumin-learning-center-main
+name: Main section lumin learning center
+type: mixin
+handle: Blocks\LearningCenterMain
+
+fields:
+    learning_center_main_title:
+        label: Title
+        type: text
+    learning_center_main_subtitle:
+        label: Subtitle
+        type: text
+    learning_center_main_text_btn:
+        label: Text btn
+        type: text
+    learning_center_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

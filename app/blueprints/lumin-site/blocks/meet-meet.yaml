@@ -1,0 +1,31 @@
+uuid: sections-lumin-meet-meet
+name: Main section meet meet
+type: mixin
+handle: Blocks\MeetMeet
+
+fields:
+    meet_meet_title:
+        label: Title
+        type: text
+    meet_meet_text:
+        label: Text
+        type: richeditor
+    meet_meet_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    meet_meet_text_ceo:
+        label: Text CEO
+        type: textarea
+    meet_meet_name_ceo:
+        label: Name CEO
+        type: text
+    meet_meet_job_ceo:
+        label: Tob title
+        type: text
+    meet_meet_image_ceo:
+        label: Avatar
+        type: mediafinder
+        mode: image
+        maxItems: 1

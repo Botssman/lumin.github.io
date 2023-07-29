@@ -1,0 +1,31 @@
+uuid: pages-lumin-error
+handle: Pages\Error
+type: single
+name: 404
+
+navigation:
+    label: 404
+    parent: Pages\Index
+    icon: icon-info-circle
+    order: 10
+
+fields:
+    text:
+        label: Title
+        type: text
+    subtitle:
+        label: Subtitle
+        type: text
+    text_btn:
+        label: Text btn
+        type: text
+    image:
+        label: Image
+        type: mediafinder
+        maxItems: 1
+        mode: image
+    image_fon:
+        label: Image fon
+        type: mediafinder
+        maxItems: 1
+        mode: image

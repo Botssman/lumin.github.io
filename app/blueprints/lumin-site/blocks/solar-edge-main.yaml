@@ -1,0 +1,26 @@
+uuid: sections-lumin-solar-edge-main
+name: Main section lumin solar edge
+type: mixin
+handle: Blocks\SolarEdgeMain
+
+fields:
+    solar_edge_main_title:
+        label: Title
+        type: text
+    solar_edge_main_subtitle:
+        label: Subtitle
+        type: text
+    solar_edge_main_text_btn:
+        label: Text btn
+        type: text
+    solar_edge_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    solar_edge_main_text_video:
+        label: Text video
+        type: text
+    solar_edge_main_link:
+        label: Link video
+        type: text

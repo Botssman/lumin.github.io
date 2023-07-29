@@ -1,0 +1,42 @@
+uuid: sections-installers-why-lumin
+name: Block installers why lumin
+type: mixin
+handle: Blocks\InstallersWhyLumin
+
+fields:
+    installers_why_lumin_title:
+        label: Title
+        type: text
+    installers_why_lumin_rep:
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: Title list
+                    type: text
+                text:
+                    label: Text list
+                    type: textarea
+                image:
+                    label: Icon
+                    type: mediafinder
+                    mode: image
+    installers_why_lumin_title_cert:
+        label: Certified title
+        type: text
+    installers_why_lumin_subtitle_cert:
+        label: Certified subtitle
+        type: text
+    installers_why_lumin_text_btn:
+        label: Text button
+        type: text
+    installers_home_image_cert:
+        label: Certified image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    installers_home_image_fon_cert:
+        label: Certified fon
+        type: mediafinder
+        mode: image
+        maxItems: 1

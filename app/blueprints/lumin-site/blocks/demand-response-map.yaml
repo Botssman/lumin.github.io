@@ -1,0 +1,28 @@
+uuid: sections-demand-response-map
+name: Section demand response map
+type: mixin
+handle: Blocks\DemandResponseMap
+
+fields:
+    demand_response_map_title:
+        label: Title
+        type: text
+    demand_response_map_image_map:
+        label: Map
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    demand_response_map_image_marker:
+        label: Marker
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    demand_response_map_die:
+        label: Die
+        type: text
+    demand_response_map_text:
+        label: Text
+        type: text
+    demand_response_map_text_btn:
+        label: Text btn
+        type: text

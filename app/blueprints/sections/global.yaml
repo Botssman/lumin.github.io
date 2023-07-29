@@ -1,0 +1,146 @@
+uuid: sections-global
+name: Sections
+type: global
+handle: Sections\Global
+
+primaryNavigation:
+    label: Settings
+    icon: icon-spinner
+    order: 499
+
+navigation:
+    label: Settings sections
+    parent: Settings\MainMenu
+    icon: icon-magic
+    order: 200
+
+fields:
+    project_title:
+        label: Title
+        type: text
+        tab: Projects
+    video_galery_rep:
+        type: repeater
+        titleFrom: video galery
+        tab: Video galery
+        form:
+            fields:
+                link:
+                    label: Link video
+                    type: text
+                    span: left
+                image:
+                    label: Video thumbnail
+                    type: mediafinder
+                    mode: image
+    estimator_title:
+        label: Title
+        type: text
+        tab: Lumin estimator
+    estimator_subtitle:
+        label: Subitle
+        type: text
+        tab: Lumin estimator
+    technical_spec_title:
+        label: Title
+        type: text
+        tab: Technical specifications
+    feedbacks_title:
+        label: Title
+        type: text
+        tab: Feedbacks
+    feedbacks_subtitle:
+        label: Subitle
+        type: text
+        tab: Feedbacks
+    feedbacks_rep:
+        label: Slider
+        type: repeater
+        titleFrom: Feedbacks
+        tab: Feedbacks
+        form: 
+            fields:
+                list:
+                    label: Slide
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        feedbacks_video:
+                            name: Feedbacks video block
+                            description: Feedbacks video block
+                            icon: icon-video-camera
+                            fields:
+                                image:
+                                    label: Video thumbnail
+                                    type: mediafinder
+                                    mode: image
+                                name:
+                                    label: Name
+                                    type: text
+                                    span: left
+                                video_rewiev:
+                                    label: Rewiev
+                                    type: text
+                                    span: right
+                                link:
+                                    label: Link video
+                                    type: text
+                        feedbacks_text:
+                            name: Feedbacks text block
+                            description: Feedbacks text block
+                            icon: icon-align-justify
+                            fields:
+                               avatar:
+                                    label: Avatar
+                                    type: mediafinder
+                                    mode: image
+                               name:
+                                    label: Name
+                                    type: text
+                               text:
+                                    label: Text
+                                    type: textarea
+    updates_title:
+        label: Title
+        type: text
+        tab: Lumin updates
+    updates_subtitle:
+        label: Subitle
+        type: text
+        tab: Lumin updates
+    question_title:
+        label: Title
+        type: text
+        tab: Questions
+    question_subtitle:
+        label: Subtitle
+        type: richeditor
+        tab: Questions
+    question_text_btn:
+        label: Text btn
+        type: text
+        tab: Questions
+    question_lists:
+        type: repeater
+        titleFrom: Questions lists
+        tab: Questions
+        form:
+            fields:
+                title_list:
+                    label: Title list
+                    type: text
+                text_list:
+                    label: Text list
+                    type: richeditor
+    have_questions_title:
+        label: Title
+        type: text
+        tab: Have questions
+    have_questions_subtitle:
+        label: Subtitle
+        type: textarea
+        tab: Have questions
+    have_questions_text_btn:
+        label: Text btn
+        type: text
+        tab: Have questions

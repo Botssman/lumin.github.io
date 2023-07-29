@@ -1,0 +1,26 @@
+uuid: sections-lumin-demand-response-main
+name: Main section lumin demand response
+type: mixin
+handle: Blocks\DemandResponseMain
+
+fields:
+    demand_response_main_title:
+        label: Title
+        type: text
+    demand_response_main_subtitle:
+        label: Subtitle
+        type: text
+    demand_response_main_text_btn:
+        label: Text btn
+        type: text
+    demand_response_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    demand_response_main_text_video:
+        label: Text video
+        type: text
+    demand_response_main_link:
+        label: Link video
+        type: text

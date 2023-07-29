@@ -1,0 +1,17 @@
+uuid: sections-electrification-find
+name: Section electrification find
+type: mixin
+handle: Blocks\ElectrificationFind
+
+fields:
+    electrification_find_title:
+        label: Title
+        type: text
+    electrification_find_subtitle:
+        label: Subitle
+        type: text
+    electrification_find_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

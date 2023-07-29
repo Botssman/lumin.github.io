@@ -1,0 +1,12 @@
+uuid: sections-lumin-learning-center-tip
+name: Main section learning center tip
+type: mixin
+handle: Blocks\LearningCenterTip
+
+fields:
+    learning_center_tip_title:
+        label: Title
+        type: text
+    learning_center_tip_subtitle:
+        label: Subtitle
+        type: text

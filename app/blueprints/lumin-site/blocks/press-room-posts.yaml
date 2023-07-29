@@ -1,0 +1,12 @@
+uuid: sections-lumin-press-room-posts
+name: Main section lumin press room posts
+type: mixin
+handle: Blocks\PressRoomPosts
+
+fields:
+    press_room_posts_title:
+        label: Title
+        type: text
+    press_room_posts_subtitle:
+        label: Subtitle
+        type: text

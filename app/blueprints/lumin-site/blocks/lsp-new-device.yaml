@@ -1,0 +1,17 @@
+uuid: sections-lsp-new-device
+name: Block add new device
+type: mixin
+handle: Blocks\LspNewDevice
+
+fields:
+    lsp_new_device_rep:
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: Title list
+                    type: text
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image

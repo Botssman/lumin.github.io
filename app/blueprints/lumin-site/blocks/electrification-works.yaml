@@ -1,0 +1,29 @@
+uuid: sections-lumin-electrification-works
+name: Main section lumin electrification works
+type: mixin
+handle: Blocks\ElectrificationWorks
+
+fields:
+    electrification_works_title:
+        label: Title
+        type: text
+    electrification_works_title_lists:
+        label: Title lists
+        type: text
+    electrification_works_lists:
+        type: repeater
+        form:
+            fields:
+                number:
+                    label: Number list
+                    type: text
+                    span: left
+                text:
+                    label: Text list
+                    type: text
+                    span: right
+    electrification_works_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

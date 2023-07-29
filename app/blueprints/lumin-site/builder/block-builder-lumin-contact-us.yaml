@@ -1,0 +1,29 @@
+uuid: block-builder-lumin-contact-us
+handle: BlockBuilderLuminContactUs
+type: mixin
+name: Builder Lumin Contact Us
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            contact_us_contacts:
+                name: Section contacts
+                description: Section contacts
+                icon: icon-address-card-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ContactUsContacts
+            contact_us_form:
+                name: Section form
+                description: Section form
+                icon: icon-tasks
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ContactUsForm

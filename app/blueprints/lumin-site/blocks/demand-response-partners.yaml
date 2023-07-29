@@ -1,0 +1,18 @@
+uuid: sections-lumin-demand-response-partners
+name: Section lumin demand response partners
+type: mixin
+handle: Blocks\DemandResponsePartners
+
+fields:
+    demand_response_partners_title:
+        label: Title
+        type: text
+    demand_response_partners_lists:
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1

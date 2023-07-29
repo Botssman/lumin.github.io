@@ -1,0 +1,9 @@
+uuid: sections-lumin-meet-comand
+name: Main section meet comand
+type: mixin
+handle: Blocks\MeetComand
+
+fields:
+    meet_comand_title:
+        label: Title
+        type: text

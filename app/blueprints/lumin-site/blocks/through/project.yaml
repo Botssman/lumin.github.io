@@ -1,0 +1,12 @@
+uuid: through-project
+name: Block project
+type: mixin
+handle: Blocks\Through\Project
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block project
+        comment: Editable in section settings

@@ -1,0 +1,16 @@
+uuid: pages-lumin-press-room
+handle: Pages\LuminPressPoom
+type: single
+name: Lumin Meet
+drafts: true
+
+navigation:
+    label: Lumin Press Room
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminPressRoom

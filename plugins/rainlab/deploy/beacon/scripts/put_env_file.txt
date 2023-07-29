@@ -1,0 +1,22 @@
+// Ouptut
+$result = [
+    'status' => 'error',
+];
+
+// Locate file contents
+$contents = $VARS['contents'] ?? null;
+
+// Write contents
+if ($contents !== null) {
+    $saveFlag = file_put_contents(__DIR__ . '/../.env', $contents);
+    if ($saveFlag !== false) {
+        $result['status'] = 'ok';
+    }
+    else {
+        $result['status'] = 'error';
+        $result['error'] = 'Could not write to .env file. Check that the file permissions are writable.';
+    }
+}
+
+// Return result
+return $result;

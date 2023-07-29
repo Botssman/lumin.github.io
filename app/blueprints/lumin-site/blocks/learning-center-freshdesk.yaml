@@ -1,0 +1,9 @@
+uuid: sections-lumin-learning-center-freshdesk
+name: Main section learning center freshdesk
+type: mixin
+handle: Blocks\LearningCenterFreshdesk
+
+fields:
+    learning_center_freshdesk_title:
+        label: Title
+        type: text

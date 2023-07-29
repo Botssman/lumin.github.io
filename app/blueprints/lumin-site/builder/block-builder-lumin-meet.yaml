@@ -1,0 +1,60 @@
+uuid: block-builder-lumin-meet
+handle: BlockBuilderLuminMeet
+type: mixin
+name: Builder Lumin Meet
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            meet_main:
+                name: Main section
+                description: Main section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\MeetMain
+            meet_meet:
+                name: Meet Lumin
+                description: Section meet lumin
+                icon: icon-comments-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\MeetMeet
+            meet_comand:
+                name: Meet comand
+                description: Section meet comand
+                icon: icon-users
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\MeetComand
+            meet_galery:
+                name: Meet galery
+                description: Section meet galery
+                icon: icon-file-image-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\MeetGalery
+            meet_help:
+                name: Meet help
+                description: Section meet help
+                icon: icon-handshake-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\MeetHelp
+            updates:
+                name: Block Updates
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Updates

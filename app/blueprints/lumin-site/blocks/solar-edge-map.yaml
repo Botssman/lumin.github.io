@@ -1,0 +1,22 @@
+uuid: sections-solar-edge-map
+name: Section solar edge map
+type: mixin
+handle: Blocks\SolarEdgeMap
+
+fields:
+    solar_edge_map_title:
+        label: Title
+        type: text
+    solar_edge_map_image_map:
+        label: Map
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    solar_edge_map_image_marker:
+        label: Marker
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    solar_edge_map_die:
+        label: Die
+        type: text

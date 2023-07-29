@@ -1,0 +1,26 @@
+uuid: sections-lumin-electrification-main
+name: Main section lumin electrification-main
+type: mixin
+handle: Blocks\ElectrificationMain
+
+fields:
+    electrification_main_title:
+        label: Title
+        type: text
+    electrification_main_subtitle:
+        label: Subtitle
+        type: text
+    electrification_main_text_btn:
+        label: Text btn
+        type: text
+    electrification_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    electrification_main_text_video:
+        label: Text video
+        type: text
+    electrification_main_link:
+        label: Link video
+        type: text

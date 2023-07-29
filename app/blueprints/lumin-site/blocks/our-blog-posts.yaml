@@ -1,0 +1,12 @@
+uuid: sections-lumin-our-blog-posts
+name: Main section lumin our blog posts
+type: mixin
+handle: Blocks\OurBlogPosts
+
+fields:
+    our_blog_posts_title:
+        label: Title
+        type: text
+    our_blog_posts_subtitle:
+        label: Subtitle
+        type: text

@@ -1,0 +1,14 @@
+uuid: sections-lsp-integrates
+name: Section lumin lsp integrates
+type: mixin
+handle: Blocks\LspIntegrates
+
+fields:
+    lsp_integrates_text:
+        label: Text
+        type: text
+    lsp_integrates_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

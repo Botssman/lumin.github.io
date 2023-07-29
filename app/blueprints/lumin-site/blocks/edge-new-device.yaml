@@ -1,0 +1,17 @@
+uuid: sections-edge-new-device
+name: Block add new device
+type: mixin
+handle: Blocks\EdgeNewDevice
+
+fields:
+    edge_new_device_rep:
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: Title list
+                    type: text
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image

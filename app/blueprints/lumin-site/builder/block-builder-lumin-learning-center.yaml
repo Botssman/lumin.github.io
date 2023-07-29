@@ -1,0 +1,59 @@
+uuid: block-builder-lumin-learning-center
+handle: BlockBuilderLuminLearningCenter
+type: mixin
+name: Builder Lumin Learning Center
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            learning_center_main:
+                name: Main section
+                description: Main section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LearningCenterMain
+            learning_center_tip:
+                name: Section learning center tip
+                description: Learning center tip
+                icon: icon-comment-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LearningCenterTip
+            learning_center_freshdesk:
+                name: Section learning center freshdesk
+                description: Learning center freshdesk
+                icon: icon-refresh
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LearningCenterFreshdesk
+            questions:
+                name: Block question
+                icon: icon-question
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Questions
+            learning_center_community:
+                name: Section learning center community
+                description: Learning center community
+                icon: icon-heart
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LearningCenterCommunity
+            have_questions:
+                name: Block have question
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\HaveQuestions

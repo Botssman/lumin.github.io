@@ -1,0 +1,36 @@
+uuid: block-builder-lumin-careers
+handle: BlockBuilderLuminCareers
+type: mixin
+name: Builder Lumin Careers
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            careers_main:
+                name: Main section
+                description: Main section
+                icon: icon-address-card-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\CareersMain
+            careers_diversity:
+                name: Section diversity
+                description: Section diversity
+                icon: icon-tasks
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\CareersDiversity
+            updates:
+                name: Block Updates
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Updates

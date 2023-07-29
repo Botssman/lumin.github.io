@@ -1,0 +1,14 @@
+uuid: sections-electrification-integrates
+name: Section electrification integrates
+type: mixin
+handle: Blocks\ElectrificationIntegrates
+
+fields:
+    electrification_integrates_text:
+        label: Text
+        type: textarea
+    electrification_integrates_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

@@ -1,0 +1,12 @@
+uuid: through-video-galery
+name: Block video galery
+type: mixin
+handle: Blocks\Through\VideoGalery
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block video galery
+        comment: Editable in section settings

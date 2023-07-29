@@ -1,0 +1,23 @@
+uuid: sections-lsp-installer
+name: Home section lumin lsp
+type: mixin
+handle: Blocks\LspInstaller
+
+fields:
+    lsp_installer_title:
+        label: Title
+        type: text
+    lsp_installer_subtitle:
+        label: Subtitle
+        type: text
+    lsp_installer_text:
+        label: Subtitle
+        type: text
+    lsp_installer_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    lsp_installer_text_btn:
+        label: Text button
+        type: text

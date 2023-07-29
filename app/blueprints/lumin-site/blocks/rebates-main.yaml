@@ -1,0 +1,20 @@
+uuid: sections-lumin-rebates
+name: Main section lumin rebates
+type: mixin
+handle: Blocks\RebatesMain
+
+fields:
+    rebates_main_title:
+        label: Title
+        type: text
+    rebates_main_subtitle:
+        label: Subtitle
+        type: text
+    rebates_main_text_btn:
+        label: Text btn
+        type: text
+    rebates_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

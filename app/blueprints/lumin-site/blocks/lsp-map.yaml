@@ -1,0 +1,24 @@
+uuid: sections-lsp-map
+name: Section lumin lsp map
+type: mixin
+handle: Blocks\LspMap
+
+fields:
+    lsp_map_title:
+        label: Title
+        type: text
+    lsp_map_image_map:
+        label: Map
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    lsp_map_image_marker:
+        label: Marker
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    lsp_map_image_mushroom:
+        label: Mushroom
+        type: mediafinder
+        mode: image
+        maxItems: 1

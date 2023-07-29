@@ -1,0 +1,24 @@
+uuid: sections-lumin-one-edge
+name: Sections Lumin One Edge
+type: mixin
+handle: Blocks\LuminOneEdge
+multisite: true
+
+fields:
+    lumin_one_edge_title:
+        label: Title
+        type: richeditor
+    lumin_one_edge_lists:
+        type: repeater
+        form:
+            fields:
+                icon:
+                    label: Icon
+                    type: mediafinder
+                    maxItems: 1
+                    span: left
+                    mode: image
+                text:
+                    label: Text
+                    type: text
+                    span: right

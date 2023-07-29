@@ -1,0 +1,14 @@
+uuid: sections-solar-edge-integrates
+name: Section solar edge integrates
+type: mixin
+handle: Blocks\SolarEdgeIntegrates
+
+fields:
+    solar_edge_integrates_text:
+        label: Text
+        type: textarea
+    solar_edge_integrates_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

@@ -1,0 +1,27 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    server_name:
+        label: Server Name
+        placeholder: Production Environment
+        comment: Give this server a name.
+        span: left
+
+    endpoint_url:
+        label: Base URL
+        placeholder: https://
+        comment: Public web address for the deployment.
+        span: right
+
+    _warning1:
+        label: Always Protect The Deployment Key
+        comment: Anyone who has the private deployment key can deploy files to this server. Make sure it is kept a secret.
+        type: hint
+        mode: warning
+
+    private_key:
+        label: Deployment Key
+        type: partial
+        path: field_privatekey

@@ -1,0 +1,12 @@
+uuid: sections-lsp-landscape
+name: Section lumin lsp landscape
+type: mixin
+handle: Blocks\LspLandscape
+
+fields:
+    lsp_landscape_title:
+        label: Text
+        type: text
+    lsp_landscape_subtitle:
+        label: Subetitle
+        type: textarea

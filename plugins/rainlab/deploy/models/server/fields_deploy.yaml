@@ -1,0 +1,35 @@
+fields:
+    deploy_core:
+        tab: Deploy
+        span: auto
+        label: Deploy Core Files
+        comment: All core modules and vendor libraries
+        type: checkbox
+
+    deploy_config:
+        tab: Deploy
+        span: auto
+        label: Deploy Config Files
+        comment: Everything in the config directory
+        type: checkbox
+
+    deploy_app:
+        tab: Deploy
+        span: auto
+        label: Deploy App Files
+        comment: Everything in the app directory (including blueprints)
+        type: checkbox
+
+    plugins:
+        tab: Deploy
+        span: left
+        label: Deploy Plugins
+        type: checkboxlist
+        quickselect: true
+
+    themes:
+        tab: Deploy
+        span: right
+        label: Deploy Themes
+        type: checkboxlist
+        quickselect: true

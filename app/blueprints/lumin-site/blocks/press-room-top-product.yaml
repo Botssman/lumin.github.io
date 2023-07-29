@@ -1,0 +1,22 @@
+uuid: sections-lumin-press-room-top-product
+name: Main section lumin press room top product
+type: mixin
+handle: Blocks\PressRoomTopProduct
+
+fields:
+    press_room_top:
+        type: repeater
+        form:
+            fields:
+                title:
+                    label: Title
+                    type: text
+                text:
+                    label: Text
+                    type: richeditor
+                image:
+                    label: Image
+                    type: mediafinder
+                    maxItems: 1
+                    span: left
+                    mode: image

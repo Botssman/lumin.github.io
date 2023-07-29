@@ -1,0 +1,12 @@
+uuid: sections-lumin-learning-center-community
+name: Main section learning center community
+type: mixin
+handle: Blocks\LearningCenterCommunity
+
+fields:
+    learning_center_community_title:
+        label: Title
+        type: text
+    learning_center_community_subtitle:
+        label: Subtitle
+        type: text

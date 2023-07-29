@@ -1,0 +1,21 @@
+uuid: sections-lumin-help
+name: Sections Lumin Help
+type: mixin
+handle: Blocks\LuminHelp
+multisite: true
+
+fields:
+    lumin_help_title:
+        label: Title
+        type: text
+    lumin_help_subtitle:
+        label: Subtitle
+        type: text
+    lumin_help_text_btn:
+        label: Text btn
+        type: text
+    lumin_help_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

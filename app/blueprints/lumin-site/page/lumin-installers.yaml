@@ -1,0 +1,16 @@
+uuid: pages-lumin-installers
+handle: Pages\LuminInstallers
+type: single
+name: Lumin Installers
+drafts: true
+
+navigation:
+    label: Lumin Installers
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderInstallers

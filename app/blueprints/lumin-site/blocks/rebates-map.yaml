@@ -1,0 +1,30 @@
+uuid: sections-rebates-map
+name: Section rebates map
+type: mixin
+handle: Blocks\RebatesMap
+
+fields:
+    rebates_map_title:
+        label: Title
+        type: text
+    rebates_map_image_map:
+        label: Map
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    rebates_map_image_state:
+        label: State
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    rebates_map_image_marker:
+        label: Marker
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    rebates_map_utility:
+        label: Utility
+        type: text
+    rebates_map_state:
+        label: State
+        type: text

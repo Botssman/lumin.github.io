@@ -1,0 +1,9 @@
+uuid: sections-installers-map
+name: Section lumin installers map
+type: mixin
+handle: Blocks\InstallersMap
+
+fields:
+    installers_map_title:
+        label: Title
+        type: text

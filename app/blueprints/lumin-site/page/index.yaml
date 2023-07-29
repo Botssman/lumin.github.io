@@ -1,0 +1,20 @@
+uuid: pages-index
+handle: Pages\Index
+type: single
+name: Главная страница
+multisite: true
+
+primaryNavigation:
+    label: Pages
+    icon: icon-file-text-o
+    order: 497
+
+navigation:
+    label: Main page
+    icon: icon-file-word-o
+    order: 10
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderIndex

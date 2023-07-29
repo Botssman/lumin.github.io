@@ -1,0 +1,4 @@
+uuid: sections-lumin-third
+name: Sections Lumin Third
+type: mixin
+handle: Blocks\LuminThird

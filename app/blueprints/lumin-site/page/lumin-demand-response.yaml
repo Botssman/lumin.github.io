@@ -1,0 +1,16 @@
+uuid: pages-lumin-demand-response
+handle: Pages\LuminDemandResponse
+type: single
+name: Lumin demand response
+drafts: true
+
+navigation:
+    label: Lumin demand response
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminDemandResponse

@@ -1,0 +1,16 @@
+uuid: pages-lumin-lsp
+handle: Pages\LuminLsp
+type: single
+name: Lumin Lsp
+drafts: true
+
+navigation:
+    label: Lumin Lsp
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminLsp

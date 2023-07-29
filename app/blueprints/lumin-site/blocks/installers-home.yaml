@@ -1,0 +1,20 @@
+uuid: sections-lumin-installers-home
+name: Home section installers
+type: mixin
+handle: Blocks\InstallersHome
+
+fields:
+    installers_home_title:
+        label: Title
+        type: text
+    installers_home_subtitle:
+        label: Subtitle
+        type: textarea
+    installers_home_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    installers_home_text_btn:
+        label: Text button
+        type: text

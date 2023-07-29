@@ -1,0 +1,20 @@
+
+<div class="deploy-action">
+    <div class="row">
+        <div class="col-md-8">
+            <h5><?= __("Download Beacon") ?></h5>
+            <p><?= __("Grab this zip archive, extract the files and upload them to the location where the website can be reached at the Website URL specified above.") ?></p>
+        </div>
+        <div class="col-md-4">
+            <div class="deploy-action-button">
+                <a
+                    href="<?= Backend::url('rainlab/deploy/servers/download/'.$formModel->id) ?>"
+                    class="btn btn-primary"
+                    download
+                >
+                    <?= __("Download Beacon Files") ?>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+uuid: through-updates
+name: Block updates
+type: mixin
+handle: Blocks\Through\Updates
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block updates
+        comment: Editable in section settings

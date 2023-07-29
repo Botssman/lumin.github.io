@@ -1,0 +1,14 @@
+uuid: sections-demand-response-integrates
+name: Section lumin demand response integrates
+type: mixin
+handle: Blocks\DemandResponseIntegrates
+
+fields:
+    demand_response_integrates_text:
+        label: Text
+        type: textarea
+    demand_response_integrates_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

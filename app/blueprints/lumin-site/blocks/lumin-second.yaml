@@ -1,0 +1,4 @@
+uuid: sections-lumin-second
+name: Sections Lumin Second
+type: mixin
+handle: Blocks\LuminSecond

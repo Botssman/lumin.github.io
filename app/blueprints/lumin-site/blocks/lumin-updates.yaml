@@ -1,0 +1,12 @@
+uuid: through-lumin-updates
+name: Block updates
+type: mixin
+handle: Blocks\LuminUpdates
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block updates
+        comment: Editable in section settings

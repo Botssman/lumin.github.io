@@ -1,0 +1,16 @@
+uuid: pages-lumin-our-blog
+handle: Pages\LuminOurBlog
+type: single
+name: Lumin Meet
+drafts: true
+
+navigation:
+    label: Lumin our blog
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminOurBlog

@@ -1,0 +1,9 @@
+uuid: sections-rebates-products
+name: Section rebates products
+type: mixin
+handle: Blocks\RebatesProducts
+
+fields:
+    rebates_products_title:
+        label: Title
+        type: text

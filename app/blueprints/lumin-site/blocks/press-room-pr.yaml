@@ -1,0 +1,15 @@
+uuid: sections-lumin-press-room-pr
+name: Main section lumin press room pr
+type: mixin
+handle: Blocks\PressRoomPr
+
+fields:
+    press_room_pr_title:
+        label: Title
+        type: text
+    press_room_pr_subtitle:
+        label: Subtitle
+        type: text
+    press_room_pr_text_btn:
+        label: Subtitle
+        type: text

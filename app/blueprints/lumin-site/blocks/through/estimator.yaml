@@ -1,0 +1,12 @@
+uuid: through-estimator
+name: Block lumin edge estimator
+type: mixin
+handle: Blocks\Through\Estimator
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block lumin edge estimator
+        comment: Editable in section settings

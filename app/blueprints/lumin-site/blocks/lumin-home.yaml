@@ -1,0 +1,26 @@
+uuid: sections-home
+name: Home sections
+type: mixin
+handle: Blocks\LuminHome
+multisite: true
+
+fields:
+    lumin_home_title:
+        label: Title
+        type: text
+    lumin_home_subtitle_one:
+        label: Subtitle one
+        type: text
+    lumin_home_subtitle_two:
+        label: Subtitle two
+        type: text
+        span: left
+    lumin_home_subtitle_three:
+        label: Subtitle three
+        type: text
+        span: left
+    lumin_home_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

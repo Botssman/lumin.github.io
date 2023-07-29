@@ -1,0 +1,16 @@
+uuid: pages-lumin-electrification
+handle: Pages\LuminElectrification
+type: single
+name: Lumin Electrification
+drafts: true
+
+navigation:
+    label: Lumin Electrification
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminElectrification

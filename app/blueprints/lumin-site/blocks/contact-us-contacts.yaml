@@ -1,0 +1,17 @@
+uuid: sections-lumin-contact-us-contacts
+name: Main section lumin contact us contacts
+type: mixin
+handle: Blocks\ContactUsContacts
+
+fields:
+    contact_us_contacts_title:
+        label: Title
+        type: text
+    contact_us_contacts_subtitle:
+        label: Subtitle
+        type: textarea
+    contact_us_contacts_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

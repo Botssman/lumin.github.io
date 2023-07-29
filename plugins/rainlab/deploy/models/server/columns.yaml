@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    server_name:
+        label: Name
+        searchable: true
+
+    endpoint_url:
+        label: URL
+        searchable: true
+
+    status_code:
+        label: Status
+        displayFrom: status_label

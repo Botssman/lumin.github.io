@@ -1,0 +1,12 @@
+uuid: through-have-questions
+name: Block have questions
+type: mixin
+handle: Blocks\Through\HaveQuestions
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block have questions
+        comment: Editable in section settings

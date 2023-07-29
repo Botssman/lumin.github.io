@@ -1,0 +1,31 @@
+uuid: sections-edge-grid
+name: Lumin Edge Grid
+type: mixin
+handle: Blocks\EdgeGrid
+
+fields:
+    edge_grid_title:
+        label: Title
+        type: text
+    edge_grid_subtitle:
+        label: Subtitle
+        type: text
+    edge_grid_rep:
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image
+                title:
+                    label: Title list
+                    type: text
+                lumin_edge_grid_list:
+                    type: repeater
+                    form:
+                        fields:
+                            text:
+                                label: Text list
+                                type: text
+                

@@ -1,0 +1,21 @@
+uuid: sections-lumin-charging
+name: Sections Lumin Charging
+type: mixin
+handle: Blocks\LuminCharging
+multisite: true
+
+fields:
+    lumin_charging_title:
+        label: Title
+        type: text
+    lumin_charging_subtitle:
+        label: Subtitle
+        type: text
+    lumin_charging_text_btn:
+        label: Text btn
+        type: text
+    lumin_charging_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

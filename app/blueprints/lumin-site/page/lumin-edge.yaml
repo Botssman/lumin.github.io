@@ -1,0 +1,16 @@
+uuid: pages-lumin-edge
+handle: Pages\LuminEdge
+type: single
+name: Lumin Edge
+drafts: true
+
+navigation:
+    label: Lumin Edge
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminEdge

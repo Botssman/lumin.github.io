@@ -1,0 +1,51 @@
+uuid: block-builder-lumin-rebates
+handle: BlockBuilderLuminRebates
+type: mixin
+name: Builder lumin rebates
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            rebates_main:
+                name: Main section
+                description: Main section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\RebatesMain
+            rebates_map:
+                name: Rebates map
+                description: Block rebates map
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\RebatesMap
+            rebates_products:
+                name: Rebates products
+                description: Block rebates products
+                icon: icon-product-hunt
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\RebatesProducts
+            questions:
+                name: Block question
+                icon: icon-question
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Questions
+            have_questions:
+                name: Block have question
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\HaveQuestions

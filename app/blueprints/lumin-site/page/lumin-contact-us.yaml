@@ -1,0 +1,16 @@
+uuid: pages-lumin-contact-us
+handle: Pages\LuminContactUs
+type: single
+name: Lumin Edge
+drafts: true
+
+navigation:
+    label: Lumin Contact Us
+    parent: Pages\Index
+    icon: icon-address-card
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminContactUs

@@ -1,0 +1,17 @@
+uuid: sections-lumin-careers-main
+name: Main section lumin careers main
+type: mixin
+handle: Blocks\CareersMain
+
+fields:
+    careers_main_title:
+        label: Title
+        type: text
+    careers_main_subtitle:
+        label: Subtitle
+        type: textarea
+    careers_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

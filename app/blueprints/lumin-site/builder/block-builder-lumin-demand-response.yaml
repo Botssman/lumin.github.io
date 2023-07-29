@@ -1,0 +1,89 @@
+uuid: block-builder-lumin-demand-response
+handle: BlockBuilderLuminDemandResponse
+type: mixin
+name: Builder Lumin Demand Response
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            demand_response_main:
+                name: Main section
+                description: Main section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DemandResponseMain
+            demand_response_works:
+                name: Block how it works
+                description: Block how it works
+                icon: icon-home
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DemandResponseWorks
+            demand_response_integrates:
+                name: Demand response integrates
+                description: Block demand response integrates
+                icon: icon-calendar-plus-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DemandResponseIntegrates
+            demand_response_map:
+                name: Demand response map
+                description: Block demand response map
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DemandResponseMap
+            estimator:
+                name: Block lumin edge estimator
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Estimator
+            feedbacks:
+                name: Block feedbacks
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Feedbacks
+            learn_more:
+                name: Demand response learn more
+                description: Block demand response learn more
+                icon: icon-info
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\LearnMore
+            demand_response_partners:
+                name: Demand response partners
+                description: Block demand response partners
+                icon: icon-thumbs-o-up
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DemandResponsePartners
+            questions:
+                name: Block question
+                icon: icon-question
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Questions
+            have_questions:
+                name: Block have question
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\HaveQuestions

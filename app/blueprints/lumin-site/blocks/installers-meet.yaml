@@ -1,0 +1,21 @@
+uuid: sections-installers-meet
+name: Section lumin installers meet
+type: mixin
+handle: Blocks\InstallersMeet
+
+fields:
+    installers_meet_title:
+        label: Title
+        type: text
+    installers_meet_rep:
+        type: repeater
+        form:
+            fields:
+                lists:
+                    type: repeater
+                    form:
+                        fields:
+                            image:
+                                label: Image
+                                type: mediafinder
+                                mode: image

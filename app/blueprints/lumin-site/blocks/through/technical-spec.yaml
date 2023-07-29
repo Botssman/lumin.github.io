@@ -1,0 +1,12 @@
+uuid: through-technical-spec
+name: Block technical specifications
+type: mixin
+handle: Blocks\Through\TechnicalSpec
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block technical specifications
+        comment: Editable in section settings

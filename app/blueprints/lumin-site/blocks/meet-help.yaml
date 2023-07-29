@@ -1,0 +1,20 @@
+uuid: sections-lumin-meet-help
+name: Main section meet help
+type: mixin
+handle: Blocks\MeetHelp
+
+fields:
+    meet_help_title:
+        label: Title
+        type: text
+    meet_help_text:
+        label: Text
+        type: textarea
+    meet_help_text_btn:
+        label: Text btn
+        type: text
+    meet_help_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1

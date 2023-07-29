@@ -1,0 +1,23 @@
+uuid: sections-lumin-edge-home
+name: Home section lumin edge
+type: mixin
+handle: Blocks\EdgeHome
+
+fields:
+    edge_home_title:
+        label: Title
+        type: text
+    edge_home_subtitle:
+        label: Subtitle
+        type: text
+    edge_home_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    edge_home_text_btn_video:
+        label: Text button video
+        type: text
+    edge_home_link:
+        label: Link button video
+        type: text

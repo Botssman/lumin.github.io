@@ -1,0 +1,27 @@
+uuid: sections-lumin-meet-galery
+name: Main section meet galery
+type: mixin
+handle: Blocks\MeetGalery
+
+fields:
+    meet_galery_title:
+        label: Title
+        type: text
+    meet_galery_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    meet_galery_rep:
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Image
+                    type: mediafinder
+                    maxItems: 1
+                    span: left
+                    mode: image
+                data_id:
+                    label: data-id
+                    type: text

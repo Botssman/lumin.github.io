@@ -1,0 +1,42 @@
+uuid: block-builder-lumin-press-room
+handle: BlockBuilderLuminPressRoom
+type: mixin
+name: Builder Lumin Press Room
+
+fields:
+    blocks:
+        label: Blocks
+        type: repeater
+        displayMode: builder
+        span: adaptive
+        tab: Blocks
+        groups:
+            press_room_posts:
+                name: Press room posts
+                description: Press room posts
+                icon: icon-file-text-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressRoomPosts
+            press_room_top_product:
+                name: Block press room top product
+                icon: icon-industry
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressRoomTopProduct
+            press_room_media_kit:
+                name: Block press room media kit
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressRoomMediaKit
+            press_room_pr:
+                name: Block press room pr
+                icon: icon-volume-control-phone
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressRoomPr
