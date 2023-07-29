@@ -1,0 +1,12 @@
+<section data-w-id="44709d47-431f-4a7b-6111-69689bcd7e8a" class="s-section section">
+	<div class="container container_100vw w-container">
+		<div class="b-grid mob_1-col">
+			{% for item in sectionsGlobal.video_galery_rep %}
+			<div id="w-node-_44709d47-431f-4a7b-6111-69689bcd7e8d-9bcd7e8a" class="b-grid__col">
+				<img src="{{ item.image|media }}" loading="lazy" alt="">
+				<a href="{{ item.link }}" class="b-video b-video_galery w-inline-block"></a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

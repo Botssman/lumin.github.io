@@ -1,0 +1,26 @@
+<section class="s-section s-section_100vh s-section_pd_11-25 s-section_yellow">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_40 mob_mg-bt_30">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.electrification_map_title }}
+			</div>
+		</div>
+		<div class="b-utility-rebates v-2 tb_show">
+			<img src="{{ 'assets/images/moln.svg'|theme }}" loading="lazy" alt="" class="b-utility-rebates__icon">
+			<div class="b-text">
+				Utility Rebates
+			</div>
+		</div>
+		<div class="h-wrap">
+			<img src="{{ block.electrification_map_image_marker|media }}" loading="lazy" alt="" class="b-image b-image_absolute">
+			<div class="b-utility-rebates v-2 tb_hide">
+				<img src="{{ 'assets/images/moln.svg'|theme }}" loading="lazy" alt="" class="b-utility-rebates__icon">
+				<div class="b-text">
+					{{ block.electrification_map_die }}
+				</div>
+			</div>
+			<img src="{{ block.electrification_map_image_map|media }}" loading="lazy" alt="" class="b-image b-image_map_lsp">
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_970"></div>
+	</div>
+</section>

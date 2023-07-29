@@ -1,0 +1,39 @@
+<section class="s-section">
+	<div class="container w-container">
+		<div class="h-wrap h-wrap_mg-bt_20">
+			<h1 class="b-title b-title_mini">
+				{{ block.press_room_media_kit_title }}
+			</h1>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_max-width_800">
+			<div class="b-text b-text_size_20">
+				{{ block.press_room_media_kit_subtitle }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_60">
+			<div class="b-flex b-flex_justify_start">
+				{% for item in block.press_room_media_kit_rep %}
+				<div class="b-flex__card b-flex__card_maxw_286 b-flex__card_mg-rt_30">
+					<div id="w-node-_3ddf15ca-fc1f-bba9-e8b6-843ce14a5272-7b12a411" class="b-card-post b-card-post_pd_30 b-card-post_shadow">
+						<div class="h-wrap h-wrap_mg-bt_20">
+							<img src="{{ item.icon|media }}" loading="lazy" alt="">
+						</div>
+						<div class="h-wrap h-wrap_mg-bt_5">
+							<div class="b-text b-text_size_20 b-text_bold">
+								{{ item.title_list }}
+							</div>
+						</div>
+						<div class="b-text">
+							{{ item.text_list }}
+						</div>
+						<a href="{{ item.link_list }}" class="b-card-post__links">
+							{{ item.text_link_list }}
+						</a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<img src="{{ block.press_room_media_kit_image|media }}" loading="lazy" alt="" class="b-image b-image_logo">
+</section>

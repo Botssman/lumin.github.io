@@ -1,0 +1,110 @@
+<section data-w-id="ca965526-1a68-a570-bb8d-b87b2a03b88a" class="s-section s-section_100vh tb_hide">
+	<div class="container container_100vh w-container">
+		<div data-delay="4000" data-animation="slide" class="b-slider mob_hide w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+			<div class="b-slider__mask w-slider-mask">
+				{% for item in block.edge_new_device_rep %}
+				<div class="b-slider__slide w-slide">
+					<div class="b-columns">
+						<div class="b-columns__col b-columns__col_60 b-columns__col_align_center">
+							<div class="h-wrap h-wrap_mg-bt_80">
+								<div>
+									{{ item.title }}
+								</div>
+								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
+									<div class="b-dropdown__toggle slider__b-dropdown__toggle w-dropdown-toggle"></div>
+									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
+										<div class="b-dropdown__content slider__b-dropdown__content"></div>
+									</nav>
+								</div>
+								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
+									<div class="b-dropdown__toggle slider__b-dropdown__toggle w-dropdown-toggle">
+										<div>
+											Control What Matters
+										</div>
+									</div>
+									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
+										<div class="b-dropdown__content slider__b-dropdown__content">
+											<ul role="list" class="b-list">
+												<li class="b-list__item b-list__item_mg-bt_20">
+													<div class="b-list__circle"></div>
+													<div class="b-text">
+														Connect Lumin Modules in your home
+													</div>
+												</li>
+												<li class="b-list__item b-list__item_mg-bt_20">
+													<div class="b-list__circle"></div>
+													<div class="b-text">
+														View all your Smart Home devices in one app
+													</div>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
+									<div class="b-dropdown__toggle slider__b-dropdown__toggle w-dropdown-toggle">
+										<div>
+											Expandable
+										</div>
+									</div>
+									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
+										<div class="b-dropdown__content slider__b-dropdown__content">
+											<ul role="list" class="b-list">
+												<li class="b-list__item b-list__item_mg-bt_20">
+													<div class="b-list__circle"></div>
+													<div class="b-text">
+														Connect Lumin Modules in your home
+													</div>
+												</li>
+												<li class="b-list__item b-list__item_mg-bt_20">
+													<div class="b-list__circle"></div>
+													<div class="b-text">
+														View all your Smart Home devices in one app
+													</div>
+												</li>
+											</ul>
+										</div>
+									</nav>
+								</div>
+							</div>
+							<ul role="list" class="b-list">
+								<li class="b-list__item b-list__item_mg-bt_20">
+									<div class="b-list__circle"></div>
+									<div class="b-text">
+										Connect Lumin Modules in your home
+									</div>
+								</li>
+								<li class="b-list__item b-list__item_mg-bt_20">
+									<div class="b-list__circle"></div>
+									<div class="b-text">
+										View all your Smart Home devices in one app
+									</div>
+								</li>
+							</ul>
+							<div class="h-wrap h-wrap_flex_h h-wrap_align_center">
+								<a href="#" class="arrow__left w-inline-block">
+									<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
+								</a>
+								<img src="{{ 'assets/images/LOGO20Loading.svg'|theme }}" loading="lazy" alt="" class="b-slider__icon">
+								<a href="#" class="arrow-right w-inline-block">
+									<img src="{{ 'assets/images/_20(1).svg'|theme }}" loading="lazy" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="b-columns__col b-columns__col_40">
+							<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_devise">
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="b-slider__arrow-left w-slider-arrow-left">
+				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+			</div>
+			<div class="b-slider__arrow-right w-slider-arrow-right">
+				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+			</div>
+			<div class="b-slider__nav w-slider-nav w-round"></div>
+		</div>
+	</div>
+</section>

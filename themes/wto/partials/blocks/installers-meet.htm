@@ -1,0 +1,44 @@
+<section class="s-section s-section_100vh s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_30">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.installers_meet_title }}
+			</div>
+		</div>
+	</div>
+	<div class="h-wrap h-wrap_mg-bt_40">
+		<div class="container container_100vw w-container">
+			<div data-delay="4000" data-animation="slide" class="b-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+				<div class="b-slider__mask w-slider-mask">
+					{% for item in block.installers_meet_rep %}
+					<div class="b-slider__slide w-slide">
+						<div class="b-grid tb_2-col mob_1-col">
+							{% for item in item.lists %}
+							<a href="#" class="b-grid__col b-grid__col_b-rad_12 w-inline-block">
+								<img src="{{ item.image|media }}" loading="lazy" alt="">
+							</a>
+							{% endfor %}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+				<div class="b-slider__arrow-left w-slider-arrow-left">
+					<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+				</div>
+				<div class="b-slider__arrow-right w-slider-arrow-right">
+					<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+				</div>
+				<div class="b-slider__nav w-slider-nav w-round"></div>
+			</div>
+		</div>
+	</div>
+	<div class="b-numbers">
+		<a href="#" class="arrow__left w-inline-block">
+			<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
+		</a>
+		<img src="{{ 'assets/images/LOGO20Loading.svg'|theme }}" loading="lazy" alt="" class="b-slider__icon">
+		<a href="#" class="arrow-right w-inline-block">
+			<img src="{{ 'assets/images/_20(1).svg'|theme }}" loading="lazy" alt="">
+		</a>
+	</div>
+</section>

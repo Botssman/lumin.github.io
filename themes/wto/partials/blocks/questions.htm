@@ -1,0 +1,46 @@
+<section class="s-section s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_40 b-columns__col_pd_rt_20 tb_100">
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<div class="b-title b-title_mini mob_30">
+						{{ sectionsGlobal.question_title }}
+					</div>
+				</div>
+				<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900">
+					<div class="b-text b-text_size_20">
+						{{ sectionsGlobal.question_subtitle | raw }}
+					</div>
+				</div>
+				<a href="#" class="b-button b-button_width_210 tb_hide w-button">
+					More answers
+				</a>
+			</div>
+			<div class="b-columns__col b-columns__col_60 tb_100 tb_border_top">
+				{% for item in sectionsGlobal.question_lists %}
+				<div data-hover="false" data-delay="0" class="b-dropdown b-dropdown_border w-dropdown">
+					<div class="b-dropdown__toggle w-dropdown-toggle">
+						<div>
+							{{ item.title_list }}
+						</div>
+						<div class="b-dropdown__icon-cont">
+							<div class="b-dropdown__line line-h"></div>
+							<div class="b-dropdown__line line-v"></div>
+						</div>
+					</div>
+					<nav class="b-dropdown__lists w-dropdown-list">
+						<div class="b-dropdown__content">
+							<div class="b-text">
+								{{ item.text_list | raw }}
+							</div>
+						</div>
+					</nav>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+		<a href="#" class="b-button b-button_width_210 tb_show tb_bt-tp_30 w-button">
+			More answers
+		</a>
+	</div>
+</section>

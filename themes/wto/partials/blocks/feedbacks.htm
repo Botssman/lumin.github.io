@@ -1,0 +1,75 @@
+<section class="s-section s-section_100vh s-section_gray s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_20">
+			<div class="b-title b-title_mini mob_30">
+				{{ sectionsGlobal.feedbacks_title }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800">
+			<div class="b-text b-text_size_26 tb_16">
+				{{ sectionsGlobal.feedbacks_subtitle }}
+			</div>
+		</div>
+	</div>
+	<div class="h-wrap h-wrap_mg-bt_40">
+		<div class="container container_100vw w-container">
+			<div class="b-slider__mask b-slider__mask_19 tb_45"></div>
+		</div>
+		<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overf-ow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+			<div class="b-slider__mask b-slider__mask_19 tb_45 mob_85 w-slider-mask">
+				{% for item in sectionsGlobal.feedbacks_rep %}
+				<div class="b-slider__slide w-slide">
+					<div>
+						{% for block in item.list %}
+{% if block.type == "feedbacks_video" %}
+						<div class="b-slider__card">
+							<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-slider__img-video">
+							<a href="{{ block.link }}" class="b-slider__grad w-inline-block">
+								<div class="b-text b-text_size_20 b-text_white b-text_bold">
+									{{ block.name }}
+								</div>
+								<div class="b-text b-text_size_14 b-text_white">
+									{{ block.video_rewiev }}
+								</div>
+							</a>
+						</div>
+						{% endif %}
+{% if block.type == "feedbacks_text" %}
+						<div class="b-slider__card">
+							<div class="b-slider__white-content">
+								<div class="h-wrap h-wrap_mg-bt_20 h-wrap_flex-h">
+									<img src="{{ block.avatar|media }}" loading="lazy" alt="" class="b-avatar">
+									<div class="b-text b-text_size_20 b-text_bold">
+										{{ block.name }}
+									</div>
+								</div>
+								<div class="b-text b-text_size_14">
+									{{ block.text }}
+								</div>
+							</div>
+						</div>
+						{% endif %}
+{% endfor %}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="b-slider__arrow-left w-slider-arrow-left">
+				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+			</div>
+			<div class="b-slider__arrow-right w-slider-arrow-right">
+				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+			</div>
+			<div class="b-slider__nav w-slider-nav w-round"></div>
+		</div>
+	</div>
+	<div class="b-numbers">
+		<a href="#" class="arrow__left w-inline-block">
+			<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
+		</a>
+		<img src="{{ 'assets/images/LOGO20Loading.svg'|theme }}" loading="lazy" alt="" class="b-slider__icon">
+		<a href="#" class="arrow-right w-inline-block">
+			<img src="{{ 'assets/images/_20(1).svg'|theme }}" loading="lazy" alt="">
+		</a>
+	</div>
+</section>

@@ -1,0 +1,28 @@
+<section data-w-id="ca965526-1a68-a570-bb8d-b87b2a03b88a" class="s-section section s-section_black">
+	<div class="container container_100vh w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_40 tb_100"></div>
+			<div class="b-columns__col b-columns__col_60 tb_100">
+				<div class="h-wrap h-wrap_mg-bt_50 pb_mg-bt_30">
+					<div style="opacity:0;-webkit-transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="b-title b-title_white tb_40">
+						{{ block.lumin_one_edge_title | raw }}
+					</div>
+				</div>
+				<div class="b-columns b-columns_pd-left_120">
+					{% for item in block.lumin_one_edge_lists %}
+					<div class="b-columns__col b-columns__col_100 b-columns__col_flex_h b-columns__col_mg-bt_50">
+						<div style="-webkit-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="b-block b-block_icon">
+							<img src="{{ item.icon|media }}" loading="lazy" alt="">
+						</div>
+						<div style="opacity:1;-webkit-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="b-text b-text_size_36 b-text_white tb_16">
+							{{ item.text }}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<img src="{{ 'assets/images/circle.png'|theme }}" loading="lazy" alt="" class="b-image b-image_circle">
+	<img src="{{ 'assets/images/fon_edge.png'|theme }}" loading="lazy" alt="" class="b-image b-image_edge">
+</section>

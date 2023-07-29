@@ -1,0 +1,60 @@
+<section class="s-section tb_pd_0_5">
+	<div class="b-columns">
+		<div class="b-columns__col b-columns__col_50 mob_100 mob_bg-bt_30">
+			<img src="{{ block.lsp_installer_image|media }}" loading="lazy" alt="" class="b-image b-image_height_100">
+		</div>
+		<div class="b-columns__col b-columns__col_50 b-columns__col_align_center b-columns__col_pd_lt_100">
+			<div class="h-wrap h-wrap_mg-bt_20 h-wrap_max-width_400">
+				<div class="b-title b-title_mini mob_30">
+					{{ block.lsp_installer_title }}
+				</div>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_20 h-wrap_max-width_300">
+				<div class="b-text b-text_size_26 tb_16">
+					{{ block.lsp_installer_subtitle | raw }}
+				</div>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_30">
+				<div class="b-text b-text_size_26 tb_16">
+					{{ block.lsp_installer_text }}
+				</div>
+			</div>
+			<div class="b-form b-form_max-width_300 w-form">
+				<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a40f" data-wf-element-id="ec6e48c2-c4be-44cc-8df7-f2e2fbaec6bb">
+					<div class="h-wrap h-wrap_mg-bt_30">
+						<select id="Choose-state" name="Choose-state" data-name="Choose state" class="b-select w-select">
+							<option value="">
+								Choose state
+							</option>
+							<option value="Choose state">
+								Choose state
+							</option>
+							<option value="Second">
+								Second choice
+							</option>
+							<option value="Third">
+								Third choice
+							</option>
+						</select>
+					</div>
+					<input type="submit" value="Submit" data-wait="Please wait..." class="b-button hide w-button">
+					<a href="#" class="b-button b-button_blue w-button">
+						{{ block.lsp_installer_text_btn }}
+					</a>
+				</form>
+				<div class="b-form__success-mes w-form-done">
+					<div>
+						Спасибо за заявку!
+						<br>
+						В ближайшее время мы свяжемся с вами
+					</div>
+				</div>
+				<div class="b-form__error-mes w-form-fail">
+					<div>
+						Ошибка! Что-то пошло не так.
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

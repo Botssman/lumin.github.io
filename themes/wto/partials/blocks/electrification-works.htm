@@ -1,0 +1,27 @@
+<section class="s-section s-section_100vh s-section_pd_home">
+	<div class="container w-container">
+		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_align_center">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.electrification_works_title }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_30">
+			<div class="b-text b-text_size_30 b-text_bold tb_20">
+				{{ block.electrification_works_title_lists }}
+			</div>
+		</div>
+		<ul role="list" class="b-list b-list_max-w_17">
+			{% for item in block.electrification_works_lists %}
+			<li class="b-list__item b-list__item_mg-bt_20">
+				<div class="b-list__numbers">
+					{{ item.number }}
+				</div>
+				<div class="b-text">
+					{{ item.text }}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+		<img src="{{ block.electrification_works_image|media }}" loading="lazy" alt="" class="b-image b-image_home v-3">
+	</div>
+</section>

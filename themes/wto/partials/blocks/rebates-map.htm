@@ -1,0 +1,42 @@
+<section class="s-section s-section_yellow s-section_pd_11-25">
+	<div class="container w-container">
+		<div class="h-wrap h-wrap_mg-bt_30">
+			<div class="b-columns">
+				<div class="b-columns__col b-columns__col_73 mob_100 mob_center">
+					<div class="h-wrap h-wrap_max-width_560">
+						<div class="b-title b-title_mini mob_30">
+							{{ block.rebates_map_title }}
+						</div>
+					</div>
+				</div>
+				<div class="b-columns__col b-columns__col_27 mob_100">
+					<div class="b-utility-rebates v-3">
+						<div class="h-wrap h-wrap_mg-bt_10 h-wrap_flex_h">
+							<div class="b-utility-rebates__check">
+								<img src="{{ 'assets/images/b-utility-rebates__check.svg'|theme }}" loading="lazy" alt="">
+							</div>
+							<img src="{{ 'assets/images/moln.svg'|theme }}" loading="lazy" alt="" class="b-utility-rebates__icon">
+							<div class="b-text b-text_white">
+								{{ block.rebates_map_utility }}
+							</div>
+						</div>
+						<div class="h-wrap h-wrap_flex_h h-wrap_align_center">
+							<div class="b-utility-rebates__check">
+								<img src="{{ 'assets/images/b-utility-rebates__check.svg'|theme }}" loading="lazy" alt="">
+							</div>
+							<img src="{{ 'assets/images/map-icon20(1).svg'|theme }}" loading="lazy" alt="" class="b-utility-rebates__icon">
+							<div class="b-text b-text_white">
+								{{ block.rebates_map_state }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_align_center">
+			<img src="{{ block.rebates_map_image_state|media }}" loading="lazy" alt="" class="b-image b-image_absolute">
+			<img src="{{ block.rebates_map_image_marker|media }}" loading="lazy" alt="" class="b-image b-image_absolute">
+			<img src="{{ block.rebates_map_image_map|media }}" loading="lazy" alt="" class="b-image b-image_map_lsp">
+		</div>
+	</div>
+</section>

@@ -1,0 +1,21 @@
+<section class="s-section s-section_100vh s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_60 h-wrap_max-width_970 mob_mg-bt_30">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.meet_galery_title }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_60 mob_mg-bt_10">
+			<img src="{{ block.meet_galery_image|media }}" loading="lazy" alt="" class="b-image b-image_border-rad_12">
+		</div>
+	</div>
+	<div class="container container_100vw w-container">
+		<div class="b-grid b-grid_galery">
+			{% for item in block.meet_galery_rep %}
+			<div id="{{ item.data_id }}">
+				<img src="{{ item.image|media }}" loading="lazy" id="w-node-dceacf73-8df8-7239-a3ec-5c0c6a587317-7b12a417" alt="" class="b-image b-image_border-rad_12">
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
