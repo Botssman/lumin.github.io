@@ -11,6 +11,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: aaa8919c.beget.tech
+        server: a120001.hostus2.fornex.host
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
