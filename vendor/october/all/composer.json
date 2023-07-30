@@ -1,0 +1,24 @@
+{
+    "name": "october/all",
+    "description": "All common modules for October CMS",
+    "homepage": "https://octobercms.com",
+    "keywords": ["october cms", "october", "core", "all"],
+    "authors": [
+        {
+            "name": "Alexey Bobkov",
+            "email": "aleksey.bobkov@gmail.com"
+        },
+        {
+            "name": "Samuel Georges",
+            "email": "daftspunky@gmail.com"
+        }
+    ],
+    "require": {
+        "october/system": "3.4.*",
+        "october/backend": "3.4.*",
+        "october/cms": "3.4.*",
+        "october/media": "3.4.*",
+        "october/editor": "3.4.*",
+        "october/tailor": "3.4.*"
+    }
+}

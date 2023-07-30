@@ -1,0 +1,27 @@
+<?php namespace {{namespace_php}}\Components;
+
+use Cms\Classes\ComponentBase;
+
+/**
+ * {{studly_name}} Component
+ *
+ * @link https://docs.octobercms.com/3.x/extend/cms-components.html
+ */
+class {{studly_name}} extends ComponentBase
+{
+    public function componentDetails()
+    {
+        return [
+            'name' => '{{name}} Component',
+            'description' => 'No description provided yet...'
+        ];
+    }
+
+    /**
+     * @link https://docs.octobercms.com/3.x/element/inspector-types.html
+     */
+    public function defineProperties()
+    {
+        return [];
+    }
+}

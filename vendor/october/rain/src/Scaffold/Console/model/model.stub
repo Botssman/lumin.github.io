@@ -1,0 +1,41 @@
+<?php namespace {{namespace_php}}\Models;
+
+use Model;
+
+/**
+ * {{studly_name}} Model
+ *
+ * @link https://docs.octobercms.com/3.x/extend/system/models.html
+ */
+class {{studly_name}} extends Model
+{
+    use \October\Rain\Database\Traits\Validation;
+{% if softDeletes %}
+    use \October\Rain\Database\Traits\SoftDelete;
+{% endif %}
+
+    /**
+     * @var string table name
+     */
+    public $table = '{{namespace_table}}_{{snake_plural_name}}';
+
+    /**
+     * @var array rules for validation
+     */
+    public $rules = [];
+{% if softDeletes %}
+
+    /**
+     * @var array dates used by the model
+     */
+    protected $dates = [
+        'deleted_at'
+    ];
+{% endif %}{% if not timestamps %}
+
+    /**
+     * @var bool timestamps disabled by default
+     */
+    public $timestamps = false;
+{% endif %}
+}

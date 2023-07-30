@@ -1,0 +1,65 @@
+<?php namespace {{namespace_php}}\FilterWidgets;
+
+use Backend\Classes\FilterWidgetBase;
+
+/**
+ * {{studly_name}} Filter Widget
+ *
+ * @link https://docs.octobercms.com/3.x/extend/lists/filter-widgets.html
+ */
+class {{studly_name}} extends FilterWidgetBase
+{
+    public function init()
+    {
+    }
+
+    public function render()
+    {
+        $this->prepareVars();
+        return $this->makePartial('{{lower_name}}');
+    }
+
+    public function renderForm()
+    {
+        $this->prepareVars();
+        return $this->makePartial('{{lower_name}}_form');
+    }
+
+    public function prepareVars()
+    {
+        $this->vars['scope'] = $this->filterScope;
+        $this->vars['name'] = $this->getScopeName();
+        $this->vars['value'] = $this->getLoadValue();
+    }
+
+    public function loadAssets()
+    {
+        $this->addCss('css/{{lower_name}}.css');
+        $this->addJs('js/{{lower_name}}.js');
+    }
+
+    public function getActiveValue()
+    {
+        if (post('clearScope')) {
+            return null;
+        }
+
+        if (!$this->hasPostValue('value')) {
+            return null;
+        }
+
+        return post('Filter');
+    }
+
+    public function applyScopeToQuery($query)
+    {
+        $hasDiscount = $this->filterScope->value;
+
+        if ($hasDiscount) {
+            $query->where('discount', '>', 0);
+        }
+        else {
+            $query->where('discount', 0);
+        }
+    }
+}
