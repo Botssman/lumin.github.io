@@ -1,11 +1,11 @@
 uuid: settings-main-menu
-handle: Settings\MainMenu
+handle: Site\MainMenu
 type: single
 name: Main menu
 
 navigation:
-    label: Settings sections
-    parent: Settings\MainMenu
+    label: Main menu
+    parent: Sections\Global
     icon: icon-magic
     order: 200
 
@@ -22,14 +22,18 @@ fields:
                     groups:
                         menu_link:
                             name: Menu link
-                            description:
                             icon: icon-video-camera
                             fields:
                                 menu_link_name:
                                     label: Name link
                                     type: text
                                     span: left
-                                menu_link_link:
-                                    label: Url
-                                    type: dropdown
-                                    span: right
+                        menu_dropdown:
+                            name: Menu dropdown
+                            icon: icon-video-camera
+                            fields:
+                                menu_dropdown_title:
+                                    label: Title dropdown
+                                    type: text
+                                    span: left
+

@@ -10,7 +10,7 @@ primaryNavigation:
 
 navigation:
     label: Settings sections
-    parent: Settings\MainMenu
+    parent: Sections\Global
     icon: icon-magic
     order: 200
 
