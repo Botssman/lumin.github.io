@@ -11,5 +11,5 @@ fields:
         label: Subtitle
         type: text
     press_room_pr_text_btn:
-        label: Subtitle
+        label: Text btn
         type: text
