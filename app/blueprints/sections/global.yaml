@@ -4,7 +4,7 @@ type: global
 handle: Sections\Global
 
 primaryNavigation:
-    label: Settings
+    label: Settings site
     icon: icon-spinner
     order: 499
 
