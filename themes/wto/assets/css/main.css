@@ -2808,8 +2808,8 @@ body {
   list-style-type: none;
 }
 
-.b-list.b-list_max-w_17 {
-  max-width: 17em;
+.b-list.b-list_max-w_18 {
+  max-width: 18em;
 }
 
 .b-list.b-list_max-w_17-copy {
@@ -4871,6 +4871,7 @@ body {
   margin-right: 8px;
   font-size: 1.5em;
   font-weight: 800;
+  line-height: 1;
 }
 
 .b-utility-rebates {
@@ -5908,6 +5909,10 @@ body {
     margin-bottom: 30px;
   }
 
+  .b-list.b-list_max-w_18 {
+    max-width: 19em;
+  }
+
   .s-section.s-section_70vh {
     min-height: 70vh;
   }
@@ -6098,7 +6103,7 @@ body {
     font-size: 2.25em;
   }
 
-  .b-list.b-list_max-w_17 {
+  .b-list.b-list_max-w_18 {
     width: 100%;
     max-width: none;
     flex-wrap: wrap;
