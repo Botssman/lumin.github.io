@@ -8,27 +8,33 @@ fields:
         label: Title
         type: text
     electrification_quiz_rep:
+        label: Quiz
         type: repeater
-        form:
+        form: 
             fields:
-                step:
-                    label: Number list
-                    type: text
-                    span: left
-                text:
-                    label: Text list
-                    type: text
-                    span: right
-                lists_radio:
+                list:
+                    label: Slide
                     type: repeater
-                    form:
-                        fields:
-                            step:
-                                label: Number list
-                                type: text
-                                span: left
-                            image:
-                                label: Radio image
-                                type: mediafinder
-                                mode: image
-                                maxItems: 1
+                    displayMode: builder
+                    groups:
+                        step:
+                            label: Number list
+                            type: text
+                            span: left
+                        text:
+                            label: Text list
+                            type: text
+                            span: right
+                        lists_radio:
+                            type: repeater
+                            form:
+                                fields:
+                                    step:
+                                        label: Number list
+                                        type: text
+                                        span: left
+                                    image:
+                                        label: Radio image
+                                        type: mediafinder
+                                        mode: image
+                                        maxItems: 1

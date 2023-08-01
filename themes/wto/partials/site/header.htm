@@ -4,53 +4,34 @@
 			<div class="b-menu__button w-nav-button">
 				<img src="{{ 'assets/images/burger.svg'|theme }}" loading="lazy" alt="">
 			</div>
-			<a href="#" class="b-menu__logo-link w-nav-brand">
+			<a href="/" class="b-menu__logo-link w-nav-brand">
 				<img src="{{ 'assets/images/logo202.svg'|theme }}" loading="lazy" alt="" class="b-menu__logo">
 			</a>
-			<nav role="navigation" class="b-menu__nav w-nav-menu">
-				<a href="#" class="b-menu__link w-nav-link">
-					Grid Services
-				</a>
-				<a href="#" class="b-menu__link w-nav-link">
-					Solar+Storage
-				</a>
-				<a href="#" class="b-menu__link w-nav-link">
-					Electrification
-				</a>
-				<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
-					<div class="b-menu__dropdown-toggle w-dropdown-toggle">
-						<div>
-							Products
-						</div>
-						<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
-					</div>
-					<nav class="b-menu__dropdown-lists w-dropdown-list">
-						<div class="b-dropdown__content"></div>
-						<a href="#" class="b-dropdown__link w-dropdown-link">
-							Link 1
+			<nav role="navigation" repeater="mainMenu.header_nav" class="b-menu__nav w-nav-menu">
+				<div builder="item.list" class="h-wrap h-wrap_menu h-wrap_menu_center">
+					<div block="menu-link" class="h-wrap h-wrap_menu">
+						<a href="#" text="block.menu_link_name" link="block.menu_link_link" class="b-menu__link w-nav-link">
+							Grid Services
 						</a>
-					</nav>
-				</div>
-				<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
-					<div class="b-menu__dropdown-toggle w-dropdown-toggle">
-						<div>
-							About Us
-						</div>
-						<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
 					</div>
-					<nav class="b-menu__dropdown-lists w-dropdown-list">
-						<div class="b-dropdown__content"></div>
-						<a href="#" class="b-dropdown__link w-dropdown-link">
-							Link 1
-						</a>
-					</nav>
+					<div block="menu-dropdown" class="h-wrap h-wrap_menu">
+						<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
+							<div class="b-menu__dropdown-toggle w-dropdown-toggle">
+								<div text="block.main_meni_title">
+									Products
+								</div>
+								<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
+							</div>
+							<nav class="b-menu__dropdown-lists w-dropdown-list">
+								<div class="b-dropdown__content">
+									<a href="#" link="block.menu_dropdown_name" text="block.menu_dropdown_link" class="b-dropdown__link w-dropdown-link">
+										Link 1
+									</a>
+								</div>
+							</nav>
+						</div>
+					</div>
 				</div>
-				<a href="#" class="b-menu__link w-nav-link">
-					Partners
-				</a>
-				<a href="#" class="b-menu__link w-nav-link">
-					Contact Us
-				</a>
 			</nav>
 			<a href="#" class="b-button b-button_width_160 b-button_height_45 mob_hide w-button">
 				Get Lumin

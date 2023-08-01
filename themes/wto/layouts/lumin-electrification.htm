@@ -2,7 +2,7 @@ description = "Lumin Electrification"
 
 ==
 <!DOCTYPE html>
-<!-- Last Published: Tue Aug 01 2023 11:59:08 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40c" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Tue Aug 01 2023 16:56:49 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40c" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title }}</title>
@@ -92,7 +92,15 @@ description = "Lumin Electrification"
 		</style>
 		<meta name="description" content="{{ this.page.meta_description }}">{% partial "head" %}
 		<link href="{{'assets/css/main.css'|theme}}" rel="stylesheet">{% styles %}</head>
-	<body class="body">{% partial "body" %}{% partial "site/header" %}
+	<body class="body">{% partial "body" %}
+		<header data-w-id="47685c31-67c0-b229-1bc4-0880b56f554a" class="header">
+			<div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="b-menu w-nav">
+				<div class="b-menu__container w-container">
+					<div class="b-menu__button w-nav-button"><img src="{{ 'assets/images/burger.svg'|theme }}" loading="lazy" alt></div><a href="/" class="b-menu__logo-link w-nav-brand"><img src="{{ 'assets/images/logo202.svg'|theme }}" loading="lazy" alt class="b-menu__logo"></a>
+					<nav role="navigation" class="b-menu__nav w-nav-menu">{% for item in mainMenu.header_nav %}
+						<div class="h-wrap h-wrap_menu h-wrap_menu_center">{% for block in item.list %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>{% endfor %}</nav><a href="#" class="b-button b-button_width_160 b-button_height_45 mob_hide w-button">Get Lumin</a></div>
+			</div>
+		</header>
 		<div class="container container_breadcrumbs w-container">
 			<ul role="list" class="b-breadcrumbs">
 				<li class="b-breadcrumbs__list"><a href="#" class="b-breadcrumbs__link">Main</a></li>

@@ -1,13 +1,71 @@
-<section class="s-section mob_hide">
-	<div class="container hide w-container">
-		<div class="h-wrap h-wrap_mg-bt_60 h-wrap_align_center">
-			<div class="b-title b-title_mini">
-				How it works with Lumin Edge
+<section class="s-section s-section_100vh s-section_pd_home">
+	<div class="container w-container">
+		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_align_center">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.solar_edge_works_title }}
 			</div>
 		</div>
-		<img src="{{ 'assets/images/Group2027438.png'|theme }}" loading="lazy" alt="" class="b-image">
-		<img src="{{ 'assets/images/home.png'|theme }}" loading="lazy" alt="" class="b-image b-image_home v-2">
+		<div class="h-wrap h-wrap_mg-bt_30">
+			<div class="b-block b-block_home">
+				<div class="b-block_home__wrap">
+					<div class="h-wrap h-wrap_mg-bt_10">
+						<div class="b-text b-text_size_20 b-text_bold">
+							Solar+Storage
+						</div>
+					</div>
+					<div class="h-wrap h-wrap_flex_h">
+						<div class="b-block_home__icon-bg">
+							<img src="{{ 'assets/images/2420On.svg'|theme }}" loading="lazy" alt="" class="b-block_home__icon">
+						</div>
+						<div class="b-block_home__icon-bg">
+							<img src="{{ 'assets/images/2420On.svg'|theme }}" loading="lazy" alt="" class="b-block_home__icon">
+						</div>
+						<div class="b-block_home__icon-bg">
+							<img src="{{ 'assets/images/2420On.svg'|theme }}" loading="lazy" alt="" class="b-block_home__icon">
+						</div>
+						<div class="b-block_home__icon-bg"></div>
+					</div>
+				</div>
+				<div class="b-block_home__line"></div>
+				<div class="b-block_home__wrap">
+					<div class="h-wrap h-wrap_mg-bt_10">
+						<div class="b-text b-text_size_20 b-text_bold">
+							With Lumin
+						</div>
+					</div>
+					<div class="h-wrap h-wrap_flex_h">
+						<div class="b-block_home__icon-bg">
+							<img src="{{ 'assets/images/2420On.svg'|theme }}" loading="lazy" alt="" class="b-block_home__icon">
+						</div>
+						<div class="b-block_home__icon-bg">
+							<img src="{{ 'assets/images/2420On.svg'|theme }}" loading="lazy" alt="" class="b-block_home__icon">
+						</div>
+						<div class="b-block_home__icon-bg">
+							<img src="{{ 'assets/images/2420On.svg'|theme }}" loading="lazy" alt="" class="b-block_home__icon">
+						</div>
+						<div class="b-block_home__icon-bg"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul role="list" class="b-list b-list_max-w_18">
+			{% for item in block.demand_response_works_lists %}
+			<li class="b-list__item b-list__item_mg-bt_40 tb_50 mob_100">
+				<div class="b-list__numbers">
+					{{ item.number }}
+				</div>
+				<div class="b-text">
+					{{ item.text }}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+		<img src="{{ block.solar_edge_works_image|media }}" loading="lazy" alt="" class="b-image b-image_home">
+		<a href="#" class="b-button-discover w-inline-block">
+			<img src="{{ 'assets/images/btn_discover.svg'|theme }}" loading="lazy" alt="">
+			<div>
+				Discover more
+			</div>
+		</a>
 	</div>
-	<img src="{{ 'assets/images/How20it20works20(1).png'|theme }}" loading="lazy" alt="">
-	<div class="fon-bg"></div>
 </section>

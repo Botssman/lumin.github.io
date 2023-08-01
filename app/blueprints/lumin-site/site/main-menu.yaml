@@ -1,0 +1,35 @@
+uuid: settings-main-menu
+handle: Settings\MainMenu
+type: single
+name: Main menu
+
+navigation:
+    label: Settings sections
+    parent: Settings\MainMenu
+    icon: icon-magic
+    order: 200
+
+fields:
+    main_menu:
+        type: repeater
+        titleFrom: Menu items
+        form: 
+            fields:
+                list:
+                    label: Slide
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: Menu link
+                            description:
+                            icon: icon-video-camera
+                            fields:
+                                menu_link_name:
+                                    label: Name link
+                                    type: text
+                                    span: left
+                                menu_link_link:
+                                    label: Url
+                                    type: dropdown
+                                    span: right
