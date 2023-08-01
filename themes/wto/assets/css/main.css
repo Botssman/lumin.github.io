@@ -2674,6 +2674,10 @@ body {
   max-height: 135px;
 }
 
+.h-wrap.h-wrap_height_100 {
+  height: 100%;
+}
+
 .b-dropdown__link {
   padding: 8px 0 8px 20px;
   font-family: Montserrat, sans-serif;
