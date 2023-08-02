@@ -7,80 +7,37 @@
 					<div class="b-columns">
 						<div class="b-columns__col b-columns__col_60 b-columns__col_align_center">
 							<div class="h-wrap h-wrap_mg-bt_80">
+								{% for block in item.list %}
+{% if block.type == "edge_new_device_title" %}
 								<div>
-									{{ item.title }}
-								</div>
-								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
-									<div class="b-dropdown__toggle slider__b-dropdown__toggle w-dropdown-toggle"></div>
-									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
-										<div class="b-dropdown__content slider__b-dropdown__content"></div>
-									</nav>
-								</div>
-								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
-									<div class="b-dropdown__toggle slider__b-dropdown__toggle w-dropdown-toggle">
-										<div>
-											Control What Matters
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-title b-title_mini">
+											{{ block.title }}
 										</div>
 									</div>
-									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
-										<div class="b-dropdown__content slider__b-dropdown__content">
-											<ul role="list" class="b-list">
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														Connect Lumin Modules in your home
-													</div>
-												</li>
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														View all your Smart Home devices in one app
-													</div>
-												</li>
-											</ul>
-										</div>
-									</nav>
 								</div>
-								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
-									<div class="b-dropdown__toggle slider__b-dropdown__toggle w-dropdown-toggle">
-										<div>
-											Expandable
+								{% endif %}
+{% if block.type == "edge_new_device_list" %}
+								<div>
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-title b-title_mini b-title_yellow">
+											{{ block.title }}
 										</div>
 									</div>
-									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
-										<div class="b-dropdown__content slider__b-dropdown__content">
-											<ul role="list" class="b-list">
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														Connect Lumin Modules in your home
-													</div>
-												</li>
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														View all your Smart Home devices in one app
-													</div>
-												</li>
-											</ul>
-										</div>
-									</nav>
+									<ul role="list" class="b-list">
+										{% for item in block.lists %}
+										<li class="b-list__item b-list__item_mg-bt_20">
+											<div class="b-list__circle"></div>
+											<div class="b-text">
+												{{ item.text_list }}
+											</div>
+										</li>
+										{% endfor %}
+									</ul>
 								</div>
+								{% endif %}
+{% endfor %}
 							</div>
-							<ul role="list" class="b-list">
-								<li class="b-list__item b-list__item_mg-bt_20">
-									<div class="b-list__circle"></div>
-									<div class="b-text">
-										Connect Lumin Modules in your home
-									</div>
-								</li>
-								<li class="b-list__item b-list__item_mg-bt_20">
-									<div class="b-list__circle"></div>
-									<div class="b-text">
-										View all your Smart Home devices in one app
-									</div>
-								</li>
-							</ul>
 							<div class="h-wrap h-wrap_flex_h h-wrap_align_center">
 								<a href="#" class="arrow__left w-inline-block">
 									<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
