@@ -1,11 +1,11 @@
 uuid: pages-lumin-learning-center
 handle: Pages\LuminLearningCenter
 type: single
-name: Lumin Learning Center
+name: Lumin support
 drafts: true
 
 navigation:
-    label: Lumin Learning Center
+    label: Lumin support
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200
