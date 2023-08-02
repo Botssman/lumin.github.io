@@ -1,35 +1,38 @@
 (function () {
-  const selectors = {
-    slider: ".b-slider.w-slider", // общий контейнер слайдов и кнопок
-    originalPrev: ".w-slider-arrow-left", // кнопка Назад внутри контейнера
-    originalNext: ".w-slider-arrow-right", // кнопка Вперед внутри контейнера
+    const selectors = {
+        sliderContainer: ".b-slider", // Common class for all slider containers
+        prev: ".arrow-left",
+        next: ".arrow-right",
+    };
 
-    prev: ".arrow-left",
-    next: ".arrow-right",
-  };
+    function fakeClick($btn) {
+        if ($btn) $btn.click();
+    }
 
-  function fakeClick($btn) {
-    if ($btn) $btn.click();
-  }
+    function setupSlider($sliderContainer) {
+        $sliderContainer.addEventListener("click", function (e) {
+            const $slider = e.target.closest(selectors.sliderContainer);
+            if (!$slider) return;
 
-  function init() {
-    const $slider = document.querySelector(selectors.slider);
-    if (!$slider) return;
-    const $originalPrev = $slider.querySelector(selectors.originalPrev);
-    const $originalNext = $slider.querySelector(selectors.originalNext);
+            const $originalPrev = $slider.querySelector(selectors.prev);
+            const $originalNext = $slider.querySelector(selectors.next);
 
-    document.body.addEventListener("click", function (e) {
-      if (e.target.closest(selectors.prev)) {
-        fakeClick($originalPrev);
-      } else if (e.target.closest(selectors.next)) {
-        fakeClick($originalNext);
-      }
-    });
-  }
+            if (e.target.closest(selectors.prev)) {
+                fakeClick($originalPrev);
+            } else if (e.target.closest(selectors.next)) {
+                fakeClick($originalNext);
+            }
+        });
+    }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
-  }
+    function init() {
+        const $sliderContainers = document.querySelectorAll(selectors.sliderContainer);
+        $sliderContainers.forEach((slider) => setupSlider(slider));
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", init);
+    } else {
+        init();
+    }
 })();
