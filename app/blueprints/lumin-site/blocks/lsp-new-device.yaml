@@ -8,9 +8,6 @@ fields:
         type: repeater
         form:
             fields:
-                title:
-                    label: Title list
-                    type: text
                 image:
                     label: Image
                     type: mediafinder
