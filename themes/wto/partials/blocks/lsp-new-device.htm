@@ -1,6 +1,6 @@
 <section data-w-id="ca965526-1a68-a570-bb8d-b87b2a03b88a" class="s-section s-section_100vh s-section_pd_11-25 pl_hide">
 	<div class="container container_100vh w-container">
-		<div data-delay="4000" data-animation="slide" class="b-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+		<div data-delay="4000" data-animation="cross" class="b-slider w-slider" data-autoplay="true" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true">
 			<div class="b-slider__mask w-slider-mask">
 				{% for item in block.lsp_new_device_rep %}
 				<div class="b-slider__slide w-slide">
@@ -10,88 +10,43 @@
 						</div>
 						<div class="b-columns__col b-columns__col_60 b-columns__col_align_center">
 							<div class="h-wrap h-wrap_mg-bt_80">
-								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
-									<div class="b-dropdown__toggle slider__b-dropdown__toggle b-dropdown__toggle_size_40 w-dropdown-toggle">
-										<div>
-											{{ item.title }}
+								{% for block in item.list %}
+{% if block.type == "lsp_new_device_title" %}
+								<div>
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-title b-title_mini">
+											{{ block.title }}
 										</div>
 									</div>
-									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
-										<div class="b-dropdown__content slider__b-dropdown__content">
-											<div class="h-wrap h-wrap_mg-bt_20">
-												<div class="b-text b-text_size_30 b-text_extra-bold b-text_line-height_1">
-													The affordable, easy to install  smart panel solution
-												</div>
+								</div>
+								{% endif %}
+{% if block.type == "lsp_new_device_list" %}
+								<div>
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-title b-title_mini b-title_yellow">
+											{{ block.title }}
+										</div>
+									</div>
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-text b-text_size_30 b-text_extra-bold">
+											{{ block.title_list }}
+										</div>
+									</div>
+									<ul role="list" class="b-list">
+										{% for item in block.lists %}
+										<li class="b-list__item b-list__item_mg-bt_20">
+											<div class="b-list__circle"></div>
+											<div class="b-text">
+												{{ item.text_list }}
 											</div>
-											<ul role="list" class="b-list">
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														Connect Lumin Modules in your home
-													</div>
-												</li>
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														View all your Smart Home devices in one app
-													</div>
-												</li>
-											</ul>
-										</div>
-									</nav>
+										</li>
+										{% endfor %}
+									</ul>
 								</div>
-								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
-									<div class="b-dropdown__toggle slider__b-dropdown__toggle b-dropdown__toggle_size_40 w-dropdown-toggle">
-										<div>
-											24/7 circuit monitoring, control, and scheduling
-										</div>
-									</div>
-									<nav class="b-dropdown__lists w-dropdown-list">
-										<div class="b-dropdown__content slider__b-dropdown__content">
-											<ul role="list" class="b-list">
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														Connect Lumin Modules in your home
-													</div>
-												</li>
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														View all your Smart Home devices in one app
-													</div>
-												</li>
-											</ul>
-										</div>
-									</nav>
-								</div>
-								<div data-hover="false" data-delay="0" class="b-dropdown slider__b-dropdown w-dropdown">
-									<div class="b-dropdown__toggle slider__b-dropdown__toggle b-dropdown__toggle_size_40 w-dropdown-toggle">
-										<div>
-											Automated energy management
-										</div>
-									</div>
-									<nav class="b-dropdown__lists slider__b-dropdown__lists w-dropdown-list">
-										<div class="b-dropdown__content slider__b-dropdown__content">
-											<ul role="list" class="b-list">
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														Connect Lumin Modules in your home
-													</div>
-												</li>
-												<li class="b-list__item b-list__item_mg-bt_20">
-													<div class="b-list__circle"></div>
-													<div class="b-text">
-														View all your Smart Home devices in one app
-													</div>
-												</li>
-											</ul>
-										</div>
-									</nav>
-								</div>
+								{% endif %}
+{% endfor %}
 							</div>
-							<div class="h-wrap h-wrap_flex_h h-wrap_align_center">
+							<div class="h-wrap h-wrap_flex_h">
 								<a href="#" class="arrow__left w-inline-block">
 									<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
 								</a>
