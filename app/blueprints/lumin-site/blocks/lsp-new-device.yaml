@@ -17,7 +17,7 @@ fields:
                     type: repeater
                     displayMode: builder
                     groups:
-                        lsp-new-device_title:
+                        lsp_new_device_title:
                             name: Title block
                             description: Title block
                             icon: icon-video-camera
