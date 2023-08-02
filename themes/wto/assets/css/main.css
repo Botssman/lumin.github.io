@@ -4336,6 +4336,8 @@ body {
 
 .b-menu__dropdown-lists {
   background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 .b-recomend {
