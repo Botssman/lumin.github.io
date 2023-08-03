@@ -6040,6 +6040,10 @@ body {
     min-width: 31.21vw;
   }
 
+  .b-columns__col.b-columns__col_60.tb_100 {
+    width: 40%;
+  }
+
   .b-columns__col.b-columns__col_35 {
     width: 32%;
   }
