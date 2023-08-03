@@ -4,6 +4,26 @@ type: mixin
 handle: Blocks\MeetMain
 
 fields:
-    rebates_main_title:
+    meet_main_title:
         label: Title
         type: text
+    meet_main_subtitle:
+        label: Subtitle
+        type: text
+    meet_main_rep:
+        label: Slider
+        type: repeater
+        form: 
+            fields:
+                team_name:
+                    label: Team name
+                    span: left
+                job_title:
+                    label: Job title
+                    span: right
+                text_reviews:
+                    label: Text reviews
+                    type: textarea
+                foto:
+                    label: Team foto
+                    type: mediafinder

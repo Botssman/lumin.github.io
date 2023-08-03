@@ -3279,6 +3279,13 @@ body {
   top: 459.953px;
 }
 
+.b-slider__nav.b-slider__show.b-slider__nav_container {
+  max-width: 960px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+}
+
 .b-checkbox.b-checkbox_tab {
   z-index: 2;
   width: 60px;
@@ -3303,13 +3310,20 @@ body {
 
 .b-slider {
   width: 100%;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0);
   overflow: hidden;
 }
 
 .b-slider.b-slider_overf-ow_visible {
   overflow: visible;
+}
+
+.b-slider.b-slider_height {
+  height: 100vh;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: block;
 }
 
 .container {
@@ -3334,6 +3348,10 @@ body {
   bottom: auto;
   left: 0%;
   right: 0%;
+}
+
+.container.container_absolute.container_mg_5 {
+  margin-top: -5%;
 }
 
 .container.container_100vh {
@@ -3366,6 +3384,11 @@ body {
   bottom: auto;
   left: 0%;
   right: 0%;
+}
+
+.container.container_meet {
+  height: 100%;
+  display: flex;
 }
 
 .b-input {
@@ -3617,11 +3640,14 @@ body {
 }
 
 .b-image.b-image__first-meet {
+  width: 100%;
+  max-width: 56vw;
+  display: block;
   position: absolute;
   top: auto;
-  bottom: 0%;
+  bottom: 0;
   left: auto;
-  right: -19.8vw;
+  right: -14.6vw;
 }
 
 .b-image.b-image_meet-lumin {
@@ -3927,7 +3953,6 @@ body {
 }
 
 .b-slider__slide {
-  height: auto;
   flex: none;
   margin-right: 9%;
 }
@@ -5704,6 +5729,10 @@ body {
     margin-right: auto;
   }
 
+  .b-slider__nav.b-slider__show.b-slider__nav_container {
+    max-width: 1200px;
+  }
+
   .b-slider.b-slider_overf-ow_visible {
     overflow: visible;
   }
@@ -5781,6 +5810,8 @@ body {
   }
 
   .b-image.b-image__first-meet {
+    width: 56vw;
+    max-width: 750px;
     right: -15.3vw;
   }
 
@@ -5980,6 +6011,10 @@ body {
     min-height: 70vh;
   }
 
+  .container.container_absolute.container_mg_5 {
+    margin-top: -2%;
+  }
+
   .b-image.b-image_stat {
     max-height: 580px;
     top: -118px;
@@ -5996,7 +6031,9 @@ body {
   }
 
   .b-image.b-image__first-meet {
-    right: -1.1vw;
+    width: 60vw;
+    max-width: 750px;
+    right: 0;
   }
 
   .b-image.b-image_phone {
