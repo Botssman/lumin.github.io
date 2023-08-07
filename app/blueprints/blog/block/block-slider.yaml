@@ -1,0 +1,12 @@
+uuid: block-slider
+name: Post block slider
+type: mixin
+handle: Blog\Block\BlockSlider
+
+fields:
+    link_video:
+        label: Link videoText
+        type: richeditor
+    image_video:
+        label: Image video
+        type: mediafinder

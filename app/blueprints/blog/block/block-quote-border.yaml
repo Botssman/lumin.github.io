@@ -1,0 +1,8 @@
+uuid: post-block-quote-border
+name: Post block quote border
+type: mixin
+handle: Blog\Block\BlockQuoteBorder
+fields:
+    text:
+        label: Text
+        type: richeditor

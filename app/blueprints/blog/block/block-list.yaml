@@ -1,0 +1,13 @@
+uuid: post-block-list
+name: Post block list
+type: mixin
+handle: Blog\Block\BlockList
+
+fields:
+    list:
+        type: repeater
+        form:
+            fields:
+                text_list:
+                    label: Text list
+                    type: text

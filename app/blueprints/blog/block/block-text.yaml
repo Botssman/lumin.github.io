@@ -1,0 +1,9 @@
+uuid: post-block-text
+name: Post block text
+type: mixin
+handle: Blog\Block\BlockText
+
+fields:
+    text:
+        label: Text
+        type: richeditor

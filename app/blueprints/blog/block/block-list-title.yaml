@@ -1,0 +1,21 @@
+uuid: post-block-list-title
+name: Post block list title
+type: mixin
+handle: Blog\Block\BlockListTitle
+
+fields:
+    title:
+        label: Title
+        type: text
+    list:
+        type: repeater
+        form:
+            fields:
+                number:
+                    label: Number list
+                    type: text
+                    span: left
+                text:
+                    label: Text list
+                    type: text
+                    span: right

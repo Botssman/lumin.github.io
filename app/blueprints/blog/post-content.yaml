@@ -39,6 +39,62 @@ fields:
         span: adaptive
         tab: Blocks
         groups: 
+            block_title:
+                name: Block title
+                description: Block title
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockTitle
+            block_text:
+                name: Block text
+                description: Block text
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockText
+            block_text_with_picture:
+                name: Block text with picture
+                description: Block text with picture
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockTextWithPicture
+            block_quote_yellow:
+                name: Block quote yellow
+                description: Block quote yellow
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockQuoteYellow
+            block_quote:
+                name: Block quote
+                description: Block quote
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockQuote
+            block_quote_border:
+                name: Block quote border
+                description: Block quote border
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockQuoteBorder
+            block_list_title:
+                name: Block list title
+                description: Block list title
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockListTitle
             block_list:
                 name: Block list
                 description: Block list
@@ -47,3 +103,19 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blog\Block\BlockList
+            block_video:
+                name: Block video
+                description: Block video
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockVideo
+            block_slider:
+                name: Block slider
+                description: Block slider
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockSlider

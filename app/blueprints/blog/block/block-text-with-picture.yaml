@@ -1,0 +1,12 @@
+uuid: block-text-with-picture
+name: Post text with picture
+type: mixin
+handle: Blog\Block\BlockTextWithPicture
+
+fields:
+    text:
+        label: Text
+        type: richeditor
+    image:
+        label: Image block
+        type: mediafinder

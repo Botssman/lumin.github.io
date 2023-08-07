@@ -1,13 +1,9 @@
 description = "lumin-Article"
 
 default = 0
-
-[section test]
-handle = "Blog\BlogPost"
-value = "{{ :slug }}"
 ==
 <!DOCTYPE html>
-<!-- Last Published: Mon Aug 07 2023 07:10:09 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Mon Aug 07 2023 14:11:53 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title }}</title>
@@ -63,7 +59,6 @@ value = "{{ :slug }}"
 		</div>
 		<main class="main">
 			<div class="container w-container">
-				{{ d(blocks) }}
 				<div class="h-wrap h-wrap_mg-bt_60 h-wrap_mg-tp_120">
 					<div class="b-grid b-grid_col_2 b-grid_articles">
 						<div id="w-node-_79440668-22c4-61ca-4142-b518c10335fa-7b12a407" class="b-post b-post_pd-tp_30">
@@ -74,8 +69,7 @@ value = "{{ :slug }}"
 								<div class="b-text b-text_size_14 b-text_gray">Published at <span>{{ post.published_at_date|date('j M Y') }}</span> by  •  <a href="#" class="post-link">Bazhinov Alex </a><span class="post-views">3067</span>  •  Last updated on <span>{{ post.published_at_date|date('j M Y') }}</span></div>
 							</div>
 							<div class="h-wrap h-wrap_mg-bt_30"><img src="{{ 'assets/images/image2057.png'|theme }}" loading="lazy" alt class="b-card-post__image b-card-post__image_border-r_12"></div>
-							<div>{% for block in test.blocks %}{% partial 'blog/blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
-							<div>{% for block in test.blocks %}{% partial 'blog/blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
+							<div>{% for block in block.blocks %}{% partial 'blog/blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
 							<div class="b-line"></div>
 							<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left h-wrap_pd-rt_50">
 								<div>

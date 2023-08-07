@@ -1,0 +1,8 @@
+uuid: post-block-quote
+name: Post block quote
+type: mixin
+handle: Blog\Block\BlockQuote
+fields:
+    text:
+        label: Text
+        type: richeditor

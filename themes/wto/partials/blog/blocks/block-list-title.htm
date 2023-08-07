@@ -1,0 +1,23 @@
+<div class="h-wrap h-wrap_mg-bt_30">
+	<div class="b-block b-block_gray b-block_pd_30">
+		<div class="h-wrap h-wrap_mg-bt_10">
+			<div class="b-text b-text_size_26 b-text_bold">
+				{{ block.title }}
+			</div>
+		</div>
+		<ul role="list" class="b-list">
+			{% for item in block.list %}
+			<li class="b-list__item b-list__item_mg-bt_5">
+				<div class="b-list__circle v-5">
+					<div>
+						{{ item.number }}
+					</div>
+				</div>
+				<div class="b-text b-text_size_18">
+					{{ item.text }}
+				</div>
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

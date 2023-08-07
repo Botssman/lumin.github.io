@@ -1,0 +1,9 @@
+uuid: post-block-quote-yellow
+name: Post block quote yellowt
+type: mixin
+handle: Blog\Block\BlockQuoteYellow
+
+fields:
+    text:
+        label: Text
+        type: richeditor

@@ -1,16 +1,12 @@
 <div class="h-wrap h-wrap_mg-bt_30">
 	<ul role="list" class="b-list b-list_pd_20">
+		{% for item in block.list %}
 		<li class="b-list__item b-list__item_mg-bt_20">
 			<div class="b-list__circle v-2"></div>
 			<div class="b-text">
-				{{ block.title }}
+				{{ item.text_list }}
 			</div>
 		</li>
-		<li class="b-list__item b-list__item_mg-bt_20">
-			<div class="b-list__circle v-2"></div>
-			<div class="b-text">
-				Unlimited Paid Time Off, with a recommended three-week minimum
-			</div>
-		</li>
+		{% endfor %}
 	</ul>
 </div>
