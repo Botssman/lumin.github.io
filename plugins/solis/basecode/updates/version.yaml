@@ -1,0 +1,45 @@
+1.0.1:
+    - 'Add media_gallery field.'
+    - add_media_gallery_field_to_products.php
+1.0.2:
+    - 'Add description repeater field.'
+    - add_description_repeater_field_to_products.php
+1.0.3:
+    - 'Add image mini field to offers'
+    - add_image_mini_field_to_offers.php
+1.0.4:
+    - 'Add image big field to offers'
+    - add_image_big_field_to_offers.php
+1.0.5:
+    - 'Add image promo field to offers'
+    - add_image_promo_field_to_offers.php
+1.0.6:
+    - 'Add slug field to offers'
+    - add_slug_field_to_offers.php
+1.0.7:
+    - 'Add media_gallery field to offers.'
+    - add_media_gallery_field_to_offers.php
+1.0.8:
+    - 'Create post views table'
+    - create_post_views_table.php
+1.0.9:
+    - 'Create post likes table'
+    - create_post_likes_table.php
+1.0.10:
+    - 'Add tyres field to products'
+    - add_tyres_field_to_products.php
+1.0.11:
+    - 'Add description repeater field to offers.'
+    - add_description_repeater_to_offers.php
+1.0.12:
+    - 'Add sort order field to products and offers with seeders.'
+    - add_sort_order_field_to_products.php
+    - seeder_table_products_sort_order.php
+    - add_sort_order_field_to_offers.php
+    - seeder_table_offers_sort_order.php
+1.0.13:
+    - 'Add images fields (image_engine, image_features) to products.'
+    - add_images_fields_to_products.php
+1.0.14:
+    - 'Add dimension images fields to offers.'
+    - add_dimensions_fields_to_offers.php

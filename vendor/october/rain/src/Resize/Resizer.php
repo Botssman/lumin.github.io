@@ -110,10 +110,6 @@ class Resizer
      */
     protected function retainImageTransparency($img)
     {
-        if (!$img) {
-            return;
-        }
-
         if ($this->mime === 'image/gif') {
             $alphaColor = ['red' => 0, 'green' => 0, 'blue' => 0];
             $alphaIndex = imagecolortransparent($img);

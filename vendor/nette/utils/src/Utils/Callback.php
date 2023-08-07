@@ -120,15 +120,14 @@ final class Callback
 	public static function unwrap(\Closure $closure): callable|array
 	{
 		$r = new \ReflectionFunction($closure);
-		$class = $r->getClosureScopeClass()?->name;
 		if (str_ends_with($r->name, '}')) {
 			return $closure;
 
-		} elseif (($obj = $r->getClosureThis()) && $obj::class === $class) {
+		} elseif ($obj = $r->getClosureThis()) {
 			return [$obj, $r->name];
 
-		} elseif ($class) {
-			return [$class, $r->name];
+		} elseif ($class = $r->getClosureScopeClass()) {
+			return [$class->name, $r->name];
 
 		} else {
 			return $r->name;

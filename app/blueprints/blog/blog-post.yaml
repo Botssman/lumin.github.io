@@ -1,16 +1,17 @@
-uuid: edcd102e-0525-4e4d-b07e-633ae6c18db6
-handle: Blog\Post
-type: stream
+uuid: blog-post
+handle: Blog\BlogPost
+type: structure
 name: Post
 drafts: true
 
 primaryNavigation:
-    label: Blog
+    label: Record type
     icon: octo-icon-file
     iconSvg: modules/tailor/assets/images/blog-icon.svg
     order: 95
 
 navigation:
+    parent: Blog\BlogPost
     icon: octo-icon-pencil
     order: 100
 

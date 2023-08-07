@@ -66,12 +66,7 @@ trait HasAttributes
      */
     public function getAttribute($key)
     {
-        if (
-            array_key_exists($key, $this->attributes) ||
-            $this->hasGetMutator($key) ||
-            $this->hasAttributeMutator($key) ||
-            $this->isClassCastable($key)
-        ) {
+        if (array_key_exists($key, $this->attributes) || $this->hasGetMutator($key)) {
             return $this->getAttributeValue($key);
         }
 

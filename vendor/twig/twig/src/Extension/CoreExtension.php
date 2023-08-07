@@ -609,33 +609,31 @@ function twig_urlencode_filter($url)
 }
 
 /**
- * Merges any number of arrays or Traversable objects.
+ * Merges an array with another one.
  *
  *  {% set items = { 'apple': 'fruit', 'orange': 'fruit' } %}
  *
- *  {% set items = items|merge({ 'peugeot': 'car' }, { 'banana': 'fruit' }) %}
+ *  {% set items = items|merge({ 'peugeot': 'car' }) %}
  *
- *  {# items now contains { 'apple': 'fruit', 'orange': 'fruit', 'peugeot': 'car', 'banana': 'fruit' } #}
+ *  {# items now contains { 'apple': 'fruit', 'orange': 'fruit', 'peugeot': 'car' } #}
  *
- * @param array|\Traversable ...$arrays Any number of arrays or Traversable objects to merge
+ * @param array|\Traversable $arr1 An array
+ * @param array|\Traversable $arr2 An array
  *
  * @return array The merged array
  */
-function twig_array_merge(...$arrays)
+function twig_array_merge($arr1, $arr2)
 {
-    $result = [];
-
-    foreach ($arrays as $argNumber => $array) {
-        if (!twig_test_iterable($array)) {
-            throw new RuntimeError(sprintf('The merge filter only works with arrays or "Traversable", got "%s" for argument %d.', \gettype($array), $argNumber + 1));
-        }
-
-        $result = array_merge($result, twig_to_array($array));
+    if (!twig_test_iterable($arr1)) {
+        throw new RuntimeError(sprintf('The merge filter only works with arrays or "Traversable", got "%s" as first argument.', \gettype($arr1)));
     }
 
-    return $result;
-}
+    if (!twig_test_iterable($arr2)) {
+        throw new RuntimeError(sprintf('The merge filter only works with arrays or "Traversable", got "%s" as second argument.', \gettype($arr2)));
+    }
 
+    return array_merge(twig_to_array($arr1), twig_to_array($arr2));
+}
 
 /**
  * Slices a variable.

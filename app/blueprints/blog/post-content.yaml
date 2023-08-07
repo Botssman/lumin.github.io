@@ -4,9 +4,15 @@ type: mixin
 name: Blog Post Content
 
 fields:
+    banner_mini:
+        tab: Manage
+        label: Banner mini
+        type: fileupload
+        mode: image
+        maxFiles: 1
     banner:
         tab: Manage
-        label: Banner
+        label: Banner big
         type: fileupload
         mode: image
         maxFiles: 1
@@ -26,22 +32,18 @@ fields:
         type: entries
         source: Blog\Category
 
-    featured_text:
-        tab: Featured
-        label: Featured Text
-        type: textarea
-        size: small
-
-    gallery:
-        label: Gallery
-        type: fileupload
-        mode: image
+    blocks:
+        label: Block
+        type: repeater
+        displayMode: builder
         span: adaptive
-        tab: Gallery
-
-    gallery_media:
-        label: Media
-        type: mediafinder
-        mode: image
-        span: adaptive
-        tab: Media
+        tab: Blocks
+        groups: 
+            block_list:
+                name: Block list
+                description: Block list
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blog\Block\BlockList

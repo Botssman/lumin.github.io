@@ -3,9 +3,7 @@
 use Illuminate\Support\Str;
 
 /**
- * FormatsMessages is a modifier to the base trait, it implements
- * some extended technology to allow rule objects to specify methods
- * message() and replace() for custom messaging.
+ * FormatsMessages is a modifier to the base trait
  *
  * @see \Illuminate\Validation\Concerns\FormatsMessages
  */
@@ -19,10 +17,6 @@ trait FormatsMessages
      */
     protected function getMessage($attribute, $rule)
     {
-        $attributeWithPlaceholders = $attribute;
-
-        $attribute = $this->replacePlaceholderInString($attribute);
-
         $inlineMessage = $this->getInlineMessage($attribute, $rule);
 
         // First we will retrieve the custom message for the validation rule if one
@@ -34,12 +28,8 @@ trait FormatsMessages
 
         $lowerRule = Str::snake($rule);
 
-        $customKey = "validation.custom.{$attribute}.{$lowerRule}";
-
         $customMessage = $this->getCustomMessageFromTranslator(
-            in_array($rule, $this->sizeRules)
-                ? [$customKey.".{$this->getAttributeType($attribute)}", $customKey]
-                : $customKey
+            $customKey = "validation.custom.{$attribute}.{$lowerRule}"
         );
 
         // First we check for a custom defined validation message for the attribute
@@ -49,7 +39,8 @@ trait FormatsMessages
             return $customMessage;
         }
 
-        // Modification: Apply fallback message from extension class, if one exists.
+        // Apply fallback message from extension class, if one exists.
+        // This is custom logic from the parent class.
         if ($this->hasExtensionMethod($lowerRule, 'message')) {
             return $this->callExtensionMethod($lowerRule, 'message');
         }
@@ -58,7 +49,7 @@ trait FormatsMessages
         // specific error message for the type of attribute being validated such
         // as a number, file or string which all have different message types.
         if (in_array($rule, $this->sizeRules)) {
-            return $this->getSizeMessage($attributeWithPlaceholders, $rule);
+            return $this->getSizeMessage($attribute, $rule);
         }
 
         // Finally, if no developer specified messages have been set, and no other
@@ -94,8 +85,6 @@ trait FormatsMessages
         $lowerRule = Str::snake($rule);
 
         $message = $this->replaceInputPlaceholder($message, $attribute);
-        $message = $this->replaceIndexPlaceholder($message, $attribute);
-        $message = $this->replacePositionPlaceholder($message, $attribute);
 
         if (isset($this->replacers[$lowerRule])) {
             return $this->callReplacer($message, $attribute, $lowerRule, $parameters, $this);
@@ -104,7 +93,8 @@ trait FormatsMessages
             return $this->$replacer($message, $attribute, $rule, $parameters);
         }
 
-        // Modification: Apply fallback replacer from extension class, if one exists.
+        // Apply fallback replacer from extension class, if one exists.
+        // This is custom logic from the parent class.
         if ($this->hasExtensionMethod($lowerRule, 'replace')) {
             return $this->callExtensionMethod($lowerRule, 'replace', [$message, $attribute, $lowerRule, $parameters]);
         }

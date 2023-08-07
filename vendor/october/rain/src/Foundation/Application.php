@@ -60,11 +60,6 @@ class Application extends ApplicationBase
     {
         parent::bindPathsInContainer();
 
-        // Additional lang path check
-        if (is_dir($directory = $this->path('lang'))) {
-            $this->useLangPath($directory);
-        }
-
         // October CMS paths
         $this->instance('path.plugins', $this->pluginsPath());
         $this->instance('path.themes', $this->themesPath());

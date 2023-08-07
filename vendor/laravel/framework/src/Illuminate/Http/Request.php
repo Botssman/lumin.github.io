@@ -11,7 +11,6 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use RuntimeException;
 use Symfony\Component\HttpFoundation\Exception\SessionNotFoundException;
-use Symfony\Component\HttpFoundation\InputBag;
 use Symfony\Component\HttpFoundation\ParameterBag;
 use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
@@ -488,7 +487,7 @@ class Request extends SymfonyRequest implements Arrayable, ArrayAccess
         $newRequest->content = $request->content;
 
         if ($newRequest->isJson()) {
-            $newRequest->request = new InputBag($newRequest->json()->all());
+            $newRequest->request = $newRequest->json();
         }
 
         return $newRequest;

@@ -315,13 +315,8 @@ class Lexer
             }
         }
 
-        // spread operator
-        if ('.' === $this->code[$this->cursor] && ($this->cursor + 2 < $this->end) && '.' === $this->code[$this->cursor + 1] && '.' === $this->code[$this->cursor + 2]) {
-            $this->pushToken(Token::SPREAD_TYPE, '...');
-            $this->moveCursor('...');
-        }
         // arrow function
-        elseif ('=' === $this->code[$this->cursor] && '>' === $this->code[$this->cursor + 1]) {
+        if ('=' === $this->code[$this->cursor] && '>' === $this->code[$this->cursor + 1]) {
             $this->pushToken(Token::ARROW_TYPE, '=>');
             $this->moveCursor('=>');
         }

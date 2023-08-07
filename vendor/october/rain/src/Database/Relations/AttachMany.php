@@ -84,7 +84,7 @@ class AttachMany extends MorphManyBase
 
         if ($files) {
             $value = [];
-            foreach ($files as $file) {
+            foreach ($value as $file) {
                 $value[] = $file->getPath();
             }
         }

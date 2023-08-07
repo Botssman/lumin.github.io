@@ -1,0 +1,5 @@
+plugin:
+    name: BaseCode
+    description: Some custom code for Solis.
+    author: Solis
+    icon: icon-leaf

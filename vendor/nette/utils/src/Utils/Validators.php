@@ -212,7 +212,6 @@ class Validators
 
 	/**
 	 * Checks if the value is an integer or a float.
-	 * @return ($value is int|float ? true : false)
 	 */
 	public static function isNumber(mixed $value): bool
 	{
@@ -222,7 +221,6 @@ class Validators
 
 	/**
 	 * Checks if the value is an integer or a integer written in a string.
-	 * @return ($value is non-empty-string ? bool : ($value is int ? true : false))
 	 */
 	public static function isNumericInt(mixed $value): bool
 	{
@@ -232,7 +230,6 @@ class Validators
 
 	/**
 	 * Checks if the value is a number or a number written in a string.
-	 * @return ($value is non-empty-string ? bool : ($value is int|float ? true : false))
 	 */
 	public static function isNumeric(mixed $value): bool
 	{
@@ -260,7 +257,6 @@ class Validators
 
 	/**
 	 * Checks if the value is 0, '', false or null.
-	 * @return ($value is 0|''|false|null ? true : false)
 	 */
 	public static function isNone(mixed $value): bool
 	{
@@ -278,7 +274,6 @@ class Validators
 	/**
 	 * Checks if a variable is a zero-based integer indexed array.
 	 * @deprecated  use Nette\Utils\Arrays::isList
-	 * @return ($value is list ? true : false)
 	 */
 	public static function isList(mixed $value): bool
 	{

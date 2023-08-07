@@ -1,0 +1,20 @@
+url = "/blog/post/:slug"
+layout = "lumin-article"
+title = "Post"
+meta_title = "{{ blog.title }} - Blog"
+
+[section post]
+handle = "Blog\BlogPost"
+value = "{{ :slug }}"
+
+[section blocks]
+handle = "Blog\BlogPost"
+value = "{{ :slug }}"
+
+==
+
+<section>
+    <div class="container">
+        {{ d(blocks) }}
+    </div>
+</section>
