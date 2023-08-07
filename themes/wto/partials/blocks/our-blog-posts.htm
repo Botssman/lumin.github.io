@@ -93,7 +93,7 @@
 				</div>
 			</div>
 			<div>
-				{% set posts = postsList.paginate(1) %}
+				{% set posts = postsList.paginate(6) %}
 			</div>
 			{% ajaxPartial "records/posts-list" %}
 		</div>
