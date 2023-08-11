@@ -1,8 +1,7 @@
-<div class="b-grid b-grid_blog" id="postsList">
-{% for item in posts %}
-	<a href="/blog/post/{{ item.slug }}" class="b-card-post w-inline-block">
+<div mode="ajax" class="b-grid b-grid_blog">
+	<a for="item in posts" href="/blog/post/{{ item.slug }}" class="b-card-post w-inline-block">
 		<div class="b-card-post__head">
-			<img src="{{ item.banner |media }}" loading="lazy" alt="">
+			<img src="{{ item.banner|media|media }}" loading="lazy" alt="" class="b-card-post__image">
 			<div class="b-card-post__btn-cont">
 				<div class="b-button b-button_blue b-button_height_45">
 					Reed more
@@ -20,8 +19,164 @@
 			</div>
 		</div>
 	</a>
-{% endfor %}
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/image2054-2.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Is an all solar energy future possible?
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/news__img-1.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Why is my electric bill so high with solar panels?
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/news__img-2.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Floating Neutrals
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/image2054-3.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Is an all solar energy future possible?
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/image2054-4.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Why is my electric bill so high with solar panels?
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/image2054-5.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Floating Neutrals
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/image2054-6.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Is an all solar energy future possible?
+			</div>
+		</div>
+	</a>
+	<a href="#" class="b-card-post w-inline-block">
+		<div class="b-card-post__head">
+			<img src="{{ 'assets/images/news__img-3.jpg'|theme }}" loading="lazy" alt="">
+			<div class="b-card-post__btn-cont">
+				<div class="b-button b-button_blue b-button_height_45">
+					Reed more
+				</div>
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
+				May 18, 2021
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_5">
+			<div class="b-text b-text_size_20 b-text_bold">
+				Why is my electric bill so high with solar panels?
+			</div>
+		</div>
+	</a>
 </div>
-<nav>
-    {{ ajaxPager(posts) }}
-</nav>

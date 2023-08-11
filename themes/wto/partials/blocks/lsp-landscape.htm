@@ -10,5 +10,12 @@
 				{{ block.lsp_landscape_subtitle }}
 			</div>
 		</div>
+		<div class="b-table">
+			{% for item in block.lsp_landscape_rep %}
+			<div id="w-node-_928eefb6-1a3f-bc93-24e2-2823a795e956-7b12a40f" class="b-table__tr b-table__tr_pd-rt_60">
+				{{ item.row | raw }}
+			</div>
+			{% endfor %}
+		</div>
 	</div>
 </section>

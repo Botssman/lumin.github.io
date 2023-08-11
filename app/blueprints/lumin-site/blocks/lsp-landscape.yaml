@@ -8,5 +8,13 @@ fields:
         label: Text
         type: text
     lsp_landscape_subtitle:
-        label: Subetitle
+        label: Subtitle
         type: textarea
+    lsp_landscape_rep:
+        label: Table
+        type: repeater
+        form: 
+            fields:
+                row:
+                    label: Table row
+                    type: richeditor

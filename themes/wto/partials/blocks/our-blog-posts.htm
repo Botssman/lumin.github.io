@@ -93,42 +93,9 @@
 				</div>
 			</div>
 			<div>
-				{% set posts = postsList.paginate(6) %}
+				{% set posts = postsList.paginate(1) %}
 			</div>
 			{% ajaxPartial "records/posts-list" %}
-		</div>
-		<div class="b-pagination">
-			<div class="pagination__block">
-				<img src="{{ 'assets/images/pagination_arrow20(1).png'|theme }}" loading="lazy" alt="" class="pagination__arrow">
-			</div>
-			<div class="pagination__block">
-				<div>
-					1
-				</div>
-			</div>
-			<div class="pagination__block active">
-				<div>
-					2
-				</div>
-			</div>
-			<div class="pagination__block">
-				<div>
-					3
-				</div>
-			</div>
-			<div class="pagination__dots">
-				<div class="dots">
-					...
-				</div>
-			</div>
-			<div class="pagination__block number">
-				<div>
-					20
-				</div>
-			</div>
-			<div class="pagination__block">
-				<img src="{{ 'assets/images/pagination_arrow20(2).png'|theme }}" loading="lazy" alt="" class="pagination__arrow">
-			</div>
 		</div>
 	</div>
 </section>
