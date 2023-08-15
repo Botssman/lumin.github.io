@@ -44,3 +44,27 @@ fields:
                                             text_list:
                                                 label: Text list
                                                 type: textarea
+    lsp_new_device_mob_rep:
+        label: Block
+        type: repeater
+        tab: Mobile
+        form: 
+            fields:
+                title:
+                    label: Title
+                    type: text
+                image:
+                    label: New device image
+                    type: mediafinder
+                    mode: image
+                lists:
+                    label: Lists
+                    type: repeater
+                    form: 
+                        fields:
+                            text_list:
+                                label: Text list
+                                type: textarea
+                bg_color:
+                    label: Bg color
+                    type: text
