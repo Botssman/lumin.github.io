@@ -67,6 +67,24 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\LuminCharging
+            lsp_new_device:
+                name: New device
+                description: Block add new device
+                icon: icon-inbox
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspNewDevice
+            feedbacks:
+                name: Block feedbacks
+                icon: icon-database
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Feedbacks
             video_galery:
                 name: Block video galery
                 icon: icon-play
