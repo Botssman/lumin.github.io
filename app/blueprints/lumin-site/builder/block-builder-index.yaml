@@ -92,6 +92,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\VideoGalery
+            demand_response_works:
+                name: Block how it works
+                description: Block how it works
+                icon: icon-home
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DemandResponseWorks
             lumin_estimator:
                 name: Block estimator
                 icon: icon-recycle
