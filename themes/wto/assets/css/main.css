@@ -3862,6 +3862,7 @@ body {
 }
 
 .b-slider__slide {
+  height: auto;
   flex: none;
   margin-right: 9%;
 }
@@ -4599,6 +4600,10 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.b-numbers.b-numbers_mg-tp_40 {
+  margin-top: 40px;
 }
 
 .b-numbers__text {
@@ -5402,7 +5407,7 @@ body {
 }
 
 .main-page {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .b-block_home__line {

@@ -1,0 +1,12 @@
+uuid: index-feedbacks
+name: Block lumin feedbacks
+type: mixin
+handle: Blocks\IndexFeedbacks
+multisite: true
+
+fields:
+    hint:
+        type: hint
+        mode: tip
+        label: Block lumin feedbacks
+        comment: Editable in section settings
