@@ -1,11 +1,11 @@
 uuid: pages-lumin-demand-response
 handle: Pages\LuminDemandResponse
 type: single
-name: Lumin demand response
+name: Lumin Utilities
 drafts: true
 
 navigation:
-    label: Lumin demand response
+    label: Lumin Utilities
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200
