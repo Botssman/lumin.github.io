@@ -3,7 +3,7 @@ description = "Lumin Demand Response"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Fri Aug 18 2023 16:02:21 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40a" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Tue Aug 22 2023 16:08:13 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40a" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title }}</title>
@@ -102,19 +102,6 @@ default = 0
 						<div class="h-wrap h-wrap_menu h-wrap_menu_center">{% for block in item.list %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>{% endfor %}</nav><a href="#" class="b-button b-button_width_160 b-button_height_45 mob_hide w-button">Get Lumin</a></div>
 			</div>
 		</header>
-		<div class="container container_breadcrumbs w-container">
-			<ul role="list" class="b-breadcrumbs">
-				<li class="b-breadcrumbs__list"><a href="#" class="b-breadcrumbs__link">Main</a></li>
-				<li>
-					<div class="b-breadcrumbs__sep"></div>
-				</li>
-				<li><a href="#" class="b-breadcrumbs__link">Blog</a></li>
-				<li class="mob_hide">
-					<div class="b-breadcrumbs__sep"></div>
-				</li>
-				<li class="mob_hide"><a href="#" class="b-breadcrumbs__link">Solar Power World editors pick the Top Products of 2020</a></li>
-			</ul>
-		</div>
 		<main class="main">{% for block in blocks.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</main>
 		<footer class="footer section">{% partial "site/footer" %}</footer>
 		<div class="b-modal">{% for item in block.lsp_new_device_mob_rep %}<a data-w-id="dae3174f-969e-127c-b0ca-a37576ba380a" href="#" class="b-modal__close w-inline-block"><img src="{{ 'assets/images/Dot.svg'|theme }}" loading="lazy" alt></a>{% endfor %}</div>

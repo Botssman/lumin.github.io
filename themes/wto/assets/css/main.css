@@ -4689,7 +4689,7 @@ body {
 }
 
 .b-video__circle-3 {
-  border: 1px solid rgba(244, 181, 74, .3);
+  border: 1px solid #f4b54a;
   border-radius: 100%;
   position: absolute;
   top: 0%;
@@ -4699,9 +4699,7 @@ body {
 }
 
 .b-video__circle-2 {
-  width: 8.5vw;
-  height: 8.5vw;
-  border: 1px solid rgba(244, 181, 74, .5);
+  border: 1px solid #f4b54a;
   border-radius: 100%;
   margin: auto;
   position: absolute;
