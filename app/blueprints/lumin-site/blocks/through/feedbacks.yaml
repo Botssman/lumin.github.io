@@ -5,8 +5,58 @@ handle: Blocks\Through\Feedbacks
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block lumin feedbacks
-        comment: Editable in section settings
+    feedbacks_title:
+        label: Title
+        type: text
+        tab: Feedbacks
+    feedbacks_subtitle:
+        label: Subitle
+        type: text
+        tab: Feedbacks
+    feedbacks_rep:
+        label: Slider
+        type: repeater
+        titleFrom: Feedbacks
+        tab: Feedbacks
+        form: 
+            fields:
+                list:
+                    label: Slide
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        feedbacks_video:
+                            name: Feedbacks video block
+                            description: Feedbacks video block
+                            icon: icon-video-camera
+                            fields:
+                                image:
+                                    label: Video thumbnail
+                                    type: mediafinder
+                                    mode: image
+                                name:
+                                    label: Name
+                                    type: text
+                                    span: left
+                                video_rewiev:
+                                    label: Rewiev
+                                    type: text
+                                    span: right
+                                link:
+                                    label: Link video
+                                    type: text
+                        feedbacks_text:
+                            name: Feedbacks text block
+                            description: Feedbacks text block
+                            icon: icon-align-justify
+                            fields:
+                               avatar:
+                                    label: Avatar
+                                    type: mediafinder
+                                    mode: image
+                               name:
+                                    label: Name
+                                    type: text
+                               text:
+                                    label: Text
+                                    type: textarea
