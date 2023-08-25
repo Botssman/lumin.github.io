@@ -3486,11 +3486,6 @@ body {
 
 .b-image.b-image_home {
   z-index: -1;
-  position: absolute;
-  top: 23%;
-  bottom: auto;
-  left: 10vw;
-  right: auto;
 }
 
 .b-image.b-image_home.v-3 {
@@ -5673,6 +5668,64 @@ body {
   box-shadow: -25px 0 40px rgba(34, 42, 58, .25);
 }
 
+.b-home-wrap {
+  position: absolute;
+  top: 23%;
+  left: 10vw;
+}
+
+.plus {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: #f4b54a;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
+.plus.plus_1 {
+  top: 63%;
+  bottom: 0%;
+  left: 28%;
+  right: auto;
+}
+
+.plus.plus_2 {
+  top: 62%;
+  bottom: 0%;
+  left: auto;
+  right: 36.3%;
+}
+
+.plus.plus_3 {
+  top: 51%;
+  bottom: 0%;
+  left: auto;
+  right: 21%;
+}
+
+.plus.plus_4 {
+  top: 30.5%;
+  bottom: 0%;
+  left: auto;
+  right: 33.5%;
+}
+
+.plus__circle {
+  z-index: -1;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(244, 181, 74, .3);
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;
@@ -6119,6 +6172,25 @@ body {
 
   .b-image-wrapper {
     max-height: 600px;
+  }
+
+  .plus.plus_1 {
+    left: 28.4%;
+  }
+
+  .plus.plus_2 {
+    top: 64%;
+    right: 36.7%;
+  }
+
+  .plus.plus_3 {
+    top: 52.5%;
+    right: 21.4%;
+  }
+
+  .plus.plus_4 {
+    top: 32%;
+    right: 34%;
   }
 }
 
