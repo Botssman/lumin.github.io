@@ -5,8 +5,15 @@ handle: Blocks\Through\HaveQuestions
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block have questions
-        comment: Editable in section settings
+    have_questions_title:
+        label: Title
+        type: text
+        tab: Have questions
+    have_questions_subtitle:
+        label: Subtitle
+        type: textarea
+        tab: Have questions
+    have_questions_text_btn:
+        label: Text btn
+        type: text
+        tab: Have questions

@@ -19,7 +19,7 @@
 			<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overf-ow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 				<div class="b-slider__mask b-slider__mask_19 tb_45 mob_85 w-slider-mask">
 					{% for item in block.feedbacks_rep %}
-					<div class="b-slider__slide w-slide">
+					<div class="b-slider__slide b-slider__slide_auto w-slide">
 						<div class="h-wrap h-wrap_height_100">
 							{% for block in item.list %}
 {% if block.type == "feedbacks_video" %}

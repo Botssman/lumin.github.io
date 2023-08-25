@@ -5,8 +5,11 @@ handle: Blocks\Through\Updates
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block updates
-        comment: Editable in section settings
+    updates_title:
+        label: Title
+        type: text
+        tab: Lumin updates
+    updates_subtitle:
+        label: Subitle
+        type: text
+        tab: Lumin updates

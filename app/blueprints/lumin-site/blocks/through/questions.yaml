@@ -5,15 +5,27 @@ handle: Blocks\Through\Questions
 multisite: true
 
 fields:
-    have_questions_title:
+    question_title:
         label: Title
         type: text
-        tab: Have questions
-    have_questions_subtitle:
+        tab: Questions
+    question_subtitle:
         label: Subtitle
-        type: textarea
-        tab: Have questions
-    have_questions_text_btn:
+        type: richeditor
+        tab: Questions
+    question_text_btn:
         label: Text btn
         type: text
-        tab: Have questions
+        tab: Questions
+    question_lists:
+        type: repeater
+        titleFrom: Questions lists
+        tab: Questions
+        form:
+            fields:
+                title_list:
+                    label: Title list
+                    type: text
+                text_list:
+                    label: Text list
+                    type: richeditor
