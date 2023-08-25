@@ -13,6 +13,9 @@ fields:
     demand_response_main_text_btn:
         label: Text btn
         type: text
+    demand_response_main_link_btn:
+        label: Link btn
+        type: text 
     demand_response_main_image:
         label: Image
         type: mediafinder

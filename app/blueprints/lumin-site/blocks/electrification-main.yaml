@@ -13,6 +13,9 @@ fields:
     electrification_main_text_btn:
         label: Text btn
         type: text
+    electrification_main_link_btn:
+        label: Link btn
+        type: text
     electrification_main_image:
         label: Image
         type: mediafinder

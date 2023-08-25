@@ -13,6 +13,9 @@ fields:
     solar_edge_main_text_btn:
         label: Text btn
         type: text
+    solar_edge_main_link_btn:
+        label: Link btn
+        type: text
     solar_edge_main_image:
         label: Image
         type: mediafinder
