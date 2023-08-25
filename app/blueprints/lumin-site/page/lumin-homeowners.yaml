@@ -1,0 +1,16 @@
+uuid: pages-lumin-homeowners
+handle: Pages\LuminSolarEdge
+type: single
+name: Lumin homeowners
+drafts: true
+
+navigation:
+    label: Homeowners
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminSolarEdge

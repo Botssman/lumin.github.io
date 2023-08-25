@@ -79,9 +79,6 @@ fields:
                 name: Block feedbacks
                 icon: icon-database
                 fields:
-                    title:
-                        label: Title
-                        type: text
                     _mixin:
                         type: mixin
                         source: Blocks\Through\Feedbacks
