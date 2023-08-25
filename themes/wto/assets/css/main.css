@@ -6251,6 +6251,10 @@ body {
     min-height: 70vh;
   }
 
+  .b-modal {
+    display: none;
+  }
+
   .container.container_absolute.container_mg_5 {
     margin-top: -2%;
   }

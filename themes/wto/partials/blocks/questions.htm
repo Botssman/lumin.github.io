@@ -4,12 +4,12 @@
 			<div class="b-columns__col b-columns__col_40 b-columns__col_pd_rt_20 tb_100">
 				<div class="h-wrap h-wrap_mg-bt_20">
 					<div class="b-title b-title_mini mob_30">
-						{{ sectionsGlobal.question_title }}
+						{{ block.question_title }}
 					</div>
 				</div>
 				<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900">
 					<div class="b-text b-text_size_20">
-						{{ sectionsGlobal.question_subtitle | raw }}
+						{{ block.question_subtitle | raw }}
 					</div>
 				</div>
 				<a href="#" class="b-button b-button_width_210 tb_hide w-button">
@@ -17,7 +17,7 @@
 				</a>
 			</div>
 			<div class="b-columns__col b-columns__col_60 tb_100 tb_border_top">
-				{% for item in sectionsGlobal.question_lists %}
+				{% for item in block.question_lists %}
 				<div data-hover="false" data-delay="0" class="b-dropdown b-dropdown_border w-dropdown">
 					<div class="b-dropdown__toggle w-dropdown-toggle">
 						<div>
