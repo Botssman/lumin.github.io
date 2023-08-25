@@ -2674,6 +2674,10 @@ body {
   max-width: 320px;
 }
 
+.h-wrap.h-wrap_overflow_auto {
+  overflow: auto;
+}
+
 .b-dropdown__link {
   padding: 8px 20px;
   font-family: Montserrat, sans-serif;
@@ -2723,8 +2727,8 @@ body {
   height: 30px;
   position: absolute;
   top: auto;
-  bottom: auto;
-  left: auto;
+  bottom: 50%;
+  left: -15px;
   right: auto;
 }
 
@@ -2954,7 +2958,7 @@ body {
   z-index: 999;
   justify-content: center;
   align-items: center;
-  display: none;
+  display: flex;
   position: fixed;
   top: 0%;
   bottom: 0%;
@@ -5665,7 +5669,8 @@ body {
   padding-top: 120px;
   padding-left: 100px;
   display: flex;
-  overflow: auto;
+  position: relative;
+  overflow: visible;
   box-shadow: -25px 0 40px rgba(34, 42, 58, .25);
 }
 

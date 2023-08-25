@@ -49,19 +49,11 @@
 		</a>
 	</div>
 	<div class="b-modal">
-		<a data-w-id="39e3943e-01fe-556e-456d-f529813d367b" href="#" class="b-modal__close w-inline-block">
-			<img src="{{ 'assets/images/Dot.svg'|theme }}" loading="lazy" alt="">
-		</a>
 		<div class="b-block-bg b-block-bg__modal">
 			{% for item in block.how_it_works_modal %}
-			<div class="h-wrap h-wrap_maxw_320">
-				<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_devise b-image_devise-modal">
-				<div class="h-wrap h-wrap_mg-bt_40">
-					<div class="b-text">
-						{{ item.text_list }}
-					</div>
-				</div>
-			</div>
+			<a data-w-id="39e3943e-01fe-556e-456d-f529813d367b" href="#" class="b-modal__close w-inline-block">
+				<img src="{{ 'assets/images/Dot.svg'|theme }}" loading="lazy" alt="">
+			</a>
 			{% endfor %}
 		</div>
 	</div>
