@@ -5,8 +5,17 @@ handle: Blocks\Through\VideoGalery
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block video galery
-        comment: Editable in section settings
+    video_galery_rep:
+        type: repeater
+        titleFrom: video galery
+        tab: Video galery
+        form:
+            fields:
+                link:
+                    label: Link video
+                    type: text
+                    span: left
+                image:
+                    label: Video thumbnail
+                    type: mediafinder
+                    mode: image
