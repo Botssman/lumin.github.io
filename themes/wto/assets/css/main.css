@@ -2871,6 +2871,10 @@ body {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.section.s-section_100vh.s-section_sticky {
+  overflow: hidden;
+}
+
 .section.s-section_70vh {
   min-height: 50vh;
   justify-content: center;
