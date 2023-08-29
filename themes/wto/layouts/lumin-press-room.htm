@@ -3,7 +3,7 @@ description = "Lumin-press-room"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Fri Aug 25 2023 16:01:07 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a411" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Tue Aug 29 2023 04:49:47 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a411" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title }}</title>
@@ -95,113 +95,6 @@ default = 0
 		<link href="{{'assets/css/main.css'|theme}}" rel="stylesheet">{% styles %}</head>
 	<body>{% partial "body" %}
 		<main class="main">{% for block in blocks.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</main>
-		<div class="ui-kit">
-			<h1 class="b-title b-title_h1">Heading</h1>
-			<h2 class="b-title">Heading</h2>
-			<h3>Heading</h3>
-			<h4>Heading</h4>
-			<h5>Heading</h5>
-			<h6>Heading</h6>
-			<div class="container"></div>
-			<section class="section"></section>
-			<header class="header"></header>
-			<div class="b-text">This is some text inside of a div block.</div>
-			<div class="h-text">
-				<div class="h-text h-text_mg-bt_10"></div>
-				<div class="h-text h-text_mg-bt_20"></div>
-				<div class="h-text h-text_mg-bt_40"></div>
-				<div class="h-text h-text_mg-bt_60"></div>
-			</div>
-			<div class="h-wrap">
-				<div class="h-wrap h-wrap_mg-bt_10"></div>
-				<div class="h-wrap h-wrap_mg-bt_20"></div>
-				<div class="h-wrap h-wrap_mg-bt_40"></div>
-				<div class="h-wrap h-wrap_mg-bt_60"></div>
-			</div><a href="#" class="b-button w-button">Button Text</a>
-			<div data-delay="4000" data-animation="slide" class="b-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-				<div class="b-slider__mask w-slider-mask">
-					<div class="b-slider__slide w-slide"></div>
-				</div>
-				<div class="b-slider__arrow-left w-slider-arrow-left"><img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt class="b-slider__icone"></div>
-				<div class="b-slider__arrow-right w-slider-arrow-right"><img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt class="b-slider__icone"></div>
-				<div class="b-slider__nav w-slider-nav w-round"></div>
-			</div>
-			<div data-delay="4000" data-animation="slide" class="b-slider quiz__b-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-				<div class="b-slider__mask w-slider-mask">
-					<div class="b-slider__slide w-slide"></div>
-				</div>
-				<div class="b-slider__arrow-left w-slider-arrow-left"><img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt class="b-slider__icone"></div>
-				<div class="b-slider__arrow-right w-slider-arrow-right"><img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt class="b-slider__icone"></div>
-				<div class="b-slider__nav w-slider-nav w-round"></div>
-			</div>
-			<div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="b-tabs w-tabs">
-				<div class="b-tabs__menu w-tab-menu"><a data-w-tab="Tab 1" class="b-tabs__link w-inline-block w-tab-link w--current"><div>Tab 1</div></a><a data-w-tab="Tab 2" class="b-tabs__link w-inline-block w-tab-link"><div>Tab 2</div></a></div>
-				<div class="b-tabs__content w-tab-content">
-					<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active"></div>
-					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane"></div>
-				</div>
-			</div>
-			<div data-hover="false" data-delay="0" class="b-dropdown w-dropdown">
-				<div class="b-dropdown__toggle w-dropdown-toggle">
-					<div class="b-dropdown__icon w-icon-dropdown-toggle"></div>
-					<div>Dropdown</div>
-				</div>
-				<nav class="b-dropdown__lists w-dropdown-list">
-					<div class="b-dropdown__content"></div><a href="#" class="b-dropdown__link w-dropdown-link">Link 1</a></nav>
-			</div>
-			<div class="b-form w-form">
-				<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a411" data-wf-element-id="3c163c4d-c731-e316-96d1-0eb30ac1f496"><input type="email" class="b-input w-input" maxlength="256" name="email" data-name="Email" placeholder id="email" required>
-					<div class="h-wrap"><input type="email" class="b-input w-input" maxlength="256" name="email-3" data-name="Email 3" placeholder id="email-3" required>
-						<div class="b-phone-error">
-							<div class="b-phone-error__text">Введите номер в формате <br>+7 (999) 999-99-99</div>
-						</div>
-					</div><input type="submit" value="Submit" data-wait="Please wait..." class="b-button w-button"><label class="b-radio w-radio"><input type="radio" data-name="Radio 4" id="radio-4" name="radio-4" value="Radio 4" class="w-form-formradioinput b-radio__btn w-radio-input"><span class="b-radio__text w-form-label" for="radio-4">Radio 4</span></label><label class="w-checkbox b-checkbox"><input type="checkbox" id="checkbox" name="checkbox" data-name="Checkbox" class="w-checkbox-input b-checkbox__check"><span class="b-checkbox__label w-form-label" for="checkbox">Checkbox</span></label></form>
-				<div class="b-form__success-mes w-form-done">
-					<div>Спасибо за заявку! <br>В ближайшее время мы свяжемся с вами</div>
-				</div>
-				<div class="b-form__error-mes w-form-fail">
-					<div>Ошибка! Что-то пошло не так.</div>
-				</div>
-			</div>
-			<ul role="list" class="b-list">
-				<li class="b-list__item">
-			</ul>
-			<div class="b-columns">
-				<div class="b-columns__col"></div>
-				<div class="b-columns__col b-columns__col_60"></div>
-				<div class="b-columns__col b-columns__col_50"></div>
-				<div class="b-columns__col b-columns__col_40"></div>
-				<div class="b-columns__col b-columns__col_30"></div>
-				<div class="b-columns__col b-columns__col_20"></div>
-			</div>
-			<div class="b-modal">
-				<div class="b-modal__pop-up">
-					<div class="b-form w-form">
-						<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a411" data-wf-element-id="3c163c4d-c731-e316-96d1-0eb30ac1f4c9">
-							<div class="h-text h-text_mg-bt_20">
-								<div class="b-title">Заказать звонок</div>
-							</div>
-							<div class="h-text h-text_mg-bt_40">
-								<div class="b-text">Введите номер телефона, мы с Вами свяжемся, уточним детали заказа и сориентируем по цене.</div>
-							</div>
-							<div class="b-columns b-columns_space-between">
-								<div class="b-columns__col b-columns__col_50"><img src="{{ 'assets/images/image.jpg'|theme }}" loading="lazy" alt class="b-image"></div>
-								<div class="b-columns__col b-columns__col_50">
-									<div class="h-wrap"><input type="tel" class="b-input w-input" maxlength="256" name="field-2" data-name="Field 2" placeholder id="field-2" required>
-										<div class="b-phone-error-2">
-											<div class="b-phone-error__text">Введите номер в формате <br>+7 (999) 999-99-99</div>
-										</div>
-									</div><input type="submit" value="заказать звонок" data-wait="Please wait..." class="b-button w-button"></div>
-							</div>
-						</form>
-						<div class="b-form__success-mes w-form-done">
-							<div>Спасибо за заявку! <br>В ближайшее время мы свяжемся с вами</div>
-						</div>
-						<div class="b-form__error-mes w-form-fail">
-							<div>Ошибка! Что-то пошло не так.</div>
-						</div>
-					</div><a href="#" class="b-modal__close w-inline-block"></a></div><a href="#" class="b-button w-button">Button Text</a></div>
-		</div>
 		<div class="container container_breadcrumbs w-container">
 			<ul role="list" class="b-breadcrumbs">
 				<li class="b-breadcrumbs__list"><a href="#" class="b-breadcrumbs__link">Main</a></li>

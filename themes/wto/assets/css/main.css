@@ -2958,7 +2958,7 @@ body {
   z-index: 999;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: none;
   position: fixed;
   top: 0%;
   bottom: 0%;
@@ -6249,10 +6249,6 @@ body {
 
   .section.s-section_70vh {
     min-height: 70vh;
-  }
-
-  .b-modal {
-    display: none;
   }
 
   .container.container_absolute.container_mg_5 {

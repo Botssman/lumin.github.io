@@ -13,6 +13,9 @@ fields:
     learning_center_main_text_btn:
         label: Text btn
         type: text
+    learning_center_main_link_btn:
+        label: Link btn
+        type: text
     learning_center_main_image:
         label: Image
         type: mediafinder
