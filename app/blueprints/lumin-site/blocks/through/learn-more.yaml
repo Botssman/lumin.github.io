@@ -9,6 +9,7 @@ fields:
         label: Title
         type: text
     learn_more_characteristics:
+        type: repeater
         form: 
             fields:
                 characteristics_name:
@@ -20,6 +21,7 @@ fields:
                     type: text
                     span: right
     learn_more_recomend:
+        type: repeater
         form:
             fields:
                 icon:
