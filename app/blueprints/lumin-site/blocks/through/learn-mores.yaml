@@ -1,7 +1,7 @@
 uuid: through-learn-more
 name: Block learn more
 type: mixin
-handle: Blocks\Through\LearnMore
+handle: Blocks\Through\LearnMores
 multisite: true
 
 fields:

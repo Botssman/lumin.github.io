@@ -57,14 +57,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\Feedbacks
-            learn_more:
+            learn_mores:
                 name: Demand response learn more
                 description: Block demand response learn more
                 icon: icon-info
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\LearnMore
+                        source: Blocks\Through\LearnMores
             demand_response_partners:
                 name: Demand response partners
                 description: Block demand response partners
