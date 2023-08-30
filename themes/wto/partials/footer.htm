@@ -3,3 +3,43 @@ description = "Footer Code"
 [viewBag]
 ==
 <script src='//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
+(function () {
+  const selectors = {
+    slider: ".b-slider.w-slider", // общий контейнер слайдов и кнопок
+    originalPrev: ".w-slider-arrow-left", // кнопка Назад внутри контейнера
+    originalNext: ".w-slider-arrow-right", // кнопка Вперед внутри контейнера
+
+    prev: ".arrow-left",
+    next: ".arrow-right",
+  };
+
+  function fakeClick($btn) {
+    if ($btn) $btn.click();
+  }
+
+  function initSlider($slider) {
+      if (!$slider) return;
+
+      const $originalPrev = $slider.querySelector(selectors.originalPrev);
+      const $originalNext = $slider.querySelector(selectors.originalNext);
+      
+      $slider.addEventListener('click', function(e) {
+          if (e.target.closest(selectors.prev)) {
+              fakeClick($originalPrev);
+          } else if (e.target.closest(selectors.next)) {
+              fakeClick($originalNext);
+          }
+      })
+  }
+
+  function init() {
+    const $sliders = document.querySelectorAll(selectors.slider);
+    $sliders.forEach(initSlider);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
