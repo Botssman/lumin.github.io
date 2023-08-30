@@ -9,6 +9,7 @@ fields:
         label: Title
         type: text
     learn_more_slider:
+        label: Slider
         type: repeater
         titleFrom: Slider
         tab: Slider
@@ -19,9 +20,9 @@ fields:
                     type: mediafinder
                     mode: image    
     learn_more_characteristics:
+        label: Characteristics
         type: repeater
         titleFrom: Characteristics
-        tab: Characteristics
         form: 
             fields:
                 characteristics_name:
@@ -33,9 +34,9 @@ fields:
                     type: text
                     span: right
     learn_more_recomend:
+        label: Recomendation
         type: repeater
         titleFrom: Recomendation
-        tab: Recomendation
         form:
             fields:
                 icon:
