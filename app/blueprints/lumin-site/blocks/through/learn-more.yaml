@@ -11,6 +11,7 @@ fields:
     learn_more_characteristics:
         type: repeater
         titleFrom: Characteristics
+        tab: Characteristics
         form: 
             fields:
                 characteristics_name:
@@ -24,6 +25,7 @@ fields:
     learn_more_recomend:
         type: repeater
         titleFrom: Recomendation
+        tab: Recomendation
         form:
             fields:
                 icon:

@@ -6264,6 +6264,10 @@ body {
     max-width: 34em;
   }
 
+  .b-video__circle-1 {
+    background-position: 53%;
+  }
+
   .b-block-circle__circle {
     max-height: 400px;
     max-width: 400px;
