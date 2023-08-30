@@ -8,7 +8,7 @@ fields:
     learn_more_title:
         label: Title
         type: text
-    block.learn_more_slider:
+    learn_more_slider:
         type: repeater
         titleFrom: Slider
         tab: Slider
