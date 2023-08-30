@@ -5783,6 +5783,10 @@ body {
   display: flex;
 }
 
+.swiper {
+  width: 100%;
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;
