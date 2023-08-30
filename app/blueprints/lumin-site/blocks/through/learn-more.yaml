@@ -10,6 +10,7 @@ fields:
         type: text
     learn_more_characteristics:
         type: repeater
+        titleFrom: Characteristics
         form: 
             fields:
                 characteristics_name:
@@ -22,6 +23,7 @@ fields:
                     span: right
     learn_more_recomend:
         type: repeater
+        titleFrom: Recomendation
         form:
             fields:
                 icon:
