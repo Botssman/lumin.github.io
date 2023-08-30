@@ -3,7 +3,7 @@ description = "Lumin Demand Response"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Wed Aug 30 2023 05:04:36 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40a" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Wed Aug 30 2023 05:32:11 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40a" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title }}</title>
@@ -130,33 +130,16 @@ default = 0
 											<div class="b-text b-text_bold">{{ item.characteristics_name }}</div>
 										</div>
 										<div class="b-columns__col b-columns__col_35 mob_100">
-											<div class="b-text">Surface-Mount; Outdoor</div>
+											<div class="b-text">{{ item.characteristics_text }}</div>
 										</div>
 									</div>
 								</div>{% endfor %}</div>
-							<div class="b-recomend b-recomend_mg-bt_35_40">
+							<div class="b-recomend b-recomend_mg-bt_35_40">{% for item in block.learn_more_recomend %}
 								<div class="b-recomend__item v-2">
-									<div class="b-recomend__img-cont v-2"><img src="{{ 'assets/images/icon-b20(4).svg'|theme }}" loading="lazy" alt></div>
-									<div class="b-text b-text_size_14">Warranty 1 year</div>
-								</div>
-								<div class="b-recomend__item v-2">
-									<div class="b-recomend__img-cont v-2"><img src="{{ 'assets/images/icon-b20(3).svg'|theme }}" loading="lazy" alt></div>
-									<div class="b-text b-text_size_14">Online payment</div>
-								</div>
-								<div class="b-recomend__item v-2">
-									<div class="b-recomend__img-cont v-2"><img src="{{ 'assets/images/icon-b20(5).svg'|theme }}" loading="lazy" alt></div>
-									<div class="b-text b-text_size_14">Deliveryin the USA</div>
-								</div>
-								<div class="b-recomend__item v-2">
-									<div class="b-recomend__img-cont v-2"><img src="{{ 'assets/images/icon-b20(1).svg'|theme }}" loading="lazy" alt></div>
-									<div class="b-text b-text_size_14">In stock</div>
-								</div>
-								<div class="b-recomend__item v-2">
-									<div class="b-recomend__img-cont v-2"><img src="{{ 'assets/images/icon-b20(2).svg'|theme }}" loading="lazy" alt></div>
-									<div class="b-text b-text_size_14">Out of stock</div>
-								</div>
-							</div>
-							<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_flex_v"><a href="#" class="b-button b-button_blue b-button_max-w_200 w-button">Buy now</a><a href="#" class="b-learn-more b-learn-more_mg-lt_30">Learn more</a></div>
+									<div class="b-recomend__img-cont v-2"><img src="{{ item.icon|media }}" loading="lazy" alt></div>
+									<div class="b-text b-text_size_14">{{ item.text }}</div>
+								</div>{% endfor %}</div>
+							<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_flex_v"><a href="#" class="b-button b-button_blue b-button_max-w_200 w-button">Buy now</a><a href="{{ block.learn_more_link_btn }}" class="b-learn-more b-learn-more_mg-lt_30">Learn more</a></div>
 						</div>
 					</div>
 				</div>
