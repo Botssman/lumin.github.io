@@ -27,14 +27,6 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\SolarEdgeWork
-            demand_response_works:
-                name: Block how it works homeowners
-                description: Block how it works
-                icon: icon-home
-                fields:
-                    _mixin:
-                        type: mixin
-                        source: Blocks\DemandResponseWorks
             solar_edge_integrates:
                 name: Solar edge integrates
                 description: Block solar edge integrates
