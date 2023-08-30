@@ -5,8 +5,30 @@ handle: Blocks\Through\LearnMore
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block learn more
-        comment: Editable in section settings
+    learn_more_title:
+        label: Title
+        type: text
+    learn_more_characteristics:
+        form: 
+            fields:
+                characteristics_name:
+                    label: Characteristics name
+                    type: text
+                    span: left
+                characteristics_text:
+                    label: Characteristics description
+                    type: text
+                    span: right
+    learn_more_recomend:
+        form:
+            fields:
+                icon:
+                    label: icon
+                    type: mediafinder
+                    mode: image
+                text:
+                    label: Text recomend
+                    type: text
+    learn_more_link_btn:
+        label: Link btn
+        type: text
