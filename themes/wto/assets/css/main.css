@@ -2604,6 +2604,7 @@ body {
 }
 
 .h-wrap.h-wrap_align_center {
+  z-index: 1;
   text-align: center;
 }
 
@@ -3448,9 +3449,9 @@ body {
   display: block;
   position: absolute;
   top: 0%;
-  bottom: auto;
-  left: auto;
-  right: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
 
 .b-image.b-image_absolute.v-2 {
@@ -4910,6 +4911,17 @@ body {
   background-color: rgba(23, 23, 26, .5);
   flex-direction: column;
   padding: 10px 16px;
+}
+
+.b-utility-rebates.mob_static {
+  z-index: 20;
+}
+
+.b-utility-rebates.v-4 {
+  z-index: 20;
+  background-color: rgba(23, 23, 26, .1);
+  bottom: 20%;
+  right: -2%;
 }
 
 .b-utility-rebates__icon {

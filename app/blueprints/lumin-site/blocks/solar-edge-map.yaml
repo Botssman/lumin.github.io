@@ -7,8 +7,16 @@ fields:
     solar_edge_map_title:
         label: Title
         type: text
+    solar_edge_map_subtitle:
+        label: Subtitle
+        type: text
     solar_edge_map_image_map:
         label: Map
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    solar_edge_map_image_state:
+        label: State
         type: mediafinder
         mode: image
         maxItems: 1
