@@ -7,7 +7,7 @@
 			<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
 		</div>
 		<nav class="b-menu__dropdown-lists w-dropdown-list">
-			<div class="b-dropdown__content">
+			<div class="b-dropdown__content b-dropdown__content_menu">
 				{% for item in block.list %}
 				<a href="{{ item.menu_dropdown_link | link }}" class="b-dropdown__link w-dropdown-link">
 					{{ item.menu_dropdown_name }}

@@ -3192,10 +3192,13 @@ body {
 }
 
 .b-dropdown__content {
-  background-color: #fff;
-  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 10px 60px rgba(49, 43, 42, .12);
+}
+
+.b-dropdown__content.b-dropdown__content_menu {
+  background-color: #fff;
+  border-radius: 12px;
 }
 
 .b-tabs {
