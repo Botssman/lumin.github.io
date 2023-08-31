@@ -5,7 +5,7 @@ name: Lumin Lsp
 drafts: true
 
 navigation:
-    label: Lumin Rebates
+    label: Rebates
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

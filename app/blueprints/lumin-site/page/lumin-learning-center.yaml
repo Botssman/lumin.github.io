@@ -5,7 +5,7 @@ name: Lumin support
 drafts: true
 
 navigation:
-    label: Lumin support
+    label: Support
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

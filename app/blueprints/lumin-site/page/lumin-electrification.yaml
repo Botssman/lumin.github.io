@@ -5,7 +5,7 @@ name: Lumin Electrification
 drafts: true
 
 navigation:
-    label: Lumin Electrification
+    label: Electrification
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

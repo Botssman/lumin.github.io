@@ -5,7 +5,7 @@ name: Lumin Press Room
 drafts: true
 
 navigation:
-    label: Lumin Press Room
+    label: Press Room
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

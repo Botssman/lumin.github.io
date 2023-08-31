@@ -5,7 +5,7 @@ name: Lumin Careers
 drafts: true
 
 navigation:
-    label: Lumin Careers
+    label: Careers
     parent: Pages\Index
     icon: icon-address-card
     order: 200

@@ -5,7 +5,7 @@ name: Lumin our blog
 drafts: true
 
 navigation:
-    label: Lumin our blog
+    label: Our blog
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

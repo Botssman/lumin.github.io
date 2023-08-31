@@ -5,7 +5,7 @@ name: Lumin Solar Edge
 drafts: true
 
 navigation:
-    label: Lumin Solar Edge
+    label: Solar Edge
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

@@ -5,7 +5,7 @@ name: Lumin Installers
 drafts: true
 
 navigation:
-    label: Lumin Installers
+    label: Installers
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

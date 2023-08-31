@@ -5,7 +5,7 @@ name: Lumin Utilities
 drafts: true
 
 navigation:
-    label: Lumin Utilities
+    label: Utilities
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200

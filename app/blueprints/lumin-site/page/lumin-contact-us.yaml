@@ -5,7 +5,7 @@ name: Lumin Contact Us
 drafts: true
 
 navigation:
-    label: Lumin Contact Us
+    label: Contact Us
     parent: Pages\Index
     icon: icon-address-card
     order: 200
