@@ -22,6 +22,33 @@
 			</li>
 			{% endfor %}
 		</ul>
-		<img class="b-image b-image_home v-3" src="{{ block.electrification_works_image|media }}" alt="" loading="lazy">
+		<div class="b-home-wrap">
+			<img class="b-image b-image_home" src="{{ block.electrification_works|media }}" alt="" style="opacity:1" data-w-id="b8809ecb-c631-0065-1723-e2727d5c12ae" loading="lazy">
+			<img class="b-image b-image_home b-image_home-abbsolute" src="{{ block.electrification_works_off|media }}" alt="" style="display:none" loading="lazy">
+			<div class="plus plus_2">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+			<div class="plus plus_3">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+			<div class="plus plus_4">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+			<div class="plus plus_1">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+			<div class="b-switch">
+				<div data-w-id="c8e29adb-fcb6-9024-d6c6-d39afd88042f" style="display:block" class="b-switch__green">
+					<div class="b-switch__circle"></div>
+				</div>
+				<div class="b-text b-text_extra-bold">
+					{{ block.electrification_works_swich_text }}
+				</div>
+			</div>
+		</div>
 	</div>
 </section>

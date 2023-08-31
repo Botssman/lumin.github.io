@@ -19,14 +19,22 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\SolarEdgeMain
-            solar_edge_works:
-                name: Block how it works
+            # solar_edge_works:
+            #     name: Block how it works
+            #     description: Block how it works
+            #     icon: icon-home
+            #     fields:
+            #         _mixin:
+            #             type: mixin
+            #             source: Blocks\SolarEdgeWork
+            electrification_works:
+                name: Block how it works 
                 description: Block how it works
                 icon: icon-home
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\SolarEdgeWork
+                        source: Blocks\ElectrificationWorks
             solar_edge_integrates:
                 name: Solar edge integrates
                 description: Block solar edge integrates

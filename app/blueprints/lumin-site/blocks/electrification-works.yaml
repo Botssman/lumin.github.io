@@ -22,7 +22,15 @@ fields:
                     label: Text list
                     type: text
                     span: right
+    electrification_works_swich_text:
+        label: Swich text
+        type: text
     electrification_works_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    electrification_works_off:
         label: Image
         type: mediafinder
         mode: image
