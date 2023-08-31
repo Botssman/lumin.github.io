@@ -1,11 +1,11 @@
 uuid: pages-lumin-solar-edge
 handle: Pages\LuminSolarEdge
 type: single
-name: Lumin Solar Edge
+name: Lumin Homeowners
 drafts: true
 
 navigation:
-    label: Solar Edge
+    label: Homeowners
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200
