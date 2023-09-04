@@ -1,0 +1,21 @@
+<section class="section s-section_vertical s-section_pd_11-25">
+	<div class="container container_maxw_1020 w-container">
+		<div class="h-wrap h-wrap_mg-bt_20">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.documents_title }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_40">
+			<div class="b-text b-text_size_26">
+				{{ block.documents_subtitle }}
+			</div>
+		</div>
+		<div class="b-grid b-grid_col_3 b-grid_pd">
+			{% for item in block.documents_rep %}
+			<a href="#" class="b-button b-button_gray w-button" download="{{ item.documents_file }}">
+				{{ item.documents_text_btn }}
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>

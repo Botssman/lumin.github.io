@@ -1,0 +1,25 @@
+<section class="section s-section_yellow section_pd-bt_40">
+	<div class="container w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_60 b-columns__col_align_center">
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<div class="b-title b-title_mini mob_30">
+						{{ block.document_img_title }}
+					</div>
+				</div>
+				<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800">
+					<div class="b-text b-text_size_26">
+						{{ block.document_img_subtitle }}
+					</div>
+				</div>
+				<a href="#" class="b-button b-button_blue b-button_maxw_320 b-button_align_left w-button" download="{{ block.documents_img_file }}">
+					{{ block.document_img_text_btn }}
+				</a>
+			</div>
+			<div class="b-columns__col b-columns__col_40">
+				<img src="{{ block.document_img_image|media }}" loading="lazy" alt="" class="b-image">
+			</div>
+		</div>
+	</div>
+	<img class="b-image b-image_yellow-fon v-3" src="{{ block.document_img_image_fon|media }}" alt="" loading="lazy">
+</section>

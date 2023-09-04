@@ -1,0 +1,22 @@
+uuid: sections-documents
+name: Lumin Documents
+type: mixin
+handle: Blocks\Documents
+
+fields:
+    documents_title:
+      label: Title
+      type: text
+    documents_subtitle:
+      label: Subtitle
+      type: text
+    documents_rep:
+        type: repeater
+        form:
+            fields:
+                documents_text_btn:
+                  label: Text document
+                  type: text
+                documents_file:
+                  label: Document fiele
+                  type: mediafinder
