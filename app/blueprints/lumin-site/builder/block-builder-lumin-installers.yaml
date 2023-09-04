@@ -65,6 +65,27 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\Questions
+            documents:
+                name: Block documents
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\
+            document:
+                name: Block document
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Document
+            document_img:
+                name: Block document img
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\DocumentImg
             have_questions:
                 name: Block have question
                 icon: icon-question-circle
