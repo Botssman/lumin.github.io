@@ -62,21 +62,21 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\
+                        source: Blocks\Documents
             document:
                 name: Block document
                 icon: icon-columns
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\Document
+                        source: Blocks\Document
             document_img:
                 name: Block document img
                 icon: icon-columns
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\DocumentImg
+                        source: Blocks\DocumentImg
             questions:
                 name: Block question
                 icon: icon-question
