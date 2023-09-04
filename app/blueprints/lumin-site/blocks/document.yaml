@@ -1,0 +1,20 @@
+uuid: sections-document
+name: Document
+type: mixin
+handle: Blocks\Document
+
+fields:
+    document_title:
+      label: Title
+      type: text
+    document_subtitle:
+      label: Subtitle
+      type: text
+    document_text_btn:
+      label: Text document
+      type: text
+    documents_file:
+      label: Document fiele
+      type: mediafinder
+    document_img_fon:
+      label: Image fon
