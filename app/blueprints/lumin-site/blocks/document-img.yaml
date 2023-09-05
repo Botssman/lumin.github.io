@@ -4,16 +4,16 @@ type: mixin
 handle: Blocks\DocumentImg
 
 fields:
-    document_title:
+    document_img_title:
       label: Title
       type: text
-    document_subtitle:
+    document_img_subtitle:
       label: Subtitle
       type: text
-    document_text_btn:
+    document_img_text_btn:
       label: Text document
       type: text
-    documents_file:
+    document_img_file:
       label: Document fiele
       type: mediafinder
     document_img_fon:
