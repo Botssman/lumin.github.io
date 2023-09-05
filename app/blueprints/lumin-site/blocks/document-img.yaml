@@ -13,9 +13,11 @@ fields:
     document_img_text_btn:
       label: Text document
       type: text
-    document_img_file:
-      label: Document fiele
+    document_img_image:
+      label: Image fon
       type: mediafinder
+      mode: image
+      maxItems: 1
     document_img_fon:
       label: Image fon
       type: mediafinder

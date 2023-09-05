@@ -13,9 +13,6 @@ fields:
     document_text_btn:
       label: Text document
       type: text
-    documents_file:
-      label: Document fiele
-      type: mediafinder
     document_img_fon:
       label: Image fon
       type: mediafinder
