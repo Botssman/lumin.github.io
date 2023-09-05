@@ -14,11 +14,11 @@ fields:
       label: Text document
       type: text
     document_img_image:
-      label: Image fon
+      label: Image
       type: mediafinder
       mode: image
       maxItems: 1
-    document_img_fon:
+    document_img_image_fon:
       label: Image fon
       type: mediafinder
       mode: image
