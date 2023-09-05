@@ -1,0 +1,12 @@
+uuid: modal-looking
+name: Modal looking
+type: mixin
+handle: Blocks\ModalLooking
+
+fields:
+    modal_looking_title:
+      label: Title
+      type: text
+    modal_looking_subtitle:
+      label: Subitle
+      type: text

@@ -1,0 +1,12 @@
+uuid: modal-installer
+name: Modal installer
+type: mixin
+handle: Blocks\ModalInstaller
+
+fields:
+    modal_installer_title:
+      label: Title
+      type: text
+    modal_installer_subtitle:
+      label: Subitle
+      type: text

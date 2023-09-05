@@ -21,3 +21,6 @@ fields:
     installers_home_link_btn:
         label: Link button
         type: text
+    installers_home_btn_modal:
+        label: Id open Modal
+        type: text

@@ -117,3 +117,24 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\HaveQuestions
+            modal-installer:
+                name: Modal installer
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ModalUtiliti
+            modal-looking:
+                name: Modal looking
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ModalLooking
+            modal-utilities:
+                name: Modal utilities
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ModalUtilities

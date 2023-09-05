@@ -1,0 +1,12 @@
+uuid: modal-utilities
+name: Modal utilities
+type: mixin
+handle: Blocks\ModalUtilities
+
+fields:
+    modal_utilities_title:
+      label: Title
+      type: text
+    modal_utilities_subtitle:
+      label: Subitle
+      type: text
