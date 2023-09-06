@@ -6179,6 +6179,10 @@ body {
     max-width: 1200px;
   }
 
+  .container.container_maxw_1020 {
+    max-width: 1020px;
+  }
+
   .b-image {
     display: block;
   }
