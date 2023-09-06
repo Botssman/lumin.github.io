@@ -51,6 +51,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\InstallersMeet
+            electrification_quiz:
+                name: Electrification find
+                description: Block electrification find
+                icon: icon-check-circle-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ElectrificationQuiz
             feedbacks:
                 name: Block feedbacks
                 icon: icon-database
