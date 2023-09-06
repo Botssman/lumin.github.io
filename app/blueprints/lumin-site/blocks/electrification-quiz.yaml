@@ -26,31 +26,12 @@ fields:
                             fields:
                                 step_text:
                                     label: Video thumbnail
-                                    type: mediafinder
-                                    mode: image
-                                name:
-                                    label: Name
-                                    type: text
-                                    span: left
-                                video_rewiev:
-                                    label: Rewiev
-                                    type: text
-                                    span: right
-                                link:
-                                    label: Link video
                                     type: text
                         quiz_step_2:
                             name: Quiz step 2
                             description: Quiz step 2
                             icon: icon-align-justify
                             fields:
-                               avatar:
-                                    label: Avatar
-                                    type: mediafinder
-                                    mode: image
-                               name:
-                                    label: Name
+                                step_text:
+                                    label: Video thumbnail
                                     type: text
-                               text:
-                                    label: Text
-                                    type: textarea
