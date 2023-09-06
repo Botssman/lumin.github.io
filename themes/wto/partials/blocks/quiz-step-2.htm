@@ -1,0 +1,101 @@
+<div>
+	<div class="h-wrap">
+		<div class="b-slider__content">
+			<div class="b-step">
+				<div class="b-text b-text_size_26 b-text_extra-bold tb_18">
+					Step 1
+				</div>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_30">
+				<div class="b-text b-text_size_26 tb_15">
+					Choose company of your EV Charger
+				</div>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+				<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+					<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+						{% for item in block.feedbacks_rep %}
+						<div class="b-slider__slide b-slider__slide_auto w-slide">
+							<label class="b-radio b-radio_box w-radio">
+								<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
+								<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
+								<div class="b-radio__border"></div>
+								<img alt="" loading="lazy" src="{{ 'assets/images/Model.png'|theme }}" class="b-radio__img b-radio__img_mg-bt_20">
+								<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+									Radio 5
+								</span>
+								<div class="h-wrap h-wrap_mg-bt_10">
+									<div class="b-radio__text">
+										Wallbox Pulsar Max Electric Vehicle Charger
+									</div>
+								</div>
+							</label>
+						</div>
+						{% endfor %}
+					</div>
+					<div class="b-slider__arrow-left w-slider-arrow-left">
+						<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+					</div>
+					<div class="b-slider__arrow-right w-slider-arrow-right">
+						<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+					</div>
+					<div class="b-slider__nav w-slider-nav w-round"></div>
+				</div>
+				<div class="h-wrap h-wrap_height_100">
+					{% for block in item.list %}
+{% if block.type == "feedbacks_video" %}
+					<div class="b-slider__card">
+						<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-slider__img-video">
+						<a data-fancybox="Video-rewiev" href="{{ block.link }}" class="b-slider__grad w-inline-block">
+							<div class="b-text b-text_size_20 b-text_white b-text_bold">
+								{{ block.name }}
+							</div>
+							<div class="b-text b-text_size_14 b-text_white">
+								{{ block.video_rewiev }}
+							</div>
+						</a>
+					</div>
+					{% endif %}
+{% if block.type == "feedbacks_text" %}
+					<div class="b-slider__card">
+						<div class="b-slider__white-content">
+							<div class="h-wrap h-wrap_mg-bt_20 h-wrap_flex-h">
+								<img src="{{ block.avatar|media }}" loading="lazy" alt="" class="b-avatar">
+								<div class="b-text b-text_size_20 b-text_bold">
+									{{ block.name }}
+								</div>
+							</div>
+							<div class="b-text b-text_size_14">
+								{{ block.text }}
+							</div>
+						</div>
+					</div>
+					{% endif %}
+{% endfor %}
+				</div>
+				<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+					<div class="b-slider__mask b-slider__mask_23 w-slider-mask">
+						{% for item in block.feedbacks_rep %}
+						<div class="b-slider__slide b-slider__slide_auto w-slide"></div>
+						{% endfor %}
+					</div>
+					<div class="b-slider__arrow-left w-slider-arrow-left">
+						<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+					</div>
+					<div class="b-slider__arrow-right w-slider-arrow-right">
+						<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+					</div>
+					<div class="b-slider__nav w-slider-nav w-round"></div>
+				</div>
+			</div>
+			<div class="b-numbers">
+				<a href="#" class="b-button b-button_back w-button">
+					Back
+				</a>
+				<a href="#" class="b-button b-button_next w-button">
+					Next
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

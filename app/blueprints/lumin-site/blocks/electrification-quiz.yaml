@@ -7,3 +7,50 @@ fields:
     electrification_quiz_title:
         label: Title
         type: text
+    electrification_quiz_rep:
+        label: Quiz
+        type: repeater
+        titleFrom: Quiz
+        tab: Quiz
+        form: 
+            fields:
+                quiz:
+                    label: Quiz dlock
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        quiz_step_1:
+                            name: Quiz step 1
+                            description: Quiz step 1
+                            icon: icon-video-camera
+                            fields:
+                                image:
+                                    label: Video thumbnail
+                                    type: mediafinder
+                                    mode: image
+                                name:
+                                    label: Name
+                                    type: text
+                                    span: left
+                                video_rewiev:
+                                    label: Rewiev
+                                    type: text
+                                    span: right
+                                link:
+                                    label: Link video
+                                    type: text
+                        quiz_step_2:
+                            name: Quiz step 2
+                            description: Quiz step 2
+                            icon: icon-align-justify
+                            fields:
+                               avatar:
+                                    label: Avatar
+                                    type: mediafinder
+                                    mode: image
+                               name:
+                                    label: Name
+                                    type: text
+                               text:
+                                    label: Text
+                                    type: textarea
