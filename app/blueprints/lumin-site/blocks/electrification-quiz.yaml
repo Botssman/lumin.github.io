@@ -15,7 +15,7 @@ fields:
         form: 
             fields:
                 quiz:
-                    label: Quiz dlock
+                    label: Quiz block
                     type: repeater
                     displayMode: builder
                     groups:
@@ -24,7 +24,7 @@ fields:
                             description: Quiz step 1
                             icon: icon-video-camera
                             fields:
-                                image:
+                                step_text:
                                     label: Video thumbnail
                                     type: mediafinder
                                     mode: image
