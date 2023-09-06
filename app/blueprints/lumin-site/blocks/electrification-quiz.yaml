@@ -28,8 +28,18 @@ fields:
                                     label: Text step
                                     type: text
                                 desc:
-                                    label: Text step
+                                    label: Desc
                                     type: text
+                                list:
+                                    label: Add brand
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image brand
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
                         quiz_step_2:
                             name: Quiz step 2
                             description: Quiz step 2
@@ -37,4 +47,18 @@ fields:
                             fields:
                                 step_text:
                                     label: Text step
+                                    type: text
+                                desc:
+                                    label: Desc
+                                    type: text
+                        quiz_step_3:
+                            name: Quiz step 3
+                            description: Quiz step 3
+                            icon: icon-align-justify
+                            fields:
+                                step_text:
+                                    label: Text step
+                                    type: text
+                                desc:
+                                    label: Desc
                                     type: text
