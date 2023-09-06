@@ -25,7 +25,10 @@ fields:
                             icon: icon-video-camera
                             fields:
                                 step_text:
-                                    label: Video thumbnail
+                                    label: Text step
+                                    type: text
+                                desc:
+                                    label: Text step
                                     type: text
                         quiz_step_2:
                             name: Quiz step 2
@@ -33,5 +36,5 @@ fields:
                             icon: icon-align-justify
                             fields:
                                 step_text:
-                                    label: Video thumbnail
+                                    label: Text step
                                     type: text
