@@ -51,6 +51,121 @@ fields:
                                 desc:
                                     label: Desc
                                     type: text
+                                autel:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                aiproad:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                chargepoint:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                grizzlie:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                juicebox:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                lectron:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                stokevoltaics:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                emporia:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text    
+                                wallbox:
+                                    label: Add model
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Image model
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: 1
+
                         quiz_step_3:
                             name: Quiz step 3
                             description: Quiz step 3
