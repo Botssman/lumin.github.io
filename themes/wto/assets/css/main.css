@@ -3596,6 +3596,7 @@ body {
 
 .b-image.b-image_lumin-cert {
   border-radius: 100%;
+  margin-bottom: 0;
   box-shadow: 14px 14px 40px rgba(49, 22, 16, .4);
 }
 
