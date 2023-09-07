@@ -3459,7 +3459,6 @@ body {
 .b-image {
   z-index: 1;
   margin-bottom: 40px;
-  margin-left: auto;
   position: relative;
 }
 
@@ -4126,6 +4125,9 @@ body {
 }
 
 .b-block.pb_mg-bt_40.b-block_overflow_h {
+  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
   overflow: hidden;
 }
 
