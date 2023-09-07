@@ -43,6 +43,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\SolarEdgeMap
+            electrification_integrates:
+                name: Electrification integrates
+                description: Block electrification integrates
+                icon: icon-calendar-plus-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ElectrificationIntegrates
             installers_why_lumin:
                 name: Installers why lumin
                 description: Installers why lumin
