@@ -19,14 +19,22 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ElectrificationMain
-            electrification_works:
+            # electrification_works:
+            #     name: Block how it works
+            #     description: Block how it works
+            #     icon: icon-home
+            #     fields:
+            #         _mixin:
+            #             type: mixin
+            #             source: Blocks\ElectrificationWorks
+            solar_edge_works:
                 name: Block how it works
                 description: Block how it works
                 icon: icon-home
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\ElectrificationWorks
+                        source: Blocks\SolarEdgeWork
             electrification_integrates:
                 name: Electrification integrates
                 description: Block electrification integrates
