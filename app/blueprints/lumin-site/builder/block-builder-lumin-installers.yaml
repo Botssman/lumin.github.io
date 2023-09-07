@@ -27,6 +27,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\SolarEdgeWork
+            installers_map:
+                name: Installers map
+                description: Installers map
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\InstallersMap
             installers_why_lumin:
                 name: Installers why lumin
                 description: Installers why lumin
