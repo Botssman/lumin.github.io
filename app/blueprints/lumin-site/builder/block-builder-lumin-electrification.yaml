@@ -67,8 +67,8 @@ fields:
                         type: mixin
                         source: Blocks\Through\Feedbacks
             learn_mores:
-                name: Demand response learn more
-                description: Block demand response learn more
+                name: Learn more
+                description: Block learn more
                 icon: icon-info
                 fields:
                     _mixin:

@@ -83,6 +83,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ElectrificationQuiz
+            learn_mores:
+                name: Learn more
+                description: Block learn more
+                icon: icon-info
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\LearnMores
             feedbacks:
                 name: Block feedbacks
                 icon: icon-database
