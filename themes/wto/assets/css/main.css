@@ -5062,7 +5062,7 @@ body {
   z-index: 20;
   background-color: rgba(23, 23, 26, .1);
   bottom: 20%;
-  right: -2%;
+  right: -7%;
 }
 
 .b-utility-rebates__icon {
@@ -6030,6 +6030,19 @@ body {
 
 .b-custom-check__img {
   display: none;
+}
+
+.b-check {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  border: 2px solid #c1c1c1;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  padding-right: 1px;
+  display: flex;
 }
 
 @media screen and (min-width: 1280px) {
