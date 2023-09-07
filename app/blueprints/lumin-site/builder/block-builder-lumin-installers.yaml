@@ -19,14 +19,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\InstallersHome
-            installers_map:
-                name: Installers map
-                description: Installers map
-                icon: icon-map
+            solar_edge_works:
+                name: Block how it works
+                description: Block how it works
+                icon: icon-home
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\InstallersMap
+                        source: Blocks\SolarEdgeWork
             installers_why_lumin:
                 name: Installers why lumin
                 description: Installers why lumin
