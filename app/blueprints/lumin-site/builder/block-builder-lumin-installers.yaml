@@ -26,7 +26,7 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\SolarEdgeWork
+                        source: Blocks\SolarEdgeWorks
             # installers_map:
             #     name: Installers map
             #     description: Installers map

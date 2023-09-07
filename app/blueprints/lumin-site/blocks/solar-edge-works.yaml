@@ -1,0 +1,37 @@
+uuid: sections-lumin-solar-edge-works
+name: Main section lumin works
+type: mixin
+handle: Blocks\SolarEdgeWorks
+
+fields:
+    solar_edge_works_title:
+        label: Title
+        type: text
+    solar_edge_works_title_lists:
+        label: Title lists
+        type: text
+    solar_edge_works_lists:
+        type: repeater
+        form:
+            fields:
+                number:
+                    label: Number list
+                    type: text
+                    span: left
+                text:
+                    label: Text list
+                    type: text
+                    span: right
+    solar_edge_works_swich_text:
+        label: Swich text
+        type: text
+    solar_edge_works_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    solar_edge_works_off:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
