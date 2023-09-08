@@ -3512,6 +3512,7 @@ body {
 }
 
 .b-image.b-image_yellow-fon {
+  z-index: 0;
   width: 100%;
   object-fit: cover;
   flex: none;
