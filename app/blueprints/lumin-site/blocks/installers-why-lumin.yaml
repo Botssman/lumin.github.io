@@ -26,7 +26,7 @@ fields:
         type: text
     installers_why_lumin_subtitle_cert:
         label: Certified subtitle
-        type: text
+        type: textarea
     installers_why_lumin_text_btn:
         label: Text button
         type: text
