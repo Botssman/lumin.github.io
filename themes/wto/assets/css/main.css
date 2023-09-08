@@ -6057,6 +6057,11 @@ body {
   right: 0%;
 }
 
+.image-2 {
+  opacity: .3;
+  filter: grayscale();
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;

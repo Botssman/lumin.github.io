@@ -57,7 +57,7 @@ fields:
                                     form:
                                         fields:
                                             image:
-                                                label: Image model
+                                                label: Image model autel
                                                 type: mediafinder
                                                 mode: image
                                                 maxItems: 1
@@ -65,7 +65,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 aiproad:
-                                    label: Add model
+                                    label: Add model aiproad
                                     type: repeater
                                     form:
                                         fields:
@@ -77,8 +77,8 @@ fields:
                                             name:
                                                 label: Name model
                                                 type: text    
-                                chargepoint:
-                                    label: Add model
+                                chargepoint :
+                                    label: Add model chargepoint
                                     type: repeater
                                     form:
                                         fields:
@@ -91,7 +91,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 grizzlie:
-                                    label: Add model
+                                    label: Add model grizzlie
                                     type: repeater
                                     form:
                                         fields:
@@ -104,7 +104,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 juicebox:
-                                    label: Add model
+                                    label: Add model juicebox
                                     type: repeater
                                     form:
                                         fields:
@@ -117,7 +117,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 lectron:
-                                    label: Add model
+                                    label: Add model lectron
                                     type: repeater
                                     form:
                                         fields:
@@ -130,7 +130,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 stokevoltaics:
-                                    label: Add model
+                                    label: Add model stokevoltaics
                                     type: repeater
                                     form:
                                         fields:
@@ -143,7 +143,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 emporia:
-                                    label: Add model
+                                    label: Add model emporia
                                     type: repeater
                                     form:
                                         fields:
@@ -156,7 +156,7 @@ fields:
                                                 label: Name model
                                                 type: text    
                                 wallbox:
-                                    label: Add model
+                                    label: Add model wallbox
                                     type: repeater
                                     form:
                                         fields:
