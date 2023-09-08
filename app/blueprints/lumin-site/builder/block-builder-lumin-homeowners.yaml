@@ -67,6 +67,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ElectrificationQuiz
+            learn_mores:
+                name: Demand response learn more
+                description: Block demand response learn more
+                icon: icon-info
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\LearnMores
             feedbacks:
                 name: Block feedbacks
                 icon: icon-database
