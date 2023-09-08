@@ -11,14 +11,14 @@ fields:
         span: adaptive
         tab: Blocks
         groups:
-            electrification_main:
+            solar_edge_main:
                 name: Main section
                 description: Main section
                 icon: octo-icon-picture
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\ElectrificationMain
+                        source: Blocks\SolarEdgeMain
             electrification_works:
                 name: Block how it works
                 description: Block how it works
