@@ -65,6 +65,27 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\LearnMores
+            documents:
+                name: Block documents
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Documents
+            document:
+                name: Block document
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Document
+            document_img:
+                name: Block document img
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\DocumentImg
             demand_response_partners:
                 name: Demand response partners
                 description: Block demand response partners
