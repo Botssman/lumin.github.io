@@ -3523,7 +3523,6 @@ body {
 }
 
 .b-image.b-image_yellow-fon.v-2 {
-  z-index: 0;
   height: 100%;
   opacity: .6;
   mix-blend-mode: multiply;
