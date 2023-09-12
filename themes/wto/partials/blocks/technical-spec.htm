@@ -10,7 +10,7 @@
 				{% for item in block.technical_spec_tab %}
 				<a data-w-tab="Tab 1" class="b-tabs__link b-tabs__link_pd_0_10 w-inline-block w-tab-link w--current">
 					<div>
-						Grid Services
+						{{ item.tab_name }}
 					</div>
 				</a>
 				{% endfor %}
@@ -18,214 +18,51 @@
 			<div class="b-tabs__content b-tabs__content_min w-tab-content">
 				{% for item in block.block.technical_spec_tab %}
 				<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active">
-					<div class="b-form w-form">
-						<form id="email-form" name="email-form" data-name="Форма" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a40f" data-wf-element-id="2a960760-beb7-55b0-929e-4e0d413d3bc4">
-							<div class="b-columns">
-								<div class="b-columns__col b-columns__col_60 tb_100 tb_mg-bt_30 v-2">
-									<div class="b-image-wrapper">
-										<div id="drag" class="drag">
-											<div class="icon">
-												<img loading="lazy" src="{{ 'assets/images/left-and-right-arrows.png'|theme }}" alt="">
-											</div>
-										</div>
-										<div id="before" class="before">
-											<div id="before" class="before_mobile"></div>
-										</div>
-										<div id="after" class="after">
-											<div id="after" class="after_mobile"></div>
-										</div>
-									</div>
-									<img loading="lazy" src="{{ 'assets/images/element2.svg'|theme }}" alt="" class="b-image b-image_element2">
-								</div>
-								<div class="b-columns__col b-columns__col_40 b-columns__col_pd-lt_60 tb_100">
-									<div class="h-wrap h-wrap_mg-bt_30">
-										<div class="h-wrap h-wrap_border_down">
-											<div class="b-text b-text_size_20 b-text_bold">
-												Installation
-											</div>
-										</div>
-										<ul role="list" class="b-list">
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Type
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													Surface-Mount; Outdoor
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Installer Qualification
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													Local Electrical Code and Lumin Certified Installer
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													NEMA Rating
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													Type 4X
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Temperature
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													-30°C to 70°C (-22°F to 158°F)
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Humidity
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													< 100% RH
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Altitude
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													< 3000 m
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Dimensions
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													55.8 cm x 48.26 cm x 13.97 cm
-													<br>
-													(22 in x 19 in x 5.5 in)
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Weight
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													12 kg (271b)
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="h-wrap h-wrap_mg-bt_30">
-										<div class="h-wrap h-wrap_border_down">
-											<div class="b-text b-text_size_20 b-text_bold">
-												Electrical system
-											</div>
-										</div>
-										<ul role="list" class="b-list">
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													AC Voltage
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													120/240 V, 50-60 Hz
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Supply Breaker Rating
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													15-20 A
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Voltage Fluctuations
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													+/- 10% from Nominal
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Overvoltage
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													Category Ill (Building Wiring)
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Max. Load Breaker Ratings
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													60A Per Line x 6 Lines and 30 A Per Line x 6 Lines
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="h-wrap h-wrap_mg-bt_30">
-										<div class="h-wrap h-wrap_border_down">
-											<div class="b-text b-text_size_20 b-text_bold">
-												Connectivity & Access
-											</div>
-										</div>
-										<ul role="list" class="b-list">
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Connection Options
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													Wi-H, Ethernet, Mod bus, USB
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Applications
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													i05, Android, and Web
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Data
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													1-Second Granularity (Averaged from 15 kHz)
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Load Controls
-												</div>
-												<div class="b-text b-text_gray b-text_semibold">
-													Direct, Schedules, and Modes
-												</div>
-											</li>
-											<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
-												<div class="b-text b-text_bold">
-													Max. Load Breaker Ratings
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="h-wrap h-wrap_mg-tp_20">
-										<a href="#" class="b-button b-button_width_210 mob_center w-button">
-											Full Tech Specs
-										</a>
+					<div class="b-columns">
+						<div class="b-columns__col b-columns__col_60 tb_100 tb_mg-bt_30 v-2">
+							<div class="b-image-wrapper">
+								<div id="drag" class="drag">
+									<div class="icon">
+										<img loading="lazy" src="{{ 'assets/images/left-and-right-arrows.png'|theme }}" alt="">
 									</div>
 								</div>
+								<div id="before" class="before" style="background-image: url('{{ item.image_before|media }}');">
+									<div id="before" class="before_mobile"></div>
+								</div>
+								<div id="after" class="after" style="background-image: url('{{ item.image_after|media }}');">
+									<div id="after" class="after_mobile"></div>
+								</div>
 							</div>
-						</form>
-						<div class="b-form__success-mes w-form-done">
-							<div>
-								Спасибо за заявку!
-								<br>
-								В ближайшее время мы свяжемся с вами
-							</div>
+							<img loading="lazy" src="{{ 'assets/images/element2.svg'|theme }}" alt="" class="b-image b-image_element2">
 						</div>
-						<div class="b-form__error-mes w-form-fail">
+						<div class="b-columns__col b-columns__col_40 b-columns__col_pd-lt_60 tb_100">
 							<div>
-								Ошибка! Что-то пошло не так.
+								{% for item in item..characteristics %}
+								<div class="h-wrap h-wrap_mg-bt_30">
+									<div class="h-wrap h-wrap_border_down">
+										<div class="b-text b-text_size_20 b-text_bold">
+											{{ item.characteristics_title }}
+										</div>
+									</div>
+									<ul role="list" class="b-list">
+										{% for item in item.list %}
+										<li class="b-list__item b-list__item_mg-bt_15 b-list__item_flex_v">
+											<div class="b-text b-text_bold">
+												{{ item.characteristics_name }}
+											</div>
+											<div class="b-text b-text_gray b-text_semibold">
+												{{ item.characteristics_text }}
+											</div>
+										</li>
+										{% endfor %}
+									</ul>
+								</div>
+								{% endfor %}
+							</div>
+							<div class="h-wrap h-wrap_mg-tp_20">
+								<a href="#" class="b-button b-button_width_210 mob_center w-button">
+									Full Tech Specs
+								</a>
 							</div>
 						</div>
 					</div>
