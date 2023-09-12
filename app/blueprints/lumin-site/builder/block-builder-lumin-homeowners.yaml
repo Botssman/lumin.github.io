@@ -67,6 +67,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ElectrificationQuiz
+            project:
+                name: Lsp project
+                description: Block project
+                icon: icon-calendar-check-o
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Project
             learn_mores:
                 name: Demand response learn more
                 description: Block demand response learn more
