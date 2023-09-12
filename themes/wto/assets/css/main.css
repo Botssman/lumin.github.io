@@ -3174,6 +3174,10 @@ body {
   padding-right: 24px;
 }
 
+.b-button.b-button_back.b-button_none-mg {
+  margin-right: 0;
+}
+
 .b-button.b-button_next {
   height: 44px;
   max-width: 94px;
@@ -3186,6 +3190,10 @@ body {
   margin-left: 10px;
   padding-left: 24px;
   padding-right: 34px;
+}
+
+.b-button.b-button_next.arrow-right.b-button_none-mg {
+  margin-left: 0;
 }
 
 .b-button.b_button_subscribe {
