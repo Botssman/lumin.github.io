@@ -2612,6 +2612,10 @@ body {
   text-align: center;
 }
 
+.h-wrap.h-wrap_align_center.h-wrap_mg-bt_90 {
+  margin-bottom: 90px;
+}
+
 .h-wrap.h-wrap_overflow_hidden {
   min-height: 200vh;
   flex: 0 auto;
@@ -3470,7 +3474,6 @@ body {
 
 .b-image {
   z-index: 1;
-  margin-bottom: 40px;
   position: relative;
 }
 
