@@ -5,8 +5,43 @@ handle: Blocks\Through\TechnicalSpec
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block technical specifications
-        comment: Editable in section settings
+    technical_spec_title:
+        label: Title
+        type: text
+        tab: Technical specifications
+    technical_spec_tab:
+        label: Tab
+        type: repeater
+        form:
+            fields:
+                tab_name:
+                    label: Tab name
+                    type: text
+                    span: left
+                image_before:
+                    label: Image before
+                    type: mediafinder
+                    mode: image
+                image_after:
+                    label: Image after
+                    type: mediafinder
+                    mode: image
+                characteristics:
+                    label: Characteristics
+                    type: repeater
+                    form:
+                        fields:
+                            characteristics_title:
+                                label: Characteristics title
+                                type: text
+                            list:
+                                label: Characteristics list
+                                type: repeater
+                                form:
+                                    fields:
+                                        characteristics_name:
+                                            label: Characteristics name
+                                            type: text
+                                        characteristics_text:
+                                            label: Characteristics desc
+                                            type: text
