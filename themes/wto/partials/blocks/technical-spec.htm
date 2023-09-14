@@ -8,7 +8,7 @@
 		<div data-duration-in="300" data-duration-out="100" data-current="Tab 2" data-easing="ease" class="b-tabs w-tabs">
 			<div class="b-tabs__menu b-tabs__menu_mg-bt_50 b-tabs__menu_align_center mob_mg-bt_20 w-tab-menu">
 				{% for item in block.technical_spec_tab %}
-				<a data-w-tab="Tab 1" class="b-tabs__link b-tabs__link_pd_0_10 w-inline-block w-tab-link">
+				<a data-w-tab="Tab 1" class="b-tabs__link b-tabs__link_pd_0_10 w-inline-block w-tab-link" data-tab-name="{{ item.tab_name }}">
 					<div>
 						{{ item.tab_name }}
 					</div>

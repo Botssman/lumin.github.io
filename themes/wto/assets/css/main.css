@@ -4024,6 +4024,7 @@ body {
 }
 
 .main.main_lsp {
+  padding-top: 0;
   overflow: visible;
 }
 
