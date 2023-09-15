@@ -27,22 +27,22 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\SolarEdgeWorks
-            # installers_map:
-            #     name: Installers map
-            #     description: Installers map
-            #     icon: icon-map
-            #     fields:
-            #         _mixin:
-            #             type: mixin
-            #             source: Blocks\InstallersMap
-            solar_edge_map:
-                name: Solar edge map
-                description: Block solar edge map
+            installers_map:
+                name: Installers map
+                description: Installers map
                 icon: icon-map
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\SolarEdgeMap
+                        source: Blocks\InstallersMap
+            # solar_edge_map:
+            #     name: Solar edge map
+            #     description: Block solar edge map
+            #     icon: icon-map
+            #     fields:
+            #         _mixin:
+            #             type: mixin
+            #             source: Blocks\SolarEdgeMap
             electrification_integrates:
                 name: Electrification integrates
                 description: Block electrification integrates
