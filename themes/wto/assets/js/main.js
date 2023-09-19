@@ -16540,6 +16540,7 @@
         OBJECT_VALUE: "OBJECT_VALUE",
         PLUGIN_LOTTIE: "PLUGIN_LOTTIE",
         PLUGIN_SPLINE: "PLUGIN_SPLINE",
+        PLUGIN_VARIABLE: "PLUGIN_VARIABLE",
         GENERAL_DISPLAY: "GENERAL_DISPLAY",
         GENERAL_START_ACTION: "GENERAL_START_ACTION",
         GENERAL_CONTINUOUS_ACTION: "GENERAL_CONTINUOUS_ACTION",
@@ -18098,6 +18099,200 @@
     }
   });
 
+  // packages/systems/ix2/plugins/IX2Variable.js
+  var require_IX2Variable = __commonJS({
+    "packages/systems/ix2/plugins/IX2Variable.js"(exports2) {
+      "use strict";
+      Object.defineProperty(exports2, "__esModule", {
+        value: true
+      });
+      exports2.getPluginOrigin = exports2.getPluginDuration = exports2.getPluginDestination = exports2.getPluginConfig = exports2.createPluginInstance = exports2.clearPlugin = void 0;
+      exports2.normalizeColor = normalizeColor;
+      exports2.renderPlugin = void 0;
+      function normalizeColor(inputColor) {
+        let red;
+        let green;
+        let blue;
+        let alpha = 1;
+        const cleanColor = inputColor.replace(/\s/g, "").toLowerCase();
+        if (cleanColor.startsWith("#")) {
+          const hex = cleanColor.substring(1);
+          if (hex.length === 3) {
+            red = parseInt(hex[0] + hex[0], 16);
+            green = parseInt(hex[1] + hex[1], 16);
+            blue = parseInt(hex[2] + hex[2], 16);
+          } else if (hex.length === 6) {
+            red = parseInt(hex.substring(0, 2), 16);
+            green = parseInt(hex.substring(2, 4), 16);
+            blue = parseInt(hex.substring(4, 6), 16);
+          }
+        } else if (cleanColor.startsWith("rgba")) {
+          const rgbaValues = cleanColor.match(/rgba\(([^)]+)\)/)[1].split(",");
+          red = parseInt(rgbaValues[0], 10);
+          green = parseInt(rgbaValues[1], 10);
+          blue = parseInt(rgbaValues[2], 10);
+          alpha = parseFloat(rgbaValues[3]);
+        } else if (cleanColor.startsWith("rgb")) {
+          const rgbValues = cleanColor.match(/rgb\(([^)]+)\)/)[1].split(",");
+          red = parseInt(rgbValues[0], 10);
+          green = parseInt(rgbValues[1], 10);
+          blue = parseInt(rgbValues[2], 10);
+        } else if (cleanColor.startsWith("hsla")) {
+          const hslaValues = cleanColor.match(/hsla\(([^)]+)\)/)[1].split(",");
+          const h = parseFloat(hslaValues[0]);
+          const s = parseFloat(hslaValues[1].replace("%", "")) / 100;
+          const l = parseFloat(hslaValues[2].replace("%", "")) / 100;
+          alpha = parseFloat(hslaValues[3]);
+          const C = (1 - Math.abs(2 * l - 1)) * s;
+          const X = C * (1 - Math.abs(h / 60 % 2 - 1));
+          const m = l - C / 2;
+          let R;
+          let G;
+          let B;
+          if (h >= 0 && h < 60) {
+            R = C;
+            G = X;
+            B = 0;
+          } else if (h >= 60 && h < 120) {
+            R = X;
+            G = C;
+            B = 0;
+          } else if (h >= 120 && h < 180) {
+            R = 0;
+            G = C;
+            B = X;
+          } else if (h >= 180 && h < 240) {
+            R = 0;
+            G = X;
+            B = C;
+          } else if (h >= 240 && h < 300) {
+            R = X;
+            G = 0;
+            B = C;
+          } else {
+            R = C;
+            G = 0;
+            B = X;
+          }
+          red = Math.round((R + m) * 255);
+          green = Math.round((G + m) * 255);
+          blue = Math.round((B + m) * 255);
+        } else if (cleanColor.startsWith("hsl")) {
+          const hslValues = cleanColor.match(/hsl\(([^)]+)\)/)[1].split(",");
+          const h = parseFloat(hslValues[0]);
+          const s = parseFloat(hslValues[1].replace("%", "")) / 100;
+          const l = parseFloat(hslValues[2].replace("%", "")) / 100;
+          const C = (1 - Math.abs(2 * l - 1)) * s;
+          const X = C * (1 - Math.abs(h / 60 % 2 - 1));
+          const m = l - C / 2;
+          let R;
+          let G;
+          let B;
+          if (h >= 0 && h < 60) {
+            R = C;
+            G = X;
+            B = 0;
+          } else if (h >= 60 && h < 120) {
+            R = X;
+            G = C;
+            B = 0;
+          } else if (h >= 120 && h < 180) {
+            R = 0;
+            G = C;
+            B = X;
+          } else if (h >= 180 && h < 240) {
+            R = 0;
+            G = X;
+            B = C;
+          } else if (h >= 240 && h < 300) {
+            R = X;
+            G = 0;
+            B = C;
+          } else {
+            R = C;
+            G = 0;
+            B = X;
+          }
+          red = Math.round((R + m) * 255);
+          green = Math.round((G + m) * 255);
+          blue = Math.round((B + m) * 255);
+        }
+        if (Number.isNaN(red) || Number.isNaN(green) || Number.isNaN(blue)) {
+          `Invalid color in [ix2/lugins/IX2Variable.js] '${inputColor}'`;
+        }
+        return {
+          red,
+          green,
+          blue,
+          alpha
+        };
+      }
+      var getPluginConfig = (actionItemConfig, key2) => {
+        return actionItemConfig.value[key2];
+      };
+      exports2.getPluginConfig = getPluginConfig;
+      var getPluginDuration = () => {
+        return null;
+      };
+      exports2.getPluginDuration = getPluginDuration;
+      var getPluginOrigin = (refState, actionItem) => {
+        if (refState) {
+          return refState;
+        }
+        const destination = actionItem.config.value;
+        const objectId = actionItem.config.target.objectId;
+        const computedValue = getComputedStyle(document.documentElement).getPropertyValue(objectId);
+        if (destination.size != null) {
+          return {
+            size: parseInt(computedValue, 10)
+          };
+        }
+        if (destination.red != null && destination.green != null && destination.blue != null) {
+          return normalizeColor(computedValue);
+        }
+      };
+      exports2.getPluginOrigin = getPluginOrigin;
+      var getPluginDestination = (actionItemConfig) => {
+        return actionItemConfig.value;
+      };
+      exports2.getPluginDestination = getPluginDestination;
+      var createPluginInstance = () => {
+        return null;
+      };
+      exports2.createPluginInstance = createPluginInstance;
+      var renderPlugin = (_, refState, actionItem) => {
+        const objectId = actionItem.config.target.objectId;
+        const unit = actionItem.config.value.unit;
+        const {
+          PLUGIN_VARIABLE: props
+        } = refState;
+        const {
+          size,
+          red,
+          green,
+          blue,
+          alpha
+        } = props;
+        let value2;
+        if (size != null) {
+          value2 = size + unit;
+        }
+        if (red != null && blue != null && green != null && alpha != null) {
+          value2 = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+        }
+        if (value2 != null) {
+          document.documentElement.style.setProperty(objectId, value2);
+        }
+      };
+      exports2.renderPlugin = renderPlugin;
+      var clearPlugin = (ref, actionItem) => {
+        const objectId = actionItem.config.target.objectId;
+        document.documentElement.style.removeProperty(objectId);
+      };
+      exports2.clearPlugin = clearPlugin;
+    }
+  });
+
   // packages/systems/ix2/plugins/index.js
   var require_plugins = __commonJS({
     "packages/systems/ix2/plugins/index.js"(exports2) {
@@ -18112,7 +18307,8 @@
       var _constants = require_constants();
       var lottie2 = _interopRequireWildcard(require_IX2Lottie());
       var spline = _interopRequireWildcard(require_IX2Spline());
-      var pluginMethodMap = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, (0, _extends2.default)({}, lottie2)], [_constants.ActionTypeConsts.PLUGIN_SPLINE, (0, _extends2.default)({}, spline)]]);
+      var variable = _interopRequireWildcard(require_IX2Variable());
+      var pluginMethodMap = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, (0, _extends2.default)({}, lottie2)], [_constants.ActionTypeConsts.PLUGIN_SPLINE, (0, _extends2.default)({}, spline)], [_constants.ActionTypeConsts.PLUGIN_VARIABLE, (0, _extends2.default)({}, variable)]]);
       exports2.pluginMethodMap = pluginMethodMap;
     }
   });
@@ -18380,7 +18576,7 @@
       exports2.clearObjectCache = clearObjectCache;
       exports2.getActionListProgress = getActionListProgress;
       exports2.getAffectedElements = getAffectedElements;
-      exports2.getComputedStyle = getComputedStyle;
+      exports2.getComputedStyle = getComputedStyle2;
       exports2.getDestinationValues = getDestinationValues;
       exports2.getElementId = getElementId;
       exports2.getInstanceId = getInstanceId;
@@ -18692,7 +18888,7 @@
           return queryDocument(finalSelector);
         }
       }
-      function getComputedStyle({
+      function getComputedStyle2({
         element,
         actionItem
       }) {
@@ -19293,13 +19489,14 @@
         const {
           actionItems
         } = actionGroup;
-        actionItems.forEach(({
-          actionTypeId,
-          config
-        }) => {
+        actionItems.forEach((actionItem) => {
+          const {
+            actionTypeId,
+            config
+          } = actionItem;
           let clearElement;
           if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
-            clearElement = (0, _IX2VanillaPlugins.clearPlugin)(actionTypeId);
+            clearElement = (ref) => (0, _IX2VanillaPlugins.clearPlugin)(actionTypeId)(ref, actionItem);
           } else {
             clearElement = processElementByType({
               effect: clearStyleProp,
@@ -19497,6 +19694,9 @@
         }
         if (target.pluginElement && target.objectId) {
           return target.pluginElement + BAR_DELIMITER + target.objectId;
+        }
+        if (target.objectId) {
+          return target.objectId;
         }
         const {
           id = "",
@@ -19753,7 +19953,11 @@
             } = actionItem;
             const renderType = getRenderType(actionTypeId);
             const styleProp = getStyleProp(renderType, actionTypeId);
-            const destinationKeys = Object.keys(destination).filter((key2) => destination[key2] != null);
+            const destinationKeys = Object.keys(destination).filter((key2) => (
+              // Skip null destination values
+              destination[key2] != null && // Skip string destination values
+              typeof destination[key2] !== "string"
+            ));
             const {
               easing
             } = actionItem.config;
@@ -22095,7 +22299,7 @@
         renderHTMLElement,
         clearAllStyles,
         getMaxDurationItemIndex,
-        getComputedStyle,
+        getComputedStyle: getComputedStyle2,
         getInstanceOrigin,
         reduceListToGroup,
         shouldNamespaceEventParameter,
@@ -22906,7 +23110,7 @@
             ) : null;
             groupStartResult = true;
             const isCarrier = carrierIndex === actionIndex && elementIndex === 0;
-            const computedStyle = getComputedStyle({
+            const computedStyle = getComputedStyle2({
               element,
               actionItem
             });
