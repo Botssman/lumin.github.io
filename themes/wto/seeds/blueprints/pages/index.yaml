@@ -72,8 +72,8 @@ fields:
             lumin_one_edge:
                 name: lumin-one-edge
                 fields:
-                    lumin_one_edge_title_|_raw:
-                        label: 'lumin_one_edge_title | raw'
+                    lumin_one_edge_title|raw:
+                        label: lumin_one_edge_title|raw
                         type: text
                     lumin_one_edge_lists:
                         label: lumin_one_edge_lists
