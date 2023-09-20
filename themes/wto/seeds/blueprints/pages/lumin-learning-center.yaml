@@ -91,8 +91,8 @@ fields:
                     question_title:
                         label: question_title
                         type: text
-                    question_subtitle_|_raw:
-                        label: 'question_subtitle | raw'
+                    question_subtitle|raw:
+                        label: question_subtitle|raw
                         type: text
                     question_link_btn:
                         label: question_link_btn
