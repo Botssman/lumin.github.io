@@ -97,8 +97,8 @@ fields:
                     lumin_help_title|raw:
                         label: lumin_help_title|raw
                         type: text
-                    lumin_help_text_btn_|_raw:
-                        label: 'lumin_help_text_btn | raw'
+                    lumin_help_text_btn|raw:
+                        label: lumin_help_text_btn|raw
                         type: text
                     lumin_help_image:
                         label: lumin_help_image
