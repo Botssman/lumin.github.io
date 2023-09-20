@@ -435,9 +435,6 @@ fields:
                     lsp_installer_title:
                         label: lsp_installer_title
                         type: text
-                    lsp_installer_subtitle_|_raw:
-                        label: 'lsp_installer_subtitle | raw'
-                        type: text
                     lsp_installer_text:
                         label: lsp_installer_text
                         type: text
