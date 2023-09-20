@@ -58,8 +58,8 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    solar_edge_main_title_|_raw:
-                        label: 'solar_edge_main_title | raw'
+                    solar_edge_main_title|raw:
+                        label: solar_edge_main_title|raw
                         type: text
                     solar_edge_main_subtitle:
                         label: solar_edge_main_subtitle

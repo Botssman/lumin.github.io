@@ -56,8 +56,8 @@ fields:
             updates:
                 name: updates
                 fields:
-                    updates_title_|_raw:
-                        label: 'updates_title | raw'
+                    updates_title|raw:
+                        label: updates_title|raw
                         type: text
                     updates_subtitle_|_raw:
                         label: 'updates_subtitle | raw'
