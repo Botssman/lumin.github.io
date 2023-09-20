@@ -4,8 +4,7 @@ description = "Footer Code"
 ==
 <script src='//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js'></script>
 <script>
-(function () {
-  const selectors = {
+const selectors = {
     slider: ".b-slider.w-slider", // общий контейнер слайдов и кнопок
     originalPrev: ".w-slider-arrow-left", // кнопка Назад внутри контейнера
     originalNext: ".w-slider-arrow-right", // кнопка Вперед внутри контейнера
@@ -21,8 +20,18 @@ description = "Footer Code"
   function initSlider($slider) {
       if (!$slider) return;
 
-      const $originalPrev = $slider.querySelector(selectors.originalPrev);
-      const $originalNext = $slider.querySelector(selectors.originalNext);
+      const $originalPrevs = Array.from($slider.querySelectorAll(selectors.originalPrev));
+      const $originalNexts = Array.from($slider.querySelectorAll(selectors.originalNext));
+
+      const $originalPrev = $originalPrevs.find(function($btn) {
+          const $btnSlider = $btn.closest(selectors.slider)
+          return $btnSlider === $slider;
+      })
+
+      const $originalNext = $originalNexts.find(function($btn) {
+          const $btnSlider = $btn.closest(selectors.slider)
+          return $btnSlider === $slider;
+      })
       
       $slider.addEventListener('click', function(e) {
           if (e.target.closest(selectors.prev)) {
@@ -43,5 +52,4 @@ description = "Footer Code"
   } else {
     init();
   }
-})();
 </script>
