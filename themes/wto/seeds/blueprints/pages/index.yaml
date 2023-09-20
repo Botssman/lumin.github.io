@@ -133,8 +133,8 @@ fields:
                     lumin_charging_subtitle:
                         label: lumin_charging_subtitle
                         type: text
-                    lumin_charging_title_|_raw:
-                        label: 'lumin_charging_title | raw'
+                    lumin_charging_title|raw:
+                        label: lumin_charging_title|raw
                         type: text
                     lumin_charging_text_btn:
                         label: lumin_charging_text_btn
