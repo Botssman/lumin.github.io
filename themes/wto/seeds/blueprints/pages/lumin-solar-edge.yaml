@@ -282,8 +282,8 @@ fields:
                                 title_list:
                                     label: title_list
                                     type: text
-                                text_list_|_raw:
-                                    label: 'text_list | raw'
+                                text_list|raw:
+                                    label: text_list|raw
                                     type: text
             have_questions:
                 name: have-questions
