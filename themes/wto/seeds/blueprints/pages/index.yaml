@@ -119,8 +119,8 @@ fields:
                     lumin_backup_title:
                         label: lumin_backup_title
                         type: text
-                    lumin_backup_text_btn_|_raw:
-                        label: 'lumin_backup_text_btn | raw'
+                    lumin_backup_text_btn|raw:
+                        label: lumin_backup_text_btn|raw
                         type: text
             lumin_charging:
                 name: lumin-charging
