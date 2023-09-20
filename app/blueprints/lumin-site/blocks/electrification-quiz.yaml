@@ -40,6 +40,9 @@ fields:
                                                 type: mediafinder
                                                 mode: image
                                                 maxItems: 1
+                                            quiz_id:
+                                                label: Id model
+                                                type: text
                         quiz_step_2:
                             name: Quiz step 2
                             description: Quiz step 2
