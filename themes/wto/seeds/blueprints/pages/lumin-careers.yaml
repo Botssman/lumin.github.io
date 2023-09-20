@@ -1,0 +1,64 @@
+uuid: page_lumin-careers
+handle: page_lumin-careers
+type: single
+name: 'lumin Careers'
+drafts: false
+navigation:
+    label: 'lumin Careers'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            careers_main:
+                name: careers-main
+                fields:
+                    careers_main_title:
+                        label: careers_main_title
+                        type: text
+                    careers_main_subtitle:
+                        label: careers_main_subtitle
+                        type: text
+                    careers_main_image:
+                        label: careers_main_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            careers_diversity:
+                name: careers-diversity
+                fields:
+                    careers_diversity_title:
+                        label: careers_diversity_title
+                        type: text
+                    careers_diversity_subtitle:
+                        label: careers_diversity_subtitle
+                        type: text
+                    careers_diversity_lists:
+                        label: careers_diversity_lists
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title:
+                                    label: Название
+                                    type: text
+                                text:
+                                    label: Текст
+                                    type: text
+            updates:
+                name: updates
+                fields:
+                    updates_title_|_raw:
+                        label: 'updates_title | raw'
+                        type: text
+                    updates_subtitle_|_raw:
+                        label: 'updates_subtitle | raw'
+                        type: text

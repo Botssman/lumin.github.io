@@ -1,0 +1,294 @@
+uuid: page_lumin-lsp
+handle: page_lumin-lsp
+type: single
+name: 'Lumin LSP'
+drafts: false
+navigation:
+    label: 'Lumin LSP'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            lsp_home:
+                name: lsp-home
+                fields:
+                    lsp_home_title:
+                        label: lsp_home_title
+                        type: text
+                    lsp_home_subtitle:
+                        label: lsp_home_subtitle
+                        type: text
+                    lsp_home_image:
+                        label: lsp_home_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lsp_home_link:
+                        label: lsp_home_link
+                        type: text
+                    lsp_home_text_btn_video:
+                        label: lsp_home_text_btn_video
+                        type: text
+            lsp_new_device:
+                name: lsp-new-device
+                fields:
+                    lsp_new_device_rep:
+                        label: lsp_new_device_rep
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    displayMode: builder
+                                    groups:
+                                        lsp_new_device_title:
+                                            name: lsp_new_device_title
+                                            fields:
+                                                title:
+                                                    label: Название
+                                                    type: text
+                                        lsp_new_device_list:
+                                            name: lsp_new_device_list
+                                            fields:
+                                                title:
+                                                    label: Название
+                                                    type: text
+                                                title_list:
+                                                    label: title_list
+                                                    type: text
+                                                lists:
+                                                    label: lists
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            text_list: { label: text_list, type: text }
+                    lsp_new_device_mob_rep:
+                        label: lsp_new_device_mob_rep
+                        type: repeater
+                        form:
+                            fields:
+                                title:
+                                    label: Название
+                                    type: text
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                lists:
+                                    label: lists
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            text_list:
+                                                label: text_list
+                                                type: text
+            lsp_integrates:
+                name: lsp-integrates
+                fields:
+                    lsp_integrates_text:
+                        label: lsp_integrates_text
+                        type: text
+                    lsp_integrates_image:
+                        label: lsp_integrates_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            lsp_map:
+                name: lsp-map
+                fields:
+                    lsp_map_title:
+                        label: lsp_map_title
+                        type: text
+                    lsp_map_image_mushroom:
+                        label: lsp_map_image_mushroom
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lsp_map_image_marker:
+                        label: lsp_map_image_marker
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lsp_map_image_map:
+                        label: lsp_map_image_map
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            lsp_installer:
+                name: lsp-installer
+                fields:
+                    lsp_installer_image:
+                        label: lsp_installer_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lsp_installer_title:
+                        label: lsp_installer_title
+                        type: text
+                    lsp_installer_subtitle_|_raw:
+                        label: 'lsp_installer_subtitle | raw'
+                        type: text
+                    lsp_installer_text:
+                        label: lsp_installer_text
+                        type: text
+                    lsp_installer_text_btn:
+                        label: lsp_installer_text_btn
+                        type: text
+            lsp_landscape:
+                name: lsp-landscape
+                fields:
+                    lsp_landscape_title:
+                        label: lsp_landscape_title
+                        type: text
+                    lsp_landscape_subtitle:
+                        label: lsp_landscape_subtitle
+                        type: text
+                    lsp_landscape_rep:
+                        label: lsp_landscape_rep
+                        type: repeater
+                        form:
+                            fields:
+                                row_|_raw:
+                                    label: 'row | raw'
+                                    type: text
+            project:
+                name: project
+                fields:
+                    project_title:
+                        label: project_title
+                        type: text
+            technical_spec:
+                name: technical-spec
+                fields:
+                    technical_spec_title:
+                        label: technical_spec_title
+                        type: text
+                    technical_spec_tab:
+                        label: technical_spec_tab
+                        type: repeater
+                        form:
+                            fields:
+                                tab_name:
+                                    label: tab_name
+                                    type: text
+                                image_before:
+                                    label: image_before
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                image_after:
+                                    label: image_after
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                characteristics:
+                                    label: characteristics
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            characteristics_title:
+                                                label: characteristics_title
+                                                type: text
+                                            list:
+                                                label: Список
+                                                type: repeater
+                                                form:
+                                                    fields:
+                                                        characteristics_name:
+                                                            label: characteristics_name
+                                                            type: text
+                                                        characteristics_text:
+                                                            label: characteristics_text
+                                                            type: text
+            estimator:
+                name: estimator
+                fields:
+                    estimator_title:
+                        label: estimator_title
+                        type: text
+                    estimator_subtitle:
+                        label: estimator_subtitle
+                        type: text
+            questions:
+                name: questions
+                fields:
+                    question_title:
+                        label: question_title
+                        type: text
+                    question_subtitle_|_raw:
+                        label: 'question_subtitle | raw'
+                        type: text
+                    question_link_btn:
+                        label: question_link_btn
+                        type: text
+                    question_lists:
+                        label: question_lists
+                        type: repeater
+                        form:
+                            fields:
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list_|_raw:
+                                    label: 'text_list | raw'
+                                    type: text
+            have_questions:
+                name: have-questions
+                fields:
+                    have_questions_title:
+                        label: have_questions_title
+                        type: text
+                    have_questions_subtitle:
+                        label: have_questions_subtitle
+                        type: text
+                    have_questions_text_btn:
+                        label: have_questions_text_btn
+                        type: text

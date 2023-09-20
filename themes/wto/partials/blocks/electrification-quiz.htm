@@ -7,7 +7,7 @@
 		</div>
 		<div class="b-form w-form">
 			<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a413" data-wf-element-id="68e07702-c5fc-8759-bb9a-fdd3646be354">
-				<div data-delay="4000" data-animation="cross" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+				<div data-delay="4000" data-animation="cross" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 					<div class="b-slider__mask w-slider-mask">
 						{% for item in block.electrification_quiz_rep %}
 						<div class="b-slider__slide w-slide">
@@ -30,7 +30,7 @@
 											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
 												<div class="b-flex">
 													{% for item in block.list %}
-													<label class="b-radio b-radio_company w-radio">
+													<label data-w-id="68e07702-c5fc-8759-bb9a-fdd3646be364" class="b-radio b-radio_company w-radio">
 														<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check w-radio-input"></div>
 														<input type="radio" id="Radio-1" name="radio-5" value="Radio 1" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
 														<img alt="" src="{{ item.image|media }}" loading="lazy" class="image-2">
@@ -64,7 +64,7 @@
 													{{ block.desc }}
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider autel">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.autel %}
@@ -86,16 +86,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider aiproad">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.aiproad %}
@@ -117,16 +117,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider chargepoint">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.chargepoint %}
@@ -148,16 +148,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider emporia">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.emporia %}
@@ -179,16 +179,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider grizzlie">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.grizzlie %}
@@ -210,16 +210,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider juicebox">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.juicebox %}
@@ -241,16 +241,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider lectron">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.lectron %}
@@ -272,16 +272,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider stokevoltaics">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.stokevoltaics %}
@@ -303,16 +303,16 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider wallbox">
 												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
 														{% for item in block.wallbox %}
@@ -334,11 +334,11 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left w-slider-arrow-left">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
-													<div class="b-slider__arrow-right w-slider-arrow-right">
-														<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
+													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
 													</div>
 													<div class="b-slider__nav w-slider-nav w-round"></div>
 												</div>

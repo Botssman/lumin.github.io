@@ -1,0 +1,56 @@
+uuid: shop_product
+handle: shop_product
+type: entry
+name: Товар
+drafts: false
+customMessages:
+    buttonCreate: Новый товар
+
+primaryNavigation:
+    label: Магазин
+    icon: icon-shopping-cart
+    order: 210
+
+navigation:
+    label: Товары
+    parent: shop_product
+    icon: icon-cube
+    order: 10
+
+fields:
+    title:
+        label: Название
+        span: full
+
+    category:
+        label: Категория
+        commentAbove: "Выберите категорию товара"
+        type: entries
+        maxItems: 1
+        displayMode: recordfinder
+        source: shop_category
+
+    price:
+        label: Цена
+        span: left
+
+    price_sale:
+        label: Цена со скидкой
+        span: right
+
+    short_desc:
+        label: Краткое описание
+        type: textarea
+        size: tiny
+        span: full
+
+    description:
+        label: Описание
+        type: richeditor
+        size: tiny
+
+    image:
+        label: Изображение
+        type: mediafinder
+        mode: image
+        maxItems: 1

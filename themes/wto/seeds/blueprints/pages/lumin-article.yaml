@@ -1,0 +1,91 @@
+uuid: page_lumin-article
+handle: page_lumin-article
+type: single
+name: lumin-Article
+drafts: false
+navigation:
+    label: lumin-Article
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    title:
+        label: Название
+        type: text
+    published_at_date|date_j_m_y:
+        label: 'published_at_date|date(''j M Y'')'
+        type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            title:
+                label: Название
+                type: text
+            list:
+                label: Список
+                type: repeater
+                form:
+                    fields:
+                        number:
+                            label: Число
+                            type: text
+                        text:
+                            label: Текст
+                            type: text
+                        text_list:
+                            label: text_list
+                            type: text
+            text_|_raw:
+                label: 'text | raw'
+                type: text
+            image:
+                label: Изображение
+                type: mediafinder
+                mode: image
+                maxItems: '1'
+            link_video:
+                label: link_video
+                type: text
+            image_video:
+                label: image_video
+                type: mediafinder
+                mode: image
+                maxItems: '1'

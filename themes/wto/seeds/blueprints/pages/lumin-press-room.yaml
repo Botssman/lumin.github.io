@@ -1,0 +1,128 @@
+uuid: page_lumin-press-room
+handle: page_lumin-press-room
+type: single
+name: Lumin-press-room
+drafts: false
+navigation:
+    label: Lumin-press-room
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            press_room_posts:
+                name: press-room-posts
+                fields:
+                    press_room_posts_title:
+                        label: press_room_posts_title
+                        type: text
+                    press_room_posts_subtitle:
+                        label: press_room_posts_subtitle
+                        type: text
+            press_room_top_product:
+                name: press-room-top-product
+                fields:
+                    press_room_top:
+                        label: press_room_top
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title_|_raw:
+                                    label: 'title | raw'
+                                    type: text
+                                text:
+                                    label: Текст
+                                    type: text
+            press_room_media_kit:
+                name: press-room-media-kit
+                fields:
+                    press_room_media_kit_title:
+                        label: press_room_media_kit_title
+                        type: text
+                    press_room_media_kit_subtitle:
+                        label: press_room_media_kit_subtitle
+                        type: text
+                    press_room_media_kit_rep:
+                        label: press_room_media_kit_rep
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list:
+                                    label: text_list
+                                    type: text
+                                text_link_list:
+                                    label: text_link_list
+                                    type: text
+                                link_list:
+                                    label: link_list
+                                    type: text
+                    press_room_media_kit_image:
+                        label: press_room_media_kit_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            press_room_pr:
+                name: press-room-pr
+                fields:
+                    press_room_pr_title:
+                        label: press_room_pr_title
+                        type: text
+                    press_room_pr_subtitle:
+                        label: press_room_pr_subtitle
+                        type: text
+                    press_room_pr_text_btn:
+                        label: press_room_pr_text_btn
+                        type: text
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text

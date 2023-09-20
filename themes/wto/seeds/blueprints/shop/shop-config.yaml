@@ -1,0 +1,51 @@
+uuid: shop_config
+handle: shop_config
+type: global
+name: Настройки
+
+navigation:
+  parent: shop_product
+  label: Настройки
+  icon: icon-credit-card-alt
+  order: 50
+
+fields:
+  order_email:
+    label: Емейл для заказов
+    tab: Общие настройки
+  price_format:
+    label: Формат цены
+    type: text
+    span: left
+    tab: Общие настройки
+  price_sign:
+    label: Символ валюты
+    type: text
+    span: right
+    tab: Общие настройки
+  delivery:
+    label: Виды доставки
+    type: repeater
+    prompt: Добавить вид доставки
+    tab: Доставка
+    form:
+      fields:
+        name:
+          label: Название
+        description:
+          label: Описание
+          type: textarea
+          size: tiny
+  payment:
+    label: Виды оплаты
+    type: repeater
+    prompt: Добавить вид оплаты
+    tab: Оплата
+    form:
+      fields:
+        name:
+          label: Название
+        description:
+          label: Описание
+          type: textarea
+          size: tiny

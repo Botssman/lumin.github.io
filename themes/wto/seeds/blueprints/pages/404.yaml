@@ -1,0 +1,30 @@
+uuid: page_404
+handle: page_404
+type: single
+name: 'Not Found'
+drafts: false
+navigation:
+    label: 'Not Found'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    image_fon_|_raw:
+        label: 'image_fon | raw'
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    image:
+        label: Изображение
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    text_|_raw:
+        label: 'text | raw'
+        type: text
+    subtitle:
+        label: Подзаголовок
+        type: text
+    text_btn:
+        label: text_btn
+        type: text

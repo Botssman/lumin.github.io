@@ -1,0 +1,74 @@
+uuid: shop_order
+handle: shop_order
+type: stream
+name: Заказ
+drafts: false
+customMessages:
+    buttonCreate: Новый заказ
+
+navigation:
+    parent: shop_product
+    label: Заказы
+    icon: icon-shopping-bag
+    order: 30
+
+fields:
+    id:
+        label: Номер заказа
+    title:
+        default: Новый заказ
+        type: text
+        label: Номер заказа
+    status:
+        default: Новый
+        type: dropdown
+        label: Статус заказа
+        options:
+            - Новый
+            - В обработке
+            - Оплачен
+            - Отправлен
+            - Выполнен
+            - Возврат
+            - Закрыт
+    client_name:
+        label: Имя клиента
+        type: text
+    client_email:
+        label: Емейл клиента
+        type: text
+    client_phone:
+        label: Телефон клиента
+        type: text
+    content:
+        label: Содержание заказа
+        type: textarea
+        size: small
+    # items:
+    #     label: Содержание заказа
+    #     type: repeater
+    #     form:
+    #         fields:
+    #             title:
+    #                 label: Название товара
+    #                 span: left
+    #             price:
+    #                 label: Цена
+    #                 span: right
+    #             qty:
+    #                 label: Количество
+    #                 span: left
+    #             total:
+    #                 label: Итого
+    #                 span: right
+    total:
+        label: Сумма заказа
+        type: text
+        size: small
+    comment:
+        label: Комментарий
+        type: textarea
+        size: small
+    politic_accept:
+        label: Согласие с политикой конфиденциальности
+        type: text

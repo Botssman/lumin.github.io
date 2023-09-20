@@ -1,0 +1,81 @@
+uuid: page_lumin-our-blog
+handle: page_lumin-our-blog
+type: single
+name: lumin-our-blog
+drafts: false
+navigation:
+    label: lumin-our-blog
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            our_blog_posts:
+                name: our-blog-posts
+                fields:
+                    our_blog_posts_title:
+                        label: our_blog_posts_title
+                        type: text
+                    our_blog_posts_subtitle:
+                        label: our_blog_posts_subtitle
+                        type: text
+                    banner|media:
+                        label: banner|media
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    published_at_date|date_j_m_y:
+                        label: 'published_at_date|date(''j M Y'')'
+                        type: text
+                    title:
+                        label: Название
+                        type: text
+            updates:
+                name: updates
+                fields:
+                    updates_title_|_raw:
+                        label: 'updates_title | raw'
+                        type: text
+                    updates_subtitle_|_raw:
+                        label: 'updates_subtitle | raw'
+                        type: text

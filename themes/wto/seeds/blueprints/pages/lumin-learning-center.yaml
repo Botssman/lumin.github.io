@@ -1,0 +1,131 @@
+uuid: page_lumin-learning-center
+handle: page_lumin-learning-center
+type: single
+name: 'Lumin Learning Center'
+drafts: false
+navigation:
+    label: 'Lumin Learning Center'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            learning_center_main:
+                name: learning-center-main
+                fields:
+                    learning_center_main_image:
+                        label: learning_center_main_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    learning_center_main_title:
+                        label: learning_center_main_title
+                        type: text
+                    learning_center_main_subtitle:
+                        label: learning_center_main_subtitle
+                        type: text
+                    learning_center_main_text_btn:
+                        label: learning_center_main_text_btn
+                        type: text
+                    learning_center_main_link_btn:
+                        label: learning_center_main_link_btn
+                        type: text
+            learning_center_tip:
+                name: learning-center-tip
+                fields:
+                    learning_center_tip_title:
+                        label: learning_center_tip_title
+                        type: text
+                    learning_center_tip_subtitle:
+                        label: learning_center_tip_subtitle
+                        type: text
+            learning_center_freshdesk:
+                name: learning-center-freshdesk
+                fields:
+                    learning_center_freshdesk_title:
+                        label: learning_center_freshdesk_title
+                        type: text
+            questions:
+                name: questions
+                fields:
+                    question_title:
+                        label: question_title
+                        type: text
+                    question_subtitle_|_raw:
+                        label: 'question_subtitle | raw'
+                        type: text
+                    question_link_btn:
+                        label: question_link_btn
+                        type: text
+                    question_lists:
+                        label: question_lists
+                        type: repeater
+                        form:
+                            fields:
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list_|_raw:
+                                    label: 'text_list | raw'
+                                    type: text
+            learning_center_community:
+                name: learning-center-community
+                fields:
+                    learning_center_community_title:
+                        label: learning_center_community_title
+                        type: text
+                    learning_center_community_subtitle:
+                        label: learning_center_community_subtitle
+                        type: text
+            have_questions:
+                name: have-questions
+                fields:
+                    have_questions_title:
+                        label: have_questions_title
+                        type: text
+                    have_questions_subtitle:
+                        label: have_questions_subtitle
+                        type: text
+                    have_questions_text_btn:
+                        label: have_questions_text_btn
+                        type: text

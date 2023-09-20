@@ -1,0 +1,23 @@
+uuid: shop_category
+handle: shop_category
+type: structure
+name: Категория
+drafts: false
+customMessages:
+  buttonCreate: Новая категория
+
+structure:
+  maxDepth: 2
+
+navigation:
+  label: Категории
+  parent: shop_product
+  icon: octo-icon-list-ul
+  order: 20
+
+fields:
+  title:
+    label: Название
+  description:
+    label: Description
+    type: richeditor

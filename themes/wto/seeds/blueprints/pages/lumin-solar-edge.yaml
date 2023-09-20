@@ -1,0 +1,446 @@
+uuid: page_lumin-solar-edge
+handle: page_lumin-solar-edge
+type: single
+name: 'Lumin solar + edge'
+drafts: false
+navigation:
+    label: 'Lumin solar + edge'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            solar_edge_main:
+                name: solar-edge-main
+                fields:
+                    solar_edge_main_image:
+                        label: solar_edge_main_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_main_title_|_raw:
+                        label: 'solar_edge_main_title | raw'
+                        type: text
+                    solar_edge_main_subtitle:
+                        label: solar_edge_main_subtitle
+                        type: text
+                    solar_edge_main_text_btn:
+                        label: solar_edge_main_text_btn
+                        type: text
+                    solar_edge_main_link_btn:
+                        label: solar_edge_main_link_btn
+                        type: text
+                    solar_edge_main_link:
+                        label: solar_edge_main_link
+                        type: text
+                    solar_edge_main_text_video:
+                        label: solar_edge_main_text_video
+                        type: text
+            electrification_works:
+                name: electrification-works
+                fields:
+                    electrification_works_title:
+                        label: electrification_works_title
+                        type: text
+                    electrification_works_title_lists:
+                        label: electrification_works_title_lists
+                        type: text
+                    electrification_works_lists:
+                        label: electrification_works_lists
+                        type: repeater
+                        form:
+                            fields:
+                                number:
+                                    label: Число
+                                    type: text
+                                text:
+                                    label: Текст
+                                    type: text
+                    electrification_works_image:
+                        label: electrification_works_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    electrification_works_off:
+                        label: electrification_works_off
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    electrification_works_swich_text:
+                        label: electrification_works_swich_text
+                        type: text
+            solar_edge_works:
+                name: solar-edge-works
+                fields:
+                    solar_edge_works_title:
+                        label: solar_edge_works_title
+                        type: text
+                    solar_edge_works_image:
+                        label: solar_edge_works_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    electrification_works_off:
+                        label: electrification_works_off
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            solar_edge_integrates:
+                name: solar-edge-integrates
+                fields:
+                    solar_edge_integrates_text:
+                        label: solar_edge_integrates_text
+                        type: text
+                    solar_edge_integrates_image:
+                        label: solar_edge_integrates_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            solar_edge_map:
+                name: solar-edge-map
+                fields:
+                    solar_edge_map_die:
+                        label: solar_edge_map_die
+                        type: text
+                    solar_edge_map_title:
+                        label: solar_edge_map_title
+                        type: text
+                    solar_edge_map_subtitle:
+                        label: solar_edge_map_subtitle
+                        type: text
+                    solar_edge_map_image_map:
+                        label: solar_edge_map_image_map
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_map_image_state:
+                        label: solar_edge_map_image_state
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_map_image_marker:
+                        label: solar_edge_map_image_marker
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_map_text_btn:
+                        label: solar_edge_map_text_btn
+                        type: text
+                    solar_edge_map_link_btn:
+                        label: solar_edge_map_link_btn
+                        type: text
+            feedbacks:
+                name: feedbacks
+                fields:
+                    feedbacks_title:
+                        label: feedbacks_title
+                        type: text
+                    feedbacks_subtitle:
+                        label: feedbacks_subtitle
+                        type: text
+                    feedbacks_rep:
+                        label: feedbacks_rep
+                        type: repeater
+                        form:
+                            fields:
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    displayMode: builder
+                                    groups:
+                                        feedbacks_video:
+                                            name: feedbacks_video
+                                            fields:
+                                                image:
+                                                    label: Изображение
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                link:
+                                                    label: Ссылка
+                                                    type: text
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                video_rewiev:
+                                                    label: video_rewiev
+                                                    type: text
+                                        feedbacks_text:
+                                            name: feedbacks_text
+                                            fields:
+                                                avatar:
+                                                    label: avatar
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                text:
+                                                    label: Текст
+                                                    type: text
+            learn_mores:
+                name: learn-mores
+                fields:
+                    learn_more_title:
+                        label: learn_more_title
+                        type: text
+                    learn_more_slider:
+                        label: learn_more_slider
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                    learn_more_characteristics:
+                        label: learn_more_characteristics
+                        type: repeater
+                        form:
+                            fields:
+                                characteristics_name:
+                                    label: characteristics_name
+                                    type: text
+                                characteristics_text:
+                                    label: characteristics_text
+                                    type: text
+                    learn_more_recomend:
+                        label: learn_more_recomend
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text:
+                                    label: Текст
+                                    type: text
+                    learn_more_link_btn:
+                        label: learn_more_link_btn
+                        type: text
+            questions:
+                name: questions
+                fields:
+                    question_title:
+                        label: question_title
+                        type: text
+                    question_subtitle_|_raw:
+                        label: 'question_subtitle | raw'
+                        type: text
+                    question_link_btn:
+                        label: question_link_btn
+                        type: text
+                    question_lists:
+                        label: question_lists
+                        type: repeater
+                        form:
+                            fields:
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list_|_raw:
+                                    label: 'text_list | raw'
+                                    type: text
+            have_questions:
+                name: have-questions
+                fields:
+                    have_questions_title:
+                        label: have_questions_title
+                        type: text
+                    have_questions_subtitle:
+                        label: have_questions_subtitle
+                        type: text
+                    have_questions_text_btn:
+                        label: have_questions_text_btn
+                        type: text
+            modal_looking:
+                name: modal-looking
+                fields:
+                    modal_looking_title:
+                        label: modal_looking_title
+                        type: text
+                    modal_looking_subtitle:
+                        label: modal_looking_subtitle
+                        type: text
+            electrification_quiz:
+                name: electrification-quiz
+                fields:
+                    electrification_quiz_title:
+                        label: electrification_quiz_title
+                        type: text
+                    electrification_quiz_rep:
+                        label: electrification_quiz_rep
+                        type: repeater
+                        form:
+                            fields:
+                                quiz:
+                                    label: quiz
+                                    type: repeater
+                                    displayMode: builder
+                                    groups:
+                                        quiz_step_1:
+                                            name: quiz_step_1
+                                            fields:
+                                                step_text:
+                                                    label: step_text
+                                                    type: text
+                                                desc:
+                                                    label: desc
+                                                    type: text
+                                                list:
+                                                    label: Список
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                        quiz_step_2:
+                                            name: quiz_step_2
+                                            fields:
+                                                step_text:
+                                                    label: step_text
+                                                    type: text
+                                                desc:
+                                                    label: desc
+                                                    type: text
+                                                autel:
+                                                    label: autel
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                aiproad:
+                                                    label: aiproad
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                chargepoint:
+                                                    label: chargepoint
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                emporia:
+                                                    label: emporia
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                grizzlie:
+                                                    label: grizzlie
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                juicebox:
+                                                    label: juicebox
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                lectron:
+                                                    label: lectron
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                stokevoltaics:
+                                                    label: stokevoltaics
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                                wallbox:
+                                                    label: wallbox
+                                                    type: repeater
+                                                    form:
+                                                        fields:
+                                                            image: { label: Изображение, type: mediafinder, mode: image, maxItems: '1' }
+                                                            name: { label: name, type: text }
+                                        quiz_step_3:
+                                            name: quiz_step_3
+                                            fields:
+                                                title:
+                                                    label: Название
+                                                    type: text
+                                                subtitle:
+                                                    label: Подзаголовок
+                                                    type: text
+                                                desc:
+                                                    label: desc
+                                                    type: text
+                                                meet_help_text_btn:
+                                                    label: meet_help_text_btn
+                                                    type: text
+            lsp_installer:
+                name: lsp-installer
+                fields:
+                    lsp_installer_image:
+                        label: lsp_installer_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lsp_installer_title:
+                        label: lsp_installer_title
+                        type: text
+                    lsp_installer_subtitle_|_raw:
+                        label: 'lsp_installer_subtitle | raw'
+                        type: text
+                    lsp_installer_text:
+                        label: lsp_installer_text
+                        type: text
+                    lsp_installer_text_btn:
+                        label: lsp_installer_text_btn
+                        type: text

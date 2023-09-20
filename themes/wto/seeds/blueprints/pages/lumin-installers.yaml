@@ -1,0 +1,311 @@
+uuid: page_lumin-installers
+handle: page_lumin-installers
+type: single
+name: 'Lumin installers'
+drafts: false
+navigation:
+    label: 'Lumin installers'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            installers_home:
+                name: installers-home
+                fields:
+                    installers_home_image:
+                        label: installers_home_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    installers_home_title:
+                        label: installers_home_title
+                        type: text
+                    installers_home_subtitle:
+                        label: installers_home_subtitle
+                        type: text
+                    installers_home_text_btn:
+                        label: installers_home_text_btn
+                        type: text
+                    installers_home_link_btn:
+                        label: installers_home_link_btn
+                        type: text
+            installers_map:
+                name: installers-map
+                fields:
+                    installers_map_title:
+                        label: installers_map_title
+                        type: text
+            installers_why_lumin:
+                name: installers-why-lumin
+                fields:
+                    installers_why_lumin_title:
+                        label: installers_why_lumin_title
+                        type: text
+                    installers_why_lumin_rep:
+                        label: installers_why_lumin_rep
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title:
+                                    label: Название
+                                    type: text
+                                text:
+                                    label: Текст
+                                    type: text
+                    installers_home_image_fon_cert:
+                        label: installers_home_image_fon_cert
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    installers_why_lumin_title_cert:
+                        label: installers_why_lumin_title_cert
+                        type: text
+                    installers_why_lumin_subtitle_cert:
+                        label: installers_why_lumin_subtitle_cert
+                        type: text
+                    installers_why_lumin_text_btn:
+                        label: installers_why_lumin_text_btn
+                        type: text
+                    installers_home_image_cert:
+                        label: installers_home_image_cert
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            project:
+                name: project
+                fields:
+                    project_title:
+                        label: project_title
+                        type: text
+            installers_meet:
+                name: installers-meet
+                fields:
+                    installers_meet_title:
+                        label: installers_meet_title
+                        type: text
+                    installers_meet_rep:
+                        label: installers_meet_rep
+                        type: repeater
+                        form:
+                            fields:
+                                lists:
+                                    label: lists
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            image:
+                                                label: Изображение
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: '1'
+            feedbacks:
+                name: feedbacks
+                fields:
+                    feedbacks_title:
+                        label: feedbacks_title
+                        type: text
+                    feedbacks_subtitle:
+                        label: feedbacks_subtitle
+                        type: text
+                    feedbacks_rep:
+                        label: feedbacks_rep
+                        type: repeater
+                        form:
+                            fields:
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    displayMode: builder
+                                    groups:
+                                        feedbacks_video:
+                                            name: feedbacks_video
+                                            fields:
+                                                image:
+                                                    label: Изображение
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                link:
+                                                    label: Ссылка
+                                                    type: text
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                video_rewiev:
+                                                    label: video_rewiev
+                                                    type: text
+                                        feedbacks_text:
+                                            name: feedbacks_text
+                                            fields:
+                                                avatar:
+                                                    label: avatar
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                text:
+                                                    label: Текст
+                                                    type: text
+            questions:
+                name: questions
+                fields:
+                    question_title:
+                        label: question_title
+                        type: text
+                    question_subtitle_|_raw:
+                        label: 'question_subtitle | raw'
+                        type: text
+                    question_link_btn:
+                        label: question_link_btn
+                        type: text
+                    question_lists:
+                        label: question_lists
+                        type: repeater
+                        form:
+                            fields:
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list_|_raw:
+                                    label: 'text_list | raw'
+                                    type: text
+            have_questions:
+                name: have-questions
+                fields:
+                    have_questions_title:
+                        label: have_questions_title
+                        type: text
+                    have_questions_subtitle:
+                        label: have_questions_subtitle
+                        type: text
+                    have_questions_text_btn:
+                        label: have_questions_text_btn
+                        type: text
+            solar_edge_map:
+                name: solar-edge-map
+                fields:
+                    solar_edge_map_die:
+                        label: solar_edge_map_die
+                        type: text
+                    solar_edge_map_title:
+                        label: solar_edge_map_title
+                        type: text
+                    solar_edge_map_subtitle:
+                        label: solar_edge_map_subtitle
+                        type: text
+                    solar_edge_map_image_map:
+                        label: solar_edge_map_image_map
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_map_image_state:
+                        label: solar_edge_map_image_state
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_map_image_marker:
+                        label: solar_edge_map_image_marker
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    solar_edge_map_text_btn:
+                        label: solar_edge_map_text_btn
+                        type: text
+                    solar_edge_map_link_btn:
+                        label: solar_edge_map_link_btn
+                        type: text
+            document_img:
+                name: document-img
+                fields:
+                    document_img_title:
+                        label: document_img_title
+                        type: text
+                    document_img_subtitle:
+                        label: document_img_subtitle
+                        type: text
+                    document_img_text_btn:
+                        label: document_img_text_btn
+                        type: text
+                    document_img_image:
+                        label: document_img_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    document_img_image_fon:
+                        label: document_img_image_fon
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            document:
+                name: document
+                fields:
+                    document_title:
+                        label: document_title
+                        type: text
+                    document_subtitle:
+                        label: document_subtitle
+                        type: text
+                    document_text_btn:
+                        label: document_text_btn
+                        type: text
+                    document_img_fon:
+                        label: document_img_fon
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            how_it_works_modal:
+                label: how_it_works_modal
+                type: repeater
+                form:
+                    fields:
+                        text_list:
+                            label: text_list
+                            type: text

@@ -1,0 +1,71 @@
+uuid: wto_forms
+handle: wto_forms
+type: global
+name: Настройки форм
+
+navigation:
+  label: Формы
+  icon: icon-envelope-o
+  order: 10
+
+fields:
+  forms:
+    label: Формы
+    type: repeater
+    prompt: Добавить настройку формы
+    tab: Настройки форм
+    form:
+      fields:
+        selector:
+          label: Отбор по CSS селектору
+        email_to:
+          label: Получатель
+          comment: Можно указать несколько адресов через запятую
+          span: left
+        template:
+          label: Шаблон письма
+          span: right
+          comment: Название шаблона для письма
+        sender_name:
+          label: Имя отправителя
+          span: left
+        reply_to:
+          label: Адрес для ответа
+          span: right
+        copy_cc:
+          label: Копия письма
+          span: left
+        copy_bcc:
+          label: Скрытая копия
+          span: right
+        hide_form:
+          type: checkbox
+          label: Прятать форму
+          span: left
+        hide_lbox:
+          type: checkbox
+          label: Прятать лайтбокс
+          span: right
+        hide_delay:
+          label: Задержка до исчезновения
+          span: left
+        lbox_selector:
+          label: Селектор лайтбокса
+          span: right
+        redirect:
+          label: Перенаправлять на страницу
+          span: full
+        new_window:
+          label: Перенаправлять в новом окне
+          type: checkbox
+          span: left
+        success_message:
+          label: Сообщение об успешной отправке
+          span: full
+        error_message:
+          label: Сообщение об ошибке
+          span: full
+        sender_replay:
+          label: Ответ отправителю
+          span: full
+          comment: Название шаблона для отправителя

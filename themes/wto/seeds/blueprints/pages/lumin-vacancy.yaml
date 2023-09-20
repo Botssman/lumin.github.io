@@ -1,0 +1,11 @@
+uuid: page_lumin-vacancy
+handle: page_lumin-vacancy
+type: single
+name: 'Lumin Vacancy'
+drafts: false
+navigation:
+    label: 'Lumin Vacancy'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields: {  }

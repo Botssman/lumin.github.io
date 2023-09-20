@@ -1,0 +1,204 @@
+uuid: page_index
+handle: page_index
+type: single
+name: Main
+drafts: false
+primaryNavigation:
+    label: Страницы
+    icon: icon-folder-open-o
+    order: 205
+navigation:
+    label: Main
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            lumin_home:
+                name: lumin-home
+                fields:
+                    lumin_home_title:
+                        label: lumin_home_title
+                        type: text
+                    lumin_home_subtitle_one:
+                        label: lumin_home_subtitle_one
+                        type: text
+                    lumin_home_subtitle_two:
+                        label: lumin_home_subtitle_two
+                        type: text
+                    lumin_home_subtitle_three:
+                        label: lumin_home_subtitle_three
+                        type: text
+            lumin_one_edge:
+                name: lumin-one-edge
+                fields:
+                    lumin_one_edge_title_|_raw:
+                        label: 'lumin_one_edge_title | raw'
+                        type: text
+                    lumin_one_edge_lists:
+                        label: lumin_one_edge_lists
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text:
+                                    label: Текст
+                                    type: text
+            lumin_help:
+                name: lumin-help
+                fields:
+                    lumin_help_subtitle:
+                        label: lumin_help_subtitle
+                        type: text
+                    lumin_help_title_|_raw:
+                        label: 'lumin_help_title | raw'
+                        type: text
+                    lumin_help_text_btn_|_raw:
+                        label: 'lumin_help_text_btn | raw'
+                        type: text
+                    lumin_help_image:
+                        label: lumin_help_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            lumin_backup:
+                name: lumin-backup
+                fields:
+                    lumin_backup_image:
+                        label: lumin_backup_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lumin_backup_subtitle:
+                        label: lumin_backup_subtitle
+                        type: text
+                    lumin_backup_title:
+                        label: lumin_backup_title
+                        type: text
+                    lumin_backup_text_btn_|_raw:
+                        label: 'lumin_backup_text_btn | raw'
+                        type: text
+            lumin_charging:
+                name: lumin-charging
+                fields:
+                    lumin_charging_image:
+                        label: lumin_charging_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lumin_charging_subtitle:
+                        label: lumin_charging_subtitle
+                        type: text
+                    lumin_charging_title_|_raw:
+                        label: 'lumin_charging_title | raw'
+                        type: text
+                    lumin_charging_text_btn:
+                        label: lumin_charging_text_btn
+                        type: text
+            video_galery:
+                name: video-galery
+                fields:
+                    video_galery_rep:
+                        label: video_galery_rep
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                link:
+                                    label: Ссылка
+                                    type: text
+            lumin_updates:
+                name: lumin-updates
+                fields:
+                    updates_title_|_raw:
+                        label: 'updates_title | raw'
+                        type: text
+                    updates_subtitle_|_raw:
+                        label: 'updates_subtitle | raw'
+                        type: text
+            demand_response_works:
+                name: demand-response-works
+                fields:
+                    demand_response_works_title:
+                        label: demand_response_works_title
+                        type: text
+                    demand_response_works_title_lists:
+                        label: demand_response_works_title_lists
+                        type: text
+                    demand_response_works_lists:
+                        label: demand_response_works_lists
+                        type: repeater
+                        form:
+                            fields:
+                                number:
+                                    label: Число
+                                    type: text
+                                text:
+                                    label: Текст
+                                    type: text
+                    demand_response_main_image:
+                        label: demand_response_main_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    how_it_works_modal:
+                        label: how_it_works_modal
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text_list:
+                                    label: text_list
+                                    type: text

@@ -1,0 +1,362 @@
+uuid: page_lumin-demand-response
+handle: page_lumin-demand-response
+type: single
+name: 'Lumin Demand Response'
+drafts: false
+navigation:
+    label: 'Lumin Demand Response'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link_|_link:
+                                    label: 'menu_link_link | link'
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    blocks:
+        label: blocks
+        type: repeater
+        displayMode: builder
+        groups:
+            demand_response_main:
+                name: demand-response-main
+                fields:
+                    demand_response_main_image:
+                        label: demand_response_main_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    demand_response_main_title_|_raw:
+                        label: 'demand_response_main_title | raw'
+                        type: text
+                    demand_response_main_subtitle:
+                        label: demand_response_main_subtitle
+                        type: text
+                    demand_response_main_text_btn:
+                        label: demand_response_main_text_btn
+                        type: text
+                    demand_response_main_link_btn:
+                        label: demand_response_main_link_btn
+                        type: text
+                    demand_response_main_link:
+                        label: demand_response_main_link
+                        type: text
+                    demand_response_main_text_video:
+                        label: demand_response_main_text_video
+                        type: text
+            demand_response_works:
+                name: demand-response-works
+                fields:
+                    demand_response_works_title:
+                        label: demand_response_works_title
+                        type: text
+                    demand_response_works_title_lists:
+                        label: demand_response_works_title_lists
+                        type: text
+                    demand_response_works_lists:
+                        label: demand_response_works_lists
+                        type: repeater
+                        form:
+                            fields:
+                                number:
+                                    label: Число
+                                    type: text
+                                text:
+                                    label: Текст
+                                    type: text
+                    demand_response_main_image:
+                        label: demand_response_main_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    how_it_works_modal:
+                        label: how_it_works_modal
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text_list:
+                                    label: text_list
+                                    type: text
+            demand_response_integrates:
+                name: demand-response-integrates
+                fields:
+                    demand_response_integrates_text:
+                        label: demand_response_integrates_text
+                        type: text
+                    demand_response_integrates_image:
+                        label: demand_response_integrates_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            demand_response_map:
+                name: demand-response-map
+                fields:
+                    demand_response_map_title:
+                        label: demand_response_map_title
+                        type: text
+                    demand_response_map_image_marker:
+                        label: demand_response_map_image_marker
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    demand_response_map_die:
+                        label: demand_response_map_die
+                        type: text
+                    demand_response_map_image_map:
+                        label: demand_response_map_image_map
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    demand_response_map_text:
+                        label: demand_response_map_text
+                        type: text
+                    demand_response_map_text_btn:
+                        label: demand_response_map_text_btn
+                        type: text
+                    demand_response_map_link_btn:
+                        label: demand_response_map_link_btn
+                        type: text
+            estimator:
+                name: estimator
+                fields:
+                    estimator_title:
+                        label: estimator_title
+                        type: text
+                    estimator_subtitle:
+                        label: estimator_subtitle
+                        type: text
+            feedbacks:
+                name: feedbacks
+                fields:
+                    feedbacks_title:
+                        label: feedbacks_title
+                        type: text
+                    feedbacks_subtitle:
+                        label: feedbacks_subtitle
+                        type: text
+                    feedbacks_rep:
+                        label: feedbacks_rep
+                        type: repeater
+                        form:
+                            fields:
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    displayMode: builder
+                                    groups:
+                                        feedbacks_video:
+                                            name: feedbacks_video
+                                            fields:
+                                                image:
+                                                    label: Изображение
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                link:
+                                                    label: Ссылка
+                                                    type: text
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                video_rewiev:
+                                                    label: video_rewiev
+                                                    type: text
+                                        feedbacks_text:
+                                            name: feedbacks_text
+                                            fields:
+                                                avatar:
+                                                    label: avatar
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                text:
+                                                    label: Текст
+                                                    type: text
+            demand_response_partners:
+                name: demand-response-partners
+                fields:
+                    demand_response_partners_title:
+                        label: demand_response_partners_title
+                        type: text
+                    demand_response_partners_lists:
+                        label: demand_response_partners_lists
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+            questions:
+                name: questions
+                fields:
+                    question_title:
+                        label: question_title
+                        type: text
+                    question_subtitle_|_raw:
+                        label: 'question_subtitle | raw'
+                        type: text
+                    question_link_btn:
+                        label: question_link_btn
+                        type: text
+                    question_lists:
+                        label: question_lists
+                        type: repeater
+                        form:
+                            fields:
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                text_list_|_raw:
+                                    label: 'text_list | raw'
+                                    type: text
+            have_questions:
+                name: have-questions
+                fields:
+                    have_questions_title:
+                        label: have_questions_title
+                        type: text
+                    have_questions_subtitle:
+                        label: have_questions_subtitle
+                        type: text
+                    have_questions_text_btn:
+                        label: have_questions_text_btn
+                        type: text
+            learn_mores:
+                name: learn-mores
+                fields:
+                    learn_more_title:
+                        label: learn_more_title
+                        type: text
+                    learn_more_slider:
+                        label: learn_more_slider
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                    learn_more_characteristics:
+                        label: learn_more_characteristics
+                        type: repeater
+                        form:
+                            fields:
+                                characteristics_name:
+                                    label: characteristics_name
+                                    type: text
+                                characteristics_text:
+                                    label: characteristics_text
+                                    type: text
+                    learn_more_recomend:
+                        label: learn_more_recomend
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text:
+                                    label: Текст
+                                    type: text
+                    learn_more_link_btn:
+                        label: learn_more_link_btn
+                        type: text
+            modal_utilities:
+                name: modal-utilities
+                fields:
+                    modal_utilities_title:
+                        label: modal_utilities_title
+                        type: text
+            document_img:
+                name: document-img
+                fields:
+                    document_img_title:
+                        label: document_img_title
+                        type: text
+                    document_img_subtitle:
+                        label: document_img_subtitle
+                        type: text
+                    document_img_text_btn:
+                        label: document_img_text_btn
+                        type: text
+                    document_img_image:
+                        label: document_img_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    document_img_image_fon:
+                        label: document_img_image_fon
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            document:
+                name: document
+                fields:
+                    document_title:
+                        label: document_title
+                        type: text
+                    document_subtitle:
+                        label: document_subtitle
+                        type: text
+                    document_text_btn:
+                        label: document_text_btn
+                        type: text
+                    document_img_fon:
+                        label: document_img_fon
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+            modal_installer:
+                name: modal-installer
+                fields:
+                    modal_installer_title:
+                        label: modal_installer_title
+                        type: text
+                    modal_installer_subtitle:
+                        label: modal_installer_subtitle
+                        type: text
