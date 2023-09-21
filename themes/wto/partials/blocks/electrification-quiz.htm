@@ -398,12 +398,12 @@
 														</div>
 													</div>
 												</div>
-												<a href="#" class="b-button b-button_blue b-button_maxw_210 b-button_height_45 w-button">
-													{{ block.meet_help_text_btn }}
+												<a href="{{ block.btn_link }}" class="b-button b-button_blue b-button_maxw_210 b-button_height_45 w-button">
+													{{ block.btn }}
 												</a>
 											</div>
 											<div class="b-columns__col b-columns__col_50">
-												<img src="{{ 'assets/images/lumin-first.png'|theme }}" loading="lazy" alt="">
+												<img src="{{ block.image|media }}" alt="" loading="lazy">
 											</div>
 										</div>
 									</div>
@@ -419,9 +419,7 @@
 						</div>
 						{% endfor %}
 					</div>
-					<div class="b-slider__arrow-left w-slider-arrow-left">
-						<img alt="" loading="lazy" src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" class="b-slider__icone">
-					</div>
+					<div class="b-slider__arrow-left w-slider-arrow-left"></div>
 					<div class="b-slider__arrow-right w-slider-arrow-right"></div>
 					<div class="b-slider__nav w-slider-nav w-round"></div>
 				</div>

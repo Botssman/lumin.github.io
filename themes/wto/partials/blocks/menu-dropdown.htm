@@ -9,7 +9,7 @@
 		<nav class="b-menu__dropdown-lists w-dropdown-list">
 			<div class="b-dropdown__content b-dropdown__content_menu">
 				{% for item in block.list %}
-				<a href="{{ item.menu_dropdown_link_|_link }}" class="b-dropdown__link w-dropdown-link">
+				<a href="{{ item.menu_dropdown_link|link }}" class="b-dropdown__link w-dropdown-link">
 					{{ item.menu_dropdown_name }}
 				</a>
 				{% endfor %}

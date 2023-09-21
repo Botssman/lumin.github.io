@@ -168,15 +168,32 @@ fields:
                                                 type: mediafinder
                                                 mode: image
                                                 maxItems: 1
+                                            name:
+                                                label: Name model
+                                                type: text   
 
                         quiz_step_3:
                             name: Quiz step 3
                             description: Quiz step 3
                             icon: icon-align-justify
                             fields:
-                                step_text:
-                                    label: Text step
+                                title:
+                                    label: Title
+                                    type: text
+                                subtitle:
+                                    label: Subtile
                                     type: text
                                 desc:
                                     label: Desc
                                     type: text
+                                btn:
+                                    label: Btn text
+                                    type: text
+                                btn_link:
+                                    label: Btn link
+                                    type: text
+                                image:
+                                    label: Image model
+                                    type: mediafinder
+                                    mode: image 
+                                    maxItems: 1                                    
