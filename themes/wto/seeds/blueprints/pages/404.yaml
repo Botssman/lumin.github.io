@@ -9,8 +9,8 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
-    image_fon_|_raw:
-        label: 'image_fon | raw'
+    image_fon:
+        label: image_fon
         type: mediafinder
         mode: image
         maxItems: '1'
@@ -19,8 +19,8 @@ fields:
         type: mediafinder
         mode: image
         maxItems: '1'
-    text_|_raw:
-        label: 'text | raw'
+    text|raw:
+        label: text|raw
         type: text
     subtitle:
         label: Подзаголовок

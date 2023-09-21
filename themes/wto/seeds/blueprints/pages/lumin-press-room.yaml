@@ -36,8 +36,8 @@ fields:
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
-                                title_|_raw:
-                                    label: 'title | raw'
+                                title|raw:
+                                    label: title|raw
                                     type: text
                                 text:
                                     label: Текст

@@ -196,8 +196,8 @@ fields:
                         type: repeater
                         form:
                             fields:
-                                row_|_raw:
-                                    label: 'row | raw'
+                                row|raw:
+                                    label: row|raw
                                     type: text
             project:
                 name: project
