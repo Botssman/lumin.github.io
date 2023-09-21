@@ -22,28 +22,22 @@ fields:
                         menu_link:
                             name: menu-link
                             fields:
-                                menu_link_name:
-                                    label: menu_link_name
-                                    type: text
                                 menu_link_link|link:
                                     label: menu_link_link|link
                                     type: text
                         menu_dropdown:
                             name: menu-dropdown
                             fields:
-                                menu_dropdown_title:
-                                    label: menu_dropdown_title
-                                    type: text
                                 list:
                                     label: Список
                                     type: repeater
                                     form:
                                         fields:
-                                            menu_dropdown_name:
-                                                label: menu_dropdown_name
-                                                type: text
                                             menu_dropdown_link|link:
                                                 label: menu_dropdown_link|link
+                                                type: text
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
                                                 type: text
                                             menu_dropdown_link_|_link:
                                                 label: 'menu_dropdown_link | link'
