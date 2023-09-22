@@ -9,6 +9,45 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link|link:
+                                    label: menu_link_link|link
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link|link:
+                                                label: menu_dropdown_link|link
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
     blocks:
         label: blocks
         type: repeater
@@ -90,42 +129,3 @@ fields:
                     press_room_pr_text_btn:
                         label: press_room_pr_text_btn
                         type: text
-    main_menu:
-        label: main_menu
-        type: repeater
-        form:
-            fields:
-                list:
-                    label: Список
-                    type: repeater
-                    displayMode: builder
-                    groups:
-                        menu_link:
-                            name: menu-link
-                            fields:
-                                menu_link_name:
-                                    label: menu_link_name
-                                    type: text
-                                menu_link_link|link:
-                                    label: menu_link_link|link
-                                    type: text
-                        menu_dropdown:
-                            name: menu-dropdown
-                            fields:
-                                menu_dropdown_title:
-                                    label: menu_dropdown_title
-                                    type: text
-                                list:
-                                    label: Список
-                                    type: repeater
-                                    form:
-                                        fields:
-                                            menu_dropdown_link|link:
-                                                label: menu_dropdown_link|link
-                                                type: text
-                                            menu_dropdown_name:
-                                                label: menu_dropdown_name
-                                                type: text
-                                            menu_dropdown_link_|_link:
-                                                label: 'menu_dropdown_link | link'
-                                                type: text

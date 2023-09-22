@@ -3,7 +3,7 @@ description = "lumin-Article"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Fri Sep 22 2023 13:06:21 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Fri Sep 22 2023 13:52:09 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
@@ -55,7 +55,7 @@ default = 0
 								<div class="b-text b-text_size_14 b-text_gray">Published at <span>{{ post.published_at_date|date_j_m_y }}</span> by  •  <a href="#" class="post-link">Bazhinov Alex </a><span class="post-views">3067</span>  •  Last updated on <span>{{ post.published_at_date|date_j_m_y }}</span></div>
 							</div>
 							<div class="h-wrap h-wrap_mg-bt_30"><img src="{{ 'assets/images/image2057.png'|theme }}" loading="lazy" alt class="b-card-post__image b-card-post__image_border-r_12"></div>
-							<div>{% for block in blocks.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
+							<div>{% for block in page.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
 							<div class="b-line"></div>
 							<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left h-wrap_pd-rt_50">
 								<div>

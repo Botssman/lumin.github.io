@@ -3,7 +3,7 @@ description = "lumin-our-blog"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Fri Sep 22 2023 13:06:21 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a410" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Fri Sep 22 2023 13:52:09 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a410" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
@@ -102,7 +102,7 @@ default = 0
 						<div class="h-wrap h-wrap_menu h-wrap_menu_center">{% for block in item.list %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>{% endfor %}</nav><a href="#" class="b-menu__cart w-inline-block"><img src="{{ 'assets/images/cart.svg'|theme }}" loading="lazy" alt><div class="b-menu__cart-count">1</div></a><a href="#" class="b-button b-button_width_160 b-button_height_45 mob_hide w-button">Get Lumin</a></div>
 			</div>
 		</header>
-		<main class="main">{% for block in blocks.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</main>
+		<main class="main">{% for block in page.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</main>
 		<div class="container container_breadcrumbs w-container">
 			<ul role="list" class="b-breadcrumbs">
 				<li class="b-breadcrumbs__list"><a href="#" class="b-breadcrumbs__link">Main</a></li>
