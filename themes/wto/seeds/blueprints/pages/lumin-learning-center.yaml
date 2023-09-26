@@ -88,29 +88,6 @@ fields:
                     learning_center_freshdesk_title:
                         label: learning_center_freshdesk_title
                         type: text
-            questions:
-                name: questions
-                fields:
-                    question_title:
-                        label: question_title
-                        type: text
-                    question_subtitle|raw:
-                        label: question_subtitle|raw
-                        type: text
-                    question_link_btn:
-                        label: question_link_btn
-                        type: text
-                    question_lists:
-                        label: question_lists
-                        type: repeater
-                        form:
-                            fields:
-                                title_list:
-                                    label: title_list
-                                    type: text
-                                text_list|raw:
-                                    label: text_list|raw
-                                    type: text
             learning_center_community:
                 name: learning-center-community
                 fields:

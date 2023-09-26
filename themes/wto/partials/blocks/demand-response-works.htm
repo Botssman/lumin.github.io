@@ -24,19 +24,19 @@
 		</ul>
 		<div class="b-home-wrap">
 			<img class="b-image b-image_home" src="{{ block.demand_response_main_image|media }}" alt="" loading="lazy">
-			<div class="plus plus_2">
+			<div data-item="2" class="plus plus_2">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e2" class="plus__circle"></div>
 			</div>
-			<div class="plus plus_3">
+			<div data-item="3" class="plus plus_3">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e5" class="plus__circle"></div>
 			</div>
-			<div class="plus plus_4">
+			<div data-item="4" class="plus plus_4">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e8" class="plus__circle"></div>
 			</div>
-			<div class="plus plus_1">
+			<div data-item="1" class="plus plus_1">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509eb" class="plus__circle"></div>
 			</div>
@@ -53,7 +53,7 @@
 			<a data-w-id="39e3943e-01fe-556e-456d-f529813d367b" href="#" class="b-modal__close w-inline-block">
 				<img src="{{ 'assets/images/Dot.svg'|theme }}" loading="lazy" alt="">
 			</a>
-			<div class="h-wrap h-wrap_overflow_auto">
+			<div data-list="" class="h-wrap h-wrap_overflow_auto">
 				{% for item in block.how_it_works_modal %}
 				<div class="h-wrap h-wrap_maxw_320">
 					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_devise b-image_devise-modal">
