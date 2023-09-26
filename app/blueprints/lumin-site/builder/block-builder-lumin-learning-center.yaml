@@ -57,12 +57,12 @@ fields:
                         type: mixin
                         source: Blocks\DocumentImg
             questions:
-                name: Block question
+                name: Block Faq
                 icon: icon-question
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\Questions
+                        source: Blocks\Through\QuestionsFaq
             learning_center_community:
                 name: Section learning center community
                 description: Learning center community
