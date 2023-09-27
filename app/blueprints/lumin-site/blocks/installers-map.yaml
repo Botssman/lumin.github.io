@@ -7,3 +7,6 @@ fields:
     installers_map_title:
         label: Title
         type: text
+    lsp_installer_text: 
+        label: Subtitle
+        type: text        

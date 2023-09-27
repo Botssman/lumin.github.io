@@ -5,8 +5,7 @@ handle: Blocks\Through\Project
 multisite: true
 
 fields:
-    hint:
-        type: hint
-        mode: tip
-        label: Block project
-        comment: Editable in section settings
+    project_title:
+        label: Title
+        type: text
+        tab: Projects
