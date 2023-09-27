@@ -12,5 +12,5 @@
 }
 
 .fp-watermark {
-    display: none;
+    display: none !important;
 }
