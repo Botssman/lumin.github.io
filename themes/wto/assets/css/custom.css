@@ -10,3 +10,7 @@
 .s-section_pd_home [data-list] > div.active {
     order: 1;
 }
+
+.fp-watermark {
+    display: none;
+}
