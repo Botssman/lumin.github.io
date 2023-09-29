@@ -1,4 +1,4 @@
-uuid: through-questions
+uuid: through-questions-faq
 name: Block FAQ
 type: mixin
 handle: Blocks\Through\QuestionsFaq
