@@ -312,13 +312,3 @@ fields:
                         text_list:
                             label: text_list
                             type: text
-    learn_more_slider:
-        label: learn_more_slider
-        type: repeater
-        form:
-            fields:
-                image:
-                    label: Изображение
-                    type: mediafinder
-                    mode: image
-                    maxItems: '1'

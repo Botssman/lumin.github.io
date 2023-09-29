@@ -3,7 +3,7 @@ description = "Lumin installers"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Fri Sep 29 2023 14:35:07 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40d" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Fri Sep 29 2023 14:46:10 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a40d" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
@@ -92,6 +92,7 @@ default = 0
         transform: rotate(337.5deg) translate(200px) rotate(-337.5deg);
       }
     
+		</style>
 		</style>
 	      <style>
     .map-block * {
@@ -447,10 +448,10 @@ default = 0
 		<div style="display:none;opacity:0" class="b-modal events">
 			<div class="b-modal__events-content"><a href="#" class="b-arrow__swiper-prev v-2 w-inline-block"><div class="b-slider__arrow b-slider__left-arrow galery"><img src="{{ 'assets/images/arrow-white20(1).svg'|theme }}" loading="lazy" alt></div></a><a href="#" class="b-arrow__swiper-next v-2 w-inline-block"><div class="b-slider__arrow b-slider__right-arrow galery"><img src="{{ 'assets/images/arrow-white20(2).svg'|theme }}" loading="lazy" alt></div></a>
 				<div class="swiper-container gallery-top">
-					<div class="swiper-wrapper">{% for item in block.learn_more_slider %}
+					<div class="swiper-wrapper">
 						<div class="swiper-slide v-2">
 							<div class="b-columns b-columns_bg_white">
-								<div class="b-columns__col b-columns__col_50"><img src="{{ item.image|media }}" alt></div>
+								<div class="b-columns__col b-columns__col_50"><img src="{{ 'assets/images/Main.jpg'|theme }}" alt></div>
 								<div class="b-columns__col b-columns__col_50 b-columns__col_mg_0_60">
 									<div class="h-wrap h-wrap_mg-bt_10">
 										<div class="b-title b-title_mini">NABCEP</div>
@@ -474,11 +475,13 @@ default = 0
 									<div class="h-wrap h-wrap_flex_h h-wrap_center"><a href="#" class="b-button b-button_blue b-button_mini w-button">Attend Now</a><a href="#" class="b-learn-more b-learn-more_mg-lt_30">Learn more</a></div>
 								</div>
 							</div>
-						</div>{% endfor %}</div>
+						</div>
+					</div>
 				</div>
 				<div class="swiper-container gallery-thumbs">
-					<div class="swiper-wrapper bottom v-2">{% for item in block.learn_more_slider %}
-						<div class="swiper-slide v-3"><img src="{{ item.image|media }}" alt></div>{% endfor %}</div>
+					<div class="swiper-wrapper bottom v-2">
+						<div class="swiper-slide v-3"><img src="{{ 'assets/images/2.jpg'|theme }}" alt></div>
+					</div>
 				</div>
 			</div>
 			<div data-w-id="4d51fe37-8365-bb84-b92b-834f36067940" class="b-modal__bg-close"></div>
@@ -510,7 +513,7 @@ default = 0
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
 		</script>
-	<script id="main" src="{{['assets/js/front.js']|theme}}"></script>{% scripts %} {% framework extras %} {% partial "footer" %}
+		<script id="main" src="{{['assets/js/front.js']|theme}}"></script>{% scripts %} {% framework extras %} {% partial "footer" %}
         <script>
     /** НАСТРОЙКИ МОЖНО ИЗМЕНЯТЬ */
 
