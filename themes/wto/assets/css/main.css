@@ -3085,7 +3085,7 @@ body {
 
 .b-modal.events {
   background-color: rgba(23, 23, 26, .8);
-  display: flex;
+  display: none;
 }
 
 .b-form__form {
