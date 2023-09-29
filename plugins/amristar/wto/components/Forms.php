@@ -32,7 +32,7 @@ class Forms extends ComponentBase
 
     public function loadForms()
     {
-        $forms = GlobalRecord::findForGlobal('Config\Forms');
+        $forms = GlobalRecord::findForGlobal('wto_forms');
         $forms->load('forms');
 
         $forms_data = [];
@@ -54,7 +54,7 @@ class Forms extends ComponentBase
 
     public function onFormSend()
     {
-        $forms = GlobalRecord::findForGlobal('Config\Forms');
+        $forms = GlobalRecord::findForGlobal('wto_forms');
         $forms->load('forms');
         $form = $forms->forms[post('wto_form_id')];
 
