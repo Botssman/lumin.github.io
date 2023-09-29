@@ -1,4 +1,4 @@
-<section class="section s-section_100vh s-section_pd_11-25">
+<section class="section s-section_100vh s-section_pd_11-25" >
 	<div class="container container_align_center w-container">
 		<div class="h-wrap h-wrap_mg-bt_60 h-wrap_max-width_970 mob_mg-bt_30">
 			<div class="b-title b-title_mini mob_30">
@@ -9,13 +9,15 @@
 			<img class="b-image b-image_border-rad_12" src="{{ block.meet_galery_image|media }}" alt="" loading="lazy">
 		</div>
 	</div>
-	<div class="container container_100vw w-container">
-		<div class="b-grid b-grid_galery">
+	<div class="container container_100vw w-container" >
+		<div class="b-grid b-grid_galery" data-gallery>
 			{% for item in block.meet_galery_rep %}
-			<div id="{{ item.data_id }}">
+			<div id="{{ item.data_id }}" data-gallery-item>
 				<img class="b-image b-image_border-rad_12" src="{{ item.image|media }}" alt="" id="w-node-dceacf73-8df8-7239-a3ec-5c0c6a587317-7b12a417" loading="lazy">
 			</div>
 			{% endfor %}
 		</div>
+
+        <div id="gallery-edge"></div>
 	</div>
 </section>

@@ -19,6 +19,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\DemandResponseMain
+            lsp_new_device:
+                name: New device
+                description: Block add new device
+                icon: icon-inbox
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LspNewDevice
             demand_response_works:
                 name: Block how it works
                 description: Block how it works
