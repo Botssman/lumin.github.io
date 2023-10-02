@@ -62,11 +62,6 @@ fields:
                     contact_us_contacts_subtitle:
                         label: contact_us_contacts_subtitle
                         type: text
-                    contact_us_contacts_image:
-                        label: contact_us_contacts_image
-                        type: mediafinder
-                        mode: image
-                        maxItems: '1'
             contact_us_form:
                 name: contact-us-form
                 fields:

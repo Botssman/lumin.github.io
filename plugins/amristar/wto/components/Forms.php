@@ -76,7 +76,23 @@ class Forms extends ComponentBase
         $vars['fields'] = $fields;
 
         Mail::send($form['template'], $vars, function ($message) use ($form) {
+
             $message->to($form['email_to']);
+
+            $param = $form['reply_to'];
+            if (!empty($param)) {
+                $message->replyTo($param);
+            }
+
+            $param = $form['copy_cc'];
+            if (!empty($param)) {
+                $message->cc($param);
+            }
+
+            $param = $form['copy_bcc'];
+            if (!empty($param)) {
+                $message->bcc($param);
+            }
         });
 
         return (['status' => 'success']);

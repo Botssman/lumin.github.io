@@ -3352,13 +3352,14 @@ body {
 }
 
 .b-dropdown__content {
+  background-color: rgba(0, 0, 0, 0);
   overflow: hidden;
-  box-shadow: 0 10px 60px rgba(49, 43, 42, .12);
 }
 
 .b-dropdown__content.b-dropdown__content_menu {
   background-color: #fff;
   border-radius: 12px;
+  box-shadow: 0 10px 60px rgba(49, 43, 42, .12);
 }
 
 .b-tabs {
@@ -6221,6 +6222,13 @@ body {
   position: relative;
 }
 
+.b-image_map {
+  width: 100%;
+  height: 100%;
+  max-height: 470px;
+  min-width: 58vw;
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;
@@ -7704,11 +7712,11 @@ body {
   }
 
   .section.s-section_100vh.mob_first {
-    height: 100vh;
-    max-height: 660px;
+    height: auto;
     min-height: auto;
     justify-content: flex-start;
     padding-top: 6em;
+    padding-bottom: 6em;
   }
 
   .section.s-section_100vh.mob_first.mob_center {
@@ -7782,12 +7790,6 @@ body {
     margin-bottom: 20px;
     margin-left: 0;
     padding-left: 0;
-  }
-
-  .b-image.b-image_installers {
-    height: 100vh;
-    max-height: 660px;
-    min-height: auto;
   }
 
   .b-image.b-image_installers.mob_cover {
