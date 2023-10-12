@@ -100,6 +100,9 @@ fields:
                     lumin_help_title|raw:
                         label: lumin_help_title|raw
                         type: text
+                    link:
+                        label: Ссылка
+                        type: text
                     lumin_help_text_btn|raw:
                         label: lumin_help_text_btn|raw
                         type: text
@@ -122,6 +125,9 @@ fields:
                     lumin_backup_title:
                         label: lumin_backup_title
                         type: text
+                    link:
+                        label: Ссылка
+                        type: text
                     lumin_backup_text_btn|raw:
                         label: lumin_backup_text_btn|raw
                         type: text
@@ -139,8 +145,11 @@ fields:
                     lumin_charging_title|raw:
                         label: lumin_charging_title|raw
                         type: text
-                    lumin_charging_text_btn:
-                        label: lumin_charging_text_btn
+                    link:
+                        label: Ссылка
+                        type: text
+                    lumin_charging_text_btn|raw:
+                        label: lumin_charging_text_btn|raw
                         type: text
             video_galery:
                 name: video-galery
@@ -157,6 +166,9 @@ fields:
                                     maxItems: '1'
                                 link:
                                     label: Ссылка
+                                    type: text
+                                title_block:
+                                    label: title_block
                                     type: text
             lumin_updates:
                 name: lumin-updates

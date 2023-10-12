@@ -59,15 +59,12 @@ class Plugin extends \System\Classes\PluginBase
             // print_r(Translator::instance()->getLocale());
             die();
         }
-
     }
 
     public function registerComponents()
     {
         return [
-            '\Amristar\WTO\Components\FrontendEditor' => 'frontendeditor',
             '\Amristar\WTO\Components\Forms' => 'forms',
         ];
     }
-
 }
