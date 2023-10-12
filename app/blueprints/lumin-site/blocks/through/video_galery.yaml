@@ -11,6 +11,9 @@ fields:
         tab: Video galery
         form:
             fields:
+                title_block:
+                    label: Title video
+                    type: text
                 link:
                     label: Link video
                     type: text

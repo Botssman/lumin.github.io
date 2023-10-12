@@ -14,6 +14,9 @@ fields:
     lumin_charging_text_btn:
         label: Text btn
         type: text
+    link:
+        label: Link btn
+        type: text
     lumin_charging_image:
         label: Image
         type: mediafinder

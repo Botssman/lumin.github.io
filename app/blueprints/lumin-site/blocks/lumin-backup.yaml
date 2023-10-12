@@ -14,6 +14,9 @@ fields:
     lumin_backup_text_btn:
         label: Text btn
         type: text
+    link:
+        label: Link btn
+        type: text
     lumin_backup_image:
         label: Image
         type: mediafinder
