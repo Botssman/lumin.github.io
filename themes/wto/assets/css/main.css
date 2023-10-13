@@ -7088,6 +7088,11 @@ body {
     padding-bottom: 5em;
   }
 
+  .section.s-section_100vh.s-section_sticky {
+    justify-content: flex-start;
+    padding-top: 10em;
+  }
+
   .section.s-section_yellow.s-section_pd_11-25 {
     padding-top: 5em;
     padding-bottom: 5em;
@@ -7099,7 +7104,7 @@ body {
     padding-bottom: 6em;
   }
 
-  .section.s-section_pd_11-25, .section.s-section_vertical.s-section_pd_11-25 {
+  .section.s-section_black.section_tb_5, .section.s-section_pd_11-25, .section.s-section_vertical.s-section_pd_11-25, .section.section_tb_5 {
     padding-top: 5em;
     padding-bottom: 5em;
   }
@@ -7187,6 +7192,10 @@ body {
 
   .b-slider.tb_pd_100 {
     padding-bottom: 100px;
+  }
+
+  .container.container_absolute.tp_mg {
+    margin-top: 17%;
   }
 
   .container.container_align_center.pd_none {
@@ -7339,6 +7348,10 @@ body {
 
   .b-columns__col.b-columns__col_50.b-columns__col_mg_0_60 {
     padding: 20px;
+  }
+
+  .b-columns__col.b-columns__col_50.tb_100 {
+    width: 100%;
   }
 
   .b-columns__col.b-columns__col_40.b-columns__col_pd-lt_60 {
@@ -7649,6 +7662,10 @@ body {
     margin-right: 0;
     padding-top: 0;
     font-size: .5em;
+  }
+
+  .b-width.b-width_50 {
+    font-size: .4em;
   }
 }
 
@@ -7968,9 +7985,17 @@ body {
     max-height: 180px;
   }
 
+  .b-image.b-image_bt {
+    height: 180px;
+  }
+
   .b-image.b-image_paper {
     max-width: 300px;
     margin-top: 20px;
+  }
+
+  .b-image.b-image_bat {
+    height: 180px;
   }
 
   .b-columns__col.b-columns__col_60.b-columns__col_align_center.mob_100 {
@@ -8049,6 +8074,10 @@ body {
   .b-columns__col.b-columns__col_40.mob_100 {
     width: 100%;
     text-align: center;
+  }
+
+  .b-columns__col.b-columns__col_100.b-columns__col_flex_h.b-columns__col_mg-bt_50 {
+    width: 100%;
   }
 
   .b-columns__col.b-columns__col_51.b-columns__col_align_center {
@@ -8335,8 +8364,20 @@ body {
     max-width: 170px;
   }
 
+  .b-block-circle {
+    opacity: .4;
+    margin-left: auto;
+    margin-right: auto;
+    left: 39%;
+    right: auto;
+  }
+
   .b-switch {
     display: none;
+  }
+
+  .b-width.b-width_50 {
+    font-size: .9em;
   }
 
   .image-3 {
@@ -8874,6 +8915,10 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     overflow: auto;
+  }
+
+  .b-width.b-width_50 {
+    font-size: 1em;
   }
 }
 
