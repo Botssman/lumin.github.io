@@ -292,3 +292,23 @@ fields:
                     have_questions_text_btn:
                         label: have_questions_text_btn
                         type: text
+            documents:
+                name: documents
+                fields:
+                    documents_title:
+                        label: documents_title
+                        type: text
+                    documents_subtitle:
+                        label: documents_subtitle
+                        type: text
+                    documents_rep:
+                        label: documents_rep
+                        type: repeater
+                        form:
+                            fields:
+                                documents_text_btn:
+                                    label: documents_text_btn
+                                    type: text
+                                documents_file_|_media:
+                                    label: 'documents_file | media'
+                                    type: text

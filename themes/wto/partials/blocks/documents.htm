@@ -12,7 +12,7 @@
 		</div>
 		<div class="b-grid b-grid_col_3 b-grid_pd">
 			{% for item in block.documents_rep %}
-			<a href="{{ item.documents_file | media }}" class="b-button b-button_gray w-button" download="{{ item.documents_text_btn }}">
+			<a href="{{ item.documents_file_|_media }}" class="b-button b-button_gray w-button" download="{{ item.documents_text_btn }}">
 				{{ item.documents_text_btn }}
 			</a>
 			{% endfor %}
