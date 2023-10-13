@@ -4102,7 +4102,6 @@ body {
 
 .main {
   z-index: 0;
-  padding-top: 86px;
   overflow: hidden;
 }
 
@@ -7690,6 +7689,10 @@ body {
     justify-content: center;
   }
 
+  .h-wrap.h-wrap_overflow_hidden {
+    min-height: auto;
+  }
+
   .h-wrap.h-wrap_border_down {
     margin-bottom: 10px;
   }
@@ -8000,6 +8003,10 @@ body {
     text-align: center;
   }
 
+  .main.main_lsp {
+    overflow: hidden;
+  }
+
   .b-block.b-block_icon {
     width: 60px;
     height: 60px;
@@ -8077,6 +8084,13 @@ body {
     width: 40px;
     height: 40px;
     padding: 6px;
+  }
+
+  .b-horizontal {
+    width: auto;
+    padding-right: 0;
+    position: static;
+    overflow: auto;
   }
 
   .b-card {
@@ -8282,6 +8296,15 @@ body {
   .b-button.b-button_width_210.b-button_mg-lt_20.mob_mg-tp_20 {
     margin-top: 20px;
     margin-left: 0;
+  }
+
+  .b-button.b-button_back.b-button_none-mg.arrow-left.mob {
+    width: auto;
+    height: auto;
+  }
+
+  .b-button.b-button_gray {
+    max-width: none;
   }
 
   .b-tabs__content.b-tabs__content_min {
