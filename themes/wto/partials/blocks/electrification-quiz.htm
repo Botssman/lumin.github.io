@@ -7,7 +7,7 @@
 		</div>
 		<div class="b-form w-form">
 			<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a413" data-wf-element-id="68e07702-c5fc-8759-bb9a-fdd3646be354">
-				<div data-delay="4000" data-animation="cross" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+				<div data-delay="4000" data-animation="cross" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
 					<div class="b-slider__mask w-slider-mask">
 						{% for item in block.electrification_quiz_rep %}
 						<div class="b-slider__slide w-slide">
@@ -358,9 +358,9 @@
 {% if block.type == "quiz_step_3" %}
 								<div>
 									<div class="b-block b-block_stat b-block_quiz">
-										<img src="{{ 'assets/images/Appliance_.png'|theme }}" loading="lazy" alt="" class="b-image b-image_cert">
+										<img src="{{ 'assets/images/Appliance_.png'|theme }}" loading="lazy" alt="" class="b-image b-image_cert mob_block">
 										<div class="b-columns b-columns_space-between">
-											<div class="b-columns__col b-columns__col_50">
+											<div class="b-columns__col b-columns__col_50 mob_100">
 												<div class="b-text b-text_size_40 b-text_bold">
 													{{ block.title }}
 												</div>
@@ -402,7 +402,7 @@
 													{{ block.btn }}
 												</a>
 											</div>
-											<div class="b-columns__col b-columns__col_50">
+											<div class="b-columns__col b-columns__col_50 mob_100">
 												<img src="{{ block.image|media }}" alt="" loading="lazy">
 											</div>
 										</div>
@@ -420,7 +420,7 @@
 						{% endfor %}
 					</div>
 					<div class="b-slider__arrow-left w-slider-arrow-left"></div>
-					<div class="b-slider__arrow-right w-slider-arrow-right"></div>
+					<div class="b-slider__arrow-right quiz w-slider-arrow-right"></div>
 					<div class="b-slider__nav w-slider-nav w-round"></div>
 				</div>
 			</form>

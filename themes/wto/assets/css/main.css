@@ -7482,6 +7482,13 @@ body {
     position: static;
   }
 
+  .b-utility-rebates.v-4 {
+    max-width: 250px;
+    padding: 20px;
+    bottom: 8%;
+    right: 2%;
+  }
+
   .b-card-post__head {
     height: 100%;
   }
@@ -7689,6 +7696,10 @@ body {
     justify-content: center;
   }
 
+  .h-wrap.h-wrap_align_center.h-wrap_mg-bt_90.mob_mg-bt_40 {
+    margin-bottom: 40px;
+  }
+
   .h-wrap.h-wrap_overflow_hidden {
     min-height: auto;
   }
@@ -7846,6 +7857,17 @@ body {
     object-fit: cover;
     object-position: 50% 100%;
     display: block;
+  }
+
+  .b-image.b-image_cert.mob_block {
+    height: 394px;
+    object-position: 100% 100%;
+    background-image: none;
+    display: block;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
   }
 
   .b-image.b-image_lumin-cert {
@@ -8013,6 +8035,11 @@ body {
     flex: none;
   }
 
+  .b-block.b-block_stat.b-block_quiz {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .image {
     width: 45vw;
   }
@@ -8150,6 +8177,14 @@ body {
     position: static;
   }
 
+  .b-utility-rebates.v-4 {
+    background-color: rgba(23, 23, 26, 0);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 20px;
+    position: static;
+  }
+
   .b-card-post__head {
     max-height: 190px;
   }
@@ -8276,6 +8311,13 @@ body {
     text-align: left;
   }
 
+  .b-radio.b-radio_company {
+    width: auto;
+    height: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .section.s-section_100vh.s-section_max-h {
     min-height: auto;
     padding-top: 6em;
@@ -8298,9 +8340,17 @@ body {
     margin-left: 0;
   }
 
+  .b-button.b-button_back.arrow-left {
+    width: auto;
+  }
+
   .b-button.b-button_back.b-button_none-mg.arrow-left.mob {
     width: auto;
     height: auto;
+  }
+
+  .b-button.b-button_next.arrow-right {
+    width: auto;
   }
 
   .b-button.b-button_gray {
@@ -8376,6 +8426,12 @@ body {
     display: block;
   }
 
+  .b-image.b-image_cert.mob_block {
+    width: 480px;
+    height: 282px;
+    object-position: 86% 100%;
+  }
+
   .b-image.b-image_lumin-cert {
     max-width: 140px;
   }
@@ -8439,6 +8495,10 @@ body {
 
   .b-block.b-block_white {
     padding: 10px 20px 30px;
+  }
+
+  .b-block.b-block_stat.b-block_quiz {
+    padding: 20px 0;
   }
 
   .image {
@@ -8606,6 +8666,10 @@ body {
   .b-block-bg {
     padding-top: 5em;
     padding-bottom: 5em;
+  }
+
+  .image-2 {
+    height: 100%;
   }
 }
 

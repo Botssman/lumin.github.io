@@ -142,14 +142,14 @@ fields:
             solar_edge_map:
                 name: solar-edge-map
                 fields:
-                    solar_edge_map_die:
-                        label: solar_edge_map_die
-                        type: text
                     solar_edge_map_title:
                         label: solar_edge_map_title
                         type: text
                     solar_edge_map_subtitle:
                         label: solar_edge_map_subtitle
+                        type: text
+                    solar_edge_map_die:
+                        label: solar_edge_map_die
                         type: text
                     solar_edge_map_image_map:
                         label: solar_edge_map_image_map
