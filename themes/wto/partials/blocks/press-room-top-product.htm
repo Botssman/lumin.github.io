@@ -1,14 +1,14 @@
 <section class="section">
-	<div data-delay="4000" data-animation="slide" class="b-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+	<div data-delay="4000" data-animation="slide" class="b-slider tb_pd_100 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
 		<div class="b-slider__mask b-slider-mask_pd_12-5 w-slider-mask">
 			{% for item in block.press_room_top %}
 			<div class="b-slider__slide w-slide">
 				<div class="container container_1300 container_align_center w-container">
 					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_stat v-3">
-					<div class="b-block b-block_stat">
-						<img src="{{ 'assets/images/award-bg.png'|theme }}" loading="lazy" alt="" class="b-image b-image_cert">
+					<div class="b-block b-block_stat tp_pd">
+						<img src="{{ 'assets/images/award-bg.png'|theme }}" loading="lazy" alt="" class="b-image b-image_cert show">
 						<div class="b-columns b-columns_space-between">
-							<div class="b-columns__col b-columns__col_73">
+							<div class="b-columns__col b-columns__col_73 tb_100 mob_align_center">
 								<div class="h-wrap h-wrap_mg-bt_20">
 									<div class="b-text b-text_size_40 b-text_white b-text_extrabold">
 										{{ item.title|raw }}
@@ -20,7 +20,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="b-columns__col b-columns__col_30 b-columns__col_align_center"></div>
+							<div class="b-columns__col b-columns__col_30 b-columns__col_align_center tb_100"></div>
 						</div>
 					</div>
 				</div>
@@ -33,6 +33,6 @@
 		<div class="b-slider__arrow-right w-slider-arrow-right">
 			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 		</div>
-		<div class="b-slider__nav b-slider__show w-slider-nav w-round w-num"></div>
+		<div class="b-slider__nav b-slider__show mob-hide w-slider-nav w-round w-num"></div>
 	</div>
 </section>
