@@ -44,7 +44,7 @@ fields:
                                                 label: Text list
                                                 type: textarea
     edge_new_device_mob_rep:
-        label: Block
+        label: Block mobile
         type: repeater
         tab: Mobile
         form: 
