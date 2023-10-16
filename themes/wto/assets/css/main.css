@@ -7091,7 +7091,7 @@ body {
 
   .section.s-section_100vh.s-section_sticky {
     justify-content: flex-start;
-    padding-top: 10em;
+    padding-top: 8em;
   }
 
   .section.s-section_yellow.s-section_pd_11-25 {
@@ -7196,7 +7196,8 @@ body {
   }
 
   .container.container_absolute.tp_mg {
-    margin-top: 17%;
+    margin-top: 0%;
+    position: static;
   }
 
   .container.container_align_center.pd_none {
@@ -7217,6 +7218,11 @@ body {
 
   .b-menu__button.w--open {
     background-color: rgba(0, 0, 0, 0);
+  }
+
+  .b-image.b-image_first {
+    width: 50vw;
+    max-width: 50vw;
   }
 
   .b-image.b-image_devise {
