@@ -36,7 +36,9 @@ default = 0
 		width: 100%
 }
 @media (max-width: 991px) {
-  fullpage_api.destroy('all');
+.fp-responsive .fp-is-overflow.fp-section {
+    height: auto !important;
+}
 }
 		</style>
 		<meta name="description" content="{{ this.page.meta_description }}">{% partial "head" %}{% component "forms" %}
