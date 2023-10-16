@@ -4137,6 +4137,7 @@ body {
   max-width: 80px;
   background-color: var(--goldenrod);
   border-radius: 100%;
+  flex: none;
   margin-right: 20px;
 }
 
@@ -8717,7 +8718,7 @@ body {
   }
 
   .b-columns__col.b-columns__col_100.b-columns__col_flex_h.b-columns__col_mg-bt_50 {
-    width: 70%;
+    width: 80%;
   }
 
   .b-columns__col.b-columns__col_73.tb_100 {
@@ -8943,6 +8944,28 @@ body {
   .before, .before_mobile {
     background-repeat: repeat-x;
     background-size: cover;
+  }
+
+  .b-block-circle {
+    width: 100vw;
+    height: 100vw;
+    bottom: -93px;
+    left: auto;
+  }
+
+  .b-block-circle__circle {
+    width: 33.45vw;
+    height: 33.45vw;
+  }
+
+  .b-block-circle__circle.b-block-circle__circle_two {
+    width: 66vw;
+    height: 66vw;
+  }
+
+  .b-block-circle__circle.b-block-circle__circle_three {
+    width: 99vw;
+    height: 99vw;
   }
 
   .b-block-bg {
