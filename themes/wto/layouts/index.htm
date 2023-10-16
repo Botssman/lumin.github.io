@@ -5,7 +5,7 @@ forms
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Fri Oct 13 2023 14:33:21 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a392" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Mon Oct 16 2023 12:15:51 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a392" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
@@ -111,6 +111,14 @@ default = 0
                 width: 200vw;
                 height: 200vw;
             }
+            @media screen and (max-width: 990.98px) {
+                [data-section="video-gallery"] .b-grid__col {
+                    opacity: 1!important;
+                }
+                [data-section="video-gallery"] .b-grid__col:nth-child(5) {
+                    transform: scale(1)!important;
+                }
+            }
         
 		</style>
 		<script type="text/javascript">
@@ -135,6 +143,7 @@ default = 0
     licenseKey: 'LU48H-MIOG8-RWEKK-V82JK-AODOL',
 		scrollBar: true,
     verticalCentered: true,
+    responsiveWidth: 991,
     normalScrollElements: '.video-galery',
     beforeLeave: function(origin, destination, direction) {
         const $item = origin.item;

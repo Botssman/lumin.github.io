@@ -7104,7 +7104,7 @@ body {
     padding-bottom: 6em;
   }
 
-  .section.s-section_black.section_tb_5, .section.s-section_pd_11-25, .section.s-section_vertical.s-section_pd_11-25, .section.section_tb_5 {
+  .section.s-section_black.section_tb_5, .section.s-section_black.section_tb_5-_15, .section.s-section_pd_11-25, .section.s-section_vertical.s-section_pd_11-25, .section.section_tb_5 {
     padding-top: 5em;
     padding-bottom: 5em;
   }
@@ -7856,9 +7856,17 @@ body {
     justify-content: center;
   }
 
+  .section.s-section_100vh.s-section_tr.section_tb_5 {
+    min-height: 80vh;
+  }
+
   .section.s-section_yellow.section_pd-bt_40.mob_pd {
     padding-top: 5em;
     padding-bottom: 5em;
+  }
+
+  .section.s-section_black.section_tb_5-_15 {
+    padding-bottom: 15em;
   }
 
   .header {
@@ -8384,6 +8392,10 @@ body {
     width: 100%;
     height: 160px;
   }
+
+  .b-block-circle__home {
+    width: 40px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -8493,6 +8505,12 @@ body {
     padding-top: 6em;
   }
 
+  .section.s-section_black.section_tb_5, .section.s-section_black.section_tb_5-_15 {
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+
   .section.tb_pd_0_5 {
     padding-bottom: 5em;
   }
@@ -8570,6 +8588,10 @@ body {
     position: relative;
   }
 
+  .container.container_absolute.tp_mg {
+    margin-top: 37%;
+  }
+
   .container.container_align_center.pd_none {
     padding-left: 0;
     padding-right: 0;
@@ -8582,6 +8604,24 @@ body {
   .b-input.b-input_mg-rt_20.mob_mg-bt_20 {
     margin-bottom: 20px;
     margin-right: 0;
+  }
+
+  .b-image.b-image_element {
+    width: 60%;
+    max-width: none;
+    right: -22px;
+  }
+
+  .b-image.b-image_element.v-3 {
+    width: 80%;
+    max-width: none;
+    right: -43px;
+  }
+
+  .b-image.b-image_first {
+    width: 100%;
+    max-width: none;
+    left: 0;
   }
 
   .b-image.b-image_devise {
@@ -8694,6 +8734,10 @@ body {
 
   .b-slider__slide {
     margin-right: 4%;
+  }
+
+  .b-block.b-block_image.b-block_mg-bt_6 {
+    right: auto;
   }
 
   .b-block.b-block_certified {
