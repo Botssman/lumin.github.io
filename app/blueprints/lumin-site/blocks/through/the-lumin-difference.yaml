@@ -1,0 +1,28 @@
+uuid: sections-lumin-the-lumin-difference
+name: Section the lumin difference
+type: mixin
+handle: Blocks\TheLuminDifference
+
+fields:
+    title:
+        label: Title
+        type: text
+    image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    title_list:
+        label: Title list
+        type: text
+        span: left
+    lists:
+        label: Lists
+        type: repeater
+        titleFrom: Lists
+        form: 
+            fields:
+                text_list:
+                    label: Text list
+                    type: text
+                    span: right

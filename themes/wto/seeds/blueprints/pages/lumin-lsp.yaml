@@ -165,6 +165,53 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+            control_what_matters:
+                name: control-what-matters
+                fields:
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    title:
+                        label: Название
+                        type: text
+                    text|raw:
+                        label: text|raw
+                        type: text
+                    title_list:
+                        label: title_list
+                        type: text
+                    lists:
+                        label: lists
+                        type: repeater
+                        form:
+                            fields:
+                                text_list:
+                                    label: text_list
+                                    type: text
+            the_lumin_difference:
+                name: the-lumin-difference
+                fields:
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    title:
+                        label: Название
+                        type: text
+                    list:
+                        label: Список
+                        type: text
+                    lists:
+                        label: lists
+                        type: repeater
+                        form:
+                            fields:
+                                text_list:
+                                    label: text_list
+                                    type: text
             lsp_installer:
                 name: lsp-installer
                 fields:

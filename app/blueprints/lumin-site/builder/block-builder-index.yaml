@@ -104,6 +104,20 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\LuminEstimator
+            control_what_matters:
+                name: Block estimator
+                icon: icon-recycle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\ControlWhatMatters
+            the_lumin_difference:
+                name: Block estimator
+                icon: icon-recycle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\TheLuminDifference
             lumin_updates:
                 name: Block Updates
                 icon: icon-cloud-upload

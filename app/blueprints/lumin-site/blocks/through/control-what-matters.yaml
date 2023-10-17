@@ -1,0 +1,31 @@
+uuid: sections-lumin-control-what-matters
+name: Section control what matters
+type: mixin
+handle: Blocks\ControlWhatMatters
+
+fields:
+    title:
+        label: Title
+        type: text
+    text:
+        label: Text
+        type: richeditor
+    image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    title_list:
+        label: Title list
+        type: text
+        span: left
+    lists:
+        label: Lists
+        type: repeater
+        titleFrom: Lists
+        form: 
+            fields:
+                text_list:
+                    label: Text list
+                    type: text
+                    span: right

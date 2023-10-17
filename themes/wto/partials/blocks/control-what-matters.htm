@@ -1,0 +1,40 @@
+<section class="section mob_pd_5">
+	<div class="container w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_30 b-columns__col_justify_end tb_100">
+				<img class="b-image b-image_meet-lumin" src="{{ block.image|media }}" alt="" loading="lazy">
+			</div>
+			<div class="b-columns__col b-columns__col_70 b-columns__col_align_center b-columns__col_pd-lt_100 tb_100">
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<div class="b-title b-title_mini mob_30">
+						{{ block.title }}
+					</div>
+				</div>
+				<div class="h-wrap h-wrap_mg-bt_40">
+					<div class="b-text b-text_size_18 b-text_line-h_1-8">
+						{{ block.text|raw }}
+					</div>
+				</div>
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<div class="b-text b-text_size_30 b-text_extra-bold">
+						{{ block.title_list }}
+					</div>
+				</div>
+				<ul role="list" class="b-list">
+					{% for item in block.lists %}
+					<li class="b-list__item b-list__item_mg-bt_20">
+						<div class="b-list__circle"></div>
+						<div class="b-text">
+							{{ item.text_list }}
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
+				<a href="#" class="b-button b-button_mini w-button">
+					More items
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container w-container"></div>
+</section>
