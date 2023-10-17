@@ -118,14 +118,14 @@ fields:
                         type: mixin
                         source: Blocks\Through\HaveQuestions
             control_what_matters:
-                name: Block estimator
+                name: Block Control What Matters
                 icon: icon-recycle
                 fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\ControlWhatMatters
             the_lumin_difference:
-                name: Block estimator
+                name: Block TheLumin Difference
                 icon: icon-recycle
                 fields:
                     _mixin:
