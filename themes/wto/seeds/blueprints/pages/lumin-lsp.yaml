@@ -76,6 +76,9 @@ fields:
             lsp_new_device:
                 name: lsp-new-device
                 fields:
+                    title:
+                        label: Название
+                        type: text
                     lsp_new_device_rep:
                         label: lsp_new_device_rep
                         type: repeater
@@ -200,9 +203,6 @@ fields:
                         maxItems: '1'
                     title:
                         label: Название
-                        type: text
-                    list:
-                        label: Список
                         type: text
                     lists:
                         label: lists
@@ -356,6 +356,6 @@ fields:
                                 documents_text_btn:
                                     label: documents_text_btn
                                     type: text
-                                documents_file_|_media:
-                                    label: 'documents_file | media'
+                                documents_file|media:
+                                    label: documents_file|media
                                     type: text

@@ -9,7 +9,7 @@ fields:
       type: text
     document_img_subtitle:
       label: Subtitle
-      type: text
+      type: richeditor
     document_img_text_btn:
       label: Text document
       type: text

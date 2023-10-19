@@ -122,14 +122,14 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\ControlWhatMatters
+                        source: Blocks\ControlWhatMatters
             the_lumin_difference:
                 name: Block TheLumin Difference
                 icon: icon-recycle
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\TheLuminDifference
+                        source: Blocks\TheLuminDifference
             modal-installer:
                 name: Modal installer
                 icon: icon-question-circle

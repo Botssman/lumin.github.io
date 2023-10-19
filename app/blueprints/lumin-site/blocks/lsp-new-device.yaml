@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\LspNewDevice
 
 fields:
+    title:
+        label: Title
+        type: text
     lsp_new_device_rep:
         type: repeater
         form:

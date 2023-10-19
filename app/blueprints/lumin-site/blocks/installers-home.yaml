@@ -9,7 +9,7 @@ fields:
         type: text
     installers_home_subtitle:
         label: Subtitle
-        type: textarea
+        type: richeditor
     installers_home_image:
         label: Image
         type: mediafinder

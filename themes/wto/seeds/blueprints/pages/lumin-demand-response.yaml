@@ -321,8 +321,8 @@ fields:
                     document_img_title:
                         label: document_img_title
                         type: text
-                    document_img_subtitle:
-                        label: document_img_subtitle
+                    document_img_subtitle|raw:
+                        label: document_img_subtitle|raw
                         type: text
                     document_img_text_btn:
                         label: document_img_text_btn
@@ -343,8 +343,8 @@ fields:
                     document_title:
                         label: document_title
                         type: text
-                    document_subtitle:
-                        label: document_subtitle
+                    document_subtitle|raw:
+                        label: document_subtitle|raw
                         type: text
                     document_text_btn:
                         label: document_text_btn

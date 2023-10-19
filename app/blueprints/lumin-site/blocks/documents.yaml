@@ -9,7 +9,7 @@ fields:
       type: text
     documents_subtitle:
       label: Subtitle
-      type: text
+      type: richeditor
     documents_rep:
         type: repeater
         form:

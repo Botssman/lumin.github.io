@@ -18,7 +18,6 @@ fields:
     title_list:
         label: Title list
         type: text
-        span: left
     lists:
         label: Lists
         type: repeater
@@ -27,5 +26,4 @@ fields:
             fields:
                 text_list:
                     label: Text list
-                    type: text
-                    span: right
+                    type: textarea
