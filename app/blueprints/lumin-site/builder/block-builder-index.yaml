@@ -110,14 +110,14 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\ControlWhatMatters
+                        source: Blocks\ControlWhatMatters
             the_lumin_difference:
                 name: Block TheLumin Difference
                 icon: icon-recycle
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\TheLuminDifference
+                        source: Blocks\TheLuminDifference
             lumin_updates:
                 name: Block Updates
                 icon: icon-cloud-upload
