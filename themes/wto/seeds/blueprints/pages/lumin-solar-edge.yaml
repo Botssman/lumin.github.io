@@ -85,8 +85,8 @@ fields:
                     electrification_works_title:
                         label: electrification_works_title
                         type: text
-                    electrification_works_title_lists:
-                        label: electrification_works_title_lists
+                    electrification_works_title_lists|raw:
+                        label: electrification_works_title_lists|raw
                         type: text
                     ectrification_works_text|raw:
                         label: ectrification_works_text|raw
@@ -148,8 +148,8 @@ fields:
                     solar_edge_map_die:
                         label: solar_edge_map_die
                         type: text
-                    solar_edge_map_text:
-                        label: solar_edge_map_text
+                    solar_edge_map_text|raw:
+                        label: solar_edge_map_text|raw
                         type: text
                     solar_edge_map_image_map:
                         label: solar_edge_map_image_map

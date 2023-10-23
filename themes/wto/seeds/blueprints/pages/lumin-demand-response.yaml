@@ -318,8 +318,8 @@ fields:
             document_img:
                 name: document-img
                 fields:
-                    document_img_title:
-                        label: document_img_title
+                    document_img_title|raw:
+                        label: document_img_title|raw
                         type: text
                     document_img_subtitle|raw:
                         label: document_img_subtitle|raw
@@ -340,8 +340,8 @@ fields:
             document:
                 name: document
                 fields:
-                    document_title:
-                        label: document_title
+                    document_title|raw:
+                        label: document_title|raw
                         type: text
                     document_subtitle|raw:
                         label: document_subtitle|raw

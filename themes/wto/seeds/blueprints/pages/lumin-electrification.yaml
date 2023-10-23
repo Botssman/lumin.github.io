@@ -88,8 +88,8 @@ fields:
                     electrification_works_title:
                         label: electrification_works_title
                         type: text
-                    electrification_works_title_lists:
-                        label: electrification_works_title_lists
+                    electrification_works_title_lists|raw:
+                        label: electrification_works_title_lists|raw
                         type: text
                     ectrification_works_text|raw:
                         label: ectrification_works_text|raw
