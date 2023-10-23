@@ -290,6 +290,20 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+            copy_bullet_1:
+                name: copy-bullet-1
+                fields:
+                    document_img_title:
+                        label: document_img_title
+                        type: text
+                    document_img_subtitle|raw:
+                        label: document_img_subtitle|raw
+                        type: text
+                    document_img_image:
+                        label: document_img_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
             document:
                 name: document
                 fields:
@@ -307,6 +321,15 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+            copy_bullet_2:
+                name: copy-bullet-2
+                fields:
+                    document_title:
+                        label: document_title
+                        type: text
+                    document_subtitle|raw:
+                        label: document_subtitle|raw
+                        type: text
             how_it_works_modal:
                 label: how_it_works_modal
                 type: repeater

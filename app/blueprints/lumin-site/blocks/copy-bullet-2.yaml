@@ -1,0 +1,24 @@
+uuid: sections-copy-bullet-2
+name: Block copy bullet points no CTA 2
+type: mixin
+handle: Blocks\СopyBullet2
+
+fields:
+    document_title:
+      label: Title
+      type: text
+    document_subtitle:
+      label: Subtitle
+      type: richeditor
+    document_text_btn:
+      label: Text document
+      type: text
+    document_img_fon:
+      label: Image fon
+      type: mediafinder
+      mode: image
+      maxItems: 1
+    document_btn_modal:
+      label: Id open Modal
+      comment: Id modal - 0a97b997-f11c-7a00-d9df-fe3fbf0c5c5e
+      type: text

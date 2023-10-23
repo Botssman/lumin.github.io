@@ -102,6 +102,20 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\DocumentImg
+            copy_bullet_1:
+                name: Block copy bullet points no CTA 1
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\CopyBullet1
+            copy_bullet_2:
+                name: Block copy bullet points no CTA 2
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\CopyBullet2
             questions:
                 name: Block question
                 icon: icon-question

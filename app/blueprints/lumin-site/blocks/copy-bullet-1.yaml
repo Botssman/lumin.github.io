@@ -1,0 +1,17 @@
+uuid: sections-copy-bullet-1
+name: Block copy bullet points no CTA 1
+type: mixin
+handle: Blocks\CopyBullet1
+
+fields:
+    document_img_title:
+      label: Title
+      type: text
+    document_img_subtitle:
+      label: Subtitle
+      type: richeditor
+    document_img_image:
+      label: Image
+      type: mediafinder
+      mode: image
+      maxItems: 1
