@@ -10,3 +10,8 @@ fields:
     ectrification_works_text:
         label: Text
         type: richeditor
+    electrification_works_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
