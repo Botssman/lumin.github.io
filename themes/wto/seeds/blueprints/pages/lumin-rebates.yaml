@@ -64,8 +64,8 @@ fields:
                     rebates_main_title:
                         label: rebates_main_title
                         type: text
-                    rebates_main_subtitle:
-                        label: rebates_main_subtitle
+                    rebates_main_subtitle|raw:
+                        label: rebates_main_subtitle|raw
                         type: text
                     rebates_main_text_btn:
                         label: rebates_main_text_btn

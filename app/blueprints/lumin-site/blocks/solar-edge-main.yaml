@@ -9,7 +9,7 @@ fields:
         type: text
     solar_edge_main_subtitle:
         label: Subtitle
-        type: text
+        type: richeditor
     solar_edge_main_text_btn:
         label: Text btn
         type: text

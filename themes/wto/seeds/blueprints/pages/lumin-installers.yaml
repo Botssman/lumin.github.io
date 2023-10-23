@@ -244,6 +244,9 @@ fields:
                     solar_edge_map_die:
                         label: solar_edge_map_die
                         type: text
+                    solar_edge_map_text:
+                        label: solar_edge_map_text
+                        type: text
                     solar_edge_map_image_map:
                         label: solar_edge_map_image_map
                         type: mediafinder

@@ -9,7 +9,7 @@ fields:
         type: text
     electrification_main_subtitle:
         label: Subtitle
-        type: text
+        type: richeditor
     electrification_main_text_btn:
         label: Text btn
         type: text

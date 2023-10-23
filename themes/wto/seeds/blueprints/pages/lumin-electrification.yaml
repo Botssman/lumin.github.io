@@ -67,8 +67,8 @@ fields:
                     electrification_main_title:
                         label: electrification_main_title
                         type: text
-                    electrification_main_subtitle:
-                        label: electrification_main_subtitle
+                    electrification_main_subtitle|raw:
+                        label: electrification_main_subtitle|raw
                         type: text
                     electrification_main_text_btn:
                         label: electrification_main_text_btn
@@ -91,30 +91,27 @@ fields:
                     electrification_works_title_lists:
                         label: electrification_works_title_lists
                         type: text
-                    electrification_works_lists:
-                        label: electrification_works_lists
-                        type: repeater
-                        form:
-                            fields:
-                                number:
-                                    label: Число
-                                    type: text
-                                text:
-                                    label: Текст
-                                    type: text
+                    ectrification_works_text|raw:
+                        label: ectrification_works_text|raw
+                        type: text
                     electrification_works_image:
                         label: electrification_works_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    electrification_works_off:
-                        label: electrification_works_off
-                        type: mediafinder
-                        mode: image
-                        maxItems: '1'
-                    electrification_works_swich_text:
-                        label: electrification_works_swich_text
-                        type: text
+                    how_it_works_modal:
+                        label: how_it_works_modal
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text_list:
+                                    label: text_list
+                                    type: text
             electrification_integrates:
                 name: electrification-integrates
                 fields:

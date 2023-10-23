@@ -64,8 +64,8 @@ fields:
                     demand_response_main_title|raw:
                         label: demand_response_main_title|raw
                         type: text
-                    demand_response_main_subtitle:
-                        label: demand_response_main_subtitle
+                    demand_response_main_subtitle|raw:
+                        label: demand_response_main_subtitle|raw
                         type: text
                     demand_response_main_text_btn:
                         label: demand_response_main_text_btn

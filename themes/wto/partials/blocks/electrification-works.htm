@@ -1,4 +1,4 @@
-<section class="section s-section_100vh s-section_pd_home">
+<section class="section s-section_100vh s-section_pd_home v-2">
 	<div class="container w-container">
 		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_align_center">
 			<div class="b-title b-title_mini mob_30">
@@ -10,44 +10,59 @@
 				{{ block.electrification_works_title_lists }}
 			</div>
 		</div>
-		<ul role="list" class="b-list b-list_max-w_18">
-			{% for item in block.electrification_works_lists %}
-			<li class="b-list__item b-list__item_mg-bt_20">
-				<div class="b-list__numbers">
-					{{ item.number }}
-				</div>
-				<div class="b-text">
-					{{ item.text }}
-				</div>
-			</li>
-			{% endfor %}
-		</ul>
-		<div class="b-home-wrap">
-			<img class="b-image b-image_home" src="{{ block.electrification_works_image|media }}" alt="" data-w-id="84c328fa-8816-7d09-4d51-1abf38c175bb" loading="lazy">
-			<img class="b-image b-image_home b-image_home-abbsolute" src="{{ block.electrification_works_off|media }}" alt="" loading="lazy">
-			<div class="plus plus_2">
+		<div class="h-wrap h-wrap_width_300">
+			<div class="b-text">
+				{{ block.ectrification_works_text|raw }}
+			</div>
+		</div>
+		<div class="b-home-wrap v-2">
+			<img src="{{ block.electrification_works_image|media }}" loading="lazy" alt="" class="b-image b-image_home">
+			<div data-item="5" class="plus plus_2">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div class="plus__circle"></div>
 			</div>
-			<div class="plus plus_3">
+			<div data-item="7" class="plus plus_7">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div class="plus__circle"></div>
 			</div>
-			<div class="plus plus_4">
+			<div data-item="6" class="plus plus_3">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div class="plus__circle"></div>
 			</div>
-			<div class="plus plus_1">
+			<div data-item="2" class="plus plus_4">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
 				<div class="plus__circle"></div>
 			</div>
-			<div class="b-switch">
-				<div data-w-id="84c328fa-8816-7d09-4d51-1abf38c175ca" class="b-switch__green">
-					<div class="b-switch__circle"></div>
+			<div data-item="3" class="plus plus_6">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+			<div data-item="4" class="plus plus_1">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+			<div data-item="1" class="plus plus_5">
+				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
+				<div class="plus__circle"></div>
+			</div>
+		</div>
+	</div>
+	<div class="b-modal works">
+		<div class="b-block-bg b-block-bg__modal">
+			<a data-w-id="250fa197-5e41-9478-4a45-541c6bfc58cb" href="#" class="b-modal__close w-inline-block">
+				<img src="{{ 'assets/images/Dot.svg'|theme }}" loading="lazy" alt="">
+			</a>
+			<div data-list="" class="h-wrap h-wrap_overflow_auto">
+				{% for item in block.how_it_works_modal %}
+				<div class="h-wrap h-wrap_maxw_320">
+					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_devise b-image_devise-modal">
+					<div class="h-wrap h-wrap_mg-bt_40">
+						<div class="b-text">
+							{{ item.text_list }}
+						</div>
+					</div>
 				</div>
-				<div class="b-text b-text_extra-bold">
-					{{ block.electrification_works_swich_text }}
-				</div>
+				{% endfor %}
 			</div>
 		</div>
 	</div>

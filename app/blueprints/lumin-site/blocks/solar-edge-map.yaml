@@ -28,6 +28,9 @@ fields:
     solar_edge_map_die:
         label: Die
         type: text
+    solar_edge_map_text:
+        label: Text down Die
+        type: textarea
     solar_edge_map_text_btn:
         label: Text btn
         type: text
