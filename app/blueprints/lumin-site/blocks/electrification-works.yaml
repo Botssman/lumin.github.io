@@ -7,31 +7,6 @@ fields:
     electrification_works_title:
         label: Title
         type: text
-    electrification_works_title_lists:
-        label: Title lists
-        type: text
-    electrification_works_lists:
-        type: repeater
-        form:
-            fields:
-                number:
-                    label: Number list
-                    type: text
-                    span: left
-                text:
-                    label: Text list
-                    type: text
-                    span: right
-    electrification_works_swich_text:
-        label: Swich text
-        type: text
-    electrification_works_image:
-        label: Image
-        type: mediafinder
-        mode: image
-        maxItems: 1
-    electrification_works_off:
-        label: Image
-        type: mediafinder
-        mode: image
-        maxItems: 1
+    ectrification_works_text:
+        label: Text
+        type: richeditor
