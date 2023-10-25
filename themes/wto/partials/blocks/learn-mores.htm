@@ -1,38 +1,38 @@
-<section class="section s-section_gray s-section_pd_11-25">
+<section class="{{ section_s_section_gray_s_section_pd_11_25 }}">
 	<img src="{{ 'assets/images/placeholder.svg'|theme }}" loading="lazy" alt="">
-	<div class="container container_align_center w-container">
-		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_max-width_800">
-			<div class="b-title b-title_mini mob_30">
+	<div class="{{ block.container_container_align_center_w_container }}">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_50_h_wrap_max_width_800 }}">
+			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
 				{{ block.learn_more_title }}
 			</div>
 		</div>
-		<div class="b-block b-block_white">
-			<div class="b-columns">
-				<div class="b-columns__col b-columns__col_50 b-columns__col_pd-lt_60 tb_70 mob_100">
-					<div class="h-wrap tb_mg-bt_40">
-						<a href="#" class="b-arrow__swiper-prev w-inline-block">
-							<div class="b-slider__arrow b-slider__left-arrow galery">
+		<div class="{{ block.b_block_b_block_white }}">
+			<div class="{{ block.b_columns }}">
+				<div class="{{ block.b_columns__col_b_columns__col_50_b_columns__col_pd_lt_60_tb_70_mob_100 }}">
+					<div class="{{ block.h_wrap_tb_mg_bt_40 }}">
+						<a href="#" class="{{ block.b_arrow__swiper_prev_w_inline_block }}">
+							<div class="{{ block.b_slider__arrow_b_slider__left_arrow_galery }}">
 								<img src="{{ 'assets/images/sviper20arrow20(1).svg'|theme }}" loading="lazy" alt="">
 							</div>
 						</a>
-						<a href="#" class="b-arrow__swiper-next w-inline-block">
-							<div class="b-slider__arrow b-slider__right-arrow galery">
+						<a href="#" class="{{ block.b_arrow__swiper_next_w_inline_block }}">
+							<div class="{{ block.b_slider__arrow_b_slider__right_arrow_galery }}">
 								<img src="{{ 'assets/images/sviper20arrow20(2).svg'|theme }}" loading="lazy" alt="">
 							</div>
 						</a>
-						<div class="swiper-container gallery-top">
-							<div class="swiper-wrapper">
+						<div class="{{ block.swiper_container_gallery_top }}">
+							<div class="{{ block.swiper_wrapper }}">
 								{% for item in block.learn_more_slider %}
-								<div class="swiper-slide">
+								<div class="{{ item.swiper_slide }}">
 									<img src="{{ item.image|media }}" alt="">
 								</div>
 								{% endfor %}
 							</div>
 						</div>
-						<div class="swiper-container gallery-thumbs">
-							<div class="swiper-wrapper bottom">
+						<div class="{{ block.swiper_container_gallery_thumbs }}">
+							<div class="{{ block.swiper_wrapper_bottom }}">
 								{% for item in block.learn_more_slider %}
-								<div class="swiper-slide">
+								<div class="{{ item.swiper_slide }}">
 									<img src="{{ item.image|media }}" alt="">
 								</div>
 								{% endfor %}
@@ -40,18 +40,18 @@
 						</div>
 					</div>
 				</div>
-				<div class="b-columns__col b-columns__col_50 b-columns__col_flex_center tb_100">
+				<div class="{{ block.b_columns__col_b_columns__col_50_b_columns__col_flex_center_tb_100 }}">
 					<div>
 						{% for item in block.learn_more_characteristics %}
-						<div class="h-wrap h-wrap_mg-bt_10">
-							<div class="b-columns">
-								<div class="b-columns__col b-columns__col_35 mob_100">
-									<div class="b-text b-text_bold">
+						<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+							<div class="{{ item.b_columns }}">
+								<div class="{{ item.b_columns__col_b_columns__col_35_mob_100 }}">
+									<div class="{{ item.b_text_b_text_bold }}">
 										{{ item.characteristics_name }}
 									</div>
 								</div>
-								<div class="b-columns__col b-columns__col_35 mob_100">
-									<div class="b-text">
+								<div class="{{ item.b_columns__col_b_columns__col_35_mob_100 }}">
+									<div class="{{ item.b_text }}">
 										{{ item.characteristics_text }}
 									</div>
 								</div>
@@ -59,23 +59,23 @@
 						</div>
 						{% endfor %}
 					</div>
-					<div class="b-recomend b-recomend_mg-bt_35_40">
+					<div class="{{ block.b_recomend_b_recomend_mg_bt_35_40 }}">
 						{% for item in block.learn_more_recomend %}
-						<div class="b-recomend__item v-2">
-							<div class="b-recomend__img-cont v-2">
+						<div class="{{ item.b_recomend__item_v_2 }}">
+							<div class="{{ item.b_recomend__img_cont_v_2 }}">
 								<img src="{{ item.icon|media }}" loading="lazy" alt="">
 							</div>
-							<div class="b-text b-text_size_14">
+							<div class="{{ item.b_text_b_text_size_14 }}">
 								{{ item.text }}
 							</div>
 						</div>
 						{% endfor %}
 					</div>
-					<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_flex_v">
-						<a href="#" class="b-button b-button_blue b-button_max-w_200 w-button">
+					<div class="{{ block.h_wrap_h_wrap_flex_h_h_wrap_align_center_left_mob_flex_v }}">
+						<a href="#" class="{{ block.b_button_b_button_blue_b_button_max_w_200_w_button }}">
 							Buy now
 						</a>
-						<a href="{{ block.learn_more_link_btn }}" class="b-learn-more b-learn-more_mg-lt_30">
+						<a href="{{ block.learn_more_link_btn }}" class="{{ block.b_learn_more_b_learn_more_mg_lt_30 }}">
 							Learn more
 						</a>
 					</div>

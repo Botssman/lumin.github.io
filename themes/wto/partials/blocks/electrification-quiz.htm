@@ -1,48 +1,48 @@
-<section class="section s-section_100vh s-section_pd_11-25">
-	<div class="container container_align_center w-container">
-		<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_30">
-			<div class="b-title b-title_mini mob_30">
+<section class="{{ section_s_section_100vh_s_section_pd_11_25 }}">
+	<div class="{{ block.container_container_align_center_w_container }}">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30 }}">
+			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
 				{{ block.electrification_quiz_title }}
 			</div>
 		</div>
-		<div class="b-form w-form">
-			<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form" data-wf-page-id="648baa95d29f649e7b12a413" data-wf-element-id="68e07702-c5fc-8759-bb9a-fdd3646be354">
-				<div data-delay="4000" data-animation="cross" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-					<div class="b-slider__mask w-slider-mask">
+		<div class="{{ block.b_form_w_form }}">
+			<form data-name="Форма" id="email-form" name="email-form" method="get" data-wf-page-id="648baa95d29f649e7b12a413" data-wf-element-id="68e07702-c5fc-8759-bb9a-fdd3646be354" class="{{ block.b_form__form }}">
+				<div data-delay="4000" data-animation="cross" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="true" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+					<div class="{{ block.b_slider__mask_w_slider_mask }}">
 						{% for item in block.electrification_quiz_rep %}
-						<div class="b-slider__slide w-slide">
+						<div class="{{ item.b_slider__slide_w_slide }}">
 							<div>
 								{% for block in item.quiz %}
 {% if block.type == "quiz_step_1" %}
 								<div>
-									<div class="h-wrap">
-										<div class="b-slider__content">
-											<div class="b-step">
-												<div class="b-text b-text_size_26 b-text_extra-bold tb_18">
+									<div class="{{ block.h_wrap }}">
+										<div class="{{ block.b_slider__content }}">
+											<div class="{{ block.b_step }}">
+												<div class="{{ block.b_text_b_text_size_26_b_text_extra_bold_tb_18 }}">
 													{{ block.step_text }}
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_30">
-												<div class="b-text b-text_size_26 tb_15">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30 }}">
+												<div class="{{ block.b_text_b_text_size_26_tb_15 }}">
 													{{ block.desc }}
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
-												<div class="b-flex">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40 }}">
+												<div class="{{ block.b_flex }}">
 													{% for item in block.list %}
-													<label data-w-id="{{item.quiz_id}}" class="b-radio b-radio_company w-radio">
-														<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check w-radio-input"></div>
-														<input type="radio" id="Radio-1" name="radio-5" value="Radio 1" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-														<img alt="" src="{{ item.image|media }}" loading="lazy" class="image-2">
-														<span class="b-radio__text b-radio__text_hide w-form-label" for="Radio-1">
+													<label data-w-id="{{item.quiz_id}}" class="{{ item.b_radio_b_radio_company_w_radio }}">
+														<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_w_radio_input }}"></div>
+														<input type="radio" id="Radio-1" name="radio-5" value="Radio 1" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+														<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.image_2 }}">
+														<span for="Radio-1" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 															Radio 5
 														</span>
 													</label>
 													{% endfor %}
 												</div>
 											</div>
-											<div class="b-numbers">
-												<a href="#" class="b-button b-button_next arrow-right b-button_none-mg w-button">
+											<div class="{{ block.b_numbers }}">
+												<a href="#" class="{{ block.b_button_b_button_next_arrow_right_b_button_none_mg_w_button }}">
 													Next
 												</a>
 											</div>
@@ -52,33 +52,33 @@
 								{% endif %}
 {% if block.type == "quiz_step_2" %}
 								<div>
-									<div class="h-wrap">
-										<div class="b-slider__content">
-											<div class="b-step">
-												<div class="b-text b-text_size_26 b-text_extra-bold tb_18">
+									<div class="{{ block.h_wrap }}">
+										<div class="{{ block.b_slider__content }}">
+											<div class="{{ block.b_step }}">
+												<div class="{{ block.b_text_b_text_size_26_b_text_extra_bold_tb_18 }}">
 													{{ block.step_text }}
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_30">
-												<div class="b-text b-text_size_26 tb_15">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30 }}">
+												<div class="{{ block.b_text_b_text_size_26_tb_15 }}">
 													{{ block.desc }}
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider autel">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_autel }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.autel %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -86,30 +86,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider aiproad">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_aiproad }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.aiproad %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -117,30 +117,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider chargepoint">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_chargepoint }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.chargepoint %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -148,30 +148,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider emporia">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_emporia }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.emporia %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -179,30 +179,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider grizzlie">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_grizzlie }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.grizzlie %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -210,30 +210,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider juicebox">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_juicebox }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.juicebox %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -241,30 +241,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider lectron">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_lectron }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.lectron %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -272,30 +272,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider stokevoltaics">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_stokevoltaics }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.stokevoltaics %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -303,30 +303,30 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40 quiz-slider wallbox">
-												<div data-delay="4000" data-animation="slide" class="b-slider b-slider_overflow_visible w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
-													<div class="b-slider__mask b-slider__mask_23-4 w-slider-mask">
+											<div class="{{ block.h_wrap_h_wrap_mg_bt_60_tb_mg_bt_40_quiz_slider_wallbox }}">
+												<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_b_slider_overflow_visible_w_slider }}">
+													<div class="{{ block.b_slider__mask_b_slider__mask_23_4_w_slider_mask }}">
 														{% for item in block.wallbox %}
-														<div class="b-slider__slide b-slider__slide_auto w-slide">
-															<label class="b-radio b-radio_box w-radio">
-																<div class="w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__check b-radio__check_box w-radio-input"></div>
-																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="opacity:0;position:absolute;z-index:-1">
-																<div class="b-radio__border"></div>
-																<img alt="" src="{{ item.image|media }}" loading="lazy" class="b-radio__img b-radio__img_mg-bt_20">
-																<span class="b-radio__text b-radio__text_hide w-form-label" for="radio-5">
+														<div class="{{ item.b_slider__slide_b_slider__slide_auto_w_slide }}">
+															<label class="{{ item.b_radio_b_radio_box_w_radio }}">
+																<div class="{{ item.w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__check_b_radio__check_box_w_radio_input }}"></div>
+																<input type="radio" id="radio-5" name="radio-5" value="Radio 5" data-name="Radio 5" style="{{ item.opacity_0;position_absolute;z_index__1 }}">
+																<div class="{{ item.b_radio__border }}"></div>
+																<img alt="" src="{{ item.image|media }}" loading="lazy" class="{{ item.b_radio__img_b_radio__img_mg_bt_20 }}">
+																<span for="radio-5" class="{{ item.b_radio__text_b_radio__text_hide_w_form_label }}">
 																	Radio 5
 																</span>
-																<div class="h-wrap h-wrap_mg-bt_10">
-																	<div class="b-radio__text">
+																<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+																	<div class="{{ item.b_radio__text }}">
 																		{{ item.name }}
 																	</div>
 																</div>
@@ -334,20 +334,20 @@
 														</div>
 														{% endfor %}
 													</div>
-													<div class="b-slider__arrow-left quiz w-slider-arrow-left">
-														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_left_quiz_w_slider_arrow_left }}">
+														<img src="{{ 'assets/images/arraows20(1).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__arrow-right quiz w-slider-arrow-right">
-														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="b-slider__icone mini">
+													<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}">
+														<img src="{{ 'assets/images/arraows20(2).svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone_mini }}">
 													</div>
-													<div class="b-slider__nav w-slider-nav w-round"></div>
+													<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 												</div>
 											</div>
-											<div class="b-numbers">
-												<a href="#" class="b-button b-button_back arrow-left w-button">
+											<div class="{{ block.b_numbers }}">
+												<a href="#" class="{{ block.b_button_b_button_back_arrow_left_w_button }}">
 													Back
 												</a>
-												<a href="#" class="b-button b-button_next arrow-right w-button">
+												<a href="#" class="{{ block.b_button_b_button_next_arrow_right_w_button }}">
 													Next
 												</a>
 											</div>
@@ -357,58 +357,58 @@
 								{% endif %}
 {% if block.type == "quiz_step_3" %}
 								<div>
-									<div class="b-block b-block_stat b-block_quiz">
-										<img src="{{ 'assets/images/Appliance_.png'|theme }}" loading="lazy" alt="" class="b-image b-image_cert mob_block">
-										<div class="b-columns b-columns_space-between">
-											<div class="b-columns__col b-columns__col_50 mob_100">
-												<div class="b-text b-text_size_40 b-text_bold">
+									<div class="{{ block.b_block_b_block_stat_b_block_quiz }}">
+										<img src="{{ 'assets/images/Appliance_.png'|theme }}" loading="lazy" alt="" class="{{ block.b_image_b_image_cert_mob_block }}">
+										<div class="{{ block.b_columns_b_columns_space_between }}">
+											<div class="{{ block.b_columns__col_b_columns__col_50_mob_100 }}">
+												<div class="{{ block.b_text_b_text_size_40_b_text_bold }}">
 													{{ block.title }}
 												</div>
-												<div class="h-wrap h-wrap_mg-bt_10">
-													<div class="b-text b-text_size_26 b-text_bold">
+												<div class="{{ block.h_wrap_h_wrap_mg_bt_10 }}">
+													<div class="{{ block.b_text_b_text_size_26_b_text_bold }}">
 														{{ block.subtitle }}
 													</div>
 												</div>
-												<div class="h-wrap h-wrap_mg-bt_20">
-													<div class="b-text b-text_size_26">
+												<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
+													<div class="{{ block.b_text_b_text_size_26 }}">
 														{{ block.desc }}
 													</div>
 												</div>
-												<div class="b-module b-module_quiz">
-													<div class="b-module__item">
-														<div class="b-module__item-wrap">
-															<img src="{{ 'assets/images/module20(1).jpg'|theme }}" loading="lazy" alt="" class="b-module__img">
-															<div class="b-text b-text_size_14">
+												<div class="{{ block.b_module_b_module_quiz }}">
+													<div class="{{ block.b_module__item }}">
+														<div class="{{ block.b_module__item_wrap }}">
+															<img src="{{ 'assets/images/module20(1).jpg'|theme }}" loading="lazy" alt="" class="{{ block.b_module__img }}">
+															<div class="{{ block.b_text_b_text_size_14 }}">
 																Hub
 															</div>
 														</div>
-														<div class="b-module__number">
+														<div class="{{ block.b_module__number }}">
 															1
 														</div>
 													</div>
-													<div class="b-module__item">
-														<div class="b-module__item-wrap">
-															<img src="{{ 'assets/images/module20(2).jpg'|theme }}" loading="lazy" alt="" class="b-module__img">
-															<div class="b-text b-text_size_14">
+													<div class="{{ block.b_module__item }}">
+														<div class="{{ block.b_module__item_wrap }}">
+															<img src="{{ 'assets/images/module20(2).jpg'|theme }}" loading="lazy" alt="" class="{{ block.b_module__img }}">
+															<div class="{{ block.b_text_b_text_size_14 }}">
 																Module 1
 															</div>
 														</div>
-														<div class="b-module__number">
+														<div class="{{ block.b_module__number }}">
 															1
 														</div>
 													</div>
 												</div>
-												<a href="{{ block.btn_link }}" class="b-button b-button_blue b-button_maxw_210 b-button_height_45 w-button">
+												<a href="{{ block.btn_link }}" class="{{ block.b_button_b_button_blue_b_button_maxw_210_b_button_height_45_w_button }}">
 													{{ block.btn }}
 												</a>
 											</div>
-											<div class="b-columns__col b-columns__col_50 mob_100">
+											<div class="{{ block.b_columns__col_b_columns__col_50_mob_100 }}">
 												<img src="{{ block.image|media }}" alt="" loading="lazy">
 											</div>
 										</div>
 									</div>
-									<div class="b-numbers b-numbers_mg-tp_40">
-										<a href="#" class="b-button b-button_back b-button_none-mg arrow-left mob w-button">
+									<div class="{{ block.b_numbers_b_numbers_mg_tp_40 }}">
+										<a href="#" class="{{ block.b_button_b_button_back_b_button_none_mg_arrow_left_mob_w_button }}">
 											Back
 										</a>
 									</div>
@@ -419,19 +419,19 @@
 						</div>
 						{% endfor %}
 					</div>
-					<div class="b-slider__arrow-left w-slider-arrow-left"></div>
-					<div class="b-slider__arrow-right quiz w-slider-arrow-right"></div>
-					<div class="b-slider__nav w-slider-nav w-round"></div>
+					<div class="{{ block.b_slider__arrow_left_w_slider_arrow_left }}"></div>
+					<div class="{{ block.b_slider__arrow_right_quiz_w_slider_arrow_right }}"></div>
+					<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
 				</div>
 			</form>
-			<div class="b-form__success-mes w-form-done">
+			<div class="{{ block.b_form__success_mes_w_form_done }}">
 				<div>
 					Спасибо за заявку!
 					<br>
 					В ближайшее время мы свяжемся с вами
 				</div>
 			</div>
-			<div class="b-form__error-mes w-form-fail">
+			<div class="{{ block.b_form__error_mes_w_form_fail }}">
 				<div>
 					Ошибка! Что-то пошло не так.
 				</div>

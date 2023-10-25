@@ -1,76 +1,76 @@
-<section class="section s-section_100vh s-section_pd_home">
-	<div class="container w-container">
-		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_align_center">
-			<div class="b-title b-title_mini mob_30">
+<section class="{{ section_s_section_100vh_s_section_pd_home }}">
+	<div class="{{ block.container_w_container }}">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_50_h_wrap_align_center }}">
+			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
 				{{ block.demand_response_works_title }}
 			</div>
 		</div>
-		<div class="h-wrap h-wrap_mg-bt_30">
-			<div class="b-text b-text_size_30 b-text_bold tb_20">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_30 }}">
+			<div class="{{ block.b_text_b_text_size_30_b_text_bold_tb_20 }}">
 				{{ block.demand_response_works_title_lists }}
 			</div>
 		</div>
-		<ul role="list" class="b-list b-list_max-w_18">
+		<ul role="list" class="{{ block.b_list_b_list_max_w_18 }}">
 			{% for item in block.demand_response_works_lists %}
-			<li class="b-list__item b-list__item_mg-bt_40 tb_50 mob_100">
-				<div class="b-list__numbers">
+			<li class="{{ item.b_list__item_b_list__item_mg_bt_40_tb_50_mob_100 }}">
+				<div class="{{ item.b_list__numbers }}">
 					{{ item.number }}
 				</div>
-				<div class="b-text">
+				<div class="{{ item.b_text }}">
 					{{ item.text }}
 				</div>
 			</li>
 			{% endfor %}
 		</ul>
-		<div class="b-home-wrap">
-			<img src="{{ block.demand_response_main_image|media }}" loading="lazy" alt="" class="b-image b-image_home">
-			<div data-item="5" class="plus plus_2">
+		<div class="{{ block.b_home_wrap }}">
+			<img src="{{ block.demand_response_main_image|media }}" loading="lazy" alt="" class="{{ block.b_image_b_image_home }}">
+			<div data-item="5" class="{{ block.plus_plus_2 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e2" class="plus__circle"></div>
+				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e2" class="{{ block.plus__circle }}"></div>
 			</div>
-			<div data-item="7" class="plus plus_7">
+			<div data-item="7" class="{{ block.plus_plus_7 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div class="plus__circle"></div>
+				<div class="{{ block.plus__circle }}"></div>
 			</div>
-			<div data-item="6" class="plus plus_3">
+			<div data-item="6" class="{{ block.plus_plus_3 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e5" class="plus__circle"></div>
+				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e5" class="{{ block.plus__circle }}"></div>
 			</div>
-			<div data-item="2" class="plus plus_4">
+			<div data-item="2" class="{{ block.plus_plus_4 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e8" class="plus__circle"></div>
+				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509e8" class="{{ block.plus__circle }}"></div>
 			</div>
-			<div data-item="3" class="plus plus_6">
+			<div data-item="3" class="{{ block.plus_plus_6 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509eb" class="plus__circle"></div>
+				<div data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509eb" class="{{ block.plus__circle }}"></div>
 			</div>
-			<div data-item="4" class="plus plus_1">
+			<div data-item="4" class="{{ block.plus_plus_1 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div class="plus__circle"></div>
+				<div class="{{ block.plus__circle }}"></div>
 			</div>
-			<div data-item="1" class="plus plus_5">
+			<div data-item="1" class="{{ block.plus_plus_5 }}">
 				<img src="{{ 'assets/images/plus.svg'|theme }}" loading="lazy" alt="">
-				<div class="plus__circle"></div>
+				<div class="{{ block.plus__circle }}"></div>
 			</div>
 		</div>
-		<a data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509ec" href="#" class="b-button-discover w-inline-block">
+		<a data-w-id="fa2c6298-0fb3-92ec-7866-437bf6e509ec" href="#" class="{{ block.b_button_discover_w_inline_block }}">
 			<img src="{{ 'assets/images/btn_discover.svg'|theme }}" loading="lazy" alt="">
 			<div>
 				Discover more
 			</div>
 		</a>
 	</div>
-	<div class="b-modal works">
-		<div class="b-block-bg b-block-bg__modal">
-			<a data-w-id="39e3943e-01fe-556e-456d-f529813d367b" href="#" class="b-modal__close w-inline-block">
+	<div class="{{ block.b_modal_works }}">
+		<div class="{{ block.b_block_bg_b_block_bg__modal }}">
+			<a data-w-id="39e3943e-01fe-556e-456d-f529813d367b" href="#" class="{{ block.b_modal__close_w_inline_block }}">
 				<img src="{{ 'assets/images/Dot.svg'|theme }}" loading="lazy" alt="">
 			</a>
-			<div data-list="" class="h-wrap h-wrap_overflow_auto">
+			<div data-list="" class="{{ block.h_wrap_h_wrap_overflow_auto }}">
 				{% for item in block.how_it_works_modal %}
-				<div class="h-wrap h-wrap_maxw_320">
-					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_devise b-image_devise-modal">
-					<div class="h-wrap h-wrap_mg-bt_40">
-						<div class="b-text">
+				<div class="{{ item.h_wrap_h_wrap_maxw_320 }}">
+					<img src="{{ item.image|media }}" loading="lazy" alt="" class="{{ item.b_image_b_image_devise_b_image_devise_modal }}">
+					<div class="{{ item.h_wrap_h_wrap_mg_bt_40 }}">
+						<div class="{{ item.b_text }}">
 							{{ item.text_list }}
 						</div>
 					</div>

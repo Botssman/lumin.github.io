@@ -9,22 +9,94 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    header:
+        label: header
+        type: text
+    b_menu_b_menu_transparent_w_nav:
+        label: 'b-menu b-menu_transparent w-nav'
+        type: text
+    b_menu__container_w_container:
+        label: 'b-menu__container w-container'
+        type: text
+    b_menu__logo_link_w_nav_brand:
+        label: 'b-menu__logo-link w-nav-brand'
+        type: text
+    b_menu__logo:
+        label: b-menu__logo
+        type: text
+    b_menu__nav_w_nav_menu:
+        label: 'b-menu__nav w-nav-menu'
+        type: text
+    b_menu__link_b_menu__link_white_w_nav_link:
+        label: 'b-menu__link b-menu__link_white w-nav-link'
+        type: text
+    b_menu__dropdown_w_dropdown:
+        label: 'b-menu__dropdown w-dropdown'
+        type: text
+    b_menu__dropdown_toggle_b_menu__dropdown_toggle_white_w_dropdown_toggle:
+        label: 'b-menu__dropdown-toggle b-menu__dropdown-toggle_white w-dropdown-toggle'
+        type: text
+    b_dropdown__icon:
+        label: b-dropdown__icon
+        type: text
+    b_menu__dropdown_lists_w_dropdown_list:
+        label: 'b-menu__dropdown-lists w-dropdown-list'
+        type: text
+    b_dropdown__content:
+        label: b-dropdown__content
+        type: text
+    b_dropdown__link_w_dropdown_link:
+        label: 'b-dropdown__link w-dropdown-link'
+        type: text
+    b_button_b_button_width_160_b_button_height_45_b_button_white_w_button:
+        label: 'b-button b-button_width_160 b-button_height_45 b-button_white w-button'
+        type: text
+    b_menu__button_w_nav_button:
+        label: 'b-menu__button w-nav-button'
+        type: text
+    w_icon_nav_menu:
+        label: w-icon-nav-menu
+        type: text
+    b_image_b_image_absolute_v_2:
+        label: 'b-image b-image_absolute v-2'
+        type: text
     image_fon:
         label: image_fon
         type: mediafinder
         mode: image
         maxItems: '1'
+    section_s_section_100vh_s_section_tr:
+        label: 'section s-section_100vh s-section_tr'
+        type: text
+    container_container_align_center_w_container:
+        label: 'container container_align_center w-container'
+        type: text
+    b_image_b_image_404:
+        label: 'b-image b-image_404'
+        type: text
     image:
         label: Изображение
         type: mediafinder
         mode: image
         maxItems: '1'
+    h_wrap_h_wrap_mg_bt_20:
+        label: 'h-wrap h-wrap_mg-bt_20'
+        type: text
     text|raw:
         label: text|raw
+        type: text
+    b_text_b_text_size_40_b_text_white_b_text_extrabold:
+        label: 'b-text b-text_size_40 b-text_white b-text_extrabold'
         type: text
     subtitle:
         label: Подзаголовок
         type: text
+    b_text_b_text_size_20_b_text_white:
+        label: 'b-text b-text_size_20 b-text_white'
+        type: text
     text_btn:
         label: text_btn
+        type: text
+    b_button_b_button_blue_b_button_max_w_200_w_button:
+        label: 'b-button b-button_blue b-button_max-w_200 w-button'
         type: text

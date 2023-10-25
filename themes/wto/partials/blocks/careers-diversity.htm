@@ -1,27 +1,27 @@
-<section class="section s-section_100vh s-section_pd_11-25 s-section_yellow s-section_grad">
-	<div class="container container_align_center w-container">
-		<div class="h-wrap h-wrap_mg-bt_20">
-			<div class="b-title b-title_mini">
+<section class="{{ section_s_section_100vh_s_section_pd_11_25_s_section_yellow_s_section_grad }}">
+	<div class="{{ block.container_container_align_center_w_container }}">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
+			<div class="{{ block.b_title_b_title_mini }}">
 				{{ block.careers_diversity_title }}
 			</div>
 		</div>
-		<div class="h-wrap h-wrap_mg-bt_30 h-wrap_max-width_970">
-			<div class="b-text b-text_size_20">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_30_h_wrap_max_width_970 }}">
+			<div class="{{ block.b_text_b_text_size_20 }}">
 				{{ block.careers_diversity_subtitle }}
 			</div>
 		</div>
-		<div class="h-wrap h-wrap_mg-bt_60 mob_mg-bt_0">
-			<div class="b-grid b-grid_col_2 mob_1-col">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_60_mob_mg_bt_0 }}">
+			<div class="{{ block.b_grid_b_grid_col_2_mob_1_col }}">
 				{% for item in block.careers_diversity_lists %}
-				<div id="w-node-_9f2c53bf-3ae9-7363-daca-b510f1da4468-7b12a408" class="b-grid__col b-grid__col_flex_h">
-					<img src="{{ item.icon|media }}" loading="lazy" alt="" class="b-icon b-icon_mg-rt_20 mob_40">
+				<div id="w-node-_9f2c53bf-3ae9-7363-daca-b510f1da4468-7b12a408" class="{{ item.b_grid__col_b_grid__col_flex_h }}">
+					<img src="{{ item.icon|media }}" loading="lazy" alt="" class="{{ item.b_icon_b_icon_mg_rt_20_mob_40 }}">
 					<div>
-						<div class="h-wrap h-wrap_mg-bt_10">
-							<div class="b-text b-text_size_30 b-text_extra-bold mob_20">
+						<div class="{{ item.h_wrap_h_wrap_mg_bt_10 }}">
+							<div class="{{ item.b_text_b_text_size_30_b_text_extra_bold_mob_20 }}">
 								{{ item.title }}
 							</div>
 						</div>
-						<div class="b-text b-text_size_20">
+						<div class="{{ item.b_text_b_text_size_20 }}">
 							{{ item.text }}
 						</div>
 					</div>

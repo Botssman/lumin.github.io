@@ -9,21 +9,51 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    header:
+        label: header
+        type: text
+    b_menu_w_nav:
+        label: 'b-menu w-nav'
+        type: text
+    b_menu__container_w_container:
+        label: 'b-menu__container w-container'
+        type: text
+    b_menu__button_w_nav_button:
+        label: 'b-menu__button w-nav-button'
+        type: text
+    b_menu__logo_link_w_nav_brand:
+        label: 'b-menu__logo-link w-nav-brand'
+        type: text
+    b_menu__logo:
+        label: b-menu__logo
+        type: text
+    b_menu__nav_w_nav_menu:
+        label: 'b-menu__nav w-nav-menu'
+        type: text
     main_menu:
         label: main_menu
         type: repeater
         form:
             fields:
+                h_wrap_h_wrap_menu_h_wrap_menu_center:
+                    label: 'h-wrap h-wrap_menu h-wrap_menu_center'
+                    type: text
                 list:
                     label: Список
                     type: repeater
                     displayMode: builder
                     groups:
+                        h_wrap_h_wrap_menu:
+                            label: 'h-wrap h-wrap_menu'
+                            type: text
                         menu_link:
                             name: menu-link
                             fields:
                                 menu_link_name:
                                     label: menu_link_name
+                                    type: text
+                                b_menu__link_w_nav_link:
+                                    label: 'b-menu__link w-nav-link'
                                     type: text
                                 menu_link_link|link:
                                     label: menu_link_link|link
@@ -31,8 +61,23 @@ fields:
                         menu_dropdown:
                             name: menu-dropdown
                             fields:
+                                b_menu__dropdown_w_dropdown:
+                                    label: 'b-menu__dropdown w-dropdown'
+                                    type: text
+                                b_menu__dropdown_toggle_w_dropdown_toggle:
+                                    label: 'b-menu__dropdown-toggle w-dropdown-toggle'
+                                    type: text
                                 menu_dropdown_title:
                                     label: menu_dropdown_title
+                                    type: text
+                                b_dropdown__icon:
+                                    label: b-dropdown__icon
+                                    type: text
+                                b_menu__dropdown_lists_w_dropdown_list:
+                                    label: 'b-menu__dropdown-lists w-dropdown-list'
+                                    type: text
+                                b_dropdown__content_b_dropdown__content_menu:
+                                    label: 'b-dropdown__content b-dropdown__content_menu'
                                     type: text
                                 list:
                                     label: Список
@@ -42,61 +87,226 @@ fields:
                                             menu_dropdown_name:
                                                 label: menu_dropdown_name
                                                 type: text
+                                            b_dropdown__link_w_dropdown_link:
+                                                label: 'b-dropdown__link w-dropdown-link'
+                                                type: text
                                             menu_dropdown_link|link:
                                                 label: menu_dropdown_link|link
                                                 type: text
                                             menu_dropdown_link_|_link:
                                                 label: 'menu_dropdown_link | link'
                                                 type: text
+                h_wrap_h_wrap_flex_h_tb_center_tb_show:
+                    label: 'h-wrap h-wrap_flex_h tb_center tb_show'
+                    type: text
+                b_menu__cart_tb_mg_lt_0_w_inline_block:
+                    label: 'b-menu__cart tb_mg-lt_0 w-inline-block'
+                    type: text
+                b_menu__cart_count:
+                    label: b-menu__cart-count
+                    type: text
+                b_button_b_button_width_160_b_button_height_45_w_button:
+                    label: 'b-button b-button_width_160 b-button_height_45 w-button'
+                    type: text
+    b_menu__cart_w_inline_block:
+        label: 'b-menu__cart w-inline-block'
+        type: text
+    b_menu__cart_count:
+        label: b-menu__cart-count
+        type: text
+    b_button_b_button_width_160_b_button_height_45_mob_hide_w_button:
+        label: 'b-button b-button_width_160 b-button_height_45 mob_hide w-button'
+        type: text
+    container_container_breadcrumbs_w_container:
+        label: 'container container_breadcrumbs w-container'
+        type: text
+    b_breadcrumbs:
+        label: b-breadcrumbs
+        type: text
+    b_breadcrumbs__list:
+        label: b-breadcrumbs__list
+        type: text
+    b_breadcrumbs__link:
+        label: b-breadcrumbs__link
+        type: text
+    b_breadcrumbs__sep:
+        label: b-breadcrumbs__sep
+        type: text
+    mob_hide:
+        label: mob_hide
+        type: text
+    main:
+        label: main
+        type: text
     blocks:
         label: blocks
         type: repeater
         displayMode: builder
         groups:
+            section_s_section_100vh_s_section_max_h:
+                label: 'section s-section_100vh s-section_max-h'
+                type: text
             meet_main:
                 name: meet-main
                 fields:
+                    container_container_absolute_container_mg_5_w_container:
+                        label: 'container container_absolute container_mg_5 w-container'
+                        type: text
+                    b_columns:
+                        label: b-columns
+                        type: text
+                    b_columns__col_b_columns__col_60_tb_100:
+                        label: 'b-columns__col b-columns__col_60 tb_100'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_20'
+                        type: text
                     meet_main_title:
                         label: meet_main_title
                         type: text
+                    b_title_b_title_mini_mob_30:
+                        label: 'b-title b-title_mini mob_30'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_50_h_wrap_max_width_500:
+                        label: 'h-wrap h-wrap_mg-bt_50 h-wrap_max-width_500'
+                        type: text
                     meet_main_subtitle:
                         label: meet_main_subtitle
+                        type: text
+                    b_text_b_text_size_26_tb_20:
+                        label: 'b-text b-text_size_26 tb_20'
+                        type: text
+                    b_slider_b_slider_height_w_slider:
+                        label: 'b-slider b-slider_height w-slider'
+                        type: text
+                    b_slider__mask_w_slider_mask:
+                        label: 'b-slider__mask w-slider-mask'
                         type: text
                     meet_main_rep:
                         label: meet_main_rep
                         type: repeater
                         form:
                             fields:
+                                b_slider__slide_w_slide:
+                                    label: 'b-slider__slide w-slide'
+                                    type: text
+                                container_container_meet_w_container:
+                                    label: 'container container_meet w-container'
+                                    type: text
+                                b_columns:
+                                    label: b-columns
+                                    type: text
+                                b_columns__col_b_columns__col_50:
+                                    label: 'b-columns__col b-columns__col_50'
+                                    type: text
+                                b_columns__col_b_columns__col_40_tb_100:
+                                    label: 'b-columns__col b-columns__col_40 tb_100'
+                                    type: text
+                                b_block_b_block_yellow:
+                                    label: 'b-block b-block_yellow'
+                                    type: text
+                                h_wrap_h_wrap_mg_bt_20:
+                                    label: 'h-wrap h-wrap_mg-bt_20'
+                                    type: text
+                                b_text_b_text_size_20_b_text_bold:
+                                    label: 'b-text b-text_size_20 b-text_bold'
+                                    type: text
                                 team_name:
                                     label: team_name
                                     type: text
                                 job_title:
                                     label: job_title
                                     type: text
+                                b_text__span:
+                                    label: b-text__span
+                                    type: text
+                                h_wrap_h_wrap_mg_bt_30:
+                                    label: 'h-wrap h-wrap_mg-bt_30'
+                                    type: text
                                 text_reviews:
                                     label: text_reviews
+                                    type: text
+                                b_text_b_text_size_15:
+                                    label: 'b-text b-text_size_15'
+                                    type: text
+                                b_image_b_image__first_meet:
+                                    label: 'b-image b-image__first-meet'
                                     type: text
                                 foto:
                                     label: foto
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
+                    b_slider__arrow_left_w_slider_arrow_left:
+                        label: 'b-slider__arrow-left w-slider-arrow-left'
+                        type: text
+                    b_slider__icone:
+                        label: b-slider__icone
+                        type: text
+                    b_slider__arrow_right_w_slider_arrow_right:
+                        label: 'b-slider__arrow-right w-slider-arrow-right'
+                        type: text
+                    b_slider__nav_b_slider__show_b_slider__nav_container_w_slider_nav_w_round_w_num:
+                        label: 'b-slider__nav b-slider__show b-slider__nav_container w-slider-nav w-round w-num'
+                        type: text
+            section:
+                label: section
+                type: text
             meet_meet:
                 name: meet-meet
                 fields:
+                    container_w_container:
+                        label: 'container w-container'
+                        type: text
+                    b_columns:
+                        label: b-columns
+                        type: text
+                    b_columns__col_b_columns__col_30_b_columns__col_justify_end_tb_100:
+                        label: 'b-columns__col b-columns__col_30 b-columns__col_justify_end tb_100'
+                        type: text
+                    b_image_b_image_meet_lumin:
+                        label: 'b-image b-image_meet-lumin'
+                        type: text
                     meet_meet_image:
                         label: meet_meet_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    b_columns__col_b_columns__col_70_b_columns__col_align_center_b_columns__col_pd_lt_100_tb_100:
+                        label: 'b-columns__col b-columns__col_70 b-columns__col_align_center b-columns__col_pd-lt_100 tb_100'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_20'
+                        type: text
                     meet_meet_title:
                         label: meet_meet_title
+                        type: text
+                    b_title_b_title_mini_mob_30:
+                        label: 'b-title b-title_mini mob_30'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_40:
+                        label: 'h-wrap h-wrap_mg-bt_40'
                         type: text
                     meet_meet_text|raw:
                         label: meet_meet_text|raw
                         type: text
+                    b_text_b_text_size_18_b_text_line_h_1_8:
+                        label: 'b-text b-text_size_18 b-text_line-h_1-8'
+                        type: text
+                    b_block_quote:
+                        label: b-block-quote
+                        type: text
                     meet_meet_text_ceo:
                         label: meet_meet_text_ceo
+                        type: text
+                    b_text_b_text_bold_mob_15:
+                        label: 'b-text b-text_bold mob_15'
+                        type: text
+                    h_wrap_h_wrap_flex_h_h_wrap_align_center_left_mob_left:
+                        label: 'h-wrap h-wrap_flex_h h-wrap_align_center-left mob_left'
+                        type: text
+                    b_avatar_b_avatar_mg_rt_25:
+                        label: 'b-avatar b-avatar_mg-rt_25'
                         type: text
                     meet_meet_image_ceo:
                         label: meet_meet_image_ceo
@@ -106,53 +316,299 @@ fields:
                     meet_meet_name_ceo:
                         label: meet_meet_name_ceo
                         type: text
+                    b_text_b_text_bold:
+                        label: 'b-text b-text_bold'
+                        type: text
                     meet_meet_job_ceo:
                         label: meet_meet_job_ceo
+                        type: text
+                    b_text_b_text_gray_b_text_bold:
+                        label: 'b-text b-text_gray b-text_bold'
+                        type: text
+            section_s_section_100vh_s_section_pd_11_25:
+                label: 'section s-section_100vh s-section_pd_11-25'
+                type: text
+            meet_comand:
+                name: meet-comand
+                fields:
+                    container_container_align_center_pd_none_w_container:
+                        label: 'container container_align_center pd_none w-container'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_60_tb_mg_bt_0:
+                        label: 'h-wrap h-wrap_mg-bt_60 tb_mg-bt_0'
+                        type: text
+                    b_grid_b_grid_col_4_tb_flex:
+                        label: 'b-grid b-grid_col_4 tb_flex'
+                        type: text
+                    b_comand_b_comand_no_style:
+                        label: 'b-comand b-comand_no-style'
+                        type: text
+                    b_comand:
+                        label: b-comand
+                        type: text
+                    b_comand__head:
+                        label: b-comand__head
+                        type: text
+                    b_comand__down:
+                        label: b-comand__down
+                        type: text
+                    b_text_b_text_bold:
+                        label: 'b-text b-text_bold'
+                        type: text
+                    b_text_b_text_size_14_b_text_gray_b_text_bold:
+                        label: 'b-text b-text_size_14 b-text_gray b-text_bold'
+                        type: text
+                    b_title_b_title_mini_mob_30:
+                        label: 'b-title b-title_mini mob_30'
+                        type: text
+                    b_text_b_text_size_40_b_text_line_h_1_mob_20:
+                        label: 'b-text b-text_size_40 b-text_line-h_1 mob_20'
                         type: text
             meet_galery:
                 name: meet-galery
                 fields:
+                    container_container_align_center_w_container:
+                        label: 'container container_align_center w-container'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_60_h_wrap_max_width_970_mob_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_60 h-wrap_max-width_970 mob_mg-bt_30'
+                        type: text
                     meet_galery_title:
                         label: meet_galery_title
+                        type: text
+                    b_title_b_title_mini_mob_30:
+                        label: 'b-title b-title_mini mob_30'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_60_mob_mg_bt_10:
+                        label: 'h-wrap h-wrap_mg-bt_60 mob_mg-bt_10'
+                        type: text
+                    b_image_b_image_border_rad_12:
+                        label: 'b-image b-image_border-rad_12'
                         type: text
                     meet_galery_image:
                         label: meet_galery_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    container_container_100vw_w_container:
+                        label: 'container container_100vw w-container'
+                        type: text
+                    b_grid_b_grid_galery:
+                        label: 'b-grid b-grid_galery'
+                        type: text
                     meet_galery_rep:
                         label: meet_galery_rep
                         type: repeater
                         form:
                             fields:
+                                b_image_b_image_border_rad_12:
+                                    label: 'b-image b-image_border-rad_12'
+                                    type: text
                                 image:
                                     label: Изображение
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
+            section_s_section_pd_11_25:
+                label: 'section s-section_pd_11-25'
+                type: text
             meet_help:
                 name: meet-help
                 fields:
+                    container_container_1300_container_align_center_w_container:
+                        label: 'container container_1300 container_align_center w-container'
+                        type: text
+                    b_image_b_image_stat_mob_stat:
+                        label: 'b-image b-image_stat mob_stat'
+                        type: text
                     meet_help_image:
                         label: meet_help_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    b_block_b_block_stat_mob_pd:
+                        label: 'b-block b-block_stat mob_pd'
+                        type: text
+                    b_image_b_image_cert_show:
+                        label: 'b-image b-image_cert show'
+                        type: text
+                    b_columns_b_columns_space_between:
+                        label: 'b-columns b-columns_space-between'
+                        type: text
+                    b_columns__col_b_columns__col_73_mob_100_mob_center:
+                        label: 'b-columns__col b-columns__col_73 mob_100 mob_center'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_20'
+                        type: text
                     meet_help_title:
                         label: meet_help_title
+                        type: text
+                    b_title_b_title_mini_b_title_white_mob_30:
+                        label: 'b-title b-title_mini b-title_white mob_30'
                         type: text
                     meet_help_text:
                         label: meet_help_text
                         type: text
+                    b_text_b_text_size_26_b_text_white:
+                        label: 'b-text b-text_size_26 b-text_white'
+                        type: text
                     meet_help_text_btn:
                         label: meet_help_text_btn
                         type: text
+                    b_button_b_button_blue_b_button_maxw_210_mob_center_w_button:
+                        label: 'b-button b-button_blue b-button_maxw_210 mob_center w-button'
+                        type: text
+                    b_columns__col_b_columns__col_30_b_columns__col_align_center_mob_100:
+                        label: 'b-columns__col b-columns__col_30 b-columns__col_align_center mob_100'
+                        type: text
+            section_s_section_70vh:
+                label: 'section s-section_70vh'
+                type: text
             updates:
                 name: updates
                 fields:
+                    container_container_align_center_w_container:
+                        label: 'container container_align_center w-container'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_20'
+                        type: text
                     updates_title|raw:
                         label: updates_title|raw
+                        type: text
+                    b_title_b_title_mini:
+                        label: 'b-title b-title_mini'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_900:
+                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900'
                         type: text
                     updates_subtitle|raw:
                         label: updates_subtitle|raw
                         type: text
+                    b_text_b_text_size_26:
+                        label: 'b-text b-text_size_26'
+                        type: text
+                    b_form_w_form:
+                        label: 'b-form w-form'
+                        type: text
+                    b_form__form_b_form__form_grid_col_2:
+                        label: 'b-form__form b-form__form_grid col_2'
+                        type: text
+                    b_input_w_node__9ebae1de_c39f_a704_3ff9_0742d5b4ea5a_d5b4ea4d_w_input:
+                        label: 'b-input w-node-_9ebae1de-c39f-a704-3ff9-0742d5b4ea5a-d5b4ea4d w-input'
+                        type: text
+                    b_button_b_button_blue_b_button_height_56_w_button:
+                        label: 'b-button b-button_blue b-button_height_56 w-button'
+                        type: text
+                    b_form__success_mes_w_form_done:
+                        label: 'b-form__success-mes w-form-done'
+                        type: text
+                    b_form__error_mes_w_form_fail:
+                        label: 'b-form__error-mes w-form-fail'
+                        type: text
+    b_title__span_b_title__span_gray:
+        label: 'b-title__span b-title__span_gray'
+        type: text
+    footer_section:
+        label: 'footer section'
+        type: text
+    container_w_container:
+        label: 'container w-container'
+        type: text
+    footer__head:
+        label: footer__head
+        type: text
+    b_columns_b_columns_space_between:
+        label: 'b-columns b-columns_space-between'
+        type: text
+    b_columns__col_b_columns__col_35_mob_100_mob_center:
+        label: 'b-columns__col b-columns__col_35 mob_100 mob_center'
+        type: text
+    h_wrap_h_wrap_mg_bt_30:
+        label: 'h-wrap h-wrap_mg-bt_30'
+        type: text
+    h_wrap_h_wrap_mg_bt_10:
+        label: 'h-wrap h-wrap_mg-bt_10'
+        type: text
+    b_text_b_text_size_14_b_text_gray_b_text_semibold:
+        label: 'b-text b-text_size_14 b-text_gray b-text_semibold'
+        type: text
+    b_app_b_app_mg_bt_30:
+        label: 'b-app b-app_mg-bt_30'
+        type: text
+    b_app__app_store_b_app__app_store_mg_rt_20_w_inline_block:
+        label: 'b-app__app-store b-app__app-store_mg-rt_20 w-inline-block'
+        type: text
+    b_app__app_store_w_inline_block:
+        label: 'b-app__app-store w-inline-block'
+        type: text
+    b_social_mob_mg_bt_40:
+        label: 'b-social mob_mg-bt_40'
+        type: text
+    b_social__link_w_inline_block:
+        label: 'b-social__link w-inline-block'
+        type: text
+    b_columns__col_b_columns__col_20_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_20 mob_50 mob_center'
+        type: text
+    b_text_b_text_size_20_b_text_bold:
+        label: 'b-text b-text_size_20 b-text_bold'
+        type: text
+    b_list:
+        label: b-list
+        type: text
+    b_list__item_b_list__item_mg_bt_10_mob_center:
+        label: 'b-list__item b-list__item_mg-bt_10 mob_center'
+        type: text
+    b_link:
+        label: b-link
+        type: text
+    b_columns__col_b_columns__col_15_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_15 mob_50 mob_center'
+        type: text
+    b_columns__col_b_columns__col_25_mob_100_mob_center:
+        label: 'b-columns__col b-columns__col_25 mob_100 mob_center'
+        type: text
+    h_wrap_h_wrap_mg_bt_20:
+        label: 'h-wrap h-wrap_mg-bt_20'
+        type: text
+    b_text:
+        label: b-text
+        type: text
+    b_list__item_b_list__item_mg_bt_10:
+        label: 'b-list__item b-list__item_mg-bt_10'
+        type: text
+    h_wrap_h_wrap_flex_h_h_wrap_align_center_left:
+        label: 'h-wrap h-wrap_flex_h h-wrap_align_center-left'
+        type: text
+    b_list__circle_v_4:
+        label: 'b-list__circle v-4'
+        type: text
+    b_text__phone:
+        label: b-text__phone
+        type: text
+    b_list__item_b_list__item_mg_bt_10_b_list__item_flex_v:
+        label: 'b-list__item b-list__item_mg-bt_10 b-list__item_flex-v'
+        type: text
+    h_wrap_h_wrap_mg_bt_5:
+        label: 'h-wrap h-wrap_mg-bt_5'
+        type: text
+    footer__bottom:
+        label: footer__bottom
+        type: text
+    b_columns:
+        label: b-columns
+        type: text
+    b_columns__col_b_columns__col_80_mob_100_mob_center_mob_mg_bt_20:
+        label: 'b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20'
+        type: text
+    b_columns__col_b_columns__col_10_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_10 mob_50 mob_center'
+        type: text
+    b_link_b_link_black:
+        label: 'b-link b-link_black'
+        type: text
+    b_columns__col_b_columns__col_10_b_columns__col_align_right_mob_50:
+        label: 'b-columns__col b-columns__col_10 b-columns__col_align-right mob_50'
+        type: text

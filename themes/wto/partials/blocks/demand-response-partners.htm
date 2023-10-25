@@ -1,14 +1,14 @@
-<section class="section s-section_pd_11-25">
-	<div class="container container_align_center w-container">
-		<div class="h-wrap h-wrap_mg-bt_80 tm_mg_40">
-			<div class="b-title b-title_mini mob_30">
+<section class="{{ section_s_section_pd_11_25 }}">
+	<div class="{{ block.container_container_align_center_w_container }}">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_80_tm_mg_40 }}">
+			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
 				{{ block.demand_response_partners_title }}
 			</div>
 		</div>
-		<div class="b-grid b-grid_gap_90 tb_gap mob_1-col">
+		<div class="{{ block.b_grid_b_grid_gap_90_tb_gap_mob_1_col }}">
 			{% for item in block.demand_response_partners_lists %}
-			<div id="w-node-_6627da86-f4e6-976a-a507-9145f7e13d4e-7b12a40a" class="b-grid__col b-grid__col_align_center">
-				<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_partners">
+			<div id="w-node-_6627da86-f4e6-976a-a507-9145f7e13d4e-7b12a40a" class="{{ item.b_grid__col_b_grid__col_align_center }}">
+				<img src="{{ item.image|media }}" loading="lazy" alt="" class="{{ item.b_image_b_image_partners }}">
 			</div>
 			{% endfor %}
 		</div>

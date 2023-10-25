@@ -1,0 +1,16 @@
+<section class="{{ section_s_section_vertical_s_section_pd_11_25 }}">
+	<div class="{{ block.container_container_maxw_1020_w_container }}">
+		<div class="{{ block.b_flex_b_flex_space_around_b_flex_gap_60 }}">
+			{% for item in block.icon_rep %}
+			<div class="{{ item.b_flex__card_b_flex__card_20_mobh_50_mobv_100 }}">
+				<div class="{{ item.h_wrap_h_wrap_mg_bt_15 }}">
+					<img src="{{ item.icon|media }}" loading="lazy" alt="" class="{{ item.b_icon_b_icon_80 }}">
+				</div>
+				<div class="{{ item.b_text_b_text_size_20 }}">
+					{{ item.text|raw }}
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -13,21 +13,51 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    header:
+        label: header
+        type: text
+    b_menu_w_nav:
+        label: 'b-menu w-nav'
+        type: text
+    b_menu__container_w_container:
+        label: 'b-menu__container w-container'
+        type: text
+    b_menu__button_w_nav_button:
+        label: 'b-menu__button w-nav-button'
+        type: text
+    b_menu__logo_link_w_nav_brand_w__current:
+        label: 'b-menu__logo-link w-nav-brand w--current'
+        type: text
+    b_menu__logo:
+        label: b-menu__logo
+        type: text
+    b_menu__nav_w_nav_menu:
+        label: 'b-menu__nav w-nav-menu'
+        type: text
     main_menu:
         label: main_menu
         type: repeater
         form:
             fields:
+                h_wrap_h_wrap_menu_h_wrap_menu_center:
+                    label: 'h-wrap h-wrap_menu h-wrap_menu_center'
+                    type: text
                 list:
                     label: Список
                     type: repeater
                     displayMode: builder
                     groups:
+                        h_wrap_h_wrap_menu:
+                            label: 'h-wrap h-wrap_menu'
+                            type: text
                         menu_link:
                             name: menu-link
                             fields:
                                 menu_link_name:
                                     label: menu_link_name
+                                    type: text
+                                b_menu__link_w_nav_link:
+                                    label: 'b-menu__link w-nav-link'
                                     type: text
                                 menu_link_link|link:
                                     label: menu_link_link|link
@@ -35,8 +65,23 @@ fields:
                         menu_dropdown:
                             name: menu-dropdown
                             fields:
+                                b_menu__dropdown_w_dropdown:
+                                    label: 'b-menu__dropdown w-dropdown'
+                                    type: text
+                                b_menu__dropdown_toggle_w_dropdown_toggle:
+                                    label: 'b-menu__dropdown-toggle w-dropdown-toggle'
+                                    type: text
                                 menu_dropdown_title:
                                     label: menu_dropdown_title
+                                    type: text
+                                b_dropdown__icon:
+                                    label: b-dropdown__icon
+                                    type: text
+                                b_menu__dropdown_lists_w_dropdown_list:
+                                    label: 'b-menu__dropdown-lists w-dropdown-list'
+                                    type: text
+                                b_dropdown__content_b_dropdown__content_menu:
+                                    label: 'b-dropdown__content b-dropdown__content_menu'
                                     type: text
                                 list:
                                     label: Список
@@ -46,43 +91,199 @@ fields:
                                             menu_dropdown_name:
                                                 label: menu_dropdown_name
                                                 type: text
+                                            b_dropdown__link_w_dropdown_link:
+                                                label: 'b-dropdown__link w-dropdown-link'
+                                                type: text
                                             menu_dropdown_link|link:
                                                 label: menu_dropdown_link|link
                                                 type: text
                                             menu_dropdown_link_|_link:
                                                 label: 'menu_dropdown_link | link'
                                                 type: text
+                h_wrap_h_wrap_flex_h_tb_center_tb_show:
+                    label: 'h-wrap h-wrap_flex_h tb_center tb_show'
+                    type: text
+                b_menu__cart_tb_mg_lt_0_w_inline_block:
+                    label: 'b-menu__cart tb_mg-lt_0 w-inline-block'
+                    type: text
+                b_menu__cart_count:
+                    label: b-menu__cart-count
+                    type: text
+                b_button_b_button_width_160_b_button_height_45_w_button:
+                    label: 'b-button b-button_width_160 b-button_height_45 w-button'
+                    type: text
+    b_menu__cart_w_inline_block:
+        label: 'b-menu__cart w-inline-block'
+        type: text
+    b_menu__cart_count:
+        label: b-menu__cart-count
+        type: text
+    b_button_b_button_width_160_b_button_height_45_mob_hide_w_button:
+        label: 'b-button b-button_width_160 b-button_height_45 mob_hide w-button'
+        type: text
+    main_page:
+        label: main-page
+        type: text
     blocks:
         label: blocks
         type: repeater
         displayMode: builder
         groups:
+            section_s_section_100vh_s_section_sticky:
+                label: 'section s-section_100vh s-section_sticky'
+                type: text
             lumin_home:
                 name: lumin-home
                 fields:
+                    container_w_container:
+                        label: 'container w-container'
+                        type: text
+                    b_columns:
+                        label: b-columns
+                        type: text
+                    b_columns__col_b_columns__col_50_b_columns__col_align_center_tb_100:
+                        label: 'b-columns__col b-columns__col_50 b-columns__col_align_center tb_100'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_15:
+                        label: 'h-wrap h-wrap_mg-bt_15'
+                        type: text
                     lumin_home_title:
                         label: lumin_home_title
+                        type: text
+                    b_title_tb_40:
+                        label: 'b-title tb_40'
+                        type: text
+                    h_wrap_h_wrap_maxh_135:
+                        label: 'h-wrap h-wrap_maxh_135'
                         type: text
                     lumin_home_subtitle_one:
                         label: lumin_home_subtitle_one
                         type: text
+                    'webkit_transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;display_block;opacity_1':
+                        label: '-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:block;opacity:1'
+                        type: text
+                    b_title_b_title_mini_b_title_yellow_mob_26:
+                        label: 'b-title b-title_mini b-title_yellow mob_26'
+                        type: text
                     lumin_home_subtitle_two:
                         label: lumin_home_subtitle_two
+                        type: text
+                    opacity_0:
+                        label: 'opacity:0'
                         type: text
                     lumin_home_subtitle_three:
                         label: lumin_home_subtitle_three
                         type: text
+                    container_container_absolute_tp_mg_w_container:
+                        label: 'container container_absolute tp_mg w-container'
+                        type: text
+                    b_columns_b_columns_space_between:
+                        label: 'b-columns b-columns_space-between'
+                        type: text
+                    b_columns__col_b_columns__col_50_b_columns__col_align_center:
+                        label: 'b-columns__col b-columns__col_50 b-columns__col_align_center'
+                        type: text
+                    b_columns__col_b_columns__col_50_tb_100:
+                        label: 'b-columns__col b-columns__col_50 tb_100'
+                        type: text
+                    b_block_b_block_image_b_block_mg_bt_6:
+                        label: 'b-block b-block_image b-block_mg-bt_6'
+                        type: text
+                    b_image_b_image_first:
+                        label: 'b-image b-image_first'
+                        type: text
+                    b_image_b_image_element:
+                        label: 'b-image b-image_element'
+                        type: text
+                    '65,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_1':
+                        label: '65, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1'
+                        type: text
+                    b_image_b_image_element_v_3:
+                        label: 'b-image b-image_element v-3'
+                        type: text
+            section_s_section_100vh_s_section_tr_section_tb_5:
+                label: 'section s-section_100vh s-section_tr section_tb_5'
+                type: text
+            section_s_section_black_section_tb_5__15:
+                label: 'section s-section_black section_tb_5-_15'
+                type: text
             lumin_one_edge:
                 name: lumin-one-edge
                 fields:
+                    b_block_circle:
+                        label: b-block-circle
+                        type: text
+                    'webkit_transform_translate3d_0,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0deg__skew_0,_0_;_moz_transform_translate3d_0,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0deg__skew_0,_0_;_ms_transform_translate3d_0,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0deg__skew_0,_0_;transform_translate3d_0,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0deg__skew_0,_0':
+                        label: '-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)'
+                        type: text
+                    b_block_circle__circle:
+                        label: b-block-circle__circle
+                        type: text
+                    b_block_circle__img:
+                        label: b-block-circle__img
+                        type: text
+                    b_block_circle__circle_b_block_circle__circle_two:
+                        label: 'b-block-circle__circle b-block-circle__circle_two'
+                        type: text
+                    b_block_circle__img_v_2:
+                        label: 'b-block-circle__img v-2'
+                        type: text
+                    b_block_circle__circle_b_block_circle__circle_three:
+                        label: 'b-block-circle__circle b-block-circle__circle_three'
+                        type: text
+                    b_block_circle__img_v_3:
+                        label: 'b-block-circle__img v-3'
+                        type: text
+                    b_block_circle__home:
+                        label: b-block-circle__home
+                        type: text
+                    point:
+                        label: point
+                        type: text
+                    container_container_100vh_w_container:
+                        label: 'container container_100vh w-container'
+                        type: text
+                    b_columns:
+                        label: b-columns
+                        type: text
+                    b_columns__col_b_columns__col_40_tb_100:
+                        label: 'b-columns__col b-columns__col_40 tb_100'
+                        type: text
+                    b_columns__col_b_columns__col_60_tb_100:
+                        label: 'b-columns__col b-columns__col_60 tb_100'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_50_pb_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_50 pb_mg-bt_30'
+                        type: text
                     lumin_one_edge_title|raw:
                         label: lumin_one_edge_title|raw
+                        type: text
+                    'opacity_0;_webkit_transform_translate3d_0,__100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_0,__100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_0,__100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_0,__100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0':
+                        label: 'opacity:0;-webkit-transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                        type: text
+                    b_title_b_title_white_tb_40:
+                        label: 'b-title b-title_white tb_40'
+                        type: text
+                    b_columns_b_columns_pd_left_120:
+                        label: 'b-columns b-columns_pd-left_120'
                         type: text
                     lumin_one_edge_lists:
                         label: lumin_one_edge_lists
                         type: repeater
                         form:
                             fields:
+                                b_columns__col_b_columns__col_100_b_columns__col_flex_h_b_columns__col_mg_bt_50:
+                                    label: 'b-columns__col b-columns__col_100 b-columns__col_flex_h b-columns__col_mg-bt_50'
+                                    type: text
+                                'webkit_transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                                    label: '-webkit-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                                    type: text
+                                b_block_b_block_icon:
+                                    label: 'b-block b-block_icon'
+                                    type: text
+                                b_icon:
+                                    label: b-icon
+                                    type: text
                                 icon:
                                     label: icon
                                     type: mediafinder
@@ -91,14 +292,56 @@ fields:
                                 text:
                                     label: Текст
                                     type: text
+                                'opacity_1;_webkit_transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0':
+                                    label: 'opacity:1;-webkit-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                                    type: text
+                                b_text_b_text_size_36_b_text_white_tb_16:
+                                    label: 'b-text b-text_size_36 b-text_white tb_16'
+                                    type: text
+                    b_image_b_image_edge:
+                        label: 'b-image b-image_edge'
+                        type: text
+            section_section_tb_5:
+                label: 'section section_tb_5'
+                type: text
             lumin_help:
                 name: lumin-help
                 fields:
+                    container_container_100vh_w_container:
+                        label: 'container container_100vh w-container'
+                        type: text
+                    b_columns_tb_revers:
+                        label: 'b-columns tb_revers'
+                        type: text
+                    b_columns__col_b_columns__col_51_tb_100_tb_center:
+                        label: 'b-columns__col b-columns__col_51 tb_100 tb_center'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_30_mob_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_30 mob_mg-bt_20'
+                        type: text
                     lumin_help_subtitle:
                         label: lumin_help_subtitle
                         type: text
+                    'webkit_transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    b_text_b_text_size_36_b_text_gray_b_text_extra_bold_tb_26:
+                        label: 'b-text b-text_size_36 b-text_gray b-text_extra-bold tb_26'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_60 tb_mg-bt_30'
+                        type: text
                     lumin_help_title|raw:
                         label: lumin_help_title|raw
+                        type: text
+                    'webkit_transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d__100px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    b_title_tb_40:
+                        label: 'b-title tb_40'
+                        type: text
+                    b_block_button_w_inline_block:
+                        label: 'b-block-button w-inline-block'
                         type: text
                     link:
                         label: Ссылка
@@ -106,24 +349,102 @@ fields:
                     lumin_help_text_btn|raw:
                         label: lumin_help_text_btn|raw
                         type: text
+                    'webkit_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0':
+                        label: '-webkit-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                        type: text
+                    b_text_b_text_size_20_b_text_animation:
+                        label: 'b-text b-text_size_20 b-text_animation'
+                        type: text
+                    b_block_button__arrow:
+                        label: b-block-button__arrow
+                        type: text
+                    b_columns__col_b_columns__col_49_tb_100:
+                        label: 'b-columns__col b-columns__col_49 tb_100'
+                        type: text
+                    'webkit_transform_translate3d_0,_100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_0,_100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_0,_100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_0,_100px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    b_block_b_block_image_tb_mg_bt_30:
+                        label: 'b-block b-block_image tb_mg-bt_30'
+                        type: text
+                    image:
+                        label: Изображение
+                        type: text
                     lumin_help_image:
                         label: lumin_help_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    display_block;opacity_1:
+                        label: 'display:block;opacity:1'
+                        type: text
+                    b_block__circle:
+                        label: b-block__circle
+                        type: text
+                    display_block:
+                        label: 'display:block'
+                        type: text
+                    opacity_1;display_block:
+                        label: 'opacity:1;display:block'
+                        type: text
             lumin_backup:
                 name: lumin-backup
                 fields:
+                    container_container_max_width_1100_w_container:
+                        label: 'container container_max-width_1100 w-container'
+                        type: text
+                    b_columns_b_columns_center:
+                        label: 'b-columns b-columns_center'
+                        type: text
+                    b_columns__col_b_columns__col_27_tb_100_tb_center:
+                        label: 'b-columns__col b-columns__col_27 tb_100 tb_center'
+                        type: text
+                    'webkit_transform_translate3d_100_,_null,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_100_,_null,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_100_,_null,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_100_,_null,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100%, null, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    b_block_pb_mg_bt_40_b_block_overflow_h:
+                        label: 'b-block pb_mg-bt_40 b-block_overflow_h'
+                        type: text
+                    b_image_b_image_bat:
+                        label: 'b-image b-image_bat'
+                        type: text
                     lumin_backup_image:
                         label: lumin_backup_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    'webkit_transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_0,_0_,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0':
+                        label: '-webkit-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0%, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                        type: text
+                    b_image_b_image_bt:
+                        label: 'b-image b-image_bt'
+                        type: text
+                    b_columns__col_b_columns__col_73_b_columns__col_align_center_tb_100:
+                        label: 'b-columns__col b-columns__col_73 b-columns__col_align_center tb_100'
+                        type: text
+                    'webkit_transform_translate3d__20_,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d__20_,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d__20_,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d__20_,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-20%, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_30'
+                        type: text
                     lumin_backup_subtitle:
                         label: lumin_backup_subtitle
                         type: text
+                    b_text_b_text_size_36_b_text_gray_b_text_extra_bold_tb_26:
+                        label: 'b-text b-text_size_36 b-text_gray b-text_extra-bold tb_26'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_60 tb_mg-bt_30'
+                        type: text
                     lumin_backup_title:
                         label: lumin_backup_title
+                        type: text
+                    b_title_tb_40:
+                        label: 'b-title tb_40'
+                        type: text
+                    b_block_button_w_inline_block:
+                        label: 'b-block-button w-inline-block'
                         type: text
                     link:
                         label: Ссылка
@@ -131,9 +452,27 @@ fields:
                     lumin_backup_text_btn|raw:
                         label: lumin_backup_text_btn|raw
                         type: text
+                    'webkit_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0':
+                        label: '-webkit-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                        type: text
+                    b_text_b_text_size_20:
+                        label: 'b-text b-text_size_20'
+                        type: text
+                    b_block_button__arrow:
+                        label: b-block-button__arrow
+                        type: text
             lumin_charging:
                 name: lumin-charging
                 fields:
+                    container_container_align_center_w_container:
+                        label: 'container container_align_center w-container'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_30'
+                        type: text
+                    b_image_b_image_char:
+                        label: 'b-image b-image_char'
+                        type: text
                     lumin_charging_image:
                         label: lumin_charging_image
                         type: mediafinder
@@ -142,8 +481,26 @@ fields:
                     lumin_charging_subtitle:
                         label: lumin_charging_subtitle
                         type: text
+                    'webkit_transform_translate3d_0,_30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_0,_30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_0,_30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_0,_30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    b_text_b_text_size_36_b_text_gray_b_text_extra_bold_tb_26:
+                        label: 'b-text b-text_size_36 b-text_gray b-text_extra-bold tb_26'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_60 tb_mg-bt_30'
+                        type: text
                     lumin_charging_title|raw:
                         label: lumin_charging_title|raw
+                        type: text
+                    'webkit_transform_translate3d_0,__30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d_0,__30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d_0,__30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d_0,__30px,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;opacity_0':
+                        label: '-webkit-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -30px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0'
+                        type: text
+                    b_title_tb_40:
+                        label: 'b-title tb_40'
+                        type: text
+                    b_block_button_w_inline_block:
+                        label: 'b-block-button w-inline-block'
                         type: text
                     link:
                         label: Ссылка
@@ -151,69 +508,324 @@ fields:
                     lumin_charging_text_btn|raw:
                         label: lumin_charging_text_btn|raw
                         type: text
+                    'webkit_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_moz_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;_ms_transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0_;transform_translate3d__244px,_0,_0__scale3d_1,_1,_1__rotatex_0__rotatey_0__rotatez_0__skew_0,_0':
+                        label: '-webkit-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-244px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                        type: text
+                    b_text_b_text_size_20:
+                        label: 'b-text b-text_size_20'
+                        type: text
+                    b_block_button__arrow:
+                        label: b-block-button__arrow
+                        type: text
             video_galery:
                 name: video-galery
                 fields:
+                    container_container_100vw_w_container:
+                        label: 'container container_100vw w-container'
+                        type: text
+                    b_grid_mob_1_col:
+                        label: 'b-grid mob_1-col'
+                        type: text
                     video_galery_rep:
                         label: video_galery_rep
                         type: repeater
                         form:
                             fields:
+                                b_grid__col:
+                                    label: b-grid__col
+                                    type: text
                                 image:
                                     label: Изображение
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
+                                b_video_b_video_galery_w_inline_block:
+                                    label: 'b-video b-video_galery w-inline-block'
+                                    type: text
                                 link:
                                     label: Ссылка
                                     type: text
                                 title_block:
                                     label: title_block
                                     type: text
+                                b_width_b_width_50:
+                                    label: 'b-width b-width_50'
+                                    type: text
+            section_s_section_70vh:
+                label: 'section s-section_70vh'
+                type: text
             lumin_updates:
                 name: lumin-updates
                 fields:
+                    container_container_align_center_w_container:
+                        label: 'container container_align_center w-container'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_20'
+                        type: text
                     updates_title|raw:
                         label: updates_title|raw
+                        type: text
+                    b_title_tb_40:
+                        label: 'b-title tb_40'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_900_tb_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900 tb_mg-bt_20'
                         type: text
                     updates_subtitle|raw:
                         label: updates_subtitle|raw
                         type: text
+                    b_text_b_text_size_26:
+                        label: 'b-text b-text_size_26'
+                        type: text
+                    b_form_b_form_width_100_w_form:
+                        label: 'b-form b-form_width_100 w-form'
+                        type: text
+                    b_form__form_b_form__form_flex_h_mob_flex_v:
+                        label: 'b-form__form b-form__form_flex-h mob_flex-v'
+                        type: text
+                    b_input_b_input_mg_rt_20_mob_mg_bt_20_w_input:
+                        label: 'b-input b-input_mg-rt_20 mob_mg-bt_20 w-input'
+                        type: text
+                    b_button_b_button_blue_b_button_height_56_b_button_max_width_180_w_button:
+                        label: 'b-button b-button_blue b-button_height_56 b-button_max-width_180 w-button'
+                        type: text
+                    b_form__success_mes_w_form_done:
+                        label: 'b-form__success-mes w-form-done'
+                        type: text
+                    b_form__error_mes_w_form_fail:
+                        label: 'b-form__error-mes w-form-fail'
+                        type: text
+            section_s_section_100vh_s_section_pd_home:
+                label: 'section s-section_100vh s-section_pd_home'
+                type: text
             demand_response_works:
                 name: demand-response-works
                 fields:
+                    container_w_container:
+                        label: 'container w-container'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_50_h_wrap_align_center:
+                        label: 'h-wrap h-wrap_mg-bt_50 h-wrap_align_center'
+                        type: text
                     demand_response_works_title:
                         label: demand_response_works_title
                         type: text
+                    b_title_b_title_mini_mob_30:
+                        label: 'b-title b-title_mini mob_30'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_30'
+                        type: text
                     demand_response_works_title_lists:
                         label: demand_response_works_title_lists
+                        type: text
+                    b_text_b_text_size_30_b_text_bold_tb_20:
+                        label: 'b-text b-text_size_30 b-text_bold tb_20'
+                        type: text
+                    b_list_b_list_max_w_18:
+                        label: 'b-list b-list_max-w_18'
                         type: text
                     demand_response_works_lists:
                         label: demand_response_works_lists
                         type: repeater
                         form:
                             fields:
+                                b_list__item_b_list__item_mg_bt_40_tb_50_mob_100:
+                                    label: 'b-list__item b-list__item_mg-bt_40 tb_50 mob_100'
+                                    type: text
                                 number:
                                     label: Число
+                                    type: text
+                                b_list__numbers:
+                                    label: b-list__numbers
                                     type: text
                                 text:
                                     label: Текст
                                     type: text
+                                b_text:
+                                    label: b-text
+                                    type: text
+                    b_home_wrap:
+                        label: b-home-wrap
+                        type: text
+                    b_image_b_image_home:
+                        label: 'b-image b-image_home'
+                        type: text
                     demand_response_main_image:
                         label: demand_response_main_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    plus_plus_2:
+                        label: 'plus plus_2'
+                        type: text
+                    plus__circle:
+                        label: plus__circle
+                        type: text
+                    plus_plus_7:
+                        label: 'plus plus_7'
+                        type: text
+                    plus_plus_3:
+                        label: 'plus plus_3'
+                        type: text
+                    plus_plus_4:
+                        label: 'plus plus_4'
+                        type: text
+                    plus_plus_6:
+                        label: 'plus plus_6'
+                        type: text
+                    plus_plus_1:
+                        label: 'plus plus_1'
+                        type: text
+                    plus_plus_5:
+                        label: 'plus plus_5'
+                        type: text
+                    b_button_discover_w_inline_block:
+                        label: 'b-button-discover w-inline-block'
+                        type: text
+                    b_modal_works:
+                        label: 'b-modal works'
+                        type: text
+                    b_block_bg_b_block_bg__modal:
+                        label: 'b-block-bg b-block-bg__modal'
+                        type: text
+                    b_modal__close_w_inline_block:
+                        label: 'b-modal__close w-inline-block'
+                        type: text
+                    h_wrap_h_wrap_overflow_auto:
+                        label: 'h-wrap h-wrap_overflow_auto'
+                        type: text
                     how_it_works_modal:
                         label: how_it_works_modal
                         type: repeater
                         form:
                             fields:
+                                h_wrap_h_wrap_maxw_320:
+                                    label: 'h-wrap h-wrap_maxw_320'
+                                    type: text
+                                b_image_b_image_devise_b_image_devise_modal:
+                                    label: 'b-image b-image_devise b-image_devise-modal'
+                                    type: text
                                 image:
                                     label: Изображение
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
+                                h_wrap_h_wrap_mg_bt_40:
+                                    label: 'h-wrap h-wrap_mg-bt_40'
+                                    type: text
                                 text_list:
                                     label: text_list
                                     type: text
+                                b_text:
+                                    label: b-text
+                                    type: text
+    b_title__span:
+        label: b-title__span
+        type: text
+    b_title__span_b_title__span_gray:
+        label: 'b-title__span b-title__span_gray'
+        type: text
+    footer_section:
+        label: 'footer section'
+        type: text
+    container_w_container:
+        label: 'container w-container'
+        type: text
+    footer__head:
+        label: footer__head
+        type: text
+    b_columns_b_columns_space_between:
+        label: 'b-columns b-columns_space-between'
+        type: text
+    b_columns__col_b_columns__col_35_mob_100_mob_center:
+        label: 'b-columns__col b-columns__col_35 mob_100 mob_center'
+        type: text
+    h_wrap_h_wrap_mg_bt_30:
+        label: 'h-wrap h-wrap_mg-bt_30'
+        type: text
+    h_wrap_h_wrap_mg_bt_10:
+        label: 'h-wrap h-wrap_mg-bt_10'
+        type: text
+    b_text_b_text_size_14_b_text_gray_b_text_semibold:
+        label: 'b-text b-text_size_14 b-text_gray b-text_semibold'
+        type: text
+    b_app_b_app_mg_bt_30:
+        label: 'b-app b-app_mg-bt_30'
+        type: text
+    b_app__app_store_b_app__app_store_mg_rt_20_w_inline_block:
+        label: 'b-app__app-store b-app__app-store_mg-rt_20 w-inline-block'
+        type: text
+    b_app__app_store_w_inline_block:
+        label: 'b-app__app-store w-inline-block'
+        type: text
+    b_social_mob_mg_bt_40:
+        label: 'b-social mob_mg-bt_40'
+        type: text
+    b_social__link_w_inline_block:
+        label: 'b-social__link w-inline-block'
+        type: text
+    b_columns__col_b_columns__col_20_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_20 mob_50 mob_center'
+        type: text
+    b_text_b_text_size_20_b_text_bold:
+        label: 'b-text b-text_size_20 b-text_bold'
+        type: text
+    b_list:
+        label: b-list
+        type: text
+    b_list__item_b_list__item_mg_bt_10_mob_center:
+        label: 'b-list__item b-list__item_mg-bt_10 mob_center'
+        type: text
+    b_link:
+        label: b-link
+        type: text
+    b_columns__col_b_columns__col_15_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_15 mob_50 mob_center'
+        type: text
+    b_columns__col_b_columns__col_25_mob_100_mob_center:
+        label: 'b-columns__col b-columns__col_25 mob_100 mob_center'
+        type: text
+    h_wrap_h_wrap_mg_bt_20:
+        label: 'h-wrap h-wrap_mg-bt_20'
+        type: text
+    b_text:
+        label: b-text
+        type: text
+    b_list__item_b_list__item_mg_bt_10:
+        label: 'b-list__item b-list__item_mg-bt_10'
+        type: text
+    h_wrap_h_wrap_flex_h_h_wrap_align_center_left:
+        label: 'h-wrap h-wrap_flex_h h-wrap_align_center-left'
+        type: text
+    b_list__circle_v_4:
+        label: 'b-list__circle v-4'
+        type: text
+    b_text__phone:
+        label: b-text__phone
+        type: text
+    b_list__item_b_list__item_mg_bt_10_b_list__item_flex_v:
+        label: 'b-list__item b-list__item_mg-bt_10 b-list__item_flex-v'
+        type: text
+    h_wrap_h_wrap_mg_bt_5:
+        label: 'h-wrap h-wrap_mg-bt_5'
+        type: text
+    footer__bottom:
+        label: footer__bottom
+        type: text
+    b_columns:
+        label: b-columns
+        type: text
+    b_columns__col_b_columns__col_80_mob_100_mob_center_mob_mg_bt_20:
+        label: 'b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20'
+        type: text
+    b_columns__col_b_columns__col_10_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_10 mob_50 mob_center'
+        type: text
+    b_link_b_link_black:
+        label: 'b-link b-link_black'
+        type: text
+    b_columns__col_b_columns__col_10_b_columns__col_align_right_mob_50:
+        label: 'b-columns__col b-columns__col_10 b-columns__col_align-right mob_50'
+        type: text

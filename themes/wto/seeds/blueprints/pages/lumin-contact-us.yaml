@@ -9,21 +9,51 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    header:
+        label: header
+        type: text
+    b_menu_w_nav:
+        label: 'b-menu w-nav'
+        type: text
+    b_menu__container_w_container:
+        label: 'b-menu__container w-container'
+        type: text
+    b_menu__button_w_nav_button:
+        label: 'b-menu__button w-nav-button'
+        type: text
+    b_menu__logo_link_w_nav_brand:
+        label: 'b-menu__logo-link w-nav-brand'
+        type: text
+    b_menu__logo:
+        label: b-menu__logo
+        type: text
+    b_menu__nav_w_nav_menu:
+        label: 'b-menu__nav w-nav-menu'
+        type: text
     main_menu:
         label: main_menu
         type: repeater
         form:
             fields:
+                h_wrap_h_wrap_menu_h_wrap_menu_center:
+                    label: 'h-wrap h-wrap_menu h-wrap_menu_center'
+                    type: text
                 list:
                     label: Список
                     type: repeater
                     displayMode: builder
                     groups:
+                        h_wrap_h_wrap_menu:
+                            label: 'h-wrap h-wrap_menu'
+                            type: text
                         menu_link:
                             name: menu-link
                             fields:
                                 menu_link_name:
                                     label: menu_link_name
+                                    type: text
+                                b_menu__link_w_nav_link:
+                                    label: 'b-menu__link w-nav-link'
                                     type: text
                                 menu_link_link|link:
                                     label: menu_link_link|link
@@ -31,8 +61,23 @@ fields:
                         menu_dropdown:
                             name: menu-dropdown
                             fields:
+                                b_menu__dropdown_w_dropdown:
+                                    label: 'b-menu__dropdown w-dropdown'
+                                    type: text
+                                b_menu__dropdown_toggle_w_dropdown_toggle:
+                                    label: 'b-menu__dropdown-toggle w-dropdown-toggle'
+                                    type: text
                                 menu_dropdown_title:
                                     label: menu_dropdown_title
+                                    type: text
+                                b_dropdown__icon:
+                                    label: b-dropdown__icon
+                                    type: text
+                                b_menu__dropdown_lists_w_dropdown_list:
+                                    label: 'b-menu__dropdown-lists w-dropdown-list'
+                                    type: text
+                                b_dropdown__content_b_dropdown__content_menu:
+                                    label: 'b-dropdown__content b-dropdown__content_menu'
                                     type: text
                                 list:
                                     label: Список
@@ -42,34 +87,313 @@ fields:
                                             menu_dropdown_name:
                                                 label: menu_dropdown_name
                                                 type: text
+                                            b_dropdown__link_w_dropdown_link:
+                                                label: 'b-dropdown__link w-dropdown-link'
+                                                type: text
                                             menu_dropdown_link|link:
                                                 label: menu_dropdown_link|link
                                                 type: text
                                             menu_dropdown_link_|_link:
                                                 label: 'menu_dropdown_link | link'
                                                 type: text
+                h_wrap_h_wrap_flex_h_tb_center_tb_show:
+                    label: 'h-wrap h-wrap_flex_h tb_center tb_show'
+                    type: text
+                b_menu__cart_tb_mg_lt_0_w_inline_block:
+                    label: 'b-menu__cart tb_mg-lt_0 w-inline-block'
+                    type: text
+                b_menu__cart_count:
+                    label: b-menu__cart-count
+                    type: text
+                b_button_b_button_width_160_b_button_height_45_w_button:
+                    label: 'b-button b-button_width_160 b-button_height_45 w-button'
+                    type: text
+    b_menu__cart_w_inline_block:
+        label: 'b-menu__cart w-inline-block'
+        type: text
+    b_menu__cart_count:
+        label: b-menu__cart-count
+        type: text
+    b_button_b_button_width_160_b_button_height_45_mob_hide_w_button:
+        label: 'b-button b-button_width_160 b-button_height_45 mob_hide w-button'
+        type: text
+    main:
+        label: main
+        type: text
     blocks:
         label: blocks
         type: repeater
         displayMode: builder
         groups:
+            section_s_section_contact:
+                label: 'section s-section_contact'
+                type: text
             contact_us_contacts:
                 name: contact-us-contacts
                 fields:
+                    container_w_container:
+                        label: 'container w-container'
+                        type: text
+                    b_columns_b_columns_space_between:
+                        label: 'b-columns b-columns_space-between'
+                        type: text
+                    b_columns__col_b_columns__col_35_b_columns__col_align_center:
+                        label: 'b-columns__col b-columns__col_35 b-columns__col_align_center'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_20:
+                        label: 'h-wrap h-wrap_mg-bt_20'
+                        type: text
                     contact_us_contacts_title:
                         label: contact_us_contacts_title
+                        type: text
+                    b_title_b_title_mini:
+                        label: 'b-title b-title_mini'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_40:
+                        label: 'h-wrap h-wrap_mg-bt_40'
                         type: text
                     contact_us_contacts_subtitle:
                         label: contact_us_contacts_subtitle
                         type: text
+                    b_text_b_text_size_20:
+                        label: 'b-text b-text_size_20'
+                        type: text
+                    b_list:
+                        label: b-list
+                        type: text
+                    b_list__item_b_list__item_mg_bt_30_b_list__item_flex_v:
+                        label: 'b-list__item b-list__item_mg-bt_30 b-list__item_flex-v'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_5:
+                        label: 'h-wrap h-wrap_mg-bt_5'
+                        type: text
+                    b_text_b_text_size_14_b_text_gray_b_text_semibold:
+                        label: 'b-text b-text_size_14 b-text_gray b-text_semibold'
+                        type: text
+                    h_wrap_h_wrap_flex_h_h_wrap_align_center_left:
+                        label: 'h-wrap h-wrap_flex_h h-wrap_align_center-left'
+                        type: text
+                    b_list__circle_v_4:
+                        label: 'b-list__circle v-4'
+                        type: text
+                    b_text_b_text_size_20_b_text_bold:
+                        label: 'b-text b-text_size_20 b-text_bold'
+                        type: text
+                    b_text__phone:
+                        label: b-text__phone
+                        type: text
+                    h_wrap_h_wrap_flex_h_h_wrap_max_width_250:
+                        label: 'h-wrap h-wrap_flex_h h-wrap_max-width_250'
+                        type: text
+                    b_text:
+                        label: b-text
+                        type: text
+                    b_columns__col_b_columns__col_60:
+                        label: 'b-columns__col b-columns__col_60'
+                        type: text
+                    b_image_map_w_widget_w_widget_map:
+                        label: 'b-image_map w-widget w-widget-map'
+                        type: text
+                    b_block_b_block_bg:
+                        label: 'b-block b-block_bg'
+                        type: text
+            section_s_section_send:
+                label: 'section s-section_send'
+                type: text
             contact_us_form:
                 name: contact-us-form
                 fields:
+                    container_w_container:
+                        label: 'container w-container'
+                        type: text
+                    b_columns:
+                        label: b-columns
+                        type: text
+                    b_columns__col_b_columns__col_30_b_columns__col_justify_end:
+                        label: 'b-columns__col b-columns__col_30 b-columns__col_justify_end'
+                        type: text
+                    b_image_b_image_phone:
+                        label: 'b-image b-image_phone'
+                        type: text
                     contact_us_form_image:
                         label: contact_us_form_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    b_columns__col_b_columns__col_70_b_columns__col_align_center_b_columns__col_pd_lt_100:
+                        label: 'b-columns__col b-columns__col_70 b-columns__col_align_center b-columns__col_pd-lt_100'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_40:
+                        label: 'h-wrap h-wrap_mg-bt_40'
+                        type: text
                     contact_us_form_title:
                         label: contact_us_form_title
                         type: text
+                    b_title_b_title_mini:
+                        label: 'b-title b-title_mini'
+                        type: text
+                    b_form_w_form:
+                        label: 'b-form w-form'
+                        type: text
+                    b_form__form:
+                        label: b-form__form
+                        type: text
+                    h_wrap_h_wrap_grid_h_wrap_bg_bt_30:
+                        label: 'h-wrap h-wrap_grid h-wrap_bg-bt_30'
+                        type: text
+                    b_radio_b_radio_form_w_radio:
+                        label: 'b-radio b-radio_form w-radio'
+                        type: text
+                    w_form_formradioinput_w_form_formradioinput__inputtype_custom_b_radio__btn_b_radio__btn_form_w_radio_input:
+                        label: 'w-form-formradioinput w-form-formradioinput--inputType-custom b-radio__btn b-radio__btn_form w-radio-input'
+                        type: text
+                    opacity_0;position_absolute;z_index__1:
+                        label: 'opacity:0;position:absolute;z-index:-1'
+                        type: text
+                    w_form_label:
+                        label: w-form-label
+                        type: text
+                    h_wrap_h_wrap_mg_bt_15:
+                        label: 'h-wrap h-wrap_mg-bt_15'
+                        type: text
+                    b_select_v_2_w_node_f79a1530_b612_b58c_7b67_663d7b77de41_7b12a409_w_select:
+                        label: 'b-select v-2 w-node-f79a1530-b612-b58c-7b67-663d7b77de41-7b12a409 w-select'
+                        type: text
+                    h_wrap_h_wrap_grid_h_wrap_2_col_h_wrap_mg_bt_15:
+                        label: 'h-wrap h-wrap_grid h-wrap_2-col h-wrap_mg-bt_15'
+                        type: text
+                    b_input_b_input_height_50_w_input:
+                        label: 'b-input b-input_height_50 w-input'
+                        type: text
+                    h_wrap_h_wrap_mg_bt_30:
+                        label: 'h-wrap h-wrap_mg-bt_30'
+                        type: text
+                    b_input_b_input_height_150_w_input:
+                        label: 'b-input b-input_height_150 w-input'
+                        type: text
+                    w_checkbox_b_checkbox_b_checkbox_pd_lt_35_b_checkbox_max_width_610:
+                        label: 'w-checkbox b-checkbox b-checkbox_pd-lt_35 b-checkbox_max-width_610'
+                        type: text
+                    w_checkbox_input_w_checkbox_input__inputtype_custom_b_checkbox__check_b_checkbox__check_form:
+                        label: 'w-checkbox-input w-checkbox-input--inputType-custom b-checkbox__check b-checkbox__check_form'
+                        type: text
+                    b_checkbox__label_b_checkbox__label_form_w_form_label:
+                        label: 'b-checkbox__label b-checkbox__label_form w-form-label'
+                        type: text
+                    b_checkbox__link:
+                        label: b-checkbox__link
+                        type: text
+                    b_button_b_button_blue_b_button_max_width_250_w_button:
+                        label: 'b-button b-button_blue b-button_max-width_250 w-button'
+                        type: text
+                    b_form__success_mes_w_form_done:
+                        label: 'b-form__success-mes w-form-done'
+                        type: text
+                    b_form__error_mes_w_form_fail:
+                        label: 'b-form__error-mes w-form-fail'
+                        type: text
+                    b_block_b_block_bg_v_2:
+                        label: 'b-block b-block_bg v-2'
+                        type: text
+    footer_section:
+        label: 'footer section'
+        type: text
+    container_w_container:
+        label: 'container w-container'
+        type: text
+    footer__head:
+        label: footer__head
+        type: text
+    b_columns_b_columns_space_between:
+        label: 'b-columns b-columns_space-between'
+        type: text
+    b_columns__col_b_columns__col_35_mob_100_mob_center:
+        label: 'b-columns__col b-columns__col_35 mob_100 mob_center'
+        type: text
+    h_wrap_h_wrap_mg_bt_30:
+        label: 'h-wrap h-wrap_mg-bt_30'
+        type: text
+    h_wrap_h_wrap_mg_bt_10:
+        label: 'h-wrap h-wrap_mg-bt_10'
+        type: text
+    b_text_b_text_size_14_b_text_gray_b_text_semibold:
+        label: 'b-text b-text_size_14 b-text_gray b-text_semibold'
+        type: text
+    b_app_b_app_mg_bt_30:
+        label: 'b-app b-app_mg-bt_30'
+        type: text
+    b_app__app_store_b_app__app_store_mg_rt_20_w_inline_block:
+        label: 'b-app__app-store b-app__app-store_mg-rt_20 w-inline-block'
+        type: text
+    b_app__app_store_w_inline_block:
+        label: 'b-app__app-store w-inline-block'
+        type: text
+    b_social_mob_mg_bt_40:
+        label: 'b-social mob_mg-bt_40'
+        type: text
+    b_social__link_w_inline_block:
+        label: 'b-social__link w-inline-block'
+        type: text
+    b_columns__col_b_columns__col_20_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_20 mob_50 mob_center'
+        type: text
+    b_text_b_text_size_20_b_text_bold:
+        label: 'b-text b-text_size_20 b-text_bold'
+        type: text
+    b_list:
+        label: b-list
+        type: text
+    b_list__item_b_list__item_mg_bt_10_mob_center:
+        label: 'b-list__item b-list__item_mg-bt_10 mob_center'
+        type: text
+    b_link:
+        label: b-link
+        type: text
+    b_columns__col_b_columns__col_15_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_15 mob_50 mob_center'
+        type: text
+    b_columns__col_b_columns__col_25_mob_100_mob_center:
+        label: 'b-columns__col b-columns__col_25 mob_100 mob_center'
+        type: text
+    h_wrap_h_wrap_mg_bt_20:
+        label: 'h-wrap h-wrap_mg-bt_20'
+        type: text
+    b_text:
+        label: b-text
+        type: text
+    b_list__item_b_list__item_mg_bt_10:
+        label: 'b-list__item b-list__item_mg-bt_10'
+        type: text
+    h_wrap_h_wrap_flex_h_h_wrap_align_center_left:
+        label: 'h-wrap h-wrap_flex_h h-wrap_align_center-left'
+        type: text
+    b_list__circle_v_4:
+        label: 'b-list__circle v-4'
+        type: text
+    b_text__phone:
+        label: b-text__phone
+        type: text
+    b_list__item_b_list__item_mg_bt_10_b_list__item_flex_v:
+        label: 'b-list__item b-list__item_mg-bt_10 b-list__item_flex-v'
+        type: text
+    h_wrap_h_wrap_mg_bt_5:
+        label: 'h-wrap h-wrap_mg-bt_5'
+        type: text
+    footer__bottom:
+        label: footer__bottom
+        type: text
+    b_columns:
+        label: b-columns
+        type: text
+    b_columns__col_b_columns__col_80_mob_100_mob_center_mob_mg_bt_20:
+        label: 'b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20'
+        type: text
+    b_columns__col_b_columns__col_10_mob_50_mob_center:
+        label: 'b-columns__col b-columns__col_10 mob_50 mob_center'
+        type: text
+    b_link_b_link_black:
+        label: 'b-link b-link_black'
+        type: text
+    b_columns__col_b_columns__col_10_b_columns__col_align_right_mob_50:
+        label: 'b-columns__col b-columns__col_10 b-columns__col_align-right mob_50'
+        type: text

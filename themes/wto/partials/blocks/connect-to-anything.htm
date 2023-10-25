@@ -1,0 +1,36 @@
+<section class="{{ section_s_section_100vh_s_section_pd_11_25 }}">
+	<div class="{{ block.container_w_container }}">
+		<div class="{{ block.h_wrap_h_wrap_mg_bt_60_h_wrap_align_center }}">
+			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
+				{{ block.title }}
+			</div>
+		</div>
+		<div class="{{ block.b_columns_b_columns_space_between_mob_center_mob_gap_60 }}">
+			{% for item in block.columns %}
+			<div class="{{ item.b_columns__col_b_columns__col_50_b_columns__col_align_center_v_2 }}">
+				<div class="{{ item.h_wrap_h_wrap_width_400_mob_pd }}">
+					<div class="{{ item.h_wrap }}">
+						<img src="{{ item.image|media }}" loading="eager" alt="" class="{{ item.b_image_b_image_absolute_v_3 }}">
+						<div class="{{ item.b_block_b_block_grad_rad }}"></div>
+					</div>
+					<div class="{{ item.h_wrap_h_wrap_mg_bt_20_h_wrap_align_center }}">
+						<div class="{{ item.b_text_b_text_size_30_b_text_extra_bold }}">
+							{{ item.title_list }}
+						</div>
+					</div>
+					<ul role="list" class="{{ item.b_list }}">
+						{% for item in item.lists %}
+						<li class="{{ item.b_list__item_b_list__item_mg_bt_20 }}">
+							<div class="{{ item.b_list__circle_v_2 }}"></div>
+							<div class="{{ item.b_text_b_text_size_20 }}">
+								{{ item.text_list }}
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
