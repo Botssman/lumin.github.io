@@ -1,0 +1,22 @@
+uuid: sections-lumin-icons
+name: Section connect to anything
+type: mixin
+handle: Blocks\Icons
+
+fields:
+    icon_rep:
+        label: Icons
+        type: repeater
+        titleFrom: Icons
+        form: 
+            fields:
+                title_list:
+                    label: Title list
+                    type: text
+                lists:
+                    type: repeater
+                    form:
+                        fields:
+                            text_list:
+                                label: Text list
+                                type: text

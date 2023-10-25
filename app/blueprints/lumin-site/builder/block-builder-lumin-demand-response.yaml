@@ -108,6 +108,20 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\CopyBullet2
+            connect_to_anything:
+                name: Block connect to anything
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ConnectToAnything
+            icons:
+                name: Block icons
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Icons
             demand_response_partners:
                 name: Demand response partners
                 description: Block demand response partners

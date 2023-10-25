@@ -1,0 +1,23 @@
+uuid: sections-lumin-connect-to-anything
+name: Section connect to anything
+type: mixin
+handle: Blocks\ConnectToAnything
+
+fields:
+    title:
+        label: Title
+        type: text
+    columns:
+        label: Colums
+        type: repeater
+        titleFrom: Colums
+        form: 
+            fields:
+                icon:
+                    label: Icon
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1
+                text:
+                    label: Text
+                    type: text
