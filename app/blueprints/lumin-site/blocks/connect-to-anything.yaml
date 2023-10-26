@@ -4,20 +4,24 @@ type: mixin
 handle: Blocks\ConnectToAnything
 
 fields:
-    title:
-        label: Title
-        type: text
     columns:
-        label: Colums
+        label: Add block
         type: repeater
-        titleFrom: Colums
+        titleFrom: Add block
         form: 
             fields:
                 icon:
-                    label: Icon
+                    label: Image
                     type: mediafinder
                     mode: image
                     maxItems: 1
-                text:
-                    label: Text
+                title_list:
+                    label: Title list
                     type: text
+                lists:
+                    type: repeater
+                    form:
+                        fields:
+                            text_list:
+                                label: Text list
+                                type: text

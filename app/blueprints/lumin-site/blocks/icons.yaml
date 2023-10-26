@@ -5,18 +5,16 @@ handle: Blocks\Icons
 
 fields:
     icon_rep:
-        label: Icons
+        label: Add block icon
         type: repeater
-        titleFrom: Icons
+        titleFrom: Add block icon
         form: 
             fields:
-                title_list:
-                    label: Title list
+                icon:
+                    label: Icon
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1
+                text:
+                    label: Text
                     type: text
-                lists:
-                    type: repeater
-                    form:
-                        fields:
-                            text_list:
-                                label: Text list
-                                type: text
