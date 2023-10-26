@@ -1,38 +1,38 @@
-<section class="{{ section }}">
-	<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false" class="{{ block.b_slider_tb_pd_100_w_slider }}">
-		<div class="{{ block.b_slider__mask_b_slider_mask_pd_12_5_w_slider_mask }}">
+<section class="section">
+	<div data-delay="4000" data-animation="slide" class="b-slider tb_pd_100 w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="false">
+		<div class="b-slider__mask b-slider-mask_pd_12-5 w-slider-mask">
 			{% for item in block.press_room_top %}
-			<div class="{{ item.b_slider__slide_w_slide }}">
-				<div class="{{ item.container_container_1300_container_align_center_w_container }}">
-					<img src="{{ item.image|media }}" loading="lazy" alt="" class="{{ item.b_image_b_image_stat_v_3 }}">
-					<div class="{{ item.b_block_b_block_stat_tp_pd }}">
-						<img src="{{ 'assets/images/award-bg.png'|theme }}" loading="lazy" alt="" class="{{ item.b_image_b_image_cert_show }}">
-						<div class="{{ item.b_columns_b_columns_space_between }}">
-							<div class="{{ item.b_columns__col_b_columns__col_73_tb_100_mob_align_center }}">
-								<div class="{{ item.h_wrap_h_wrap_mg_bt_20 }}">
-									<div class="{{ item.b_text_b_text_size_40_b_text_white_b_text_extrabold }}">
+			<div class="b-slider__slide w-slide">
+				<div class="container container_1300 container_align_center w-container">
+					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_stat v-3">
+					<div class="b-block b-block_stat tp_pd">
+						<img src="{{ 'assets/images/award-bg.png'|theme }}" loading="lazy" alt="" class="b-image b-image_cert show">
+						<div class="b-columns b-columns_space-between">
+							<div class="b-columns__col b-columns__col_73 tb_100 mob_align_center">
+								<div class="h-wrap h-wrap_mg-bt_20">
+									<div class="b-text b-text_size_40 b-text_white b-text_extrabold">
 										{{ item.title|raw }}
 									</div>
 								</div>
-								<div class="{{ item.h_wrap_h_wrap_mg_bt_20 }}">
-									<div class="{{ item.b_text_b_text_size_18_b_text_white_b_text_line_h_1_8 }}">
+								<div class="h-wrap h-wrap_mg-bt_20">
+									<div class="b-text b-text_size_18 b-text_white b-text_line-h_1-8">
 										{{ item.text }}
 									</div>
 								</div>
 							</div>
-							<div class="{{ item.b_columns__col_b_columns__col_30_b_columns__col_align_center_tb_100 }}"></div>
+							<div class="b-columns__col b-columns__col_30 b-columns__col_align_center tb_100"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 			{% endfor %}
 		</div>
-		<div class="{{ block.b_slider__arrow_left_w_slider_arrow_left }}">
-			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+		<div class="b-slider__arrow-left w-slider-arrow-left">
+			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 		</div>
-		<div class="{{ block.b_slider__arrow_right_w_slider_arrow_right }}">
-			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+		<div class="b-slider__arrow-right w-slider-arrow-right">
+			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 		</div>
-		<div class="{{ block.b_slider__nav_b_slider__show_mob_hide_w_slider_nav_w_round_w_num }}"></div>
+		<div class="b-slider__nav b-slider__show mob-hide w-slider-nav w-round w-num"></div>
 	</div>
 </section>

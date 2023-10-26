@@ -1,19 +1,19 @@
-<section class="{{ section_s_section_100vh_s_section_pd_11_25 }}">
-	<div class="{{ block.container_container_align_center_w_container }}">
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_60_h_wrap_max_width_970_mob_mg_bt_30 }}">
-			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
+<section class="section s-section_100vh s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_60 h-wrap_max-width_970 mob_mg-bt_30">
+			<div class="b-title b-title_mini mob_30">
 				{{ block.meet_galery_title }}
 			</div>
 		</div>
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_60_mob_mg_bt_10 }}">
-			<img src="{{ block.meet_galery_image|media }}" alt="" loading="lazy" class="{{ block.b_image_b_image_border_rad_12 }}">
+		<div class="h-wrap h-wrap_mg-bt_60 mob_mg-bt_10">
+			<img class="b-image b-image_border-rad_12" src="{{ block.meet_galery_image|media }}" alt="" loading="lazy">
 		</div>
 	</div>
-	<div class="{{ block.container_container_100vw_w_container }}">
-		<div class="{{ block.b_grid_b_grid_galery }}">
+	<div class="container container_100vw w-container">
+		<div class="b-grid b-grid_galery">
 			{% for item in block.meet_galery_rep %}
 			<div id="{{ item.data_id }}">
-				<img src="{{ item.image|media }}" alt="" id="w-node-dceacf73-8df8-7239-a3ec-5c0c6a587317-7b12a417" loading="lazy" class="{{ item.b_image_b_image_border_rad_12 }}">
+				<img class="b-image b-image_border-rad_12" src="{{ item.image|media }}" alt="" id="w-node-dceacf73-8df8-7239-a3ec-5c0c6a587317-7b12a417" loading="lazy">
 			</div>
 			{% endfor %}
 		</div>

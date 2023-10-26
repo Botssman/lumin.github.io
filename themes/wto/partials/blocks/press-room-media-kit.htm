@@ -1,32 +1,32 @@
-<section class="{{ section }}">
-	<div class="{{ block.container_w_container }}">
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
-			<h1 class="{{ block.b_title_b_title_mini }}">
+<section class="section">
+	<div class="container w-container">
+		<div class="h-wrap h-wrap_mg-bt_20">
+			<h1 class="b-title b-title_mini">
 				{{ block.press_room_media_kit_title }}
 			</h1>
 		</div>
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_50_h_wrap_max_width_800 }}">
-			<div class="{{ block.b_text_b_text_size_20 }}">
+		<div class="h-wrap h-wrap_mg-bt_50 h-wrap_max-width_800">
+			<div class="b-text b-text_size_20">
 				{{ block.press_room_media_kit_subtitle }}
 			</div>
 		</div>
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_60 }}">
-			<div class="{{ block.b_flex_b_flex_justify_start_tb_no_wrap }}">
+		<div class="h-wrap h-wrap_mg-bt_60">
+			<div class="b-flex b-flex_justify_start tb_no_wrap">
 				{% for item in block.press_room_media_kit_rep %}
-				<div class="{{ item.b_flex__card_b_flex__card_maxw_286_b_flex__card_mg_rt_30 }}">
-					<div id="w-node-_3ddf15ca-fc1f-bba9-e8b6-843ce14a5272-7b12a411" class="{{ item.b_card_post_b_card_post_pd_30_b_card_post_shadow }}">
-						<div class="{{ item.h_wrap_h_wrap_mg_bt_20 }}">
+				<div class="b-flex__card b-flex__card_maxw_286 b-flex__card_mg-rt_30">
+					<div id="w-node-_3ddf15ca-fc1f-bba9-e8b6-843ce14a5272-7b12a411" class="b-card-post b-card-post_pd_30 b-card-post_shadow">
+						<div class="h-wrap h-wrap_mg-bt_20">
 							<img src="{{ item.icon|media }}" loading="lazy" alt="">
 						</div>
-						<div class="{{ item.h_wrap_h_wrap_mg_bt_5 }}">
-							<div class="{{ item.b_text_b_text_size_20_b_text_bold }}">
+						<div class="h-wrap h-wrap_mg-bt_5">
+							<div class="b-text b-text_size_20 b-text_bold">
 								{{ item.title_list }}
 							</div>
 						</div>
-						<div class="{{ item.b_text }}">
+						<div class="b-text">
 							{{ item.text_list }}
 						</div>
-						<a href="{{ item.link_list }}" class="{{ item.b_card_post__links }}">
+						<a href="{{ item.link_list }}" class="b-card-post__links">
 							{{ item.text_link_list }}
 						</a>
 					</div>
@@ -35,5 +35,5 @@
 			</div>
 		</div>
 	</div>
-	<img src="{{ block.press_room_media_kit_image|media }}" loading="lazy" alt="" class="{{ block.b_image_b_image_logo }}">
+	<img src="{{ block.press_room_media_kit_image|media }}" loading="lazy" alt="" class="b-image b-image_logo">
 </section>

@@ -1,18 +1,18 @@
-<section class="{{ section_s_section_vertical_s_section_pd_11_25 }}">
-	<div class="{{ block.container_container_maxw_1020_w_container }}">
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
-			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
+<section class="section s-section_vertical s-section_pd_11-25">
+	<div class="container container_maxw_1020 w-container">
+		<div class="h-wrap h-wrap_mg-bt_20">
+			<div class="b-title b-title_mini mob_30">
 				{{ block.documents_title }}
 			</div>
 		</div>
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_40 }}">
-			<div class="{{ block.b_text_b_text_size_26 }}">
+		<div class="h-wrap h-wrap_mg-bt_40">
+			<div class="b-text b-text_size_26">
 				{{ block.documents_subtitle }}
 			</div>
 		</div>
-		<div class="{{ block.b_grid_b_grid_col_3_b_grid_pd }}">
+		<div class="b-grid b-grid_col_3 b-grid_pd">
 			{% for item in block.documents_rep %}
-			<a href="{{ item.documents_file|media }}" download="{{ item.documents_text_btn }}" class="{{ item.b_button_b_button_gray_w_button }}">
+			<a href="{{ item.documents_file|media }}" class="b-button b-button_gray w-button" download="{{ item.documents_text_btn }}">
 				{{ item.documents_text_btn }}
 			</a>
 			{% endfor %}

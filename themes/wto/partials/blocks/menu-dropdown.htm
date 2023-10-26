@@ -1,15 +1,15 @@
-<div class="{{ h_wrap_h_wrap_menu }}">
-	<div data-hover="true" data-delay="0" class="{{ block.b_menu__dropdown_w_dropdown }}">
-		<div class="{{ block.b_menu__dropdown_toggle_w_dropdown_toggle }}">
+<div class="h-wrap h-wrap_menu">
+	<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
+		<div class="b-menu__dropdown-toggle w-dropdown-toggle">
 			<div>
 				{{ block.menu_dropdown_title }}
 			</div>
-			<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_dropdown__icon }}">
+			<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
 		</div>
-		<nav class="{{ block.b_menu__dropdown_lists_w_dropdown_list }}">
-			<div class="{{ block.b_dropdown__content_b_dropdown__content_menu }}">
+		<nav class="b-menu__dropdown-lists w-dropdown-list">
+			<div class="b-dropdown__content b-dropdown__content_menu">
 				{% for item in block.list %}
-				<a href="{{ item.menu_dropdown_link|link }}" class="{{ item.b_dropdown__link_w_dropdown_link }}">
+				<a href="{{ item.menu_dropdown_link|link }}" class="b-dropdown__link w-dropdown-link">
 					{{ item.menu_dropdown_name }}
 				</a>
 				{% endfor %}

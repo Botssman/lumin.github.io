@@ -9,51 +9,21 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
-    header:
-        label: header
-        type: text
-    b_menu_w_nav:
-        label: 'b-menu w-nav'
-        type: text
-    b_menu__container_w_container:
-        label: 'b-menu__container w-container'
-        type: text
-    b_menu__button_w_nav_button:
-        label: 'b-menu__button w-nav-button'
-        type: text
-    b_menu__logo_link_w_nav_brand:
-        label: 'b-menu__logo-link w-nav-brand'
-        type: text
-    b_menu__logo:
-        label: b-menu__logo
-        type: text
-    b_menu__nav_w_nav_menu:
-        label: 'b-menu__nav w-nav-menu'
-        type: text
     main_menu:
         label: main_menu
         type: repeater
         form:
             fields:
-                h_wrap_h_wrap_menu_h_wrap_menu_center:
-                    label: 'h-wrap h-wrap_menu h-wrap_menu_center'
-                    type: text
                 list:
                     label: Список
                     type: repeater
                     displayMode: builder
                     groups:
-                        h_wrap_h_wrap_menu:
-                            label: 'h-wrap h-wrap_menu'
-                            type: text
                         menu_link:
                             name: menu-link
                             fields:
                                 menu_link_name:
                                     label: menu_link_name
-                                    type: text
-                                b_menu__link_w_nav_link:
-                                    label: 'b-menu__link w-nav-link'
                                     type: text
                                 menu_link_link|link:
                                     label: menu_link_link|link
@@ -61,23 +31,8 @@ fields:
                         menu_dropdown:
                             name: menu-dropdown
                             fields:
-                                b_menu__dropdown_w_dropdown:
-                                    label: 'b-menu__dropdown w-dropdown'
-                                    type: text
-                                b_menu__dropdown_toggle_w_dropdown_toggle:
-                                    label: 'b-menu__dropdown-toggle w-dropdown-toggle'
-                                    type: text
                                 menu_dropdown_title:
                                     label: menu_dropdown_title
-                                    type: text
-                                b_dropdown__icon:
-                                    label: b-dropdown__icon
-                                    type: text
-                                b_menu__dropdown_lists_w_dropdown_list:
-                                    label: 'b-menu__dropdown-lists w-dropdown-list'
-                                    type: text
-                                b_dropdown__content_b_dropdown__content_menu:
-                                    label: 'b-dropdown__content b-dropdown__content_menu'
                                     type: text
                                 list:
                                     label: Список
@@ -87,228 +42,78 @@ fields:
                                             menu_dropdown_name:
                                                 label: menu_dropdown_name
                                                 type: text
-                                            b_dropdown__link_w_dropdown_link:
-                                                label: 'b-dropdown__link w-dropdown-link'
-                                                type: text
                                             menu_dropdown_link|link:
                                                 label: menu_dropdown_link|link
                                                 type: text
                                             menu_dropdown_link_|_link:
                                                 label: 'menu_dropdown_link | link'
                                                 type: text
-                h_wrap_h_wrap_flex_h_tb_center_tb_show:
-                    label: 'h-wrap h-wrap_flex_h tb_center tb_show'
-                    type: text
-                b_menu__cart_tb_mg_lt_0_w_inline_block:
-                    label: 'b-menu__cart tb_mg-lt_0 w-inline-block'
-                    type: text
-                b_menu__cart_count:
-                    label: b-menu__cart-count
-                    type: text
-                b_button_b_button_width_160_b_button_height_45_w_button:
-                    label: 'b-button b-button_width_160 b-button_height_45 w-button'
-                    type: text
-    b_menu__cart_w_inline_block:
-        label: 'b-menu__cart w-inline-block'
-        type: text
-    b_menu__cart_count:
-        label: b-menu__cart-count
-        type: text
-    b_button_b_button_width_160_b_button_height_45_mob_hide_w_button:
-        label: 'b-button b-button_width_160 b-button_height_45 mob_hide w-button'
-        type: text
-    main:
-        label: main
-        type: text
     blocks:
         label: blocks
         type: repeater
         displayMode: builder
         groups:
-            section_s_section_100vh_mob_first:
-                label: 'section s-section_100vh mob_first'
-                type: text
             installers_home:
                 name: installers-home
                 fields:
-                    b_image_b_image_installers:
-                        label: 'b-image b-image_installers'
-                        type: text
                     installers_home_image:
                         label: installers_home_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    container_w_container:
-                        label: 'container w-container'
-                        type: text
-                    b_columns:
-                        label: b-columns
-                        type: text
-                    b_columns__col_b_columns__col_51_b_columns__col_align_center_tb_100:
-                        label: 'b-columns__col b-columns__col_51 b-columns__col_align_center tb_100'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_30_mob_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_30 mob_mg-bt_20'
-                        type: text
                     installers_home_title:
                         label: installers_home_title
-                        type: text
-                    b_title_mob_36_mob_white:
-                        label: 'b-title mob_36 mob_white'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_400_mob_mg_bt_30:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_400 mob_mg-bt_30'
                         type: text
                     installers_home_subtitle|raw:
                         label: installers_home_subtitle|raw
                         type: text
-                    b_text_b_text_size_20_mob_white:
-                        label: 'b-text b-text_size_20 mob_white'
-                        type: text
                     installers_home_text_btn:
                         label: installers_home_text_btn
-                        type: text
-                    b_button_b_button_blue_b_button_max_width_250_w_button:
-                        label: 'b-button b-button_blue b-button_max-width_250 w-button'
                         type: text
                     installers_home_link_btn:
                         label: installers_home_link_btn
                         type: text
-                    b_columns__col_b_columns__col_49_mob_hide:
-                        label: 'b-columns__col b-columns__col_49 mob_hide'
-                        type: text
-                    b_block_b_block_image_b_block_mg_bt_6:
-                        label: 'b-block b-block_image b-block_mg-bt_6'
-                        type: text
-                    b_bg_color:
-                        label: b-bg-color
-                        type: text
-            section_s_section_100vh_s_section_pd_11_25:
-                label: 'section s-section_100vh s-section_pd_11-25'
-                type: text
             installers_map:
                 name: installers-map
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_60:
-                        label: 'h-wrap h-wrap_mg-bt_60'
-                        type: text
                     installers_map_title:
                         label: installers_map_title
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap:
-                        label: h-wrap
                         type: text
             installers_why_lumin:
                 name: installers-why-lumin
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30:
-                        label: 'h-wrap h-wrap_mg-bt_60 tb_mg-bt_30'
-                        type: text
                     installers_why_lumin_title:
                         label: installers_why_lumin_title
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_120_mob_160:
-                        label: 'h-wrap h-wrap_mg-bt_120 mob_160'
-                        type: text
-                    b_columns_b_columns_space_between_mob_gap:
-                        label: 'b-columns b-columns_space-between mob_gap'
                         type: text
                     installers_why_lumin_rep:
                         label: installers_why_lumin_rep
                         type: repeater
                         form:
                             fields:
-                                b_columns__col_b_columns__col_30_b_columns__col_align_center_b_columns__col_flex_v:
-                                    label: 'b-columns__col b-columns__col_30 b-columns__col_align_center b-columns__col_flex-v'
-                                    type: text
-                                h_wrap_h_wrap_mg_bt_15_mob_mg_rt_15_mob_width_auto:
-                                    label: 'h-wrap h-wrap_mg-bt_15 mob_mg-rt_15 mob_width_auto'
-                                    type: text
-                                b_icon_b_icon_60:
-                                    label: 'b-icon b-icon_60'
-                                    type: text
                                 image:
                                     label: Изображение
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
-                                h_wrap_mob_left:
-                                    label: 'h-wrap mob_left'
-                                    type: text
-                                h_wrap_h_wrap_mg_bt_15_mob_mg_bt_5:
-                                    label: 'h-wrap h-wrap_mg-bt_15 mob_mg-bt_5'
-                                    type: text
                                 title:
                                     label: Название
-                                    type: text
-                                b_text_b_text_size_24_b_text_extra_bold:
-                                    label: 'b-text b-text_size_24 b-text_extra-bold'
                                     type: text
                                 text:
                                     label: Текст
                                     type: text
-                                b_text:
-                                    label: b-text
-                                    type: text
-                    b_block_b_block_certified:
-                        label: 'b-block b-block_certified'
-                        type: text
-                    b_image_b_image_cert:
-                        label: 'b-image b-image_cert'
-                        type: text
                     installers_home_image_fon_cert:
                         label: installers_home_image_fon_cert
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    b_image_b_image_cert_mob_show:
-                        label: 'b-image b-image_cert mob_show'
-                        type: text
-                    b_columns_b_columns_space_between:
-                        label: 'b-columns b-columns_space-between'
-                        type: text
-                    b_columns__col_b_columns__col_60_tb_100_tb_center:
-                        label: 'b-columns__col b-columns__col_60 tb_100 tb_center'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     installers_why_lumin_title_cert:
                         label: installers_why_lumin_title_cert
-                        type: text
-                    b_text_b_text_size_36_b_text_extra_bold:
-                        label: 'b-text b-text_size_36 b-text_extra-bold'
                         type: text
                     installers_why_lumin_subtitle_cert:
                         label: installers_why_lumin_subtitle_cert
                         type: text
-                    b_text_b_text_size_20:
-                        label: 'b-text b-text_size_20'
-                        type: text
                     installers_why_lumin_text_btn:
                         label: installers_why_lumin_text_btn
-                        type: text
-                    b_button_b_button_blue_b_button_maxw_210_b_button_height_45_w_button:
-                        label: 'b-button b-button_blue b-button_maxw_210 b-button_height_45 w-button'
-                        type: text
-                    b_columns__col_b_columns__col_30_b_columns__col_align_center_tb_100:
-                        label: 'b-columns__col b-columns__col_30 b-columns__col_align_center tb_100'
-                        type: text
-                    b_image_b_image_lumin_cert:
-                        label: 'b-image b-image_lumin-cert'
                         type: text
                     installers_home_image_cert:
                         label: installers_home_image_cert
@@ -318,279 +123,69 @@ fields:
             project:
                 name: project
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_60_tb_mg_bt_30:
-                        label: 'h-wrap h-wrap_mg-bt_60 tb_mg-bt_30'
-                        type: text
                     project_title:
                         label: project_title
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40:
-                        label: 'h-wrap h-wrap_mg-bt_40'
-                        type: text
-                    b_slider_w_slider:
-                        label: 'b-slider w-slider'
-                        type: text
-                    b_slider__mask_b_slider__mask_30_tb_50_mob_100_w_slider_mask:
-                        label: 'b-slider__mask b-slider__mask_30 tb_50 mob_100 w-slider-mask'
-                        type: text
-                    b_slider__slide_w_slide:
-                        label: 'b-slider__slide w-slide'
-                        type: text
-                    b_card_project:
-                        label: b-card-project
-                        type: text
-                    b_card_project__head:
-                        label: b-card-project__head
-                        type: text
-                    b_card_project__down:
-                        label: b-card-project__down
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
-                    b_text_b_text_size_24_b_text_extra_bold_tb_18:
-                        label: 'b-text b-text_size_24 b-text_extra-bold tb_18'
-                        type: text
-                    b_list:
-                        label: b-list
-                        type: text
-                    b_list__item_b_list__item_mg_bt_20_b_list__item_align_center:
-                        label: 'b-list__item b-list__item_mg-bt_20 b-list__item_align_center'
-                        type: text
-                    b_list__circle_v_3:
-                        label: 'b-list__circle v-3'
-                        type: text
-                    b_text_b_text_size_18:
-                        label: 'b-text b-text_size_18'
-                        type: text
-                    b_text_b_text_size_18_b_text_gray:
-                        label: 'b-text b-text_size_18 b-text_gray'
-                        type: text
-                    b_card_project__link:
-                        label: b-card-project__link
-                        type: text
-                    b_text_b_text_size_24_b_text_extra_bold:
-                        label: 'b-text b-text_size_24 b-text_extra-bold'
-                        type: text
-                    b_slider__arrow_left_w_slider_arrow_left:
-                        label: 'b-slider__arrow-left w-slider-arrow-left'
-                        type: text
-                    b_slider__icone:
-                        label: b-slider__icone
-                        type: text
-                    b_slider__arrow_right_w_slider_arrow_right:
-                        label: 'b-slider__arrow-right w-slider-arrow-right'
-                        type: text
-                    b_slider__nav_w_slider_nav_w_round:
-                        label: 'b-slider__nav w-slider-nav w-round'
-                        type: text
-                    b_numbers:
-                        label: b-numbers
-                        type: text
-                    b_numbers__arrow_arrow_left:
-                        label: 'b-numbers__arrow arrow_left'
-                        type: text
-                    b_numbers__text_b_numbers__text_mg_0_16:
-                        label: 'b-numbers__text b-numbers__text_mg_0_16'
-                        type: text
-                    b_numbers__text_active:
-                        label: b-numbers__text-active
-                        type: text
-                    b_numbers__text_num:
-                        label: b-numbers__text-num
-                        type: text
-                    b_numbers__arrow_arrow_right:
-                        label: 'b-numbers__arrow arrow_right'
                         type: text
             installers_meet:
                 name: installers-meet
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_30:
-                        label: 'h-wrap h-wrap_mg-bt_30'
-                        type: text
                     installers_meet_title:
                         label: installers_meet_title
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40:
-                        label: 'h-wrap h-wrap_mg-bt_40'
-                        type: text
-                    container_container_100vw_w_container:
-                        label: 'container container_100vw w-container'
-                        type: text
-                    b_slider_w_slider:
-                        label: 'b-slider w-slider'
-                        type: text
-                    b_slider__mask_w_slider_mask:
-                        label: 'b-slider__mask w-slider-mask'
                         type: text
                     installers_meet_rep:
                         label: installers_meet_rep
                         type: repeater
                         form:
                             fields:
-                                b_slider__slide_w_slide:
-                                    label: 'b-slider__slide w-slide'
-                                    type: text
-                                b_grid_tb_2_col_mob_1_col:
-                                    label: 'b-grid tb_2-col mob_1-col'
-                                    type: text
                                 lists:
                                     label: lists
                                     type: repeater
                                     form:
                                         fields:
-                                            b_grid__col_b_grid__col_b_rad_12_w_inline_block:
-                                                label: 'b-grid__col b-grid__col_b-rad_12 w-inline-block'
-                                                type: text
                                             image:
                                                 label: Изображение
                                                 type: mediafinder
                                                 mode: image
                                                 maxItems: '1'
-                                            b_grid__col_b_grid__col_b_rad_12:
-                                                label: 'b-grid__col b-grid__col_b-rad_12'
-                                                type: text
-                    b_slider__arrow_left_w_slider_arrow_left:
-                        label: 'b-slider__arrow-left w-slider-arrow-left'
-                        type: text
-                    b_slider__icone:
-                        label: b-slider__icone
-                        type: text
-                    b_slider__arrow_right_w_slider_arrow_right:
-                        label: 'b-slider__arrow-right w-slider-arrow-right'
-                        type: text
-                    b_slider__nav_w_slider_nav_w_round:
-                        label: 'b-slider__nav w-slider-nav w-round'
-                        type: text
-                    b_numbers:
-                        label: b-numbers
-                        type: text
-                    arrow_left_w_inline_block:
-                        label: 'arrow-left w-inline-block'
-                        type: text
-                    b_slider__icon:
-                        label: b-slider__icon
-                        type: text
-                    arrow_right_w_inline_block:
-                        label: 'arrow-right w-inline-block'
-                        type: text
-            section_s_section_100vh_s_section_gray_s_section_pd_11_25:
-                label: 'section s-section_100vh s-section_gray s-section_pd_11-25'
-                type: text
             feedbacks:
                 name: feedbacks
                 fields:
-                    h_wrap_h_wrap_width_100:
-                        label: 'h-wrap h-wrap_width_100'
-                        type: text
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     feedbacks_title:
                         label: feedbacks_title
                         type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_800:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800'
-                        type: text
                     feedbacks_subtitle:
                         label: feedbacks_subtitle
-                        type: text
-                    b_text_b_text_size_26_tb_16:
-                        label: 'b-text b-text_size_26 tb_16'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40:
-                        label: 'h-wrap h-wrap_mg-bt_40'
-                        type: text
-                    container_container_100vw_w_container:
-                        label: 'container container_100vw w-container'
-                        type: text
-                    b_slider__mask_b_slider__mask_19_tb_45:
-                        label: 'b-slider__mask b-slider__mask_19 tb_45'
-                        type: text
-                    b_slider_b_slider_overflow_visible_w_slider:
-                        label: 'b-slider b-slider_overflow_visible w-slider'
-                        type: text
-                    b_slider__mask_b_slider__mask_19_tb_45_mob_85_w_slider_mask:
-                        label: 'b-slider__mask b-slider__mask_19 tb_45 mob_85 w-slider-mask'
                         type: text
                     feedbacks_rep:
                         label: feedbacks_rep
                         type: repeater
                         form:
                             fields:
-                                b_slider__slide_b_slider__slide_auto_w_slide:
-                                    label: 'b-slider__slide b-slider__slide_auto w-slide'
-                                    type: text
-                                h_wrap_h_wrap_height_100:
-                                    label: 'h-wrap h-wrap_height_100'
-                                    type: text
                                 list:
                                     label: Список
                                     type: repeater
                                     displayMode: builder
                                     groups:
-                                        b_slider__card:
-                                            label: b-slider__card
-                                            type: text
                                         feedbacks_video:
                                             name: feedbacks_video
                                             fields:
-                                                b_slider__img_video:
-                                                    label: b-slider__img-video
-                                                    type: text
                                                 image:
                                                     label: Изображение
                                                     type: mediafinder
                                                     mode: image
                                                     maxItems: '1'
-                                                b_slider__grad_w_inline_block:
-                                                    label: 'b-slider__grad w-inline-block'
-                                                    type: text
                                                 link:
                                                     label: Ссылка
                                                     type: text
                                                 name:
                                                     label: name
                                                     type: text
-                                                b_text_b_text_size_20_b_text_white_b_text_bold:
-                                                    label: 'b-text b-text_size_20 b-text_white b-text_bold'
-                                                    type: text
                                                 video_rewiev:
                                                     label: video_rewiev
-                                                    type: text
-                                                b_text_b_text_size_14_b_text_white:
-                                                    label: 'b-text b-text_size_14 b-text_white'
                                                     type: text
                                         feedbacks_text:
                                             name: feedbacks_text
                                             fields:
-                                                b_slider__white_content:
-                                                    label: b-slider__white-content
-                                                    type: text
-                                                h_wrap_h_wrap_mg_bt_20_h_wrap_flex_h:
-                                                    label: 'h-wrap h-wrap_mg-bt_20 h-wrap_flex-h'
-                                                    type: text
-                                                b_avatar:
-                                                    label: b-avatar
-                                                    type: text
                                                 avatar:
                                                     label: avatar
                                                     type: mediafinder
@@ -599,222 +194,69 @@ fields:
                                                 name:
                                                     label: name
                                                     type: text
-                                                b_text_b_text_size_20_b_text_bold:
-                                                    label: 'b-text b-text_size_20 b-text_bold'
-                                                    type: text
                                                 text:
                                                     label: Текст
                                                     type: text
-                                                b_text_b_text_size_14:
-                                                    label: 'b-text b-text_size_14'
-                                                    type: text
-                                b_slider__slide_w_slide:
-                                    label: 'b-slider__slide w-slide'
-                                    type: text
-                    b_slider__arrow_left_w_slider_arrow_left:
-                        label: 'b-slider__arrow-left w-slider-arrow-left'
-                        type: text
-                    b_slider__icone:
-                        label: b-slider__icone
-                        type: text
-                    b_slider__arrow_right_w_slider_arrow_right:
-                        label: 'b-slider__arrow-right w-slider-arrow-right'
-                        type: text
-                    b_slider__nav_w_slider_nav_w_round:
-                        label: 'b-slider__nav w-slider-nav w-round'
-                        type: text
-                    b_numbers_b_numbers_mg_tp_40:
-                        label: 'b-numbers b-numbers_mg-tp_40'
-                        type: text
-                    arrow_left_w_inline_block:
-                        label: 'arrow-left w-inline-block'
-                        type: text
-                    b_slider__icon:
-                        label: b-slider__icon
-                        type: text
-                    arrow_right_w_inline_block:
-                        label: 'arrow-right w-inline-block'
-                        type: text
-            section_s_section_pd_11_25:
-                label: 'section s-section_pd_11-25'
-                type: text
             questions:
                 name: questions
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    b_columns:
-                        label: b-columns
-                        type: text
-                    b_columns__col_b_columns__col_40_b_columns__col_pd_rt_20_tb_100:
-                        label: 'b-columns__col b-columns__col_40 b-columns__col_pd_rt_20 tb_100'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     question_title:
                         label: question_title
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_900:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900'
                         type: text
                     question_subtitle|raw:
                         label: question_subtitle|raw
                         type: text
-                    b_text_b_text_size_20:
-                        label: 'b-text b-text_size_20'
-                        type: text
-                    b_button_b_button_width_210_tb_hide_w_button:
-                        label: 'b-button b-button_width_210 tb_hide w-button'
-                        type: text
                     question_link_btn:
                         label: question_link_btn
-                        type: text
-                    b_columns__col_b_columns__col_60_tb_100_tb_border_top:
-                        label: 'b-columns__col b-columns__col_60 tb_100 tb_border_top'
                         type: text
                     question_lists:
                         label: question_lists
                         type: repeater
                         form:
                             fields:
-                                b_dropdown_b_dropdown_border_w_dropdown:
-                                    label: 'b-dropdown b-dropdown_border w-dropdown'
-                                    type: text
-                                b_dropdown__toggle_w_dropdown_toggle:
-                                    label: 'b-dropdown__toggle w-dropdown-toggle'
-                                    type: text
                                 title_list:
                                     label: title_list
-                                    type: text
-                                b_dropdown__icon_cont:
-                                    label: b-dropdown__icon-cont
-                                    type: text
-                                b_dropdown__line_line_h:
-                                    label: 'b-dropdown__line line-h'
-                                    type: text
-                                b_dropdown__line_line_v:
-                                    label: 'b-dropdown__line line-v'
-                                    type: text
-                                b_dropdown__lists_w_dropdown_list:
-                                    label: 'b-dropdown__lists w-dropdown-list'
-                                    type: text
-                                b_dropdown__content:
-                                    label: b-dropdown__content
                                     type: text
                                 text_list|raw:
                                     label: text_list|raw
                                     type: text
-                                b_text:
-                                    label: b-text
-                                    type: text
-                    b_button_b_button_width_210_tb_show_tb_bt_tp_30_w_button:
-                        label: 'b-button b-button_width_210 tb_show tb_bt-tp_30 w-button'
-                        type: text
-            section_s_section_pd_11_25_s_section_align_center:
-                label: 'section s-section_pd_11-25 s-section_align_center'
-                type: text
             have_questions:
                 name: have-questions
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     have_questions_title:
                         label: have_questions_title
-                        type: text
-                    b_title_tb_40:
-                        label: 'b-title tb_40'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_900:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900'
                         type: text
                     have_questions_subtitle:
                         label: have_questions_subtitle
                         type: text
-                    b_text_b_text_size_36_b_text_gray_mob_16:
-                        label: 'b-text b-text_size_36 b-text_gray mob_16'
-                        type: text
                     have_questions_text_btn:
                         label: have_questions_text_btn
-                        type: text
-                    b_button_b_button_blue_b_button_maxw_210_w_button:
-                        label: 'b-button b-button_blue b-button_maxw_210 w-button'
                         type: text
             solar_edge_map:
                 name: solar-edge-map
                 fields:
-                    container_container_align_center_w_container:
-                        label: 'container container_align_center w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_10:
-                        label: 'h-wrap h-wrap_mg-bt_10'
-                        type: text
                     solar_edge_map_title:
                         label: solar_edge_map_title
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
                         type: text
                     solar_edge_map_subtitle:
                         label: solar_edge_map_subtitle
                         type: text
-                    b_text_b_text_size_26:
-                        label: 'b-text b-text_size_26'
-                        type: text
-                    b_utility_rebates_v_4:
-                        label: 'b-utility-rebates v-4'
-                        type: text
-                    b_block_b_block_gray_v_2:
-                        label: 'b-block b-block_gray v-2'
-                        type: text
-                    b_check:
-                        label: b-check
-                        type: text
-                    map_check:
-                        label: map-check
-                        type: text
-                    b_utility_rebates__icon:
-                        label: b-utility-rebates__icon
-                        type: text
                     solar_edge_map_die:
                         label: solar_edge_map_die
                         type: text
-                    b_text:
-                        label: b-text
-                        type: text
                     solar_edge_map_text|raw:
                         label: solar_edge_map_text|raw
-                        type: text
-                    h_wrap_h_wrap_align_center_h_wrap_mg_bt_90_mob_mg_bt_40:
-                        label: 'h-wrap h-wrap_align_center h-wrap_mg-bt_90 mob_mg-bt_40'
-                        type: text
-                    b_image_b_image_map_lsp:
-                        label: 'b-image b-image_map_lsp'
                         type: text
                     solar_edge_map_image_map:
                         label: solar_edge_map_image_map
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    b_image_b_image_absolute_state:
-                        label: 'b-image b-image_absolute state'
-                        type: text
                     solar_edge_map_image_state:
                         label: solar_edge_map_image_state
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    b_image_b_image_absolute:
-                        label: 'b-image b-image_absolute'
-                        type: text
                     solar_edge_map_image_marker:
                         label: solar_edge_map_image_marker
                         type: mediafinder
@@ -823,155 +265,56 @@ fields:
                     solar_edge_map_text_btn:
                         label: solar_edge_map_text_btn
                         type: text
-                    b_button_b_button_blue_b_button_max_w_200_w_button:
-                        label: 'b-button b-button_blue b-button_max-w_200 w-button'
-                        type: text
                     solar_edge_map_link_btn:
                         label: solar_edge_map_link_btn
                         type: text
-            section_s_section_yellow_section_pd_bt_40_mob_pd:
-                label: 'section s-section_yellow section_pd-bt_40 mob_pd'
-                type: text
             document_img:
                 name: document-img
                 fields:
-                    container_w_container:
-                        label: 'container w-container'
-                        type: text
-                    b_columns_mob_revers:
-                        label: 'b-columns mob_revers'
-                        type: text
-                    b_columns__col_b_columns__col_60_b_columns__col_align_center_mob_100:
-                        label: 'b-columns__col b-columns__col_60 b-columns__col_align_center mob_100'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     document_img_title|raw:
                         label: document_img_title|raw
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_800:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800'
                         type: text
                     document_img_subtitle|raw:
                         label: document_img_subtitle|raw
                         type: text
-                    b_text_b_text_size_26:
-                        label: 'b-text b-text_size_26'
-                        type: text
                     document_img_text_btn:
                         label: document_img_text_btn
-                        type: text
-                    b_button_b_button_blue_b_button_maxw_320_b_button_align_left_mob_center_w_button:
-                        label: 'b-button b-button_blue b-button_maxw_320 b-button_align_left mob_center w-button'
-                        type: text
-                    b_columns__col_b_columns__col_40_mob_100:
-                        label: 'b-columns__col b-columns__col_40 mob_100'
-                        type: text
-                    b_image_b_image_paper:
-                        label: 'b-image b-image_paper'
                         type: text
                     document_img_image:
                         label: document_img_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    b_image_b_image_yellow_fon_v_3_mob_hide:
-                        label: 'b-image b-image_yellow-fon v-3 mob_hide'
-                        type: text
                     document_img_image_fon:
                         label: document_img_image_fon
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    b_image_b_image_yellow_fon_v_3_mob_show:
-                        label: 'b-image b-image_yellow-fon v-3 mob_show'
-                        type: text
             copy_bullet_1:
                 name: copy-bullet-1
                 fields:
-                    container_w_container:
-                        label: 'container w-container'
-                        type: text
-                    b_columns_mob_revers:
-                        label: 'b-columns mob_revers'
-                        type: text
-                    b_columns__col_b_columns__col_60_b_columns__col_align_center_mob_100:
-                        label: 'b-columns__col b-columns__col_60 b-columns__col_align_center mob_100'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     document_img_title|raw:
                         label: document_img_title|raw
                         type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_800:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800'
-                        type: text
                     document_img_subtitle|raw:
                         label: document_img_subtitle|raw
-                        type: text
-                    b_text_b_text_size_26:
-                        label: 'b-text b-text_size_26'
-                        type: text
-                    b_columns__col_b_columns__col_40_mob_100:
-                        label: 'b-columns__col b-columns__col_40 mob_100'
-                        type: text
-                    b_image_b_image_paper:
-                        label: 'b-image b-image_paper'
                         type: text
                     document_img_image:
                         label: document_img_image
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    b_image_b_image_yellow_fon_v_3_mob_hide:
-                        label: 'b-image b-image_yellow-fon v-3 mob_hide'
-                        type: text
-                    b_image_b_image_yellow_fon_v_3_mob_show:
-                        label: 'b-image b-image_yellow-fon v-3 mob_show'
-                        type: text
-            section_s_section_yellow_s_section_pd_11_25:
-                label: 'section s-section_yellow s-section_pd_11-25'
-                type: text
             document:
                 name: document
                 fields:
-                    container_container_maxw_1020_w_container:
-                        label: 'container container_maxw_1020 w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     document_title|raw:
                         label: document_title|raw
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_800:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800'
                         type: text
                     document_subtitle|raw:
                         label: document_subtitle|raw
                         type: text
-                    b_text_b_text_size_26:
-                        label: 'b-text b-text_size_26'
-                        type: text
                     document_text_btn:
                         label: document_text_btn
-                        type: text
-                    b_button_b_button_blue_b_button_maxw_320_w_button:
-                        label: 'b-button b-button_blue b-button_maxw_320 w-button'
-                        type: text
-                    b_image_b_image_yellow_fon_v_2:
-                        label: 'b-image b-image_yellow-fon v-2'
                         type: text
                     document_img_fon:
                         label: document_img_fon
@@ -981,260 +324,17 @@ fields:
             copy_bullet_2:
                 name: copy-bullet-2
                 fields:
-                    container_container_maxw_1020_w_container:
-                        label: 'container container_maxw_1020 w-container'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_20:
-                        label: 'h-wrap h-wrap_mg-bt_20'
-                        type: text
                     document_title|raw:
                         label: document_title|raw
-                        type: text
-                    b_title_b_title_mini_mob_30:
-                        label: 'b-title b-title_mini mob_30'
-                        type: text
-                    h_wrap_h_wrap_mg_bt_40_h_wrap_max_width_800:
-                        label: 'h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800'
                         type: text
                     document_subtitle|raw:
                         label: document_subtitle|raw
                         type: text
-                    b_text_b_text_size_26:
-                        label: 'b-text b-text_size_26'
-                        type: text
-                    b_image_b_image_yellow_fon_v_2:
-                        label: 'b-image b-image_yellow-fon v-2'
-                        type: text
-            b_modal_installer:
-                label: 'b-modal installer'
-                type: text
-            b_block_bg_b_block_bg__modal:
-                label: 'b-block-bg b-block-bg__modal'
-                type: text
-            b_modal__close_w_inline_block:
-                label: 'b-modal__close w-inline-block'
-                type: text
-            h_wrap_h_wrap_overflow_auto:
-                label: 'h-wrap h-wrap_overflow_auto'
-                type: text
             how_it_works_modal:
                 label: how_it_works_modal
                 type: repeater
                 form:
                     fields:
-                        h_wrap_h_wrap_maxw_320_h_wrap_align_center:
-                            label: 'h-wrap h-wrap_maxw_320 h-wrap_align_center'
-                            type: text
-                        h_wrap_h_wrap_mg_bt_10:
-                            label: 'h-wrap h-wrap_mg-bt_10'
-                            type: text
                         text_list:
                             label: text_list
                             type: text
-                        b_title_b_title_mini_b_title_modal:
-                            label: 'b-title b-title_mini b-title_modal'
-                            type: text
-                        h_wrap_h_wrap_mg_bt_20:
-                            label: 'h-wrap h-wrap_mg-bt_20'
-                            type: text
-                        b_text:
-                            label: b-text
-                            type: text
-                        b_form_w_form:
-                            label: 'b-form w-form'
-                            type: text
-                        b_form__form:
-                            label: b-form__form
-                            type: text
-                        b_input_w_input:
-                            label: 'b-input w-input'
-                            type: text
-                        b_button_b_button_blue_b_button_maxw_100_w_button:
-                            label: 'b-button b-button_blue b-button_maxw_100 w-button'
-                            type: text
-                        b_form__success_mes_w_form_done:
-                            label: 'b-form__success-mes w-form-done'
-                            type: text
-                        b_form__error_mes_w_form_fail:
-                            label: 'b-form__error-mes w-form-fail'
-                            type: text
-    footer_section:
-        label: 'footer section'
-        type: text
-    container_w_container:
-        label: 'container w-container'
-        type: text
-    footer__head:
-        label: footer__head
-        type: text
-    b_columns_b_columns_space_between:
-        label: 'b-columns b-columns_space-between'
-        type: text
-    b_columns__col_b_columns__col_35_mob_100_mob_center:
-        label: 'b-columns__col b-columns__col_35 mob_100 mob_center'
-        type: text
-    h_wrap_h_wrap_mg_bt_30:
-        label: 'h-wrap h-wrap_mg-bt_30'
-        type: text
-    h_wrap_h_wrap_mg_bt_10:
-        label: 'h-wrap h-wrap_mg-bt_10'
-        type: text
-    b_text_b_text_size_14_b_text_gray_b_text_semibold:
-        label: 'b-text b-text_size_14 b-text_gray b-text_semibold'
-        type: text
-    b_app_b_app_mg_bt_30:
-        label: 'b-app b-app_mg-bt_30'
-        type: text
-    b_app__app_store_b_app__app_store_mg_rt_20_w_inline_block:
-        label: 'b-app__app-store b-app__app-store_mg-rt_20 w-inline-block'
-        type: text
-    b_app__app_store_w_inline_block:
-        label: 'b-app__app-store w-inline-block'
-        type: text
-    b_social_mob_mg_bt_40:
-        label: 'b-social mob_mg-bt_40'
-        type: text
-    b_social__link_w_inline_block:
-        label: 'b-social__link w-inline-block'
-        type: text
-    b_columns__col_b_columns__col_20_mob_50_mob_center:
-        label: 'b-columns__col b-columns__col_20 mob_50 mob_center'
-        type: text
-    b_text_b_text_size_20_b_text_bold:
-        label: 'b-text b-text_size_20 b-text_bold'
-        type: text
-    b_list:
-        label: b-list
-        type: text
-    b_list__item_b_list__item_mg_bt_10_mob_center:
-        label: 'b-list__item b-list__item_mg-bt_10 mob_center'
-        type: text
-    b_link:
-        label: b-link
-        type: text
-    b_columns__col_b_columns__col_15_mob_50_mob_center:
-        label: 'b-columns__col b-columns__col_15 mob_50 mob_center'
-        type: text
-    b_columns__col_b_columns__col_25_mob_100_mob_center:
-        label: 'b-columns__col b-columns__col_25 mob_100 mob_center'
-        type: text
-    h_wrap_h_wrap_mg_bt_20:
-        label: 'h-wrap h-wrap_mg-bt_20'
-        type: text
-    b_text:
-        label: b-text
-        type: text
-    b_list__item_b_list__item_mg_bt_10:
-        label: 'b-list__item b-list__item_mg-bt_10'
-        type: text
-    h_wrap_h_wrap_flex_h_h_wrap_align_center_left:
-        label: 'h-wrap h-wrap_flex_h h-wrap_align_center-left'
-        type: text
-    b_list__circle_v_4:
-        label: 'b-list__circle v-4'
-        type: text
-    b_text__phone:
-        label: b-text__phone
-        type: text
-    b_list__item_b_list__item_mg_bt_10_b_list__item_flex_v:
-        label: 'b-list__item b-list__item_mg-bt_10 b-list__item_flex-v'
-        type: text
-    h_wrap_h_wrap_mg_bt_5:
-        label: 'h-wrap h-wrap_mg-bt_5'
-        type: text
-    footer__bottom:
-        label: footer__bottom
-        type: text
-    b_columns:
-        label: b-columns
-        type: text
-    b_columns__col_b_columns__col_80_mob_100_mob_center_mob_mg_bt_20:
-        label: 'b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20'
-        type: text
-    b_columns__col_b_columns__col_10_mob_50_mob_center:
-        label: 'b-columns__col b-columns__col_10 mob_50 mob_center'
-        type: text
-    b_link_b_link_black:
-        label: 'b-link b-link_black'
-        type: text
-    b_columns__col_b_columns__col_10_b_columns__col_align_right_mob_50:
-        label: 'b-columns__col b-columns__col_10 b-columns__col_align-right mob_50'
-        type: text
-    display_none;opacity_0:
-        label: 'display:none;opacity:0'
-        type: text
-    b_modal_events:
-        label: 'b-modal events'
-        type: text
-    b_modal__events_content:
-        label: b-modal__events-content
-        type: text
-    b_arrow__swiper_prev_v_2_w_inline_block:
-        label: 'b-arrow__swiper-prev v-2 w-inline-block'
-        type: text
-    b_slider__arrow_b_slider__left_arrow_galery:
-        label: 'b-slider__arrow b-slider__left-arrow galery'
-        type: text
-    b_arrow__swiper_next_v_2_w_inline_block:
-        label: 'b-arrow__swiper-next v-2 w-inline-block'
-        type: text
-    b_slider__arrow_b_slider__right_arrow_galery:
-        label: 'b-slider__arrow b-slider__right-arrow galery'
-        type: text
-    swiper_container_gallery_top:
-        label: 'swiper-container gallery-top'
-        type: text
-    swiper_wrapper:
-        label: swiper-wrapper
-        type: text
-    swiper_slide_v_2:
-        label: 'swiper-slide v-2'
-        type: text
-    b_columns_b_columns_bg_white:
-        label: 'b-columns b-columns_bg_white'
-        type: text
-    b_columns__col_b_columns__col_50_mob_100:
-        label: 'b-columns__col b-columns__col_50 mob_100'
-        type: text
-    image_3:
-        label: image-3
-        type: text
-    b_columns__col_b_columns__col_50_b_columns__col_mg_0_60_mob_100:
-        label: 'b-columns__col b-columns__col_50 b-columns__col_mg_0_60 mob_100'
-        type: text
-    b_title_b_title_mini_mob_36:
-        label: 'b-title b-title_mini mob_36'
-        type: text
-    h_wrap_h_wrap_mg_bt_40_mob_mg_bt_20:
-        label: 'h-wrap h-wrap_mg-bt_40 mob_mg-bt_20'
-        type: text
-    b_text_b_text_size_30_b_text_extra_bold_mob_20:
-        label: 'b-text b-text_size_30 b-text_extra-bold mob_20'
-        type: text
-    b_list__item:
-        label: b-list__item
-        type: text
-    b_title_b_title_mini_b_title_yellow_mob_30:
-        label: 'b-title b-title_mini b-title_yellow mob_30'
-        type: text
-    h_wrap_h_wrap_flex_h_h_wrap_center:
-        label: 'h-wrap h-wrap_flex_h h-wrap_center'
-        type: text
-    b_button_b_button_blue_b_button_mini_w_button:
-        label: 'b-button b-button_blue b-button_mini w-button'
-        type: text
-    b_learn_more_b_learn_more_mg_lt_30_v_2:
-        label: 'b-learn-more b-learn-more_mg-lt_30 v-2'
-        type: text
-    swiper_container_gallery_thumbs:
-        label: 'swiper-container gallery-thumbs'
-        type: text
-    swiper_wrapper_bottom_v_2:
-        label: 'swiper-wrapper bottom v-2'
-        type: text
-    swiper_slide_v_3:
-        label: 'swiper-slide v-3'
-        type: text
-    b_modal__bg_close:
-        label: b-modal__bg-close
-        type: text

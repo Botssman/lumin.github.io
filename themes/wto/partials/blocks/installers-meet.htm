@@ -1,20 +1,20 @@
-<section class="{{ section_s_section_100vh_s_section_pd_11_25 }}">
-	<div class="{{ block.container_container_align_center_w_container }}">
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_30 }}">
-			<div class="{{ block.b_title_b_title_mini_mob_30 }}">
+<section class="section s-section_100vh s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_30">
+			<div class="b-title b-title_mini mob_30">
 				{{ block.installers_meet_title }}
 			</div>
 		</div>
 	</div>
-	<div class="{{ block.h_wrap_h_wrap_mg_bt_40 }}">
-		<div class="{{ block.container_container_100vw_w_container }}">
-			<div data-delay="4000" data-animation="slide" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" class="{{ block.b_slider_w_slider }}">
-				<div class="{{ block.b_slider__mask_w_slider_mask }}">
+	<div class="h-wrap h-wrap_mg-bt_40">
+		<div class="container container_100vw w-container">
+			<div data-delay="4000" data-animation="slide" class="b-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+				<div class="b-slider__mask w-slider-mask">
 					{% for item in block.installers_meet_rep %}
-					<div class="{{ item.b_slider__slide_w_slide }}">
-						<div class="{{ item.b_grid_tb_2_col_mob_1_col }}">
+					<div class="b-slider__slide w-slide">
+						<div class="b-grid tb_2-col mob_1-col">
 							{% for item in item.lists %}
-							<a data-w-id="bbddf6e6-0a32-8485-7c1e-3bade3e3069e" href="#" class="{{ item.b_grid__col_b_grid__col_b_rad_12_w_inline_block }}">
+							<a data-w-id="bbddf6e6-0a32-8485-7c1e-3bade3e3069e" href="#" class="b-grid__col b-grid__col_b-rad_12 w-inline-block">
 								<img src="{{ item.image|media }}" alt="" loading="lazy">
 							</a>
 							{% endfor %}
@@ -22,22 +22,22 @@
 					</div>
 					{% endfor %}
 				</div>
-				<div class="{{ block.b_slider__arrow_left_w_slider_arrow_left }}">
-					<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+				<div class="b-slider__arrow-left w-slider-arrow-left">
+					<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 				</div>
-				<div class="{{ block.b_slider__arrow_right_w_slider_arrow_right }}">
-					<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+				<div class="b-slider__arrow-right w-slider-arrow-right">
+					<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 				</div>
-				<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
+				<div class="b-slider__nav w-slider-nav w-round"></div>
 			</div>
 		</div>
 	</div>
-	<div class="{{ block.b_numbers }}">
-		<a href="#" class="{{ block.arrow_left_w_inline_block }}">
+	<div class="b-numbers">
+		<a href="#" class="arrow-left w-inline-block">
 			<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
 		</a>
-		<img src="{{ 'assets/images/LOGO20Loading.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icon }}">
-		<a href="#" class="{{ block.arrow_right_w_inline_block }}">
+		<img src="{{ 'assets/images/LOGO20Loading.svg'|theme }}" loading="lazy" alt="" class="b-slider__icon">
+		<a href="#" class="arrow-right w-inline-block">
 			<img src="{{ 'assets/images/_20(1).svg'|theme }}" loading="lazy" alt="">
 		</a>
 	</div>

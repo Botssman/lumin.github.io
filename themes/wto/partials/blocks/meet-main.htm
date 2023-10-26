@@ -1,41 +1,41 @@
-<section class="{{ section_s_section_100vh_s_section_max_h }}">
-	<div class="{{ block.container_container_absolute_container_mg_5_w_container }}">
-		<div class="{{ block.b_columns }}">
-			<div class="{{ block.b_columns__col_b_columns__col_60_tb_100 }}">
-				<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
-					<h1 class="{{ block.b_title_b_title_mini_mob_30 }}">
+<section class="section s-section_100vh s-section_max-h">
+	<div class="container container_absolute container_mg_5 w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_60 tb_100">
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<h1 class="b-title b-title_mini mob_30">
 						{{ block.meet_main_title }}
 					</h1>
 				</div>
-				<div class="{{ block.h_wrap_h_wrap_mg_bt_50_h_wrap_max_width_500 }}">
-					<div class="{{ block.b_text_b_text_size_26_tb_20 }}">
+				<div class="h-wrap h-wrap_mg-bt_50 h-wrap_max-width_500">
+					<div class="b-text b-text_size_26 tb_20">
 						{{ block.meet_main_subtitle }}
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div data-delay="4000" data-animation="cross" data-autoplay="true" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true" class="{{ block.b_slider_b_slider_height_w_slider }}">
-		<div class="{{ block.b_slider__mask_w_slider_mask }}">
+	<div data-delay="4000" data-animation="cross" class="b-slider b-slider_height w-slider" data-autoplay="true" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true">
+		<div class="b-slider__mask w-slider-mask">
 			{% for item in block.meet_main_rep %}
-			<div class="{{ item.b_slider__slide_w_slide }}">
-				<div data-w-id="c81a9966-fdf8-7a88-c61d-9936a1852eb5" class="{{ item.container_container_meet_w_container }}">
-					<div class="{{ item.b_columns }}">
-						<div class="{{ item.b_columns__col_b_columns__col_50 }}"></div>
-						<div class="{{ item.b_columns__col_b_columns__col_40_tb_100 }}">
-							<div class="{{ item.b_block_b_block_yellow }}">
-								<div class="{{ item.h_wrap_h_wrap_mg_bt_20 }}">
-									<div class="{{ item.b_text_b_text_size_20_b_text_bold }}">
+			<div class="b-slider__slide w-slide">
+				<div data-w-id="c81a9966-fdf8-7a88-c61d-9936a1852eb5" class="container container_meet w-container">
+					<div class="b-columns">
+						<div class="b-columns__col b-columns__col_50"></div>
+						<div class="b-columns__col b-columns__col_40 tb_100">
+							<div class="b-block b-block_yellow">
+								<div class="h-wrap h-wrap_mg-bt_20">
+									<div class="b-text b-text_size_20 b-text_bold">
 										<span>
 											{{ item.team_name }}
 										</span>
-										<span class="{{ item.b_text__span }}">
+										<span class="b-text__span">
 											{{ item.job_title }}
 										</span>
 									</div>
 								</div>
-								<div class="{{ item.h_wrap_h_wrap_mg_bt_30 }}">
-									<div class="{{ item.b_text_b_text_size_15 }}">
+								<div class="h-wrap h-wrap_mg-bt_30">
+									<div class="b-text b-text_size_15">
 										{{ item.text_reviews }}
 									</div>
 								</div>
@@ -44,16 +44,16 @@
 						</div>
 					</div>
 				</div>
-				<img src="{{ item.foto|media }}" alt="" loading="lazy" class="{{ item.b_image_b_image__first_meet }}">
+				<img class="b-image b-image__first-meet" src="{{ item.foto|media }}" alt="" loading="lazy">
 			</div>
 			{% endfor %}
 		</div>
-		<div class="{{ block.b_slider__arrow_left_w_slider_arrow_left }}">
-			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+		<div class="b-slider__arrow-left w-slider-arrow-left">
+			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 		</div>
-		<div class="{{ block.b_slider__arrow_right_w_slider_arrow_right }}">
-			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+		<div class="b-slider__arrow-right w-slider-arrow-right">
+			<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 		</div>
-		<div class="{{ block.b_slider__nav_b_slider__show_b_slider__nav_container_w_slider_nav_w_round_w_num }}"></div>
+		<div class="b-slider__nav b-slider__show b-slider__nav_container w-slider-nav w-round w-num"></div>
 	</div>
 </section>

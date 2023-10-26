@@ -1,25 +1,25 @@
-<section data-w-id="ca965526-1a68-a570-bb8d-b87b2a03b88a" class="{{ section_s_section_100vh_s_section_pd_11_25 }}">
-	<div class="{{ block.container_container_100vh_mob_hide_w_container }}">
-		<div class="{{ block.h_wrap_h_wrap_mg_bt_20_h_wrap_align_center }}">
-			<div class="{{ block.b_title_b_title_mini }}">
+<section data-w-id="ca965526-1a68-a570-bb8d-b87b2a03b88a" class="section s-section_100vh s-section_pd_11-25">
+	<div class="container container_100vh mob_hide w-container">
+		<div class="h-wrap h-wrap_mg-bt_20 h-wrap_align_center">
+			<div class="b-title b-title_mini">
 				{{ block.title }}
 			</div>
 		</div>
-		<div data-delay="7000" data-animation="cross" data-autoplay="true" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true" class="{{ block.b_slider_w_slider }}">
-			<div class="{{ block.b_slider__mask_w_slider_mask }}">
+		<div data-delay="7000" data-animation="cross" class="b-slider w-slider" data-autoplay="true" data-easing="ease-in" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="300" data-infinite="true">
+			<div class="b-slider__mask w-slider-mask">
 				{% for item in block.lsp_new_device_rep %}
-				<div class="{{ item.b_slider__slide_w_slide }}">
-					<div class="{{ item.b_columns }}">
-						<div class="{{ item.b_columns__col_b_columns__col_40 }}">
-							<img src="{{ item.image|media }}" loading="eager" alt="" class="{{ item.b_image_b_image_devise_b_image_right }}">
+				<div class="b-slider__slide w-slide">
+					<div class="b-columns">
+						<div class="b-columns__col b-columns__col_40">
+							<img src="{{ item.image|media }}" loading="eager" alt="" class="b-image b-image_devise b-image_right">
 						</div>
-						<div class="{{ item.b_columns__col_b_columns__col_60_b_columns__col_align_center }}">
-							<div class="{{ item.h_wrap_h_wrap_mg_bt_80 }}">
+						<div class="b-columns__col b-columns__col_60 b-columns__col_align_center">
+							<div class="h-wrap h-wrap_mg-bt_80">
 								{% for block in item.list %}
 {% if block.type == "lsp_new_device_title" %}
 								<div>
-									<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
-										<div class="{{ block.b_title_b_title_mini }}">
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-title b-title_mini">
 											{{ block.title }}
 										</div>
 									</div>
@@ -27,21 +27,21 @@
 								{% endif %}
 {% if block.type == "lsp_new_device_list" %}
 								<div>
-									<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
-										<div class="{{ block.b_title_b_title_mini_b_title_yellow }}">
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-title b-title_mini b-title_yellow">
 											{{ block.title }}
 										</div>
 									</div>
-									<div class="{{ block.h_wrap_h_wrap_mg_bt_20 }}">
-										<div class="{{ block.b_text_b_text_size_30_b_text_extra_bold }}">
+									<div class="h-wrap h-wrap_mg-bt_20">
+										<div class="b-text b-text_size_30 b-text_extra-bold">
 											{{ block.title_list }}
 										</div>
 									</div>
-									<ul role="list" class="{{ block.b_list }}">
+									<ul role="list" class="b-list">
 										{% for item in block.lists %}
-										<li class="{{ item.b_list__item_b_list__item_mg_bt_20 }}">
-											<div class="{{ item.b_list__circle }}"></div>
-											<div class="{{ item.b_text }}">
+										<li class="b-list__item b-list__item_mg-bt_20">
+											<div class="b-list__circle"></div>
+											<div class="b-text">
 												{{ item.text_list }}
 											</div>
 										</li>
@@ -51,12 +51,12 @@
 								{% endif %}
 {% endfor %}
 							</div>
-							<div class="{{ item.h_wrap_h_wrap_flex_h }}">
-								<a href="#" class="{{ item.arrow_left_w_inline_block }}">
+							<div class="h-wrap h-wrap_flex_h">
+								<a href="#" class="arrow-left w-inline-block">
 									<img src="{{ 'assets/images/_.svg'|theme }}" loading="lazy" alt="">
 								</a>
-								<img src="{{ 'assets/images/logo_7sec_100x100.gif'|theme }}" loading="lazy" alt="" class="{{ item.b_slider__icon }}">
-								<a href="#" class="{{ item.arrow_right_w_inline_block }}">
+								<img src="{{ 'assets/images/logo_7sec_100x100.gif'|theme }}" loading="lazy" alt="" class="b-slider__icon">
+								<a href="#" class="arrow-right w-inline-block">
 									<img src="{{ 'assets/images/_20(1).svg'|theme }}" loading="lazy" alt="">
 								</a>
 							</div>
@@ -65,30 +65,30 @@
 				</div>
 				{% endfor %}
 			</div>
-			<div class="{{ block.b_slider__arrow_left_w_slider_arrow_left }}">
-				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+			<div class="b-slider__arrow-left w-slider-arrow-left">
+				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 			</div>
-			<div class="{{ block.b_slider__arrow_right_w_slider_arrow_right }}">
-				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="{{ block.b_slider__icone }}">
+			<div class="b-slider__arrow-right w-slider-arrow-right">
+				<img src="{{ 'assets/images/placeholder.60f9b1840c.svg'|theme }}" loading="lazy" alt="" class="b-slider__icone">
 			</div>
-			<div class="{{ block.b_slider__nav_w_slider_nav_w_round }}"></div>
+			<div class="b-slider__nav w-slider-nav w-round"></div>
 		</div>
 	</div>
 	<div>
 		{% for item in block.lsp_new_device_mob_rep %}
-		<div style="{{ background_color_____item.bg_color }}" class="{{ item.b_block_bg }}">
-			<div class="{{ item.container_container_100vh_mob_show_w_container }}">
-				<div class="{{ item.h_wrap_h_wrap_mg_bt_20 }}">
-					<div class="{{ item.b_title_b_title_mini_mob_30 }}">
+		<div class="b-block-bg" style="background-color: {{ item.bg_color }}">
+			<div class="container container_100vh mob_show w-container">
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<div class="b-title b-title_mini mob_30">
 						{{ item.title }}
 					</div>
 				</div>
-				<img src="{{ item.image|media }}" loading="lazy" alt="" class="{{ item.b_image_b_image_devise }}">
-				<ul role="list" class="{{ item.b_list }}">
+				<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_devise">
+				<ul role="list" class="b-list">
 					{% for item in item.lists %}
-					<li class="{{ item.b_list__item_b_list__item_mg_bt_20 }}">
-						<div class="{{ item.b_list__circle }}"></div>
-						<div class="{{ item.b_text }}">
+					<li class="b-list__item b-list__item_mg-bt_20">
+						<div class="b-list__circle"></div>
+						<div class="b-text">
 							{{ item.text_list }}
 						</div>
 					</li>
