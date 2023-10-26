@@ -63,3 +63,10 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\HaveQuestions
+            forms:
+                name: Forms
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Forms

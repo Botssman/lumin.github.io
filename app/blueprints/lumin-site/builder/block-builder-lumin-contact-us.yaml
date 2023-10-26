@@ -27,3 +27,10 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ContactUsForm
+            forms:
+                name: Forms
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Forms

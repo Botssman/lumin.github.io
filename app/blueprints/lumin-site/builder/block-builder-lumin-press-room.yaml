@@ -40,3 +40,10 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\PressRoomPr
+            forms:
+                name: Forms
+                icon: icon-columns
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Forms
