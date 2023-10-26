@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\ConnectToAnything
 
 fields:
+    title:
+      label: Title
+      type: text
     columns:
         label: Add block
         type: repeater
