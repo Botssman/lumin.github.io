@@ -45,6 +45,7 @@
   // packages/shared/render/plugins/BaseSiteModules/tram-min.js
   var require_tram_min = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/tram-min.js"() {
+      "use strict";
       window.tram = function(a) {
         function b(a2, b2) {
           var c2 = new M.Bare();
@@ -761,6 +762,7 @@
   // packages/shared/render/plugins/BaseSiteModules/underscore-custom.js
   var require_underscore_custom = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/underscore-custom.js"(exports2, module2) {
+      "use strict";
       var $ = window.$;
       var tram = require_tram_min() && $.tram;
       module2.exports = function() {
@@ -768,7 +770,7 @@
         _.VERSION = "1.6.0-Webflow";
         var breaker = {};
         var ArrayProto = Array.prototype, ObjProto = Object.prototype, FuncProto = Function.prototype;
-        var push = ArrayProto.push, slice = ArrayProto.slice, concat = ArrayProto.concat, toString = ObjProto.toString, hasOwnProperty = ObjProto.hasOwnProperty;
+        var push = ArrayProto.push, slice = ArrayProto.slice, concat = ArrayProto.concat, toString = ObjProto.toString, hasOwnProperty2 = ObjProto.hasOwnProperty;
         var nativeForEach = ArrayProto.forEach, nativeMap = ArrayProto.map, nativeReduce = ArrayProto.reduce, nativeReduceRight = ArrayProto.reduceRight, nativeFilter = ArrayProto.filter, nativeEvery = ArrayProto.every, nativeSome = ArrayProto.some, nativeIndexOf = ArrayProto.indexOf, nativeLastIndexOf = ArrayProto.lastIndexOf, nativeIsArray = Array.isArray, nativeKeys = Object.keys, nativeBind = FuncProto.bind;
         var each = _.each = _.forEach = function(obj, iterator, context) {
           if (obj == null)
@@ -920,7 +922,7 @@
           return keys;
         };
         _.has = function(obj, key2) {
-          return hasOwnProperty.call(obj, key2);
+          return hasOwnProperty2.call(obj, key2);
         };
         _.isObject = function(obj) {
           return obj === Object(obj);
@@ -997,6 +999,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-lib.js
   var require_webflow_lib = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-lib.js"(exports2, module2) {
+      "use strict";
       var Webflow = {};
       var modules = {};
       var primary = [];
@@ -1055,12 +1058,12 @@
           return readyFn !== module3.ready;
         });
       }
-      Webflow.push = function(ready) {
+      Webflow.push = function(ready2) {
         if (domready) {
-          isFunction(ready) && ready();
+          isFunction(ready2) && ready2();
           return;
         }
-        secondary.push(ready);
+        secondary.push(ready2);
       };
       Webflow.env = function(mode) {
         var designFlag = window.__wf_design;
@@ -1193,59 +1196,6 @@
       $(Webflow.ready);
       bindLoad();
       module2.exports = window.Webflow = Webflow;
-    }
-  });
-
-  // node_modules/@babel/runtime/helpers/interopRequireDefault.js
-  var require_interopRequireDefault = __commonJS({
-    "node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports2, module2) {
-      function _interopRequireDefault(obj) {
-        return obj && obj.__esModule ? obj : {
-          "default": obj
-        };
-      }
-      module2.exports = _interopRequireDefault, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
-    }
-  });
-
-  // node_modules/@babel/runtime/helpers/extends.js
-  var require_extends = __commonJS({
-    "node_modules/@babel/runtime/helpers/extends.js"(exports2, module2) {
-      function _extends() {
-        module2.exports = _extends = Object.assign ? Object.assign.bind() : function(target) {
-          for (var i = 1; i < arguments.length; i++) {
-            var source = arguments[i];
-            for (var key2 in source) {
-              if (Object.prototype.hasOwnProperty.call(source, key2)) {
-                target[key2] = source[key2];
-              }
-            }
-          }
-          return target;
-        }, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
-        return _extends.apply(this, arguments);
-      }
-      module2.exports = _extends, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
-    }
-  });
-
-  // node_modules/@babel/runtime/helpers/defineProperty.js
-  var require_defineProperty = __commonJS({
-    "node_modules/@babel/runtime/helpers/defineProperty.js"(exports2, module2) {
-      function _defineProperty(obj, key2, value2) {
-        if (key2 in obj) {
-          Object.defineProperty(obj, key2, {
-            value: value2,
-            enumerable: true,
-            configurable: true,
-            writable: true
-          });
-        } else {
-          obj[key2] = value2;
-        }
-        return obj;
-      }
-      module2.exports = _defineProperty, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
     }
   });
 
@@ -1469,11 +1419,11 @@
     "node_modules/lodash/_getRawTag.js"(exports2, module2) {
       var Symbol2 = require_Symbol();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       var nativeObjectToString = objectProto.toString;
       var symToStringTag = Symbol2 ? Symbol2.toStringTag : void 0;
       function getRawTag(value2) {
-        var isOwn = hasOwnProperty.call(value2, symToStringTag), tag = value2[symToStringTag];
+        var isOwn = hasOwnProperty2.call(value2, symToStringTag), tag = value2[symToStringTag];
         try {
           value2[symToStringTag] = void 0;
           var unmasked = true;
@@ -1613,9 +1563,9 @@
       var funcProto = Function.prototype;
       var objectProto = Object.prototype;
       var funcToString = funcProto.toString;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       var reIsNative = RegExp(
-        "^" + funcToString.call(hasOwnProperty).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
+        "^" + funcToString.call(hasOwnProperty2).replace(reRegExpChar, "\\$&").replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, "$1.*?") + "$"
       );
       function baseIsNative(value2) {
         if (!isObject(value2) || isMasked(value2)) {
@@ -1700,14 +1650,14 @@
       var nativeCreate = require_nativeCreate();
       var HASH_UNDEFINED = "__lodash_hash_undefined__";
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function hashGet(key2) {
         var data2 = this.__data__;
         if (nativeCreate) {
           var result = data2[key2];
           return result === HASH_UNDEFINED ? void 0 : result;
         }
-        return hasOwnProperty.call(data2, key2) ? data2[key2] : void 0;
+        return hasOwnProperty2.call(data2, key2) ? data2[key2] : void 0;
       }
       module2.exports = hashGet;
     }
@@ -1718,10 +1668,10 @@
     "node_modules/lodash/_hashHas.js"(exports2, module2) {
       var nativeCreate = require_nativeCreate();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function hashHas(key2) {
         var data2 = this.__data__;
-        return nativeCreate ? data2[key2] !== void 0 : hasOwnProperty.call(data2, key2);
+        return nativeCreate ? data2[key2] !== void 0 : hasOwnProperty2.call(data2, key2);
       }
       module2.exports = hashHas;
     }
@@ -1848,9 +1798,9 @@
     "node_modules/lodash/_mapCacheSet.js"(exports2, module2) {
       var getMapData = require_getMapData();
       function mapCacheSet(key2, value2) {
-        var data2 = getMapData(this, key2), size = data2.size;
+        var data2 = getMapData(this, key2), size2 = data2.size;
         data2.set(key2, value2);
-        this.size += data2.size == size ? 0 : 1;
+        this.size += data2.size == size2 ? 0 : 1;
         return this;
       }
       module2.exports = mapCacheSet;
@@ -1990,8 +1940,8 @@
   // node_modules/lodash/_cacheHas.js
   var require_cacheHas = __commonJS({
     "node_modules/lodash/_cacheHas.js"(exports2, module2) {
-      function cacheHas(cache, key2) {
-        return cache.has(key2);
+      function cacheHas(cache2, key2) {
+        return cache2.has(key2);
       }
       module2.exports = cacheHas;
     }
@@ -2078,9 +2028,9 @@
   // node_modules/lodash/_setToArray.js
   var require_setToArray = __commonJS({
     "node_modules/lodash/_setToArray.js"(exports2, module2) {
-      function setToArray(set) {
-        var index2 = -1, result = Array(set.size);
-        set.forEach(function(value2) {
+      function setToArray(set3) {
+        var index2 = -1, result = Array(set3.size);
+        set3.forEach(function(value2) {
           result[++index2] = value2;
         });
         return result;
@@ -2289,12 +2239,12 @@
       var baseIsArguments = require_baseIsArguments();
       var isObjectLike = require_isObjectLike();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       var propertyIsEnumerable = objectProto.propertyIsEnumerable;
       var isArguments = baseIsArguments(function() {
         return arguments;
       }()) ? baseIsArguments : function(value2) {
-        return isObjectLike(value2) && hasOwnProperty.call(value2, "callee") && !propertyIsEnumerable.call(value2, "callee");
+        return isObjectLike(value2) && hasOwnProperty2.call(value2, "callee") && !propertyIsEnumerable.call(value2, "callee");
       };
       module2.exports = isArguments;
     }
@@ -2446,11 +2396,11 @@
       var isIndex = require_isIndex();
       var isTypedArray = require_isTypedArray();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function arrayLikeKeys(value2, inherited) {
         var isArr = isArray(value2), isArg = !isArr && isArguments(value2), isBuff = !isArr && !isArg && isBuffer(value2), isType = !isArr && !isArg && !isBuff && isTypedArray(value2), skipIndexes = isArr || isArg || isBuff || isType, result = skipIndexes ? baseTimes(value2.length, String) : [], length2 = result.length;
         for (var key2 in value2) {
-          if ((inherited || hasOwnProperty.call(value2, key2)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
+          if ((inherited || hasOwnProperty2.call(value2, key2)) && !(skipIndexes && // Safari 9 has enumerable `arguments.length` in strict mode.
           (key2 == "length" || // Node.js 0.10 has enumerable non-index properties on buffers.
           isBuff && (key2 == "offset" || key2 == "parent") || // PhantomJS 2 has enumerable non-index properties on typed arrays.
           isType && (key2 == "buffer" || key2 == "byteLength" || key2 == "byteOffset") || // Skip index properties.
@@ -2503,14 +2453,14 @@
       var isPrototype = require_isPrototype();
       var nativeKeys = require_nativeKeys();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function baseKeys(object) {
         if (!isPrototype(object)) {
           return nativeKeys(object);
         }
         var result = [];
         for (var key2 in Object(object)) {
-          if (hasOwnProperty.call(object, key2) && key2 != "constructor") {
+          if (hasOwnProperty2.call(object, key2) && key2 != "constructor") {
             result.push(key2);
           }
         }
@@ -2564,7 +2514,7 @@
       var getAllKeys = require_getAllKeys();
       var COMPARE_PARTIAL_FLAG = 1;
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function equalObjects(object, other, bitmask, customizer, equalFunc, stack) {
         var isPartial = bitmask & COMPARE_PARTIAL_FLAG, objProps = getAllKeys(object), objLength = objProps.length, othProps = getAllKeys(other), othLength = othProps.length;
         if (objLength != othLength && !isPartial) {
@@ -2573,7 +2523,7 @@
         var index2 = objLength;
         while (index2--) {
           var key2 = objProps[index2];
-          if (!(isPartial ? key2 in other : hasOwnProperty.call(other, key2))) {
+          if (!(isPartial ? key2 in other : hasOwnProperty2.call(other, key2))) {
             return false;
           }
         }
@@ -2714,7 +2664,7 @@
       var arrayTag = "[object Array]";
       var objectTag = "[object Object]";
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function baseIsEqualDeep(object, other, bitmask, customizer, equalFunc, stack) {
         var objIsArr = isArray(object), othIsArr = isArray(other), objTag = objIsArr ? arrayTag : getTag(object), othTag = othIsArr ? arrayTag : getTag(other);
         objTag = objTag == argsTag ? objectTag : objTag;
@@ -2732,7 +2682,7 @@
           return objIsArr || isTypedArray(object) ? equalArrays(object, other, bitmask, customizer, equalFunc, stack) : equalByTag(object, other, objTag, bitmask, customizer, equalFunc, stack);
         }
         if (!(bitmask & COMPARE_PARTIAL_FLAG)) {
-          var objIsWrapped = objIsObj && hasOwnProperty.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty.call(other, "__wrapped__");
+          var objIsWrapped = objIsObj && hasOwnProperty2.call(object, "__wrapped__"), othIsWrapped = othIsObj && hasOwnProperty2.call(other, "__wrapped__");
           if (objIsWrapped || othIsWrapped) {
             var objUnwrapped = objIsWrapped ? object.value() : object, othUnwrapped = othIsWrapped ? other.value() : other;
             stack || (stack = new Stack());
@@ -2915,12 +2865,12 @@
           throw new TypeError(FUNC_ERROR_TEXT);
         }
         var memoized = function() {
-          var args = arguments, key2 = resolver ? resolver.apply(this, args) : args[0], cache = memoized.cache;
-          if (cache.has(key2)) {
-            return cache.get(key2);
+          var args = arguments, key2 = resolver ? resolver.apply(this, args) : args[0], cache2 = memoized.cache;
+          if (cache2.has(key2)) {
+            return cache2.get(key2);
           }
           var result = func.apply(this, args);
-          memoized.cache = cache.set(key2, result) || cache;
+          memoized.cache = cache2.set(key2, result) || cache2;
           return result;
         };
         memoized.cache = new (memoize.Cache || MapCache)();
@@ -2938,12 +2888,12 @@
       var MAX_MEMOIZE_SIZE = 500;
       function memoizeCapped(func) {
         var result = memoize(func, function(key2) {
-          if (cache.size === MAX_MEMOIZE_SIZE) {
-            cache.clear();
+          if (cache2.size === MAX_MEMOIZE_SIZE) {
+            cache2.clear();
           }
           return key2;
         });
-        var cache = result.cache;
+        var cache2 = result.cache;
         return result;
       }
       module2.exports = memoizeCapped;
@@ -3076,11 +3026,11 @@
   var require_get = __commonJS({
     "node_modules/lodash/get.js"(exports2, module2) {
       var baseGet = require_baseGet();
-      function get(object, path, defaultValue) {
+      function get3(object, path, defaultValue) {
         var result = object == null ? void 0 : baseGet(object, path);
         return result === void 0 ? defaultValue : result;
       }
-      module2.exports = get;
+      module2.exports = get3;
     }
   });
 
@@ -3139,7 +3089,7 @@
   var require_baseMatchesProperty = __commonJS({
     "node_modules/lodash/_baseMatchesProperty.js"(exports2, module2) {
       var baseIsEqual = require_baseIsEqual();
-      var get = require_get();
+      var get3 = require_get();
       var hasIn = require_hasIn();
       var isKey = require_isKey();
       var isStrictComparable = require_isStrictComparable();
@@ -3152,7 +3102,7 @@
           return matchesStrictComparable(toKey(path), srcValue);
         }
         return function(object) {
-          var objValue = get(object, path);
+          var objValue = get3(object, path);
           return objValue === void 0 && objValue === srcValue ? hasIn(object, path) : baseIsEqual(srcValue, objValue, COMPARE_PARTIAL_FLAG | COMPARE_UNORDERED_FLAG);
         };
       }
@@ -3332,7 +3282,7 @@
       var baseIteratee = require_baseIteratee();
       var toInteger = require_toInteger();
       var nativeMax = Math.max;
-      function findIndex(array, predicate, fromIndex) {
+      function findIndex2(array, predicate, fromIndex) {
         var length2 = array == null ? 0 : array.length;
         if (!length2) {
           return -1;
@@ -3343,7 +3293,7 @@
         }
         return baseFindIndex(array, baseIteratee(predicate, 3), index2);
       }
-      module2.exports = findIndex;
+      module2.exports = findIndex2;
     }
   });
 
@@ -3738,9 +3688,9 @@
     "node_modules/core-js/internals/has-own-property.js"(exports2, module2) {
       var uncurryThis = require_function_uncurry_this();
       var toObject = require_to_object();
-      var hasOwnProperty = uncurryThis({}.hasOwnProperty);
+      var hasOwnProperty2 = uncurryThis({}.hasOwnProperty);
       module2.exports = Object.hasOwn || function hasOwn(it, key2) {
-        return hasOwnProperty(toObject(it), key2);
+        return hasOwnProperty2(toObject(it), key2);
       };
     }
   });
@@ -4005,16 +3955,16 @@
       var OBJECT_ALREADY_INITIALIZED = "Object already initialized";
       var TypeError2 = global2.TypeError;
       var WeakMap2 = global2.WeakMap;
-      var set;
-      var get;
+      var set3;
+      var get3;
       var has;
       var enforce = function(it) {
-        return has(it) ? get(it) : set(it, {});
+        return has(it) ? get3(it) : set3(it, {});
       };
       var getterFor = function(TYPE) {
         return function(it) {
           var state;
-          if (!isObject(it) || (state = get(it)).type !== TYPE) {
+          if (!isObject(it) || (state = get3(it)).type !== TYPE) {
             throw TypeError2("Incompatible receiver, " + TYPE + " required");
           }
           return state;
@@ -4025,14 +3975,14 @@
         wmget = uncurryThis(store.get);
         wmhas = uncurryThis(store.has);
         wmset = uncurryThis(store.set);
-        set = function(it, metadata) {
+        set3 = function(it, metadata) {
           if (wmhas(store, it))
             throw new TypeError2(OBJECT_ALREADY_INITIALIZED);
           metadata.facade = it;
           wmset(store, it, metadata);
           return metadata;
         };
-        get = function(it) {
+        get3 = function(it) {
           return wmget(store, it) || {};
         };
         has = function(it) {
@@ -4041,14 +3991,14 @@
       } else {
         STATE = sharedKey("state");
         hiddenKeys[STATE] = true;
-        set = function(it, metadata) {
+        set3 = function(it, metadata) {
           if (hasOwn(it, STATE))
             throw new TypeError2(OBJECT_ALREADY_INITIALIZED);
           metadata.facade = it;
           createNonEnumerableProperty(it, STATE, metadata);
           return metadata;
         };
-        get = function(it) {
+        get3 = function(it) {
           return hasOwn(it, STATE) ? it[STATE] : {};
         };
         has = function(it) {
@@ -4061,8 +4011,8 @@
       var wmset;
       var STATE;
       module2.exports = {
-        set,
-        get,
+        set: set3,
+        get: get3,
         has,
         enforce,
         getterFor
@@ -5260,7 +5210,7 @@
           SKIPS_HOLES = false;
         });
       $({ target: "Array", proto: true, forced: SKIPS_HOLES }, {
-        find: function find(callbackfn) {
+        find: function find3(callbackfn) {
           return $find(this, callbackfn, arguments.length > 1 ? arguments[1] : void 0);
         }
       });
@@ -5282,7 +5232,7 @@
           SKIPS_HOLES = false;
         });
       $({ target: "Array", proto: true, forced: SKIPS_HOLES }, {
-        findIndex: function findIndex(callbackfn) {
+        findIndex: function findIndex2(callbackfn) {
           return $findIndex(this, callbackfn, arguments.length > 1 ? arguments[1] : void 0);
         }
       });
@@ -5379,7 +5329,7 @@
       var $forEach = require_array_iteration().forEach;
       var arrayMethodIsStrict = require_array_method_is_strict();
       var STRICT_METHOD = arrayMethodIsStrict("forEach");
-      module2.exports = !STRICT_METHOD ? function forEach(callbackfn) {
+      module2.exports = !STRICT_METHOD ? function forEach2(callbackfn) {
         return $forEach(this, callbackfn, arguments.length > 1 ? arguments[1] : void 0);
       } : [].forEach;
     }
@@ -5390,9 +5340,9 @@
     "node_modules/core-js/modules/es.array.for-each.js"() {
       "use strict";
       var $ = require_export();
-      var forEach = require_array_for_each();
-      $({ target: "Array", proto: true, forced: [].forEach != forEach }, {
-        forEach
+      var forEach2 = require_array_for_each();
+      $({ target: "Array", proto: true, forced: [].forEach != forEach2 }, {
+        forEach: forEach2
       });
     }
   });
@@ -5912,7 +5862,7 @@
       var STRICT_METHOD = arrayMethodIsStrict("reduce");
       var CHROME_BUG = !IS_NODE && CHROME_VERSION > 79 && CHROME_VERSION < 83;
       $({ target: "Array", proto: true, forced: !STRICT_METHOD || CHROME_BUG }, {
-        reduce: function reduce(callbackfn) {
+        reduce: function reduce2(callbackfn) {
           var length2 = arguments.length;
           return $reduce(this, callbackfn, length2, length2 > 1 ? arguments[1] : void 0);
         }
@@ -6055,7 +6005,7 @@
       var mergeSort = function(array, comparefn) {
         var length2 = array.length;
         var middle = floor(length2 / 2);
-        return length2 < 8 ? insertionSort(array, comparefn) : merge(
+        return length2 < 8 ? insertionSort(array, comparefn) : merge3(
           array,
           mergeSort(arraySlice(array, 0, middle), comparefn),
           mergeSort(arraySlice(array, middle), comparefn),
@@ -6077,7 +6027,7 @@
         }
         return array;
       };
-      var merge = function(array, left, right, comparefn) {
+      var merge3 = function(array, left, right, comparefn) {
         var llength = left.length;
         var rlength = right.length;
         var lindex = 0;
@@ -6386,12 +6336,12 @@
         return function($this, pos) {
           var S = toString(requireObjectCoercible($this));
           var position2 = toIntegerOrInfinity(pos);
-          var size = S.length;
+          var size2 = S.length;
           var first, second;
-          if (position2 < 0 || position2 >= size)
+          if (position2 < 0 || position2 >= size2)
             return CONVERT_TO_STRING ? "" : void 0;
           first = charCodeAt(S, position2);
-          return first < 55296 || first > 56319 || position2 + 1 === size || (second = charCodeAt(S, position2 + 1)) < 56320 || second > 57343 ? CONVERT_TO_STRING ? charAt(S, position2) : first : CONVERT_TO_STRING ? stringSlice(S, position2, position2 + 2) : (first - 55296 << 10) + (second - 56320) + 65536;
+          return first < 55296 || first > 56319 || position2 + 1 === size2 || (second = charCodeAt(S, position2 + 1)) < 56320 || second > 57343 ? CONVERT_TO_STRING ? charAt(S, position2) : first : CONVERT_TO_STRING ? stringSlice(S, position2, position2 + 2) : (first - 55296 << 10) + (second - 56320) + 65536;
         };
       };
       module2.exports = {
@@ -6750,11 +6700,11 @@
               return this;
             } : KEY == "delete" ? function(key2) {
               return IS_WEAK && !isObject(key2) ? false : uncurriedNativeMethod(this, key2 === 0 ? 0 : key2);
-            } : KEY == "get" ? function get(key2) {
+            } : KEY == "get" ? function get3(key2) {
               return IS_WEAK && !isObject(key2) ? void 0 : uncurriedNativeMethod(this, key2 === 0 ? 0 : key2);
             } : KEY == "has" ? function has(key2) {
               return IS_WEAK && !isObject(key2) ? false : uncurriedNativeMethod(this, key2 === 0 ? 0 : key2);
-            } : function set(key2, value2) {
+            } : function set3(key2, value2) {
               uncurriedNativeMethod(this, key2 === 0 ? 0 : key2, value2);
               return this;
             }
@@ -6954,7 +6904,7 @@
             // `{ Map, Set }.prototype.forEach(callbackfn, thisArg = undefined)` methods
             // https://tc39.es/ecma262/#sec-map.prototype.foreach
             // https://tc39.es/ecma262/#sec-set.prototype.foreach
-            forEach: function forEach(callbackfn) {
+            forEach: function forEach2(callbackfn) {
               var state = getInternalState(this);
               var boundFunction = bind(callbackfn, arguments.length > 1 ? arguments[1] : void 0);
               var entry;
@@ -6974,13 +6924,13 @@
           redefineAll(Prototype, IS_MAP ? {
             // `Map.prototype.get(key)` method
             // https://tc39.es/ecma262/#sec-map.prototype.get
-            get: function get(key2) {
+            get: function get3(key2) {
               var entry = getEntry(this, key2);
               return entry && entry.value;
             },
             // `Map.prototype.set(key, value)` method
             // https://tc39.es/ecma262/#sec-map.prototype.set
-            set: function set(key2, value2) {
+            set: function set3(key2, value2) {
               return define2(this, key2 === 0 ? 0 : key2, value2);
             }
           } : {
@@ -7038,9 +6988,9 @@
       "use strict";
       var collection = require_collection();
       var collectionStrong = require_collection_strong();
-      collection("Map", function(init) {
+      collection("Map", function(init2) {
         return function Map2() {
-          return init(this, arguments.length ? arguments[0] : void 0);
+          return init2(this, arguments.length ? arguments[0] : void 0);
         };
       }, collectionStrong);
     }
@@ -7106,7 +7056,7 @@
       var createElement = require_document_create_element();
       var IS_IOS = require_engine_is_ios();
       var IS_NODE = require_engine_is_node();
-      var set = global2.setImmediate;
+      var set3 = global2.setImmediate;
       var clear = global2.clearImmediate;
       var process2 = global2.process;
       var Dispatch = global2.Dispatch;
@@ -7142,8 +7092,8 @@
       var post = function(id) {
         global2.postMessage(String2(id), location.protocol + "//" + location.host);
       };
-      if (!set || !clear) {
-        set = function setImmediate(fn) {
+      if (!set3 || !clear) {
+        set3 = function setImmediate(fn) {
           var args = arraySlice(arguments, 1);
           queue[++counter] = function() {
             apply(isCallable(fn) ? fn : Function2(fn), void 0, args);
@@ -7184,7 +7134,7 @@
         }
       }
       module2.exports = {
-        set,
+        set: set3,
         clear
       };
     }
@@ -8124,7 +8074,7 @@
       var $findLast = require_array_iteration_from_last().findLast;
       var addToUnscopables = require_add_to_unscopables();
       $({ target: "Array", proto: true }, {
-        findLast: function findLast(callbackfn) {
+        findLast: function findLast2(callbackfn) {
           return $findLast(this, callbackfn, arguments.length > 1 ? arguments[1] : void 0);
         }
       });
@@ -8642,7 +8592,7 @@
           v[k].buffer && tl.push((v[k] = new v[k].constructor(v[k])).buffer);
         return tl;
       };
-      var wrkr = function(fns, init, id, cb) {
+      var wrkr = function(fns, init2, id, cb) {
         let _a2;
         if (!ch[id]) {
           let fnStr = "", td_1 = {};
@@ -8652,7 +8602,7 @@
           ch[id] = wcln(fns[m], fnStr, td_1);
         }
         const td2 = mrg({}, ch[id][1]);
-        return wk(ch[id][0] + ";onmessage=function(e){for(var kz in e.data)self[kz]=e.data[kz];onmessage=" + init.toString() + "}", id, td2, cbfs(td2), cb);
+        return wk(ch[id][0] + ";onmessage=function(e){for(var kz in e.data)self[kz]=e.data[kz];onmessage=" + init2.toString() + "}", id, td2, cbfs(td2), cb);
       };
       var bInflt = function() {
         return [u8, u16, u32, fleb, fdeb, clim, fl, fd, flrm, fdrm, rev, ec, hMap, max, bits, bits16, shft, slc, err, inflt, inflateSync, pbf, gu8];
@@ -8663,8 +8613,8 @@
       var gu8 = function(o) {
         return o && o.size && new u8(o.size);
       };
-      var cbify = function(dat, opts, fns, init, id, cb) {
-        var w = wrkr(fns, init, id, function(err2, dat2) {
+      var cbify = function(dat, opts, fns, init2, id, cb) {
+        var w = wrkr(fns, init2, id, function(err2, dat2) {
           w.terminate(), cb(err2, dat2);
         });
         return w.postMessage([dat, opts], opts.consume ? [dat.buffer] : []), function() {
@@ -8786,11 +8736,6 @@
   });
 
   // packages/systems/core/utils/LottieFetchUtils/index.ts
-  var LottieFetchUtils_exports = {};
-  __export(LottieFetchUtils_exports, {
-    fetchLottie: () => fetchLottie,
-    unZipDotLottie: () => unZipDotLottie
-  });
   function parseManifest(data2) {
     const manifest = JSON.parse(data2);
     if (!("animations" in manifest)) {
@@ -8899,79 +8844,73 @@
   var import_fflate;
   var init_LottieFetchUtils = __esm({
     "packages/systems/core/utils/LottieFetchUtils/index.ts"() {
+      "use strict";
       import_fflate = __toESM(require_fflate_min());
     }
   });
 
-  // packages/shared/render/plugins/Animation/modules/LottieSiteModule.js
-  var require_LottieSiteModule = __commonJS({
-    "packages/shared/render/plugins/Animation/modules/LottieSiteModule.js"(exports2) {
+  // packages/shared/render/plugins/Animation/modules/LottieSiteModule.ts
+  var LottieSiteModule_exports = {};
+  __export(LottieSiteModule_exports, {
+    cleanupElement: () => cleanupElement,
+    createInstance: () => createInstance,
+    destroy: () => destroy,
+    init: () => init,
+    ready: () => ready
+  });
+  var import_findIndex, import_array, getLottieLibrary, isInDesigner, PlayerState, Cache, cache, emptyObject, LottieInstance, getLottieElements, createInstance, cleanupElement, init, destroy, ready;
+  var init_LottieSiteModule = __esm({
+    "packages/shared/render/plugins/Animation/modules/LottieSiteModule.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ready = exports2.init = exports2.destroy = exports2.createInstance = exports2.cleanupElement = void 0;
-      var _extends2 = _interopRequireDefault(require_extends());
-      var _defineProperty2 = _interopRequireDefault(require_defineProperty());
-      var _findIndex = _interopRequireDefault(require_findIndex());
-      require_array3();
-      var _LottieFetchUtils = (init_LottieFetchUtils(), __toCommonJS(LottieFetchUtils_exports));
-      var getLottieLibrary = () => window.Webflow.require("lottie").lottie;
-      var isInDesigner = () => Boolean(window.Webflow.env("design") || window.Webflow.env("preview"));
-      var PlayerState = {
+      import_findIndex = __toESM(require_findIndex());
+      import_array = __toESM(require_array3());
+      init_LottieFetchUtils();
+      getLottieLibrary = () => window.Webflow.require("lottie").lottie;
+      isInDesigner = () => (
+        // @ts-expect-error - TS2339 - Property 'Webflow' does not exist on type 'Window & typeof globalThis'. | TS2339 - Property 'Webflow' does not exist on type 'Window & typeof globalThis'.
+        Boolean(window.Webflow.env("design") || window.Webflow.env("preview"))
+      );
+      PlayerState = {
         Playing: "playing",
         Stopped: "stopped"
       };
-      var Cache = class {
-        constructor() {
-          (0, _defineProperty2.default)(this, "_cache", []);
-        }
+      Cache = class {
+        _cache = [];
         set(container, instance) {
-          const index2 = (0, _findIndex.default)(this._cache, ({
-            wrapper
-          }) => wrapper === container);
+          const index2 = (0, import_findIndex.default)(this._cache, ({ wrapper }) => wrapper === container);
           if (index2 !== -1)
             this._cache.splice(index2, 1);
-          this._cache.push({
-            wrapper: container,
-            instance
-          });
+          this._cache.push({ wrapper: container, instance });
         }
         delete(container) {
-          const index2 = (0, _findIndex.default)(this._cache, ({
-            wrapper
-          }) => wrapper === container);
+          const index2 = (0, import_findIndex.default)(this._cache, ({ wrapper }) => wrapper === container);
           if (index2 !== -1)
             this._cache.splice(index2, 1);
         }
         get(container) {
-          const index2 = (0, _findIndex.default)(this._cache, ({
-            wrapper
-          }) => wrapper === container);
+          const index2 = (0, import_findIndex.default)(this._cache, ({ wrapper }) => wrapper === container);
           return index2 !== -1 ? this._cache[index2].instance : null;
         }
       };
-      var cache = new Cache();
-      var emptyObject = {};
-      var LottieInstance = class {
-        constructor() {
-          (0, _defineProperty2.default)(this, "config", null);
-          (0, _defineProperty2.default)(this, "currentState", PlayerState.Stopped);
-          (0, _defineProperty2.default)(this, "handlers", {
-            enterFrame: [],
-            complete: [],
-            loop: [],
-            dataReady: [],
-            destroy: [],
-            error: []
-          });
-        }
+      cache = new Cache();
+      emptyObject = {};
+      LottieInstance = class {
+        config = null;
+        currentState = PlayerState.Stopped;
+        animationItem;
+        handlers = {
+          enterFrame: [],
+          complete: [],
+          loop: [],
+          dataReady: [],
+          destroy: [],
+          error: []
+        };
         load(container) {
           const dataset = container.dataset || emptyObject;
           const src = dataset.src || "";
           if (src.endsWith(".lottie")) {
-            (0, _LottieFetchUtils.fetchLottie)(src).then((animationData2) => {
+            fetchLottie(src).then((animationData2) => {
               this._loadAnimation(container, animationData2);
             });
           } else {
@@ -9046,11 +8985,10 @@
             if (this.animationItem) {
               this.destroy();
             }
-            this.animationItem = getLottieLibrary().loadAnimation((0, _extends2.default)({}, options, animationData2 ? {
-              animationData: animationData2
-            } : {
-              path: src
-            }));
+            this.animationItem = getLottieLibrary().loadAnimation({
+              ...options,
+              ...animationData2 ? { animationData: animationData2 } : { path: src }
+            });
           } catch (err) {
             this.handlers.error.forEach((cb) => cb(err));
             return;
@@ -9061,13 +8999,11 @@
             this.animationItem.addEventListener("enterFrame", () => {
               if (!this.isPlaying)
                 return;
-              const {
-                currentFrame,
-                totalFrames,
-                playDirection
-              } = this.animationItem;
+              const { currentFrame, totalFrames, playDirection } = this.animationItem;
               const toPercent = currentFrame / totalFrames * 100;
-              const percentage = Math.round(playDirection === 1 ? toPercent : 100 - toPercent);
+              const percentage = Math.round(
+                playDirection === 1 ? toPercent : 100 - toPercent
+              );
               this.handlers.enterFrame.forEach((cb) => cb(percentage, currentFrame));
             });
             this.animationItem.addEventListener("complete", () => {
@@ -9081,9 +9017,12 @@
               }
               this.currentState = PlayerState.Stopped;
             });
-            this.animationItem.addEventListener("loopComplete", (loopComplete) => {
-              this.handlers.loop.forEach((cb) => cb(loopComplete));
-            });
+            this.animationItem.addEventListener(
+              "loopComplete",
+              (loopComplete) => {
+                this.handlers.loop.forEach((cb) => cb(loopComplete));
+              }
+            );
             this.animationItem.addEventListener("data_failed", (err) => {
               this.handlers.error.forEach((cb) => cb(err));
             });
@@ -9157,9 +9096,7 @@
           if (!this.animationItem)
             return;
           if (this.isPlaying) {
-            const {
-              playDirection
-            } = this.animationItem;
+            const { playDirection } = this.animationItem;
             const frame = playDirection === 1 ? 0 : this.frames;
             this.animationItem.goToAndStop(frame, true);
           }
@@ -9175,36 +9112,45 @@
             cache.delete(this.container);
           }
           this.animationItem.destroy();
-          Object.keys(this.handlers).forEach((key2) => this.handlers[key2].length = 0);
+          Object.keys(this.handlers).forEach(
+            // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ enterFrame: OnFrameChangeCallback[]; complete: (() => void)[]; loop: OnLoopCompleteCallback[]; dataReady: (() => void)[]; destroy: (() => void)[]; error: ((arg1: Error) => void)[]; }'.
+            (key2) => this.handlers[key2].length = 0
+          );
           this.animationItem = null;
           this.container = null;
           this.config = null;
         }
+        // @ts-expect-error - TS2416 - Property 'isPlaying' in type 'LottieInstance' is not assignable to the same property in base type 'LottieItem'.
         get isPlaying() {
           if (!this.animationItem)
             return false;
           return !this.animationItem.isPaused;
         }
+        // @ts-expect-error - TS2416 - Property 'isPaused' in type 'LottieInstance' is not assignable to the same property in base type 'LottieItem'.
         get isPaused() {
           if (!this.animationItem)
             return false;
           return this.animationItem.isPaused;
         }
+        // @ts-expect-error - TS2416 - Property 'duration' in type 'LottieInstance' is not assignable to the same property in base type 'LottieItem'.
         get duration() {
           if (!this.animationItem)
             return 0;
           return this.animationItem.getDuration();
         }
+        // @ts-expect-error - TS2416 - Property 'frames' in type 'LottieInstance' is not assignable to the same property in base type 'LottieItem'.
         get frames() {
           if (!this.animationItem)
             return 0;
           return this.animationItem.totalFrames;
         }
+        // @ts-expect-error - TS2416 - Property 'direction' in type 'LottieInstance' is not assignable to the same property in base type 'LottieItem'.
         get direction() {
           if (!this.animationItem)
             return 1;
           return this.animationItem.playDirection;
         }
+        // @ts-expect-error - TS2416 - Property 'isLoaded' in type 'LottieInstance' is not assignable to the same property in base type 'LottieItem'.
         get isLoaded() {
           if (!this.animationItem)
             false;
@@ -9246,8 +9192,8 @@
           this.goToFrame(value2 === 1 ? 0 : this.frames);
         }
       };
-      var getLottieElements = () => Array.from(document.querySelectorAll('[data-animation-type="lottie"]'));
-      var createInstance = (container) => {
+      getLottieElements = () => Array.from(document.querySelectorAll('[data-animation-type="lottie"]'));
+      createInstance = (container) => {
         let lottieInstance = cache.get(container);
         if (lottieInstance == null) {
           lottieInstance = new LottieInstance();
@@ -9255,15 +9201,13 @@
         lottieInstance.load(container);
         return lottieInstance;
       };
-      exports2.createInstance = createInstance;
-      var cleanupElement = (element) => {
+      cleanupElement = (element) => {
         const lottieInstance = cache.get(element);
         if (lottieInstance) {
           lottieInstance.destroy();
         }
       };
-      exports2.cleanupElement = cleanupElement;
-      var init = () => {
+      init = () => {
         getLottieElements().forEach((element) => {
           const hasIx2 = parseFloat(element.getAttribute("data-is-ix2-target")) === 1;
           if (!hasIx2) {
@@ -9272,13 +9216,10 @@
           createInstance(element);
         });
       };
-      exports2.init = init;
-      var destroy = () => {
+      destroy = () => {
         getLottieElements().forEach(cleanupElement);
       };
-      exports2.destroy = destroy;
-      var ready = init;
-      exports2.ready = ready;
+      ready = init;
     }
   });
 
@@ -15344,8 +15285,9 @@
   // packages/shared/render/plugins/Animation/webflow-lottie.js
   var require_webflow_lottie = __commonJS({
     "packages/shared/render/plugins/Animation/webflow-lottie.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
-      var lottieSiteModule = require_LottieSiteModule();
+      var lottieSiteModule = (init_LottieSiteModule(), __toCommonJS(LottieSiteModule_exports));
       var lottie2 = require_lottie_min();
       Webflow.define("lottie", module2.exports = function() {
         return {
@@ -15363,6 +15305,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-brand.js
   var require_webflow_brand = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-brand.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("brand", module2.exports = function($) {
         var api = {};
@@ -15426,6 +15369,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-edit.js
   var require_webflow_edit = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-edit.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("edit", module2.exports = function($, _, options) {
         options = options || {};
@@ -15556,6 +15500,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-focus-visible.js
   var require_webflow_focus_visible = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-focus-visible.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("focus-visible", module2.exports = function() {
         function applyFocusVisiblePolyfill(scope) {
@@ -15688,7 +15633,7 @@
           scope.addEventListener("focus", onFocus, true);
           scope.addEventListener("blur", onBlur, true);
         }
-        function ready() {
+        function ready2() {
           if (typeof document !== "undefined") {
             try {
               document.querySelector(":focus-visible");
@@ -15698,7 +15643,7 @@
           }
         }
         return {
-          ready
+          ready: ready2
         };
       });
     }
@@ -15707,6 +15652,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-focus.js
   var require_webflow_focus = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-focus.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("focus", module2.exports = function() {
         var capturedEvents = [];
@@ -15742,7 +15688,7 @@
             }, 0);
           }
         }
-        function ready() {
+        function ready2() {
           if (typeof document !== "undefined" && document.body.hasAttribute("data-wf-focus-within") && Webflow.env.safari) {
             document.addEventListener("mousedown", handler, true);
             document.addEventListener("mouseup", captureEvent, true);
@@ -15750,7 +15696,7 @@
           }
         }
         return {
-          ready
+          ready: ready2
         };
       });
     }
@@ -15818,7 +15764,7 @@
     "packages/shared/render/plugins/BaseSiteModules/webflow-ix2-events.js"(exports2, module2) {
       "use strict";
       var IXEvents = require_webflow_ix_events();
-      function dispatchCustomEvent(element, eventName) {
+      function dispatchCustomEvent2(element, eventName) {
         var event = document.createEvent("CustomEvent");
         event.initCustomEvent(eventName, true, true, null);
         element.dispatchEvent(event);
@@ -15832,11 +15778,11 @@
         },
         intro: function(i, el) {
           IXEvents.triggers.intro(i, el);
-          dispatchCustomEvent(el, "COMPONENT_ACTIVE");
+          dispatchCustomEvent2(el, "COMPONENT_ACTIVE");
         },
         outro: function(i, el) {
           IXEvents.triggers.outro(i, el);
-          dispatchCustomEvent(el, "COMPONENT_INACTIVE");
+          dispatchCustomEvent2(el, "COMPONENT_INACTIVE");
         }
       };
       api.triggers = {};
@@ -15886,9 +15832,9 @@
             "default": obj
           };
         }
-        var cache = _getRequireWildcardCache(nodeInterop);
-        if (cache && cache.has(obj)) {
-          return cache.get(obj);
+        var cache2 = _getRequireWildcardCache(nodeInterop);
+        if (cache2 && cache2.has(obj)) {
+          return cache2.get(obj);
         }
         var newObj = {};
         var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
@@ -15903,12 +15849,24 @@
           }
         }
         newObj["default"] = obj;
-        if (cache) {
-          cache.set(obj, newObj);
+        if (cache2) {
+          cache2.set(obj, newObj);
         }
         return newObj;
       }
       module2.exports = _interopRequireWildcard, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
+    }
+  });
+
+  // node_modules/@babel/runtime/helpers/interopRequireDefault.js
+  var require_interopRequireDefault = __commonJS({
+    "node_modules/@babel/runtime/helpers/interopRequireDefault.js"(exports2, module2) {
+      function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+          "default": obj
+        };
+      }
+      module2.exports = _interopRequireDefault, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
     }
   });
 
@@ -15967,7 +15925,7 @@
       var funcProto = Function.prototype;
       var objectProto = Object.prototype;
       var funcToString = funcProto.toString;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       var objectCtorString = funcToString.call(Object);
       function isPlainObject(value2) {
         if (!isObjectLike(value2) || baseGetTag(value2) != objectTag) {
@@ -15977,7 +15935,7 @@
         if (proto === null) {
           return true;
         }
-        var Ctor = hasOwnProperty.call(proto, "constructor") && proto.constructor;
+        var Ctor = hasOwnProperty2.call(proto, "constructor") && proto.constructor;
         return typeof Ctor == "function" && Ctor instanceof Ctor && funcToString.call(Ctor) == objectCtorString;
       }
       module2.exports = isPlainObject;
@@ -16193,7 +16151,7 @@
     "node_modules/redux/lib/combineReducers.js"(exports2) {
       "use strict";
       exports2.__esModule = true;
-      exports2["default"] = combineReducers;
+      exports2["default"] = combineReducers2;
       var _createStore = require_createStore();
       var _isPlainObject = require_isPlainObject();
       var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
@@ -16210,8 +16168,8 @@
       function assertReducerSanity(reducers) {
         Object.keys(reducers).forEach(function(key2) {
           var reducer = reducers[key2];
-          var initialState = reducer(void 0, { type: _createStore.ActionTypes.INIT });
-          if (typeof initialState === "undefined") {
+          var initialState4 = reducer(void 0, { type: _createStore.ActionTypes.INIT });
+          if (typeof initialState4 === "undefined") {
             throw new Error('Reducer "' + key2 + '" returned undefined during initialization. If the state passed to the reducer is undefined, you must explicitly return the initial state. The initial state may not be undefined.');
           }
           var type = "@@redux/PROBE_UNKNOWN_ACTION_" + Math.random().toString(36).substring(7).split("").join(".");
@@ -16220,7 +16178,7 @@
           }
         });
       }
-      function combineReducers(reducers) {
+      function combineReducers2(reducers) {
         var reducerKeys = Object.keys(reducers);
         var finalReducers = {};
         for (var i = 0; i < reducerKeys.length; i++) {
@@ -16419,15 +16377,12 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/trigger-events.js
-  var require_trigger_events = __commonJS({
-    "packages/systems/ix2/shared/constants/trigger-events.js"(exports2) {
+  // packages/systems/ix2/shared/constants/trigger-events.ts
+  var EventTypeConsts, EventAppliesTo, EventBasedOn, EventContinuousMouseAxes, EventLimitAffectedElements, QuickEffectIds, QuickEffectDirectionConsts;
+  var init_trigger_events = __esm({
+    "packages/systems/ix2/shared/constants/trigger-events.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.QuickEffectIds = exports2.QuickEffectDirectionConsts = exports2.EventTypeConsts = exports2.EventLimitAffectedElements = exports2.EventContinuousMouseAxes = exports2.EventBasedOn = exports2.EventAppliesTo = void 0;
-      var EventTypeConsts = {
+      EventTypeConsts = {
         NAVBAR_OPEN: "NAVBAR_OPEN",
         NAVBAR_CLOSE: "NAVBAR_CLOSE",
         TAB_ACTIVE: "TAB_ACTIVE",
@@ -16455,30 +16410,25 @@
         PAGE_SCROLL_DOWN: "PAGE_SCROLL_DOWN",
         PAGE_SCROLL: "PAGE_SCROLL"
       };
-      exports2.EventTypeConsts = EventTypeConsts;
-      var EventAppliesTo = {
+      EventAppliesTo = {
         ELEMENT: "ELEMENT",
         CLASS: "CLASS",
         PAGE: "PAGE"
       };
-      exports2.EventAppliesTo = EventAppliesTo;
-      var EventBasedOn = {
+      EventBasedOn = {
         ELEMENT: "ELEMENT",
         VIEWPORT: "VIEWPORT"
       };
-      exports2.EventBasedOn = EventBasedOn;
-      var EventContinuousMouseAxes = {
+      EventContinuousMouseAxes = {
         X_AXIS: "X_AXIS",
         Y_AXIS: "Y_AXIS"
       };
-      exports2.EventContinuousMouseAxes = EventContinuousMouseAxes;
-      var EventLimitAffectedElements = {
+      EventLimitAffectedElements = {
         CHILDREN: "CHILDREN",
         SIBLINGS: "SIBLINGS",
         IMMEDIATE_CHILDREN: "IMMEDIATE_CHILDREN"
       };
-      exports2.EventLimitAffectedElements = EventLimitAffectedElements;
-      var QuickEffectIds = {
+      QuickEffectIds = {
         FADE_EFFECT: "FADE_EFFECT",
         SLIDE_EFFECT: "SLIDE_EFFECT",
         GROW_EFFECT: "GROW_EFFECT",
@@ -16500,8 +16450,7 @@
         SHRINK_BIG_EFFECT: "SHRINK_BIG_EFFECT",
         PLUGIN_LOTTIE_EFFECT: "PLUGIN_LOTTIE_EFFECT"
       };
-      exports2.QuickEffectIds = QuickEffectIds;
-      var QuickEffectDirectionConsts = {
+      QuickEffectDirectionConsts = {
         LEFT: "LEFT",
         RIGHT: "RIGHT",
         BOTTOM: "BOTTOM",
@@ -16513,19 +16462,15 @@
         CLOCKWISE: "CLOCKWISE",
         COUNTER_CLOCKWISE: "COUNTER_CLOCKWISE"
       };
-      exports2.QuickEffectDirectionConsts = QuickEffectDirectionConsts;
     }
   });
 
-  // packages/systems/ix2/shared/constants/animation-actions.js
-  var require_animation_actions = __commonJS({
-    "packages/systems/ix2/shared/constants/animation-actions.js"(exports2) {
+  // packages/systems/ix2/shared/constants/animation-actions.ts
+  var ActionTypeConsts, ActionAppliesTo;
+  var init_animation_actions = __esm({
+    "packages/systems/ix2/shared/constants/animation-actions.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ActionTypeConsts = exports2.ActionAppliesTo = void 0;
-      var ActionTypeConsts = {
+      ActionTypeConsts = {
         TRANSFORM_MOVE: "TRANSFORM_MOVE",
         TRANSFORM_SCALE: "TRANSFORM_SCALE",
         TRANSFORM_ROTATE: "TRANSFORM_ROTATE",
@@ -16550,25 +16495,20 @@
         GENERAL_LOOP: "GENERAL_LOOP",
         STYLE_BOX_SHADOW: "STYLE_BOX_SHADOW"
       };
-      exports2.ActionTypeConsts = ActionTypeConsts;
-      var ActionAppliesTo = {
+      ActionAppliesTo = {
         ELEMENT: "ELEMENT",
         ELEMENT_CLASS: "ELEMENT_CLASS",
         TRIGGER_ELEMENT: "TRIGGER_ELEMENT"
       };
-      exports2.ActionAppliesTo = ActionAppliesTo;
     }
   });
 
-  // packages/systems/ix2/shared/constants/trigger-interactions.js
-  var require_trigger_interactions = __commonJS({
-    "packages/systems/ix2/shared/constants/trigger-interactions.js"(exports2) {
+  // packages/systems/ix2/shared/constants/trigger-interactions.ts
+  var InteractionTypeConsts;
+  var init_trigger_interactions = __esm({
+    "packages/systems/ix2/shared/constants/trigger-interactions.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.InteractionTypeConsts = void 0;
-      var InteractionTypeConsts = {
+      InteractionTypeConsts = {
         MOUSE_CLICK_INTERACTION: "MOUSE_CLICK_INTERACTION",
         MOUSE_HOVER_INTERACTION: "MOUSE_HOVER_INTERACTION",
         MOUSE_MOVE_INTERACTION: "MOUSE_MOVE_INTERACTION",
@@ -16584,20 +16524,16 @@
         TAB_INTERACTION: "TAB_INTERACTION",
         SLIDER_INTERACTION: "SLIDER_INTERACTION"
       };
-      exports2.InteractionTypeConsts = InteractionTypeConsts;
     }
   });
 
-  // packages/systems/ix2/shared/constants/reduced-motion.js
-  var require_reduced_motion = __commonJS({
-    "packages/systems/ix2/shared/constants/reduced-motion.js"(exports2) {
+  // packages/systems/ix2/shared/constants/reduced-motion.ts
+  var TRANSFORM_MOVE, TRANSFORM_SCALE, TRANSFORM_ROTATE, TRANSFORM_SKEW, STYLE_SIZE, STYLE_FILTER, STYLE_FONT_VARIATION, ReducedMotionTypes;
+  var init_reduced_motion = __esm({
+    "packages/systems/ix2/shared/constants/reduced-motion.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ReducedMotionTypes = void 0;
-      var _animationActions = require_animation_actions();
-      var {
+      init_animation_actions();
+      ({
         TRANSFORM_MOVE,
         TRANSFORM_SCALE,
         TRANSFORM_ROTATE,
@@ -16605,8 +16541,8 @@
         STYLE_SIZE,
         STYLE_FILTER,
         STYLE_FONT_VARIATION
-      } = _animationActions.ActionTypeConsts;
-      var ReducedMotionTypes = {
+      } = ActionTypeConsts);
+      ReducedMotionTypes = {
         [TRANSFORM_MOVE]: true,
         [TRANSFORM_SCALE]: true,
         [TRANSFORM_ROTATE]: true,
@@ -16615,279 +16551,222 @@
         [STYLE_FILTER]: true,
         [STYLE_FONT_VARIATION]: true
       };
-      exports2.ReducedMotionTypes = ReducedMotionTypes;
     }
   });
 
-  // packages/systems/ix2/shared/constants/IX2EngineActionTypes.js
-  var require_IX2EngineActionTypes = __commonJS({
-    "packages/systems/ix2/shared/constants/IX2EngineActionTypes.js"(exports2) {
+  // packages/systems/ix2/shared/constants/IX2EngineActionTypes.ts
+  var IX2EngineActionTypes_exports = {};
+  __export(IX2EngineActionTypes_exports, {
+    IX2_ACTION_LIST_PLAYBACK_CHANGED: () => IX2_ACTION_LIST_PLAYBACK_CHANGED,
+    IX2_ANIMATION_FRAME_CHANGED: () => IX2_ANIMATION_FRAME_CHANGED,
+    IX2_CLEAR_REQUESTED: () => IX2_CLEAR_REQUESTED,
+    IX2_ELEMENT_STATE_CHANGED: () => IX2_ELEMENT_STATE_CHANGED,
+    IX2_EVENT_LISTENER_ADDED: () => IX2_EVENT_LISTENER_ADDED,
+    IX2_EVENT_STATE_CHANGED: () => IX2_EVENT_STATE_CHANGED,
+    IX2_INSTANCE_ADDED: () => IX2_INSTANCE_ADDED,
+    IX2_INSTANCE_REMOVED: () => IX2_INSTANCE_REMOVED,
+    IX2_INSTANCE_STARTED: () => IX2_INSTANCE_STARTED,
+    IX2_MEDIA_QUERIES_DEFINED: () => IX2_MEDIA_QUERIES_DEFINED,
+    IX2_PARAMETER_CHANGED: () => IX2_PARAMETER_CHANGED,
+    IX2_PLAYBACK_REQUESTED: () => IX2_PLAYBACK_REQUESTED,
+    IX2_PREVIEW_REQUESTED: () => IX2_PREVIEW_REQUESTED,
+    IX2_RAW_DATA_IMPORTED: () => IX2_RAW_DATA_IMPORTED,
+    IX2_SESSION_INITIALIZED: () => IX2_SESSION_INITIALIZED,
+    IX2_SESSION_STARTED: () => IX2_SESSION_STARTED,
+    IX2_SESSION_STOPPED: () => IX2_SESSION_STOPPED,
+    IX2_STOP_REQUESTED: () => IX2_STOP_REQUESTED,
+    IX2_TEST_FRAME_RENDERED: () => IX2_TEST_FRAME_RENDERED,
+    IX2_VIEWPORT_WIDTH_CHANGED: () => IX2_VIEWPORT_WIDTH_CHANGED
+  });
+  var IX2_RAW_DATA_IMPORTED, IX2_SESSION_INITIALIZED, IX2_SESSION_STARTED, IX2_SESSION_STOPPED, IX2_PREVIEW_REQUESTED, IX2_PLAYBACK_REQUESTED, IX2_STOP_REQUESTED, IX2_CLEAR_REQUESTED, IX2_EVENT_LISTENER_ADDED, IX2_EVENT_STATE_CHANGED, IX2_ANIMATION_FRAME_CHANGED, IX2_PARAMETER_CHANGED, IX2_INSTANCE_ADDED, IX2_INSTANCE_STARTED, IX2_INSTANCE_REMOVED, IX2_ELEMENT_STATE_CHANGED, IX2_ACTION_LIST_PLAYBACK_CHANGED, IX2_VIEWPORT_WIDTH_CHANGED, IX2_MEDIA_QUERIES_DEFINED, IX2_TEST_FRAME_RENDERED;
+  var init_IX2EngineActionTypes = __esm({
+    "packages/systems/ix2/shared/constants/IX2EngineActionTypes.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.IX2_VIEWPORT_WIDTH_CHANGED = exports2.IX2_TEST_FRAME_RENDERED = exports2.IX2_STOP_REQUESTED = exports2.IX2_SESSION_STOPPED = exports2.IX2_SESSION_STARTED = exports2.IX2_SESSION_INITIALIZED = exports2.IX2_RAW_DATA_IMPORTED = exports2.IX2_PREVIEW_REQUESTED = exports2.IX2_PLAYBACK_REQUESTED = exports2.IX2_PARAMETER_CHANGED = exports2.IX2_MEDIA_QUERIES_DEFINED = exports2.IX2_INSTANCE_STARTED = exports2.IX2_INSTANCE_REMOVED = exports2.IX2_INSTANCE_ADDED = exports2.IX2_EVENT_STATE_CHANGED = exports2.IX2_EVENT_LISTENER_ADDED = exports2.IX2_ELEMENT_STATE_CHANGED = exports2.IX2_CLEAR_REQUESTED = exports2.IX2_ANIMATION_FRAME_CHANGED = exports2.IX2_ACTION_LIST_PLAYBACK_CHANGED = void 0;
-      var IX2_RAW_DATA_IMPORTED = "IX2_RAW_DATA_IMPORTED";
-      exports2.IX2_RAW_DATA_IMPORTED = IX2_RAW_DATA_IMPORTED;
-      var IX2_SESSION_INITIALIZED = "IX2_SESSION_INITIALIZED";
-      exports2.IX2_SESSION_INITIALIZED = IX2_SESSION_INITIALIZED;
-      var IX2_SESSION_STARTED = "IX2_SESSION_STARTED";
-      exports2.IX2_SESSION_STARTED = IX2_SESSION_STARTED;
-      var IX2_SESSION_STOPPED = "IX2_SESSION_STOPPED";
-      exports2.IX2_SESSION_STOPPED = IX2_SESSION_STOPPED;
-      var IX2_PREVIEW_REQUESTED = "IX2_PREVIEW_REQUESTED";
-      exports2.IX2_PREVIEW_REQUESTED = IX2_PREVIEW_REQUESTED;
-      var IX2_PLAYBACK_REQUESTED = "IX2_PLAYBACK_REQUESTED";
-      exports2.IX2_PLAYBACK_REQUESTED = IX2_PLAYBACK_REQUESTED;
-      var IX2_STOP_REQUESTED = "IX2_STOP_REQUESTED";
-      exports2.IX2_STOP_REQUESTED = IX2_STOP_REQUESTED;
-      var IX2_CLEAR_REQUESTED = "IX2_CLEAR_REQUESTED";
-      exports2.IX2_CLEAR_REQUESTED = IX2_CLEAR_REQUESTED;
-      var IX2_EVENT_LISTENER_ADDED = "IX2_EVENT_LISTENER_ADDED";
-      exports2.IX2_EVENT_LISTENER_ADDED = IX2_EVENT_LISTENER_ADDED;
-      var IX2_EVENT_STATE_CHANGED = "IX2_EVENT_STATE_CHANGED";
-      exports2.IX2_EVENT_STATE_CHANGED = IX2_EVENT_STATE_CHANGED;
-      var IX2_ANIMATION_FRAME_CHANGED = "IX2_ANIMATION_FRAME_CHANGED";
-      exports2.IX2_ANIMATION_FRAME_CHANGED = IX2_ANIMATION_FRAME_CHANGED;
-      var IX2_PARAMETER_CHANGED = "IX2_PARAMETER_CHANGED";
-      exports2.IX2_PARAMETER_CHANGED = IX2_PARAMETER_CHANGED;
-      var IX2_INSTANCE_ADDED = "IX2_INSTANCE_ADDED";
-      exports2.IX2_INSTANCE_ADDED = IX2_INSTANCE_ADDED;
-      var IX2_INSTANCE_STARTED = "IX2_INSTANCE_STARTED";
-      exports2.IX2_INSTANCE_STARTED = IX2_INSTANCE_STARTED;
-      var IX2_INSTANCE_REMOVED = "IX2_INSTANCE_REMOVED";
-      exports2.IX2_INSTANCE_REMOVED = IX2_INSTANCE_REMOVED;
-      var IX2_ELEMENT_STATE_CHANGED = "IX2_ELEMENT_STATE_CHANGED";
-      exports2.IX2_ELEMENT_STATE_CHANGED = IX2_ELEMENT_STATE_CHANGED;
-      var IX2_ACTION_LIST_PLAYBACK_CHANGED = "IX2_ACTION_LIST_PLAYBACK_CHANGED";
-      exports2.IX2_ACTION_LIST_PLAYBACK_CHANGED = IX2_ACTION_LIST_PLAYBACK_CHANGED;
-      var IX2_VIEWPORT_WIDTH_CHANGED = "IX2_VIEWPORT_WIDTH_CHANGED";
-      exports2.IX2_VIEWPORT_WIDTH_CHANGED = IX2_VIEWPORT_WIDTH_CHANGED;
-      var IX2_MEDIA_QUERIES_DEFINED = "IX2_MEDIA_QUERIES_DEFINED";
-      exports2.IX2_MEDIA_QUERIES_DEFINED = IX2_MEDIA_QUERIES_DEFINED;
-      var IX2_TEST_FRAME_RENDERED = "IX2_TEST_FRAME_RENDERED";
-      exports2.IX2_TEST_FRAME_RENDERED = IX2_TEST_FRAME_RENDERED;
+      IX2_RAW_DATA_IMPORTED = "IX2_RAW_DATA_IMPORTED";
+      IX2_SESSION_INITIALIZED = "IX2_SESSION_INITIALIZED";
+      IX2_SESSION_STARTED = "IX2_SESSION_STARTED";
+      IX2_SESSION_STOPPED = "IX2_SESSION_STOPPED";
+      IX2_PREVIEW_REQUESTED = "IX2_PREVIEW_REQUESTED";
+      IX2_PLAYBACK_REQUESTED = "IX2_PLAYBACK_REQUESTED";
+      IX2_STOP_REQUESTED = "IX2_STOP_REQUESTED";
+      IX2_CLEAR_REQUESTED = "IX2_CLEAR_REQUESTED";
+      IX2_EVENT_LISTENER_ADDED = "IX2_EVENT_LISTENER_ADDED";
+      IX2_EVENT_STATE_CHANGED = "IX2_EVENT_STATE_CHANGED";
+      IX2_ANIMATION_FRAME_CHANGED = "IX2_ANIMATION_FRAME_CHANGED";
+      IX2_PARAMETER_CHANGED = "IX2_PARAMETER_CHANGED";
+      IX2_INSTANCE_ADDED = "IX2_INSTANCE_ADDED";
+      IX2_INSTANCE_STARTED = "IX2_INSTANCE_STARTED";
+      IX2_INSTANCE_REMOVED = "IX2_INSTANCE_REMOVED";
+      IX2_ELEMENT_STATE_CHANGED = "IX2_ELEMENT_STATE_CHANGED";
+      IX2_ACTION_LIST_PLAYBACK_CHANGED = "IX2_ACTION_LIST_PLAYBACK_CHANGED";
+      IX2_VIEWPORT_WIDTH_CHANGED = "IX2_VIEWPORT_WIDTH_CHANGED";
+      IX2_MEDIA_QUERIES_DEFINED = "IX2_MEDIA_QUERIES_DEFINED";
+      IX2_TEST_FRAME_RENDERED = "IX2_TEST_FRAME_RENDERED";
     }
   });
 
-  // packages/systems/ix2/shared/constants/IX2EngineConstants.js
-  var require_IX2EngineConstants = __commonJS({
-    "packages/systems/ix2/shared/constants/IX2EngineConstants.js"(exports2) {
+  // packages/systems/ix2/shared/constants/IX2EngineConstants.ts
+  var IX2EngineConstants_exports = {};
+  __export(IX2EngineConstants_exports, {
+    ABSTRACT_NODE: () => ABSTRACT_NODE,
+    AUTO: () => AUTO,
+    BACKGROUND: () => BACKGROUND,
+    BACKGROUND_COLOR: () => BACKGROUND_COLOR,
+    BAR_DELIMITER: () => BAR_DELIMITER,
+    BORDER_COLOR: () => BORDER_COLOR,
+    BOUNDARY_SELECTOR: () => BOUNDARY_SELECTOR,
+    CHILDREN: () => CHILDREN,
+    COLON_DELIMITER: () => COLON_DELIMITER,
+    COLOR: () => COLOR,
+    COMMA_DELIMITER: () => COMMA_DELIMITER,
+    CONFIG_UNIT: () => CONFIG_UNIT,
+    CONFIG_VALUE: () => CONFIG_VALUE,
+    CONFIG_X_UNIT: () => CONFIG_X_UNIT,
+    CONFIG_X_VALUE: () => CONFIG_X_VALUE,
+    CONFIG_Y_UNIT: () => CONFIG_Y_UNIT,
+    CONFIG_Y_VALUE: () => CONFIG_Y_VALUE,
+    CONFIG_Z_UNIT: () => CONFIG_Z_UNIT,
+    CONFIG_Z_VALUE: () => CONFIG_Z_VALUE,
+    DISPLAY: () => DISPLAY,
+    FILTER: () => FILTER,
+    FLEX: () => FLEX,
+    FONT_VARIATION_SETTINGS: () => FONT_VARIATION_SETTINGS,
+    HEIGHT: () => HEIGHT,
+    HTML_ELEMENT: () => HTML_ELEMENT,
+    IMMEDIATE_CHILDREN: () => IMMEDIATE_CHILDREN,
+    IX2_ID_DELIMITER: () => IX2_ID_DELIMITER,
+    OPACITY: () => OPACITY,
+    PARENT: () => PARENT,
+    PLAIN_OBJECT: () => PLAIN_OBJECT,
+    PRESERVE_3D: () => PRESERVE_3D,
+    RENDER_GENERAL: () => RENDER_GENERAL,
+    RENDER_PLUGIN: () => RENDER_PLUGIN,
+    RENDER_STYLE: () => RENDER_STYLE,
+    RENDER_TRANSFORM: () => RENDER_TRANSFORM,
+    ROTATE_X: () => ROTATE_X,
+    ROTATE_Y: () => ROTATE_Y,
+    ROTATE_Z: () => ROTATE_Z,
+    SCALE_3D: () => SCALE_3D,
+    SCALE_X: () => SCALE_X,
+    SCALE_Y: () => SCALE_Y,
+    SCALE_Z: () => SCALE_Z,
+    SIBLINGS: () => SIBLINGS,
+    SKEW: () => SKEW,
+    SKEW_X: () => SKEW_X,
+    SKEW_Y: () => SKEW_Y,
+    TRANSFORM: () => TRANSFORM,
+    TRANSLATE_3D: () => TRANSLATE_3D,
+    TRANSLATE_X: () => TRANSLATE_X,
+    TRANSLATE_Y: () => TRANSLATE_Y,
+    TRANSLATE_Z: () => TRANSLATE_Z,
+    WF_PAGE: () => WF_PAGE,
+    WIDTH: () => WIDTH,
+    WILL_CHANGE: () => WILL_CHANGE,
+    W_MOD_IX: () => W_MOD_IX,
+    W_MOD_JS: () => W_MOD_JS
+  });
+  var IX2_ID_DELIMITER, WF_PAGE, W_MOD_JS, W_MOD_IX, BOUNDARY_SELECTOR, CONFIG_X_VALUE, CONFIG_Y_VALUE, CONFIG_Z_VALUE, CONFIG_VALUE, CONFIG_X_UNIT, CONFIG_Y_UNIT, CONFIG_Z_UNIT, CONFIG_UNIT, TRANSFORM, TRANSLATE_X, TRANSLATE_Y, TRANSLATE_Z, TRANSLATE_3D, SCALE_X, SCALE_Y, SCALE_Z, SCALE_3D, ROTATE_X, ROTATE_Y, ROTATE_Z, SKEW, SKEW_X, SKEW_Y, OPACITY, FILTER, FONT_VARIATION_SETTINGS, WIDTH, HEIGHT, BACKGROUND_COLOR, BACKGROUND, BORDER_COLOR, COLOR, DISPLAY, FLEX, WILL_CHANGE, AUTO, COMMA_DELIMITER, COLON_DELIMITER, BAR_DELIMITER, CHILDREN, IMMEDIATE_CHILDREN, SIBLINGS, PARENT, PRESERVE_3D, HTML_ELEMENT, PLAIN_OBJECT, ABSTRACT_NODE, RENDER_TRANSFORM, RENDER_GENERAL, RENDER_STYLE, RENDER_PLUGIN;
+  var init_IX2EngineConstants = __esm({
+    "packages/systems/ix2/shared/constants/IX2EngineConstants.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.W_MOD_JS = exports2.W_MOD_IX = exports2.WILL_CHANGE = exports2.WIDTH = exports2.WF_PAGE = exports2.TRANSLATE_Z = exports2.TRANSLATE_Y = exports2.TRANSLATE_X = exports2.TRANSLATE_3D = exports2.TRANSFORM = exports2.SKEW_Y = exports2.SKEW_X = exports2.SKEW = exports2.SIBLINGS = exports2.SCALE_Z = exports2.SCALE_Y = exports2.SCALE_X = exports2.SCALE_3D = exports2.ROTATE_Z = exports2.ROTATE_Y = exports2.ROTATE_X = exports2.RENDER_TRANSFORM = exports2.RENDER_STYLE = exports2.RENDER_PLUGIN = exports2.RENDER_GENERAL = exports2.PRESERVE_3D = exports2.PLAIN_OBJECT = exports2.PARENT = exports2.OPACITY = exports2.IX2_ID_DELIMITER = exports2.IMMEDIATE_CHILDREN = exports2.HTML_ELEMENT = exports2.HEIGHT = exports2.FONT_VARIATION_SETTINGS = exports2.FLEX = exports2.FILTER = exports2.DISPLAY = exports2.CONFIG_Z_VALUE = exports2.CONFIG_Z_UNIT = exports2.CONFIG_Y_VALUE = exports2.CONFIG_Y_UNIT = exports2.CONFIG_X_VALUE = exports2.CONFIG_X_UNIT = exports2.CONFIG_VALUE = exports2.CONFIG_UNIT = exports2.COMMA_DELIMITER = exports2.COLOR = exports2.COLON_DELIMITER = exports2.CHILDREN = exports2.BOUNDARY_SELECTOR = exports2.BORDER_COLOR = exports2.BAR_DELIMITER = exports2.BACKGROUND_COLOR = exports2.BACKGROUND = exports2.AUTO = exports2.ABSTRACT_NODE = void 0;
-      var IX2_ID_DELIMITER = "|";
-      exports2.IX2_ID_DELIMITER = IX2_ID_DELIMITER;
-      var WF_PAGE = "data-wf-page";
-      exports2.WF_PAGE = WF_PAGE;
-      var W_MOD_JS = "w-mod-js";
-      exports2.W_MOD_JS = W_MOD_JS;
-      var W_MOD_IX = "w-mod-ix";
-      exports2.W_MOD_IX = W_MOD_IX;
-      var BOUNDARY_SELECTOR = ".w-dyn-item";
-      exports2.BOUNDARY_SELECTOR = BOUNDARY_SELECTOR;
-      var CONFIG_X_VALUE = "xValue";
-      exports2.CONFIG_X_VALUE = CONFIG_X_VALUE;
-      var CONFIG_Y_VALUE = "yValue";
-      exports2.CONFIG_Y_VALUE = CONFIG_Y_VALUE;
-      var CONFIG_Z_VALUE = "zValue";
-      exports2.CONFIG_Z_VALUE = CONFIG_Z_VALUE;
-      var CONFIG_VALUE = "value";
-      exports2.CONFIG_VALUE = CONFIG_VALUE;
-      var CONFIG_X_UNIT = "xUnit";
-      exports2.CONFIG_X_UNIT = CONFIG_X_UNIT;
-      var CONFIG_Y_UNIT = "yUnit";
-      exports2.CONFIG_Y_UNIT = CONFIG_Y_UNIT;
-      var CONFIG_Z_UNIT = "zUnit";
-      exports2.CONFIG_Z_UNIT = CONFIG_Z_UNIT;
-      var CONFIG_UNIT = "unit";
-      exports2.CONFIG_UNIT = CONFIG_UNIT;
-      var TRANSFORM = "transform";
-      exports2.TRANSFORM = TRANSFORM;
-      var TRANSLATE_X = "translateX";
-      exports2.TRANSLATE_X = TRANSLATE_X;
-      var TRANSLATE_Y = "translateY";
-      exports2.TRANSLATE_Y = TRANSLATE_Y;
-      var TRANSLATE_Z = "translateZ";
-      exports2.TRANSLATE_Z = TRANSLATE_Z;
-      var TRANSLATE_3D = "translate3d";
-      exports2.TRANSLATE_3D = TRANSLATE_3D;
-      var SCALE_X = "scaleX";
-      exports2.SCALE_X = SCALE_X;
-      var SCALE_Y = "scaleY";
-      exports2.SCALE_Y = SCALE_Y;
-      var SCALE_Z = "scaleZ";
-      exports2.SCALE_Z = SCALE_Z;
-      var SCALE_3D = "scale3d";
-      exports2.SCALE_3D = SCALE_3D;
-      var ROTATE_X = "rotateX";
-      exports2.ROTATE_X = ROTATE_X;
-      var ROTATE_Y = "rotateY";
-      exports2.ROTATE_Y = ROTATE_Y;
-      var ROTATE_Z = "rotateZ";
-      exports2.ROTATE_Z = ROTATE_Z;
-      var SKEW = "skew";
-      exports2.SKEW = SKEW;
-      var SKEW_X = "skewX";
-      exports2.SKEW_X = SKEW_X;
-      var SKEW_Y = "skewY";
-      exports2.SKEW_Y = SKEW_Y;
-      var OPACITY = "opacity";
-      exports2.OPACITY = OPACITY;
-      var FILTER = "filter";
-      exports2.FILTER = FILTER;
-      var FONT_VARIATION_SETTINGS = "font-variation-settings";
-      exports2.FONT_VARIATION_SETTINGS = FONT_VARIATION_SETTINGS;
-      var WIDTH = "width";
-      exports2.WIDTH = WIDTH;
-      var HEIGHT = "height";
-      exports2.HEIGHT = HEIGHT;
-      var BACKGROUND_COLOR = "backgroundColor";
-      exports2.BACKGROUND_COLOR = BACKGROUND_COLOR;
-      var BACKGROUND = "background";
-      exports2.BACKGROUND = BACKGROUND;
-      var BORDER_COLOR = "borderColor";
-      exports2.BORDER_COLOR = BORDER_COLOR;
-      var COLOR = "color";
-      exports2.COLOR = COLOR;
-      var DISPLAY = "display";
-      exports2.DISPLAY = DISPLAY;
-      var FLEX = "flex";
-      exports2.FLEX = FLEX;
-      var WILL_CHANGE = "willChange";
-      exports2.WILL_CHANGE = WILL_CHANGE;
-      var AUTO = "AUTO";
-      exports2.AUTO = AUTO;
-      var COMMA_DELIMITER = ",";
-      exports2.COMMA_DELIMITER = COMMA_DELIMITER;
-      var COLON_DELIMITER = ":";
-      exports2.COLON_DELIMITER = COLON_DELIMITER;
-      var BAR_DELIMITER = "|";
-      exports2.BAR_DELIMITER = BAR_DELIMITER;
-      var CHILDREN = "CHILDREN";
-      exports2.CHILDREN = CHILDREN;
-      var IMMEDIATE_CHILDREN = "IMMEDIATE_CHILDREN";
-      exports2.IMMEDIATE_CHILDREN = IMMEDIATE_CHILDREN;
-      var SIBLINGS = "SIBLINGS";
-      exports2.SIBLINGS = SIBLINGS;
-      var PARENT = "PARENT";
-      exports2.PARENT = PARENT;
-      var PRESERVE_3D = "preserve-3d";
-      exports2.PRESERVE_3D = PRESERVE_3D;
-      var HTML_ELEMENT = "HTML_ELEMENT";
-      exports2.HTML_ELEMENT = HTML_ELEMENT;
-      var PLAIN_OBJECT = "PLAIN_OBJECT";
-      exports2.PLAIN_OBJECT = PLAIN_OBJECT;
-      var ABSTRACT_NODE = "ABSTRACT_NODE";
-      exports2.ABSTRACT_NODE = ABSTRACT_NODE;
-      var RENDER_TRANSFORM = "RENDER_TRANSFORM";
-      exports2.RENDER_TRANSFORM = RENDER_TRANSFORM;
-      var RENDER_GENERAL = "RENDER_GENERAL";
-      exports2.RENDER_GENERAL = RENDER_GENERAL;
-      var RENDER_STYLE = "RENDER_STYLE";
-      exports2.RENDER_STYLE = RENDER_STYLE;
-      var RENDER_PLUGIN = "RENDER_PLUGIN";
-      exports2.RENDER_PLUGIN = RENDER_PLUGIN;
+      IX2_ID_DELIMITER = "|";
+      WF_PAGE = "data-wf-page";
+      W_MOD_JS = "w-mod-js";
+      W_MOD_IX = "w-mod-ix";
+      BOUNDARY_SELECTOR = ".w-dyn-item";
+      CONFIG_X_VALUE = "xValue";
+      CONFIG_Y_VALUE = "yValue";
+      CONFIG_Z_VALUE = "zValue";
+      CONFIG_VALUE = "value";
+      CONFIG_X_UNIT = "xUnit";
+      CONFIG_Y_UNIT = "yUnit";
+      CONFIG_Z_UNIT = "zUnit";
+      CONFIG_UNIT = "unit";
+      TRANSFORM = "transform";
+      TRANSLATE_X = "translateX";
+      TRANSLATE_Y = "translateY";
+      TRANSLATE_Z = "translateZ";
+      TRANSLATE_3D = "translate3d";
+      SCALE_X = "scaleX";
+      SCALE_Y = "scaleY";
+      SCALE_Z = "scaleZ";
+      SCALE_3D = "scale3d";
+      ROTATE_X = "rotateX";
+      ROTATE_Y = "rotateY";
+      ROTATE_Z = "rotateZ";
+      SKEW = "skew";
+      SKEW_X = "skewX";
+      SKEW_Y = "skewY";
+      OPACITY = "opacity";
+      FILTER = "filter";
+      FONT_VARIATION_SETTINGS = "font-variation-settings";
+      WIDTH = "width";
+      HEIGHT = "height";
+      BACKGROUND_COLOR = "backgroundColor";
+      BACKGROUND = "background";
+      BORDER_COLOR = "borderColor";
+      COLOR = "color";
+      DISPLAY = "display";
+      FLEX = "flex";
+      WILL_CHANGE = "willChange";
+      AUTO = "AUTO";
+      COMMA_DELIMITER = ",";
+      COLON_DELIMITER = ":";
+      BAR_DELIMITER = "|";
+      CHILDREN = "CHILDREN";
+      IMMEDIATE_CHILDREN = "IMMEDIATE_CHILDREN";
+      SIBLINGS = "SIBLINGS";
+      PARENT = "PARENT";
+      PRESERVE_3D = "preserve-3d";
+      HTML_ELEMENT = "HTML_ELEMENT";
+      PLAIN_OBJECT = "PLAIN_OBJECT";
+      ABSTRACT_NODE = "ABSTRACT_NODE";
+      RENDER_TRANSFORM = "RENDER_TRANSFORM";
+      RENDER_GENERAL = "RENDER_GENERAL";
+      RENDER_STYLE = "RENDER_STYLE";
+      RENDER_PLUGIN = "RENDER_PLUGIN";
     }
   });
 
-  // packages/systems/ix2/shared/constants/index.js
-  var require_constants = __commonJS({
-    "packages/systems/ix2/shared/constants/index.js"(exports2) {
+  // packages/systems/ix2/shared/constants/index.ts
+  var constants_exports = {};
+  __export(constants_exports, {
+    ActionAppliesTo: () => ActionAppliesTo,
+    ActionTypeConsts: () => ActionTypeConsts,
+    EventAppliesTo: () => EventAppliesTo,
+    EventBasedOn: () => EventBasedOn,
+    EventContinuousMouseAxes: () => EventContinuousMouseAxes,
+    EventLimitAffectedElements: () => EventLimitAffectedElements,
+    EventTypeConsts: () => EventTypeConsts,
+    IX2EngineActionTypes: () => IX2EngineActionTypes_exports,
+    IX2EngineConstants: () => IX2EngineConstants_exports,
+    InteractionTypeConsts: () => InteractionTypeConsts,
+    QuickEffectDirectionConsts: () => QuickEffectDirectionConsts,
+    QuickEffectIds: () => QuickEffectIds,
+    ReducedMotionTypes: () => ReducedMotionTypes
+  });
+  var init_constants = __esm({
+    "packages/systems/ix2/shared/constants/index.ts"() {
       "use strict";
-      var _interopRequireWildcard = require_interopRequireWildcard().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      var _exportNames = {
-        IX2EngineActionTypes: true,
-        IX2EngineConstants: true
-      };
-      exports2.IX2EngineConstants = exports2.IX2EngineActionTypes = void 0;
-      var _triggerEvents = require_trigger_events();
-      Object.keys(_triggerEvents).forEach(function(key2) {
-        if (key2 === "default" || key2 === "__esModule")
-          return;
-        if (Object.prototype.hasOwnProperty.call(_exportNames, key2))
-          return;
-        if (key2 in exports2 && exports2[key2] === _triggerEvents[key2])
-          return;
-        Object.defineProperty(exports2, key2, {
-          enumerable: true,
-          get: function() {
-            return _triggerEvents[key2];
-          }
-        });
-      });
-      var _animationActions = require_animation_actions();
-      Object.keys(_animationActions).forEach(function(key2) {
-        if (key2 === "default" || key2 === "__esModule")
-          return;
-        if (Object.prototype.hasOwnProperty.call(_exportNames, key2))
-          return;
-        if (key2 in exports2 && exports2[key2] === _animationActions[key2])
-          return;
-        Object.defineProperty(exports2, key2, {
-          enumerable: true,
-          get: function() {
-            return _animationActions[key2];
-          }
-        });
-      });
-      var _triggerInteractions = require_trigger_interactions();
-      Object.keys(_triggerInteractions).forEach(function(key2) {
-        if (key2 === "default" || key2 === "__esModule")
-          return;
-        if (Object.prototype.hasOwnProperty.call(_exportNames, key2))
-          return;
-        if (key2 in exports2 && exports2[key2] === _triggerInteractions[key2])
-          return;
-        Object.defineProperty(exports2, key2, {
-          enumerable: true,
-          get: function() {
-            return _triggerInteractions[key2];
-          }
-        });
-      });
-      var _reducedMotion = require_reduced_motion();
-      Object.keys(_reducedMotion).forEach(function(key2) {
-        if (key2 === "default" || key2 === "__esModule")
-          return;
-        if (Object.prototype.hasOwnProperty.call(_exportNames, key2))
-          return;
-        if (key2 in exports2 && exports2[key2] === _reducedMotion[key2])
-          return;
-        Object.defineProperty(exports2, key2, {
-          enumerable: true,
-          get: function() {
-            return _reducedMotion[key2];
-          }
-        });
-      });
-      var IX2EngineActionTypes = _interopRequireWildcard(require_IX2EngineActionTypes());
-      exports2.IX2EngineActionTypes = IX2EngineActionTypes;
-      var IX2EngineConstants = _interopRequireWildcard(require_IX2EngineConstants());
-      exports2.IX2EngineConstants = IX2EngineConstants;
+      init_trigger_events();
+      init_animation_actions();
+      init_trigger_interactions();
+      init_reduced_motion();
+      init_IX2EngineActionTypes();
+      init_IX2EngineConstants();
     }
   });
 
-  // packages/systems/ix2/engine/reducers/IX2DataReducer.js
-  var require_IX2DataReducer = __commonJS({
-    "packages/systems/ix2/engine/reducers/IX2DataReducer.js"(exports2) {
+  // packages/systems/ix2/engine/reducers/IX2DataReducer.ts
+  var IX2_RAW_DATA_IMPORTED2, ixData;
+  var init_IX2DataReducer = __esm({
+    "packages/systems/ix2/engine/reducers/IX2DataReducer.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ixData = void 0;
-      var _constants = require_constants();
-      var {
-        IX2_RAW_DATA_IMPORTED
-      } = _constants.IX2EngineActionTypes;
-      var ixData = (state = Object.freeze({}), action) => {
+      init_constants();
+      ({ IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED2 } = IX2EngineActionTypes_exports);
+      ixData = (state = Object.freeze({}), action) => {
         switch (action.type) {
-          case IX2_RAW_DATA_IMPORTED: {
+          case IX2_RAW_DATA_IMPORTED2: {
             return action.payload.ixData || Object.freeze({});
           }
           default: {
@@ -16895,7 +16774,6 @@
           }
         }
       };
-      exports2.ixData = ixData;
     }
   });
 
@@ -16912,21 +16790,21 @@
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
       exports2.clone = clone;
-      exports2.addLast = addLast;
+      exports2.addLast = addLast2;
       exports2.addFirst = addFirst;
       exports2.removeLast = removeLast;
       exports2.removeFirst = removeFirst;
       exports2.insert = insert;
       exports2.removeAt = removeAt;
       exports2.replaceAt = replaceAt;
-      exports2.getIn = getIn;
-      exports2.set = set;
-      exports2.setIn = setIn;
+      exports2.getIn = getIn2;
+      exports2.set = set3;
+      exports2.setIn = setIn4;
       exports2.update = update;
       exports2.updateIn = updateIn;
-      exports2.merge = merge;
+      exports2.merge = merge3;
       exports2.mergeDeep = mergeDeep;
-      exports2.mergeIn = mergeIn;
+      exports2.mergeIn = mergeIn4;
       exports2.omit = omit;
       exports2.addDefaults = addDefaults;
       var INVALID_ARGS = "INVALID_ARGS";
@@ -16940,7 +16818,7 @@
         }
         return keys;
       }
-      var hasOwnProperty = {}.hasOwnProperty;
+      var hasOwnProperty2 = {}.hasOwnProperty;
       function clone(obj) {
         if (Array.isArray(obj))
           return obj.slice();
@@ -16989,7 +16867,7 @@
         var type = typeof o === "undefined" ? "undefined" : _typeof2(o);
         return o != null && (type === "object" || type === "function");
       }
-      function addLast(array, val2) {
+      function addLast2(array, val2) {
         if (Array.isArray(val2))
           return array.concat(val2);
         return array.concat([val2]);
@@ -17028,7 +16906,7 @@
         result[idx] = newItem;
         return result;
       }
-      function getIn(obj, path) {
+      function getIn2(obj, path) {
         !Array.isArray(path) && throwStr(false ? "A path array should be provided when calling getIn()" : INVALID_ARGS);
         if (obj == null)
           return void 0;
@@ -17041,7 +16919,7 @@
         }
         return ptr;
       }
-      function set(obj, key2, val2) {
+      function set3(obj, key2, val2) {
         var fallback = typeof key2 === "number" ? [] : {};
         var finalObj = obj == null ? fallback : obj;
         if (finalObj[key2] === val2)
@@ -17059,9 +16937,9 @@
           var nestedObj = isObject(obj) && isObject(obj[key2]) ? obj[key2] : typeof path[idx + 1] === "number" ? [] : {};
           newValue = doSetIn(nestedObj, path, val2, idx + 1);
         }
-        return set(obj, key2, newValue);
+        return set3(obj, key2, newValue);
       }
-      function setIn(obj, path, val2) {
+      function setIn4(obj, path, val2) {
         if (!path.length)
           return val2;
         return doSetIn(obj, path, val2, 0);
@@ -17069,14 +16947,14 @@
       function update(obj, key2, fnUpdate) {
         var prevVal = obj == null ? void 0 : obj[key2];
         var nextVal = fnUpdate(prevVal);
-        return set(obj, key2, nextVal);
+        return set3(obj, key2, nextVal);
       }
       function updateIn(obj, path, fnUpdate) {
-        var prevVal = getIn(obj, path);
+        var prevVal = getIn2(obj, path);
         var nextVal = fnUpdate(prevVal);
-        return setIn(obj, path, nextVal);
+        return setIn4(obj, path, nextVal);
       }
-      function merge(a, b, c, d, e, f) {
+      function merge3(a, b, c, d, e, f) {
         for (var _len2 = arguments.length, rest = Array(_len2 > 6 ? _len2 - 6 : 0), _key2 = 6; _key2 < _len2; _key2++) {
           rest[_key2 - 6] = arguments[_key2];
         }
@@ -17088,8 +16966,8 @@
         }
         return rest.length ? doMerge.call.apply(doMerge, [null, false, true, a, b, c, d, e, f].concat(rest)) : doMerge(false, true, a, b, c, d, e, f);
       }
-      function mergeIn(a, path, b, c, d, e, f) {
-        var prevVal = getIn(a, path);
+      function mergeIn4(a, path, b, c, d, e, f) {
+        var prevVal = getIn2(a, path);
         if (prevVal == null)
           prevVal = {};
         var nextVal = void 0;
@@ -17101,13 +16979,13 @@
         } else {
           nextVal = doMerge(false, false, prevVal, b, c, d, e, f);
         }
-        return setIn(a, path, nextVal);
+        return setIn4(a, path, nextVal);
       }
       function omit(obj, attrs) {
         var omitList = Array.isArray(attrs) ? attrs : [attrs];
         var fDoSomething = false;
         for (var i = 0; i < omitList.length; i++) {
-          if (hasOwnProperty.call(obj, omitList[i])) {
+          if (hasOwnProperty2.call(obj, omitList[i])) {
             fDoSomething = true;
             break;
           }
@@ -17132,23 +17010,23 @@
       }
       var timm = {
         clone,
-        addLast,
+        addLast: addLast2,
         addFirst,
         removeLast,
         removeFirst,
         insert,
         removeAt,
         replaceAt,
-        getIn,
+        getIn: getIn2,
         // eslint-disable-next-line object-shorthand
-        set,
+        set: set3,
         // so that flow doesn't complain
-        setIn,
+        setIn: setIn4,
         update,
         updateIn,
-        merge,
+        merge: merge3,
         mergeDeep,
-        mergeIn,
+        mergeIn: mergeIn4,
         omit,
         addDefaults
       };
@@ -17156,78 +17034,61 @@
     }
   });
 
-  // packages/systems/ix2/engine/reducers/IX2RequestReducer.js
-  var require_IX2RequestReducer = __commonJS({
-    "packages/systems/ix2/engine/reducers/IX2RequestReducer.js"(exports2) {
+  // packages/systems/ix2/engine/reducers/IX2RequestReducer.ts
+  var import_timm, IX2_PREVIEW_REQUESTED2, IX2_PLAYBACK_REQUESTED2, IX2_STOP_REQUESTED2, IX2_CLEAR_REQUESTED2, initialState, stateKeys, ixRequest;
+  var init_IX2RequestReducer = __esm({
+    "packages/systems/ix2/engine/reducers/IX2RequestReducer.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ixRequest = void 0;
-      var _extends2 = _interopRequireDefault(require_extends());
-      var _constants = require_constants();
-      var _timm = require_timm();
-      var {
-        IX2_PREVIEW_REQUESTED,
-        IX2_PLAYBACK_REQUESTED,
-        IX2_STOP_REQUESTED,
-        IX2_CLEAR_REQUESTED
-      } = _constants.IX2EngineActionTypes;
-      var initialState = {
+      init_constants();
+      import_timm = __toESM(require_timm());
+      ({
+        IX2_PREVIEW_REQUESTED: IX2_PREVIEW_REQUESTED2,
+        IX2_PLAYBACK_REQUESTED: IX2_PLAYBACK_REQUESTED2,
+        IX2_STOP_REQUESTED: IX2_STOP_REQUESTED2,
+        IX2_CLEAR_REQUESTED: IX2_CLEAR_REQUESTED2
+      } = IX2EngineActionTypes_exports);
+      initialState = {
         preview: {},
         playback: {},
         stop: {},
         clear: {}
       };
-      var stateKeys = Object.create(null, {
-        [IX2_PREVIEW_REQUESTED]: {
-          value: "preview"
-        },
-        [IX2_PLAYBACK_REQUESTED]: {
-          value: "playback"
-        },
-        [IX2_STOP_REQUESTED]: {
-          value: "stop"
-        },
-        [IX2_CLEAR_REQUESTED]: {
-          value: "clear"
-        }
+      stateKeys = Object.create(null, {
+        [IX2_PREVIEW_REQUESTED2]: { value: "preview" },
+        [IX2_PLAYBACK_REQUESTED2]: { value: "playback" },
+        [IX2_STOP_REQUESTED2]: { value: "stop" },
+        [IX2_CLEAR_REQUESTED2]: { value: "clear" }
       });
-      var ixRequest = (state = initialState, action) => {
+      ixRequest = (state = initialState, action) => {
         if (action.type in stateKeys) {
           const key2 = [stateKeys[action.type]];
-          return (0, _timm.setIn)(state, [key2], (0, _extends2.default)({}, action.payload));
+          return (0, import_timm.setIn)(state, [key2], { ...action.payload });
         }
         return state;
       };
-      exports2.ixRequest = ixRequest;
     }
   });
 
-  // packages/systems/ix2/engine/reducers/IX2SessionReducer.js
-  var require_IX2SessionReducer = __commonJS({
-    "packages/systems/ix2/engine/reducers/IX2SessionReducer.js"(exports2) {
+  // packages/systems/ix2/engine/reducers/IX2SessionReducer.ts
+  var import_timm2, IX2_SESSION_INITIALIZED2, IX2_SESSION_STARTED2, IX2_TEST_FRAME_RENDERED2, IX2_SESSION_STOPPED2, IX2_EVENT_LISTENER_ADDED2, IX2_EVENT_STATE_CHANGED2, IX2_ANIMATION_FRAME_CHANGED2, IX2_ACTION_LIST_PLAYBACK_CHANGED2, IX2_VIEWPORT_WIDTH_CHANGED2, IX2_MEDIA_QUERIES_DEFINED2, initialState2, TEST_FRAME_STEPS_SIZE, ixSession;
+  var init_IX2SessionReducer = __esm({
+    "packages/systems/ix2/engine/reducers/IX2SessionReducer.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ixSession = void 0;
-      var _constants = require_constants();
-      var _timm = require_timm();
-      var {
-        IX2_SESSION_INITIALIZED,
-        IX2_SESSION_STARTED,
-        IX2_TEST_FRAME_RENDERED,
-        IX2_SESSION_STOPPED,
-        IX2_EVENT_LISTENER_ADDED,
-        IX2_EVENT_STATE_CHANGED,
-        IX2_ANIMATION_FRAME_CHANGED,
-        IX2_ACTION_LIST_PLAYBACK_CHANGED,
-        IX2_VIEWPORT_WIDTH_CHANGED,
-        IX2_MEDIA_QUERIES_DEFINED
-      } = _constants.IX2EngineActionTypes;
-      var initialState = {
+      init_constants();
+      import_timm2 = __toESM(require_timm());
+      ({
+        IX2_SESSION_INITIALIZED: IX2_SESSION_INITIALIZED2,
+        IX2_SESSION_STARTED: IX2_SESSION_STARTED2,
+        IX2_TEST_FRAME_RENDERED: IX2_TEST_FRAME_RENDERED2,
+        IX2_SESSION_STOPPED: IX2_SESSION_STOPPED2,
+        IX2_EVENT_LISTENER_ADDED: IX2_EVENT_LISTENER_ADDED2,
+        IX2_EVENT_STATE_CHANGED: IX2_EVENT_STATE_CHANGED2,
+        IX2_ANIMATION_FRAME_CHANGED: IX2_ANIMATION_FRAME_CHANGED2,
+        IX2_ACTION_LIST_PLAYBACK_CHANGED: IX2_ACTION_LIST_PLAYBACK_CHANGED2,
+        IX2_VIEWPORT_WIDTH_CHANGED: IX2_VIEWPORT_WIDTH_CHANGED2,
+        IX2_MEDIA_QUERIES_DEFINED: IX2_MEDIA_QUERIES_DEFINED2
+      } = IX2EngineActionTypes_exports);
+      initialState2 = {
         active: false,
         tick: 0,
         eventListeners: [],
@@ -17239,91 +17100,70 @@
         hasDefinedMediaQueries: false,
         reducedMotion: false
       };
-      var TEST_FRAME_STEPS_SIZE = 20;
-      var ixSession = (state = initialState, action) => {
+      TEST_FRAME_STEPS_SIZE = 20;
+      ixSession = (state = initialState2, action) => {
         switch (action.type) {
-          case IX2_SESSION_INITIALIZED: {
-            const {
-              hasBoundaryNodes,
-              reducedMotion
-            } = action.payload;
-            return (0, _timm.merge)(state, {
+          case IX2_SESSION_INITIALIZED2: {
+            const { hasBoundaryNodes, reducedMotion } = action.payload;
+            return (0, import_timm2.merge)(state, {
               hasBoundaryNodes,
               reducedMotion
             });
           }
-          case IX2_SESSION_STARTED: {
-            return (0, _timm.set)(state, "active", true);
+          case IX2_SESSION_STARTED2: {
+            return (0, import_timm2.set)(state, "active", true);
           }
-          case IX2_TEST_FRAME_RENDERED: {
+          case IX2_TEST_FRAME_RENDERED2: {
             const {
-              payload: {
-                step = TEST_FRAME_STEPS_SIZE
-              }
+              payload: { step = TEST_FRAME_STEPS_SIZE }
             } = action;
-            return (0, _timm.set)(state, "tick", state.tick + step);
+            return (0, import_timm2.set)(state, "tick", state.tick + step);
           }
-          case IX2_SESSION_STOPPED: {
-            return initialState;
+          case IX2_SESSION_STOPPED2: {
+            return initialState2;
           }
-          case IX2_ANIMATION_FRAME_CHANGED: {
+          case IX2_ANIMATION_FRAME_CHANGED2: {
             const {
-              payload: {
-                now
-              }
+              payload: { now }
             } = action;
-            return (0, _timm.set)(state, "tick", now);
+            return (0, import_timm2.set)(state, "tick", now);
           }
-          case IX2_EVENT_LISTENER_ADDED: {
-            const eventListeners = (0, _timm.addLast)(state.eventListeners, action.payload);
-            return (0, _timm.set)(state, "eventListeners", eventListeners);
+          case IX2_EVENT_LISTENER_ADDED2: {
+            const eventListeners = (0, import_timm2.addLast)(state.eventListeners, action.payload);
+            return (0, import_timm2.set)(state, "eventListeners", eventListeners);
           }
-          case IX2_EVENT_STATE_CHANGED: {
-            const {
-              stateKey,
-              newState
-            } = action.payload;
-            return (0, _timm.setIn)(state, ["eventState", stateKey], newState);
+          case IX2_EVENT_STATE_CHANGED2: {
+            const { stateKey, newState } = action.payload;
+            return (0, import_timm2.setIn)(state, ["eventState", stateKey], newState);
           }
-          case IX2_ACTION_LIST_PLAYBACK_CHANGED: {
-            const {
-              actionListId,
-              isPlaying
-            } = action.payload;
-            return (0, _timm.setIn)(state, ["playbackState", actionListId], isPlaying);
+          case IX2_ACTION_LIST_PLAYBACK_CHANGED2: {
+            const { actionListId, isPlaying } = action.payload;
+            return (0, import_timm2.setIn)(state, ["playbackState", actionListId], isPlaying);
           }
-          case IX2_VIEWPORT_WIDTH_CHANGED: {
-            const {
-              width: width2,
-              mediaQueries
-            } = action.payload;
+          case IX2_VIEWPORT_WIDTH_CHANGED2: {
+            const { width: width2, mediaQueries } = action.payload;
             const mediaQueryCount = mediaQueries.length;
             let mediaQueryKey = null;
             for (let i = 0; i < mediaQueryCount; i++) {
-              const {
-                key: key2,
-                min,
-                max
-              } = mediaQueries[i];
+              const { key: key2, min, max } = mediaQueries[i];
               if (width2 >= min && width2 <= max) {
                 mediaQueryKey = key2;
                 break;
               }
             }
-            return (0, _timm.merge)(state, {
+            return (0, import_timm2.merge)(state, {
               viewportWidth: width2,
               mediaQueryKey
             });
           }
-          case IX2_MEDIA_QUERIES_DEFINED: {
-            return (0, _timm.set)(state, "hasDefinedMediaQueries", true);
+          case IX2_MEDIA_QUERIES_DEFINED2: {
+            return (0, import_timm2.set)(state, "hasDefinedMediaQueries", true);
           }
           default: {
             return state;
           }
         }
       };
-      exports2.ixSession = ixSession;
     }
   });
 
@@ -17355,43 +17195,59 @@
   var require_find = __commonJS({
     "node_modules/lodash/find.js"(exports2, module2) {
       var createFind = require_createFind();
-      var findIndex = require_findIndex();
-      var find = createFind(findIndex);
-      module2.exports = find;
+      var findIndex2 = require_findIndex();
+      var find3 = createFind(findIndex2);
+      module2.exports = find3;
     }
   });
 
-  // packages/systems/ix2/shared/logic/IX2BrowserSupport.js
-  var require_IX2BrowserSupport = __commonJS({
-    "packages/systems/ix2/shared/logic/IX2BrowserSupport.js"(exports2) {
+  // packages/systems/ix2/shared/logic/IX2BrowserSupport.ts
+  var IX2BrowserSupport_exports = {};
+  __export(IX2BrowserSupport_exports, {
+    ELEMENT_MATCHES: () => ELEMENT_MATCHES,
+    FLEX_PREFIXED: () => FLEX_PREFIXED,
+    IS_BROWSER_ENV: () => IS_BROWSER_ENV,
+    TRANSFORM_PREFIXED: () => TRANSFORM_PREFIXED,
+    TRANSFORM_STYLE_PREFIXED: () => TRANSFORM_STYLE_PREFIXED,
+    withBrowser: () => withBrowser
+  });
+  var import_find, IS_BROWSER_ENV, withBrowser, ELEMENT_MATCHES, FLEX_PREFIXED, TRANSFORM_PREFIXED, TRANSFORM_PREFIX, TRANSFORM_STYLE_PREFIXED;
+  var init_IX2BrowserSupport = __esm({
+    "packages/systems/ix2/shared/logic/IX2BrowserSupport.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.withBrowser = exports2.TRANSFORM_STYLE_PREFIXED = exports2.TRANSFORM_PREFIXED = exports2.IS_BROWSER_ENV = exports2.FLEX_PREFIXED = exports2.ELEMENT_MATCHES = void 0;
-      var _find = _interopRequireDefault(require_find());
-      var IS_BROWSER_ENV = typeof window !== "undefined";
-      exports2.IS_BROWSER_ENV = IS_BROWSER_ENV;
-      var withBrowser = (fn, fallback) => {
+      import_find = __toESM(require_find());
+      IS_BROWSER_ENV = typeof window !== "undefined";
+      withBrowser = (fn, fallback) => {
         if (IS_BROWSER_ENV) {
           return fn();
         }
         return fallback;
       };
-      exports2.withBrowser = withBrowser;
-      var ELEMENT_MATCHES = withBrowser(() => {
-        return (0, _find.default)(["matches", "matchesSelector", "mozMatchesSelector", "msMatchesSelector", "oMatchesSelector", "webkitMatchesSelector"], (key2) => key2 in Element.prototype);
+      ELEMENT_MATCHES = withBrowser(() => {
+        return (0, import_find.default)(
+          [
+            "matches",
+            "matchesSelector",
+            "mozMatchesSelector",
+            "msMatchesSelector",
+            "oMatchesSelector",
+            "webkitMatchesSelector"
+          ],
+          (key2) => key2 in Element.prototype
+        );
       });
-      exports2.ELEMENT_MATCHES = ELEMENT_MATCHES;
-      var FLEX_PREFIXED = withBrowser(() => {
+      FLEX_PREFIXED = withBrowser(() => {
         const el = document.createElement("i");
-        const values = ["flex", "-webkit-flex", "-ms-flexbox", "-moz-box", "-webkit-box"];
+        const values = [
+          "flex",
+          "-webkit-flex",
+          "-ms-flexbox",
+          "-moz-box",
+          "-webkit-box"
+        ];
         const none = "";
         try {
-          const {
-            length: length2
-          } = values;
+          const { length: length2 } = values;
           for (let i = 0; i < length2; i++) {
             const value2 = values[i];
             el.style.display = value2;
@@ -17404,15 +17260,12 @@
           return none;
         }
       }, "flex");
-      exports2.FLEX_PREFIXED = FLEX_PREFIXED;
-      var TRANSFORM_PREFIXED = withBrowser(() => {
+      TRANSFORM_PREFIXED = withBrowser(() => {
         const el = document.createElement("i");
         if (el.style.transform == null) {
           const prefixes = ["Webkit", "Moz", "ms"];
           const suffix = "Transform";
-          const {
-            length: length2
-          } = prefixes;
+          const { length: length2 } = prefixes;
           for (let i = 0; i < length2; i++) {
             const prop = prefixes[i] + suffix;
             if (el.style[prop] !== void 0) {
@@ -17422,10 +17275,8 @@
         }
         return "transform";
       }, "transform");
-      exports2.TRANSFORM_PREFIXED = TRANSFORM_PREFIXED;
-      var TRANSFORM_PREFIX = TRANSFORM_PREFIXED.split("transform")[0];
-      var TRANSFORM_STYLE_PREFIXED = TRANSFORM_PREFIX ? TRANSFORM_PREFIX + "TransformStyle" : "transformStyle";
-      exports2.TRANSFORM_STYLE_PREFIXED = TRANSFORM_STYLE_PREFIXED;
+      TRANSFORM_PREFIX = TRANSFORM_PREFIXED.split("transform")[0];
+      TRANSFORM_STYLE_PREFIXED = TRANSFORM_PREFIX ? TRANSFORM_PREFIX + "TransformStyle" : "transformStyle";
     }
   });
 
@@ -17507,7 +17358,7 @@
             return binarySubdivide(aX, intervalStart, intervalStart + kSampleStepSize, mX1, mX2);
           }
         }
-        return function BezierEasing(x) {
+        return function BezierEasing3(x) {
           if (mX1 === mY1 && mX2 === mY2) {
             return x;
           }
@@ -17523,349 +17374,373 @@
     }
   });
 
-  // packages/systems/ix2/shared/logic/IX2Easings.js
-  var require_IX2Easings = __commonJS({
-    "packages/systems/ix2/shared/logic/IX2Easings.js"(exports2) {
+  // packages/systems/ix2/shared/logic/IX2Easings.ts
+  var IX2Easings_exports = {};
+  __export(IX2Easings_exports, {
+    bounce: () => bounce,
+    bouncePast: () => bouncePast,
+    ease: () => ease2,
+    easeIn: () => easeIn2,
+    easeInOut: () => easeInOut,
+    easeOut: () => easeOut2,
+    inBack: () => inBack,
+    inCirc: () => inCirc,
+    inCubic: () => inCubic,
+    inElastic: () => inElastic,
+    inExpo: () => inExpo,
+    inOutBack: () => inOutBack,
+    inOutCirc: () => inOutCirc,
+    inOutCubic: () => inOutCubic,
+    inOutElastic: () => inOutElastic,
+    inOutExpo: () => inOutExpo,
+    inOutQuad: () => inOutQuad,
+    inOutQuart: () => inOutQuart,
+    inOutQuint: () => inOutQuint,
+    inOutSine: () => inOutSine,
+    inQuad: () => inQuad,
+    inQuart: () => inQuart,
+    inQuint: () => inQuint,
+    inSine: () => inSine,
+    outBack: () => outBack,
+    outBounce: () => outBounce,
+    outCirc: () => outCirc,
+    outCubic: () => outCubic,
+    outElastic: () => outElastic,
+    outExpo: () => outExpo,
+    outQuad: () => outQuad,
+    outQuart: () => outQuart,
+    outQuint: () => outQuint,
+    outSine: () => outSine,
+    swingFrom: () => swingFrom,
+    swingFromTo: () => swingFromTo,
+    swingTo: () => swingTo
+  });
+  function inQuad(pos) {
+    return Math.pow(pos, 2);
+  }
+  function outQuad(pos) {
+    return -(Math.pow(pos - 1, 2) - 1);
+  }
+  function inOutQuad(pos) {
+    if ((pos /= 0.5) < 1) {
+      return 0.5 * Math.pow(pos, 2);
+    }
+    return -0.5 * ((pos -= 2) * pos - 2);
+  }
+  function inCubic(pos) {
+    return Math.pow(pos, 3);
+  }
+  function outCubic(pos) {
+    return Math.pow(pos - 1, 3) + 1;
+  }
+  function inOutCubic(pos) {
+    if ((pos /= 0.5) < 1) {
+      return 0.5 * Math.pow(pos, 3);
+    }
+    return 0.5 * (Math.pow(pos - 2, 3) + 2);
+  }
+  function inQuart(pos) {
+    return Math.pow(pos, 4);
+  }
+  function outQuart(pos) {
+    return -(Math.pow(pos - 1, 4) - 1);
+  }
+  function inOutQuart(pos) {
+    if ((pos /= 0.5) < 1) {
+      return 0.5 * Math.pow(pos, 4);
+    }
+    return -0.5 * ((pos -= 2) * Math.pow(pos, 3) - 2);
+  }
+  function inQuint(pos) {
+    return Math.pow(pos, 5);
+  }
+  function outQuint(pos) {
+    return Math.pow(pos - 1, 5) + 1;
+  }
+  function inOutQuint(pos) {
+    if ((pos /= 0.5) < 1) {
+      return 0.5 * Math.pow(pos, 5);
+    }
+    return 0.5 * (Math.pow(pos - 2, 5) + 2);
+  }
+  function inSine(pos) {
+    return -Math.cos(pos * (Math.PI / 2)) + 1;
+  }
+  function outSine(pos) {
+    return Math.sin(pos * (Math.PI / 2));
+  }
+  function inOutSine(pos) {
+    return -0.5 * (Math.cos(Math.PI * pos) - 1);
+  }
+  function inExpo(pos) {
+    return pos === 0 ? 0 : Math.pow(2, 10 * (pos - 1));
+  }
+  function outExpo(pos) {
+    return pos === 1 ? 1 : -Math.pow(2, -10 * pos) + 1;
+  }
+  function inOutExpo(pos) {
+    if (pos === 0) {
+      return 0;
+    }
+    if (pos === 1) {
+      return 1;
+    }
+    if ((pos /= 0.5) < 1) {
+      return 0.5 * Math.pow(2, 10 * (pos - 1));
+    }
+    return 0.5 * (-Math.pow(2, -10 * --pos) + 2);
+  }
+  function inCirc(pos) {
+    return -(Math.sqrt(1 - pos * pos) - 1);
+  }
+  function outCirc(pos) {
+    return Math.sqrt(1 - Math.pow(pos - 1, 2));
+  }
+  function inOutCirc(pos) {
+    if ((pos /= 0.5) < 1) {
+      return -0.5 * (Math.sqrt(1 - pos * pos) - 1);
+    }
+    return 0.5 * (Math.sqrt(1 - (pos -= 2) * pos) + 1);
+  }
+  function outBounce(pos) {
+    if (pos < 1 / 2.75) {
+      return 7.5625 * pos * pos;
+    } else if (pos < 2 / 2.75) {
+      return 7.5625 * (pos -= 1.5 / 2.75) * pos + 0.75;
+    } else if (pos < 2.5 / 2.75) {
+      return 7.5625 * (pos -= 2.25 / 2.75) * pos + 0.9375;
+    } else {
+      return 7.5625 * (pos -= 2.625 / 2.75) * pos + 0.984375;
+    }
+  }
+  function inBack(pos) {
+    const s = magicSwing;
+    return pos * pos * ((s + 1) * pos - s);
+  }
+  function outBack(pos) {
+    const s = magicSwing;
+    return (pos -= 1) * pos * ((s + 1) * pos + s) + 1;
+  }
+  function inOutBack(pos) {
+    let s = magicSwing;
+    if ((pos /= 0.5) < 1) {
+      return 0.5 * (pos * pos * (((s *= 1.525) + 1) * pos - s));
+    }
+    return 0.5 * ((pos -= 2) * pos * (((s *= 1.525) + 1) * pos + s) + 2);
+  }
+  function inElastic(pos) {
+    let s = magicSwing;
+    let p = 0;
+    let a = 1;
+    if (pos === 0) {
+      return 0;
+    }
+    if (pos === 1) {
+      return 1;
+    }
+    if (!p) {
+      p = 0.3;
+    }
+    if (a < 1) {
+      a = 1;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(1 / a);
+    }
+    return -(a * Math.pow(2, 10 * (pos -= 1)) * Math.sin((pos - s) * (2 * Math.PI) / p));
+  }
+  function outElastic(pos) {
+    let s = magicSwing;
+    let p = 0;
+    let a = 1;
+    if (pos === 0) {
+      return 0;
+    }
+    if (pos === 1) {
+      return 1;
+    }
+    if (!p) {
+      p = 0.3;
+    }
+    if (a < 1) {
+      a = 1;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(1 / a);
+    }
+    return a * Math.pow(2, -10 * pos) * Math.sin((pos - s) * (2 * Math.PI) / p) + 1;
+  }
+  function inOutElastic(pos) {
+    let s = magicSwing;
+    let p = 0;
+    let a = 1;
+    if (pos === 0) {
+      return 0;
+    }
+    if ((pos /= 1 / 2) === 2) {
+      return 1;
+    }
+    if (!p) {
+      p = 0.3 * 1.5;
+    }
+    if (a < 1) {
+      a = 1;
+      s = p / 4;
+    } else {
+      s = p / (2 * Math.PI) * Math.asin(1 / a);
+    }
+    if (pos < 1) {
+      return -0.5 * (a * Math.pow(2, 10 * (pos -= 1)) * Math.sin((pos - s) * (2 * Math.PI) / p));
+    }
+    return a * Math.pow(2, -10 * (pos -= 1)) * Math.sin((pos - s) * (2 * Math.PI) / p) * 0.5 + 1;
+  }
+  function swingFromTo(pos) {
+    let s = magicSwing;
+    return (pos /= 0.5) < 1 ? 0.5 * (pos * pos * (((s *= 1.525) + 1) * pos - s)) : 0.5 * ((pos -= 2) * pos * (((s *= 1.525) + 1) * pos + s) + 2);
+  }
+  function swingFrom(pos) {
+    const s = magicSwing;
+    return pos * pos * ((s + 1) * pos - s);
+  }
+  function swingTo(pos) {
+    const s = magicSwing;
+    return (pos -= 1) * pos * ((s + 1) * pos + s) + 1;
+  }
+  function bounce(pos) {
+    if (pos < 1 / 2.75) {
+      return 7.5625 * pos * pos;
+    } else if (pos < 2 / 2.75) {
+      return 7.5625 * (pos -= 1.5 / 2.75) * pos + 0.75;
+    } else if (pos < 2.5 / 2.75) {
+      return 7.5625 * (pos -= 2.25 / 2.75) * pos + 0.9375;
+    } else {
+      return 7.5625 * (pos -= 2.625 / 2.75) * pos + 0.984375;
+    }
+  }
+  function bouncePast(pos) {
+    if (pos < 1 / 2.75) {
+      return 7.5625 * pos * pos;
+    } else if (pos < 2 / 2.75) {
+      return 2 - (7.5625 * (pos -= 1.5 / 2.75) * pos + 0.75);
+    } else if (pos < 2.5 / 2.75) {
+      return 2 - (7.5625 * (pos -= 2.25 / 2.75) * pos + 0.9375);
+    } else {
+      return 2 - (7.5625 * (pos -= 2.625 / 2.75) * pos + 0.984375);
+    }
+  }
+  var import_bezier_easing, magicSwing, ease2, easeIn2, easeOut2, easeInOut;
+  var init_IX2Easings = __esm({
+    "packages/systems/ix2/shared/logic/IX2Easings.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.bounce = bounce;
-      exports2.bouncePast = bouncePast;
-      exports2.easeOut = exports2.easeInOut = exports2.easeIn = exports2.ease = void 0;
-      exports2.inBack = inBack;
-      exports2.inCirc = inCirc;
-      exports2.inCubic = inCubic;
-      exports2.inElastic = inElastic;
-      exports2.inExpo = inExpo;
-      exports2.inOutBack = inOutBack;
-      exports2.inOutCirc = inOutCirc;
-      exports2.inOutCubic = inOutCubic;
-      exports2.inOutElastic = inOutElastic;
-      exports2.inOutExpo = inOutExpo;
-      exports2.inOutQuad = inOutQuad;
-      exports2.inOutQuart = inOutQuart;
-      exports2.inOutQuint = inOutQuint;
-      exports2.inOutSine = inOutSine;
-      exports2.inQuad = inQuad;
-      exports2.inQuart = inQuart;
-      exports2.inQuint = inQuint;
-      exports2.inSine = inSine;
-      exports2.outBack = outBack;
-      exports2.outBounce = outBounce;
-      exports2.outCirc = outCirc;
-      exports2.outCubic = outCubic;
-      exports2.outElastic = outElastic;
-      exports2.outExpo = outExpo;
-      exports2.outQuad = outQuad;
-      exports2.outQuart = outQuart;
-      exports2.outQuint = outQuint;
-      exports2.outSine = outSine;
-      exports2.swingFrom = swingFrom;
-      exports2.swingFromTo = swingFromTo;
-      exports2.swingTo = swingTo;
-      var _bezierEasing = _interopRequireDefault(require_src());
-      var magicSwing = 1.70158;
-      var ease2 = (0, _bezierEasing.default)(0.25, 0.1, 0.25, 1);
-      exports2.ease = ease2;
-      var easeIn2 = (0, _bezierEasing.default)(0.42, 0, 1, 1);
-      exports2.easeIn = easeIn2;
-      var easeOut2 = (0, _bezierEasing.default)(0, 0, 0.58, 1);
-      exports2.easeOut = easeOut2;
-      var easeInOut = (0, _bezierEasing.default)(0.42, 0, 0.58, 1);
-      exports2.easeInOut = easeInOut;
-      function inQuad(pos) {
-        return Math.pow(pos, 2);
-      }
-      function outQuad(pos) {
-        return -(Math.pow(pos - 1, 2) - 1);
-      }
-      function inOutQuad(pos) {
-        if ((pos /= 0.5) < 1) {
-          return 0.5 * Math.pow(pos, 2);
-        }
-        return -0.5 * ((pos -= 2) * pos - 2);
-      }
-      function inCubic(pos) {
-        return Math.pow(pos, 3);
-      }
-      function outCubic(pos) {
-        return Math.pow(pos - 1, 3) + 1;
-      }
-      function inOutCubic(pos) {
-        if ((pos /= 0.5) < 1) {
-          return 0.5 * Math.pow(pos, 3);
-        }
-        return 0.5 * (Math.pow(pos - 2, 3) + 2);
-      }
-      function inQuart(pos) {
-        return Math.pow(pos, 4);
-      }
-      function outQuart(pos) {
-        return -(Math.pow(pos - 1, 4) - 1);
-      }
-      function inOutQuart(pos) {
-        if ((pos /= 0.5) < 1) {
-          return 0.5 * Math.pow(pos, 4);
-        }
-        return -0.5 * ((pos -= 2) * Math.pow(pos, 3) - 2);
-      }
-      function inQuint(pos) {
-        return Math.pow(pos, 5);
-      }
-      function outQuint(pos) {
-        return Math.pow(pos - 1, 5) + 1;
-      }
-      function inOutQuint(pos) {
-        if ((pos /= 0.5) < 1) {
-          return 0.5 * Math.pow(pos, 5);
-        }
-        return 0.5 * (Math.pow(pos - 2, 5) + 2);
-      }
-      function inSine(pos) {
-        return -Math.cos(pos * (Math.PI / 2)) + 1;
-      }
-      function outSine(pos) {
-        return Math.sin(pos * (Math.PI / 2));
-      }
-      function inOutSine(pos) {
-        return -0.5 * (Math.cos(Math.PI * pos) - 1);
-      }
-      function inExpo(pos) {
-        return pos === 0 ? 0 : Math.pow(2, 10 * (pos - 1));
-      }
-      function outExpo(pos) {
-        return pos === 1 ? 1 : -Math.pow(2, -10 * pos) + 1;
-      }
-      function inOutExpo(pos) {
-        if (pos === 0) {
-          return 0;
-        }
-        if (pos === 1) {
-          return 1;
-        }
-        if ((pos /= 0.5) < 1) {
-          return 0.5 * Math.pow(2, 10 * (pos - 1));
-        }
-        return 0.5 * (-Math.pow(2, -10 * --pos) + 2);
-      }
-      function inCirc(pos) {
-        return -(Math.sqrt(1 - pos * pos) - 1);
-      }
-      function outCirc(pos) {
-        return Math.sqrt(1 - Math.pow(pos - 1, 2));
-      }
-      function inOutCirc(pos) {
-        if ((pos /= 0.5) < 1) {
-          return -0.5 * (Math.sqrt(1 - pos * pos) - 1);
-        }
-        return 0.5 * (Math.sqrt(1 - (pos -= 2) * pos) + 1);
-      }
-      function outBounce(pos) {
-        if (pos < 1 / 2.75) {
-          return 7.5625 * pos * pos;
-        } else if (pos < 2 / 2.75) {
-          return 7.5625 * (pos -= 1.5 / 2.75) * pos + 0.75;
-        } else if (pos < 2.5 / 2.75) {
-          return 7.5625 * (pos -= 2.25 / 2.75) * pos + 0.9375;
-        } else {
-          return 7.5625 * (pos -= 2.625 / 2.75) * pos + 0.984375;
-        }
-      }
-      function inBack(pos) {
-        const s = magicSwing;
-        return pos * pos * ((s + 1) * pos - s);
-      }
-      function outBack(pos) {
-        const s = magicSwing;
-        return (pos -= 1) * pos * ((s + 1) * pos + s) + 1;
-      }
-      function inOutBack(pos) {
-        let s = magicSwing;
-        if ((pos /= 0.5) < 1) {
-          return 0.5 * (pos * pos * (((s *= 1.525) + 1) * pos - s));
-        }
-        return 0.5 * ((pos -= 2) * pos * (((s *= 1.525) + 1) * pos + s) + 2);
-      }
-      function inElastic(pos) {
-        let s = magicSwing;
-        let p = 0;
-        let a = 1;
-        if (pos === 0) {
-          return 0;
-        }
-        if (pos === 1) {
-          return 1;
-        }
-        if (!p) {
-          p = 0.3;
-        }
-        if (a < 1) {
-          a = 1;
-          s = p / 4;
-        } else {
-          s = p / (2 * Math.PI) * Math.asin(1 / a);
-        }
-        return -(a * Math.pow(2, 10 * (pos -= 1)) * Math.sin((pos - s) * (2 * Math.PI) / p));
-      }
-      function outElastic(pos) {
-        let s = magicSwing;
-        let p = 0;
-        let a = 1;
-        if (pos === 0) {
-          return 0;
-        }
-        if (pos === 1) {
-          return 1;
-        }
-        if (!p) {
-          p = 0.3;
-        }
-        if (a < 1) {
-          a = 1;
-          s = p / 4;
-        } else {
-          s = p / (2 * Math.PI) * Math.asin(1 / a);
-        }
-        return a * Math.pow(2, -10 * pos) * Math.sin((pos - s) * (2 * Math.PI) / p) + 1;
-      }
-      function inOutElastic(pos) {
-        let s = magicSwing;
-        let p = 0;
-        let a = 1;
-        if (pos === 0) {
-          return 0;
-        }
-        if ((pos /= 1 / 2) === 2) {
-          return 1;
-        }
-        if (!p) {
-          p = 0.3 * 1.5;
-        }
-        if (a < 1) {
-          a = 1;
-          s = p / 4;
-        } else {
-          s = p / (2 * Math.PI) * Math.asin(1 / a);
-        }
-        if (pos < 1) {
-          return -0.5 * (a * Math.pow(2, 10 * (pos -= 1)) * Math.sin((pos - s) * (2 * Math.PI) / p));
-        }
-        return a * Math.pow(2, -10 * (pos -= 1)) * Math.sin((pos - s) * (2 * Math.PI) / p) * 0.5 + 1;
-      }
-      function swingFromTo(pos) {
-        let s = magicSwing;
-        return (pos /= 0.5) < 1 ? 0.5 * (pos * pos * (((s *= 1.525) + 1) * pos - s)) : 0.5 * ((pos -= 2) * pos * (((s *= 1.525) + 1) * pos + s) + 2);
-      }
-      function swingFrom(pos) {
-        const s = magicSwing;
-        return pos * pos * ((s + 1) * pos - s);
-      }
-      function swingTo(pos) {
-        const s = magicSwing;
-        return (pos -= 1) * pos * ((s + 1) * pos + s) + 1;
-      }
-      function bounce(pos) {
-        if (pos < 1 / 2.75) {
-          return 7.5625 * pos * pos;
-        } else if (pos < 2 / 2.75) {
-          return 7.5625 * (pos -= 1.5 / 2.75) * pos + 0.75;
-        } else if (pos < 2.5 / 2.75) {
-          return 7.5625 * (pos -= 2.25 / 2.75) * pos + 0.9375;
-        } else {
-          return 7.5625 * (pos -= 2.625 / 2.75) * pos + 0.984375;
-        }
-      }
-      function bouncePast(pos) {
-        if (pos < 1 / 2.75) {
-          return 7.5625 * pos * pos;
-        } else if (pos < 2 / 2.75) {
-          return 2 - (7.5625 * (pos -= 1.5 / 2.75) * pos + 0.75);
-        } else if (pos < 2.5 / 2.75) {
-          return 2 - (7.5625 * (pos -= 2.25 / 2.75) * pos + 0.9375);
-        } else {
-          return 2 - (7.5625 * (pos -= 2.625 / 2.75) * pos + 0.984375);
-        }
-      }
+      import_bezier_easing = __toESM(require_src());
+      magicSwing = 1.70158;
+      ease2 = (0, import_bezier_easing.default)(0.25, 0.1, 0.25, 1);
+      easeIn2 = (0, import_bezier_easing.default)(0.42, 0, 1, 1);
+      easeOut2 = (0, import_bezier_easing.default)(0, 0, 0.58, 1);
+      easeInOut = (0, import_bezier_easing.default)(0.42, 0, 0.58, 1);
     }
   });
 
-  // packages/systems/ix2/shared/logic/IX2EasingUtils.js
-  var require_IX2EasingUtils = __commonJS({
-    "packages/systems/ix2/shared/logic/IX2EasingUtils.js"(exports2) {
+  // packages/systems/ix2/shared/logic/IX2EasingUtils.ts
+  var IX2EasingUtils_exports = {};
+  __export(IX2EasingUtils_exports, {
+    applyEasing: () => applyEasing,
+    createBezierEasing: () => createBezierEasing,
+    optimizeFloat: () => optimizeFloat
+  });
+  function optimizeFloat(value2, digits = 5, base = 10) {
+    const pow = Math.pow(base, digits);
+    const float = Number(Math.round(value2 * pow) / pow);
+    return Math.abs(float) > 1e-4 ? float : 0;
+  }
+  function createBezierEasing(easing) {
+    return (0, import_bezier_easing2.default)(...easing);
+  }
+  function applyEasing(easing, position2, customEasingFn) {
+    if (position2 === 0) {
+      return 0;
+    }
+    if (position2 === 1) {
+      return 1;
+    }
+    if (customEasingFn) {
+      return optimizeFloat(position2 > 0 ? customEasingFn(position2) : position2);
+    }
+    return optimizeFloat(
+      position2 > 0 && easing && IX2Easings_exports[easing] ? IX2Easings_exports[easing](position2) : position2
+    );
+  }
+  var import_bezier_easing2;
+  var init_IX2EasingUtils = __esm({
+    "packages/systems/ix2/shared/logic/IX2EasingUtils.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      var _interopRequireWildcard = require_interopRequireWildcard().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.applyEasing = applyEasing;
-      exports2.createBezierEasing = createBezierEasing;
-      exports2.optimizeFloat = optimizeFloat;
-      var easings = _interopRequireWildcard(require_IX2Easings());
-      var _bezierEasing = _interopRequireDefault(require_src());
-      function optimizeFloat(value2, digits = 5, base = 10) {
-        const pow = Math.pow(base, digits);
-        const float = Number(Math.round(value2 * pow) / pow);
-        return Math.abs(float) > 1e-4 ? float : 0;
-      }
-      function createBezierEasing(easing) {
-        return (0, _bezierEasing.default)(...easing);
-      }
-      function applyEasing(easing, position2, customEasingFn) {
-        if (position2 === 0) {
-          return 0;
-        }
-        if (position2 === 1) {
-          return 1;
-        }
-        if (customEasingFn) {
-          return optimizeFloat(position2 > 0 ? customEasingFn(position2) : position2);
-        }
-        return optimizeFloat(position2 > 0 && easing && easings[easing] ? easings[easing](position2) : position2);
-      }
+      init_IX2Easings();
+      import_bezier_easing2 = __toESM(require_src());
     }
   });
 
-  // packages/systems/ix2/shared/reducers/IX2ElementsReducer.js
-  var require_IX2ElementsReducer = __commonJS({
-    "packages/systems/ix2/shared/reducers/IX2ElementsReducer.js"(exports2) {
+  // packages/systems/ix2/shared/reducers/IX2ElementsReducer.ts
+  var IX2ElementsReducer_exports = {};
+  __export(IX2ElementsReducer_exports, {
+    createElementState: () => createElementState,
+    ixElements: () => ixElements,
+    mergeActionState: () => mergeActionState
+  });
+  function createElementState(state, ref, refType, elementId, actionItem) {
+    const refId = refType === PLAIN_OBJECT2 ? (0, import_timm3.getIn)(actionItem, ["config", "target", "objectId"]) : null;
+    return (0, import_timm3.mergeIn)(state, [elementId], {
+      id: elementId,
+      ref,
+      refId,
+      refType
+    });
+  }
+  function mergeActionState(state, elementId, actionTypeId, actionState, actionItem) {
+    const units = pickUnits(actionItem);
+    const mergePath = [elementId, refState, actionTypeId];
+    return (0, import_timm3.mergeIn)(state, mergePath, actionState, units);
+  }
+  function pickUnits(actionItem) {
+    const { config } = actionItem;
+    return valueUnitPairs.reduce((result, pair) => {
+      const valueKey = pair[0];
+      const unitKey = pair[1];
+      const configValue = config[valueKey];
+      const configUnit = config[unitKey];
+      if (configValue != null && configUnit != null) {
+        result[unitKey] = configUnit;
+      }
+      return result;
+    }, {});
+  }
+  var import_timm3, HTML_ELEMENT2, PLAIN_OBJECT2, ABSTRACT_NODE2, CONFIG_X_VALUE2, CONFIG_Y_VALUE2, CONFIG_Z_VALUE2, CONFIG_VALUE2, CONFIG_X_UNIT2, CONFIG_Y_UNIT2, CONFIG_Z_UNIT2, CONFIG_UNIT2, IX2_SESSION_STOPPED3, IX2_INSTANCE_ADDED2, IX2_ELEMENT_STATE_CHANGED2, initialState3, refState, ixElements, valueUnitPairs;
+  var init_IX2ElementsReducer = __esm({
+    "packages/systems/ix2/shared/reducers/IX2ElementsReducer.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.createElementState = createElementState;
-      exports2.ixElements = void 0;
-      exports2.mergeActionState = mergeActionState;
-      var _timm = require_timm();
-      var _constants = require_constants();
-      var {
-        HTML_ELEMENT,
-        PLAIN_OBJECT,
-        ABSTRACT_NODE,
-        CONFIG_X_VALUE,
-        CONFIG_Y_VALUE,
-        CONFIG_Z_VALUE,
-        CONFIG_VALUE,
-        CONFIG_X_UNIT,
-        CONFIG_Y_UNIT,
-        CONFIG_Z_UNIT,
-        CONFIG_UNIT
-      } = _constants.IX2EngineConstants;
-      var {
-        IX2_SESSION_STOPPED,
-        IX2_INSTANCE_ADDED,
-        IX2_ELEMENT_STATE_CHANGED
-      } = _constants.IX2EngineActionTypes;
-      var initialState = {};
-      var refState = "refState";
-      var ixElements = (state = initialState, action = {}) => {
+      import_timm3 = __toESM(require_timm());
+      init_constants();
+      ({
+        HTML_ELEMENT: HTML_ELEMENT2,
+        PLAIN_OBJECT: PLAIN_OBJECT2,
+        ABSTRACT_NODE: ABSTRACT_NODE2,
+        CONFIG_X_VALUE: CONFIG_X_VALUE2,
+        CONFIG_Y_VALUE: CONFIG_Y_VALUE2,
+        CONFIG_Z_VALUE: CONFIG_Z_VALUE2,
+        CONFIG_VALUE: CONFIG_VALUE2,
+        CONFIG_X_UNIT: CONFIG_X_UNIT2,
+        CONFIG_Y_UNIT: CONFIG_Y_UNIT2,
+        CONFIG_Z_UNIT: CONFIG_Z_UNIT2,
+        CONFIG_UNIT: CONFIG_UNIT2
+      } = IX2EngineConstants_exports);
+      ({ IX2_SESSION_STOPPED: IX2_SESSION_STOPPED3, IX2_INSTANCE_ADDED: IX2_INSTANCE_ADDED2, IX2_ELEMENT_STATE_CHANGED: IX2_ELEMENT_STATE_CHANGED2 } = IX2EngineActionTypes_exports);
+      initialState3 = {};
+      refState = "refState";
+      ixElements = (state = initialState3, action = {}) => {
         switch (action.type) {
-          case IX2_SESSION_STOPPED: {
-            return initialState;
+          case IX2_SESSION_STOPPED3: {
+            return initialState3;
           }
-          case IX2_INSTANCE_ADDED: {
+          case IX2_INSTANCE_ADDED2: {
             const {
               elementId,
               element: ref,
@@ -17873,60 +17748,46 @@
               actionItem,
               refType
             } = action.payload;
-            const {
-              actionTypeId
-            } = actionItem;
+            const { actionTypeId } = actionItem;
             let newState = state;
-            if ((0, _timm.getIn)(newState, [elementId, ref]) !== ref) {
-              newState = createElementState(newState, ref, refType, elementId, actionItem);
+            if ((0, import_timm3.getIn)(newState, [elementId, ref]) !== ref) {
+              newState = createElementState(
+                newState,
+                ref,
+                refType,
+                elementId,
+                actionItem
+              );
             }
-            return mergeActionState(newState, elementId, actionTypeId, origin, actionItem);
+            return mergeActionState(
+              newState,
+              elementId,
+              actionTypeId,
+              origin,
+              actionItem
+            );
           }
-          case IX2_ELEMENT_STATE_CHANGED: {
-            const {
+          case IX2_ELEMENT_STATE_CHANGED2: {
+            const { elementId, actionTypeId, current, actionItem } = action.payload;
+            return mergeActionState(
+              state,
               elementId,
               actionTypeId,
               current,
               actionItem
-            } = action.payload;
-            return mergeActionState(state, elementId, actionTypeId, current, actionItem);
+            );
           }
           default: {
             return state;
           }
         }
       };
-      exports2.ixElements = ixElements;
-      function createElementState(state, ref, refType, elementId, actionItem) {
-        const refId = refType === PLAIN_OBJECT ? (0, _timm.getIn)(actionItem, ["config", "target", "objectId"]) : null;
-        return (0, _timm.mergeIn)(state, [elementId], {
-          id: elementId,
-          ref,
-          refId,
-          refType
-        });
-      }
-      function mergeActionState(state, elementId, actionTypeId, actionState, actionItem) {
-        const units = pickUnits(actionItem);
-        const mergePath = [elementId, refState, actionTypeId];
-        return (0, _timm.mergeIn)(state, mergePath, actionState, units);
-      }
-      var valueUnitPairs = [[CONFIG_X_VALUE, CONFIG_X_UNIT], [CONFIG_Y_VALUE, CONFIG_Y_UNIT], [CONFIG_Z_VALUE, CONFIG_Z_UNIT], [CONFIG_VALUE, CONFIG_UNIT]];
-      function pickUnits(actionItem) {
-        const {
-          config
-        } = actionItem;
-        return valueUnitPairs.reduce((result, pair) => {
-          const valueKey = pair[0];
-          const unitKey = pair[1];
-          const configValue = config[valueKey];
-          const configUnit = config[unitKey];
-          if (configValue != null && configUnit != null) {
-            result[unitKey] = configUnit;
-          }
-          return result;
-        }, {});
-      }
+      valueUnitPairs = [
+        [CONFIG_X_VALUE2, CONFIG_X_UNIT2],
+        [CONFIG_Y_VALUE2, CONFIG_Y_UNIT2],
+        [CONFIG_Z_VALUE2, CONFIG_Z_UNIT2],
+        [CONFIG_VALUE2, CONFIG_UNIT2]
+      ];
     }
   });
 
@@ -17938,11 +17799,11 @@
         value: true
       });
       exports2.renderPlugin = exports2.getPluginOrigin = exports2.getPluginDuration = exports2.getPluginDestination = exports2.getPluginConfig = exports2.createPluginInstance = exports2.clearPlugin = void 0;
-      var getPluginConfig = (actionItemConfig) => {
+      var getPluginConfig2 = (actionItemConfig) => {
         return actionItemConfig.value;
       };
-      exports2.getPluginConfig = getPluginConfig;
-      var getPluginDuration = (element, actionItem) => {
+      exports2.getPluginConfig = getPluginConfig2;
+      var getPluginDuration3 = (element, actionItem) => {
         if (actionItem.config.duration !== "auto") {
           return null;
         }
@@ -17952,39 +17813,39 @@
         }
         return parseFloat(element.getAttribute("data-default-duration")) * 1e3;
       };
-      exports2.getPluginDuration = getPluginDuration;
-      var getPluginOrigin = (refState) => {
-        return refState || {
+      exports2.getPluginDuration = getPluginDuration3;
+      var getPluginOrigin2 = (refState2) => {
+        return refState2 || {
           value: 0
         };
       };
-      exports2.getPluginOrigin = getPluginOrigin;
-      var getPluginDestination = (actionItemConfig) => {
+      exports2.getPluginOrigin = getPluginOrigin2;
+      var getPluginDestination2 = (actionItemConfig) => {
         return {
           value: actionItemConfig.value
         };
       };
-      exports2.getPluginDestination = getPluginDestination;
-      var createPluginInstance = (element) => {
+      exports2.getPluginDestination = getPluginDestination2;
+      var createPluginInstance3 = (element) => {
         const instance = window.Webflow.require("lottie").createInstance(element);
         instance.stop();
         instance.setSubframe(true);
         return instance;
       };
-      exports2.createPluginInstance = createPluginInstance;
-      var renderPlugin = (pluginInstance, refState, actionItem) => {
+      exports2.createPluginInstance = createPluginInstance3;
+      var renderPlugin2 = (pluginInstance, refState2, actionItem) => {
         if (!pluginInstance) {
           return;
         }
-        const percent = refState[actionItem.actionTypeId].value / 100;
+        const percent = refState2[actionItem.actionTypeId].value / 100;
         pluginInstance.goToFrame(pluginInstance.frames * percent);
       };
-      exports2.renderPlugin = renderPlugin;
-      var clearPlugin = (element) => {
+      exports2.renderPlugin = renderPlugin2;
+      var clearPlugin2 = (element) => {
         const instance = window.Webflow.require("lottie").createInstance(element);
         instance.stop();
       };
-      exports2.clearPlugin = clearPlugin;
+      exports2.clearPlugin = clearPlugin2;
     }
   });
 
@@ -17999,14 +17860,14 @@
       var queryContainerElement = (elementId) => document.querySelector(`[data-w-id="${elementId}"]`);
       var getFrontendModule = () => window.Webflow.require("spline");
       var difference = (arr1, arr2) => arr1.filter((x) => !arr2.includes(x));
-      var getPluginConfig = (actionItemConfig, key2) => {
+      var getPluginConfig2 = (actionItemConfig, key2) => {
         return actionItemConfig.value[key2];
       };
-      exports2.getPluginConfig = getPluginConfig;
-      var getPluginDuration = () => {
+      exports2.getPluginConfig = getPluginConfig2;
+      var getPluginDuration3 = () => {
         return null;
       };
-      exports2.getPluginDuration = getPluginDuration;
+      exports2.getPluginDuration = getPluginDuration3;
       var DEFAULT_VALUES = Object.freeze({
         positionX: 0,
         positionY: 0,
@@ -18018,20 +17879,20 @@
         scaleY: 1,
         scaleZ: 1
       });
-      var getPluginOrigin = (refState, actionItem) => {
+      var getPluginOrigin2 = (refState2, actionItem) => {
         const destination = actionItem.config.value;
         const destinationKeys = Object.keys(destination);
-        if (refState) {
-          const stateKeys = Object.keys(refState);
-          const diffKeys = difference(destinationKeys, stateKeys);
+        if (refState2) {
+          const stateKeys2 = Object.keys(refState2);
+          const diffKeys = difference(destinationKeys, stateKeys2);
           if (diffKeys.length) {
             const origin2 = diffKeys.reduce((result, key2) => {
               result[key2] = DEFAULT_VALUES[key2];
               return result;
-            }, refState);
+            }, refState2);
             return origin2;
           }
-          return refState;
+          return refState2;
         }
         const origin = destinationKeys.reduce((result, key2) => {
           result[key2] = DEFAULT_VALUES[key2];
@@ -18039,18 +17900,18 @@
         }, {});
         return origin;
       };
-      exports2.getPluginOrigin = getPluginOrigin;
-      var getPluginDestination = (actionItemConfig) => {
+      exports2.getPluginOrigin = getPluginOrigin2;
+      var getPluginDestination2 = (actionItemConfig) => {
         return actionItemConfig.value;
       };
-      exports2.getPluginDestination = getPluginDestination;
-      var createPluginInstance = (element, actionItem) => {
+      exports2.getPluginDestination = getPluginDestination2;
+      var createPluginInstance3 = (element, actionItem) => {
         var _actionItem$config, _actionItem$config$ta;
         const pluginElementId = actionItem === null || actionItem === void 0 ? void 0 : (_actionItem$config = actionItem.config) === null || _actionItem$config === void 0 ? void 0 : (_actionItem$config$ta = _actionItem$config.target) === null || _actionItem$config$ta === void 0 ? void 0 : _actionItem$config$ta.pluginElement;
         return pluginElementId ? queryContainerElement(pluginElementId) : null;
       };
-      exports2.createPluginInstance = createPluginInstance;
-      var renderPlugin = (containerElement, refState, actionItem) => {
+      exports2.createPluginInstance = createPluginInstance3;
+      var renderPlugin2 = (containerElement, refState2, actionItem) => {
         const frontendModule = getFrontendModule();
         const instance = frontendModule.getInstance(containerElement);
         const objectId = actionItem.config.target.objectId;
@@ -18064,7 +17925,7 @@
           }
           const {
             PLUGIN_SPLINE: props
-          } = refState;
+          } = refState2;
           if (props.positionX != null) {
             obj.position.x = props.positionX;
           }
@@ -18099,11 +17960,11 @@
           frontendModule.setLoadHandler(containerElement, renderSpline);
         }
       };
-      exports2.renderPlugin = renderPlugin;
-      var clearPlugin = () => {
+      exports2.renderPlugin = renderPlugin2;
+      var clearPlugin2 = () => {
         return null;
       };
-      exports2.clearPlugin = clearPlugin;
+      exports2.clearPlugin = clearPlugin2;
     }
   });
 
@@ -18235,17 +18096,17 @@
           alpha
         };
       }
-      var getPluginConfig = (actionItemConfig, key2) => {
+      var getPluginConfig2 = (actionItemConfig, key2) => {
         return actionItemConfig.value[key2];
       };
-      exports2.getPluginConfig = getPluginConfig;
-      var getPluginDuration = () => {
+      exports2.getPluginConfig = getPluginConfig2;
+      var getPluginDuration3 = () => {
         return null;
       };
-      exports2.getPluginDuration = getPluginDuration;
-      var getPluginOrigin = (refState, actionItem) => {
-        if (refState) {
-          return refState;
+      exports2.getPluginDuration = getPluginDuration3;
+      var getPluginOrigin2 = (refState2, actionItem) => {
+        if (refState2) {
+          return refState2;
         }
         const destination = actionItem.config.value;
         const objectId = actionItem.config.target.objectId;
@@ -18259,31 +18120,31 @@
           return normalizeColor(computedValue);
         }
       };
-      exports2.getPluginOrigin = getPluginOrigin;
-      var getPluginDestination = (actionItemConfig) => {
+      exports2.getPluginOrigin = getPluginOrigin2;
+      var getPluginDestination2 = (actionItemConfig) => {
         return actionItemConfig.value;
       };
-      exports2.getPluginDestination = getPluginDestination;
-      var createPluginInstance = () => {
+      exports2.getPluginDestination = getPluginDestination2;
+      var createPluginInstance3 = () => {
         return null;
       };
-      exports2.createPluginInstance = createPluginInstance;
-      var renderPlugin = (_, refState, actionItem) => {
+      exports2.createPluginInstance = createPluginInstance3;
+      var renderPlugin2 = (_, refState2, actionItem) => {
         const objectId = actionItem.config.target.objectId;
         const unit = actionItem.config.value.unit;
         const {
           PLUGIN_VARIABLE: props
-        } = refState;
+        } = refState2;
         const {
-          size,
+          size: size2,
           red,
           green,
           blue,
           alpha
         } = props;
         let value2;
-        if (size != null) {
-          value2 = size + unit;
+        if (size2 != null) {
+          value2 = size2 + unit;
         }
         if (red != null && blue != null && green != null && alpha != null) {
           value2 = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
@@ -18292,12 +18153,12 @@
           document.documentElement.style.setProperty(objectId, value2);
         }
       };
-      exports2.renderPlugin = renderPlugin;
-      var clearPlugin = (ref, actionItem) => {
+      exports2.renderPlugin = renderPlugin2;
+      var clearPlugin2 = (ref, actionItem) => {
         const objectId = actionItem.config.target.objectId;
         document.documentElement.style.removeProperty(objectId);
       };
-      exports2.clearPlugin = clearPlugin;
+      exports2.clearPlugin = clearPlugin2;
     }
   });
 
@@ -18306,41 +18167,51 @@
     "packages/systems/ix2/plugins/index.js"(exports2) {
       "use strict";
       var _interopRequireWildcard = require_interopRequireWildcard().default;
-      var _interopRequireDefault = require_interopRequireDefault().default;
       Object.defineProperty(exports2, "__esModule", {
         value: true
       });
       exports2.pluginMethodMap = void 0;
-      var _extends2 = _interopRequireDefault(require_extends());
-      var _constants = require_constants();
+      var _constants = (init_constants(), __toCommonJS(constants_exports));
       var lottie2 = _interopRequireWildcard(require_IX2Lottie());
       var spline = _interopRequireWildcard(require_IX2Spline());
       var variable = _interopRequireWildcard(require_IX2Variable());
-      var pluginMethodMap = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, (0, _extends2.default)({}, lottie2)], [_constants.ActionTypeConsts.PLUGIN_SPLINE, (0, _extends2.default)({}, spline)], [_constants.ActionTypeConsts.PLUGIN_VARIABLE, (0, _extends2.default)({}, variable)]]);
-      exports2.pluginMethodMap = pluginMethodMap;
+      var pluginMethodMap2 = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, {
+        ...lottie2
+      }], [_constants.ActionTypeConsts.PLUGIN_SPLINE, {
+        ...spline
+      }], [_constants.ActionTypeConsts.PLUGIN_VARIABLE, {
+        ...variable
+      }]]);
+      exports2.pluginMethodMap = pluginMethodMap2;
     }
   });
 
-  // packages/systems/ix2/shared/logic/IX2VanillaPlugins.js
-  var require_IX2VanillaPlugins = __commonJS({
-    "packages/systems/ix2/shared/logic/IX2VanillaPlugins.js"(exports2) {
+  // packages/systems/ix2/shared/logic/IX2VanillaPlugins.ts
+  var IX2VanillaPlugins_exports = {};
+  __export(IX2VanillaPlugins_exports, {
+    clearPlugin: () => clearPlugin,
+    createPluginInstance: () => createPluginInstance,
+    getPluginConfig: () => getPluginConfig,
+    getPluginDestination: () => getPluginDestination,
+    getPluginDuration: () => getPluginDuration,
+    getPluginOrigin: () => getPluginOrigin,
+    isPluginType: () => isPluginType,
+    renderPlugin: () => renderPlugin
+  });
+  function isPluginType(actionTypeId) {
+    return import_plugins.pluginMethodMap.has(actionTypeId);
+  }
+  var import_plugins, pluginMethod, getPluginConfig, getPluginOrigin, getPluginDuration, getPluginDestination, createPluginInstance, renderPlugin, clearPlugin;
+  var init_IX2VanillaPlugins = __esm({
+    "packages/systems/ix2/shared/logic/IX2VanillaPlugins.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.getPluginOrigin = exports2.getPluginDuration = exports2.getPluginDestination = exports2.getPluginConfig = exports2.createPluginInstance = exports2.clearPlugin = void 0;
-      exports2.isPluginType = isPluginType;
-      exports2.renderPlugin = void 0;
-      var _IX2BrowserSupport = require_IX2BrowserSupport();
-      var _plugins = require_plugins();
-      function isPluginType(actionTypeId) {
-        return _plugins.pluginMethodMap.has(actionTypeId);
-      }
-      var pluginMethod = (methodName) => (actionTypeId) => {
-        if (!_IX2BrowserSupport.IS_BROWSER_ENV) {
+      init_IX2BrowserSupport();
+      import_plugins = __toESM(require_plugins());
+      pluginMethod = (methodName) => (actionTypeId) => {
+        if (!IS_BROWSER_ENV) {
           return () => null;
         }
-        const plugin = _plugins.pluginMethodMap.get(actionTypeId);
+        const plugin = import_plugins.pluginMethodMap.get(actionTypeId);
         if (!plugin) {
           throw new Error(`IX2 no plugin configured for: ${actionTypeId}`);
         }
@@ -18350,30 +18221,23 @@
         }
         return method;
       };
-      var getPluginConfig = pluginMethod("getPluginConfig");
-      exports2.getPluginConfig = getPluginConfig;
-      var getPluginOrigin = pluginMethod("getPluginOrigin");
-      exports2.getPluginOrigin = getPluginOrigin;
-      var getPluginDuration = pluginMethod("getPluginDuration");
-      exports2.getPluginDuration = getPluginDuration;
-      var getPluginDestination = pluginMethod("getPluginDestination");
-      exports2.getPluginDestination = getPluginDestination;
-      var createPluginInstance = pluginMethod("createPluginInstance");
-      exports2.createPluginInstance = createPluginInstance;
-      var renderPlugin = pluginMethod("renderPlugin");
-      exports2.renderPlugin = renderPlugin;
-      var clearPlugin = pluginMethod("clearPlugin");
-      exports2.clearPlugin = clearPlugin;
+      getPluginConfig = pluginMethod("getPluginConfig");
+      getPluginOrigin = pluginMethod("getPluginOrigin");
+      getPluginDuration = pluginMethod("getPluginDuration");
+      getPluginDestination = pluginMethod("getPluginDestination");
+      createPluginInstance = pluginMethod("createPluginInstance");
+      renderPlugin = pluginMethod("renderPlugin");
+      clearPlugin = pluginMethod("clearPlugin");
     }
   });
 
   // node_modules/lodash/defaultTo.js
   var require_defaultTo = __commonJS({
     "node_modules/lodash/defaultTo.js"(exports2, module2) {
-      function defaultTo(value2, defaultValue) {
+      function defaultTo2(value2, defaultValue) {
         return value2 == null || value2 !== value2 ? defaultValue : value2;
       }
-      module2.exports = defaultTo;
+      module2.exports = defaultTo2;
     }
   });
 
@@ -18490,11 +18354,11 @@
       var baseIteratee = require_baseIteratee();
       var baseReduce = require_baseReduce();
       var isArray = require_isArray();
-      function reduce(collection, iteratee, accumulator) {
+      function reduce2(collection, iteratee, accumulator) {
         var func = isArray(collection) ? arrayReduce : baseReduce, initAccum = arguments.length < 3;
         return func(collection, baseIteratee(iteratee, 4), accumulator, initAccum, baseEach);
       }
-      module2.exports = reduce;
+      module2.exports = reduce2;
     }
   });
 
@@ -18527,666 +18391,996 @@
     "node_modules/lodash/findLast.js"(exports2, module2) {
       var createFind = require_createFind();
       var findLastIndex = require_findLastIndex();
-      var findLast = createFind(findLastIndex);
-      module2.exports = findLast;
+      var findLast2 = createFind(findLastIndex);
+      module2.exports = findLast2;
     }
   });
 
-  // packages/systems/ix2/shared/logic/shallowEqual.js
-  var require_shallowEqual = __commonJS({
-    "packages/systems/ix2/shared/logic/shallowEqual.js"(exports2) {
-      "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.default = void 0;
-      var hasOwnProperty = Object.prototype.hasOwnProperty;
-      function is(x, y) {
-        if (x === y) {
-          return x !== 0 || y !== 0 || 1 / x === 1 / y;
-        }
-        return x !== x && y !== y;
+  // packages/systems/ix2/shared/logic/shallowEqual.ts
+  function is(x, y) {
+    if (x === y) {
+      return x !== 0 || y !== 0 || 1 / x === 1 / y;
+    }
+    return x !== x && y !== y;
+  }
+  function shallowEqual(objA, objB) {
+    if (is(objA, objB)) {
+      return true;
+    }
+    if (typeof objA !== "object" || objA === null || typeof objB !== "object" || objB === null) {
+      return false;
+    }
+    const keysA = Object.keys(objA);
+    const keysB = Object.keys(objB);
+    if (keysA.length !== keysB.length) {
+      return false;
+    }
+    for (let i = 0; i < keysA.length; i++) {
+      if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
+        return false;
       }
-      function shallowEqual(objA, objB) {
-        if (is(objA, objB)) {
-          return true;
+    }
+    return true;
+  }
+  var hasOwnProperty, shallowEqual_default;
+  var init_shallowEqual = __esm({
+    "packages/systems/ix2/shared/logic/shallowEqual.ts"() {
+      "use strict";
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      shallowEqual_default = shallowEqual;
+    }
+  });
+
+  // packages/systems/ix2/shared/logic/IX2VanillaUtils.ts
+  var IX2VanillaUtils_exports = {};
+  __export(IX2VanillaUtils_exports, {
+    cleanupHTMLElement: () => cleanupHTMLElement,
+    clearAllStyles: () => clearAllStyles,
+    clearObjectCache: () => clearObjectCache,
+    getActionListProgress: () => getActionListProgress,
+    getAffectedElements: () => getAffectedElements,
+    getComputedStyle: () => getComputedStyle2,
+    getDestinationValues: () => getDestinationValues,
+    getElementId: () => getElementId,
+    getInstanceId: () => getInstanceId,
+    getInstanceOrigin: () => getInstanceOrigin,
+    getItemConfigByKey: () => getItemConfigByKey,
+    getMaxDurationItemIndex: () => getMaxDurationItemIndex,
+    getNamespacedParameterId: () => getNamespacedParameterId,
+    getRenderType: () => getRenderType,
+    getStyleProp: () => getStyleProp,
+    mediaQueriesEqual: () => mediaQueriesEqual,
+    observeStore: () => observeStore,
+    reduceListToGroup: () => reduceListToGroup,
+    reifyState: () => reifyState,
+    renderHTMLElement: () => renderHTMLElement,
+    shallowEqual: () => shallowEqual_default,
+    shouldAllowMediaQuery: () => shouldAllowMediaQuery,
+    shouldNamespaceEventParameter: () => shouldNamespaceEventParameter,
+    stringifyTarget: () => stringifyTarget
+  });
+  function clearObjectCache() {
+    objectCache.clear();
+  }
+  function getInstanceId() {
+    return "i" + instanceCount++;
+  }
+  function getElementId(ixElements3, ref) {
+    for (const key2 in ixElements3) {
+      const ixEl = ixElements3[key2];
+      if (ixEl && ixEl.ref === ref) {
+        return ixEl.id;
+      }
+    }
+    return "e" + elementCount++;
+  }
+  function reifyState({ events, actionLists, site } = {}) {
+    const eventTypeMap = (0, import_reduce.default)(
+      events,
+      (result, event) => {
+        const { eventTypeId } = event;
+        if (!result[eventTypeId]) {
+          result[eventTypeId] = {};
         }
-        if (typeof objA !== "object" || objA === null || typeof objB !== "object" || objB === null) {
-          return false;
+        result[eventTypeId][event.id] = event;
+        return result;
+      },
+      {}
+    );
+    let mediaQueries = site && site.mediaQueries;
+    let mediaQueryKeys = [];
+    if (mediaQueries) {
+      mediaQueryKeys = mediaQueries.map((mq) => mq.key);
+    } else {
+      mediaQueries = [];
+      console.warn(`IX2 missing mediaQueries in site data`);
+    }
+    return {
+      ixData: {
+        events,
+        actionLists,
+        eventTypeMap,
+        mediaQueries,
+        mediaQueryKeys
+      }
+    };
+  }
+  function observeStore({
+    // @ts-expect-error - TS7031 - Binding element 'store' implicitly has an 'any' type.
+    store,
+    // @ts-expect-error - TS7031 - Binding element 'select' implicitly has an 'any' type.
+    select,
+    // @ts-expect-error - TS7031 - Binding element 'onChange' implicitly has an 'any' type.
+    onChange,
+    comparator = strictEqual
+  }) {
+    const { getState, subscribe } = store;
+    const unsubscribe = subscribe(handleChange);
+    let currentState = select(getState());
+    function handleChange() {
+      const nextState = select(getState());
+      if (nextState == null) {
+        unsubscribe();
+        return;
+      }
+      if (!comparator(nextState, currentState)) {
+        currentState = nextState;
+        onChange(currentState, store);
+      }
+    }
+    return unsubscribe;
+  }
+  function normalizeTarget(target) {
+    const type = typeof target;
+    if (type === "string") {
+      return { id: target };
+    } else if (target != null && type === "object") {
+      const { id, objectId, selector, selectorGuids, appliesTo, useEventTarget } = target;
+      return { id, objectId, selector, selectorGuids, appliesTo, useEventTarget };
+    }
+    return {};
+  }
+  function getAffectedElements({
+    config,
+    event,
+    eventTarget,
+    elementRoot,
+    elementApi
+  }) {
+    if (!elementApi) {
+      throw new Error("IX2 missing elementApi");
+    }
+    const { targets } = config;
+    if (Array.isArray(targets) && targets.length > 0) {
+      return targets.reduce(
+        (accumulator, target2) => accumulator.concat(
+          getAffectedElements({
+            config: { target: target2 },
+            event,
+            eventTarget,
+            elementRoot,
+            elementApi
+          })
+        ),
+        []
+      );
+    }
+    const {
+      getValidDocument: getValidDocument2,
+      getQuerySelector: getQuerySelector2,
+      queryDocument: queryDocument2,
+      getChildElements: getChildElements2,
+      getSiblingElements: getSiblingElements2,
+      matchSelector: matchSelector2,
+      elementContains: elementContains2,
+      isSiblingNode: isSiblingNode2
+    } = elementApi;
+    const { target } = config;
+    if (!target) {
+      return [];
+    }
+    const {
+      id,
+      objectId,
+      selector,
+      selectorGuids,
+      appliesTo,
+      useEventTarget
+    } = normalizeTarget(target);
+    if (objectId) {
+      const ref = objectCache.has(objectId) ? objectCache.get(objectId) : objectCache.set(objectId, {}).get(objectId);
+      return [ref];
+    }
+    if (appliesTo === EventAppliesTo.PAGE) {
+      const doc = getValidDocument2(id);
+      return doc ? [doc] : [];
+    }
+    const overrides = event?.action?.config?.affectedElements ?? {};
+    const override = overrides[id || selector] || {};
+    const validOverride = Boolean(override.id || override.selector);
+    let limitAffectedElements;
+    let baseSelector;
+    let finalSelector;
+    const eventTargetSelector = event && getQuerySelector2(normalizeTarget(event.target));
+    if (validOverride) {
+      limitAffectedElements = override.limitAffectedElements;
+      baseSelector = eventTargetSelector;
+      finalSelector = getQuerySelector2(override);
+    } else {
+      baseSelector = finalSelector = getQuerySelector2({
+        id,
+        selector,
+        selectorGuids
+      });
+    }
+    if (event && useEventTarget) {
+      const eventTargets = eventTarget && (finalSelector || useEventTarget === true) ? [eventTarget] : queryDocument2(eventTargetSelector);
+      if (finalSelector) {
+        if (useEventTarget === PARENT2) {
+          return queryDocument2(finalSelector).filter(
+            (parentElement) => eventTargets.some(
+              (targetElement) => elementContains2(parentElement, targetElement)
+            )
+          );
         }
-        const keysA = Object.keys(objA);
-        const keysB = Object.keys(objB);
-        if (keysA.length !== keysB.length) {
-          return false;
+        if (useEventTarget === CHILDREN2) {
+          return queryDocument2(finalSelector).filter(
+            (childElement) => eventTargets.some(
+              (targetElement) => elementContains2(targetElement, childElement)
+            )
+          );
         }
-        for (let i = 0; i < keysA.length; i++) {
-          if (!hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
-            return false;
+        if (useEventTarget === SIBLINGS2) {
+          return queryDocument2(finalSelector).filter(
+            (siblingElement) => eventTargets.some(
+              (targetElement) => isSiblingNode2(targetElement, siblingElement)
+            )
+          );
+        }
+      }
+      return eventTargets;
+    }
+    if (baseSelector == null || finalSelector == null) {
+      return [];
+    }
+    if (IS_BROWSER_ENV && elementRoot) {
+      return queryDocument2(finalSelector).filter(
+        (element) => elementRoot.contains(element)
+      );
+    }
+    if (limitAffectedElements === CHILDREN2) {
+      return queryDocument2(baseSelector, finalSelector);
+    } else if (limitAffectedElements === IMMEDIATE_CHILDREN2) {
+      return getChildElements2(queryDocument2(baseSelector)).filter(
+        matchSelector2(finalSelector)
+      );
+    } else if (limitAffectedElements === SIBLINGS2) {
+      return getSiblingElements2(queryDocument2(baseSelector)).filter(
+        matchSelector2(finalSelector)
+      );
+    } else {
+      return queryDocument2(finalSelector);
+    }
+  }
+  function getComputedStyle2({ element, actionItem }) {
+    if (!IS_BROWSER_ENV) {
+      return {};
+    }
+    const { actionTypeId } = actionItem;
+    switch (actionTypeId) {
+      case STYLE_SIZE2:
+      case STYLE_BACKGROUND_COLOR:
+      case STYLE_BORDER:
+      case STYLE_TEXT_COLOR:
+      case GENERAL_DISPLAY:
+        return window.getComputedStyle(element);
+      default:
+        return {};
+    }
+  }
+  function getInstanceOrigin(element, refState2 = {}, computedStyle = {}, actionItem, elementApi) {
+    const { getStyle: getStyle2 } = elementApi;
+    const { actionTypeId } = actionItem;
+    if (isPluginType(actionTypeId)) {
+      return getPluginOrigin(actionTypeId)(refState2[actionTypeId], actionItem);
+    }
+    switch (actionItem.actionTypeId) {
+      case TRANSFORM_MOVE2:
+      case TRANSFORM_SCALE2:
+      case TRANSFORM_ROTATE2:
+      case TRANSFORM_SKEW2: {
+        return (
+          // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type '"TRANSFORM_MOVE" | "TRANSFORM_SCALE" | "TRANSFORM_ROTATE" | "TRANSFORM_SKEW"' can't be used to index type '{}'.
+          refState2[actionItem.actionTypeId] || transformDefaults[actionItem.actionTypeId]
+        );
+      }
+      case STYLE_FILTER2:
+        return getFilterDefaults(
+          // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type '"STYLE_FILTER"' can't be used to index type '{}'.
+          refState2[actionItem.actionTypeId],
+          actionItem.config.filters
+        );
+      case STYLE_FONT_VARIATION2:
+        return getFontVariationDefaults(
+          // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type '"STYLE_FONT_VARIATION"' can't be used to index type '{}'.
+          refState2[actionItem.actionTypeId],
+          actionItem.config.fontVariations
+        );
+      case STYLE_OPACITY:
+        return { value: (0, import_defaultTo.default)(parseFloat(getStyle2(element, OPACITY2)), 1) };
+      case STYLE_SIZE2: {
+        const inlineWidth = getStyle2(element, WIDTH2);
+        const inlineHeight = getStyle2(element, HEIGHT2);
+        let widthValue;
+        let heightValue;
+        if (actionItem.config.widthUnit === AUTO2) {
+          widthValue = pxValueRegex.test(inlineWidth) ? parseFloat(inlineWidth) : (
+            // @ts-expect-error - TS18047 - 'computedStyle' is possibly 'null'.
+            parseFloat(computedStyle.width)
+          );
+        } else {
+          widthValue = (0, import_defaultTo.default)(
+            parseFloat(inlineWidth),
+            // @ts-expect-error - TS18047 - 'computedStyle' is possibly 'null'.
+            parseFloat(computedStyle.width)
+          );
+        }
+        if (actionItem.config.heightUnit === AUTO2) {
+          heightValue = pxValueRegex.test(inlineHeight) ? parseFloat(inlineHeight) : (
+            // @ts-expect-error - TS18047 - 'computedStyle' is possibly 'null'.
+            parseFloat(computedStyle.height)
+          );
+        } else {
+          heightValue = (0, import_defaultTo.default)(
+            parseFloat(inlineHeight),
+            // @ts-expect-error - TS18047 - 'computedStyle' is possibly 'null'.
+            parseFloat(computedStyle.height)
+          );
+        }
+        return {
+          widthValue,
+          heightValue
+        };
+      }
+      case STYLE_BACKGROUND_COLOR:
+      case STYLE_BORDER:
+      case STYLE_TEXT_COLOR:
+        return parseColor({
+          element,
+          actionTypeId: actionItem.actionTypeId,
+          computedStyle,
+          getStyle: getStyle2
+        });
+      case GENERAL_DISPLAY:
+        return {
+          // @ts-expect-error - TS18047 - 'computedStyle' is possibly 'null'.
+          value: (0, import_defaultTo.default)(getStyle2(element, DISPLAY2), computedStyle.display)
+        };
+      case OBJECT_VALUE:
+        return refState2[actionItem.actionTypeId] || { value: 0 };
+      default: {
+        return;
+      }
+    }
+  }
+  function getDestinationValues({
+    element,
+    actionItem,
+    elementApi
+  }) {
+    if (isPluginType(actionItem.actionTypeId)) {
+      return getPluginDestination(actionItem.actionTypeId)(actionItem.config);
+    }
+    switch (actionItem.actionTypeId) {
+      case TRANSFORM_MOVE2:
+      case TRANSFORM_SCALE2:
+      case TRANSFORM_ROTATE2:
+      case TRANSFORM_SKEW2: {
+        const { xValue, yValue, zValue } = actionItem.config;
+        return { xValue, yValue, zValue };
+      }
+      case STYLE_SIZE2: {
+        const { getStyle: getStyle2, setStyle: setStyle2, getProperty: getProperty2 } = elementApi;
+        const { widthUnit, heightUnit } = actionItem.config;
+        let { widthValue, heightValue } = actionItem.config;
+        if (!IS_BROWSER_ENV) {
+          return { widthValue, heightValue };
+        }
+        if (widthUnit === AUTO2) {
+          const temp = getStyle2(element, WIDTH2);
+          setStyle2(element, WIDTH2, "");
+          widthValue = getProperty2(element, "offsetWidth");
+          setStyle2(element, WIDTH2, temp);
+        }
+        if (heightUnit === AUTO2) {
+          const temp = getStyle2(element, HEIGHT2);
+          setStyle2(element, HEIGHT2, "");
+          heightValue = getProperty2(element, "offsetHeight");
+          setStyle2(element, HEIGHT2, temp);
+        }
+        return { widthValue, heightValue };
+      }
+      case STYLE_BACKGROUND_COLOR:
+      case STYLE_BORDER:
+      case STYLE_TEXT_COLOR: {
+        const { rValue, gValue, bValue, aValue } = actionItem.config;
+        return { rValue, gValue, bValue, aValue };
+      }
+      case STYLE_FILTER2: {
+        return actionItem.config.filters.reduce(
+          reduceFilters,
+          {}
+        );
+      }
+      case STYLE_FONT_VARIATION2: {
+        return actionItem.config.fontVariations.reduce(
+          reduceFontVariations,
+          {}
+        );
+      }
+      default: {
+        const { value: value2 } = actionItem.config;
+        return { value: value2 };
+      }
+    }
+  }
+  function getRenderType(actionTypeId) {
+    if (/^TRANSFORM_/.test(actionTypeId)) {
+      return RENDER_TRANSFORM2;
+    }
+    if (/^STYLE_/.test(actionTypeId)) {
+      return RENDER_STYLE2;
+    }
+    if (/^GENERAL_/.test(actionTypeId)) {
+      return RENDER_GENERAL2;
+    }
+    if (/^PLUGIN_/.test(actionTypeId)) {
+      return RENDER_PLUGIN2;
+    }
+  }
+  function getStyleProp(renderType, actionTypeId) {
+    return renderType === RENDER_STYLE2 ? actionTypeId.replace("STYLE_", "").toLowerCase() : null;
+  }
+  function renderHTMLElement(element, refState2, actionState, eventId, actionItem, styleProp, elementApi, renderType, pluginInstance) {
+    switch (renderType) {
+      case RENDER_TRANSFORM2: {
+        return renderTransform(
+          element,
+          refState2,
+          actionState,
+          actionItem,
+          elementApi
+        );
+      }
+      case RENDER_STYLE2: {
+        return renderStyle(
+          element,
+          refState2,
+          actionState,
+          actionItem,
+          styleProp,
+          elementApi
+        );
+      }
+      case RENDER_GENERAL2: {
+        return renderGeneral(element, actionItem, elementApi);
+      }
+      case RENDER_PLUGIN2: {
+        const { actionTypeId } = actionItem;
+        if (isPluginType(actionTypeId)) {
+          return renderPlugin(actionTypeId)(pluginInstance, refState2, actionItem);
+        }
+      }
+    }
+  }
+  function renderTransform(element, refState2, actionState, actionItem, elementApi) {
+    const newTransform = transformKeys.map((actionTypeId) => {
+      const defaults = transformDefaults[actionTypeId];
+      const {
+        xValue = defaults.xValue,
+        yValue = defaults.yValue,
+        zValue = defaults.zValue,
+        xUnit = "",
+        yUnit = "",
+        zUnit = ""
+      } = refState2[actionTypeId] || {};
+      switch (actionTypeId) {
+        case TRANSFORM_MOVE2:
+          return `${TRANSLATE_3D2}(${xValue}${xUnit}, ${yValue}${yUnit}, ${zValue}${zUnit})`;
+        case TRANSFORM_SCALE2:
+          return `${SCALE_3D2}(${xValue}${xUnit}, ${yValue}${yUnit}, ${zValue}${zUnit})`;
+        case TRANSFORM_ROTATE2:
+          return `${ROTATE_X2}(${xValue}${xUnit}) ${ROTATE_Y2}(${yValue}${yUnit}) ${ROTATE_Z2}(${zValue}${zUnit})`;
+        case TRANSFORM_SKEW2:
+          return `${SKEW2}(${xValue}${xUnit}, ${yValue}${yUnit})`;
+        default:
+          return "";
+      }
+    }).join(" ");
+    const { setStyle: setStyle2 } = elementApi;
+    addWillChange(element, TRANSFORM_PREFIXED, elementApi);
+    setStyle2(element, TRANSFORM_PREFIXED, newTransform);
+    if (hasDefined3dTransform(actionItem, actionState)) {
+      setStyle2(element, TRANSFORM_STYLE_PREFIXED, PRESERVE_3D2);
+    }
+  }
+  function renderFilter(element, actionState, actionItemConfig, elementApi) {
+    const filterValue = (0, import_reduce.default)(
+      actionState,
+      (result, value2, type) => `${result} ${type}(${value2}${getFilterUnit(type, actionItemConfig)})`,
+      ""
+    );
+    const { setStyle: setStyle2 } = elementApi;
+    addWillChange(element, FILTER2, elementApi);
+    setStyle2(element, FILTER2, filterValue);
+  }
+  function renderFontVariation(element, actionState, actionItemConfig, elementApi) {
+    const fontVariationValue = (0, import_reduce.default)(
+      actionState,
+      (result, value2, type) => {
+        result.push(`"${type}" ${value2}`);
+        return result;
+      },
+      []
+    ).join(", ");
+    const { setStyle: setStyle2 } = elementApi;
+    addWillChange(element, FONT_VARIATION_SETTINGS2, elementApi);
+    setStyle2(element, FONT_VARIATION_SETTINGS2, fontVariationValue);
+  }
+  function hasDefined3dTransform({ actionTypeId }, { xValue, yValue, zValue }) {
+    return actionTypeId === TRANSFORM_MOVE2 && zValue !== void 0 || // SCALE_Z
+    actionTypeId === TRANSFORM_SCALE2 && zValue !== void 0 || // ROTATE_X or ROTATE_Y
+    actionTypeId === TRANSFORM_ROTATE2 && (xValue !== void 0 || yValue !== void 0);
+  }
+  function getFirstMatch(regex, value2) {
+    const match = regex.exec(value2);
+    return match ? match[1] : "";
+  }
+  function parseColor({ element, actionTypeId, computedStyle, getStyle: getStyle2 }) {
+    const prop = colorStyleProps[actionTypeId];
+    const inlineValue = getStyle2(element, prop);
+    const value2 = rgbValidRegex.test(inlineValue) ? inlineValue : computedStyle[prop];
+    const matches = getFirstMatch(rgbMatchRegex, value2).split(COMMA_DELIMITER2);
+    return {
+      rValue: (0, import_defaultTo.default)(parseInt(matches[0], 10), 255),
+      gValue: (0, import_defaultTo.default)(parseInt(matches[1], 10), 255),
+      bValue: (0, import_defaultTo.default)(parseInt(matches[2], 10), 255),
+      aValue: (0, import_defaultTo.default)(parseFloat(matches[3]), 1)
+    };
+  }
+  function renderStyle(element, refState2, actionState, actionItem, styleProp, elementApi) {
+    const { setStyle: setStyle2 } = elementApi;
+    switch (actionItem.actionTypeId) {
+      case STYLE_SIZE2: {
+        let { widthUnit = "", heightUnit = "" } = actionItem.config;
+        const { widthValue, heightValue } = actionState;
+        if (widthValue !== void 0) {
+          if (widthUnit === AUTO2) {
+            widthUnit = "px";
           }
+          addWillChange(element, WIDTH2, elementApi);
+          setStyle2(element, WIDTH2, widthValue + widthUnit);
         }
-        return true;
+        if (heightValue !== void 0) {
+          if (heightUnit === AUTO2) {
+            heightUnit = "px";
+          }
+          addWillChange(element, HEIGHT2, elementApi);
+          setStyle2(element, HEIGHT2, heightValue + heightUnit);
+        }
+        break;
       }
-      var _default = shallowEqual;
-      exports2.default = _default;
+      case STYLE_FILTER2: {
+        renderFilter(element, actionState, actionItem.config, elementApi);
+        break;
+      }
+      case STYLE_FONT_VARIATION2: {
+        renderFontVariation(element, actionState, actionItem.config, elementApi);
+        break;
+      }
+      case STYLE_BACKGROUND_COLOR:
+      case STYLE_BORDER:
+      case STYLE_TEXT_COLOR: {
+        const prop = colorStyleProps[actionItem.actionTypeId];
+        const rValue = Math.round(actionState.rValue);
+        const gValue = Math.round(actionState.gValue);
+        const bValue = Math.round(actionState.bValue);
+        const aValue = actionState.aValue;
+        addWillChange(element, prop, elementApi);
+        setStyle2(
+          element,
+          prop,
+          aValue >= 1 ? `rgb(${rValue},${gValue},${bValue})` : `rgba(${rValue},${gValue},${bValue},${aValue})`
+        );
+        break;
+      }
+      default: {
+        const { unit = "" } = actionItem.config;
+        addWillChange(element, styleProp, elementApi);
+        setStyle2(element, styleProp, actionState.value + unit);
+        break;
+      }
     }
-  });
-
-  // packages/systems/ix2/shared/logic/IX2VanillaUtils.js
-  var require_IX2VanillaUtils = __commonJS({
-    "packages/systems/ix2/shared/logic/IX2VanillaUtils.js"(exports2) {
-      "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.cleanupHTMLElement = cleanupHTMLElement;
-      exports2.clearAllStyles = clearAllStyles;
-      exports2.clearObjectCache = clearObjectCache;
-      exports2.getActionListProgress = getActionListProgress;
-      exports2.getAffectedElements = getAffectedElements;
-      exports2.getComputedStyle = getComputedStyle2;
-      exports2.getDestinationValues = getDestinationValues;
-      exports2.getElementId = getElementId;
-      exports2.getInstanceId = getInstanceId;
-      exports2.getInstanceOrigin = getInstanceOrigin;
-      exports2.getItemConfigByKey = void 0;
-      exports2.getMaxDurationItemIndex = getMaxDurationItemIndex;
-      exports2.getNamespacedParameterId = getNamespacedParameterId;
-      exports2.getRenderType = getRenderType;
-      exports2.getStyleProp = getStyleProp;
-      exports2.mediaQueriesEqual = mediaQueriesEqual;
-      exports2.observeStore = observeStore;
-      exports2.reduceListToGroup = reduceListToGroup;
-      exports2.reifyState = reifyState;
-      exports2.renderHTMLElement = renderHTMLElement;
-      Object.defineProperty(exports2, "shallowEqual", {
-        enumerable: true,
-        get: function() {
-          return _shallowEqual.default;
+  }
+  function renderGeneral(element, actionItem, elementApi) {
+    const { setStyle: setStyle2 } = elementApi;
+    switch (actionItem.actionTypeId) {
+      case GENERAL_DISPLAY: {
+        const { value: value2 } = actionItem.config;
+        if (value2 === FLEX2 && IS_BROWSER_ENV) {
+          setStyle2(element, DISPLAY2, FLEX_PREFIXED);
+        } else {
+          setStyle2(element, DISPLAY2, value2);
         }
+        return;
+      }
+    }
+  }
+  function addWillChange(element, prop, elementApi) {
+    if (!IS_BROWSER_ENV) {
+      return;
+    }
+    const validProp = willChangeProps[prop];
+    if (!validProp) {
+      return;
+    }
+    const { getStyle: getStyle2, setStyle: setStyle2 } = elementApi;
+    const value2 = getStyle2(element, WILL_CHANGE2);
+    if (!value2) {
+      setStyle2(element, WILL_CHANGE2, validProp);
+      return;
+    }
+    const values = value2.split(COMMA_DELIMITER2).map(trim);
+    if (values.indexOf(validProp) === -1) {
+      setStyle2(
+        element,
+        WILL_CHANGE2,
+        values.concat(validProp).join(COMMA_DELIMITER2)
+      );
+    }
+  }
+  function removeWillChange(element, prop, elementApi) {
+    if (!IS_BROWSER_ENV) {
+      return;
+    }
+    const validProp = willChangeProps[prop];
+    if (!validProp) {
+      return;
+    }
+    const { getStyle: getStyle2, setStyle: setStyle2 } = elementApi;
+    const value2 = getStyle2(element, WILL_CHANGE2);
+    if (!value2 || value2.indexOf(validProp) === -1) {
+      return;
+    }
+    setStyle2(
+      element,
+      WILL_CHANGE2,
+      value2.split(COMMA_DELIMITER2).map(trim).filter((v) => v !== validProp).join(COMMA_DELIMITER2)
+    );
+  }
+  function clearAllStyles({ store, elementApi }) {
+    const { ixData: ixData2 } = store.getState();
+    const { events = {}, actionLists = {} } = ixData2;
+    Object.keys(events).forEach((eventId) => {
+      const event = events[eventId];
+      const { config } = event.action;
+      const { actionListId } = config;
+      const actionList = actionLists[actionListId];
+      if (actionList) {
+        clearActionListStyles({ actionList, event, elementApi });
+      }
+    });
+    Object.keys(actionLists).forEach((actionListId) => {
+      clearActionListStyles({ actionList: actionLists[actionListId], elementApi });
+    });
+  }
+  function clearActionListStyles({ actionList = {}, event, elementApi }) {
+    const { actionItemGroups, continuousParameterGroups } = actionList;
+    actionItemGroups && // @ts-expect-error - TS7006 - Parameter 'actionGroup' implicitly has an 'any' type.
+    actionItemGroups.forEach((actionGroup) => {
+      clearActionGroupStyles({ actionGroup, event, elementApi });
+    });
+    continuousParameterGroups && // @ts-expect-error - TS7006 - Parameter 'paramGroup' implicitly has an 'any' type.
+    continuousParameterGroups.forEach((paramGroup) => {
+      const { continuousActionGroups } = paramGroup;
+      continuousActionGroups.forEach((actionGroup) => {
+        clearActionGroupStyles({ actionGroup, event, elementApi });
       });
-      exports2.shouldAllowMediaQuery = shouldAllowMediaQuery;
-      exports2.shouldNamespaceEventParameter = shouldNamespaceEventParameter;
-      exports2.stringifyTarget = stringifyTarget;
-      var _defaultTo = _interopRequireDefault(require_defaultTo());
-      var _reduce = _interopRequireDefault(require_reduce());
-      var _findLast = _interopRequireDefault(require_findLast());
-      var _timm = require_timm();
-      var _constants = require_constants();
-      var _shallowEqual = _interopRequireDefault(require_shallowEqual());
-      var _IX2EasingUtils = require_IX2EasingUtils();
-      var _IX2VanillaPlugins = require_IX2VanillaPlugins();
-      var _IX2BrowserSupport = require_IX2BrowserSupport();
-      var {
-        BACKGROUND,
-        TRANSFORM,
-        TRANSLATE_3D,
-        SCALE_3D,
-        ROTATE_X,
-        ROTATE_Y,
-        ROTATE_Z,
-        SKEW,
-        PRESERVE_3D,
-        FLEX,
-        OPACITY,
-        FILTER,
-        FONT_VARIATION_SETTINGS,
-        WIDTH,
-        HEIGHT,
-        BACKGROUND_COLOR,
-        BORDER_COLOR,
-        COLOR,
-        CHILDREN,
-        IMMEDIATE_CHILDREN,
-        SIBLINGS,
-        PARENT,
-        DISPLAY,
-        WILL_CHANGE,
-        AUTO,
-        COMMA_DELIMITER,
-        COLON_DELIMITER,
-        BAR_DELIMITER,
-        RENDER_TRANSFORM,
-        RENDER_GENERAL,
-        RENDER_STYLE,
-        RENDER_PLUGIN
-      } = _constants.IX2EngineConstants;
-      var {
-        TRANSFORM_MOVE,
-        TRANSFORM_SCALE,
-        TRANSFORM_ROTATE,
-        TRANSFORM_SKEW,
+    });
+  }
+  function clearActionGroupStyles({ actionGroup, event, elementApi }) {
+    const { actionItems } = actionGroup;
+    actionItems.forEach((actionItem) => {
+      const { actionTypeId, config } = actionItem;
+      let clearElement;
+      if (isPluginType(actionTypeId)) {
+        clearElement = (ref) => clearPlugin(actionTypeId)(ref, actionItem);
+      } else {
+        clearElement = processElementByType({
+          effect: clearStyleProp,
+          actionTypeId,
+          elementApi
+        });
+      }
+      getAffectedElements({ config, event, elementApi }).forEach(clearElement);
+    });
+  }
+  function cleanupHTMLElement(element, actionItem, elementApi) {
+    const { setStyle: setStyle2, getStyle: getStyle2 } = elementApi;
+    const { actionTypeId } = actionItem;
+    if (actionTypeId === STYLE_SIZE2) {
+      const { config } = actionItem;
+      if (config.widthUnit === AUTO2) {
+        setStyle2(element, WIDTH2, "");
+      }
+      if (config.heightUnit === AUTO2) {
+        setStyle2(element, HEIGHT2, "");
+      }
+    }
+    if (getStyle2(element, WILL_CHANGE2)) {
+      processElementByType({ effect: removeWillChange, actionTypeId, elementApi })(
+        element
+      );
+    }
+  }
+  function clearStyleProp(element, prop, elementApi) {
+    const { setStyle: setStyle2 } = elementApi;
+    removeWillChange(element, prop, elementApi);
+    setStyle2(element, prop, "");
+    if (prop === TRANSFORM_PREFIXED) {
+      setStyle2(element, TRANSFORM_STYLE_PREFIXED, "");
+    }
+  }
+  function getMaxDurationItemIndex(actionItems) {
+    let maxDuration = 0;
+    let resultIndex = 0;
+    actionItems.forEach((actionItem, index2) => {
+      const { config } = actionItem;
+      const total = config.delay + config.duration;
+      if (total >= maxDuration) {
+        maxDuration = total;
+        resultIndex = index2;
+      }
+    });
+    return resultIndex;
+  }
+  function getActionListProgress(actionList, instance) {
+    const { actionItemGroups, useFirstGroupAsInitialState } = actionList;
+    const { actionItem: instanceItem, verboseTimeElapsed = 0 } = instance;
+    let totalDuration = 0;
+    let elapsedDuration = 0;
+    actionItemGroups.forEach((group, index2) => {
+      if (useFirstGroupAsInitialState && index2 === 0) {
+        return;
+      }
+      const { actionItems } = group;
+      const carrierItem = actionItems[getMaxDurationItemIndex(actionItems)];
+      const { config, actionTypeId } = carrierItem;
+      if (instanceItem.id === carrierItem.id) {
+        elapsedDuration = totalDuration + verboseTimeElapsed;
+      }
+      const duration = getRenderType(actionTypeId) === RENDER_GENERAL2 ? 0 : config.duration;
+      totalDuration += config.delay + duration;
+    });
+    return totalDuration > 0 ? optimizeFloat(elapsedDuration / totalDuration) : 0;
+  }
+  function reduceListToGroup({ actionList, actionItemId, rawData }) {
+    const { actionItemGroups, continuousParameterGroups } = actionList;
+    const newActionItems = [];
+    const takeItemUntilMatch = (actionItem) => {
+      newActionItems.push(
+        (0, import_timm4.mergeIn)(actionItem, ["config"], {
+          delay: 0,
+          duration: 0
+        })
+      );
+      return actionItem.id === actionItemId;
+    };
+    actionItemGroups && // @ts-expect-error - TS7031 - Binding element 'actionItems' implicitly has an 'any' type.
+    actionItemGroups.some(({ actionItems }) => {
+      return actionItems.some(takeItemUntilMatch);
+    });
+    continuousParameterGroups && // @ts-expect-error - TS7006 - Parameter 'paramGroup' implicitly has an 'any' type.
+    continuousParameterGroups.some((paramGroup) => {
+      const { continuousActionGroups } = paramGroup;
+      return continuousActionGroups.some(({ actionItems }) => {
+        return actionItems.some(takeItemUntilMatch);
+      });
+    });
+    return (0, import_timm4.setIn)(rawData, ["actionLists"], {
+      [actionList.id]: {
+        id: actionList.id,
+        actionItemGroups: [
+          {
+            actionItems: newActionItems
+          }
+        ]
+      }
+    });
+  }
+  function shouldNamespaceEventParameter(eventTypeId, { basedOn }) {
+    return eventTypeId === EventTypeConsts.SCROLLING_IN_VIEW && (basedOn === EventBasedOn.ELEMENT || basedOn == null) || eventTypeId === EventTypeConsts.MOUSE_MOVE && basedOn === EventBasedOn.ELEMENT;
+  }
+  function getNamespacedParameterId(eventStateKey, continuousParameterGroupId) {
+    const namespacedParameterId = eventStateKey + COLON_DELIMITER2 + continuousParameterGroupId;
+    return namespacedParameterId;
+  }
+  function shouldAllowMediaQuery(mediaQueries, mediaQueryKey) {
+    if (mediaQueryKey == null) {
+      return true;
+    }
+    return mediaQueries.indexOf(mediaQueryKey) !== -1;
+  }
+  function mediaQueriesEqual(listA, listB) {
+    return shallowEqual_default(listA && listA.sort(), listB && listB.sort());
+  }
+  function stringifyTarget(target) {
+    if (typeof target === "string") {
+      return target;
+    }
+    if (target.pluginElement && target.objectId) {
+      return target.pluginElement + BAR_DELIMITER2 + target.objectId;
+    }
+    if (target.objectId) {
+      return target.objectId;
+    }
+    const { id = "", selector = "", useEventTarget = "" } = target;
+    return id + BAR_DELIMITER2 + selector + BAR_DELIMITER2 + useEventTarget;
+  }
+  var import_defaultTo, import_reduce, import_findLast, import_timm4, BACKGROUND2, TRANSFORM2, TRANSLATE_3D2, SCALE_3D2, ROTATE_X2, ROTATE_Y2, ROTATE_Z2, SKEW2, PRESERVE_3D2, FLEX2, OPACITY2, FILTER2, FONT_VARIATION_SETTINGS2, WIDTH2, HEIGHT2, BACKGROUND_COLOR2, BORDER_COLOR2, COLOR2, CHILDREN2, IMMEDIATE_CHILDREN2, SIBLINGS2, PARENT2, DISPLAY2, WILL_CHANGE2, AUTO2, COMMA_DELIMITER2, COLON_DELIMITER2, BAR_DELIMITER2, RENDER_TRANSFORM2, RENDER_GENERAL2, RENDER_STYLE2, RENDER_PLUGIN2, TRANSFORM_MOVE2, TRANSFORM_SCALE2, TRANSFORM_ROTATE2, TRANSFORM_SKEW2, STYLE_OPACITY, STYLE_FILTER2, STYLE_FONT_VARIATION2, STYLE_SIZE2, STYLE_BACKGROUND_COLOR, STYLE_BORDER, STYLE_TEXT_COLOR, GENERAL_DISPLAY, OBJECT_VALUE, trim, colorStyleProps, willChangeProps, objectCache, instanceCount, elementCount, strictEqual, pxValueRegex, getFilterDefaults, getFontVariationDefaults, reduceFilters, reduceFontVariations, getItemConfigByKey, transformDefaults, filterDefaults, fontVariationDefaults, getFilterUnit, transformKeys, paramCapture, rgbValidRegex, rgbMatchRegex, processElementByType;
+  var init_IX2VanillaUtils = __esm({
+    "packages/systems/ix2/shared/logic/IX2VanillaUtils.ts"() {
+      "use strict";
+      import_defaultTo = __toESM(require_defaultTo());
+      import_reduce = __toESM(require_reduce());
+      import_findLast = __toESM(require_findLast());
+      import_timm4 = __toESM(require_timm());
+      init_constants();
+      init_shallowEqual();
+      init_IX2EasingUtils();
+      init_IX2VanillaPlugins();
+      init_IX2BrowserSupport();
+      ({
+        BACKGROUND: BACKGROUND2,
+        TRANSFORM: TRANSFORM2,
+        TRANSLATE_3D: TRANSLATE_3D2,
+        SCALE_3D: SCALE_3D2,
+        ROTATE_X: ROTATE_X2,
+        ROTATE_Y: ROTATE_Y2,
+        ROTATE_Z: ROTATE_Z2,
+        SKEW: SKEW2,
+        PRESERVE_3D: PRESERVE_3D2,
+        FLEX: FLEX2,
+        OPACITY: OPACITY2,
+        FILTER: FILTER2,
+        FONT_VARIATION_SETTINGS: FONT_VARIATION_SETTINGS2,
+        WIDTH: WIDTH2,
+        HEIGHT: HEIGHT2,
+        BACKGROUND_COLOR: BACKGROUND_COLOR2,
+        BORDER_COLOR: BORDER_COLOR2,
+        COLOR: COLOR2,
+        CHILDREN: CHILDREN2,
+        IMMEDIATE_CHILDREN: IMMEDIATE_CHILDREN2,
+        SIBLINGS: SIBLINGS2,
+        PARENT: PARENT2,
+        DISPLAY: DISPLAY2,
+        WILL_CHANGE: WILL_CHANGE2,
+        AUTO: AUTO2,
+        COMMA_DELIMITER: COMMA_DELIMITER2,
+        COLON_DELIMITER: COLON_DELIMITER2,
+        BAR_DELIMITER: BAR_DELIMITER2,
+        RENDER_TRANSFORM: RENDER_TRANSFORM2,
+        RENDER_GENERAL: RENDER_GENERAL2,
+        RENDER_STYLE: RENDER_STYLE2,
+        RENDER_PLUGIN: RENDER_PLUGIN2
+      } = IX2EngineConstants_exports);
+      ({
+        TRANSFORM_MOVE: TRANSFORM_MOVE2,
+        TRANSFORM_SCALE: TRANSFORM_SCALE2,
+        TRANSFORM_ROTATE: TRANSFORM_ROTATE2,
+        TRANSFORM_SKEW: TRANSFORM_SKEW2,
         STYLE_OPACITY,
-        STYLE_FILTER,
-        STYLE_FONT_VARIATION,
-        STYLE_SIZE,
+        STYLE_FILTER: STYLE_FILTER2,
+        STYLE_FONT_VARIATION: STYLE_FONT_VARIATION2,
+        STYLE_SIZE: STYLE_SIZE2,
         STYLE_BACKGROUND_COLOR,
         STYLE_BORDER,
         STYLE_TEXT_COLOR,
         GENERAL_DISPLAY,
         OBJECT_VALUE
-      } = _constants.ActionTypeConsts;
-      var trim = (v) => v.trim();
-      var colorStyleProps = Object.freeze({
-        [STYLE_BACKGROUND_COLOR]: BACKGROUND_COLOR,
-        [STYLE_BORDER]: BORDER_COLOR,
-        [STYLE_TEXT_COLOR]: COLOR
+      } = ActionTypeConsts);
+      trim = (v) => v.trim();
+      colorStyleProps = Object.freeze({
+        [STYLE_BACKGROUND_COLOR]: BACKGROUND_COLOR2,
+        [STYLE_BORDER]: BORDER_COLOR2,
+        [STYLE_TEXT_COLOR]: COLOR2
       });
-      var willChangeProps = Object.freeze({
-        // $FlowFixMe
-        [_IX2BrowserSupport.TRANSFORM_PREFIXED]: TRANSFORM,
-        [BACKGROUND_COLOR]: BACKGROUND,
-        [OPACITY]: OPACITY,
-        [FILTER]: FILTER,
-        [WIDTH]: WIDTH,
-        [HEIGHT]: HEIGHT,
-        [FONT_VARIATION_SETTINGS]: FONT_VARIATION_SETTINGS
+      willChangeProps = Object.freeze({
+        [TRANSFORM_PREFIXED]: TRANSFORM2,
+        [BACKGROUND_COLOR2]: BACKGROUND2,
+        [OPACITY2]: OPACITY2,
+        [FILTER2]: FILTER2,
+        [WIDTH2]: WIDTH2,
+        [HEIGHT2]: HEIGHT2,
+        [FONT_VARIATION_SETTINGS2]: FONT_VARIATION_SETTINGS2
       });
-      var objectCache = /* @__PURE__ */ new Map();
-      function clearObjectCache() {
-        objectCache.clear();
-      }
-      var instanceCount = 1;
-      function getInstanceId() {
-        return "i" + instanceCount++;
-      }
-      var elementCount = 1;
-      function getElementId(ixElements, ref) {
-        for (const key2 in ixElements) {
-          const ixEl = ixElements[key2];
-          if (ixEl && ixEl.ref === ref) {
-            return ixEl.id;
+      objectCache = /* @__PURE__ */ new Map();
+      instanceCount = 1;
+      elementCount = 1;
+      strictEqual = (a, b) => a === b;
+      pxValueRegex = /px/;
+      getFilterDefaults = (actionState, filters) => (
+        // @ts-expect-error - TS7006 - Parameter 'result' implicitly has an 'any' type. | TS7006 - Parameter 'filter' implicitly has an 'any' type.
+        filters.reduce((result, filter) => {
+          if (result[filter.type] == null) {
+            result[filter.type] = // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Readonly<{ blur: 0; 'hue-rotate': 0; invert: 0; grayscale: 0; saturate: 100; sepia: 0; contrast: 100; brightness: 100; }>'.
+            filterDefaults[filter.type];
           }
-        }
-        return "e" + elementCount++;
-      }
-      function reifyState({
-        events,
-        actionLists,
-        site
-      } = {}) {
-        const eventTypeMap = (0, _reduce.default)(events, (result, event) => {
-          const {
-            eventTypeId
-          } = event;
-          if (!result[eventTypeId]) {
-            result[eventTypeId] = {};
-          }
-          result[eventTypeId][event.id] = event;
           return result;
-        }, {});
-        let mediaQueries = site && site.mediaQueries;
-        let mediaQueryKeys = [];
-        if (mediaQueries) {
-          mediaQueryKeys = mediaQueries.map((mq) => mq.key);
-        } else {
-          mediaQueries = [];
-          console.warn(`IX2 missing mediaQueries in site data`);
-        }
-        return {
-          ixData: {
-            events,
-            actionLists,
-            eventTypeMap,
-            mediaQueries,
-            mediaQueryKeys
-          }
-        };
-      }
-      var strictEqual = (a, b) => a === b;
-      function observeStore({
-        store,
-        select,
-        onChange,
-        comparator = strictEqual
-      }) {
-        const {
-          getState,
-          subscribe
-        } = store;
-        const unsubscribe = subscribe(handleChange);
-        let currentState = select(getState());
-        function handleChange() {
-          const nextState = select(getState());
-          if (nextState == null) {
-            unsubscribe();
-            return;
-          }
-          if (!comparator(nextState, currentState)) {
-            currentState = nextState;
-            onChange(currentState, store);
-          }
-        }
-        return unsubscribe;
-      }
-      function normalizeTarget(target) {
-        const type = typeof target;
-        if (type === "string") {
-          return {
-            id: target
-          };
-        } else if (target != null && type === "object") {
-          const {
-            id,
-            objectId,
-            selector,
-            selectorGuids,
-            appliesTo,
-            useEventTarget
-          } = target;
-          return {
-            id,
-            objectId,
-            selector,
-            selectorGuids,
-            appliesTo,
-            useEventTarget
-          };
-        }
-        return {};
-      }
-      function getAffectedElements({
-        config,
-        event,
-        eventTarget,
-        elementRoot,
-        elementApi
-      }) {
-        var _event$action$config$, _event$action, _event$action$config;
-        if (!elementApi) {
-          throw new Error("IX2 missing elementApi");
-        }
-        const {
-          targets
-        } = config;
-        if (Array.isArray(targets) && targets.length > 0) {
-          return targets.reduce((accumulator, target2) => accumulator.concat(getAffectedElements({
-            config: {
-              target: target2
-            },
-            event,
-            eventTarget,
-            elementRoot,
-            elementApi
-          })), []);
-        }
-        const {
-          getValidDocument,
-          getQuerySelector,
-          queryDocument,
-          getChildElements,
-          getSiblingElements,
-          matchSelector,
-          elementContains,
-          isSiblingNode
-        } = elementApi;
-        const {
-          target
-        } = config;
-        if (!target) {
-          return [];
-        }
-        const {
-          id,
-          // $FlowFixMe
-          objectId,
-          // $FlowFixMe
-          selector,
-          // $FlowFixMe
-          selectorGuids,
-          // $FlowFixMe
-          appliesTo,
-          // $FlowFixMe
-          useEventTarget
-        } = normalizeTarget(target);
-        if (objectId) {
-          const ref = objectCache.has(objectId) ? objectCache.get(objectId) : objectCache.set(objectId, {}).get(objectId);
-          return [ref];
-        }
-        if (appliesTo === _constants.EventAppliesTo.PAGE) {
-          const doc = getValidDocument(id);
-          return doc ? [doc] : [];
-        }
-        const overrides = (_event$action$config$ = event === null || event === void 0 ? void 0 : (_event$action = event.action) === null || _event$action === void 0 ? void 0 : (_event$action$config = _event$action.config) === null || _event$action$config === void 0 ? void 0 : _event$action$config.affectedElements) !== null && _event$action$config$ !== void 0 ? _event$action$config$ : {};
-        const override = overrides[id || selector] || {};
-        const validOverride = Boolean(override.id || override.selector);
-        let limitAffectedElements;
-        let baseSelector;
-        let finalSelector;
-        const eventTargetSelector = event && getQuerySelector(normalizeTarget(event.target));
-        if (validOverride) {
-          limitAffectedElements = override.limitAffectedElements;
-          baseSelector = eventTargetSelector;
-          finalSelector = getQuerySelector(override);
-        } else {
-          baseSelector = finalSelector = getQuerySelector({
-            id,
-            selector,
-            selectorGuids
-          });
-        }
-        if (event && useEventTarget) {
-          const eventTargets = eventTarget && (finalSelector || useEventTarget === true) ? [eventTarget] : queryDocument(eventTargetSelector);
-          if (finalSelector) {
-            if (useEventTarget === PARENT) {
-              return queryDocument(finalSelector).filter((parentElement) => eventTargets.some((targetElement) => elementContains(parentElement, targetElement)));
-            }
-            if (useEventTarget === CHILDREN) {
-              return queryDocument(finalSelector).filter((childElement) => eventTargets.some((targetElement) => elementContains(targetElement, childElement)));
-            }
-            if (useEventTarget === SIBLINGS) {
-              return queryDocument(finalSelector).filter((siblingElement) => eventTargets.some((targetElement) => isSiblingNode(targetElement, siblingElement)));
-            }
-          }
-          return eventTargets;
-        }
-        if (baseSelector == null || finalSelector == null) {
-          return [];
-        }
-        if (_IX2BrowserSupport.IS_BROWSER_ENV && elementRoot) {
-          return queryDocument(finalSelector).filter((element) => elementRoot.contains(element));
-        }
-        if (limitAffectedElements === CHILDREN) {
-          return queryDocument(baseSelector, finalSelector);
-        } else if (limitAffectedElements === IMMEDIATE_CHILDREN) {
-          return getChildElements(queryDocument(baseSelector)).filter(matchSelector(finalSelector));
-        } else if (limitAffectedElements === SIBLINGS) {
-          return getSiblingElements(queryDocument(baseSelector)).filter(matchSelector(finalSelector));
-        } else {
-          return queryDocument(finalSelector);
-        }
-      }
-      function getComputedStyle2({
-        element,
-        actionItem
-      }) {
-        if (!_IX2BrowserSupport.IS_BROWSER_ENV) {
-          return {};
-        }
-        const {
-          actionTypeId
-        } = actionItem;
-        switch (actionTypeId) {
-          case STYLE_SIZE:
-          case STYLE_BACKGROUND_COLOR:
-          case STYLE_BORDER:
-          case STYLE_TEXT_COLOR:
-          case GENERAL_DISPLAY:
-            return window.getComputedStyle(element);
-          default:
-            return {};
-        }
-      }
-      var pxValueRegex = /px/;
-      var getFilterDefaults = (actionState, filters) => filters.reduce((result, filter) => {
-        if (result[filter.type] == null) {
-          result[filter.type] = filterDefaults[
-            // $FlowFixMe - property `saturation` (did you mean `saturate`?) is missing in `filterDefaults`
-            filter.type
-          ];
-        }
-        return result;
-      }, actionState || {});
-      var getFontVariationDefaults = (actionState, fontVariations) => fontVariations.reduce((result, fontVariation) => {
+        }, actionState || {})
+      );
+      getFontVariationDefaults = (actionState, fontVariations) => fontVariations.reduce((result, fontVariation) => {
         if (result[fontVariation.type] == null) {
-          result[fontVariation.type] = fontVariationDefaults[fontVariation.type] || fontVariation.defaultValue || 0;
+          result[fontVariation.type] = // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Readonly<{ wght: 0; opsz: 0; wdth: 0; slnt: 0; }>'.
+          fontVariationDefaults[fontVariation.type] || // @ts-expect-error - TS2339 - Property 'defaultValue' does not exist on type 'FontVariationItemConfigType'.
+          fontVariation.defaultValue || 0;
         }
         return result;
       }, actionState || {});
-      function getInstanceOrigin(element, refState = {}, computedStyle = {}, actionItem, elementApi) {
-        const {
-          getStyle
-        } = elementApi;
-        const {
-          actionTypeId
-        } = actionItem;
-        if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
-          return (0, _IX2VanillaPlugins.getPluginOrigin)(actionTypeId)(refState[actionTypeId], actionItem);
-        }
-        switch (actionItem.actionTypeId) {
-          case TRANSFORM_MOVE:
-          case TRANSFORM_SCALE:
-          case TRANSFORM_ROTATE:
-          case TRANSFORM_SKEW: {
-            return refState[actionItem.actionTypeId] || transformDefaults[actionItem.actionTypeId];
-          }
-          case STYLE_FILTER:
-            return getFilterDefaults(refState[actionItem.actionTypeId], actionItem.config.filters);
-          case STYLE_FONT_VARIATION:
-            return getFontVariationDefaults(refState[actionItem.actionTypeId], actionItem.config.fontVariations);
-          case STYLE_OPACITY:
-            return {
-              value: (0, _defaultTo.default)(parseFloat(getStyle(element, OPACITY)), 1)
-            };
-          case STYLE_SIZE: {
-            const inlineWidth = getStyle(element, WIDTH);
-            const inlineHeight = getStyle(element, HEIGHT);
-            let widthValue;
-            let heightValue;
-            if (actionItem.config.widthUnit === AUTO) {
-              widthValue = pxValueRegex.test(inlineWidth) ? parseFloat(inlineWidth) : parseFloat(computedStyle.width);
-            } else {
-              widthValue = (0, _defaultTo.default)(parseFloat(inlineWidth), parseFloat(computedStyle.width));
-            }
-            if (actionItem.config.heightUnit === AUTO) {
-              heightValue = pxValueRegex.test(inlineHeight) ? parseFloat(inlineHeight) : parseFloat(computedStyle.height);
-            } else {
-              heightValue = (0, _defaultTo.default)(parseFloat(inlineHeight), parseFloat(computedStyle.height));
-            }
-            return {
-              widthValue,
-              heightValue
-            };
-          }
-          case STYLE_BACKGROUND_COLOR:
-          case STYLE_BORDER:
-          case STYLE_TEXT_COLOR:
-            return parseColor({
-              element,
-              actionTypeId: actionItem.actionTypeId,
-              computedStyle,
-              getStyle
-            });
-          case GENERAL_DISPLAY:
-            return {
-              value: (0, _defaultTo.default)(getStyle(element, DISPLAY), computedStyle.display)
-            };
-          case OBJECT_VALUE:
-            return refState[actionItem.actionTypeId] || {
-              value: 0
-            };
-          default: {
-            return;
-          }
-        }
-      }
-      var reduceFilters = (result, filter) => {
+      reduceFilters = (result, filter) => {
         if (filter) {
           result[filter.type] = filter.value || 0;
         }
         return result;
       };
-      var reduceFontVariations = (result, fontVariation) => {
+      reduceFontVariations = (result, fontVariation) => {
         if (fontVariation) {
           result[fontVariation.type] = fontVariation.value || 0;
         }
         return result;
       };
-      var getItemConfigByKey = (actionTypeId, key2, config) => {
-        if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
-          return (0, _IX2VanillaPlugins.getPluginConfig)(actionTypeId)(config, key2);
+      getItemConfigByKey = (actionTypeId, key2, config) => {
+        if (isPluginType(actionTypeId)) {
+          return getPluginConfig(actionTypeId)(config, key2);
         }
         switch (actionTypeId) {
-          case STYLE_FILTER: {
-            const filter = (0, _findLast.default)(config.filters, ({
-              type
-            }) => type === key2);
+          case STYLE_FILTER2: {
+            const filter = (0, import_findLast.default)(config.filters, ({ type }) => type === key2);
             return filter ? filter.value : 0;
           }
-          case STYLE_FONT_VARIATION: {
-            const fontVariation = (0, _findLast.default)(config.fontVariations, ({
-              type
-            }) => type === key2);
+          case STYLE_FONT_VARIATION2: {
+            const fontVariation = (0, import_findLast.default)(
+              config.fontVariations,
+              ({ type }) => type === key2
+            );
             return fontVariation ? fontVariation.value : 0;
           }
           default:
             return config[key2];
         }
       };
-      exports2.getItemConfigByKey = getItemConfigByKey;
-      function getDestinationValues({
-        element,
-        actionItem,
-        elementApi
-      }) {
-        if ((0, _IX2VanillaPlugins.isPluginType)(actionItem.actionTypeId)) {
-          return (0, _IX2VanillaPlugins.getPluginDestination)(actionItem.actionTypeId)(actionItem.config);
-        }
-        switch (actionItem.actionTypeId) {
-          case TRANSFORM_MOVE:
-          case TRANSFORM_SCALE:
-          case TRANSFORM_ROTATE:
-          case TRANSFORM_SKEW: {
-            const {
-              xValue,
-              yValue,
-              zValue
-            } = actionItem.config;
-            return {
-              xValue,
-              yValue,
-              zValue
-            };
-          }
-          case STYLE_SIZE: {
-            const {
-              getStyle,
-              setStyle,
-              getProperty
-            } = elementApi;
-            const {
-              widthUnit,
-              heightUnit
-            } = actionItem.config;
-            let {
-              widthValue,
-              heightValue
-            } = actionItem.config;
-            if (!_IX2BrowserSupport.IS_BROWSER_ENV) {
-              return {
-                widthValue,
-                heightValue
-              };
-            }
-            if (widthUnit === AUTO) {
-              const temp = getStyle(element, WIDTH);
-              setStyle(element, WIDTH, "");
-              widthValue = getProperty(element, "offsetWidth");
-              setStyle(element, WIDTH, temp);
-            }
-            if (heightUnit === AUTO) {
-              const temp = getStyle(element, HEIGHT);
-              setStyle(element, HEIGHT, "");
-              heightValue = getProperty(element, "offsetHeight");
-              setStyle(element, HEIGHT, temp);
-            }
-            return {
-              widthValue,
-              heightValue
-            };
-          }
-          case STYLE_BACKGROUND_COLOR:
-          case STYLE_BORDER:
-          case STYLE_TEXT_COLOR: {
-            const {
-              rValue,
-              gValue,
-              bValue,
-              aValue
-            } = actionItem.config;
-            return {
-              rValue,
-              gValue,
-              bValue,
-              aValue
-            };
-          }
-          case STYLE_FILTER: {
-            return actionItem.config.filters.reduce(reduceFilters, {});
-          }
-          case STYLE_FONT_VARIATION: {
-            return actionItem.config.fontVariations.reduce(reduceFontVariations, {});
-          }
-          default: {
-            const {
-              value: value2
-            } = actionItem.config;
-            return {
-              value: value2
-            };
-          }
-        }
-      }
-      function getRenderType(actionTypeId) {
-        if (/^TRANSFORM_/.test(actionTypeId)) {
-          return RENDER_TRANSFORM;
-        }
-        if (/^STYLE_/.test(actionTypeId)) {
-          return RENDER_STYLE;
-        }
-        if (/^GENERAL_/.test(actionTypeId)) {
-          return RENDER_GENERAL;
-        }
-        if (/^PLUGIN_/.test(actionTypeId)) {
-          return RENDER_PLUGIN;
-        }
-      }
-      function getStyleProp(renderType, actionTypeId) {
-        return renderType === RENDER_STYLE ? actionTypeId.replace("STYLE_", "").toLowerCase() : null;
-      }
-      function renderHTMLElement(element, refState, actionState, eventId, actionItem, styleProp, elementApi, renderType, pluginInstance) {
-        switch (renderType) {
-          case RENDER_TRANSFORM: {
-            return renderTransform(element, refState, actionState, actionItem, elementApi);
-          }
-          case RENDER_STYLE: {
-            return renderStyle(element, refState, actionState, actionItem, styleProp, elementApi);
-          }
-          case RENDER_GENERAL: {
-            return renderGeneral(element, actionItem, elementApi);
-          }
-          case RENDER_PLUGIN: {
-            const {
-              actionTypeId
-            } = actionItem;
-            if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
-              return (0, _IX2VanillaPlugins.renderPlugin)(actionTypeId)(pluginInstance, refState, actionItem);
-            }
-          }
-        }
-      }
-      var transformDefaults = {
-        [TRANSFORM_MOVE]: Object.freeze({
+      transformDefaults = {
+        [TRANSFORM_MOVE2]: Object.freeze({
           xValue: 0,
           yValue: 0,
           zValue: 0
         }),
-        [TRANSFORM_SCALE]: Object.freeze({
+        [TRANSFORM_SCALE2]: Object.freeze({
           xValue: 1,
           yValue: 1,
           zValue: 1
         }),
-        [TRANSFORM_ROTATE]: Object.freeze({
+        [TRANSFORM_ROTATE2]: Object.freeze({
           xValue: 0,
           yValue: 0,
           zValue: 0
         }),
-        [TRANSFORM_SKEW]: Object.freeze({
+        [TRANSFORM_SKEW2]: Object.freeze({
           xValue: 0,
           yValue: 0
         })
       };
-      var filterDefaults = Object.freeze({
+      filterDefaults = Object.freeze({
         blur: 0,
         "hue-rotate": 0,
         invert: 0,
@@ -19196,16 +19390,17 @@
         contrast: 100,
         brightness: 100
       });
-      var fontVariationDefaults = Object.freeze({
+      fontVariationDefaults = Object.freeze({
         wght: 0,
         opsz: 0,
         wdth: 0,
         slnt: 0
       });
-      var getFilterUnit = (filterType, actionItemConfig) => {
-        const filter = (0, _findLast.default)(actionItemConfig.filters, ({
-          type
-        }) => type === filterType);
+      getFilterUnit = (filterType, actionItemConfig) => {
+        const filter = (0, import_findLast.default)(
+          actionItemConfig.filters,
+          ({ type }) => type === filterType
+        );
         if (filter && filter.unit) {
           return filter.unit;
         }
@@ -19218,501 +19413,48 @@
             return "%";
         }
       };
-      var transformKeys = Object.keys(transformDefaults);
-      function renderTransform(element, refState, actionState, actionItem, elementApi) {
-        const newTransform = transformKeys.map((actionTypeId) => {
-          const defaults = transformDefaults[actionTypeId];
-          const {
-            xValue = defaults.xValue,
-            yValue = defaults.yValue,
-            // $FlowFixMe
-            zValue = defaults.zValue,
-            xUnit = "",
-            yUnit = "",
-            zUnit = ""
-          } = refState[actionTypeId] || {};
-          switch (actionTypeId) {
-            case TRANSFORM_MOVE:
-              return `${TRANSLATE_3D}(${xValue}${xUnit}, ${yValue}${yUnit}, ${zValue}${zUnit})`;
-            case TRANSFORM_SCALE:
-              return `${SCALE_3D}(${xValue}${xUnit}, ${yValue}${yUnit}, ${zValue}${zUnit})`;
-            case TRANSFORM_ROTATE:
-              return `${ROTATE_X}(${xValue}${xUnit}) ${ROTATE_Y}(${yValue}${yUnit}) ${ROTATE_Z}(${zValue}${zUnit})`;
-            case TRANSFORM_SKEW:
-              return `${SKEW}(${xValue}${xUnit}, ${yValue}${yUnit})`;
-            default:
-              return "";
-          }
-        }).join(" ");
-        const {
-          setStyle
-        } = elementApi;
-        addWillChange(element, _IX2BrowserSupport.TRANSFORM_PREFIXED, elementApi);
-        setStyle(element, _IX2BrowserSupport.TRANSFORM_PREFIXED, newTransform);
-        if (hasDefined3dTransform(actionItem, actionState)) {
-          setStyle(element, _IX2BrowserSupport.TRANSFORM_STYLE_PREFIXED, PRESERVE_3D);
-        }
-      }
-      function renderFilter(element, actionState, actionItemConfig, elementApi) {
-        const filterValue = (0, _reduce.default)(actionState, (result, value2, type) => `${result} ${type}(${value2}${getFilterUnit(type, actionItemConfig)})`, "");
-        const {
-          setStyle
-        } = elementApi;
-        addWillChange(element, FILTER, elementApi);
-        setStyle(element, FILTER, filterValue);
-      }
-      function renderFontVariation(element, actionState, actionItemConfig, elementApi) {
-        const fontVariationValue = (0, _reduce.default)(actionState, (result, value2, type) => {
-          result.push(`"${type}" ${value2}`);
-          return result;
-        }, []).join(", ");
-        const {
-          setStyle
-        } = elementApi;
-        addWillChange(element, FONT_VARIATION_SETTINGS, elementApi);
-        setStyle(element, FONT_VARIATION_SETTINGS, fontVariationValue);
-      }
-      function hasDefined3dTransform({
-        actionTypeId
-      }, {
-        xValue,
-        yValue,
-        zValue
-      }) {
-        return actionTypeId === TRANSFORM_MOVE && zValue !== void 0 || // SCALE_Z
-        actionTypeId === TRANSFORM_SCALE && zValue !== void 0 || // ROTATE_X or ROTATE_Y
-        actionTypeId === TRANSFORM_ROTATE && (xValue !== void 0 || yValue !== void 0);
-      }
-      var paramCapture = "\\(([^)]+)\\)";
-      var rgbValidRegex = /^rgb/;
-      var rgbMatchRegex = RegExp(`rgba?${paramCapture}`);
-      function getFirstMatch(regex, value2) {
-        const match = regex.exec(value2);
-        return match ? match[1] : "";
-      }
-      function parseColor({
-        element,
-        actionTypeId,
-        computedStyle,
-        getStyle
-      }) {
-        const prop = colorStyleProps[actionTypeId];
-        const inlineValue = getStyle(element, prop);
-        const value2 = rgbValidRegex.test(inlineValue) ? inlineValue : computedStyle[prop];
-        const matches = getFirstMatch(rgbMatchRegex, value2).split(COMMA_DELIMITER);
-        return {
-          rValue: (0, _defaultTo.default)(parseInt(matches[0], 10), 255),
-          gValue: (0, _defaultTo.default)(parseInt(matches[1], 10), 255),
-          bValue: (0, _defaultTo.default)(parseInt(matches[2], 10), 255),
-          aValue: (0, _defaultTo.default)(parseFloat(matches[3]), 1)
-        };
-      }
-      function renderStyle(element, refState, actionState, actionItem, styleProp, elementApi) {
-        const {
-          setStyle
-        } = elementApi;
-        switch (actionItem.actionTypeId) {
-          case STYLE_SIZE: {
-            let {
-              widthUnit = "",
-              heightUnit = ""
-            } = actionItem.config;
-            const {
-              widthValue,
-              heightValue
-            } = actionState;
-            if (widthValue !== void 0) {
-              if (widthUnit === AUTO) {
-                widthUnit = "px";
-              }
-              addWillChange(element, WIDTH, elementApi);
-              setStyle(element, WIDTH, widthValue + widthUnit);
-            }
-            if (heightValue !== void 0) {
-              if (heightUnit === AUTO) {
-                heightUnit = "px";
-              }
-              addWillChange(element, HEIGHT, elementApi);
-              setStyle(element, HEIGHT, heightValue + heightUnit);
-            }
-            break;
-          }
-          case STYLE_FILTER: {
-            renderFilter(element, actionState, actionItem.config, elementApi);
-            break;
-          }
-          case STYLE_FONT_VARIATION: {
-            renderFontVariation(element, actionState, actionItem.config, elementApi);
-            break;
-          }
-          case STYLE_BACKGROUND_COLOR:
-          case STYLE_BORDER:
-          case STYLE_TEXT_COLOR: {
-            const prop = colorStyleProps[actionItem.actionTypeId];
-            const rValue = Math.round(actionState.rValue);
-            const gValue = Math.round(actionState.gValue);
-            const bValue = Math.round(actionState.bValue);
-            const aValue = actionState.aValue;
-            addWillChange(element, prop, elementApi);
-            setStyle(element, prop, aValue >= 1 ? `rgb(${rValue},${gValue},${bValue})` : `rgba(${rValue},${gValue},${bValue},${aValue})`);
-            break;
-          }
-          default: {
-            const {
-              unit = ""
-            } = actionItem.config;
-            addWillChange(element, styleProp, elementApi);
-            setStyle(element, styleProp, actionState.value + unit);
-            break;
-          }
-        }
-      }
-      function renderGeneral(element, actionItem, elementApi) {
-        const {
-          setStyle
-        } = elementApi;
-        switch (actionItem.actionTypeId) {
-          case GENERAL_DISPLAY: {
-            const {
-              value: value2
-            } = actionItem.config;
-            if (value2 === FLEX && _IX2BrowserSupport.IS_BROWSER_ENV) {
-              setStyle(element, DISPLAY, _IX2BrowserSupport.FLEX_PREFIXED);
-            } else {
-              setStyle(element, DISPLAY, value2);
-            }
-            return;
-          }
-        }
-      }
-      function addWillChange(element, prop, elementApi) {
-        if (!_IX2BrowserSupport.IS_BROWSER_ENV) {
-          return;
-        }
-        const validProp = willChangeProps[prop];
-        if (!validProp) {
-          return;
-        }
-        const {
-          getStyle,
-          setStyle
-        } = elementApi;
-        const value2 = getStyle(element, WILL_CHANGE);
-        if (!value2) {
-          setStyle(element, WILL_CHANGE, validProp);
-          return;
-        }
-        const values = value2.split(COMMA_DELIMITER).map(trim);
-        if (values.indexOf(validProp) === -1) {
-          setStyle(element, WILL_CHANGE, values.concat(validProp).join(COMMA_DELIMITER));
-        }
-      }
-      function removeWillChange(element, prop, elementApi) {
-        if (!_IX2BrowserSupport.IS_BROWSER_ENV) {
-          return;
-        }
-        const validProp = willChangeProps[prop];
-        if (!validProp) {
-          return;
-        }
-        const {
-          getStyle,
-          setStyle
-        } = elementApi;
-        const value2 = getStyle(element, WILL_CHANGE);
-        if (!value2 || value2.indexOf(validProp) === -1) {
-          return;
-        }
-        setStyle(element, WILL_CHANGE, value2.split(COMMA_DELIMITER).map(trim).filter((v) => v !== validProp).join(COMMA_DELIMITER));
-      }
-      function clearAllStyles({
-        store,
-        elementApi
-      }) {
-        const {
-          ixData
-        } = store.getState();
-        const {
-          events = {},
-          actionLists = {}
-        } = ixData;
-        Object.keys(events).forEach((eventId) => {
-          const event = events[eventId];
-          const {
-            config
-          } = event.action;
-          const {
-            actionListId
-          } = config;
-          const actionList = actionLists[actionListId];
-          if (actionList) {
-            clearActionListStyles({
-              actionList,
-              event,
-              elementApi
-            });
-          }
-        });
-        Object.keys(actionLists).forEach((actionListId) => {
-          clearActionListStyles({
-            actionList: actionLists[actionListId],
-            elementApi
-          });
-        });
-      }
-      function clearActionListStyles({
-        actionList = {},
-        event,
-        elementApi
-      }) {
-        const {
-          actionItemGroups,
-          continuousParameterGroups
-        } = actionList;
-        actionItemGroups && actionItemGroups.forEach((actionGroup) => {
-          clearActionGroupStyles({
-            actionGroup,
-            event,
-            elementApi
-          });
-        });
-        continuousParameterGroups && continuousParameterGroups.forEach((paramGroup) => {
-          const {
-            continuousActionGroups
-          } = paramGroup;
-          continuousActionGroups.forEach((actionGroup) => {
-            clearActionGroupStyles({
-              actionGroup,
-              event,
-              elementApi
-            });
-          });
-        });
-      }
-      function clearActionGroupStyles({
-        actionGroup,
-        event,
-        elementApi
-      }) {
-        const {
-          actionItems
-        } = actionGroup;
-        actionItems.forEach((actionItem) => {
-          const {
-            actionTypeId,
-            config
-          } = actionItem;
-          let clearElement;
-          if ((0, _IX2VanillaPlugins.isPluginType)(actionTypeId)) {
-            clearElement = (ref) => (0, _IX2VanillaPlugins.clearPlugin)(actionTypeId)(ref, actionItem);
-          } else {
-            clearElement = processElementByType({
-              effect: clearStyleProp,
-              actionTypeId,
-              elementApi
-            });
-          }
-          getAffectedElements({
-            config,
-            event,
-            elementApi
-          }).forEach(clearElement);
-        });
-      }
-      function cleanupHTMLElement(element, actionItem, elementApi) {
-        const {
-          setStyle,
-          getStyle
-        } = elementApi;
-        const {
-          actionTypeId
-        } = actionItem;
-        if (actionTypeId === STYLE_SIZE) {
-          const {
-            config
-          } = actionItem;
-          if (config.widthUnit === AUTO) {
-            setStyle(element, WIDTH, "");
-          }
-          if (config.heightUnit === AUTO) {
-            setStyle(element, HEIGHT, "");
-          }
-        }
-        if (getStyle(element, WILL_CHANGE)) {
-          processElementByType({
-            effect: removeWillChange,
-            actionTypeId,
-            elementApi
-          })(element);
-        }
-      }
-      var processElementByType = ({
+      transformKeys = Object.keys(transformDefaults);
+      paramCapture = "\\(([^)]+)\\)";
+      rgbValidRegex = /^rgb/;
+      rgbMatchRegex = RegExp(`rgba?${paramCapture}`);
+      processElementByType = ({
         effect: effect2,
         actionTypeId,
         elementApi
-      }) => (element) => {
-        switch (actionTypeId) {
-          case TRANSFORM_MOVE:
-          case TRANSFORM_SCALE:
-          case TRANSFORM_ROTATE:
-          case TRANSFORM_SKEW:
-            effect2(element, _IX2BrowserSupport.TRANSFORM_PREFIXED, elementApi);
-            break;
-          case STYLE_FILTER:
-            effect2(element, FILTER, elementApi);
-            break;
-          case STYLE_FONT_VARIATION:
-            effect2(element, FONT_VARIATION_SETTINGS, elementApi);
-            break;
-          case STYLE_OPACITY:
-            effect2(element, OPACITY, elementApi);
-            break;
-          case STYLE_SIZE:
-            effect2(element, WIDTH, elementApi);
-            effect2(element, HEIGHT, elementApi);
-            break;
-          case STYLE_BACKGROUND_COLOR:
-          case STYLE_BORDER:
-          case STYLE_TEXT_COLOR:
-            effect2(element, colorStyleProps[actionTypeId], elementApi);
-            break;
-          case GENERAL_DISPLAY:
-            effect2(element, DISPLAY, elementApi);
-            break;
-        }
-      };
-      function clearStyleProp(element, prop, elementApi) {
-        const {
-          setStyle
-        } = elementApi;
-        removeWillChange(element, prop, elementApi);
-        setStyle(element, prop, "");
-        if (prop === _IX2BrowserSupport.TRANSFORM_PREFIXED) {
-          setStyle(element, _IX2BrowserSupport.TRANSFORM_STYLE_PREFIXED, "");
-        }
-      }
-      function getMaxDurationItemIndex(actionItems) {
-        let maxDuration = 0;
-        let resultIndex = 0;
-        actionItems.forEach((actionItem, index2) => {
-          const {
-            config
-          } = actionItem;
-          const total = config.delay + config.duration;
-          if (total >= maxDuration) {
-            maxDuration = total;
-            resultIndex = index2;
+      }) => (
+        // @ts-expect-error - TS7006 - Parameter 'element' implicitly has an 'any' type.
+        (element) => {
+          switch (actionTypeId) {
+            case TRANSFORM_MOVE2:
+            case TRANSFORM_SCALE2:
+            case TRANSFORM_ROTATE2:
+            case TRANSFORM_SKEW2:
+              effect2(element, TRANSFORM_PREFIXED, elementApi);
+              break;
+            case STYLE_FILTER2:
+              effect2(element, FILTER2, elementApi);
+              break;
+            case STYLE_FONT_VARIATION2:
+              effect2(element, FONT_VARIATION_SETTINGS2, elementApi);
+              break;
+            case STYLE_OPACITY:
+              effect2(element, OPACITY2, elementApi);
+              break;
+            case STYLE_SIZE2:
+              effect2(element, WIDTH2, elementApi);
+              effect2(element, HEIGHT2, elementApi);
+              break;
+            case STYLE_BACKGROUND_COLOR:
+            case STYLE_BORDER:
+            case STYLE_TEXT_COLOR:
+              effect2(element, colorStyleProps[actionTypeId], elementApi);
+              break;
+            case GENERAL_DISPLAY:
+              effect2(element, DISPLAY2, elementApi);
+              break;
           }
-        });
-        return resultIndex;
-      }
-      function getActionListProgress(actionList, instance) {
-        const {
-          actionItemGroups,
-          useFirstGroupAsInitialState
-        } = actionList;
-        const {
-          actionItem: instanceItem,
-          verboseTimeElapsed = 0
-        } = instance;
-        let totalDuration = 0;
-        let elapsedDuration = 0;
-        actionItemGroups.forEach((group, index2) => {
-          if (useFirstGroupAsInitialState && index2 === 0) {
-            return;
-          }
-          const {
-            actionItems
-          } = group;
-          const carrierItem = actionItems[getMaxDurationItemIndex(actionItems)];
-          const {
-            config,
-            actionTypeId
-          } = carrierItem;
-          if (instanceItem.id === carrierItem.id) {
-            elapsedDuration = totalDuration + verboseTimeElapsed;
-          }
-          const duration = getRenderType(actionTypeId) === RENDER_GENERAL ? 0 : config.duration;
-          totalDuration += config.delay + duration;
-        });
-        return totalDuration > 0 ? (0, _IX2EasingUtils.optimizeFloat)(elapsedDuration / totalDuration) : 0;
-      }
-      function reduceListToGroup({
-        actionList,
-        actionItemId,
-        rawData
-      }) {
-        const {
-          actionItemGroups,
-          continuousParameterGroups
-        } = actionList;
-        const newActionItems = [];
-        const takeItemUntilMatch = (actionItem) => {
-          newActionItems.push((0, _timm.mergeIn)(actionItem, ["config"], {
-            delay: 0,
-            duration: 0
-          }));
-          return actionItem.id === actionItemId;
-        };
-        actionItemGroups && actionItemGroups.some(({
-          actionItems
-        }) => {
-          return actionItems.some(takeItemUntilMatch);
-        });
-        continuousParameterGroups && continuousParameterGroups.some((paramGroup) => {
-          const {
-            continuousActionGroups
-          } = paramGroup;
-          return continuousActionGroups.some(({
-            actionItems
-          }) => {
-            return actionItems.some(takeItemUntilMatch);
-          });
-        });
-        return (0, _timm.setIn)(rawData, ["actionLists"], {
-          [actionList.id]: {
-            id: actionList.id,
-            actionItemGroups: [{
-              actionItems: newActionItems
-            }]
-          }
-        });
-      }
-      function shouldNamespaceEventParameter(eventTypeId, {
-        basedOn
-      }) {
-        return eventTypeId === _constants.EventTypeConsts.SCROLLING_IN_VIEW && (basedOn === _constants.EventBasedOn.ELEMENT || basedOn == null) || eventTypeId === _constants.EventTypeConsts.MOUSE_MOVE && basedOn === _constants.EventBasedOn.ELEMENT;
-      }
-      function getNamespacedParameterId(eventStateKey, continuousParameterGroupId) {
-        const namespacedParameterId = eventStateKey + COLON_DELIMITER + continuousParameterGroupId;
-        return namespacedParameterId;
-      }
-      function shouldAllowMediaQuery(mediaQueries, mediaQueryKey) {
-        if (mediaQueryKey == null) {
-          return true;
         }
-        return mediaQueries.indexOf(mediaQueryKey) !== -1;
-      }
-      function mediaQueriesEqual(listA, listB) {
-        return (0, _shallowEqual.default)(listA && listA.sort(), listB && listB.sort());
-      }
-      function stringifyTarget(target) {
-        if (typeof target === "string") {
-          return target;
-        }
-        if (target.pluginElement && target.objectId) {
-          return target.pluginElement + BAR_DELIMITER + target.objectId;
-        }
-        if (target.objectId) {
-          return target.objectId;
-        }
-        const {
-          id = "",
-          selector = "",
-          useEventTarget = ""
-        } = target;
-        return id + BAR_DELIMITER + selector + BAR_DELIMITER + useEventTarget;
-      }
+      );
     }
   });
 
@@ -19725,54 +19467,41 @@
         value: true
       });
       exports2.IX2VanillaUtils = exports2.IX2VanillaPlugins = exports2.IX2ElementsReducer = exports2.IX2Easings = exports2.IX2EasingUtils = exports2.IX2BrowserSupport = void 0;
-      var IX2BrowserSupport = _interopRequireWildcard(require_IX2BrowserSupport());
-      exports2.IX2BrowserSupport = IX2BrowserSupport;
-      var IX2Easings = _interopRequireWildcard(require_IX2Easings());
+      var IX2BrowserSupport2 = _interopRequireWildcard((init_IX2BrowserSupport(), __toCommonJS(IX2BrowserSupport_exports)));
+      exports2.IX2BrowserSupport = IX2BrowserSupport2;
+      var IX2Easings = _interopRequireWildcard((init_IX2Easings(), __toCommonJS(IX2Easings_exports)));
       exports2.IX2Easings = IX2Easings;
-      var IX2EasingUtils = _interopRequireWildcard(require_IX2EasingUtils());
-      exports2.IX2EasingUtils = IX2EasingUtils;
-      var IX2ElementsReducer = _interopRequireWildcard(require_IX2ElementsReducer());
-      exports2.IX2ElementsReducer = IX2ElementsReducer;
-      var IX2VanillaPlugins = _interopRequireWildcard(require_IX2VanillaPlugins());
-      exports2.IX2VanillaPlugins = IX2VanillaPlugins;
-      var IX2VanillaUtils = _interopRequireWildcard(require_IX2VanillaUtils());
-      exports2.IX2VanillaUtils = IX2VanillaUtils;
+      var IX2EasingUtils2 = _interopRequireWildcard((init_IX2EasingUtils(), __toCommonJS(IX2EasingUtils_exports)));
+      exports2.IX2EasingUtils = IX2EasingUtils2;
+      var IX2ElementsReducer2 = _interopRequireWildcard((init_IX2ElementsReducer(), __toCommonJS(IX2ElementsReducer_exports)));
+      exports2.IX2ElementsReducer = IX2ElementsReducer2;
+      var IX2VanillaPlugins2 = _interopRequireWildcard((init_IX2VanillaPlugins(), __toCommonJS(IX2VanillaPlugins_exports)));
+      exports2.IX2VanillaPlugins = IX2VanillaPlugins2;
+      var IX2VanillaUtils5 = _interopRequireWildcard((init_IX2VanillaUtils(), __toCommonJS(IX2VanillaUtils_exports)));
+      exports2.IX2VanillaUtils = IX2VanillaUtils5;
     }
   });
 
-  // packages/systems/ix2/engine/reducers/IX2InstancesReducer.js
-  var require_IX2InstancesReducer = __commonJS({
-    "packages/systems/ix2/engine/reducers/IX2InstancesReducer.js"(exports2) {
+  // packages/systems/ix2/engine/reducers/IX2InstancesReducer.ts
+  var import_shared, import_timm5, IX2_RAW_DATA_IMPORTED3, IX2_SESSION_STOPPED4, IX2_INSTANCE_ADDED3, IX2_INSTANCE_STARTED2, IX2_INSTANCE_REMOVED2, IX2_ANIMATION_FRAME_CHANGED3, optimizeFloat2, applyEasing2, createBezierEasing2, RENDER_GENERAL3, getItemConfigByKey2, getRenderType2, getStyleProp2, continuousInstance, timedInstance, ixInstances;
+  var init_IX2InstancesReducer = __esm({
+    "packages/systems/ix2/engine/reducers/IX2InstancesReducer.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ixInstances = void 0;
-      var _constants = require_constants();
-      var _shared = require_shared2();
-      var _timm = require_timm();
-      var {
-        IX2_RAW_DATA_IMPORTED,
-        IX2_SESSION_STOPPED,
-        IX2_INSTANCE_ADDED,
-        IX2_INSTANCE_STARTED,
-        IX2_INSTANCE_REMOVED,
-        IX2_ANIMATION_FRAME_CHANGED
-      } = _constants.IX2EngineActionTypes;
-      var {
-        optimizeFloat,
-        applyEasing,
-        createBezierEasing
-      } = _shared.IX2EasingUtils;
-      var {
-        RENDER_GENERAL
-      } = _constants.IX2EngineConstants;
-      var {
-        getItemConfigByKey,
-        getRenderType,
-        getStyleProp
-      } = _shared.IX2VanillaUtils;
-      var continuousInstance = (state, action) => {
+      init_constants();
+      import_shared = __toESM(require_shared2());
+      import_timm5 = __toESM(require_timm());
+      ({
+        IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED3,
+        IX2_SESSION_STOPPED: IX2_SESSION_STOPPED4,
+        IX2_INSTANCE_ADDED: IX2_INSTANCE_ADDED3,
+        IX2_INSTANCE_STARTED: IX2_INSTANCE_STARTED2,
+        IX2_INSTANCE_REMOVED: IX2_INSTANCE_REMOVED2,
+        IX2_ANIMATION_FRAME_CHANGED: IX2_ANIMATION_FRAME_CHANGED3
+      } = IX2EngineActionTypes_exports);
+      ({ optimizeFloat: optimizeFloat2, applyEasing: applyEasing2, createBezierEasing: createBezierEasing2 } = import_shared.IX2EasingUtils);
+      ({ RENDER_GENERAL: RENDER_GENERAL3 } = IX2EngineConstants_exports);
+      ({ getItemConfigByKey: getItemConfigByKey2, getRenderType: getRenderType2, getStyleProp: getStyleProp2 } = import_shared.IX2VanillaUtils);
+      continuousInstance = (state, action) => {
         const {
           position: lastPosition,
           parameterId,
@@ -19785,9 +19514,7 @@
           skipMotion,
           skipToValue
         } = state;
-        const {
-          parameters
-        } = action.payload;
+        const { parameters } = action.payload;
         let velocity2 = Math.max(1 - smoothing, 0.01);
         let paramValue = parameters[parameterId];
         if (paramValue == null) {
@@ -19795,8 +19522,8 @@
           paramValue = restingValue;
         }
         const nextPosition = Math.max(paramValue, 0) || 0;
-        const positionDiff = optimizeFloat(nextPosition - lastPosition);
-        const position2 = skipMotion ? skipToValue : optimizeFloat(lastPosition + positionDiff * velocity2);
+        const positionDiff = optimizeFloat2(nextPosition - lastPosition);
+        const position2 = skipMotion ? skipToValue : optimizeFloat2(lastPosition + positionDiff * velocity2);
         const keyframePosition = position2 * 100;
         if (position2 === lastPosition && state.current) {
           return state;
@@ -19805,13 +19532,8 @@
         let toActionItem;
         let positionOffset;
         let positionRange;
-        for (let i = 0, {
-          length: length2
-        } = actionGroups; i < length2; i++) {
-          const {
-            keyframe,
-            actionItems
-          } = actionGroups[i];
+        for (let i = 0, { length: length2 } = actionGroups; i < length2; i++) {
+          const { keyframe, actionItems } = actionGroups[i];
           if (i === 0) {
             fromActionItem = actionItems[0];
           }
@@ -19828,33 +19550,37 @@
         }
         const current = {};
         if (fromActionItem && !toActionItem) {
-          for (let i = 0, {
-            length: length2
-          } = destinationKeys; i < length2; i++) {
+          for (let i = 0, { length: length2 } = destinationKeys; i < length2; i++) {
             const key2 = destinationKeys[i];
-            current[key2] = getItemConfigByKey(actionTypeId, key2, fromActionItem.config);
+            current[key2] = getItemConfigByKey2(
+              actionTypeId,
+              key2,
+              fromActionItem.config
+            );
           }
         } else if (fromActionItem && toActionItem && positionOffset !== void 0 && positionRange !== void 0) {
           const localPosition = (position2 - positionOffset) / positionRange;
           const easing = fromActionItem.config.easing;
-          const eased = applyEasing(easing, localPosition, customEasingFn);
-          for (let i = 0, {
-            length: length2
-          } = destinationKeys; i < length2; i++) {
+          const eased = applyEasing2(easing, localPosition, customEasingFn);
+          for (let i = 0, { length: length2 } = destinationKeys; i < length2; i++) {
             const key2 = destinationKeys[i];
-            const fromVal = getItemConfigByKey(actionTypeId, key2, fromActionItem.config);
-            const toVal = getItemConfigByKey(actionTypeId, key2, toActionItem.config);
+            const fromVal = getItemConfigByKey2(
+              actionTypeId,
+              key2,
+              fromActionItem.config
+            );
+            const toVal = getItemConfigByKey2(actionTypeId, key2, toActionItem.config);
             const diff = toVal - fromVal;
             const value2 = diff * eased + fromVal;
             current[key2] = value2;
           }
         }
-        return (0, _timm.merge)(state, {
+        return (0, import_timm5.merge)(state, {
           position: position2,
           current
         });
       };
-      var timedInstance = (state, action) => {
+      timedInstance = (state, action) => {
         const {
           active: active2,
           origin,
@@ -19871,35 +19597,36 @@
           skipMotion
         } = state;
         const easing = actionItem.config.easing;
-        let {
-          duration,
-          delay
-        } = actionItem.config;
+        let { duration, delay } = actionItem.config;
         if (pluginDuration != null) {
           duration = pluginDuration;
         }
         delay = instanceDelay != null ? instanceDelay : delay;
-        if (renderType === RENDER_GENERAL) {
+        if (renderType === RENDER_GENERAL3) {
           duration = 0;
         } else if (immediate || skipMotion) {
           duration = delay = 0;
         }
-        const {
-          now
-        } = action.payload;
+        const { now } = action.payload;
         if (active2 && origin) {
           const delta = now - (start + delay);
           if (verbose) {
             const verboseDelta = now - start;
             const verboseDuration = duration + delay;
-            const verbosePosition = optimizeFloat(Math.min(Math.max(0, verboseDelta / verboseDuration), 1));
-            state = (0, _timm.set)(state, "verboseTimeElapsed", verboseDuration * verbosePosition);
+            const verbosePosition = optimizeFloat2(
+              Math.min(Math.max(0, verboseDelta / verboseDuration), 1)
+            );
+            state = (0, import_timm5.set)(
+              state,
+              "verboseTimeElapsed",
+              verboseDuration * verbosePosition
+            );
           }
           if (delta < 0) {
             return state;
           }
-          const position2 = optimizeFloat(Math.min(Math.max(0, delta / duration), 1));
-          const eased = applyEasing(easing, position2, customEasingFn);
+          const position2 = optimizeFloat2(Math.min(Math.max(0, delta / duration), 1));
+          const eased = applyEasing2(easing, position2, customEasingFn);
           const newProps = {};
           let current = null;
           if (destinationKeys.length) {
@@ -19918,19 +19645,19 @@
             newProps.active = false;
             newProps.complete = true;
           }
-          return (0, _timm.merge)(state, newProps);
+          return (0, import_timm5.merge)(state, newProps);
         }
         return state;
       };
-      var ixInstances = (state = Object.freeze({}), action) => {
+      ixInstances = (state = Object.freeze({}), action) => {
         switch (action.type) {
-          case IX2_RAW_DATA_IMPORTED: {
+          case IX2_RAW_DATA_IMPORTED3: {
             return action.payload.ixInstances || Object.freeze({});
           }
-          case IX2_SESSION_STOPPED: {
+          case IX2_SESSION_STOPPED4: {
             return Object.freeze({});
           }
-          case IX2_INSTANCE_ADDED: {
+          case IX2_INSTANCE_ADDED3: {
             const {
               instanceId,
               elementId,
@@ -19956,20 +19683,18 @@
               skipMotion,
               skipToValue
             } = action.payload;
-            const {
-              actionTypeId
-            } = actionItem;
-            const renderType = getRenderType(actionTypeId);
-            const styleProp = getStyleProp(renderType, actionTypeId);
-            const destinationKeys = Object.keys(destination).filter((key2) => (
-              // Skip null destination values
-              destination[key2] != null && // Skip string destination values
-              typeof destination[key2] !== "string"
-            ));
-            const {
-              easing
-            } = actionItem.config;
-            return (0, _timm.set)(state, instanceId, {
+            const { actionTypeId } = actionItem;
+            const renderType = getRenderType2(actionTypeId);
+            const styleProp = getStyleProp2(renderType, actionTypeId);
+            const destinationKeys = Object.keys(destination).filter(
+              (key2) => (
+                // Skip null destination values
+                destination[key2] != null && // Skip string destination values
+                typeof destination[key2] !== "string"
+              )
+            );
+            const { easing } = actionItem.config;
+            return (0, import_timm5.set)(state, instanceId, {
               id: instanceId,
               elementId,
               active: false,
@@ -20001,32 +19726,28 @@
               instanceDelay,
               skipMotion,
               skipToValue,
-              customEasingFn: Array.isArray(easing) && easing.length === 4 ? createBezierEasing(easing) : void 0
+              customEasingFn: Array.isArray(easing) && easing.length === 4 ? (
+                // @ts-expect-error - TS2345 - Argument of type 'any[]' is not assignable to parameter of type 'IX2EasingCustomType'.
+                createBezierEasing2(easing)
+              ) : void 0
             });
           }
-          case IX2_INSTANCE_STARTED: {
-            const {
-              instanceId,
-              time: time2
-            } = action.payload;
-            return (0, _timm.mergeIn)(state, [instanceId], {
+          case IX2_INSTANCE_STARTED2: {
+            const { instanceId, time: time2 } = action.payload;
+            return (0, import_timm5.mergeIn)(state, [instanceId], {
               active: true,
               complete: false,
               start: time2
             });
           }
-          case IX2_INSTANCE_REMOVED: {
-            const {
-              instanceId
-            } = action.payload;
+          case IX2_INSTANCE_REMOVED2: {
+            const { instanceId } = action.payload;
             if (!state[instanceId]) {
               return state;
             }
             const newState = {};
             const keys = Object.keys(state);
-            const {
-              length: length2
-            } = keys;
+            const { length: length2 } = keys;
             for (let i = 0; i < length2; i++) {
               const key2 = keys[i];
               if (key2 !== instanceId) {
@@ -20035,17 +19756,15 @@
             }
             return newState;
           }
-          case IX2_ANIMATION_FRAME_CHANGED: {
+          case IX2_ANIMATION_FRAME_CHANGED3: {
             let newState = state;
             const keys = Object.keys(state);
-            const {
-              length: length2
-            } = keys;
+            const { length: length2 } = keys;
             for (let i = 0; i < length2; i++) {
               const key2 = keys[i];
               const instance = state[key2];
               const reducer = instance.continuous ? continuousInstance : timedInstance;
-              newState = (0, _timm.set)(newState, key2, reducer(instance, action));
+              newState = (0, import_timm5.set)(newState, key2, reducer(instance, action));
             }
             return newState;
           }
@@ -20054,43 +19773,32 @@
           }
         }
       };
-      exports2.ixInstances = ixInstances;
     }
   });
 
-  // packages/systems/ix2/engine/reducers/IX2ParametersReducer.js
-  var require_IX2ParametersReducer = __commonJS({
-    "packages/systems/ix2/engine/reducers/IX2ParametersReducer.js"(exports2) {
+  // packages/systems/ix2/engine/reducers/IX2ParametersReducer.ts
+  var IX2_RAW_DATA_IMPORTED4, IX2_SESSION_STOPPED5, IX2_PARAMETER_CHANGED2, ixParameters;
+  var init_IX2ParametersReducer = __esm({
+    "packages/systems/ix2/engine/reducers/IX2ParametersReducer.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.ixParameters = void 0;
-      var _constants = require_constants();
-      var {
-        IX2_RAW_DATA_IMPORTED,
-        IX2_SESSION_STOPPED,
-        IX2_PARAMETER_CHANGED
-      } = _constants.IX2EngineActionTypes;
-      var ixParameters = (state = {
+      init_constants();
+      ({ IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED4, IX2_SESSION_STOPPED: IX2_SESSION_STOPPED5, IX2_PARAMETER_CHANGED: IX2_PARAMETER_CHANGED2 } = IX2EngineActionTypes_exports);
+      ixParameters = (state = {
         /*mutable flat state*/
       }, action) => {
         switch (action.type) {
-          case IX2_RAW_DATA_IMPORTED: {
+          case IX2_RAW_DATA_IMPORTED4: {
             return action.payload.ixParameters || {
               /*mutable flat state*/
             };
           }
-          case IX2_SESSION_STOPPED: {
+          case IX2_SESSION_STOPPED5: {
             return {
               /*mutable flat state*/
             };
           }
-          case IX2_PARAMETER_CHANGED: {
-            const {
-              key: key2,
-              value: value2
-            } = action.payload;
+          case IX2_PARAMETER_CHANGED2: {
+            const { key: key2, value: value2 } = action.payload;
             state[key2] = value2;
             return state;
           }
@@ -20099,58 +19807,35 @@
           }
         }
       };
-      exports2.ixParameters = ixParameters;
     }
   });
 
-  // packages/systems/ix2/engine/reducers/IX2Reducer.js
-  var require_IX2Reducer = __commonJS({
-    "packages/systems/ix2/engine/reducers/IX2Reducer.js"(exports2) {
+  // packages/systems/ix2/engine/reducers/IX2Reducer.ts
+  var IX2Reducer_exports = {};
+  __export(IX2Reducer_exports, {
+    default: () => IX2Reducer_default
+  });
+  var import_redux, import_shared2, ixElements2, IX2Reducer_default;
+  var init_IX2Reducer = __esm({
+    "packages/systems/ix2/engine/reducers/IX2Reducer.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
+      import_redux = __toESM(require_lib2());
+      init_IX2DataReducer();
+      init_IX2RequestReducer();
+      init_IX2SessionReducer();
+      import_shared2 = __toESM(require_shared2());
+      init_IX2InstancesReducer();
+      init_IX2ParametersReducer();
+      ({ ixElements: ixElements2 } = import_shared2.IX2ElementsReducer);
+      IX2Reducer_default = (0, import_redux.combineReducers)({
+        // @ts-expect-error - TS2322 - Type '(state: FixMeAny | null | undefined, action: {    type: typeof IX2_RAW_DATA_IMPORTED;    payload: {        ixData: FixMeAny;    };}) => any' is not assignable to type 'Reducer<any>'.
+        ixData,
+        ixRequest,
+        ixSession,
+        ixElements: ixElements2,
+        ixInstances,
+        ixParameters
       });
-      exports2.default = void 0;
-      var _redux = require_lib2();
-      var _IX2DataReducer = require_IX2DataReducer();
-      var _IX2RequestReducer = require_IX2RequestReducer();
-      var _IX2SessionReducer = require_IX2SessionReducer();
-      var _shared = require_shared2();
-      var _IX2InstancesReducer = require_IX2InstancesReducer();
-      var _IX2ParametersReducer = require_IX2ParametersReducer();
-      var {
-        ixElements
-      } = _shared.IX2ElementsReducer;
-      var _default = (0, _redux.combineReducers)({
-        ixData: _IX2DataReducer.ixData,
-        ixRequest: _IX2RequestReducer.ixRequest,
-        ixSession: _IX2SessionReducer.ixSession,
-        ixElements,
-        ixInstances: _IX2InstancesReducer.ixInstances,
-        ixParameters: _IX2ParametersReducer.ixParameters
-      });
-      exports2.default = _default;
-    }
-  });
-
-  // node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js
-  var require_objectWithoutPropertiesLoose = __commonJS({
-    "node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"(exports2, module2) {
-      function _objectWithoutPropertiesLoose(source, excluded) {
-        if (source == null)
-          return {};
-        var target = {};
-        var sourceKeys = Object.keys(source);
-        var key2, i;
-        for (i = 0; i < sourceKeys.length; i++) {
-          key2 = sourceKeys[i];
-          if (excluded.indexOf(key2) >= 0)
-            continue;
-          target[key2] = source[key2];
-        }
-        return target;
-      }
-      module2.exports = _objectWithoutPropertiesLoose, module2.exports.__esModule = true, module2.exports["default"] = module2.exports;
     }
   });
 
@@ -20252,7 +19937,7 @@
       var stringSize = require_stringSize();
       var mapTag = "[object Map]";
       var setTag = "[object Set]";
-      function size(collection) {
+      function size2(collection) {
         if (collection == null) {
           return 0;
         }
@@ -20265,7 +19950,7 @@
         }
         return baseKeys(collection).length;
       }
-      module2.exports = size;
+      module2.exports = size2;
     }
   });
 
@@ -20297,7 +19982,7 @@
   });
 
   // node_modules/lodash/_defineProperty.js
-  var require_defineProperty2 = __commonJS({
+  var require_defineProperty = __commonJS({
     "node_modules/lodash/_defineProperty.js"(exports2, module2) {
       var getNative = require_getNative();
       var defineProperty = function() {
@@ -20315,7 +20000,7 @@
   // node_modules/lodash/_baseAssignValue.js
   var require_baseAssignValue = __commonJS({
     "node_modules/lodash/_baseAssignValue.js"(exports2, module2) {
-      var defineProperty = require_defineProperty2();
+      var defineProperty = require_defineProperty();
       function baseAssignValue(object, key2, value2) {
         if (key2 == "__proto__" && defineProperty) {
           defineProperty(object, key2, {
@@ -20338,10 +20023,10 @@
       var baseAssignValue = require_baseAssignValue();
       var eq = require_eq();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function assignValue(object, key2, value2) {
         var objValue = object[key2];
-        if (!(hasOwnProperty.call(object, key2) && eq(objValue, value2)) || value2 === void 0 && !(key2 in object)) {
+        if (!(hasOwnProperty2.call(object, key2) && eq(objValue, value2)) || value2 === void 0 && !(key2 in object)) {
           baseAssignValue(object, key2, value2);
         }
       }
@@ -20447,14 +20132,14 @@
       var isPrototype = require_isPrototype();
       var nativeKeysIn = require_nativeKeysIn();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function baseKeysIn(object) {
         if (!isObject(object)) {
           return nativeKeysIn(object);
         }
         var isProto = isPrototype(object), result = [];
         for (var key2 in object) {
-          if (!(key2 == "constructor" && (isProto || !hasOwnProperty.call(object, key2)))) {
+          if (!(key2 == "constructor" && (isProto || !hasOwnProperty2.call(object, key2)))) {
             result.push(key2);
           }
         }
@@ -20519,10 +20204,10 @@
       var baseIteratee = require_baseIteratee();
       var negate = require_negate();
       var pickBy = require_pickBy();
-      function omitBy(object, predicate) {
+      function omitBy2(object, predicate) {
         return pickBy(object, negate(baseIteratee(predicate)));
       }
-      module2.exports = omitBy;
+      module2.exports = omitBy2;
     }
   });
 
@@ -20540,8 +20225,8 @@
       var mapTag = "[object Map]";
       var setTag = "[object Set]";
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
-      function isEmpty(value2) {
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
+      function isEmpty2(value2) {
         if (value2 == null) {
           return true;
         }
@@ -20556,13 +20241,13 @@
           return !baseKeys(value2).length;
         }
         for (var key2 in value2) {
-          if (hasOwnProperty.call(value2, key2)) {
+          if (hasOwnProperty2.call(value2, key2)) {
             return false;
           }
         }
         return true;
       }
-      module2.exports = isEmpty;
+      module2.exports = isEmpty2;
     }
   });
 
@@ -20572,7 +20257,7 @@
       var baseAssignValue = require_baseAssignValue();
       var baseForOwn = require_baseForOwn();
       var baseIteratee = require_baseIteratee();
-      function mapValues(object, iteratee) {
+      function mapValues2(object, iteratee) {
         var result = {};
         iteratee = baseIteratee(iteratee, 3);
         baseForOwn(object, function(value2, key2, object2) {
@@ -20580,7 +20265,7 @@
         });
         return result;
       }
-      module2.exports = mapValues;
+      module2.exports = mapValues2;
     }
   });
 
@@ -20618,11 +20303,11 @@
       var baseEach = require_baseEach();
       var castFunction = require_castFunction();
       var isArray = require_isArray();
-      function forEach(collection, iteratee) {
+      function forEach2(collection, iteratee) {
         var func = isArray(collection) ? arrayEach : baseEach;
         return func(collection, castFunction(iteratee));
       }
-      module2.exports = forEach;
+      module2.exports = forEach2;
     }
   });
 
@@ -20737,7 +20422,7 @@
       var debounce = require_debounce();
       var isObject = require_isObject();
       var FUNC_ERROR_TEXT = "Expected a function";
-      function throttle(func, wait, options) {
+      function throttle2(func, wait, options) {
         var leading = true, trailing = true;
         if (typeof func != "function") {
           throw new TypeError(FUNC_ERROR_TEXT);
@@ -20752,84 +20437,97 @@
           "trailing": trailing
         });
       }
-      module2.exports = throttle;
+      module2.exports = throttle2;
     }
   });
 
-  // packages/systems/ix2/engine/actions/IX2EngineActions.js
-  var require_IX2EngineActions = __commonJS({
-    "packages/systems/ix2/engine/actions/IX2EngineActions.js"(exports2) {
+  // packages/systems/ix2/engine/actions/IX2EngineActions.ts
+  var IX2EngineActions_exports = {};
+  __export(IX2EngineActions_exports, {
+    actionListPlaybackChanged: () => actionListPlaybackChanged,
+    animationFrameChanged: () => animationFrameChanged,
+    clearRequested: () => clearRequested,
+    elementStateChanged: () => elementStateChanged,
+    eventListenerAdded: () => eventListenerAdded,
+    eventStateChanged: () => eventStateChanged,
+    instanceAdded: () => instanceAdded,
+    instanceRemoved: () => instanceRemoved,
+    instanceStarted: () => instanceStarted,
+    mediaQueriesDefined: () => mediaQueriesDefined,
+    parameterChanged: () => parameterChanged,
+    playbackRequested: () => playbackRequested,
+    previewRequested: () => previewRequested,
+    rawDataImported: () => rawDataImported,
+    sessionInitialized: () => sessionInitialized,
+    sessionStarted: () => sessionStarted,
+    sessionStopped: () => sessionStopped,
+    stopRequested: () => stopRequested,
+    testFrameRendered: () => testFrameRendered,
+    viewportWidthChanged: () => viewportWidthChanged
+  });
+  var import_shared3, IX2_RAW_DATA_IMPORTED5, IX2_SESSION_INITIALIZED3, IX2_SESSION_STARTED3, IX2_SESSION_STOPPED6, IX2_PREVIEW_REQUESTED3, IX2_PLAYBACK_REQUESTED3, IX2_STOP_REQUESTED3, IX2_CLEAR_REQUESTED3, IX2_EVENT_LISTENER_ADDED3, IX2_TEST_FRAME_RENDERED3, IX2_EVENT_STATE_CHANGED3, IX2_ANIMATION_FRAME_CHANGED4, IX2_PARAMETER_CHANGED3, IX2_INSTANCE_ADDED4, IX2_INSTANCE_STARTED3, IX2_INSTANCE_REMOVED3, IX2_ELEMENT_STATE_CHANGED3, IX2_ACTION_LIST_PLAYBACK_CHANGED3, IX2_VIEWPORT_WIDTH_CHANGED3, IX2_MEDIA_QUERIES_DEFINED3, reifyState2, rawDataImported, sessionInitialized, sessionStarted, sessionStopped, previewRequested, playbackRequested, stopRequested, clearRequested, eventListenerAdded, testFrameRendered, eventStateChanged, animationFrameChanged, parameterChanged, instanceAdded, instanceStarted, instanceRemoved, elementStateChanged, actionListPlaybackChanged, viewportWidthChanged, mediaQueriesDefined;
+  var init_IX2EngineActions = __esm({
+    "packages/systems/ix2/engine/actions/IX2EngineActions.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
+      init_constants();
+      import_shared3 = __toESM(require_shared2());
+      ({
+        IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED5,
+        IX2_SESSION_INITIALIZED: IX2_SESSION_INITIALIZED3,
+        IX2_SESSION_STARTED: IX2_SESSION_STARTED3,
+        IX2_SESSION_STOPPED: IX2_SESSION_STOPPED6,
+        IX2_PREVIEW_REQUESTED: IX2_PREVIEW_REQUESTED3,
+        IX2_PLAYBACK_REQUESTED: IX2_PLAYBACK_REQUESTED3,
+        IX2_STOP_REQUESTED: IX2_STOP_REQUESTED3,
+        IX2_CLEAR_REQUESTED: IX2_CLEAR_REQUESTED3,
+        IX2_EVENT_LISTENER_ADDED: IX2_EVENT_LISTENER_ADDED3,
+        IX2_TEST_FRAME_RENDERED: IX2_TEST_FRAME_RENDERED3,
+        IX2_EVENT_STATE_CHANGED: IX2_EVENT_STATE_CHANGED3,
+        IX2_ANIMATION_FRAME_CHANGED: IX2_ANIMATION_FRAME_CHANGED4,
+        IX2_PARAMETER_CHANGED: IX2_PARAMETER_CHANGED3,
+        IX2_INSTANCE_ADDED: IX2_INSTANCE_ADDED4,
+        IX2_INSTANCE_STARTED: IX2_INSTANCE_STARTED3,
+        IX2_INSTANCE_REMOVED: IX2_INSTANCE_REMOVED3,
+        IX2_ELEMENT_STATE_CHANGED: IX2_ELEMENT_STATE_CHANGED3,
+        IX2_ACTION_LIST_PLAYBACK_CHANGED: IX2_ACTION_LIST_PLAYBACK_CHANGED3,
+        IX2_VIEWPORT_WIDTH_CHANGED: IX2_VIEWPORT_WIDTH_CHANGED3,
+        IX2_MEDIA_QUERIES_DEFINED: IX2_MEDIA_QUERIES_DEFINED3
+      } = IX2EngineActionTypes_exports);
+      ({ reifyState: reifyState2 } = import_shared3.IX2VanillaUtils);
+      rawDataImported = (rawData) => ({
+        type: IX2_RAW_DATA_IMPORTED5,
+        payload: {
+          ...reifyState2(rawData)
+        }
       });
-      exports2.viewportWidthChanged = exports2.testFrameRendered = exports2.stopRequested = exports2.sessionStopped = exports2.sessionStarted = exports2.sessionInitialized = exports2.rawDataImported = exports2.previewRequested = exports2.playbackRequested = exports2.parameterChanged = exports2.mediaQueriesDefined = exports2.instanceStarted = exports2.instanceRemoved = exports2.instanceAdded = exports2.eventStateChanged = exports2.eventListenerAdded = exports2.elementStateChanged = exports2.clearRequested = exports2.animationFrameChanged = exports2.actionListPlaybackChanged = void 0;
-      var _extends2 = _interopRequireDefault(require_extends());
-      var _constants = require_constants();
-      var _shared = require_shared2();
-      var {
-        IX2_RAW_DATA_IMPORTED,
-        IX2_SESSION_INITIALIZED,
-        IX2_SESSION_STARTED,
-        IX2_SESSION_STOPPED,
-        IX2_PREVIEW_REQUESTED,
-        IX2_PLAYBACK_REQUESTED,
-        IX2_STOP_REQUESTED,
-        IX2_CLEAR_REQUESTED,
-        IX2_EVENT_LISTENER_ADDED,
-        IX2_TEST_FRAME_RENDERED,
-        IX2_EVENT_STATE_CHANGED,
-        IX2_ANIMATION_FRAME_CHANGED,
-        IX2_PARAMETER_CHANGED,
-        IX2_INSTANCE_ADDED,
-        IX2_INSTANCE_STARTED,
-        IX2_INSTANCE_REMOVED,
-        IX2_ELEMENT_STATE_CHANGED,
-        IX2_ACTION_LIST_PLAYBACK_CHANGED,
-        IX2_VIEWPORT_WIDTH_CHANGED,
-        IX2_MEDIA_QUERIES_DEFINED
-      } = _constants.IX2EngineActionTypes;
-      var {
-        reifyState
-      } = _shared.IX2VanillaUtils;
-      var rawDataImported = (rawData) => ({
-        type: IX2_RAW_DATA_IMPORTED,
-        payload: (0, _extends2.default)({}, reifyState(rawData))
-      });
-      exports2.rawDataImported = rawDataImported;
-      var sessionInitialized = ({
+      sessionInitialized = ({
         hasBoundaryNodes,
         reducedMotion
       }) => ({
-        type: IX2_SESSION_INITIALIZED,
+        type: IX2_SESSION_INITIALIZED3,
         payload: {
           hasBoundaryNodes,
           reducedMotion
         }
       });
-      exports2.sessionInitialized = sessionInitialized;
-      var sessionStarted = () => ({
-        type: IX2_SESSION_STARTED
+      sessionStarted = () => ({
+        type: IX2_SESSION_STARTED3
       });
-      exports2.sessionStarted = sessionStarted;
-      var sessionStopped = () => ({
-        type: IX2_SESSION_STOPPED
+      sessionStopped = () => ({
+        type: IX2_SESSION_STOPPED6
       });
-      exports2.sessionStopped = sessionStopped;
-      var previewRequested = ({
+      previewRequested = ({
         rawData,
         defer
       }) => ({
-        type: IX2_PREVIEW_REQUESTED,
+        type: IX2_PREVIEW_REQUESTED3,
         payload: {
           defer,
           rawData
         }
       });
-      exports2.previewRequested = previewRequested;
-      var playbackRequested = ({
-        actionTypeId = _constants.ActionTypeConsts.GENERAL_START_ACTION,
+      playbackRequested = ({
+        actionTypeId = ActionTypeConsts.GENERAL_START_ACTION,
         actionListId,
         actionItemId,
         eventId,
@@ -20839,7 +20537,7 @@
         verbose,
         rawData
       }) => ({
-        type: IX2_PLAYBACK_REQUESTED,
+        type: IX2_PLAYBACK_REQUESTED3,
         payload: {
           actionTypeId,
           actionListId,
@@ -20852,79 +20550,70 @@
           rawData
         }
       });
-      exports2.playbackRequested = playbackRequested;
-      var stopRequested = (actionListId) => ({
-        type: IX2_STOP_REQUESTED,
+      stopRequested = (actionListId) => ({
+        type: IX2_STOP_REQUESTED3,
         payload: {
           actionListId
         }
       });
-      exports2.stopRequested = stopRequested;
-      var clearRequested = () => ({
-        type: IX2_CLEAR_REQUESTED
+      clearRequested = () => ({
+        type: IX2_CLEAR_REQUESTED3
       });
-      exports2.clearRequested = clearRequested;
-      var eventListenerAdded = (target, listenerParams) => ({
-        type: IX2_EVENT_LISTENER_ADDED,
+      eventListenerAdded = (target, listenerParams) => ({
+        type: IX2_EVENT_LISTENER_ADDED3,
         payload: {
           target,
           listenerParams
         }
       });
-      exports2.eventListenerAdded = eventListenerAdded;
-      var testFrameRendered = (step = 1) => ({
-        type: IX2_TEST_FRAME_RENDERED,
+      testFrameRendered = (step = 1) => ({
+        type: IX2_TEST_FRAME_RENDERED3,
         payload: {
           step
         }
       });
-      exports2.testFrameRendered = testFrameRendered;
-      var eventStateChanged = (stateKey, newState) => ({
-        type: IX2_EVENT_STATE_CHANGED,
+      eventStateChanged = (stateKey, newState) => ({
+        type: IX2_EVENT_STATE_CHANGED3,
         payload: {
           stateKey,
           newState
         }
       });
-      exports2.eventStateChanged = eventStateChanged;
-      var animationFrameChanged = (now, parameters) => ({
-        type: IX2_ANIMATION_FRAME_CHANGED,
+      animationFrameChanged = (now, parameters) => ({
+        type: IX2_ANIMATION_FRAME_CHANGED4,
         payload: {
           now,
           parameters
         }
       });
-      exports2.animationFrameChanged = animationFrameChanged;
-      var parameterChanged = (key2, value2) => ({
-        type: IX2_PARAMETER_CHANGED,
+      parameterChanged = (key2, value2) => ({
+        type: IX2_PARAMETER_CHANGED3,
         payload: {
           key: key2,
           value: value2
         }
       });
-      exports2.parameterChanged = parameterChanged;
-      var instanceAdded = (options) => ({
-        type: IX2_INSTANCE_ADDED,
-        payload: (0, _extends2.default)({}, options)
+      instanceAdded = (options) => ({
+        type: IX2_INSTANCE_ADDED4,
+        payload: {
+          ...options
+        }
       });
-      exports2.instanceAdded = instanceAdded;
-      var instanceStarted = (instanceId, time2) => ({
-        type: IX2_INSTANCE_STARTED,
+      instanceStarted = (instanceId, time2) => ({
+        type: IX2_INSTANCE_STARTED3,
         payload: {
           instanceId,
           time: time2
         }
       });
-      exports2.instanceStarted = instanceStarted;
-      var instanceRemoved = (instanceId) => ({
-        type: IX2_INSTANCE_REMOVED,
+      instanceRemoved = (instanceId) => ({
+        type: IX2_INSTANCE_REMOVED3,
         payload: {
           instanceId
         }
       });
-      exports2.instanceRemoved = instanceRemoved;
-      var elementStateChanged = (elementId, actionTypeId, current, actionItem) => ({
-        type: IX2_ELEMENT_STATE_CHANGED,
+      elementStateChanged = (elementId, actionTypeId, current, actionItem) => ({
+        type: IX2_ELEMENT_STATE_CHANGED3,
         payload: {
           elementId,
           actionTypeId,
@@ -20932,160 +20621,149 @@
           actionItem
         }
       });
-      exports2.elementStateChanged = elementStateChanged;
-      var actionListPlaybackChanged = ({
+      actionListPlaybackChanged = ({
         actionListId,
         isPlaying
       }) => ({
-        type: IX2_ACTION_LIST_PLAYBACK_CHANGED,
+        type: IX2_ACTION_LIST_PLAYBACK_CHANGED3,
         payload: {
           actionListId,
           isPlaying
         }
       });
-      exports2.actionListPlaybackChanged = actionListPlaybackChanged;
-      var viewportWidthChanged = ({
+      viewportWidthChanged = ({
         width: width2,
         mediaQueries
       }) => ({
-        type: IX2_VIEWPORT_WIDTH_CHANGED,
+        type: IX2_VIEWPORT_WIDTH_CHANGED3,
         payload: {
           width: width2,
           mediaQueries
         }
       });
-      exports2.viewportWidthChanged = viewportWidthChanged;
-      var mediaQueriesDefined = () => ({
-        type: IX2_MEDIA_QUERIES_DEFINED
+      mediaQueriesDefined = () => ({
+        type: IX2_MEDIA_QUERIES_DEFINED3
       });
-      exports2.mediaQueriesDefined = mediaQueriesDefined;
     }
   });
 
-  // packages/systems/ix2/engine/logic/IX2BrowserApi.js
-  var require_IX2BrowserApi = __commonJS({
-    "packages/systems/ix2/engine/logic/IX2BrowserApi.js"(exports2) {
+  // packages/systems/ix2/engine/logic/IX2BrowserApi.ts
+  var IX2BrowserApi_exports = {};
+  __export(IX2BrowserApi_exports, {
+    elementContains: () => elementContains,
+    getChildElements: () => getChildElements,
+    getClosestElement: () => getClosestElement,
+    getProperty: () => getProperty,
+    getQuerySelector: () => getQuerySelector,
+    getRefType: () => getRefType,
+    getSiblingElements: () => getSiblingElements,
+    getStyle: () => getStyle,
+    getValidDocument: () => getValidDocument,
+    isSiblingNode: () => isSiblingNode,
+    matchSelector: () => matchSelector,
+    queryDocument: () => queryDocument,
+    setStyle: () => setStyle
+  });
+  function setStyle(element, prop, value2) {
+    element.style[prop] = value2;
+  }
+  function getStyle(element, prop) {
+    return element.style[prop];
+  }
+  function getProperty(element, prop) {
+    return element[prop];
+  }
+  function matchSelector(selector) {
+    return (element) => element[ELEMENT_MATCHES2](selector);
+  }
+  function getQuerySelector({
+    id,
+    selector
+  }) {
+    if (id) {
+      let nodeId = id;
+      if (id.indexOf(IX2_ID_DELIMITER2) !== -1) {
+        const pair = id.split(IX2_ID_DELIMITER2);
+        const pageId = pair[0];
+        nodeId = pair[1];
+        if (pageId !== document.documentElement.getAttribute(WF_PAGE2)) {
+          return null;
+        }
+      }
+      return `[data-w-id="${nodeId}"], [data-w-id^="${nodeId}_instance"]`;
+    }
+    return selector;
+  }
+  function getValidDocument(pageId) {
+    if (pageId == null || pageId === document.documentElement.getAttribute(WF_PAGE2)) {
+      return document;
+    }
+    return null;
+  }
+  function queryDocument(baseSelector, descendantSelector) {
+    return Array.prototype.slice.call(
+      document.querySelectorAll(
+        descendantSelector ? baseSelector + " " + descendantSelector : baseSelector
+      )
+    );
+  }
+  function elementContains(parent2, child) {
+    return parent2.contains(child);
+  }
+  function isSiblingNode(a, b) {
+    return a !== b && a.parentNode === b.parentNode;
+  }
+  function getChildElements(sourceElements) {
+    const childElements = [];
+    for (let i = 0, { length: length2 } = sourceElements || []; i < length2; i++) {
+      const { children } = sourceElements[i];
+      const { length: childCount } = children;
+      if (!childCount) {
+        continue;
+      }
+      for (let j = 0; j < childCount; j++) {
+        childElements.push(children[j]);
+      }
+    }
+    return childElements;
+  }
+  function getSiblingElements(sourceElements = []) {
+    const elements = [];
+    const parentCache = [];
+    for (let i = 0, { length: length2 } = sourceElements; i < length2; i++) {
+      const { parentNode } = sourceElements[i];
+      if (!parentNode || !parentNode.children || !parentNode.children.length) {
+        continue;
+      }
+      if (parentCache.indexOf(parentNode) !== -1) {
+        continue;
+      }
+      parentCache.push(parentNode);
+      let el = parentNode.firstElementChild;
+      while (el != null) {
+        if (sourceElements.indexOf(el) === -1) {
+          elements.push(el);
+        }
+        el = el.nextElementSibling;
+      }
+    }
+    return elements;
+  }
+  function getRefType(ref) {
+    if (ref != null && typeof ref == "object") {
+      return ref instanceof Element ? HTML_ELEMENT3 : PLAIN_OBJECT3;
+    }
+    return null;
+  }
+  var import_shared4, ELEMENT_MATCHES2, IX2_ID_DELIMITER2, HTML_ELEMENT3, PLAIN_OBJECT3, WF_PAGE2, getClosestElement;
+  var init_IX2BrowserApi = __esm({
+    "packages/systems/ix2/engine/logic/IX2BrowserApi.ts"() {
       "use strict";
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.elementContains = elementContains;
-      exports2.getChildElements = getChildElements;
-      exports2.getClosestElement = void 0;
-      exports2.getProperty = getProperty;
-      exports2.getQuerySelector = getQuerySelector;
-      exports2.getRefType = getRefType;
-      exports2.getSiblingElements = getSiblingElements;
-      exports2.getStyle = getStyle;
-      exports2.getValidDocument = getValidDocument;
-      exports2.isSiblingNode = isSiblingNode;
-      exports2.matchSelector = matchSelector;
-      exports2.queryDocument = queryDocument;
-      exports2.setStyle = setStyle;
-      var _shared = require_shared2();
-      var _constants = require_constants();
-      var {
-        ELEMENT_MATCHES
-      } = _shared.IX2BrowserSupport;
-      var {
-        IX2_ID_DELIMITER,
-        HTML_ELEMENT,
-        PLAIN_OBJECT,
-        WF_PAGE
-      } = _constants.IX2EngineConstants;
-      function setStyle(element, prop, value2) {
-        element.style[prop] = value2;
-      }
-      function getStyle(element, prop) {
-        return element.style[prop];
-      }
-      function getProperty(element, prop) {
-        return element[prop];
-      }
-      function matchSelector(selector) {
-        return (element) => element[ELEMENT_MATCHES](selector);
-      }
-      function getQuerySelector({
-        id,
-        selector
-      }) {
-        if (id) {
-          let nodeId = id;
-          if (id.indexOf(IX2_ID_DELIMITER) !== -1) {
-            const pair = id.split(IX2_ID_DELIMITER);
-            const pageId = pair[0];
-            nodeId = pair[1];
-            if (pageId !== document.documentElement.getAttribute(WF_PAGE)) {
-              return null;
-            }
-          }
-          return `[data-w-id="${nodeId}"], [data-w-id^="${nodeId}_instance"]`;
-        }
-        return selector;
-      }
-      function getValidDocument(pageId) {
-        if (pageId == null || // $FlowIgnore — if documentElement is null crash
-        pageId === document.documentElement.getAttribute(WF_PAGE)) {
-          return document;
-        }
-        return null;
-      }
-      function queryDocument(baseSelector, descendantSelector) {
-        return Array.prototype.slice.call(document.querySelectorAll(descendantSelector ? baseSelector + " " + descendantSelector : baseSelector));
-      }
-      function elementContains(parent2, child) {
-        return parent2.contains(child);
-      }
-      function isSiblingNode(a, b) {
-        return a !== b && a.parentNode === b.parentNode;
-      }
-      function getChildElements(sourceElements) {
-        const childElements = [];
-        for (let i = 0, {
-          length: length2
-        } = sourceElements || []; i < length2; i++) {
-          const {
-            children
-          } = sourceElements[i];
-          const {
-            length: childCount
-          } = children;
-          if (!childCount) {
-            continue;
-          }
-          for (let j = 0; j < childCount; j++) {
-            childElements.push(children[j]);
-          }
-        }
-        return childElements;
-      }
-      function getSiblingElements(sourceElements = []) {
-        const elements = [];
-        const parentCache = [];
-        for (let i = 0, {
-          length: length2
-        } = sourceElements; i < length2; i++) {
-          const {
-            parentNode
-          } = sourceElements[i];
-          if (!parentNode || !parentNode.children || !parentNode.children.length) {
-            continue;
-          }
-          if (parentCache.indexOf(parentNode) !== -1) {
-            continue;
-          }
-          parentCache.push(parentNode);
-          let el = parentNode.firstElementChild;
-          while (el != null) {
-            if (sourceElements.indexOf(el) === -1) {
-              elements.push(el);
-            }
-            el = el.nextElementSibling;
-          }
-        }
-        return elements;
-      }
-      var getClosestElement = Element.prototype.closest ? (element, selector) => {
+      import_shared4 = __toESM(require_shared2());
+      init_constants();
+      ({ ELEMENT_MATCHES: ELEMENT_MATCHES2 } = import_shared4.IX2BrowserSupport);
+      ({ IX2_ID_DELIMITER: IX2_ID_DELIMITER2, HTML_ELEMENT: HTML_ELEMENT3, PLAIN_OBJECT: PLAIN_OBJECT3, WF_PAGE: WF_PAGE2 } = IX2EngineConstants_exports);
+      getClosestElement = Element.prototype.closest ? (element, selector) => {
         if (!document.documentElement.contains(element)) {
           return null;
         }
@@ -21096,20 +20774,13 @@
         }
         let el = element;
         do {
-          if (el[ELEMENT_MATCHES] && el[ELEMENT_MATCHES](selector)) {
+          if (el[ELEMENT_MATCHES2] && el[ELEMENT_MATCHES2](selector)) {
             return el;
           }
           el = el.parentNode;
         } while (el != null);
         return null;
       };
-      exports2.getClosestElement = getClosestElement;
-      function getRefType(ref) {
-        if (ref != null && typeof ref == "object") {
-          return ref instanceof Element ? HTML_ELEMENT : PLAIN_OBJECT;
-        }
-        return null;
-      }
     }
   });
 
@@ -21279,7 +20950,7 @@
   var require_baseSetToString = __commonJS({
     "node_modules/lodash/_baseSetToString.js"(exports2, module2) {
       var constant = require_constant();
-      var defineProperty = require_defineProperty2();
+      var defineProperty = require_defineProperty();
       var identity = require_identity();
       var baseSetToString = !defineProperty ? identity : function(func, string) {
         return defineProperty(func, "toString", {
@@ -21384,9 +21055,9 @@
     "node_modules/lodash/_getFuncName.js"(exports2, module2) {
       var realNames = require_realNames();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function getFuncName(func) {
-        var result = func.name + "", array = realNames[result], length2 = hasOwnProperty.call(realNames, result) ? array.length : 0;
+        var result = func.name + "", array = realNames[result], length2 = hasOwnProperty2.call(realNames, result) ? array.length : 0;
         while (length2--) {
           var data2 = array[length2], otherFunc = data2.func;
           if (otherFunc == null || otherFunc == func) {
@@ -21465,13 +21136,13 @@
       var isObjectLike = require_isObjectLike();
       var wrapperClone = require_wrapperClone();
       var objectProto = Object.prototype;
-      var hasOwnProperty = objectProto.hasOwnProperty;
+      var hasOwnProperty2 = objectProto.hasOwnProperty;
       function lodash(value2) {
         if (isObjectLike(value2) && !isArray(value2) && !(value2 instanceof LazyWrapper)) {
           if (value2 instanceof LodashWrapper) {
             return value2;
           }
-          if (hasOwnProperty.call(value2, "__wrapped__")) {
+          if (hasOwnProperty2.call(value2, "__wrapped__")) {
             return wrapperClone(value2);
           }
         }
@@ -21565,8 +21236,8 @@
   var require_flow = __commonJS({
     "node_modules/lodash/flow.js"(exports2, module2) {
       var createFlow = require_createFlow();
-      var flow = createFlow();
-      module2.exports = flow;
+      var flow2 = createFlow();
+      module2.exports = flow2;
     }
   });
 
@@ -21593,7 +21264,7 @@
     "node_modules/lodash/clamp.js"(exports2, module2) {
       var baseClamp = require_baseClamp();
       var toNumber = require_toNumber();
-      function clamp2(number, lower, upper) {
+      function clamp3(number, lower, upper) {
         if (upper === void 0) {
           upper = lower;
           lower = void 0;
@@ -21608,28 +21279,23 @@
         }
         return baseClamp(toNumber(number), lower, upper);
       }
-      module2.exports = clamp2;
+      module2.exports = clamp3;
     }
   });
 
-  // packages/systems/ix2/engine/logic/IX2VanillaEvents.js
-  var require_IX2VanillaEvents = __commonJS({
-    "packages/systems/ix2/engine/logic/IX2VanillaEvents.js"(exports2) {
+  // packages/systems/ix2/engine/logic/IX2VanillaEvents.ts
+  var import_flow, import_get, import_clamp, import_shared5, MOUSE_CLICK, MOUSE_SECOND_CLICK, MOUSE_DOWN, MOUSE_UP, MOUSE_OVER, MOUSE_OUT, DROPDOWN_CLOSE, DROPDOWN_OPEN, SLIDER_ACTIVE, SLIDER_INACTIVE, TAB_ACTIVE, TAB_INACTIVE, NAVBAR_CLOSE, NAVBAR_OPEN, MOUSE_MOVE, PAGE_SCROLL_DOWN, SCROLL_INTO_VIEW, SCROLL_OUT_OF_VIEW, PAGE_SCROLL_UP, SCROLLING_IN_VIEW, PAGE_FINISH, ECOMMERCE_CART_CLOSE, ECOMMERCE_CART_OPEN, PAGE_START, PAGE_SCROLL, COMPONENT_ACTIVE, COMPONENT_INACTIVE, COLON_DELIMITER3, getNamespacedParameterId2, composableFilter, isElement, containsElement, isOrContainsElement, getAutoStopEvent, hasAutoStopEvent, actionGroupCreator, withFilter, baseActionGroupOptions, baseActivityActionGroupOptions, SCROLL_EVENT_TYPES, MOUSE_OVER_OUT_TYPES, baseScrollActionGroupOptions, AUTO_STOP_DISABLED_EVENTS, getDocumentState, areBoxesIntersecting, isElementHovered, isElementVisible, whenComponentActiveChange, whenElementHoverChange, whenElementVisibiltyChange, whenScrollDirectionChange, pointIntersects, whenPageLoadFinish, whenPageLoadStart, whenClickCountChange, getComponentActiveOptions, getComponentInactiveOptions, scrollIntoOutOfViewOptions, MOUSE_OUT_ROUND_THRESHOLD, IX2VanillaEvents_default;
+  var init_IX2VanillaEvents = __esm({
+    "packages/systems/ix2/engine/logic/IX2VanillaEvents.ts"() {
       "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.default = void 0;
-      var _extends2 = _interopRequireDefault(require_extends());
-      var _flow = _interopRequireDefault(require_flow());
-      var _get = _interopRequireDefault(require_get());
-      var _clamp = _interopRequireDefault(require_clamp());
-      var _constants = require_constants();
-      var _IX2VanillaEngine = require_IX2VanillaEngine();
-      var _IX2EngineActions = require_IX2EngineActions();
-      var _shared = require_shared2();
-      var {
+      import_flow = __toESM(require_flow());
+      import_get = __toESM(require_get());
+      import_clamp = __toESM(require_clamp());
+      init_constants();
+      init_IX2VanillaEngine();
+      init_IX2EngineActions();
+      import_shared5 = __toESM(require_shared2());
+      ({
         MOUSE_CLICK,
         MOUSE_SECOND_CLICK,
         MOUSE_DOWN,
@@ -21655,42 +21321,28 @@
         ECOMMERCE_CART_OPEN,
         PAGE_START,
         PAGE_SCROLL
-      } = _constants.EventTypeConsts;
-      var COMPONENT_ACTIVE = "COMPONENT_ACTIVE";
-      var COMPONENT_INACTIVE = "COMPONENT_INACTIVE";
-      var {
-        COLON_DELIMITER
-      } = _constants.IX2EngineConstants;
-      var {
-        getNamespacedParameterId
-      } = _shared.IX2VanillaUtils;
-      var composableFilter = (predicate) => (options) => {
+      } = EventTypeConsts);
+      COMPONENT_ACTIVE = "COMPONENT_ACTIVE";
+      COMPONENT_INACTIVE = "COMPONENT_INACTIVE";
+      ({ COLON_DELIMITER: COLON_DELIMITER3 } = IX2EngineConstants_exports);
+      ({ getNamespacedParameterId: getNamespacedParameterId2 } = import_shared5.IX2VanillaUtils);
+      composableFilter = (predicate) => (options) => {
         if (typeof options === "object" && predicate(options)) {
           return true;
         }
         return options;
       };
-      var isElement = composableFilter(({
-        element,
-        nativeEvent
-      }) => {
+      isElement = composableFilter(({ element, nativeEvent }) => {
         return element === nativeEvent.target;
       });
-      var containsElement = composableFilter(({
-        element,
-        nativeEvent
-      }) => {
+      containsElement = composableFilter(({ element, nativeEvent }) => {
         return element.contains(nativeEvent.target);
       });
-      var isOrContainsElement = (0, _flow.default)([isElement, containsElement]);
-      var getAutoStopEvent = (store, autoStopEventId) => {
+      isOrContainsElement = (0, import_flow.default)([isElement, containsElement]);
+      getAutoStopEvent = (store, autoStopEventId) => {
         if (autoStopEventId) {
-          const {
-            ixData
-          } = store.getState();
-          const {
-            events
-          } = ixData;
+          const { ixData: ixData2 } = store.getState();
+          const { events } = ixData2;
           const eventToStop = events[autoStopEventId];
           if (eventToStop && !AUTO_STOP_DISABLED_EVENTS[eventToStop.eventTypeId]) {
             return eventToStop;
@@ -21698,50 +21350,32 @@
         }
         return null;
       };
-      var hasAutoStopEvent = ({
-        store,
-        event
-      }) => {
-        const {
-          action: eventAction
-        } = event;
-        const {
-          autoStopEventId
-        } = eventAction.config;
+      hasAutoStopEvent = ({ store, event }) => {
+        const { action: eventAction } = event;
+        const { autoStopEventId } = eventAction.config;
         return Boolean(getAutoStopEvent(store, autoStopEventId));
       };
-      var actionGroupCreator = ({
-        store,
-        event,
-        element,
-        eventStateKey
-      }, state) => {
-        const {
-          action: eventAction,
-          id: eventId
-        } = event;
-        const {
-          actionListId,
-          autoStopEventId
-        } = eventAction.config;
+      actionGroupCreator = ({ store, event, element, eventStateKey }, state) => {
+        const { action: eventAction, id: eventId } = event;
+        const { actionListId, autoStopEventId } = eventAction.config;
         const eventToStop = getAutoStopEvent(store, autoStopEventId);
         if (eventToStop) {
-          (0, _IX2VanillaEngine.stopActionGroup)({
+          stopActionGroup({
             store,
             eventId: autoStopEventId,
             eventTarget: element,
-            eventStateKey: autoStopEventId + COLON_DELIMITER + eventStateKey.split(COLON_DELIMITER)[1],
-            actionListId: (0, _get.default)(eventToStop, "action.config.actionListId")
+            eventStateKey: autoStopEventId + COLON_DELIMITER3 + eventStateKey.split(COLON_DELIMITER3)[1],
+            actionListId: (0, import_get.default)(eventToStop, "action.config.actionListId")
           });
         }
-        (0, _IX2VanillaEngine.stopActionGroup)({
+        stopActionGroup({
           store,
           eventId,
           eventTarget: element,
           eventStateKey,
           actionListId
         });
-        (0, _IX2VanillaEngine.startActionGroup)({
+        startActionGroup({
           store,
           eventId,
           eventTarget: element,
@@ -21750,72 +21384,54 @@
         });
         return state;
       };
-      var withFilter = (filter, handler) => (options, state) => (
-        // $FlowFixMe
-        filter(options, state) === true ? handler(options, state) : state
-      );
-      var baseActionGroupOptions = {
+      withFilter = (filter, handler) => (options, state) => filter(options, state) === true ? handler(options, state) : state;
+      baseActionGroupOptions = {
         handler: withFilter(isOrContainsElement, actionGroupCreator)
       };
-      var baseActivityActionGroupOptions = (0, _extends2.default)({}, baseActionGroupOptions, {
+      baseActivityActionGroupOptions = {
+        ...baseActionGroupOptions,
         types: [COMPONENT_ACTIVE, COMPONENT_INACTIVE].join(" ")
-      });
-      var SCROLL_EVENT_TYPES = [{
-        target: window,
-        types: "resize orientationchange",
-        throttle: true
-      }, {
-        target: document,
-        types: "scroll wheel readystatechange IX2_PAGE_UPDATE",
-        throttle: true
-      }];
-      var MOUSE_OVER_OUT_TYPES = "mouseover mouseout";
-      var baseScrollActionGroupOptions = {
+      };
+      SCROLL_EVENT_TYPES = [
+        { target: window, types: "resize orientationchange", throttle: true },
+        {
+          target: document,
+          types: "scroll wheel readystatechange IX2_PAGE_UPDATE",
+          throttle: true
+        }
+      ];
+      MOUSE_OVER_OUT_TYPES = "mouseover mouseout";
+      baseScrollActionGroupOptions = {
         types: SCROLL_EVENT_TYPES
       };
-      var AUTO_STOP_DISABLED_EVENTS = {
+      AUTO_STOP_DISABLED_EVENTS = {
         PAGE_START,
         PAGE_FINISH
       };
-      var getDocumentState = (() => {
+      getDocumentState = (() => {
         const supportOffset = window.pageXOffset !== void 0;
         const isCSS1Compat = document.compatMode === "CSS1Compat";
         const rootElement = isCSS1Compat ? document.documentElement : document.body;
         return () => ({
-          // $FlowFixMe
           scrollLeft: supportOffset ? window.pageXOffset : rootElement.scrollLeft,
-          // $FlowFixMe
           scrollTop: supportOffset ? window.pageYOffset : rootElement.scrollTop,
           // required to remove elasticity in Safari scrolling.
-          stiffScrollTop: (0, _clamp.default)(
-            // $FlowFixMe
+          stiffScrollTop: (0, import_clamp.default)(
             supportOffset ? window.pageYOffset : rootElement.scrollTop,
             0,
-            // $FlowFixMe
             rootElement.scrollHeight - window.innerHeight
           ),
-          // $FlowFixMe
           scrollWidth: rootElement.scrollWidth,
-          // $FlowFixMe
           scrollHeight: rootElement.scrollHeight,
-          // $FlowFixMe
           clientWidth: rootElement.clientWidth,
-          // $FlowFixMe
           clientHeight: rootElement.clientHeight,
           innerWidth: window.innerWidth,
           innerHeight: window.innerHeight
         });
       })();
-      var areBoxesIntersecting = (a, b) => !(a.left > b.right || a.right < b.left || a.top > b.bottom || a.bottom < b.top);
-      var isElementHovered = ({
-        element,
-        nativeEvent
-      }) => {
-        const {
-          type,
-          target,
-          relatedTarget
-        } = nativeEvent;
+      areBoxesIntersecting = (a, b) => !(a.left > b.right || a.right < b.left || a.top > b.bottom || a.bottom < b.top);
+      isElementHovered = ({ element, nativeEvent }) => {
+        const { type, target, relatedTarget } = nativeEvent;
         const containsTarget = element.contains(target);
         if (type === "mouseover" && containsTarget) {
           return true;
@@ -21826,17 +21442,12 @@
         }
         return false;
       };
-      var isElementVisible = (options) => {
+      isElementVisible = (options) => {
         const {
           element,
-          event: {
-            config
-          }
+          event: { config }
         } = options;
-        const {
-          clientWidth,
-          clientHeight
-        } = getDocumentState();
+        const { clientWidth, clientHeight } = getDocumentState();
         const scrollOffsetValue = config.scrollOffsetValue;
         const scrollOffsetUnit = config.scrollOffsetUnit;
         const isPX = scrollOffsetUnit === "PX";
@@ -21848,20 +21459,20 @@
           bottom: clientHeight - offsetPadding
         });
       };
-      var whenComponentActiveChange = (handler) => (options, oldState) => {
-        const {
-          type
-        } = options.nativeEvent;
+      whenComponentActiveChange = // @ts-expect-error - TS7006 - Parameter 'handler' implicitly has an 'any' type.
+      (handler) => (options, oldState) => {
+        const { type } = options.nativeEvent;
         const isActive = [COMPONENT_ACTIVE, COMPONENT_INACTIVE].indexOf(type) !== -1 ? type === COMPONENT_ACTIVE : oldState.isActive;
-        const newState = (0, _extends2.default)({}, oldState, {
+        const newState = {
+          ...oldState,
           isActive
-        });
+        };
         if (!oldState || newState.isActive !== oldState.isActive) {
           return handler(options, newState) || newState;
         }
         return newState;
       };
-      var whenElementHoverChange = (handler) => (options, oldState) => {
+      whenElementHoverChange = (handler) => (options, oldState) => {
         const newState = {
           elementHovered: isElementHovered(options)
         };
@@ -21870,63 +21481,58 @@
         }
         return newState;
       };
-      var whenElementVisibiltyChange = (handler) => (options, oldState) => {
-        const newState = (0, _extends2.default)({}, oldState, {
+      whenElementVisibiltyChange = (handler) => (options, oldState) => {
+        const newState = {
+          ...oldState,
           elementVisible: isElementVisible(options)
-        });
+        };
         if (oldState ? newState.elementVisible !== oldState.elementVisible : newState.elementVisible) {
           return handler(options, newState) || newState;
         }
         return newState;
       };
-      var whenScrollDirectionChange = (handler) => (
-        // $FlowFixMe
-        (options, oldState = {}) => {
-          const {
-            stiffScrollTop: scrollTop,
-            scrollHeight,
-            innerHeight
-          } = getDocumentState();
-          const {
-            event: {
-              config,
-              eventTypeId
-            }
-          } = options;
-          const {
-            scrollOffsetValue,
-            scrollOffsetUnit
-          } = config;
-          const isPX = scrollOffsetUnit === "PX";
-          const scrollHeightBounds = scrollHeight - innerHeight;
-          const percentTop = Number((scrollTop / scrollHeightBounds).toFixed(2));
-          if (oldState && oldState.percentTop === percentTop) {
-            return oldState;
-          }
-          const scrollTopPadding = (isPX ? scrollOffsetValue : innerHeight * (scrollOffsetValue || 0) / 100) / scrollHeightBounds;
-          let scrollingDown;
-          let scrollDirectionChanged;
-          let anchorTop = 0;
-          if (oldState) {
-            scrollingDown = percentTop > oldState.percentTop;
-            scrollDirectionChanged = oldState.scrollingDown !== scrollingDown;
-            anchorTop = scrollDirectionChanged ? percentTop : oldState.anchorTop;
-          }
-          const inBounds = eventTypeId === PAGE_SCROLL_DOWN ? percentTop >= anchorTop + scrollTopPadding : percentTop <= anchorTop - scrollTopPadding;
-          const newState = (0, _extends2.default)({}, oldState, {
-            percentTop,
-            inBounds,
-            anchorTop,
-            scrollingDown
-          });
-          if (oldState && inBounds && (scrollDirectionChanged || newState.inBounds !== oldState.inBounds)) {
-            return handler(options, newState) || newState;
-          }
-          return newState;
+      whenScrollDirectionChange = // @ts-expect-error - TS7006 - Parameter 'handler' implicitly has an 'any' type.
+      (handler) => (options, oldState = {}) => {
+        const {
+          stiffScrollTop: scrollTop,
+          scrollHeight,
+          innerHeight
+        } = getDocumentState();
+        const {
+          event: { config, eventTypeId }
+        } = options;
+        const { scrollOffsetValue, scrollOffsetUnit } = config;
+        const isPX = scrollOffsetUnit === "PX";
+        const scrollHeightBounds = scrollHeight - innerHeight;
+        const percentTop = Number((scrollTop / scrollHeightBounds).toFixed(2));
+        if (oldState && oldState.percentTop === percentTop) {
+          return oldState;
         }
-      );
-      var pointIntersects = (point, rect) => point.left > rect.left && point.left < rect.right && point.top > rect.top && point.top < rect.bottom;
-      var whenPageLoadFinish = (handler) => (options, oldState) => {
+        const scrollTopPadding = (isPX ? scrollOffsetValue : innerHeight * (scrollOffsetValue || 0) / 100) / scrollHeightBounds;
+        let scrollingDown;
+        let scrollDirectionChanged;
+        let anchorTop = 0;
+        if (oldState) {
+          scrollingDown = percentTop > oldState.percentTop;
+          scrollDirectionChanged = oldState.scrollingDown !== scrollingDown;
+          anchorTop = scrollDirectionChanged ? percentTop : oldState.anchorTop;
+        }
+        const inBounds = eventTypeId === PAGE_SCROLL_DOWN ? percentTop >= anchorTop + scrollTopPadding : percentTop <= anchorTop - scrollTopPadding;
+        const newState = {
+          ...oldState,
+          percentTop,
+          inBounds,
+          anchorTop,
+          scrollingDown
+        };
+        if (oldState && inBounds && // @ts-expect-error - TS2339 - Property 'inBounds' does not exist on type '{}'.
+        (scrollDirectionChanged || newState.inBounds !== oldState.inBounds)) {
+          return handler(options, newState) || newState;
+        }
+        return newState;
+      };
+      pointIntersects = (point, rect) => point.left > rect.left && point.left < rect.right && point.top > rect.top && point.top < rect.bottom;
+      whenPageLoadFinish = (handler) => (options, oldState) => {
         const newState = {
           finished: document.readyState === "complete"
         };
@@ -21935,7 +21541,7 @@
         }
         return newState;
       };
-      var whenPageLoadStart = (handler) => (options, oldState) => {
+      whenPageLoadStart = (handler) => (options, oldState) => {
         const newState = {
           started: true
         };
@@ -21944,9 +21550,7 @@
         }
         return newState;
       };
-      var whenClickCountChange = (handler) => (options, oldState = {
-        clickCount: 0
-      }) => {
+      whenClickCountChange = (handler) => (options, oldState = { clickCount: 0 }) => {
         const newState = {
           clickCount: oldState.clickCount % 2 + 1
         };
@@ -21955,46 +21559,49 @@
         }
         return newState;
       };
-      var getComponentActiveOptions = (allowNestedChildrenEvents = true) => (0, _extends2.default)({}, baseActivityActionGroupOptions, {
-        handler: withFilter(allowNestedChildrenEvents ? isOrContainsElement : isElement, whenComponentActiveChange((options, state) => {
-          return state.isActive ? baseActionGroupOptions.handler(options, state) : state;
-        }))
+      getComponentActiveOptions = (allowNestedChildrenEvents = true) => ({
+        ...baseActivityActionGroupOptions,
+        handler: withFilter(
+          allowNestedChildrenEvents ? isOrContainsElement : isElement,
+          // @ts-expect-error - TS7006 - Parameter 'options' implicitly has an 'any' type. | TS7006 - Parameter 'state' implicitly has an 'any' type.
+          whenComponentActiveChange((options, state) => {
+            return state.isActive ? baseActionGroupOptions.handler(options, state) : state;
+          })
+        )
       });
-      var getComponentInactiveOptions = (allowNestedChildrenEvents = true) => (0, _extends2.default)({}, baseActivityActionGroupOptions, {
-        handler: withFilter(allowNestedChildrenEvents ? isOrContainsElement : isElement, whenComponentActiveChange((options, state) => {
-          return !state.isActive ? baseActionGroupOptions.handler(options, state) : state;
-        }))
+      getComponentInactiveOptions = (allowNestedChildrenEvents = true) => ({
+        ...baseActivityActionGroupOptions,
+        handler: withFilter(
+          allowNestedChildrenEvents ? isOrContainsElement : isElement,
+          // @ts-expect-error - TS7006 - Parameter 'options' implicitly has an 'any' type. | TS7006 - Parameter 'state' implicitly has an 'any' type.
+          whenComponentActiveChange((options, state) => {
+            return !state.isActive ? baseActionGroupOptions.handler(options, state) : state;
+          })
+        )
       });
-      var scrollIntoOutOfViewOptions = (0, _extends2.default)({}, baseScrollActionGroupOptions, {
+      scrollIntoOutOfViewOptions = {
+        ...baseScrollActionGroupOptions,
         handler: whenElementVisibiltyChange((options, state) => {
-          const {
-            elementVisible
-          } = state;
-          const {
-            event,
-            store
-          } = options;
-          const {
-            ixData
-          } = store.getState();
-          const {
-            events
-          } = ixData;
+          const { elementVisible } = state;
+          const { event, store } = options;
+          const { ixData: ixData2 } = store.getState();
+          const { events } = ixData2;
           if (!events[event.action.config.autoStopEventId] && state.triggered) {
             return state;
           }
           if (event.eventTypeId === SCROLL_INTO_VIEW === elementVisible) {
             actionGroupCreator(options);
-            return (0, _extends2.default)({}, state, {
+            return {
+              ...state,
               triggered: true
-            });
+            };
           } else {
             return state;
           }
         })
-      });
-      var MOUSE_OUT_ROUND_THRESHOLD = 0.05;
-      var _default = {
+      };
+      MOUSE_OUT_ROUND_THRESHOLD = 0.05;
+      IX2VanillaEvents_default = {
         [SLIDER_ACTIVE]: getComponentActiveOptions(),
         [SLIDER_INACTIVE]: getComponentInactiveOptions(),
         [DROPDOWN_OPEN]: getComponentActiveOptions(),
@@ -22015,62 +21622,61 @@
         },
         [MOUSE_CLICK]: {
           types: "click",
-          handler: withFilter(isOrContainsElement, whenClickCountChange((options, {
-            clickCount
-          }) => {
-            if (hasAutoStopEvent(options)) {
-              clickCount === 1 && actionGroupCreator(options);
-            } else {
-              actionGroupCreator(options);
-            }
-          }))
+          handler: withFilter(
+            isOrContainsElement,
+            whenClickCountChange((options, { clickCount }) => {
+              if (hasAutoStopEvent(options)) {
+                clickCount === 1 && actionGroupCreator(options);
+              } else {
+                actionGroupCreator(options);
+              }
+            })
+          )
         },
         [MOUSE_SECOND_CLICK]: {
           types: "click",
-          handler: withFilter(isOrContainsElement, whenClickCountChange((options, {
-            clickCount
-          }) => {
-            if (clickCount === 2) {
-              actionGroupCreator(options);
-            }
-          }))
+          handler: withFilter(
+            isOrContainsElement,
+            whenClickCountChange((options, { clickCount }) => {
+              if (clickCount === 2) {
+                actionGroupCreator(options);
+              }
+            })
+          )
         },
-        [MOUSE_DOWN]: (0, _extends2.default)({}, baseActionGroupOptions, {
+        [MOUSE_DOWN]: {
+          ...baseActionGroupOptions,
           types: "mousedown"
-        }),
-        [MOUSE_UP]: (0, _extends2.default)({}, baseActionGroupOptions, {
+        },
+        [MOUSE_UP]: {
+          ...baseActionGroupOptions,
           types: "mouseup"
-        }),
+        },
         [MOUSE_OVER]: {
           types: MOUSE_OVER_OUT_TYPES,
-          handler: withFilter(isOrContainsElement, whenElementHoverChange((options, state) => {
-            if (state.elementHovered) {
-              actionGroupCreator(options);
-            }
-          }))
+          handler: withFilter(
+            isOrContainsElement,
+            whenElementHoverChange((options, state) => {
+              if (state.elementHovered) {
+                actionGroupCreator(options);
+              }
+            })
+          )
         },
         [MOUSE_OUT]: {
           types: MOUSE_OVER_OUT_TYPES,
-          handler: withFilter(isOrContainsElement, whenElementHoverChange((options, state) => {
-            if (!state.elementHovered) {
-              actionGroupCreator(options);
-            }
-          }))
+          handler: withFilter(
+            isOrContainsElement,
+            whenElementHoverChange((options, state) => {
+              if (!state.elementHovered) {
+                actionGroupCreator(options);
+              }
+            })
+          )
         },
         [MOUSE_MOVE]: {
           types: "mousemove mouseout scroll",
-          handler: ({
-            store,
-            element,
-            eventConfig,
-            nativeEvent,
-            eventStateKey
-          }, state = {
-            clientX: 0,
-            clientY: 0,
-            pageX: 0,
-            pageY: 0
-          }) => {
+          handler: ({ store, element, eventConfig, nativeEvent, eventStateKey }, state = { clientX: 0, clientY: 0, pageX: 0, pageY: 0 }) => {
             const {
               basedOn,
               selectedAxis,
@@ -22090,41 +21696,28 @@
             let namespacedParameterId = continuousParameterGroupId;
             let elementHovered = false;
             switch (basedOn) {
-              case _constants.EventBasedOn.VIEWPORT: {
+              case EventBasedOn.VIEWPORT: {
                 value2 = isXAxis ? Math.min(clientX, window.innerWidth) / window.innerWidth : Math.min(clientY, window.innerHeight) / window.innerHeight;
                 break;
               }
-              case _constants.EventBasedOn.PAGE: {
-                const {
-                  scrollLeft,
-                  scrollTop,
-                  scrollWidth,
-                  scrollHeight
-                } = getDocumentState();
+              case EventBasedOn.PAGE: {
+                const { scrollLeft, scrollTop, scrollWidth, scrollHeight } = getDocumentState();
                 value2 = isXAxis ? Math.min(scrollLeft + pageX, scrollWidth) / scrollWidth : Math.min(scrollTop + pageY, scrollHeight) / scrollHeight;
                 break;
               }
-              case _constants.EventBasedOn.ELEMENT:
+              case EventBasedOn.ELEMENT:
               default: {
-                namespacedParameterId = getNamespacedParameterId(eventStateKey, continuousParameterGroupId);
+                namespacedParameterId = getNamespacedParameterId2(
+                  eventStateKey,
+                  continuousParameterGroupId
+                );
                 const isMouseEvent = nativeEvent.type.indexOf("mouse") === 0;
-                if (isMouseEvent && isOrContainsElement({
-                  element,
-                  nativeEvent
-                }) !== true) {
+                if (isMouseEvent && isOrContainsElement({ element, nativeEvent }) !== true) {
                   break;
                 }
                 const rect = element.getBoundingClientRect();
-                const {
-                  left,
-                  top,
-                  width: width2,
-                  height: height2
-                } = rect;
-                if (!isMouseEvent && !pointIntersects({
-                  left: clientX,
-                  top: clientY
-                }, rect)) {
+                const { left, top, width: width2, height: height2 } = rect;
+                if (!isMouseEvent && !pointIntersects({ left: clientX, top: clientY }, rect)) {
                   break;
                 }
                 elementHovered = true;
@@ -22135,10 +21728,11 @@
             if (isMouseOut && (value2 > 1 - MOUSE_OUT_ROUND_THRESHOLD || value2 < MOUSE_OUT_ROUND_THRESHOLD)) {
               value2 = Math.round(value2);
             }
-            if (basedOn !== _constants.EventBasedOn.ELEMENT || elementHovered || // $FlowFixMe
+            if (basedOn !== EventBasedOn.ELEMENT || elementHovered || // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-expect-error
             elementHovered !== state.elementHovered) {
               value2 = reverse ? 1 - value2 : value2;
-              store.dispatch((0, _IX2EngineActions.parameterChanged)(namespacedParameterId, value2));
+              store.dispatch(parameterChanged(namespacedParameterId, value2));
             }
             return {
               elementHovered,
@@ -22151,35 +21745,19 @@
         },
         [PAGE_SCROLL]: {
           types: SCROLL_EVENT_TYPES,
-          // $FlowFixMe
-          handler: ({
-            store,
-            eventConfig
-          }) => {
-            const {
-              continuousParameterGroupId,
-              reverse
-            } = eventConfig;
-            const {
-              scrollTop,
-              scrollHeight,
-              clientHeight
-            } = getDocumentState();
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
+          handler: ({ store, eventConfig }) => {
+            const { continuousParameterGroupId, reverse } = eventConfig;
+            const { scrollTop, scrollHeight, clientHeight } = getDocumentState();
             let value2 = scrollTop / (scrollHeight - clientHeight);
             value2 = reverse ? 1 - value2 : value2;
-            store.dispatch((0, _IX2EngineActions.parameterChanged)(continuousParameterGroupId, value2));
+            store.dispatch(parameterChanged(continuousParameterGroupId, value2));
           }
         },
         [SCROLLING_IN_VIEW]: {
           types: SCROLL_EVENT_TYPES,
-          handler: ({
-            element,
-            store,
-            eventConfig,
-            eventStateKey
-          }, state = {
-            scrollPercent: 0
-          }) => {
+          handler: ({ element, store, eventConfig, eventStateKey }, state = { scrollPercent: 0 }) => {
             const {
               scrollLeft,
               scrollTop,
@@ -22199,16 +21777,19 @@
               endOffsetValue = 0
             } = eventConfig;
             const isXAxis = selectedAxis === "X_AXIS";
-            if (basedOn === _constants.EventBasedOn.VIEWPORT) {
+            if (basedOn === EventBasedOn.VIEWPORT) {
               const value2 = isXAxis ? scrollLeft / scrollWidth : scrollTop / scrollHeight;
               if (value2 !== state.scrollPercent) {
-                store.dispatch((0, _IX2EngineActions.parameterChanged)(continuousParameterGroupId, value2));
+                store.dispatch(parameterChanged(continuousParameterGroupId, value2));
               }
               return {
                 scrollPercent: value2
               };
             } else {
-              const namespacedParameterId = getNamespacedParameterId(eventStateKey, continuousParameterGroupId);
+              const namespacedParameterId = getNamespacedParameterId2(
+                eventStateKey,
+                continuousParameterGroupId
+              );
               const elementRect = element.getBoundingClientRect();
               let offsetStartPerc = (addStartOffset ? addOffsetValue : 0) / 100;
               let offsetEndPerc = (addEndOffset ? endOffsetValue : 0) / 100;
@@ -22217,11 +21798,19 @@
               const offsetElementTop = elementRect.top + Math.min(elementRect.height * offsetStartPerc, visibleHeight);
               const offsetElementBottom = elementRect.top + elementRect.height * offsetEndPerc;
               const offsetHeight = offsetElementBottom - offsetElementTop;
-              const fixedScrollHeight = Math.min(visibleHeight + offsetHeight, scrollHeight);
-              const fixedScrollTop = Math.min(Math.max(0, visibleHeight - offsetElementTop), fixedScrollHeight);
+              const fixedScrollHeight = Math.min(
+                visibleHeight + offsetHeight,
+                scrollHeight
+              );
+              const fixedScrollTop = Math.min(
+                Math.max(0, visibleHeight - offsetElementTop),
+                fixedScrollHeight
+              );
               const fixedScrollPerc = fixedScrollTop / fixedScrollHeight;
               if (fixedScrollPerc !== state.scrollPercent) {
-                store.dispatch((0, _IX2EngineActions.parameterChanged)(namespacedParameterId, fixedScrollPerc));
+                store.dispatch(
+                  parameterChanged(namespacedParameterId, fixedScrollPerc)
+                );
               }
               return {
                 scrollPercent: fixedScrollPerc
@@ -22231,20 +21820,24 @@
         },
         [SCROLL_INTO_VIEW]: scrollIntoOutOfViewOptions,
         [SCROLL_OUT_OF_VIEW]: scrollIntoOutOfViewOptions,
-        [PAGE_SCROLL_DOWN]: (0, _extends2.default)({}, baseScrollActionGroupOptions, {
+        [PAGE_SCROLL_DOWN]: {
+          ...baseScrollActionGroupOptions,
+          // @ts-expect-error - TS7006 - Parameter 'options' implicitly has an 'any' type. | TS7006 - Parameter 'state' implicitly has an 'any' type.
           handler: whenScrollDirectionChange((options, state) => {
             if (state.scrollingDown) {
               actionGroupCreator(options);
             }
           })
-        }),
-        [PAGE_SCROLL_UP]: (0, _extends2.default)({}, baseScrollActionGroupOptions, {
+        },
+        [PAGE_SCROLL_UP]: {
+          ...baseScrollActionGroupOptions,
+          // @ts-expect-error - TS7006 - Parameter 'options' implicitly has an 'any' type. | TS7006 - Parameter 'state' implicitly has an 'any' type.
           handler: whenScrollDirectionChange((options, state) => {
             if (!state.scrollingDown) {
               actionGroupCreator(options);
             }
           })
-        }),
+        },
         [PAGE_FINISH]: {
           types: "readystatechange IX2_PAGE_UPDATE",
           handler: withFilter(isElement, whenPageLoadFinish(actionGroupCreator))
@@ -22254,1091 +21847,888 @@
           handler: withFilter(isElement, whenPageLoadStart(actionGroupCreator))
         }
       };
-      exports2.default = _default;
     }
   });
 
-  // packages/systems/ix2/engine/logic/IX2VanillaEngine.js
-  var require_IX2VanillaEngine = __commonJS({
-    "packages/systems/ix2/engine/logic/IX2VanillaEngine.js"(exports2) {
-      "use strict";
-      var _interopRequireDefault = require_interopRequireDefault().default;
-      var _interopRequireWildcard = require_interopRequireWildcard().default;
-      Object.defineProperty(exports2, "__esModule", {
-        value: true
-      });
-      exports2.observeRequests = observeRequests;
-      exports2.startActionGroup = startActionGroup;
-      exports2.startEngine = startEngine;
-      exports2.stopActionGroup = stopActionGroup;
-      exports2.stopAllActionGroups = stopAllActionGroups;
-      exports2.stopEngine = stopEngine;
-      var _extends2 = _interopRequireDefault(require_extends());
-      var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require_objectWithoutPropertiesLoose());
-      var _find = _interopRequireDefault(require_find());
-      var _get = _interopRequireDefault(require_get());
-      var _size = _interopRequireDefault(require_size());
-      var _omitBy = _interopRequireDefault(require_omitBy());
-      var _isEmpty = _interopRequireDefault(require_isEmpty());
-      var _mapValues = _interopRequireDefault(require_mapValues());
-      var _forEach = _interopRequireDefault(require_forEach());
-      var _throttle = _interopRequireDefault(require_throttle());
-      var _constants = require_constants();
-      var _shared = require_shared2();
-      var _IX2EngineActions = require_IX2EngineActions();
-      var elementApi = _interopRequireWildcard(require_IX2BrowserApi());
-      var _IX2VanillaEvents = _interopRequireDefault(require_IX2VanillaEvents());
-      var _excluded = ["store", "computedStyle"];
-      var QuickEffectsIdList = Object.keys(_constants.QuickEffectIds);
-      var isQuickEffect = (actionTypeId) => QuickEffectsIdList.includes(actionTypeId);
-      var {
-        COLON_DELIMITER,
-        BOUNDARY_SELECTOR,
-        HTML_ELEMENT,
-        RENDER_GENERAL,
-        W_MOD_IX
-      } = _constants.IX2EngineConstants;
-      var {
-        getAffectedElements,
-        getElementId,
-        getDestinationValues,
-        observeStore,
-        getInstanceId,
-        renderHTMLElement,
-        clearAllStyles,
-        getMaxDurationItemIndex,
-        getComputedStyle: getComputedStyle2,
-        getInstanceOrigin,
-        reduceListToGroup,
-        shouldNamespaceEventParameter,
-        getNamespacedParameterId,
-        shouldAllowMediaQuery,
-        cleanupHTMLElement,
-        clearObjectCache,
-        stringifyTarget,
-        mediaQueriesEqual,
-        shallowEqual
-      } = _shared.IX2VanillaUtils;
-      var {
-        isPluginType,
-        createPluginInstance,
-        getPluginDuration
-      } = _shared.IX2VanillaPlugins;
-      var ua = navigator.userAgent;
-      var IS_MOBILE_SAFARI = ua.match(/iPad/i) || ua.match(/iPhone/);
-      var THROTTLED_EVENT_WAIT = 12;
-      function observeRequests(store) {
-        observeStore({
-          store,
-          select: ({
-            ixRequest
-          }) => ixRequest.preview,
-          onChange: handlePreviewRequest
-        });
-        observeStore({
-          store,
-          select: ({
-            ixRequest
-          }) => ixRequest.playback,
-          onChange: handlePlaybackRequest
-        });
-        observeStore({
-          store,
-          select: ({
-            ixRequest
-          }) => ixRequest.stop,
-          onChange: handleStopRequest
-        });
-        observeStore({
-          store,
-          select: ({
-            ixRequest
-          }) => ixRequest.clear,
-          onChange: handleClearRequest
-        });
+  // packages/systems/ix2/engine/logic/IX2VanillaEngine.ts
+  var IX2VanillaEngine_exports = {};
+  __export(IX2VanillaEngine_exports, {
+    observeRequests: () => observeRequests,
+    startActionGroup: () => startActionGroup,
+    startEngine: () => startEngine,
+    stopActionGroup: () => stopActionGroup,
+    stopAllActionGroups: () => stopAllActionGroups,
+    stopEngine: () => stopEngine
+  });
+  function observeRequests(store) {
+    observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixRequest' implicitly has an 'any' type.
+      select: ({ ixRequest: ixRequest2 }) => ixRequest2.preview,
+      onChange: handlePreviewRequest
+    });
+    observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixRequest' implicitly has an 'any' type.
+      select: ({ ixRequest: ixRequest2 }) => ixRequest2.playback,
+      onChange: handlePlaybackRequest
+    });
+    observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixRequest' implicitly has an 'any' type.
+      select: ({ ixRequest: ixRequest2 }) => ixRequest2.stop,
+      onChange: handleStopRequest
+    });
+    observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixRequest' implicitly has an 'any' type.
+      select: ({ ixRequest: ixRequest2 }) => ixRequest2.clear,
+      onChange: handleClearRequest
+    });
+  }
+  function observeMediaQueryChange(store) {
+    observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixSession' implicitly has an 'any' type.
+      select: ({ ixSession: ixSession2 }) => ixSession2.mediaQueryKey,
+      onChange: () => {
+        stopEngine(store);
+        clearAllStyles2({ store, elementApi: IX2BrowserApi_exports });
+        startEngine({ store, allowEvents: true });
+        dispatchPageUpdateEvent();
       }
-      function observeMediaQueryChange(store) {
-        observeStore({
-          store,
-          select: ({
-            ixSession
-          }) => ixSession.mediaQueryKey,
-          onChange: () => {
-            stopEngine(store);
-            clearAllStyles({
-              store,
-              elementApi
-            });
-            startEngine({
-              store,
-              allowEvents: true
-            });
-            dispatchPageUpdateEvent();
-          }
-        });
+    });
+  }
+  function observeOneRenderTick(store, onTick) {
+    const unsubscribe = observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixSession' implicitly has an 'any' type.
+      select: ({ ixSession: ixSession2 }) => ixSession2.tick,
+      // @ts-expect-error - TS7006 - Parameter 'tick' implicitly has an 'any' type.
+      onChange: (tick) => {
+        onTick(tick);
+        unsubscribe();
       }
-      function observeOneRenderTick(store, onTick) {
-        const unsubscribe = observeStore({
-          store,
-          select: ({
-            ixSession
-          }) => ixSession.tick,
-          onChange: (tick) => {
-            onTick(tick);
-            unsubscribe();
-          }
-        });
-      }
-      function handlePreviewRequest({
-        rawData,
-        defer
-      }, store) {
-        const start = () => {
-          startEngine({
-            store,
-            rawData,
-            allowEvents: true
-          });
-          dispatchPageUpdateEvent();
-        };
-        defer ? setTimeout(start, 0) : start();
-      }
-      function dispatchPageUpdateEvent() {
-        document.dispatchEvent(new CustomEvent("IX2_PAGE_UPDATE"));
-      }
-      function handlePlaybackRequest(playback, store) {
-        const {
-          actionTypeId,
-          actionListId,
+    });
+  }
+  function handlePreviewRequest({ rawData, defer }, store) {
+    const start = () => {
+      startEngine({ store, rawData, allowEvents: true });
+      dispatchPageUpdateEvent();
+    };
+    defer ? setTimeout(start, 0) : start();
+  }
+  function dispatchPageUpdateEvent() {
+    document.dispatchEvent(new CustomEvent("IX2_PAGE_UPDATE"));
+  }
+  function handlePlaybackRequest(playback, store) {
+    const {
+      actionTypeId,
+      actionListId,
+      actionItemId,
+      eventId,
+      allowEvents,
+      immediate,
+      testManual,
+      verbose = true
+    } = playback;
+    let { rawData } = playback;
+    if (actionListId && actionItemId && rawData && immediate) {
+      const actionList = rawData.actionLists[actionListId];
+      if (actionList) {
+        rawData = reduceListToGroup2({
+          actionList,
           actionItemId,
-          eventId,
-          allowEvents,
-          immediate,
-          testManual,
-          verbose = true
-        } = playback;
-        let {
           rawData
-        } = playback;
-        if (actionListId && actionItemId && rawData && immediate) {
-          const actionList = rawData.actionLists[actionListId];
-          if (actionList) {
-            rawData = reduceListToGroup({
-              actionList,
-              actionItemId,
-              rawData
-            });
-          }
-        }
-        startEngine({
-          store,
-          rawData,
-          allowEvents,
-          testManual
-        });
-        if (actionListId && actionTypeId === _constants.ActionTypeConsts.GENERAL_START_ACTION || isQuickEffect(actionTypeId)) {
-          stopActionGroup({
-            store,
-            actionListId
-          });
-          renderInitialGroup({
-            store,
-            actionListId,
-            eventId
-          });
-          const started = startActionGroup({
-            store,
-            eventId,
-            actionListId,
-            immediate,
-            verbose
-          });
-          if (verbose && started) {
-            store.dispatch((0, _IX2EngineActions.actionListPlaybackChanged)({
-              actionListId,
-              isPlaying: !immediate
-            }));
-          }
-        }
-      }
-      function handleStopRequest({
-        actionListId
-      }, store) {
-        if (actionListId) {
-          stopActionGroup({
-            store,
-            actionListId
-          });
-        } else {
-          stopAllActionGroups({
-            store
-          });
-        }
-        stopEngine(store);
-      }
-      function handleClearRequest(state, store) {
-        stopEngine(store);
-        clearAllStyles({
-          store,
-          elementApi
         });
       }
-      function startEngine({
-        store,
-        rawData,
-        allowEvents,
-        testManual
-      }) {
-        const {
-          ixSession
-        } = store.getState();
-        if (rawData) {
-          store.dispatch((0, _IX2EngineActions.rawDataImported)(rawData));
-        }
-        if (!ixSession.active) {
-          store.dispatch((0, _IX2EngineActions.sessionInitialized)({
-            hasBoundaryNodes: Boolean(document.querySelector(BOUNDARY_SELECTOR)),
-            reducedMotion: (
-              // $FlowFixMe - Remove this attribute on beta launch
-              document.body.hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
-            )
-          }));
-          if (allowEvents) {
-            bindEvents(store);
-            addDocumentClass();
-            if (store.getState().ixSession.hasDefinedMediaQueries) {
-              observeMediaQueryChange(store);
-            }
-          }
-          store.dispatch((0, _IX2EngineActions.sessionStarted)());
-          startRenderLoop(store, testManual);
-        }
-      }
-      function addDocumentClass() {
-        const {
-          documentElement
-        } = document;
-        if (documentElement.className.indexOf(W_MOD_IX) === -1) {
-          documentElement.className += ` ${W_MOD_IX}`;
-        }
-      }
-      function startRenderLoop(store, testManual) {
-        const handleFrame = (now) => {
-          const {
-            ixSession,
-            ixParameters
-          } = store.getState();
-          if (ixSession.active) {
-            store.dispatch((0, _IX2EngineActions.animationFrameChanged)(now, ixParameters));
-            if (testManual) {
-              observeOneRenderTick(store, handleFrame);
-            } else {
-              requestAnimationFrame(handleFrame);
-            }
-          }
-        };
-        handleFrame(window.performance.now());
-      }
-      function stopEngine(store) {
-        const {
-          ixSession
-        } = store.getState();
-        if (ixSession.active) {
-          const {
-            eventListeners
-          } = ixSession;
-          eventListeners.forEach(clearEventListener);
-          clearObjectCache();
-          store.dispatch((0, _IX2EngineActions.sessionStopped)());
-        }
-      }
-      function clearEventListener({
-        target,
-        listenerParams
-      }) {
-        target.removeEventListener.apply(target, listenerParams);
-      }
-      function createGroupInstances({
-        store,
-        eventStateKey,
-        eventTarget,
-        eventId,
-        eventConfig,
-        actionListId,
-        parameterGroup,
-        smoothing,
-        restingValue
-      }) {
-        const {
-          ixData,
-          ixSession
-        } = store.getState();
-        const {
-          events
-        } = ixData;
-        const event = events[eventId];
-        const {
-          eventTypeId
-        } = event;
-        const targetCache = {};
-        const instanceActionGroups = {};
-        const instanceConfigs = [];
-        const {
-          continuousActionGroups
-        } = parameterGroup;
-        let {
-          id: parameterId
-        } = parameterGroup;
-        if (shouldNamespaceEventParameter(eventTypeId, eventConfig)) {
-          parameterId = getNamespacedParameterId(eventStateKey, parameterId);
-        }
-        const eventElementRoot = ixSession.hasBoundaryNodes && eventTarget ? elementApi.getClosestElement(eventTarget, BOUNDARY_SELECTOR) : null;
-        continuousActionGroups.forEach((actionGroup) => {
-          const {
-            keyframe,
-            actionItems
-          } = actionGroup;
-          actionItems.forEach((actionItem) => {
-            const {
-              actionTypeId
-            } = actionItem;
-            const {
-              target
-            } = actionItem.config;
-            if (!target) {
-              return;
-            }
-            const elementRoot = target.boundaryMode ? eventElementRoot : null;
-            const key2 = stringifyTarget(target) + COLON_DELIMITER + actionTypeId;
-            instanceActionGroups[key2] = appendActionItem(instanceActionGroups[key2], keyframe, actionItem);
-            if (!targetCache[key2]) {
-              targetCache[key2] = true;
-              const {
-                config
-              } = actionItem;
-              getAffectedElements({
-                config,
-                event,
-                eventTarget,
-                elementRoot,
-                elementApi
-              }).forEach((element) => {
-                instanceConfigs.push({
-                  element,
-                  key: key2
-                });
-              });
-            }
-          });
-        });
-        instanceConfigs.forEach(({
-          element,
-          key: key2
-        }) => {
-          const actionGroups = instanceActionGroups[key2];
-          const actionItem = (0, _get.default)(actionGroups, `[0].actionItems[0]`, {});
-          const {
-            actionTypeId
-          } = actionItem;
-          const pluginInstance = isPluginType(actionTypeId) ? (
-            // $FlowFixMe
-            createPluginInstance(actionTypeId)(element, actionItem)
-          ) : null;
-          const destination = getDestinationValues(
-            {
-              element,
-              actionItem,
-              elementApi
-            },
-            // $FlowFixMe
-            pluginInstance
-          );
-          createInstance({
-            store,
-            element,
-            eventId,
-            actionListId,
-            actionItem,
-            destination,
-            continuous: true,
-            parameterId,
-            actionGroups,
-            smoothing,
-            restingValue,
-            pluginInstance
-          });
-        });
-      }
-      function appendActionItem(actionGroups = [], keyframe, actionItem) {
-        const newActionGroups = [...actionGroups];
-        let groupIndex;
-        newActionGroups.some((group, index2) => {
-          if (group.keyframe === keyframe) {
-            groupIndex = index2;
-            return true;
-          }
-          return false;
-        });
-        if (groupIndex == null) {
-          groupIndex = newActionGroups.length;
-          newActionGroups.push({
-            keyframe,
-            actionItems: []
-          });
-        }
-        newActionGroups[groupIndex].actionItems.push(actionItem);
-        return newActionGroups;
-      }
-      function bindEvents(store) {
-        const {
-          ixData
-        } = store.getState();
-        const {
-          eventTypeMap
-        } = ixData;
-        updateViewportWidth(store);
-        (0, _forEach.default)(eventTypeMap, (events, key2) => {
-          const logic = _IX2VanillaEvents.default[key2];
-          if (!logic) {
-            console.warn(`IX2 event type not configured: ${key2}`);
-            return;
-          }
-          bindEventType({
-            logic,
-            store,
-            events
-          });
-        });
-        const {
-          ixSession
-        } = store.getState();
-        if (ixSession.eventListeners.length) {
-          bindResizeEvents(store);
-        }
-      }
-      var WINDOW_RESIZE_EVENTS = ["resize", "orientationchange"];
-      function bindResizeEvents(store) {
-        const handleResize = () => {
-          updateViewportWidth(store);
-        };
-        WINDOW_RESIZE_EVENTS.forEach((type) => {
-          window.addEventListener(type, handleResize);
-          store.dispatch((0, _IX2EngineActions.eventListenerAdded)(window, [type, handleResize]));
-        });
-        handleResize();
-      }
-      function updateViewportWidth(store) {
-        const {
-          ixSession,
-          ixData
-        } = store.getState();
-        const width2 = window.innerWidth;
-        if (width2 !== ixSession.viewportWidth) {
-          const {
-            mediaQueries
-          } = ixData;
-          store.dispatch((0, _IX2EngineActions.viewportWidthChanged)({
-            width: width2,
-            mediaQueries
-          }));
-        }
-      }
-      var mapFoundValues = (object, iteratee) => (0, _omitBy.default)((0, _mapValues.default)(object, iteratee), _isEmpty.default);
-      var forEachEventTarget = (eventTargets, eventCallback) => {
-        (0, _forEach.default)(eventTargets, (elements, eventId) => {
-          elements.forEach((element, index2) => {
-            const eventStateKey = eventId + COLON_DELIMITER + index2;
-            eventCallback(element, eventId, eventStateKey);
-          });
-        });
-      };
-      var getAffectedForEvent = (event) => {
-        const config = {
-          target: event.target,
-          targets: event.targets
-        };
-        return getAffectedElements({
-          config,
-          elementApi
-        });
-      };
-      function bindEventType({
-        logic,
-        store,
-        events
-      }) {
-        injectBehaviorCSSFixes(events);
-        const {
-          types: eventTypes,
-          handler: eventHandler
-        } = logic;
-        const {
-          ixData
-        } = store.getState();
-        const {
-          actionLists
-        } = ixData;
-        const eventTargets = mapFoundValues(events, getAffectedForEvent);
-        if (!(0, _size.default)(eventTargets)) {
-          return;
-        }
-        (0, _forEach.default)(eventTargets, (elements, key2) => {
-          const event = events[key2];
-          const {
-            action: eventAction,
-            id: eventId,
-            mediaQueries = ixData.mediaQueryKeys
-          } = event;
-          const {
-            actionListId
-          } = eventAction.config;
-          if (!mediaQueriesEqual(mediaQueries, ixData.mediaQueryKeys)) {
-            store.dispatch((0, _IX2EngineActions.mediaQueriesDefined)());
-          }
-          if (eventAction.actionTypeId === _constants.ActionTypeConsts.GENERAL_CONTINUOUS_ACTION) {
-            const configs = Array.isArray(event.config) ? event.config : [event.config];
-            configs.forEach((eventConfig) => {
-              const {
-                continuousParameterGroupId
-              } = eventConfig;
-              const paramGroups = (0, _get.default)(actionLists, `${actionListId}.continuousParameterGroups`, []);
-              const parameterGroup = (0, _find.default)(paramGroups, ({
-                id
-              }) => id === continuousParameterGroupId);
-              const smoothing = (eventConfig.smoothing || 0) / 100;
-              const restingValue = (eventConfig.restingState || 0) / 100;
-              if (!parameterGroup) {
-                return;
-              }
-              elements.forEach((eventTarget, index2) => {
-                const eventStateKey = eventId + COLON_DELIMITER + index2;
-                createGroupInstances({
-                  store,
-                  eventStateKey,
-                  eventTarget,
-                  eventId,
-                  eventConfig,
-                  actionListId,
-                  parameterGroup,
-                  smoothing,
-                  restingValue
-                });
-              });
-            });
-          }
-          if (eventAction.actionTypeId === _constants.ActionTypeConsts.GENERAL_START_ACTION || isQuickEffect(eventAction.actionTypeId)) {
-            renderInitialGroup({
-              store,
-              actionListId,
-              eventId
-            });
-          }
-        });
-        const handleEvent = (nativeEvent) => {
-          const {
-            ixSession
-          } = store.getState();
-          forEachEventTarget(eventTargets, (element, eventId, eventStateKey) => {
-            const event = events[eventId];
-            const oldState = ixSession.eventState[eventStateKey];
-            const {
-              action: eventAction,
-              mediaQueries = ixData.mediaQueryKeys
-            } = event;
-            if (!shouldAllowMediaQuery(mediaQueries, ixSession.mediaQueryKey)) {
-              return;
-            }
-            const handleEventWithConfig = (eventConfig = {}) => {
-              const newState = eventHandler({
-                store,
-                element,
-                event,
-                eventConfig,
-                nativeEvent,
-                eventStateKey
-              }, oldState);
-              if (!shallowEqual(newState, oldState)) {
-                store.dispatch((0, _IX2EngineActions.eventStateChanged)(eventStateKey, newState));
-              }
-            };
-            if (eventAction.actionTypeId === _constants.ActionTypeConsts.GENERAL_CONTINUOUS_ACTION) {
-              const configs = Array.isArray(event.config) ? event.config : [event.config];
-              configs.forEach(handleEventWithConfig);
-            } else {
-              handleEventWithConfig();
-            }
-          });
-        };
-        const handleEventThrottled = (0, _throttle.default)(handleEvent, THROTTLED_EVENT_WAIT);
-        const addListeners = ({
-          target = document,
-          types,
-          throttle: shouldThrottle
-        }) => {
-          types.split(" ").filter(Boolean).forEach((type) => {
-            const handlerFunc = shouldThrottle ? handleEventThrottled : handleEvent;
-            target.addEventListener(type, handlerFunc);
-            store.dispatch((0, _IX2EngineActions.eventListenerAdded)(target, [type, handlerFunc]));
-          });
-        };
-        if (Array.isArray(eventTypes)) {
-          eventTypes.forEach(addListeners);
-        } else if (typeof eventTypes === "string") {
-          addListeners(logic);
-        }
-      }
-      function injectBehaviorCSSFixes(events) {
-        if (!IS_MOBILE_SAFARI) {
-          return;
-        }
-        const injectedSelectors = {};
-        let cssText = "";
-        for (const eventId in events) {
-          const {
-            eventTypeId,
-            target
-          } = events[eventId];
-          const selector = elementApi.getQuerySelector(target);
-          if (injectedSelectors[selector]) {
-            continue;
-          }
-          if (eventTypeId === _constants.EventTypeConsts.MOUSE_CLICK || eventTypeId === _constants.EventTypeConsts.MOUSE_SECOND_CLICK) {
-            injectedSelectors[selector] = true;
-            cssText += // $FlowFixMe
-            selector + "{cursor: pointer;touch-action: manipulation;}";
-          }
-        }
-        if (cssText) {
-          const style = document.createElement("style");
-          style.textContent = cssText;
-          document.body.appendChild(style);
-        }
-      }
-      function renderInitialGroup({
-        store,
-        actionListId,
-        eventId
-      }) {
-        const {
-          ixData,
-          ixSession
-        } = store.getState();
-        const {
-          actionLists,
-          events
-        } = ixData;
-        const event = events[eventId];
-        const actionList = actionLists[actionListId];
-        if (actionList && actionList.useFirstGroupAsInitialState) {
-          const initialStateItems = (0, _get.default)(actionList, "actionItemGroups[0].actionItems", []);
-          const mediaQueries = (0, _get.default)(event, "mediaQueries", ixData.mediaQueryKeys);
-          if (!shouldAllowMediaQuery(mediaQueries, ixSession.mediaQueryKey)) {
-            return;
-          }
-          initialStateItems.forEach((actionItem) => {
-            var _itemConfig$target, _itemConfig$target2;
-            const {
-              config: itemConfig,
-              actionTypeId
-            } = actionItem;
-            const config = (
-              // When useEventTarget is explicitly true, use event target/targets to query elements
-              // However, skip this condition when objectId is defined
-              (itemConfig === null || itemConfig === void 0 ? void 0 : (_itemConfig$target = itemConfig.target) === null || _itemConfig$target === void 0 ? void 0 : _itemConfig$target.useEventTarget) === true && (itemConfig === null || itemConfig === void 0 ? void 0 : (_itemConfig$target2 = itemConfig.target) === null || _itemConfig$target2 === void 0 ? void 0 : _itemConfig$target2.objectId) == null ? {
-                target: event.target,
-                targets: event.targets
-              } : itemConfig
-            );
-            const itemElements = getAffectedElements({
-              config,
-              event,
-              elementApi
-            });
-            const shouldUsePlugin = isPluginType(actionTypeId);
-            itemElements.forEach((element) => {
-              const pluginInstance = shouldUsePlugin ? (
-                // $FlowFixMe
-                createPluginInstance(actionTypeId)(element, actionItem)
-              ) : null;
-              createInstance({
-                destination: getDestinationValues(
-                  {
-                    element,
-                    actionItem,
-                    elementApi
-                  },
-                  // $FlowFixMe
-                  pluginInstance
-                ),
-                immediate: true,
-                store,
-                element,
-                eventId,
-                actionItem,
-                actionListId,
-                pluginInstance
-              });
-            });
-          });
-        }
-      }
-      function stopAllActionGroups({
-        store
-      }) {
-        const {
-          ixInstances
-        } = store.getState();
-        (0, _forEach.default)(ixInstances, (instance) => {
-          if (!instance.continuous) {
-            const {
-              actionListId,
-              verbose
-            } = instance;
-            removeInstance(instance, store);
-            if (verbose) {
-              store.dispatch((0, _IX2EngineActions.actionListPlaybackChanged)({
-                actionListId,
-                isPlaying: false
-              }));
-            }
-          }
-        });
-      }
-      function stopActionGroup({
-        store,
-        // $FlowFixMe
-        eventId,
-        // $FlowFixMe
-        eventTarget,
-        // $FlowFixMe
-        eventStateKey,
-        actionListId
-      }) {
-        const {
-          ixInstances,
-          ixSession
-        } = store.getState();
-        const eventElementRoot = ixSession.hasBoundaryNodes && eventTarget ? elementApi.getClosestElement(eventTarget, BOUNDARY_SELECTOR) : null;
-        (0, _forEach.default)(ixInstances, (instance) => {
-          const boundaryMode = (0, _get.default)(instance, "actionItem.config.target.boundaryMode");
-          const validEventKey = eventStateKey ? instance.eventStateKey === eventStateKey : true;
-          if (instance.actionListId === actionListId && instance.eventId === eventId && validEventKey) {
-            if (eventElementRoot && boundaryMode && !elementApi.elementContains(eventElementRoot, instance.element)) {
-              return;
-            }
-            removeInstance(instance, store);
-            if (instance.verbose) {
-              store.dispatch((0, _IX2EngineActions.actionListPlaybackChanged)({
-                actionListId,
-                isPlaying: false
-              }));
-            }
-          }
-        });
-      }
-      function startActionGroup({
+    }
+    startEngine({ store, rawData, allowEvents, testManual });
+    if (actionListId && actionTypeId === ActionTypeConsts.GENERAL_START_ACTION || isQuickEffect(actionTypeId)) {
+      stopActionGroup({ store, actionListId });
+      renderInitialGroup({ store, actionListId, eventId });
+      const started = startActionGroup({
         store,
         eventId,
-        // $FlowFixMe
-        eventTarget,
-        // $FlowFixMe
-        eventStateKey,
         actionListId,
-        groupIndex = 0,
-        // $FlowFixMe
         immediate,
-        // $FlowFixMe
         verbose
-      }) {
-        var _event$action;
-        const {
-          ixData,
-          ixSession
-        } = store.getState();
-        const {
-          events
-        } = ixData;
-        const event = events[eventId] || {};
-        const {
-          mediaQueries = ixData.mediaQueryKeys
-        } = event;
-        const actionList = (0, _get.default)(ixData, `actionLists.${actionListId}`, {});
-        const {
-          actionItemGroups,
-          useFirstGroupAsInitialState
-        } = actionList;
-        if (!actionItemGroups || !actionItemGroups.length) {
-          return false;
+      });
+      if (verbose && started) {
+        store.dispatch(
+          actionListPlaybackChanged({ actionListId, isPlaying: !immediate })
+        );
+      }
+    }
+  }
+  function handleStopRequest({ actionListId }, store) {
+    if (actionListId) {
+      stopActionGroup({ store, actionListId });
+    } else {
+      stopAllActionGroups({ store });
+    }
+    stopEngine(store);
+  }
+  function handleClearRequest(state, store) {
+    stopEngine(store);
+    clearAllStyles2({ store, elementApi: IX2BrowserApi_exports });
+  }
+  function startEngine({ store, rawData, allowEvents, testManual }) {
+    const { ixSession: ixSession2 } = store.getState();
+    if (rawData) {
+      store.dispatch(rawDataImported(rawData));
+    }
+    if (!ixSession2.active) {
+      store.dispatch(
+        sessionInitialized({
+          hasBoundaryNodes: Boolean(document.querySelector(BOUNDARY_SELECTOR2)),
+          reducedMotion: document.body.hasAttribute("data-wf-ix-vacation") && window.matchMedia("(prefers-reduced-motion)").matches
+        })
+      );
+      if (allowEvents) {
+        bindEvents(store);
+        addDocumentClass();
+        if (store.getState().ixSession.hasDefinedMediaQueries) {
+          observeMediaQueryChange(store);
         }
-        if (groupIndex >= actionItemGroups.length && (0, _get.default)(event, "config.loop")) {
-          groupIndex = 0;
+      }
+      store.dispatch(sessionStarted());
+      startRenderLoop(store, testManual);
+    }
+  }
+  function addDocumentClass() {
+    const { documentElement } = document;
+    if (documentElement.className.indexOf(W_MOD_IX2) === -1) {
+      documentElement.className += ` ${W_MOD_IX2}`;
+    }
+  }
+  function startRenderLoop(store, testManual) {
+    const handleFrame = (now) => {
+      const { ixSession: ixSession2, ixParameters: ixParameters2 } = store.getState();
+      if (ixSession2.active) {
+        store.dispatch(animationFrameChanged(now, ixParameters2));
+        if (testManual) {
+          observeOneRenderTick(store, handleFrame);
+        } else {
+          requestAnimationFrame(handleFrame);
         }
-        if (groupIndex === 0 && useFirstGroupAsInitialState) {
-          groupIndex++;
+      }
+    };
+    handleFrame(window.performance.now());
+  }
+  function stopEngine(store) {
+    const { ixSession: ixSession2 } = store.getState();
+    if (ixSession2.active) {
+      const { eventListeners } = ixSession2;
+      eventListeners.forEach(clearEventListener);
+      clearObjectCache2();
+      store.dispatch(sessionStopped());
+    }
+  }
+  function clearEventListener({ target, listenerParams }) {
+    target.removeEventListener.apply(target, listenerParams);
+  }
+  function createGroupInstances({
+    // @ts-expect-error - TS7031 - Binding element 'store' implicitly has an 'any' type.
+    store,
+    // @ts-expect-error - TS7031 - Binding element 'eventStateKey' implicitly has an 'any' type.
+    eventStateKey,
+    // @ts-expect-error - TS7031 - Binding element 'eventTarget' implicitly has an 'any' type.
+    eventTarget,
+    // @ts-expect-error - TS7031 - Binding element 'eventId' implicitly has an 'any' type.
+    eventId,
+    // @ts-expect-error - TS7031 - Binding element 'eventConfig' implicitly has an 'any' type.
+    eventConfig,
+    // @ts-expect-error - TS7031 - Binding element 'actionListId' implicitly has an 'any' type.
+    actionListId,
+    // @ts-expect-error - TS7031 - Binding element 'parameterGroup' implicitly has an 'any' type.
+    parameterGroup,
+    // @ts-expect-error - TS7031 - Binding element 'smoothing' implicitly has an 'any' type.
+    smoothing,
+    // @ts-expect-error - TS7031 - Binding element 'restingValue' implicitly has an 'any' type.
+    restingValue
+  }) {
+    const { ixData: ixData2, ixSession: ixSession2 } = store.getState();
+    const { events } = ixData2;
+    const event = events[eventId];
+    const { eventTypeId } = event;
+    const targetCache = {};
+    const instanceActionGroups = {};
+    const instanceConfigs = [];
+    const { continuousActionGroups } = parameterGroup;
+    let { id: parameterId } = parameterGroup;
+    if (shouldNamespaceEventParameter2(eventTypeId, eventConfig)) {
+      parameterId = getNamespacedParameterId3(eventStateKey, parameterId);
+    }
+    const eventElementRoot = ixSession2.hasBoundaryNodes && eventTarget ? getClosestElement(eventTarget, BOUNDARY_SELECTOR2) : null;
+    continuousActionGroups.forEach((actionGroup) => {
+      const { keyframe, actionItems } = actionGroup;
+      actionItems.forEach((actionItem) => {
+        const { actionTypeId } = actionItem;
+        const { target } = actionItem.config;
+        if (!target) {
+          return;
         }
-        const isFirstGroup = groupIndex === 0 || groupIndex === 1 && useFirstGroupAsInitialState;
-        const instanceDelay = isFirstGroup && isQuickEffect((_event$action = event.action) === null || _event$action === void 0 ? void 0 : _event$action.actionTypeId) ? event.config.delay : void 0;
-        const actionItems = (0, _get.default)(actionItemGroups, [groupIndex, "actionItems"], []);
-        if (!actionItems.length) {
-          return false;
-        }
-        if (!shouldAllowMediaQuery(mediaQueries, ixSession.mediaQueryKey)) {
-          return false;
-        }
-        const eventElementRoot = ixSession.hasBoundaryNodes && eventTarget ? elementApi.getClosestElement(eventTarget, BOUNDARY_SELECTOR) : null;
-        const carrierIndex = getMaxDurationItemIndex(actionItems);
-        let groupStartResult = false;
-        actionItems.forEach((actionItem, actionIndex) => {
-          const {
-            config,
-            actionTypeId
-          } = actionItem;
-          const shouldUsePlugin = isPluginType(actionTypeId);
-          const {
-            target
-          } = config;
-          if (!target) {
-            return;
-          }
-          const elementRoot = target.boundaryMode ? eventElementRoot : null;
-          const elements = getAffectedElements({
+        const elementRoot = target.boundaryMode ? eventElementRoot : null;
+        const key2 = stringifyTarget2(target) + COLON_DELIMITER4 + actionTypeId;
+        instanceActionGroups[key2] = appendActionItem(
+          instanceActionGroups[key2],
+          keyframe,
+          actionItem
+        );
+        if (!targetCache[key2]) {
+          targetCache[key2] = true;
+          const { config } = actionItem;
+          getAffectedElements2({
             config,
             event,
             eventTarget,
             elementRoot,
-            elementApi
+            elementApi: IX2BrowserApi_exports
+          }).forEach((element) => {
+            instanceConfigs.push({ element, key: key2 });
           });
-          elements.forEach((element, elementIndex) => {
-            const pluginInstance = shouldUsePlugin ? (
-              // $FlowFixMe
-              createPluginInstance(actionTypeId)(element, actionItem)
-            ) : null;
-            const pluginDuration = shouldUsePlugin ? (
-              // $FlowFixMe
-              getPluginDuration(actionTypeId)(element, actionItem)
-            ) : null;
-            groupStartResult = true;
-            const isCarrier = carrierIndex === actionIndex && elementIndex === 0;
-            const computedStyle = getComputedStyle2({
-              element,
-              actionItem
-            });
-            const destination = getDestinationValues(
-              {
-                element,
-                actionItem,
-                elementApi
-              },
-              // $FlowFixMe
-              pluginInstance
-            );
-            createInstance({
+        }
+      });
+    });
+    instanceConfigs.forEach(({ element, key: key2 }) => {
+      const actionGroups = instanceActionGroups[key2];
+      const actionItem = (0, import_get2.default)(actionGroups, `[0].actionItems[0]`, {});
+      const { actionTypeId } = actionItem;
+      const pluginInstance = isPluginType2(actionTypeId) ? createPluginInstance2(actionTypeId)(element, actionItem) : null;
+      const destination = getDestinationValues2(
+        { element, actionItem, elementApi: IX2BrowserApi_exports },
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
+        pluginInstance
+      );
+      createInstance2({
+        store,
+        element,
+        eventId,
+        actionListId,
+        actionItem,
+        destination,
+        continuous: true,
+        parameterId,
+        actionGroups,
+        smoothing,
+        restingValue,
+        pluginInstance
+      });
+    });
+  }
+  function appendActionItem(actionGroups = [], keyframe, actionItem) {
+    const newActionGroups = [...actionGroups];
+    let groupIndex;
+    newActionGroups.some((group, index2) => {
+      if (group.keyframe === keyframe) {
+        groupIndex = index2;
+        return true;
+      }
+      return false;
+    });
+    if (groupIndex == null) {
+      groupIndex = newActionGroups.length;
+      newActionGroups.push({
+        keyframe,
+        actionItems: []
+      });
+    }
+    newActionGroups[groupIndex].actionItems.push(actionItem);
+    return newActionGroups;
+  }
+  function bindEvents(store) {
+    const { ixData: ixData2 } = store.getState();
+    const { eventTypeMap } = ixData2;
+    updateViewportWidth(store);
+    (0, import_forEach.default)(eventTypeMap, (events, key2) => {
+      const logic = IX2VanillaEvents_default[key2];
+      if (!logic) {
+        console.warn(`IX2 event type not configured: ${key2}`);
+        return;
+      }
+      bindEventType({
+        logic,
+        store,
+        events
+      });
+    });
+    const { ixSession: ixSession2 } = store.getState();
+    if (ixSession2.eventListeners.length) {
+      bindResizeEvents(store);
+    }
+  }
+  function bindResizeEvents(store) {
+    const handleResize = () => {
+      updateViewportWidth(store);
+    };
+    WINDOW_RESIZE_EVENTS.forEach((type) => {
+      window.addEventListener(type, handleResize);
+      store.dispatch(eventListenerAdded(window, [type, handleResize]));
+    });
+    handleResize();
+  }
+  function updateViewportWidth(store) {
+    const { ixSession: ixSession2, ixData: ixData2 } = store.getState();
+    const width2 = window.innerWidth;
+    if (width2 !== ixSession2.viewportWidth) {
+      const { mediaQueries } = ixData2;
+      store.dispatch(viewportWidthChanged({ width: width2, mediaQueries }));
+    }
+  }
+  function bindEventType({ logic, store, events }) {
+    injectBehaviorCSSFixes(events);
+    const { types: eventTypes, handler: eventHandler } = logic;
+    const { ixData: ixData2 } = store.getState();
+    const { actionLists } = ixData2;
+    const eventTargets = mapFoundValues(events, getAffectedForEvent);
+    if (!(0, import_size.default)(eventTargets)) {
+      return;
+    }
+    (0, import_forEach.default)(eventTargets, (elements, key2) => {
+      const event = events[key2];
+      const {
+        action: eventAction,
+        id: eventId,
+        mediaQueries = ixData2.mediaQueryKeys
+      } = event;
+      const { actionListId } = eventAction.config;
+      if (!mediaQueriesEqual2(mediaQueries, ixData2.mediaQueryKeys)) {
+        store.dispatch(mediaQueriesDefined());
+      }
+      if (eventAction.actionTypeId === ActionTypeConsts.GENERAL_CONTINUOUS_ACTION) {
+        const configs = Array.isArray(event.config) ? event.config : [event.config];
+        configs.forEach((eventConfig) => {
+          const { continuousParameterGroupId } = eventConfig;
+          const paramGroups = (0, import_get2.default)(
+            actionLists,
+            `${actionListId}.continuousParameterGroups`,
+            []
+          );
+          const parameterGroup = (0, import_find2.default)(
+            paramGroups,
+            ({ id }) => id === continuousParameterGroupId
+          );
+          const smoothing = (eventConfig.smoothing || 0) / 100;
+          const restingValue = (eventConfig.restingState || 0) / 100;
+          if (!parameterGroup) {
+            return;
+          }
+          elements.forEach((eventTarget, index2) => {
+            const eventStateKey = eventId + COLON_DELIMITER4 + index2;
+            createGroupInstances({
               store,
-              element,
-              actionItem,
-              eventId,
-              eventTarget,
               eventStateKey,
+              eventTarget,
+              eventId,
+              eventConfig,
               actionListId,
-              groupIndex,
-              isCarrier,
-              computedStyle,
-              destination,
-              immediate,
-              verbose,
-              pluginInstance,
-              pluginDuration,
-              instanceDelay
+              parameterGroup,
+              smoothing,
+              restingValue
             });
           });
         });
-        return groupStartResult;
       }
-      function createInstance(options) {
-        var _ixData$events$eventI;
-        const {
-          store,
-          computedStyle
-        } = options, rest = (0, _objectWithoutPropertiesLoose2.default)(options, _excluded);
-        const {
-          element,
-          actionItem,
-          // $FlowIgnore - Flow 0.121.0
-          immediate,
-          pluginInstance,
-          // $FlowIgnore - Flow 0.121.0
-          continuous,
-          // $FlowIgnore - Flow 0.121.0
-          restingValue,
-          eventId
-        } = rest;
-        const autoStart = !continuous;
-        const instanceId = getInstanceId();
-        const {
-          ixElements,
-          ixSession,
-          ixData
-        } = store.getState();
-        const elementId = getElementId(ixElements, element);
-        const {
-          refState
-        } = ixElements[elementId] || {};
-        const refType = elementApi.getRefType(element);
-        const skipMotion = ixSession.reducedMotion && _constants.ReducedMotionTypes[actionItem.actionTypeId];
-        let skipToValue;
-        if (skipMotion && continuous) {
-          switch ((_ixData$events$eventI = ixData.events[eventId]) === null || _ixData$events$eventI === void 0 ? void 0 : _ixData$events$eventI.eventTypeId) {
-            case _constants.EventTypeConsts.MOUSE_MOVE:
-            case _constants.EventTypeConsts.MOUSE_MOVE_IN_VIEWPORT:
-              skipToValue = restingValue;
-              break;
-            default:
-              skipToValue = 0.5;
-              break;
-          }
-        }
-        const origin = getInstanceOrigin(
-          element,
-          refState,
-          computedStyle,
-          actionItem,
-          elementApi,
-          // $FlowFixMe
-          pluginInstance
-        );
-        store.dispatch((0, _IX2EngineActions.instanceAdded)((0, _extends2.default)({
-          instanceId,
-          elementId,
-          origin,
-          refType,
-          skipMotion,
-          skipToValue
-        }, rest)));
-        dispatchCustomEvent(document.body, "ix2-animation-started", instanceId);
-        if (immediate) {
-          renderImmediateInstance(store, instanceId);
+      if (eventAction.actionTypeId === ActionTypeConsts.GENERAL_START_ACTION || isQuickEffect(eventAction.actionTypeId)) {
+        renderInitialGroup({ store, actionListId, eventId });
+      }
+    });
+    const handleEvent = (nativeEvent) => {
+      const { ixSession: ixSession2 } = store.getState();
+      forEachEventTarget(eventTargets, (element, eventId, eventStateKey) => {
+        const event = events[eventId];
+        const oldState = ixSession2.eventState[eventStateKey];
+        const { action: eventAction, mediaQueries = ixData2.mediaQueryKeys } = event;
+        if (!shouldAllowMediaQuery2(mediaQueries, ixSession2.mediaQueryKey)) {
           return;
         }
-        observeStore({
+        const handleEventWithConfig = (eventConfig = {}) => {
+          const newState = eventHandler(
+            {
+              store,
+              element,
+              event,
+              eventConfig,
+              nativeEvent,
+              eventStateKey
+            },
+            oldState
+          );
+          if (!shallowEqual2(newState, oldState)) {
+            store.dispatch(eventStateChanged(eventStateKey, newState));
+          }
+        };
+        if (eventAction.actionTypeId === ActionTypeConsts.GENERAL_CONTINUOUS_ACTION) {
+          const configs = Array.isArray(event.config) ? event.config : [event.config];
+          configs.forEach(handleEventWithConfig);
+        } else {
+          handleEventWithConfig();
+        }
+      });
+    };
+    const handleEventThrottled = (0, import_throttle.default)(handleEvent, THROTTLED_EVENT_WAIT);
+    const addListeners = ({
+      target = document,
+      // @ts-expect-error - TS7031 - Binding element 'types' implicitly has an 'any' type.
+      types,
+      // @ts-expect-error - TS7031 - Binding element 'shouldThrottle' implicitly has an 'any' type.
+      throttle: shouldThrottle
+    }) => {
+      types.split(" ").filter(Boolean).forEach((type) => {
+        const handlerFunc = shouldThrottle ? handleEventThrottled : handleEvent;
+        target.addEventListener(type, handlerFunc);
+        store.dispatch(eventListenerAdded(target, [type, handlerFunc]));
+      });
+    };
+    if (Array.isArray(eventTypes)) {
+      eventTypes.forEach(addListeners);
+    } else if (typeof eventTypes === "string") {
+      addListeners(logic);
+    }
+  }
+  function injectBehaviorCSSFixes(events) {
+    if (!IS_MOBILE_SAFARI) {
+      return;
+    }
+    const injectedSelectors = {};
+    let cssText = "";
+    for (const eventId in events) {
+      const { eventTypeId, target } = events[eventId];
+      const selector = getQuerySelector(target);
+      if (injectedSelectors[selector]) {
+        continue;
+      }
+      if (eventTypeId === EventTypeConsts.MOUSE_CLICK || eventTypeId === EventTypeConsts.MOUSE_SECOND_CLICK) {
+        injectedSelectors[selector] = true;
+        cssText += selector + "{cursor: pointer;touch-action: manipulation;}";
+      }
+    }
+    if (cssText) {
+      const style = document.createElement("style");
+      style.textContent = cssText;
+      document.body.appendChild(style);
+    }
+  }
+  function renderInitialGroup({ store, actionListId, eventId }) {
+    const { ixData: ixData2, ixSession: ixSession2 } = store.getState();
+    const { actionLists, events } = ixData2;
+    const event = events[eventId];
+    const actionList = actionLists[actionListId];
+    if (actionList && actionList.useFirstGroupAsInitialState) {
+      const initialStateItems = (0, import_get2.default)(
+        actionList,
+        "actionItemGroups[0].actionItems",
+        []
+      );
+      const mediaQueries = (0, import_get2.default)(event, "mediaQueries", ixData2.mediaQueryKeys);
+      if (!shouldAllowMediaQuery2(mediaQueries, ixSession2.mediaQueryKey)) {
+        return;
+      }
+      initialStateItems.forEach((actionItem) => {
+        const { config: itemConfig, actionTypeId } = actionItem;
+        const config = (
+          // When useEventTarget is explicitly true, use event target/targets to query elements
+          // However, skip this condition when objectId is defined
+          itemConfig?.target?.useEventTarget === true && itemConfig?.target?.objectId == null ? { target: event.target, targets: event.targets } : itemConfig
+        );
+        const itemElements = getAffectedElements2({ config, event, elementApi: IX2BrowserApi_exports });
+        const shouldUsePlugin = isPluginType2(actionTypeId);
+        itemElements.forEach((element) => {
+          const pluginInstance = shouldUsePlugin ? createPluginInstance2(actionTypeId)(element, actionItem) : null;
+          createInstance2({
+            destination: getDestinationValues2(
+              { element, actionItem, elementApi: IX2BrowserApi_exports },
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-expect-error
+              pluginInstance
+            ),
+            immediate: true,
+            store,
+            element,
+            eventId,
+            actionItem,
+            actionListId,
+            pluginInstance
+          });
+        });
+      });
+    }
+  }
+  function stopAllActionGroups({ store }) {
+    const { ixInstances: ixInstances2 } = store.getState();
+    (0, import_forEach.default)(ixInstances2, (instance) => {
+      if (!instance.continuous) {
+        const { actionListId, verbose } = instance;
+        removeInstance(instance, store);
+        if (verbose) {
+          store.dispatch(
+            actionListPlaybackChanged({ actionListId, isPlaying: false })
+          );
+        }
+      }
+    });
+  }
+  function stopActionGroup({
+    // @ts-expect-error - TS7031 - Binding element 'store' implicitly has an 'any' type.
+    store,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    eventId,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    eventTarget,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    eventStateKey,
+    // @ts-expect-error - TS7031 - Binding element 'actionListId' implicitly has an 'any' type.
+    actionListId
+  }) {
+    const { ixInstances: ixInstances2, ixSession: ixSession2 } = store.getState();
+    const eventElementRoot = ixSession2.hasBoundaryNodes && eventTarget ? getClosestElement(eventTarget, BOUNDARY_SELECTOR2) : null;
+    (0, import_forEach.default)(ixInstances2, (instance) => {
+      const boundaryMode = (0, import_get2.default)(instance, "actionItem.config.target.boundaryMode");
+      const validEventKey = eventStateKey ? instance.eventStateKey === eventStateKey : true;
+      if (instance.actionListId === actionListId && instance.eventId === eventId && validEventKey) {
+        if (eventElementRoot && boundaryMode && !elementContains(eventElementRoot, instance.element)) {
+          return;
+        }
+        removeInstance(instance, store);
+        if (instance.verbose) {
+          store.dispatch(
+            actionListPlaybackChanged({ actionListId, isPlaying: false })
+          );
+        }
+      }
+    });
+  }
+  function startActionGroup({
+    // @ts-expect-error - TS7031 - Binding element 'store' implicitly has an 'any' type.
+    store,
+    // @ts-expect-error - TS7031 - Binding element 'eventId' implicitly has an 'any' type.
+    eventId,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    eventTarget,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    eventStateKey,
+    // @ts-expect-error - TS7031 - Binding element 'actionListId' implicitly has an 'any' type.
+    actionListId,
+    groupIndex = 0,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    immediate,
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-expect-error
+    verbose
+  }) {
+    const { ixData: ixData2, ixSession: ixSession2 } = store.getState();
+    const { events } = ixData2;
+    const event = events[eventId] || {};
+    const { mediaQueries = ixData2.mediaQueryKeys } = event;
+    const actionList = (0, import_get2.default)(ixData2, `actionLists.${actionListId}`, {});
+    const { actionItemGroups, useFirstGroupAsInitialState } = actionList;
+    if (!actionItemGroups || !actionItemGroups.length) {
+      return false;
+    }
+    if (groupIndex >= actionItemGroups.length && (0, import_get2.default)(event, "config.loop")) {
+      groupIndex = 0;
+    }
+    if (groupIndex === 0 && useFirstGroupAsInitialState) {
+      groupIndex++;
+    }
+    const isFirstGroup = groupIndex === 0 || groupIndex === 1 && useFirstGroupAsInitialState;
+    const instanceDelay = isFirstGroup && isQuickEffect(event.action?.actionTypeId) ? event.config.delay : void 0;
+    const actionItems = (0, import_get2.default)(actionItemGroups, [groupIndex, "actionItems"], []);
+    if (!actionItems.length) {
+      return false;
+    }
+    if (!shouldAllowMediaQuery2(mediaQueries, ixSession2.mediaQueryKey)) {
+      return false;
+    }
+    const eventElementRoot = ixSession2.hasBoundaryNodes && eventTarget ? getClosestElement(eventTarget, BOUNDARY_SELECTOR2) : null;
+    const carrierIndex = getMaxDurationItemIndex2(actionItems);
+    let groupStartResult = false;
+    actionItems.forEach((actionItem, actionIndex) => {
+      const { config, actionTypeId } = actionItem;
+      const shouldUsePlugin = isPluginType2(actionTypeId);
+      const { target } = config;
+      if (!target) {
+        return;
+      }
+      const elementRoot = target.boundaryMode ? eventElementRoot : null;
+      const elements = getAffectedElements2({
+        config,
+        event,
+        eventTarget,
+        elementRoot,
+        elementApi: IX2BrowserApi_exports
+      });
+      elements.forEach((element, elementIndex) => {
+        const pluginInstance = shouldUsePlugin ? createPluginInstance2(actionTypeId)(element, actionItem) : null;
+        const pluginDuration = shouldUsePlugin ? getPluginDuration2(actionTypeId)(element, actionItem) : null;
+        groupStartResult = true;
+        const isCarrier = carrierIndex === actionIndex && elementIndex === 0;
+        const computedStyle = getComputedStyle3({ element, actionItem });
+        const destination = getDestinationValues2(
+          { element, actionItem, elementApi: IX2BrowserApi_exports },
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-expect-error
+          pluginInstance
+        );
+        createInstance2({
           store,
-          select: ({
-            ixInstances
-          }) => ixInstances[instanceId],
-          onChange: handleInstanceChange
-        });
-        if (autoStart) {
-          store.dispatch((0, _IX2EngineActions.instanceStarted)(instanceId, ixSession.tick));
-        }
-      }
-      function removeInstance(instance, store) {
-        dispatchCustomEvent(document.body, "ix2-animation-stopping", {
-          instanceId: instance.id,
-          state: store.getState()
-        });
-        const {
-          elementId,
-          actionItem
-        } = instance;
-        const {
-          ixElements
-        } = store.getState();
-        const {
-          ref,
-          refType
-        } = ixElements[elementId] || {};
-        if (refType === HTML_ELEMENT) {
-          cleanupHTMLElement(ref, actionItem, elementApi);
-        }
-        store.dispatch((0, _IX2EngineActions.instanceRemoved)(instance.id));
-      }
-      function dispatchCustomEvent(element, eventName, detail) {
-        const event = document.createEvent("CustomEvent");
-        event.initCustomEvent(eventName, true, true, detail);
-        element.dispatchEvent(event);
-      }
-      function renderImmediateInstance(store, instanceId) {
-        const {
-          ixParameters
-        } = store.getState();
-        store.dispatch((0, _IX2EngineActions.instanceStarted)(instanceId, 0));
-        store.dispatch((0, _IX2EngineActions.animationFrameChanged)(performance.now(), ixParameters));
-        const {
-          ixInstances
-        } = store.getState();
-        handleInstanceChange(ixInstances[instanceId], store);
-      }
-      function handleInstanceChange(instance, store) {
-        const {
-          active: active2,
-          continuous,
-          complete,
-          elementId,
+          element,
           actionItem,
-          actionTypeId,
-          renderType,
-          current,
-          groupIndex,
           eventId,
           eventTarget,
           eventStateKey,
           actionListId,
+          groupIndex,
           isCarrier,
-          styleProp,
+          computedStyle,
+          destination,
+          immediate,
           verbose,
-          pluginInstance
-        } = instance;
-        const {
-          ixData,
-          ixSession
-        } = store.getState();
-        const {
-          events
-        } = ixData;
-        const event = events[eventId] || {};
-        const {
-          mediaQueries = ixData.mediaQueryKeys
-        } = event;
-        if (!shouldAllowMediaQuery(mediaQueries, ixSession.mediaQueryKey)) {
-          return;
-        }
-        if (continuous || active2 || complete) {
-          if (current || renderType === RENDER_GENERAL && complete) {
-            store.dispatch((0, _IX2EngineActions.elementStateChanged)(elementId, actionTypeId, current, actionItem));
-            const {
-              ixElements
-            } = store.getState();
-            const {
-              ref,
-              refType,
-              refState
-            } = ixElements[elementId] || {};
-            const actionState = refState && refState[actionTypeId];
-            if (refType === HTML_ELEMENT || isPluginType(actionTypeId)) {
-              renderHTMLElement(ref, refState, actionState, eventId, actionItem, styleProp, elementApi, renderType, pluginInstance);
-            }
-          }
-          if (complete) {
-            if (isCarrier) {
-              const started = startActionGroup({
-                store,
-                eventId,
-                eventTarget,
-                eventStateKey,
-                actionListId,
-                groupIndex: groupIndex + 1,
-                verbose
-              });
-              if (verbose && !started) {
-                store.dispatch((0, _IX2EngineActions.actionListPlaybackChanged)({
-                  actionListId,
-                  isPlaying: false
-                }));
-              }
-            }
-            removeInstance(instance, store);
-          }
+          pluginInstance,
+          pluginDuration,
+          instanceDelay
+        });
+      });
+    });
+    return groupStartResult;
+  }
+  function createInstance2(options) {
+    const { store, computedStyle, ...rest } = options;
+    const {
+      element,
+      actionItem,
+      immediate,
+      pluginInstance,
+      continuous,
+      restingValue,
+      eventId
+    } = rest;
+    const autoStart = !continuous;
+    const instanceId = getInstanceId2();
+    const { ixElements: ixElements3, ixSession: ixSession2, ixData: ixData2 } = store.getState();
+    const elementId = getElementId2(ixElements3, element);
+    const { refState: refState2 } = ixElements3[elementId] || {};
+    const refType = getRefType(element);
+    const skipMotion = (
+      // @ts-expect-error - TS7053 - Element implicitly has an 'any' type because expression of type 'any' can't be used to index type '{ readonly TRANSFORM_MOVE: true; readonly TRANSFORM_SCALE: true; readonly TRANSFORM_ROTATE: true; readonly TRANSFORM_SKEW: true; readonly STYLE_SIZE: true; readonly STYLE_FILTER: true; readonly STYLE_FONT_VARIATION: true; }'.
+      ixSession2.reducedMotion && ReducedMotionTypes[actionItem.actionTypeId]
+    );
+    let skipToValue;
+    if (skipMotion && continuous) {
+      switch (ixData2.events[eventId]?.eventTypeId) {
+        case EventTypeConsts.MOUSE_MOVE:
+        case EventTypeConsts.MOUSE_MOVE_IN_VIEWPORT:
+          skipToValue = restingValue;
+          break;
+        default:
+          skipToValue = 0.5;
+          break;
+      }
+    }
+    const origin = getInstanceOrigin2(
+      element,
+      refState2,
+      computedStyle,
+      actionItem,
+      IX2BrowserApi_exports,
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-expect-error
+      pluginInstance
+    );
+    store.dispatch(
+      instanceAdded({
+        instanceId,
+        elementId,
+        origin,
+        refType,
+        skipMotion,
+        skipToValue,
+        ...rest
+      })
+    );
+    dispatchCustomEvent(document.body, "ix2-animation-started", instanceId);
+    if (immediate) {
+      renderImmediateInstance(store, instanceId);
+      return;
+    }
+    observeStore2({
+      store,
+      // @ts-expect-error - TS7031 - Binding element 'ixInstances' implicitly has an 'any' type.
+      select: ({ ixInstances: ixInstances2 }) => ixInstances2[instanceId],
+      onChange: handleInstanceChange
+    });
+    if (autoStart) {
+      store.dispatch(instanceStarted(instanceId, ixSession2.tick));
+    }
+  }
+  function removeInstance(instance, store) {
+    dispatchCustomEvent(document.body, "ix2-animation-stopping", {
+      instanceId: instance.id,
+      state: store.getState()
+    });
+    const { elementId, actionItem } = instance;
+    const { ixElements: ixElements3 } = store.getState();
+    const { ref, refType } = ixElements3[elementId] || {};
+    if (refType === HTML_ELEMENT4) {
+      cleanupHTMLElement2(ref, actionItem, IX2BrowserApi_exports);
+    }
+    store.dispatch(instanceRemoved(instance.id));
+  }
+  function dispatchCustomEvent(element, eventName, detail) {
+    const event = document.createEvent("CustomEvent");
+    event.initCustomEvent(eventName, true, true, detail);
+    element.dispatchEvent(event);
+  }
+  function renderImmediateInstance(store, instanceId) {
+    const { ixParameters: ixParameters2 } = store.getState();
+    store.dispatch(instanceStarted(instanceId, 0));
+    store.dispatch(animationFrameChanged(performance.now(), ixParameters2));
+    const { ixInstances: ixInstances2 } = store.getState();
+    handleInstanceChange(ixInstances2[instanceId], store);
+  }
+  function handleInstanceChange(instance, store) {
+    const {
+      active: active2,
+      continuous,
+      complete,
+      elementId,
+      actionItem,
+      actionTypeId,
+      renderType,
+      current,
+      groupIndex,
+      eventId,
+      eventTarget,
+      eventStateKey,
+      actionListId,
+      isCarrier,
+      styleProp,
+      verbose,
+      pluginInstance
+    } = instance;
+    const { ixData: ixData2, ixSession: ixSession2 } = store.getState();
+    const { events } = ixData2;
+    const event = events[eventId] || {};
+    const { mediaQueries = ixData2.mediaQueryKeys } = event;
+    if (!shouldAllowMediaQuery2(mediaQueries, ixSession2.mediaQueryKey)) {
+      return;
+    }
+    if (continuous || active2 || complete) {
+      if (current || renderType === RENDER_GENERAL4 && complete) {
+        store.dispatch(
+          elementStateChanged(elementId, actionTypeId, current, actionItem)
+        );
+        const { ixElements: ixElements3 } = store.getState();
+        const { ref, refType, refState: refState2 } = ixElements3[elementId] || {};
+        const actionState = refState2 && refState2[actionTypeId];
+        if (refType === HTML_ELEMENT4 || isPluginType2(actionTypeId)) {
+          renderHTMLElement2(
+            ref,
+            refState2,
+            actionState,
+            eventId,
+            actionItem,
+            styleProp,
+            IX2BrowserApi_exports,
+            renderType,
+            pluginInstance
+          );
         }
       }
+      if (complete) {
+        if (isCarrier) {
+          const started = startActionGroup({
+            store,
+            eventId,
+            eventTarget,
+            eventStateKey,
+            actionListId,
+            groupIndex: groupIndex + 1,
+            verbose
+          });
+          if (verbose && !started) {
+            store.dispatch(
+              actionListPlaybackChanged({ actionListId, isPlaying: false })
+            );
+          }
+        }
+        removeInstance(instance, store);
+      }
+    }
+  }
+  var import_find2, import_get2, import_size, import_omitBy, import_isEmpty, import_mapValues, import_forEach, import_throttle, import_shared6, QuickEffectsIdList, isQuickEffect, COLON_DELIMITER4, BOUNDARY_SELECTOR2, HTML_ELEMENT4, RENDER_GENERAL4, W_MOD_IX2, getAffectedElements2, getElementId2, getDestinationValues2, observeStore2, getInstanceId2, renderHTMLElement2, clearAllStyles2, getMaxDurationItemIndex2, getComputedStyle3, getInstanceOrigin2, reduceListToGroup2, shouldNamespaceEventParameter2, getNamespacedParameterId3, shouldAllowMediaQuery2, cleanupHTMLElement2, clearObjectCache2, stringifyTarget2, mediaQueriesEqual2, shallowEqual2, isPluginType2, createPluginInstance2, getPluginDuration2, ua, IS_MOBILE_SAFARI, THROTTLED_EVENT_WAIT, WINDOW_RESIZE_EVENTS, mapFoundValues, forEachEventTarget, getAffectedForEvent;
+  var init_IX2VanillaEngine = __esm({
+    "packages/systems/ix2/engine/logic/IX2VanillaEngine.ts"() {
+      "use strict";
+      import_find2 = __toESM(require_find());
+      import_get2 = __toESM(require_get());
+      import_size = __toESM(require_size());
+      import_omitBy = __toESM(require_omitBy());
+      import_isEmpty = __toESM(require_isEmpty());
+      import_mapValues = __toESM(require_mapValues());
+      import_forEach = __toESM(require_forEach());
+      import_throttle = __toESM(require_throttle());
+      init_constants();
+      import_shared6 = __toESM(require_shared2());
+      init_IX2EngineActions();
+      init_IX2BrowserApi();
+      init_IX2VanillaEvents();
+      QuickEffectsIdList = Object.keys(QuickEffectIds);
+      isQuickEffect = (actionTypeId) => QuickEffectsIdList.includes(actionTypeId);
+      ({
+        COLON_DELIMITER: COLON_DELIMITER4,
+        BOUNDARY_SELECTOR: BOUNDARY_SELECTOR2,
+        HTML_ELEMENT: HTML_ELEMENT4,
+        RENDER_GENERAL: RENDER_GENERAL4,
+        W_MOD_IX: W_MOD_IX2
+      } = IX2EngineConstants_exports);
+      ({
+        getAffectedElements: getAffectedElements2,
+        getElementId: getElementId2,
+        getDestinationValues: getDestinationValues2,
+        observeStore: observeStore2,
+        getInstanceId: getInstanceId2,
+        renderHTMLElement: renderHTMLElement2,
+        clearAllStyles: clearAllStyles2,
+        getMaxDurationItemIndex: getMaxDurationItemIndex2,
+        getComputedStyle: getComputedStyle3,
+        getInstanceOrigin: getInstanceOrigin2,
+        reduceListToGroup: reduceListToGroup2,
+        shouldNamespaceEventParameter: shouldNamespaceEventParameter2,
+        getNamespacedParameterId: getNamespacedParameterId3,
+        shouldAllowMediaQuery: shouldAllowMediaQuery2,
+        cleanupHTMLElement: cleanupHTMLElement2,
+        clearObjectCache: clearObjectCache2,
+        stringifyTarget: stringifyTarget2,
+        mediaQueriesEqual: mediaQueriesEqual2,
+        shallowEqual: shallowEqual2
+      } = import_shared6.IX2VanillaUtils);
+      ({ isPluginType: isPluginType2, createPluginInstance: createPluginInstance2, getPluginDuration: getPluginDuration2 } = import_shared6.IX2VanillaPlugins);
+      ua = navigator.userAgent;
+      IS_MOBILE_SAFARI = ua.match(/iPad/i) || ua.match(/iPhone/);
+      THROTTLED_EVENT_WAIT = 12;
+      WINDOW_RESIZE_EVENTS = ["resize", "orientationchange"];
+      mapFoundValues = (object, iteratee) => (0, import_omitBy.default)((0, import_mapValues.default)(object, iteratee), import_isEmpty.default);
+      forEachEventTarget = (eventTargets, eventCallback) => {
+        (0, import_forEach.default)(eventTargets, (elements, eventId) => {
+          elements.forEach((element, index2) => {
+            const eventStateKey = eventId + COLON_DELIMITER4 + index2;
+            eventCallback(element, eventId, eventStateKey);
+          });
+        });
+      };
+      getAffectedForEvent = (event) => {
+        const config = { target: event.target, targets: event.targets };
+        return getAffectedElements2({ config, elementApi: IX2BrowserApi_exports });
+      };
     }
   });
 
@@ -23352,15 +22742,15 @@
         value: true
       });
       exports2.actions = void 0;
-      exports2.destroy = destroy;
-      exports2.init = init;
+      exports2.destroy = destroy2;
+      exports2.init = init2;
       exports2.setEnv = setEnv;
       exports2.store = void 0;
       require_includes3();
       var _redux = require_lib2();
-      var _IX2Reducer = _interopRequireDefault(require_IX2Reducer());
-      var _IX2VanillaEngine = require_IX2VanillaEngine();
-      var actions = _interopRequireWildcard(require_IX2EngineActions());
+      var _IX2Reducer = _interopRequireDefault((init_IX2Reducer(), __toCommonJS(IX2Reducer_exports)));
+      var _IX2VanillaEngine = (init_IX2VanillaEngine(), __toCommonJS(IX2VanillaEngine_exports));
+      var actions = _interopRequireWildcard((init_IX2EngineActions(), __toCommonJS(IX2EngineActions_exports)));
       exports2.actions = actions;
       var store = (0, _redux.createStore)(_IX2Reducer.default);
       exports2.store = store;
@@ -23369,15 +22759,15 @@
           (0, _IX2VanillaEngine.observeRequests)(store);
         }
       }
-      function init(rawData) {
-        destroy();
+      function init2(rawData) {
+        destroy2();
         (0, _IX2VanillaEngine.startEngine)({
           store,
           rawData,
           allowEvents: true
         });
       }
-      function destroy() {
+      function destroy2() {
         (0, _IX2VanillaEngine.stopEngine)(store);
       }
     }
@@ -23386,6 +22776,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-ix2.js
   var require_webflow_ix2 = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-ix2.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       var ix2 = require_engine();
       ix2.setEnv(Webflow.env);
@@ -23398,6 +22789,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-links.js
   var require_webflow_links = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-links.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("links", module2.exports = function($, _) {
         var api = {};
@@ -23411,8 +22803,8 @@
         var dirList = /\/$/;
         var anchors;
         var slug;
-        api.ready = api.design = api.preview = init;
-        function init() {
+        api.ready = api.design = api.preview = init2;
+        function init2() {
           designer = inApp && Webflow.env("design");
           slug = Webflow.env("slug") || location.pathname || "";
           Webflow.scroll.off(scroll);
@@ -23486,6 +22878,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-scroll.js
   var require_webflow_scroll = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-scroll.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("scroll", module2.exports = function($) {
         var NS_EVENTS = {
@@ -23634,12 +23027,12 @@
           if (elapsed > duration) {
             return end;
           }
-          return start + (end - start) * ease2(elapsed / duration);
+          return start + (end - start) * ease3(elapsed / duration);
         }
-        function ease2(t) {
+        function ease3(t) {
           return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
         }
-        function ready() {
+        function ready2() {
           var {
             WF_CLICK_EMPTY,
             WF_CLICK_SCROLL
@@ -23651,7 +23044,7 @@
           document.head.insertBefore(focusStylesEl, document.head.firstChild);
         }
         return {
-          ready
+          ready: ready2
         };
       });
     }
@@ -23660,6 +23053,7 @@
   // packages/shared/render/plugins/BaseSiteModules/webflow-touch.js
   var require_webflow_touch = __commonJS({
     "packages/shared/render/plugins/BaseSiteModules/webflow-touch.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("touch", module2.exports = function($) {
         var api = {};
@@ -23735,7 +23129,7 @@
           function cancel() {
             active2 = false;
           }
-          function destroy() {
+          function destroy2() {
             el.removeEventListener("touchstart", start, false);
             el.removeEventListener("touchmove", move, false);
             el.removeEventListener("touchend", end, false);
@@ -23746,7 +23140,7 @@
             el.removeEventListener("mouseout", cancel, false);
             el = null;
           }
-          this.destroy = destroy;
+          this.destroy = destroy2;
         }
         function triggerEvent(type, evt, data2) {
           var newEvent = $.Event(type, {
@@ -23763,6 +23157,7 @@
   // packages/shared/render/plugins/Dropdown/webflow-dropdown.js
   var require_webflow_dropdown = __commonJS({
     "packages/shared/render/plugins/Dropdown/webflow-dropdown.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       var IXEvents = require_webflow_ix2_events();
       var KEY_CODES = {
@@ -23799,19 +23194,19 @@
         var settingEvent = "setting" + namespace;
         var $doc = $(document);
         var $dropdowns;
-        api.ready = init;
+        api.ready = init2;
         api.design = function() {
           if (inPreview) {
             closeAll();
           }
           inPreview = false;
-          init();
+          init2();
         };
         api.preview = function() {
           inPreview = true;
-          init();
+          init2();
         };
-        function init() {
+        function init2() {
           inDesigner = inApp && Webflow.env("design");
           $dropdowns = $doc.find(namespace);
           $dropdowns.each(build);
@@ -24194,6 +23589,7 @@
   // packages/shared/render/plugins/Form/webflow-forms.js
   var require_webflow_forms = __commonJS({
     "packages/shared/render/plugins/Form/webflow-forms.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("forms", module2.exports = function($, _) {
         var api = {};
@@ -24215,12 +23611,12 @@
           alert("Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.");
         }, 100);
         api.ready = api.design = api.preview = function() {
-          init();
+          init2();
           if (!inApp && !listening) {
             addListeners();
           }
         };
-        function init() {
+        function init2() {
           siteId = $("html").attr("data-wf-site");
           formUrl = "https://webflow.com/api/v1/form/" + siteId;
           if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
@@ -24652,6 +24048,7 @@
   // packages/shared/render/plugins/Navbar/webflow-navbar.js
   var require_webflow_navbar = __commonJS({
     "packages/shared/render/plugins/Navbar/webflow-navbar.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       var IXEvents = require_webflow_ix2_events();
       var KEY_CODES = {
@@ -24685,7 +24082,7 @@
         var navbarOpenedLink = "w--nav-link-open";
         var ix = IXEvents.triggers;
         var menuSibling = $();
-        api.ready = api.design = api.preview = init;
+        api.ready = api.design = api.preview = init2;
         api.destroy = function() {
           menuSibling = $();
           removeListeners();
@@ -24693,7 +24090,7 @@
             $navbars.each(teardown);
           }
         };
-        function init() {
+        function init2() {
           designer = inApp && Webflow.env("design");
           inEditor = Webflow.env("editor");
           $body = $(document.body);
@@ -25105,6 +24502,7 @@
   // packages/shared/render/plugins/Slider/webflow-slider.js
   var require_webflow_slider = __commonJS({
     "packages/shared/render/plugins/Slider/webflow-slider.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       var IXEvents = require_webflow_ix2_events();
       var KEY_CODES = {
@@ -25134,23 +24532,23 @@
         var inRedraw = false;
         api.ready = function() {
           designer = Webflow.env("design");
-          init();
+          init2();
         };
         api.design = function() {
           designer = true;
-          setTimeout(init, 1e3);
+          setTimeout(init2, 1e3);
         };
         api.preview = function() {
           designer = false;
-          init();
+          init2();
         };
         api.redraw = function() {
           inRedraw = true;
-          init();
+          init2();
           inRedraw = false;
         };
         api.destroy = removeListeners;
-        function init() {
+        function init2() {
           $sliders = $doc.find(namespace);
           if (!$sliders.length) {
             return;
@@ -25371,7 +24769,7 @@
         function select(data2, value2) {
           var found = null;
           if (value2 === data2.slides.length) {
-            init();
+            init2();
             layout(data2);
           }
           _.each(data2.anchors, function(anchor, index2) {
@@ -25756,6 +25154,7 @@
   // packages/shared/render/plugins/Tabs/webflow-tabs.js
   var require_webflow_tabs = __commonJS({
     "packages/shared/render/plugins/Tabs/webflow-tabs.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       var IXEvents = require_webflow_ix2_events();
       Webflow.define("tabs", module2.exports = function($) {
@@ -25774,10 +25173,10 @@
         var tabActive = "w--tab-active";
         var ix = IXEvents.triggers;
         var inRedraw = false;
-        api.ready = api.design = api.preview = init;
+        api.ready = api.design = api.preview = init2;
         api.redraw = function() {
           inRedraw = true;
-          init();
+          init2();
           inRedraw = false;
         };
         api.destroy = function() {
@@ -25788,7 +25187,7 @@
           $tabs.each(resetIX);
           removeListeners();
         };
-        function init() {
+        function init2() {
           design = inApp && Webflow.env("design");
           $tabs = $doc.find(namespace);
           if (!$tabs.length) {
@@ -26008,6 +25407,7 @@
   // packages/shared/render/plugins/Widget/webflow-maps.js
   var require_webflow_maps = __commonJS({
     "packages/shared/render/plugins/Widget/webflow-maps.js"(exports2, module2) {
+      "use strict";
       var Webflow = require_webflow_lib();
       Webflow.define("maps", module2.exports = function($, _) {
         var api = {};

@@ -330,6 +330,11 @@ fields:
                     document_subtitle|raw:
                         label: document_subtitle|raw
                         type: text
+                    document_img_fon:
+                        label: document_img_fon
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
             how_it_works_modal:
                 label: how_it_works_modal
                 type: repeater

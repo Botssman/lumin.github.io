@@ -27,6 +27,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\LspNewDevice
+            edge_grid:
+                name: Edge Grid
+                description: Lumin Edge Grid
+                icon: icon-list
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\EdgeGrid
             lsp_integrates:
                 name: Lsp integrates
                 description: Block lsp integrates

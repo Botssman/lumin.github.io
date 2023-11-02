@@ -97,6 +97,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\DemandResponseWorks
+            edge_grid:
+                name: Edge Grid
+                description: Lumin Edge Grid
+                icon: icon-list
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\EdgeGrid
             lumin_estimator:
                 name: Block estimator
                 icon: icon-recycle

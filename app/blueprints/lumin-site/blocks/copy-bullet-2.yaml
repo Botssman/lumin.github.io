@@ -18,7 +18,3 @@ fields:
       type: mediafinder
       mode: image
       maxItems: 1
-    document_btn_modal:
-      label: Id open Modal
-      comment: Id modal - 0a97b997-f11c-7a00-d9df-fe3fbf0c5c5e
-      type: text

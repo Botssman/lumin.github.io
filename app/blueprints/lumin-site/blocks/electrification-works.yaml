@@ -15,3 +15,18 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
+    demand_response_works_modal:
+        label: Modal
+        type: section
+    how_it_works_modal:
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1
+                text_list:
+                    label: Text
+                    type: text

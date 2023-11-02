@@ -2371,6 +2371,10 @@ body {
   text-align: center;
 }
 
+.b-text.b-text_size_20.b-text_line-h_1-8 {
+  line-height: 1.8;
+}
+
 .b-text.b-text_size_26 {
   font-size: 1.25em;
 }
@@ -2865,6 +2869,10 @@ body {
   font-size: 2.7em;
 }
 
+.b-title.b-title_mini.b-title_size_2-5 {
+  font-size: 2.5em;
+}
+
 .b-title.b-title_white {
   color: #fff;
 }
@@ -2987,6 +2995,7 @@ body {
 }
 
 .section.s-section_100vh.s-section_pd_home.v-2 {
+  min-height: 80vh;
   padding-bottom: 30em;
 }
 
@@ -6892,6 +6901,10 @@ body {
 
   .h-wrap.h-wrap_grid.h-wrap_bg-bt_30 {
     margin-bottom: 30px;
+  }
+
+  .h-wrap.h-wrap_width_300 {
+    max-width: 400px;
   }
 
   .b-title.b-title_mini.b-title_modal {

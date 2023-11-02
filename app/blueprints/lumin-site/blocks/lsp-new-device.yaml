@@ -36,9 +36,6 @@ fields:
                                 title:
                                     label: Title
                                     type: text
-                                title_list:
-                                    label: Title list
-                                    type: text
                                 lists:
                                     label: Lists
                                     type: repeater

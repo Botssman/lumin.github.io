@@ -15,3 +15,8 @@ fields:
       type: mediafinder
       mode: image
       maxItems: 1
+    document_img_fon:
+      label: Image fon
+      type: mediafinder
+      mode: image
+      maxItems: 1

@@ -108,6 +108,20 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\CopyBullet2
+            control_what_matters:
+                name: Block Control What Matters
+                icon: icon-recycle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ControlWhatMatters
+            the_lumin_difference:
+                name: Block TheLumin Difference
+                icon: icon-recycle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\TheLuminDifference
             connect_to_anything:
                 name: Block connect to anything
                 icon: icon-columns

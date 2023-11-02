@@ -106,9 +106,6 @@ fields:
                                                 title:
                                                     label: Название
                                                     type: text
-                                                title_list:
-                                                    label: title_list
-                                                    type: text
                                                 lists:
                                                     label: lists
                                                     type: repeater
