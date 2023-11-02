@@ -1,7 +1,7 @@
 uuid: sections-copy-bullet-2
 name: Block copy bullet points no CTA 2
 type: mixin
-handle: Blocks\СopyBullet2
+handle: Blocks\CopyBullet2
 
 fields:
     document_title:
