@@ -9,3 +9,32 @@ fields:
         label: Title
         type: text
         tab: Projects
+    slider:
+        label: Slider
+        type: repeater
+        form:
+            fields:
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image
+                title_list:
+                    label: Title list
+                    type: text
+                    span: left
+                list:
+                    label: Characteristics
+                    type: repeater
+                    form:
+                        fields:
+                            icon:
+                                label: Icon
+                                type: mediafinder
+                                mode: image
+                            text_list:
+                                label: Text list
+                                type: text
+                Geo:
+                    label: Geo
+                    type: text
+                    span: left
