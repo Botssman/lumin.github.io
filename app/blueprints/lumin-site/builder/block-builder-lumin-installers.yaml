@@ -35,6 +35,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\InstallersMap
+            solar_edge_map:
+                name: Solar edge map
+                description: Block solar edge map
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\SolarEdgeMap
             # solar_edge_map:
             #     name: Solar edge map
             #     description: Block solar edge map

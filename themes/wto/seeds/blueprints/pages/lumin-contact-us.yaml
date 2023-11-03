@@ -73,3 +73,11 @@ fields:
                     contact_us_form_title:
                         label: contact_us_form_title
                         type: text
+                    technical_spec_tab:
+                        label: technical_spec_tab
+                        type: repeater
+                        form:
+                            fields:
+                                tab_name:
+                                    label: tab_name
+                                    type: text

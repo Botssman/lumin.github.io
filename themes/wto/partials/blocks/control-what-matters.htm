@@ -11,7 +11,7 @@
 					</div>
 				</div>
 				<div class="h-wrap h-wrap_mg-bt_40">
-					<div class="b-text b-text_size_20 b-text_line-h_1-8">
+					<div class="b-text b-text_size_18 b-text_line-h_1-8">
 						{{ block.text|raw }}
 					</div>
 				</div>
@@ -20,17 +20,17 @@
 						{{ block.title_list }}
 					</div>
 				</div>
-				<ul id="itemList" role="list" class="b-list">
+				<ul role="list" class="b-list">
 					{% for item in block.lists %}
 					<li class="b-list__item b-list__item_mg-bt_20">
 						<div class="b-list__circle"></div>
-						<div class="b-text b-text_size_20">
+						<div class="b-text">
 							{{ item.text_list }}
 						</div>
 					</li>
 					{% endfor %}
 				</ul>
-				<a id="showAllButton" href="#" class="b-button b-button_mini w-button">
+				<a href="#" class="b-button b-button_mini w-button">
 					More items
 				</a>
 			</div>

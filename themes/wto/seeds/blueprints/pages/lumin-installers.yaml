@@ -126,6 +126,35 @@ fields:
                     project_title:
                         label: project_title
                         type: text
+                    slider:
+                        label: slider
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title_list:
+                                    label: title_list
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            icon:
+                                                label: icon
+                                                type: mediafinder
+                                                mode: image
+                                                maxItems: '1'
+                                            text_list:
+                                                label: text_list
+                                                type: text
+                                geo:
+                                    label: geo
+                                    type: text
             installers_meet:
                 name: installers-meet
                 fields:
