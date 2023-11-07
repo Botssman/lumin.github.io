@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Проверяем количество элементов списка
     if (itemList.length <= 5) {
         // Если элементов меньше или равно 5, скрываем кнопку "More items"
-        showAllButton.style.display = "none";
+        showAllButton.style.display = "flex";
     }
 
     // Добавляем обработчик события на клик по кнопке
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
         // Показываем все элементы списка
         for (var i = 0; i < itemList.length; i++) {
-            itemList[i].style.display = "block";
+            itemList[i].style.display = "flex";
         }
         // Скрываем кнопку "More items"
         showAllButton.style.display = "none";
