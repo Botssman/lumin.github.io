@@ -20,7 +20,7 @@
 						{{ block.title_list }}
 					</div>
 				</div>
-				<ul role="list" class="b-list">
+				<ul id="itemList" role="list" class="b-list">
 					{% for item in block.lists %}
 					<li class="b-list__item b-list__item_mg-bt_20">
 						<div class="b-list__circle"></div>
@@ -30,7 +30,7 @@
 					</li>
 					{% endfor %}
 				</ul>
-				<a href="#" class="b-button b-button_mini w-button">
+				<a id="showAllButton" href="#" class="b-button b-button_mini w-button">
 					More items
 				</a>
 			</div>

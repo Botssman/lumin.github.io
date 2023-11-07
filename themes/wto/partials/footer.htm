@@ -53,7 +53,7 @@ const selectors = {
     init();
   }
 </script>
-        <script>
+<script>
 document.addEventListener("DOMContentLoaded", function() {
     // Получаем ссылку на кнопку "More items"
     var showAllButton = document.getElementById("showAllButton");
@@ -61,12 +61,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Получаем все элементы списка
     var itemList = document.getElementById("itemList").querySelectorAll(".b-list__item");
 
+    // Проверяем количество элементов списка
+    if (itemList.length <= 5) {
+        // Если элементов меньше или равно 5, скрываем кнопку "More items"
+        showAllButton.style.display = "none";
+    }
+
     // Добавляем обработчик события на клик по кнопке
     showAllButton.addEventListener("click", function(e) {
         e.preventDefault();
         // Показываем все элементы списка
         for (var i = 0; i < itemList.length; i++) {
-            itemList[i].style.display = "flex";
+            itemList[i].style.display = "block";
         }
         // Скрываем кнопку "More items"
         showAllButton.style.display = "none";
