@@ -6617,7 +6617,7 @@ body {
   }
 
   .section.s-section_100vh.s-section_pd_home.v-2 {
-    padding-bottom: 45em;
+    padding-bottom: 35em;
   }
 
   .section.s-section_yellow {
@@ -6965,6 +6965,10 @@ body {
     font-size: .83vw;
   }
 
+  .section.s-section_100vh.s-section_pd_home.v-2 {
+    padding-bottom: 40em;
+  }
+
   .section.s-section_vertical.s-section_pd_11-25 {
     overflow: visible;
   }
@@ -7021,6 +7025,10 @@ body {
 
   .b-list.b-list_max-w_18 {
     max-width: 19em;
+  }
+
+  .section.s-section_100vh.s-section_pd_home.v-2 {
+    padding-bottom: 30em;
   }
 
   .section.s-section_70vh {
