@@ -79,4 +79,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-<script defer src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-scrolldisable@1/scrolldisable.js"></script>
+<script>
+    var clicked = true;
+    $('.plus, .b-modal__close').click(function () {
+        if (clicked == true) {
+            $("body").css("overflow", "hidden")
+            clicked = false;
+        } else {
+            $("body").css("overflow", "visible")
+            clicked = true;
+        }
+    });
+</script>
