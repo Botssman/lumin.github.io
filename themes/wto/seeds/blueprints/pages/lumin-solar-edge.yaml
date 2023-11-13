@@ -79,6 +79,22 @@ fields:
                     solar_edge_main_text_video:
                         label: solar_edge_main_text_video
                         type: text
+            solar_edge_works:
+                name: solar-edge-works
+                fields:
+                    solar_edge_works_title:
+                        label: solar_edge_works_title
+                        type: text
+                    solar_edge_works_image:
+                        label: solar_edge_works_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    electrification_works_off:
+                        label: electrification_works_off
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
             electrification_works:
                 name: electrification-works
                 fields:
@@ -109,22 +125,6 @@ fields:
                                 text_list:
                                     label: text_list
                                     type: text
-            solar_edge_works:
-                name: solar-edge-works
-                fields:
-                    solar_edge_works_title:
-                        label: solar_edge_works_title
-                        type: text
-                    solar_edge_works_image:
-                        label: solar_edge_works_image
-                        type: mediafinder
-                        mode: image
-                        maxItems: '1'
-                    electrification_works_off:
-                        label: electrification_works_off
-                        type: mediafinder
-                        mode: image
-                        maxItems: '1'
             solar_edge_integrates:
                 name: solar-edge-integrates
                 fields:
