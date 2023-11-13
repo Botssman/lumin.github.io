@@ -13,7 +13,7 @@ fields:
         titleFrom: Add block
         form: 
             fields:
-                icon:
+                image:
                     label: Image
                     type: mediafinder
                     mode: image

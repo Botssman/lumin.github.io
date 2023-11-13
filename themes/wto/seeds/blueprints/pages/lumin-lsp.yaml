@@ -428,3 +428,33 @@ fields:
                                             text_list:
                                                 label: text_list
                                                 type: text
+            edge_grid_static:
+                name: edge-grid-static
+                fields:
+                    edge_grid_title:
+                        label: edge_grid_title
+                        type: text
+                    edge_grid_subtitle:
+                        label: edge_grid_subtitle
+                        type: text
+                    edge_grid_rep:
+                        label: edge_grid_rep
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title:
+                                    label: Название
+                                    type: text
+                                lumin_edge_grid_list:
+                                    label: lumin_edge_grid_list
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            text:
+                                                label: Текст
+                                                type: text

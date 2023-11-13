@@ -1,0 +1,47 @@
+<section class="section s-section_vertical s-section_pd_11-25">
+	<div class="container w-container">
+		<div class="h-wrap h-wrap_align_center">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.edge_grid_title }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_60 h-wrap_align_center">
+			<div class="b-title b-title_mini b-title_yellow mob_30">
+				{{ block.edge_grid_subtitle }}
+			</div>
+		</div>
+	</div>
+	<div class="b-block b-block_circle">
+		<div class="b-block__circle v-3"></div>
+		<div class="b-block__circle b-block__circle_yellow"></div>
+		<div class="b-block__circle v-2 b-block__circle_yellow"></div>
+	</div>
+	<div class="h-wrap">
+		<div class="b-horizontal v-2">
+			{% for item in block.edge_grid_rep %}
+			<div class="b-card tb_maxw">
+				<div class="b-card__head">
+					<img src="{{ item.image|media }}" loading="lazy" alt="">
+				</div>
+				<div class="b-card__down">
+					<div class="h-wrap h-wrap_mg-bt_20">
+						<div class="b-text b-text_size_30 b-text_extra-bold">
+							{{ item.title }}
+						</div>
+					</div>
+					<ul role="list" class="b-list">
+						{% for item in item.lumin_edge_grid_list %}
+						<li class="b-list__item b-list__item_mg-bt_20">
+							<div class="b-list__circle v-2"></div>
+							<div class="b-text">
+								{{ item.text }}
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,7 +1,7 @@
-uuid: sections-edge-grid
-name: Edge grid in motion
+uuid: sections-edge-grid-static
+name: Edge Grid static
 type: mixin
-handle: Blocks\EdgeGrid
+handle: Blocks\EdgeGridStatic
 
 fields:
     edge_grid_title:

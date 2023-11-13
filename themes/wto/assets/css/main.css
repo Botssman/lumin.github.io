@@ -4885,6 +4885,11 @@ body {
   overflow: visible;
 }
 
+.b-horizontal.v-2 {
+  justify-content: center;
+  margin-left: 0;
+}
+
 .b-card {
   width: 24%;
   max-width: 370px;

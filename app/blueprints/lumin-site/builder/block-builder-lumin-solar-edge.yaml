@@ -58,6 +58,29 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\Feedbacks
+            edge_grid:
+                name: Edge grid in motion
+                description: Edge grid in motion
+                icon: icon-list
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\EdgeGrid
+            edge_grid_static:
+                name: EEdge Grid static
+                description: Edge Grid static
+                icon: icon-list
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\EdgeGridStatic
+            press_room_media_kit:
+                name: Block press room media kit
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressRoomMediaKit
             lsp_installer:
                 name: Lsp installer
                 description: Block installer
