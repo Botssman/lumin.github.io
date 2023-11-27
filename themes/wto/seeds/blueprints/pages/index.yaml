@@ -72,6 +72,9 @@ fields:
                     lumin_home_subtitle_three:
                         label: lumin_home_subtitle_three
                         type: text
+                    lumin_home_subtitle_modal:
+                        label: lumin_home_subtitle_modal
+                        type: text
             lumin_one_edge:
                 name: lumin-one-edge
                 fields:

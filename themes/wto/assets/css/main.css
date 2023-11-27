@@ -2770,6 +2770,10 @@ body {
   max-width: 465px;
 }
 
+.h-wrap.h-wrap_maxh_135.mob_show {
+  display: none;
+}
+
 .h-wrap.h-wrap_height_100 {
   height: 100%;
 }
@@ -8082,6 +8086,10 @@ body {
 
   .h-wrap.mob_mg-bt_30 {
     margin-bottom: 30px;
+  }
+
+  .h-wrap.h-wrap_maxh_135.mob_show {
+    display: block;
   }
 
   .h-wrap.h-wrap_overflow_auto.mob_width_auto {
