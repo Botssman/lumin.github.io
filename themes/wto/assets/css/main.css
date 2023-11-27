@@ -8753,6 +8753,10 @@ body {
     max-width: 170px;
   }
 
+  .main-page {
+    overflow: hidden;
+  }
+
   .b-block-circle {
     opacity: .4;
     margin-left: auto;
@@ -8991,7 +8995,7 @@ body {
   }
 
   .container.container_absolute.tp_mg {
-    margin-top: 37%;
+    margin-top: 0%;
   }
 
   .container.container_align_center.pd_none {
