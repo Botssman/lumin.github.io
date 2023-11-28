@@ -8156,6 +8156,15 @@ body {
     min-height: 80vh;
   }
 
+  .section.s-section_100vh.s-section_tr.section_tb_5.mob_hide {
+    display: none;
+  }
+
+  .section.s-section_100vh.s-section_sticky {
+    min-height: auto;
+    padding-bottom: 5em;
+  }
+
   .section.s-section_yellow.section_pd-bt_40.mob_pd {
     padding-top: 0;
     padding-bottom: 5em;
