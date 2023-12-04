@@ -1,0 +1,53 @@
+uuid: settings-footer
+handle: Site\Footer
+type: single
+name: Main menu
+
+navigation:
+    label: Footer
+    parent: Sections\Global
+    icon: icon-magic
+    order: 200
+
+fields:
+    main_menu:
+        type: repeater
+        titleFrom: Menu items
+        form: 
+            fields:
+                list:
+                    label: Menu blocks
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: Menu link
+                            icon: icon-video-camera
+                            fields:
+                                menu_link_name:
+                                    label: Name link
+                                    type: text
+                                    span: left
+                                menu_link_link:
+                                    label: Menu link
+                                    type: pagefinder
+                        menu_dropdown:
+                            name: Menu dropdown
+                            icon: icon-video-camera
+                            fields:
+                                menu_dropdown_title:
+                                    label: Title dropdown
+                                    type: text
+                                    span: left
+                                list:
+                                    label: List links
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: Name link
+                                                type: text
+                                            menu_dropdown_link:
+                                                label: Link
+                                                type: pagefinder
+
