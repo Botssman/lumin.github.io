@@ -129,3 +129,17 @@ fields:
                     press_room_pr_text_btn:
                         label: press_room_pr_text_btn
                         type: text
+    site/footer:
+        name: site/footer
+        fields:
+            product_list:
+                label: product-list
+                type: repeater
+                form:
+                    fields:
+                        footer_product_text_link:
+                            label: footer_product_text_link
+                            type: text
+                        footer_product_link|link:
+                            label: footer_product_link|link
+                            type: text

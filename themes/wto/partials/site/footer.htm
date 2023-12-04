@@ -49,31 +49,13 @@
 						</div>
 					</div>
 					<ul role="list" class="b-list">
+						{% for item in footer.product_list %}
 						<li class="b-list__item b-list__item_mg-bt_10 mob_center">
-							<a href="#" class="b-link">
-								Lumin Edge
+							<a href="{{ item.footer_product_link|link }}" class="b-link">
+								{{ item.footer_product_text_link }}
 							</a>
 						</li>
-						<li class="b-list__item b-list__item_mg-bt_10 mob_center">
-							<a href="#" class="b-link">
-								Lumin Smart Panel
-							</a>
-						</li>
-						<li class="b-list__item b-list__item_mg-bt_10 mob_center">
-							<a href="#" class="b-link">
-								Support
-							</a>
-						</li>
-						<li class="b-list__item b-list__item_mg-bt_10 mob_center">
-							<a href="#" class="b-link">
-								Homeowners Log In
-							</a>
-						</li>
-						<li class="b-list__item b-list__item_mg-bt_10 mob_center">
-							<a href="#" class="b-link">
-								Lumin Edge
-							</a>
-						</li>
+						{% endfor %}
 					</ul>
 				</div>
 				<div class="b-columns__col b-columns__col_15 mob_50 mob_center">
@@ -181,7 +163,7 @@
 			<div class="b-columns">
 				<div class="b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20">
 					<div class="b-text">
-						© 2022 Lumin. All Rights Reserved
+						© 2023 Lumin. All Rights Reserved
 					</div>
 				</div>
 				<div class="b-columns__col b-columns__col_10 mob_50 mob_center">

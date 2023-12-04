@@ -92,3 +92,17 @@ fields:
                 type: mediafinder
                 mode: image
                 maxItems: '1'
+    site/footer:
+        name: site/footer
+        fields:
+            product_list:
+                label: product-list
+                type: repeater
+                form:
+                    fields:
+                        footer_product_text_link:
+                            label: footer_product_text_link
+                            type: text
+                        footer_product_link|link:
+                            label: footer_product_link|link
+                            type: text

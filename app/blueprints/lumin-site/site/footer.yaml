@@ -1,7 +1,7 @@
 uuid: settings-footer
 handle: Site\Footer
 type: single
-name: Main menu
+name: Footer
 
 navigation:
     label: Footer
@@ -10,44 +10,15 @@ navigation:
     order: 200
 
 fields:
-    main_menu:
+    product-list:
         type: repeater
-        titleFrom: Menu items
+        titleFrom: Product list
         form: 
             fields:
-                list:
-                    label: Menu blocks
-                    type: repeater
-                    displayMode: builder
-                    groups:
-                        menu_link:
-                            name: Menu link
-                            icon: icon-video-camera
-                            fields:
-                                menu_link_name:
-                                    label: Name link
-                                    type: text
-                                    span: left
-                                menu_link_link:
-                                    label: Menu link
-                                    type: pagefinder
-                        menu_dropdown:
-                            name: Menu dropdown
-                            icon: icon-video-camera
-                            fields:
-                                menu_dropdown_title:
-                                    label: Title dropdown
-                                    type: text
-                                    span: left
-                                list:
-                                    label: List links
-                                    type: repeater
-                                    form:
-                                        fields:
-                                            menu_dropdown_name:
-                                                label: Name link
-                                                type: text
-                                            menu_dropdown_link:
-                                                label: Link
-                                                type: pagefinder
-
+                footer_product_text:
+                    label: Name link
+                    type: text
+                    span: left
+                footer_product_link:
+                    label: Link
+                    type: pagefinder
