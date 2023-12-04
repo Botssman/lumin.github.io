@@ -469,3 +469,22 @@ fields:
                     lsp_installer_text_btn:
                         label: lsp_installer_text_btn
                         type: text
+            icons_info:
+                name: icons-info
+                fields:
+                    icon_rep:
+                        label: icon_rep
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text_info:
+                                    label: text_info
+                                    type: text
+                                text|raw:
+                                    label: text|raw
+                                    type: text

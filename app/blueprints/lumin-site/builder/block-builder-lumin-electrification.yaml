@@ -147,7 +147,7 @@ fields:
                         type: mixin
                         source: Blocks\Icons
             icons_info:
-                name: Block icons
+                name: Block icons info
                 icon: icon-columns
                 fields:
                     _mixin:
