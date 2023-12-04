@@ -1,7 +1,7 @@
 uuid: sections-lumin-icons-info
 name: Section icons-info
 type: mixin
-handle: Blocks\Icons
+handle: Blocks\IconsInfo
 
 fields:
     icon_rep:
@@ -18,6 +18,6 @@ fields:
                 text:
                     label: Text
                     type: text
-                text:
+                text_info:
                     label: Text info
                     type: text

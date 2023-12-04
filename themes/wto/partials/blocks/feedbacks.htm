@@ -50,6 +50,24 @@
 								</div>
 							</div>
 							{% endif %}
+{% if block.type == "feedbacks_text_link" %}
+							<div class="b-slider__card">
+								<div class="b-slider__white-content">
+									<div class="h-wrap h-wrap_mg-bt_20 h-wrap_flex-h">
+										<img src="{{ block.avatar|media }}" loading="lazy" alt="" class="b-avatar">
+										<div class="b-text b-text_size_20 b-text_bold">
+											{{ block.name }}
+										</div>
+									</div>
+									<div class="b-text b-text_size_14">
+										{{ block.text }}
+									</div>
+									<a href="{{ block.link }}" class="b-learn-more v-2">
+										Learn more
+									</a>
+								</div>
+							</div>
+							{% endif %}
 {% endfor %}
 						</div>
 					</div>

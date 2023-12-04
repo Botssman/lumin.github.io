@@ -292,6 +292,10 @@ html[data-w-dynpage] [data-w-cloak] {
   color: rgba(0, 0, 0, 0) !important;
 }
 
+.w-code-block {
+  margin: unset;
+}
+
 .w-webflow-badge, .w-webflow-badge * {
   z-index: auto;
   visibility: visible;
@@ -5101,7 +5105,8 @@ body {
 .b-slider__white-content {
   height: 100%;
   background-color: var(--white);
-  padding: 20px;
+  padding: 20px 20px 60px;
+  position: relative;
 }
 
 .b-avatar {
@@ -5293,6 +5298,14 @@ body {
 
 .b-learn-more.b-learn-more_mg-lt_30 {
   margin-left: 30px;
+}
+
+.b-learn-more.v-2 {
+  position: absolute;
+  top: auto;
+  bottom: 20px;
+  left: 20px;
+  right: auto;
 }
 
 .b-list__numbers {
@@ -6438,6 +6451,49 @@ body {
   display: none;
 }
 
+.b-info-plus {
+  width: 20px;
+  height: 20px;
+  background-color: var(--light-grey);
+  cursor: pointer;
+  background-image: url("../images/plus.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  border-radius: 100%;
+  position: absolute;
+  top: auto;
+  bottom: -20%;
+  left: auto;
+  right: 10%;
+}
+
+.b-info-text {
+  background-color: var(--white-smoke);
+  border-radius: 12px;
+  padding: 10px;
+  position: absolute;
+  bottom: 10%;
+}
+
+.b-card-project__link-copy {
+  color: var(--royal-blue);
+  background-image: url("../images/b-card-project__link.svg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-right: 10px;
+  font-size: .9375em;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  top: auto;
+  bottom: 40px;
+  left: auto;
+  right: 30px;
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;
@@ -6961,6 +7017,10 @@ body {
 
   .plus.plus_7 {
     top: 67%;
+  }
+
+  .b-card-project__link-copy {
+    font-size: 1em;
   }
 }
 
@@ -8802,6 +8862,10 @@ body {
   .b-modal__close-img.mob_show {
     display: block;
   }
+
+  .b-card-project__link-copy {
+    bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -9426,6 +9490,10 @@ body {
 
   .b-width.b-width_50 {
     font-size: 1em;
+  }
+
+  .b-card-project__link-copy {
+    bottom: 30px;
   }
 }
 

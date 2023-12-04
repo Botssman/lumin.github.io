@@ -278,6 +278,73 @@ fields:
                                 geo:
                                     label: geo
                                     type: text
+            feedbacks:
+                name: feedbacks
+                fields:
+                    feedbacks_title:
+                        label: feedbacks_title
+                        type: text
+                    feedbacks_subtitle:
+                        label: feedbacks_subtitle
+                        type: text
+                    feedbacks_rep:
+                        label: feedbacks_rep
+                        type: repeater
+                        form:
+                            fields:
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    displayMode: builder
+                                    groups:
+                                        feedbacks_video:
+                                            name: feedbacks_video
+                                            fields:
+                                                image:
+                                                    label: Изображение
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                link:
+                                                    label: Ссылка
+                                                    type: text
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                video_rewiev:
+                                                    label: video_rewiev
+                                                    type: text
+                                        feedbacks_text:
+                                            name: feedbacks_text
+                                            fields:
+                                                avatar:
+                                                    label: avatar
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                text:
+                                                    label: Текст
+                                                    type: text
+                                        feedbacks_text_link:
+                                            name: feedbacks_text_link
+                                            fields:
+                                                avatar:
+                                                    label: avatar
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                text:
+                                                    label: Текст
+                                                    type: text
+                                                link:
+                                                    label: Ссылка
+                                                    type: text
             technical_spec:
                 name: technical-spec
                 fields:
@@ -398,6 +465,25 @@ fields:
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
+                                text|raw:
+                                    label: text|raw
+                                    type: text
+            icons_info:
+                name: icons-info
+                fields:
+                    icon_rep:
+                        label: icon_rep
+                        type: repeater
+                        form:
+                            fields:
+                                icon:
+                                    label: icon
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                text_info:
+                                    label: text_info
+                                    type: text
                                 text|raw:
                                     label: text|raw
                                     type: text

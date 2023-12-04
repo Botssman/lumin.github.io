@@ -60,3 +60,21 @@ fields:
                                text:
                                     label: Text
                                     type: textarea
+                        feedbacks_text_link:
+                            name: Feedbacks text link block
+                            description: Feedbacks text link block
+                            icon: icon-align-justify
+                            fields:
+                               avatar:
+                                    label: Avatar
+                                    type: mediafinder
+                                    mode: image
+                               name:
+                                    label: Name
+                                    type: text
+                               text:
+                                    label: Text
+                                    type: textarea      
+                               link:
+                                    label: Link
+                                    type: text                               

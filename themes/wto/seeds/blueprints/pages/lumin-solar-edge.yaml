@@ -222,6 +222,23 @@ fields:
                                                 text:
                                                     label: Текст
                                                     type: text
+                                        feedbacks_text_link:
+                                            name: feedbacks_text_link
+                                            fields:
+                                                avatar:
+                                                    label: avatar
+                                                    type: mediafinder
+                                                    mode: image
+                                                    maxItems: '1'
+                                                name:
+                                                    label: name
+                                                    type: text
+                                                text:
+                                                    label: Текст
+                                                    type: text
+                                                link:
+                                                    label: Ссылка
+                                                    type: text
             learn_mores:
                 name: learn-mores
                 fields:
