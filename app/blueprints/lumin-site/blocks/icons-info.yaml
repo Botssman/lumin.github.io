@@ -1,0 +1,23 @@
+uuid: sections-lumin-icons-info
+name: Section icons-info
+type: mixin
+handle: Blocks\Icons
+
+fields:
+    icon_rep:
+        label: Add block icon info
+        type: repeater
+        titleFrom: Add block icon
+        form: 
+            fields:
+                icon:
+                    label: Icon
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1
+                text:
+                    label: Text
+                    type: text
+                text:
+                    label: Text info
+                    type: text
