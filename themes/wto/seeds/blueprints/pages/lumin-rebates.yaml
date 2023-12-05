@@ -145,7 +145,7 @@ fields:
         name: site/footer
         fields:
             product_list:
-                label: product-list
+                label: product_list
                 type: repeater
                 form:
                     fields:
@@ -156,7 +156,7 @@ fields:
                             label: footer_link|link
                             type: text
             company_list:
-                label: company-list
+                label: company_list
                 type: repeater
                 form:
                     fields:

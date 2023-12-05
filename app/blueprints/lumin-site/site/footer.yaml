@@ -10,7 +10,7 @@ navigation:
     order: 200
 
 fields:
-    product-list:
+    product_list:
         label: Product list
         type: repeater
         titleFrom: Product list
@@ -23,7 +23,7 @@ fields:
                 footer_text_link:
                     label: Link
                     type: pagefinder
-    company-list:
+    company_list:
         label: Company list
         type: repeater
         titleFrom: Product list

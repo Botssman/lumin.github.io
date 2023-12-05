@@ -576,41 +576,11 @@ fields:
                                             text:
                                                 label: Текст
                                                 type: text
-            edge_grid:
-                name: edge-grid
-                fields:
-                    edge_grid_title:
-                        label: edge_grid_title
-                        type: text
-                    edge_grid_subtitle:
-                        label: edge_grid_subtitle
-                        type: text
-                    edge_grid_rep:
-                        label: edge_grid_rep
-                        type: repeater
-                        form:
-                            fields:
-                                image:
-                                    label: Изображение
-                                    type: mediafinder
-                                    mode: image
-                                    maxItems: '1'
-                                title:
-                                    label: Название
-                                    type: text
-                                lumin_edge_grid_list:
-                                    label: lumin_edge_grid_list
-                                    type: repeater
-                                    form:
-                                        fields:
-                                            text:
-                                                label: Текст
-                                                type: text
     site/footer:
         name: site/footer
         fields:
             product_list:
-                label: product-list
+                label: product_list
                 type: repeater
                 form:
                     fields:
@@ -621,7 +591,7 @@ fields:
                             label: footer_link|link
                             type: text
             company_list:
-                label: company-list
+                label: company_list
                 type: repeater
                 form:
                     fields:
