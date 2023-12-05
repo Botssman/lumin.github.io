@@ -394,8 +394,8 @@ fields:
         type: repeater
         form:
             fields:
-                footer__text_link:
-                    label: footer__text_link
+                footer_text_link:
+                    label: footer_text_link
                     type: text
                 footer_link|link:
                     label: footer_link|link

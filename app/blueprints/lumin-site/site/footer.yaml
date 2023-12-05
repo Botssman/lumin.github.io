@@ -16,11 +16,11 @@ fields:
         titleFrom: Product list
         form: 
             fields:
-                footer_text:
+                footer_text_link:
                     label: Name link
                     type: text
                     span: left
-                footer_text_link:
+                footer_link:
                     label: Link
                     type: pagefinder
     company_list:
@@ -29,10 +29,10 @@ fields:
         titleFrom: Product list
         form: 
             fields:
-                footer_text:
+                footer_text_link:
                     label: Name link
                     type: text
                     span: left
-                footer_text_link:
+                footer_link:
                     label: Link
                     type: pagefinder
