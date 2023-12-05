@@ -11,14 +11,28 @@ navigation:
 
 fields:
     product-list:
+        label: Product list
         type: repeater
         titleFrom: Product list
         form: 
             fields:
-                footer_product_text:
+                footer_text:
                     label: Name link
                     type: text
                     span: left
-                footer_product_link:
+                footer_text_link:
+                    label: Link
+                    type: pagefinder
+    company-list:
+        label: Company list
+        type: repeater
+        titleFrom: Product list
+        form: 
+            fields:
+                footer_text:
+                    label: Name link
+                    type: text
+                    span: left
+                footer_text_link:
                     label: Link
                     type: pagefinder

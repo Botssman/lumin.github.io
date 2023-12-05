@@ -81,9 +81,20 @@ fields:
                 type: repeater
                 form:
                     fields:
-                        footer_product_text_link:
-                            label: footer_product_text_link
+                        footer__text_link:
+                            label: footer__text_link
                             type: text
-                        footer_product_link|link:
-                            label: footer_product_link|link
+                        footer_link|link:
+                            label: footer_link|link
+                            type: text
+            company_list:
+                label: company-list
+                type: repeater
+                form:
+                    fields:
+                        footer_text_link:
+                            label: footer_text_link
+                            type: text
+                        footer_link|link:
+                            label: footer_link|link
                             type: text
