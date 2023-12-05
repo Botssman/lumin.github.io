@@ -4930,9 +4930,10 @@ body {
 }
 
 .b-card__head {
+  max-height: 240px;
   background-color: var(--black);
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
@@ -4943,6 +4944,11 @@ body {
   max-height: 250px;
   background-color: rgba(0, 0, 0, 0);
   margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.b-card__head.pd_none {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -6492,6 +6498,11 @@ body {
   bottom: 40px;
   left: auto;
   right: 30px;
+}
+
+.b-card__img {
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 1280px) {

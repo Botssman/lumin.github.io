@@ -5,7 +5,7 @@ description = "Lumin Vacancy"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Mon Dec 04 2023 18:28:18 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a414" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Tue Dec 05 2023 13:00:39 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a414" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
@@ -166,7 +166,83 @@ default = 0
 				</div>
 			</section>
 		</main>{% if block.type == "site/footer" %}
-		<footer class="footer section">{% partial "site/footer" %}</footer>{% endif %}
+		<footer class="footer section">
+			<div class="container w-container">
+				<div>
+					<div class="footer__head">
+						<div class="b-columns b-columns_space-between">
+							<div class="b-columns__col b-columns__col_35 mob_100 mob_center">
+								<div class="h-wrap h-wrap_mg-bt_30"><img src="{{ 'assets/images/logo202.svg'|theme }}" loading="lazy" alt></div>
+								<div class="h-wrap h-wrap_mg-bt_10">
+									<div class="b-text b-text_size_14 b-text_gray b-text_semibold">Lumin App</div>
+								</div>
+								<div class="b-app b-app_mg-bt_30"><a href="#" class="b-app__app-store b-app__app-store_mg-rt_20 w-inline-block"><img src="{{ 'assets/images/app20store.png'|theme }}" loading="lazy" alt></a><a href="#" class="b-app__app-store w-inline-block"><img src="{{ 'assets/images/google-play.png'|theme }}" loading="lazy" alt></a></div>
+								<div class="h-wrap h-wrap_mg-bt_10">
+									<div class="b-text b-text_size_14 b-text_gray b-text_semibold">We are in social</div>
+								</div>
+								<div class="b-social mob_mg-bt_40"><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/linkedin-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/fb-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/yt.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/inst.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/twitter-grey.svg'|theme }}" loading="lazy" alt></a></div>
+							</div>
+							<div class="b-columns__col b-columns__col_20 mob_50 mob_center">
+								<div class="h-wrap h-wrap_mg-bt_10">
+									<div class="b-text b-text_size_20 b-text_bold">Product</div>
+								</div>
+								<ul role="list" class="b-list">{% for item in footer.product_list %}
+									<li class="b-list__item b-list__item_mg-bt_10 mob_center"><a href="{{ item.footer_product_link|link }}" class="b-link">{{ item.footer_product_text_link }}</a></li>{% endfor %}</ul>
+							</div>
+							<div class="b-columns__col b-columns__col_15 mob_50 mob_center">
+								<div class="h-wrap h-wrap_mg-bt_10">
+									<div class="b-text b-text_size_20 b-text_bold">Company</div>
+								</div>
+								<ul role="list" class="b-list">{% for item in footer.company_list %}
+									<li class="b-list__item b-list__item_mg-bt_10 mob_center"><a href="#" class="b-link">About Us</a></li>{% endfor %}</ul>
+							</div>
+							<div class="b-columns__col b-columns__col_25 mob_100 mob_center">
+								<div class="h-wrap h-wrap_mg-bt_10">
+									<div class="b-text b-text_size_20 b-text_bold">Contacts</div>
+								</div>
+								<div class="h-wrap h-wrap_mg-bt_20">
+									<div class="b-text">501 Locust Ave, Floor 1, Suite 2 Charlottesville, Virginia 22902</div>
+								</div>
+								<ul role="list" class="b-list">
+									<li class="b-list__item b-list__item_mg-bt_10">
+										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left">
+											<div class="b-list__circle v-4"><img src="{{ 'assets/images/icon-contact20(2).svg'|theme }}" loading="lazy" alt></div>
+											<div class="b-text b-text_size_20 b-text_bold"><a href="mailto:hello@luminsmart.com" class="b-text__phone">hello@luminsmart.com</a></div>
+										</div>
+									</li>
+									<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
+										<div class="h-wrap h-wrap_mg-bt_5">
+											<div class="b-text b-text_size_14 b-text_gray b-text_semibold">Technical Support:</div>
+										</div>
+										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left">
+											<div class="b-list__circle v-4"><img src="{{ 'assets/images/icon-contact20(3).svg'|theme }}" loading="lazy" alt></div>
+											<div class="b-text b-text_size_20 b-text_bold"><a href="#" class="b-text__phone">888.421.0616</a></div>
+										</div>
+									</li>
+									<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
+										<div class="h-wrap h-wrap_mg-bt_5">
+											<div class="b-text b-text_size_14 b-text_gray b-text_semibold">Sales and Business:</div>
+										</div>
+										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left">
+											<div class="b-list__circle v-4"><img src="{{ 'assets/images/icon-contact20(3).svg'|theme }}" loading="lazy" alt></div>
+											<div class="b-text b-text_size_20 b-text_bold"><a href="#" class="b-text__phone">800.793.8013</a></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="b-columns">
+							<div class="b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20">
+								<div class="b-text">© 2023 Lumin. All Rights Reserved</div>
+							</div>
+							<div class="b-columns__col b-columns__col_10 mob_50 mob_center"><a href="#" class="b-link b-link_black">Terms of Use</a></div>
+							<div class="b-columns__col b-columns__col_10 b-columns__col_align-right mob_50"><a href="#" class="b-link b-link_black">Privacy Policy</a></div>
+						</div>
+					</div>
+				</div>{% partial "site/scripts" %}</div>
+		</footer>{% endif %}
 		<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64227e51ac84205a1ce228fa" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 		<!-- FOOTER CODE -->
 		<script id="main" src="{{['assets/js/main.js']|theme}}"></script>

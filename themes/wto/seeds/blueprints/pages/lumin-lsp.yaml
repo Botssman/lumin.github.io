@@ -67,12 +67,44 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    text_btn:
+                        label: text_btn
+                        type: text
+                    link_bln:
+                        label: link_bln
+                        type: text
                     lsp_home_link:
                         label: lsp_home_link
                         type: text
                     lsp_home_text_btn_video:
                         label: lsp_home_text_btn_video
                         type: text
+            edge_home:
+                name: edge-home
+                fields:
+                    edge_home_title:
+                        label: edge_home_title
+                        type: text
+                    edge_home_subtitle:
+                        label: edge_home_subtitle
+                        type: text
+                    text_btn:
+                        label: text_btn
+                        type: text
+                    link_bln:
+                        label: link_bln
+                        type: text
+                    lsp_home_link:
+                        label: lsp_home_link
+                        type: text
+                    lsp_home_text_btn_video:
+                        label: lsp_home_text_btn_video
+                        type: text
+                    edge_home_image:
+                        label: edge_home_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
             lsp_new_device:
                 name: lsp-new-device
                 fields:
@@ -438,8 +470,8 @@ fields:
                     documents_title:
                         label: documents_title
                         type: text
-                    documents_subtitle:
-                        label: documents_subtitle
+                    documents_subtitle|raw:
+                        label: documents_subtitle|raw
                         type: text
                     documents_rep:
                         label: documents_rep
@@ -516,6 +548,36 @@ fields:
                                                 type: text
             edge_grid_static:
                 name: edge-grid-static
+                fields:
+                    edge_grid_title:
+                        label: edge_grid_title
+                        type: text
+                    edge_grid_subtitle:
+                        label: edge_grid_subtitle
+                        type: text
+                    edge_grid_rep:
+                        label: edge_grid_rep
+                        type: repeater
+                        form:
+                            fields:
+                                image:
+                                    label: Изображение
+                                    type: mediafinder
+                                    mode: image
+                                    maxItems: '1'
+                                title:
+                                    label: Название
+                                    type: text
+                                lumin_edge_grid_list:
+                                    label: lumin_edge_grid_list
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            text:
+                                                label: Текст
+                                                type: text
+            edge_grid:
+                name: edge-grid
                 fields:
                     edge_grid_title:
                         label: edge_grid_title
