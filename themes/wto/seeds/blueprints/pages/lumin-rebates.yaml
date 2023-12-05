@@ -141,28 +141,25 @@ fields:
                     have_questions_text_btn:
                         label: have_questions_text_btn
                         type: text
-    site/footer:
-        name: site/footer
-        fields:
-            product_list:
-                label: product_list
-                type: repeater
-                form:
-                    fields:
-                        footer__text_link:
-                            label: footer__text_link
-                            type: text
-                        footer_link|link:
-                            label: footer_link|link
-                            type: text
-            company_list:
-                label: company_list
-                type: repeater
-                form:
-                    fields:
-                        footer_text_link:
-                            label: footer_text_link
-                            type: text
-                        footer_link|link:
-                            label: footer_link|link
-                            type: text
+    product_list:
+        label: product_list
+        type: repeater
+        form:
+            fields:
+                footer__text_link:
+                    label: footer__text_link
+                    type: text
+                footer_link|link:
+                    label: footer_link|link
+                    type: text
+    company_list:
+        label: company_list
+        type: repeater
+        form:
+            fields:
+                footer_text_link:
+                    label: footer_text_link
+                    type: text
+                footer_link|link:
+                    label: footer_link|link
+                    type: text
