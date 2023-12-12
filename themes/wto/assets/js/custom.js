@@ -21,3 +21,7 @@
         }
     })
 })()
+
+$(document).ready(function() {
+    $('.slide').last().append($('.card').clone()); Webflow.destroy(); Webflow.ready(); Webflow.require('ix2').init();
+})
