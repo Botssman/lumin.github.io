@@ -15,6 +15,9 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
+    text_btn:
+        label: Text btn
+        type: text
     edge_home_text_btn_video:
         label: Text button video
         type: text

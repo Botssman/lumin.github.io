@@ -17,6 +17,9 @@ fields:
         label: Text btn
         type: text
         tab: Questions
+    question_link_btn:
+        label: Link btn
+        type: text
     question_lists:
         type: repeater
         titleFrom: Questions lists

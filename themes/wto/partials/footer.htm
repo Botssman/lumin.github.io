@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 <script>
     var clicked = true;
-    $('.plus, .b-modal__close').click(function () {
+    $('.overflow, .plus, .b-modal__close').click(function () {
         if (clicked == true) {
             $("body").css("overflow", "hidden")
             clicked = false;
@@ -90,4 +90,9 @@ document.addEventListener("DOMContentLoaded", function() {
             clicked = true;
         }
     });
+</script>
+<script type="text/javascript">
+		$(document).ready(function() {
+    $('.slide-card').last().append($('.card').clone()); Webflow.destroy(); Webflow.ready(); Webflow.require('ix2').init();
+})
 </script>

@@ -70,9 +70,6 @@ fields:
                     text_btn:
                         label: text_btn
                         type: text
-                    link_bln:
-                        label: link_bln
-                        type: text
                     lsp_home_link:
                         label: lsp_home_link
                         type: text
@@ -90,9 +87,6 @@ fields:
                         type: text
                     text_btn:
                         label: text_btn
-                        type: text
-                    link_bln:
-                        label: link_bln
                         type: text
                     lsp_home_link:
                         label: lsp_home_link
