@@ -20,10 +20,10 @@
 				<div class="b-slider__mask b-slider__mask_19 tb_45 mob_85 w-slider-mask">
 					{% for item in block.feedbacks_rep %}
 					<div class="b-slider__slide b-slider__slide_auto w-slide">
-						<div class="h-wrap h-wrap_height_100">
+						<div class="h-wrap h-wrap_height_100 slide">
 							{% for block in item.list %}
 {% if block.type == "feedbacks_video" %}
-							<div class="b-slider__card">
+							<div class="b-slider__card card">
 								<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-slider__img-video">
 								<a data-fancybox="Video-rewiev" href="{{ block.link }}" class="b-slider__grad w-inline-block">
 									<div class="b-text b-text_size_20 b-text_white b-text_bold">
@@ -36,7 +36,7 @@
 							</div>
 							{% endif %}
 {% if block.type == "feedbacks_text" %}
-							<div class="b-slider__card">
+							<div class="b-slider__card card">
 								<div class="b-slider__white-content">
 									<div class="h-wrap h-wrap_mg-bt_20 h-wrap_flex-h">
 										<img src="{{ block.avatar|media }}" loading="lazy" alt="" class="b-avatar">
@@ -51,7 +51,7 @@
 							</div>
 							{% endif %}
 {% if block.type == "feedbacks_text_link" %}
-							<div class="b-slider__card">
+							<div class="b-slider__card card">
 								<div class="b-slider__white-content">
 									<div class="h-wrap h-wrap_mg-bt_20 h-wrap_flex-h">
 										<img src="{{ block.avatar|media }}" loading="lazy" alt="" class="b-avatar">

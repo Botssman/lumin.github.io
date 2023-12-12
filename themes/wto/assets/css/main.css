@@ -2782,6 +2782,10 @@ body {
   height: 100%;
 }
 
+.h-wrap.h-wrap_height_100.slide {
+  display: flex;
+}
+
 .h-wrap.h-wrap_menu {
   width: auto;
   display: flex;
@@ -5081,6 +5085,11 @@ body {
   position: relative;
   overflow: hidden;
   box-shadow: 0 10px 60px rgba(49, 43, 42, .12);
+}
+
+.b-slider__card.card {
+  flex: none;
+  margin-right: 9%;
 }
 
 .b-slider__img-video {
@@ -9359,6 +9368,10 @@ body {
 
   .b-numbers__arrow.arrow_right {
     padding-left: 10px;
+  }
+
+  .b-slider__card.card {
+    margin-right: 4%;
   }
 
   .b-arrow__swiper-next {
