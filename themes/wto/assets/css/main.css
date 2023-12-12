@@ -5088,6 +5088,7 @@ body {
 }
 
 .b-slider__card.card {
+  width: 100%;
   flex: none;
   margin-right: 9%;
 }
