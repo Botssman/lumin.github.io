@@ -23,7 +23,7 @@ fields:
                     type: text
                 excerpt:
                     label: Excerpt
-                    type: text
+                    type: textarea
                 link:
                     label: Link
                     type: text
