@@ -5377,6 +5377,10 @@ body {
   right: -7%;
 }
 
+.b-utility-rebates.v-4.hide {
+  display: none;
+}
+
 .b-utility-rebates__icon {
   width: 16px;
   height: 16px;
