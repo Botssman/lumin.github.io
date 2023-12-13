@@ -8,9 +8,9 @@
 						<div class="b-columns__col b-columns__col_40">
 							<img src="{{ item.image|media }}" loading="eager" alt="" class="b-image b-image_devise b-image_right">
 						</div>
-						<div class="b-columns__col b-columns__col_60 b-columns__col_align_center">
-							<div class="h-wrap h-wrap_mg-bt_20">
-								<div class="b-title b-title_mini">
+						<div class="b-columns__col b-columns__col_60">
+							<div class="h-wrap h-wrap_mg-bt_20 h-wrap_mg-tp_60">
+								<div class="b-title b-title_mini tb_size_2">
 									{{ item.title }}
 								</div>
 							</div>
@@ -71,7 +71,7 @@
 	</div>
 	<div>
 		{% for item in block.lsp_new_device_mob_rep %}
-		<div class="b-block-bg" style="background-color: {{ item.bg_color }}">
+		<div class="b-block-bg pd_tp_none" style="background-color: {{ item.bg_color }}">
 			<div class="container container_100vh mob_show w-container">
 				<div class="h-wrap h-wrap_mg-bt_20">
 					<div class="b-title b-title_mini mob_30">
