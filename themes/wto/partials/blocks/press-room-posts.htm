@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="h-wrap h-wrap_mg-bt_60">
-			<div class="b-grid b-grid_col_5 pl_flex">
+			<div id="cardContainer" class="b-grid b-grid_col_5 pl_flex">
 				{% for item in block.arhive_press_room %}
 				<a href="{{ item.link }}" class="b-card-post b-card-post_flex-v tp_width_220 w-inline-block">
 					<div class="b-card-post__head v-2">
@@ -36,8 +36,8 @@
 		</div>
 	</div>
 	<div class="container container_align_center w-container">
-		<a href="#" class="b-button b-button_width_210 b-button_icon-arrow w-button">
-			View archieve
+		<a id="seeMoreBtn" href="#" class="b-button b-button_width_210 b-button_icon-arrow w-button">
+			See more
 		</a>
 	</div>
 </section>
