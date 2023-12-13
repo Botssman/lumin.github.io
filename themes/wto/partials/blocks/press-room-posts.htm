@@ -12,96 +12,26 @@
 		</div>
 		<div class="h-wrap h-wrap_mg-bt_60">
 			<div class="b-grid b-grid_col_5 pl_flex">
-				<div id="w-node-_194bb55b-66c6-e7a7-27ec-1c1870a63ef0-7b12a411" class="b-card-post b-card-post_flex-v tp_width_220">
+				{% for item in block.arhive_press_room %}
+				<a href="{{ item.link }}" class="b-card-post b-card-post_flex-v tp_width_220 w-inline-block">
 					<div class="b-card-post__head v-2">
 						<div class="h-wrap h-wrap_mg-bt_10">
 							<div class="b-tag">
-								NEWS
+								{{ item.tag }}
 							</div>
 						</div>
 						<div class="h-wrap h-wrap_mg-bt_5">
 							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
-								02.01.2023
+								{{ item.date }}
 							</div>
 						</div>
 						<div class="b-text b-text_size_15 b-text_bold">
-							Itron is collaborating with Lumin to enable edge intelligence in the companies' smart electrical panels.
+							{{ item.excerpt }}
 						</div>
 					</div>
-					<img src="{{ 'assets/images/news20(2).png'|theme }}" loading="lazy" alt="" class="b-card-post__img b-card-post__img_news">
-				</div>
-				<div id="w-node-_75283f7d-45d9-b1bd-c705-e1810365768c-7b12a411" class="b-card-post b-card-post_flex-v tp_width_220">
-					<div class="b-card-post__head v-2">
-						<div class="h-wrap h-wrap_mg-bt_10">
-							<div class="b-tag">
-								NEWS
-							</div>
-						</div>
-						<div class="h-wrap h-wrap_mg-bt_5">
-							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
-								04.21.2022
-							</div>
-						</div>
-						<div class="b-text b-text_size_15 b-text_bold">
-							Solar Energy Projects and Tips for Your Home
-						</div>
-					</div>
-					<img src="{{ 'assets/images/news20(4).png'|theme }}" loading="lazy" alt="" class="b-card-post__img b-card-post__img_news">
-				</div>
-				<div id="w-node-_6986ffc2-ee67-7a66-222f-8c5c3cd07f16-7b12a411" class="b-card-post b-card-post_flex-v tp_width_220">
-					<div class="b-card-post__head v-2">
-						<div class="h-wrap h-wrap_mg-bt_10">
-							<div class="b-tag">
-								NEWS
-							</div>
-						</div>
-						<div class="h-wrap h-wrap_mg-bt_5">
-							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
-								02.01.2023
-							</div>
-						</div>
-						<div class="b-text b-text_size_15 b-text_bold">
-							New Lumin Edge Gives Homeowners Control and Optimization of Energy Use From a Smartphone
-						</div>
-					</div>
-					<img src="{{ 'assets/images/news20(3).png'|theme }}" loading="lazy" alt="" class="b-card-post__img b-card-post__img_news">
-				</div>
-				<div id="w-node-ebb40174-3769-6f36-c91a-db4a78851e8c-7b12a411" class="b-card-post b-card-post_flex-v tp_width_220">
-					<div class="b-card-post__head v-2">
-						<div class="h-wrap h-wrap_mg-bt_10">
-							<div class="b-tag">
-								NEWS
-							</div>
-						</div>
-						<div class="h-wrap h-wrap_mg-bt_5">
-							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
-								02.01.2023
-							</div>
-						</div>
-						<div class="b-text b-text_size_15 b-text_bold">
-							Villara Energy Systems Teams up with Lumin to Provide High Power Battery Backup with Smart Load Management
-						</div>
-					</div>
-					<img src="{{ 'assets/images/news20(5).png'|theme }}" loading="lazy" alt="" class="b-card-post__img b-card-post__img_news">
-				</div>
-				<div id="w-node-cd7cf1fa-9852-1a39-b184-36f5e59dd4fa-7b12a411" class="b-card-post b-card-post_flex-v tp_width_220">
-					<div class="b-card-post__head v-2">
-						<div class="h-wrap h-wrap_mg-bt_10">
-							<div class="b-tag">
-								NEWS
-							</div>
-						</div>
-						<div class="h-wrap h-wrap_mg-bt_5">
-							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
-								02.01.2023
-							</div>
-						</div>
-						<div class="b-text b-text_size_15 b-text_bold">
-							SimpliPhi Power and Lumin Partner to Launch Innovative Customer App and Advanced Controls for Distributed Energy Storage Systems.
-						</div>
-					</div>
-					<img src="{{ 'assets/images/news20(1).png'|theme }}" loading="lazy" alt="" class="b-card-post__img b-card-post__img_news">
-				</div>
+					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-card-post__img b-card-post__img_news">
+				</a>
+				{% endfor %}
 			</div>
 		</div>
 	</div>
