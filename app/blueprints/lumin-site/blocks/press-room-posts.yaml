@@ -10,3 +10,25 @@ fields:
     press_room_posts_subtitle:
         label: Subtitle
         type: text
+    arhive_press_room:
+        label: Press room arhive
+        type: repeater
+        form:
+            fields:
+                tag:
+                    label: Tag
+                    type: text
+                date:
+                    label: Date
+                    type: text
+                excerpt:
+                    label: Excerpt
+                    type: text
+                link:
+                    label: Link
+                    type: text
+                image:
+                    label: Image
+                    type: mediafinder
+                    maxItems: 1
+                    mode: image

@@ -1,13 +1,19 @@
 <section class="section s-section_vertical s-section_pd_11-25">
 	<div class="container container_maxw_1020 w-container">
+		<div class="h-wrap h-wrap_mg-bt_40">
+			<div class="b-title tb_40">
+				{{ block.title }}
+			</div>
+		</div>
 		<div class="b-flex b-flex_space-around b-flex_gap_60">
 			{% for item in block.icon_rep %}
 			<div class="b-flex__card b-flex__card_20 mobh_50 mobv_100">
-				<div data-w-id="3acf2fbe-2a7f-31b7-d8b8-569deb651ab5" class="h-wrap h-wrap_mg-bt_15">
+				<div class="h-wrap h-wrap_mg-bt_15">
 					<img src="{{ item.icon|media }}" loading="lazy" alt="" class="b-icon b-icon_80">
-					<div class="b-info-plus"></div>
-					<div class="b-info-text">
-						{{ item.text_info }}
+					<div data-w-id="3acf2fbe-2a7f-31b7-d8b8-569deb651ab7" class="b-info-plus">
+						<div class="b-info-text">
+							{{ item.text_info }}
+						</div>
 					</div>
 				</div>
 				<div class="b-text b-text_size_20">

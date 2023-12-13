@@ -4,6 +4,9 @@ type: mixin
 handle: Blocks\IconsInfo
 
 fields:
+    title: 
+        label: Title
+        type: text
     icon_rep:
         label: Add block icon info
         type: repeater

@@ -46,6 +46,9 @@ fields:
                 text:
                     label: Text recomend
                     type: text
+    text_btn_blue:
+        label: Text btn blue
+        type: text
     learn_more_link_btn:
         label: Link btn
         type: text

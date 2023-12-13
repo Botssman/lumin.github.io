@@ -389,6 +389,9 @@ fields:
                                 text:
                                     label: Текст
                                     type: text
+                    text_btn_blue:
+                        label: text_btn_blue
+                        type: text
                     learn_more_link_btn:
                         label: learn_more_link_btn
                         type: text

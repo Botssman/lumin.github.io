@@ -88,11 +88,11 @@ fields:
                     text_btn:
                         label: text_btn
                         type: text
-                    lsp_home_link:
-                        label: lsp_home_link
+                    edge_home_link:
+                        label: edge_home_link
                         type: text
-                    lsp_home_text_btn_video:
-                        label: lsp_home_text_btn_video
+                    edge_home_text_btn_video:
+                        label: edge_home_text_btn_video
                         type: text
                     edge_home_image:
                         label: edge_home_image
@@ -102,9 +102,6 @@ fields:
             lsp_new_device:
                 name: lsp-new-device
                 fields:
-                    title:
-                        label: Название
-                        type: text
                     lsp_new_device_rep:
                         label: lsp_new_device_rep
                         type: repeater
@@ -115,6 +112,9 @@ fields:
                                     type: mediafinder
                                     mode: image
                                     maxItems: '1'
+                                title:
+                                    label: Название
+                                    type: text
                                 list:
                                     label: Список
                                     type: repeater
@@ -497,6 +497,9 @@ fields:
             icons_info:
                 name: icons-info
                 fields:
+                    title:
+                        label: Название
+                        type: text
                     icon_rep:
                         label: icon_rep
                         type: repeater
@@ -592,3 +595,18 @@ fields:
                 footer_link|link:
                     label: footer_link|link
                     type: text
+    modal_looking:
+        name: modal-looking
+        fields:
+            modal_looking_title:
+                label: modal_looking_title
+                type: text
+            modal_looking_subtitle:
+                label: modal_looking_subtitle
+                type: text
+    modal_utilities:
+        name: modal-utilities
+        fields:
+            modal_utilities_title:
+                label: modal_utilities_title
+                type: text
