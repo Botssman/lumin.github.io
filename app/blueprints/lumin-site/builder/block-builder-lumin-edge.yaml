@@ -183,6 +183,13 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ModalSales
+            modal-homeowners:
+                name: Modal sales homeowners
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ModalHomeowners
             forms:
                 name: Forms
                 icon: icon-columns
