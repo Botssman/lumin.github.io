@@ -429,6 +429,15 @@ fields:
                                 documents_file|media:
                                     label: documents_file|media
                                     type: text
+            modal_sales_homeowners:
+                name: modal-sales-homeowners
+                fields:
+                    modal_sales_h_title:
+                        label: modal_sales_h_title
+                        type: text
+                    modal_sales_h_subtitle:
+                        label: modal_sales_h_subtitle
+                        type: text
             estimator:
                 name: estimator
                 fields:
