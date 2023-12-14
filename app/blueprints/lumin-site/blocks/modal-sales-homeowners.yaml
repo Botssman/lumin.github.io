@@ -1,0 +1,12 @@
+uuid: modal-sales-homeowners
+name: Modal sales homeowners
+type: mixin
+handle: Blocks\ModalHomeowners
+
+fields:
+    modal_sales_h_title:
+      label: Title
+      type: text
+    modal_sales_h_subtitle:
+      label: Subitle
+      type: text

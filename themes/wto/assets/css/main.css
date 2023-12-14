@@ -3221,7 +3221,7 @@ body {
   display: none;
 }
 
-.b-modal.sales {
+.b-modal.sales, .b-modal.sales-homeowners {
   display: none;
 }
 

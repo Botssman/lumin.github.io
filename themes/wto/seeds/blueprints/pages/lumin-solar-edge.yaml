@@ -329,6 +329,24 @@ fields:
                     modal_looking_subtitle:
                         label: modal_looking_subtitle
                         type: text
+            modal_sales:
+                name: modal-sales
+                fields:
+                    modal_sales_title:
+                        label: modal_sales_title
+                        type: text
+                    modal_sales_subtitle:
+                        label: modal_sales_subtitle
+                        type: text
+            modal_sales_homeowners:
+                name: modal-sales-homeowners
+                fields:
+                    modal_sales_h_title:
+                        label: modal_sales_h_title
+                        type: text
+                    modal_sales_h_subtitle:
+                        label: modal_sales_h_subtitle
+                        type: text
             electrification_quiz:
                 name: electrification-quiz
                 fields:
