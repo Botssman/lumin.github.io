@@ -414,6 +414,12 @@ fields:
                                                         characteristics_text:
                                                             label: characteristics_text
                                                             type: text
+                                text_documents:
+                                    label: text_documents
+                                    type: text
+                                documents_file|media:
+                                    label: documents_file|media
+                                    type: text
             estimator:
                 name: estimator
                 fields:
