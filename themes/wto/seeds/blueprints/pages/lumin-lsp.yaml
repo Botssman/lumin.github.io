@@ -616,3 +616,12 @@ fields:
             modal_utilities_title:
                 label: modal_utilities_title
                 type: text
+    modal_sales:
+        name: modal-sales
+        fields:
+            modal_utilities_title:
+                label: modal_utilities_title
+                type: text
+            modal_sales_subtitle:
+                label: modal_sales_subtitle
+                type: text

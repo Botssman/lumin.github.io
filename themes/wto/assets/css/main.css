@@ -3212,13 +3212,17 @@ body {
   right: 0%;
 }
 
-.b-modal.works, .b-modal.utilities {
+.b-modal.works, .b-modal.installer, .b-modal.utilities {
   display: none;
 }
 
 .b-modal.events {
   background-color: rgba(23, 23, 26, .8);
   display: none;
+}
+
+.b-modal.sales {
+  display: flex;
 }
 
 .b-form__form {

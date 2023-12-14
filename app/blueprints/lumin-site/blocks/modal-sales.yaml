@@ -1,0 +1,12 @@
+uuid: modal-sales
+name: Modal sales
+type: mixin
+handle: Blocks\ModalSales
+
+fields:
+    modal_sales_title:
+      label: Title
+      type: text
+    modal_sales_subtitle:
+      label: Subitle
+      type: text

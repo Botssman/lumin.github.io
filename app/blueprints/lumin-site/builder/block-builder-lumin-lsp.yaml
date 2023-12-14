@@ -209,6 +209,13 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ModalUtilities
+            modal-sales:
+                name: Modal sales
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ModalSales
             forms:
                 name: Forms
                 icon: icon-columns

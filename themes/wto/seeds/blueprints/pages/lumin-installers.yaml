@@ -389,6 +389,21 @@ fields:
                         text_list:
                             label: text_list
                             type: text
+            modal_utilities:
+                name: modal-utilities
+                fields:
+                    modal_utilities_title:
+                        label: modal_utilities_title
+                        type: text
+            modal_looking:
+                name: modal-looking
+                fields:
+                    modal_looking_title:
+                        label: modal_looking_title
+                        type: text
+                    modal_looking_subtitle:
+                        label: modal_looking_subtitle
+                        type: text
     product_list:
         label: product_list
         type: repeater

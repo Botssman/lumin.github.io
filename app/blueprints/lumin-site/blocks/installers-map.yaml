@@ -10,3 +10,13 @@ fields:
     lsp_installer_text: 
         label: Subtitle
         type: text        
+    solar_edge_map_text_btn:
+        label: Text btn
+        type: text
+    solar_edge_map_link_btn:
+        label: Link btn
+        type: text
+    solar_edge_map_btn_modal:
+        label: Id open Modal
+        comment: Id modal - 0a97b997-f11c-7a00-d9df-fe3fbf0c5c5e
+        type: text
