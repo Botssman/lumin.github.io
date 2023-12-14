@@ -225,7 +225,7 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ModalSales
-            modal-homeowners:
+            modal-sales-homeowners:
                 name: Modal sales homeowners
                 icon: icon-question-circle
                 fields:
