@@ -3222,7 +3222,7 @@ body {
 }
 
 .b-modal.sales {
-  display: flex;
+  display: none;
 }
 
 .b-form__form {
