@@ -1,7 +1,7 @@
 uuid: modal-sales-homeowners
 name: Modal sales homeowners
 type: mixin
-handle: Blocks\ModalHomeowners
+handle: Blocks\ModalSalesHomeowners
 
 fields:
     modal_sales_h_title:

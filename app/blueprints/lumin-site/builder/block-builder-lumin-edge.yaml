@@ -189,7 +189,7 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\ModalHomeowners
+                        source: Blocks\ModalSalesHomeowners
             forms:
                 name: Forms
                 icon: icon-columns
