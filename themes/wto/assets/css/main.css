@@ -3212,7 +3212,11 @@ body {
   right: 0%;
 }
 
-.b-modal.works, .b-modal.utilities {
+.b-modal.works {
+  display: flex;
+}
+
+.b-modal.utilities {
   display: none;
 }
 
