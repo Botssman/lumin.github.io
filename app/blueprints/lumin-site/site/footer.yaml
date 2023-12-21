@@ -4,7 +4,7 @@ type: single
 name: Footer
 
 navigation:
-    label: Footer
+    label: Footer menu
     parent: Sections\Global
     icon: icon-magic
     order: 200

@@ -6057,6 +6057,7 @@ body {
   background-position: 99%;
   background-repeat: no-repeat;
   background-size: auto;
+  text-decoration: none;
 }
 
 .b-image-wrapper {
@@ -7557,6 +7558,7 @@ body {
   }
 
   .b-menu__button {
+    margin-right: auto;
     padding-left: 0;
   }
 
@@ -8173,7 +8175,7 @@ body {
     justify-content: flex-start;
   }
 
-  .h-wrap.h-wrap_flex_h.h-wrap_mg-bt_120.mob_flex-v {
+  .h-wrap.h-wrap_flex_h.h-wrap_align_center-left.mob_center, .h-wrap.h-wrap_flex_h.h-wrap_mg-bt_120.mob_flex-v {
     justify-content: center;
   }
 
@@ -9021,6 +9023,11 @@ body {
     height: 60px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .section.s-section_100vh.s-section_pd_home.v-2 {
+    min-height: auto;
+    padding-bottom: 5em;
   }
 
   .section.s-section_100vh.s-section_max-h {

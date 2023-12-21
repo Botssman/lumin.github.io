@@ -1,0 +1,100 @@
+uuid: settings-footer-settings
+handle: Site\FooterSettings
+type: single
+name: Footer
+
+navigation:
+    label: Footer settings
+    parent: Sections\Global
+    icon: icon-magic
+    order: 200
+
+fields:
+    image_app_ios:
+        label: Image app ios
+        type: mediafinder
+        mode: image
+        maxItems: 1
+        span: right
+        tab: App
+    link_app_ios:
+        label: Link app ios
+        type: text
+        tab: Социальные сети
+    image_app_google:
+        label: Image app google
+        type: mediafinder
+        mode: image
+        maxItems: 1
+        span: right
+        tab: App
+    link_app_google:
+        label: Link app google
+        type: text
+        tab: App
+    link_in:
+        label: In
+        type: text
+        tab: App
+    link_facebook:
+        label: Facebook
+        type: text
+        tab: Social media
+    link_youtube:
+        label: Youtube
+        type: text
+        tab: Social media
+    link_instagram:
+        label: Instagram
+        type: text
+        tab: Social media
+    link_twitter(x):
+        label: Twitter(x)
+        type: text
+        tab: Social media
+    technical_support:
+        label: Technical support phone text
+        type: text
+        tab: Basic settings
+    technical_support_link:
+        label: Technical support phone link
+        type: text
+        tab: Basic settings
+    sales_and_business:
+        label: Sales and business phone text
+        type: text
+        tab: Basic settings
+    sales_and_business_link:
+        label: Sales and business phone link
+        type: text
+        tab: Basic settings
+    privacy-section:
+        label: Footer link settings
+        type: section
+        span: full
+        tab: Basic settings
+    privacy_policy:
+        label: Privacy Policy
+        type: text
+        span: left
+        tab: Basic settings
+    privacy_policy_link:
+        label: Privacy Policy (URL)
+        type: text
+        span: right
+        tab: Basic settings
+    terms_of_use_text:
+        label: Terms_of_use
+        type: text
+        span: left
+        tab: Basic settings
+    terms_of_use_link:
+        label: Terms_of_use (URL)
+        type: text
+        span: right
+        tab: Basic settings
+    copyright:
+        label: Copyright
+        type: text
+        span: left
+        tab: Basic settings

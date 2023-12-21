@@ -430,6 +430,37 @@ fields:
                     have_questions_text_btn:
                         label: have_questions_text_btn
                         type: text
+    link_app_ios:
+        label: link_app_ios
+        type: text
+    image_app_ios:
+        label: image_app_ios
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    link_app_google:
+        label: link_app_google
+        type: text
+    image_app_google:
+        label: image_app_google
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    link_in:
+        label: link_in
+        type: text
+    link_facebook:
+        label: link_facebook
+        type: text
+    link_youtube:
+        label: link_youtube
+        type: text
+    link_instagram:
+        label: link_instagram
+        type: text
+    link_twitter_x:
+        label: link_twitter(x)
+        type: text
     product_list:
         label: product_list
         type: repeater
@@ -452,3 +483,39 @@ fields:
                 footer_link|link:
                     label: footer_link|link
                     type: text
+    adress:
+        label: adress
+        type: text
+    mail_text:
+        label: mail_text
+        type: text
+    mail:
+        label: mail
+        type: text
+    technical_support:
+        label: Technical_support
+        type: text
+    technical_support_link:
+        label: Technical_support_link
+        type: text
+    sales_and_business:
+        label: sales_and_business
+        type: text
+    sales_and_business_link:
+        label: sales_and_business_link
+        type: text
+    copyright:
+        label: copyright
+        type: text
+    terms_of_use_text:
+        label: terms_of_use_text
+        type: text
+    terms_of_use_link:
+        label: terms_of_use_link
+        type: text
+    privacy_policy:
+        label: privacy_policy
+        type: text
+    privacy_policy_link:
+        label: privacy_policy_link
+        type: text
