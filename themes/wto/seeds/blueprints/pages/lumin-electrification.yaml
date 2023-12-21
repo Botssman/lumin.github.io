@@ -392,6 +392,9 @@ fields:
                     text_btn_blue:
                         label: text_btn_blue
                         type: text
+                    btn_link:
+                        label: btn_link
+                        type: text
                     learn_more_link_btn:
                         label: learn_more_link_btn
                         type: text

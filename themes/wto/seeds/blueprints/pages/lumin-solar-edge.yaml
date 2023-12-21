@@ -282,6 +282,9 @@ fields:
                     text_btn_blue:
                         label: text_btn_blue
                         type: text
+                    btn_link:
+                        label: btn_link
+                        type: text
                     learn_more_link_btn:
                         label: learn_more_link_btn
                         type: text
@@ -489,6 +492,9 @@ fields:
                         type: text
                     lsp_installer_text_btn:
                         label: lsp_installer_text_btn
+                        type: text
+                    link_btn:
+                        label: link_btn
                         type: text
             icons_info:
                 name: icons-info

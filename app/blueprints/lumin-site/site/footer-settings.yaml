@@ -50,10 +50,18 @@ fields:
         label: Instagram
         type: text
         tab: Social media
-    link_twitter(x):
+    link_twitter_x:
         label: Twitter(x)
         type: text
         tab: Social media
+    mail_text:
+        label: Email
+        type: text
+        tab: Basic settings
+    mail:
+        label: Email link
+        type: text
+        tab: Basic settings
     technical_support:
         label: Technical support phone text
         type: text

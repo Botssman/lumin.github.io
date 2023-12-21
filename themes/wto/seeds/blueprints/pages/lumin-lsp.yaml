@@ -79,6 +79,9 @@ fields:
                     text_btn:
                         label: text_btn
                         type: text
+                    link_btn:
+                        label: link_btn
+                        type: text
                     lsp_home_link:
                         label: lsp_home_link
                         type: text
@@ -96,6 +99,9 @@ fields:
                         type: text
                     text_btn:
                         label: text_btn
+                        type: text
+                    link_btn:
+                        label: link_btn
                         type: text
                     edge_home_link:
                         label: edge_home_link
@@ -260,6 +266,9 @@ fields:
                         type: text
                     lsp_installer_text_btn:
                         label: lsp_installer_text_btn
+                        type: text
+                    link_btn:
+                        label: link_btn
                         type: text
             lsp_landscape:
                 name: lsp-landscape

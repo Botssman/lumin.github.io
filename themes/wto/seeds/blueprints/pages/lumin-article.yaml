@@ -1,10 +1,10 @@
 uuid: page_lumin-article
 handle: page_lumin-article
 type: single
-name: lumin-Article
+name: '{{ this.page.meta_title }}'
 drafts: false
 navigation:
-    label: lumin-Article
+    label: '{{ this.page.meta_title }}'
     parent: page_index
     icon: icon-file-text
     order: '10'

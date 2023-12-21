@@ -115,6 +115,9 @@ fields:
                     installers_why_lumin_text_btn:
                         label: installers_why_lumin_text_btn
                         type: text
+                    btn_link:
+                        label: btn_link
+                        type: text
                     installers_home_image_cert:
                         label: installers_home_image_cert
                         type: mediafinder

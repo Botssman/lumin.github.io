@@ -67,9 +67,6 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    published_at_date|date_jmy:
-                        label: 'published_at_date|date(''jMY'')'
-                        type: text
                     title:
                         label: Название
                         type: text

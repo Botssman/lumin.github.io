@@ -11,9 +11,15 @@ fields:
         label: Subtitle
         type: text
     learning_center_main_text_btn:
-        label: Text btn
+        label: Text btn blue
         type: text
     learning_center_main_link_btn:
+        label: Link btn blue
+        type: text
+    text_btn:
+        label: Text btn
+        type: text
+    link_btn:
         label: Link btn
         type: text
     learning_center_main_image:

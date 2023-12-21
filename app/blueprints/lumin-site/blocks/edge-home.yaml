@@ -18,6 +18,9 @@ fields:
     text_btn:
         label: Text btn
         type: text
+    btn_link:
+        label: Link btn
+        type: text
     edge_home_btn_modal:
         label: Id open Modal
         comment: Id modal installer - 0a97b997-f11c-7a00-d9df-fe3fbf0c5c5e -Or- Id modal sales - 8543252f-d9a8-6c3e-8622-a6c474959cf5 -Or- Id modal sales homeowners - 128ac6b0-dca1-7cc0-e16f-ff0bbbd8e10e
