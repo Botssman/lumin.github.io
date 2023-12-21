@@ -3,6 +3,15 @@ handle: Blog\PostContent
 type: mixin
 name: Blog Post Content
 
+columns:
+    title:
+        label: Title
+        type: text
+
+    description:
+        label: Description
+        type: textarea
+
 fields:
     banner_mini:
         tab: Manage
