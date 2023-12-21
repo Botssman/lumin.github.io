@@ -15,22 +15,24 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
-        span: right
+        span: left
         tab: App
     link_app_ios:
         label: Link app ios
         type: text
-        tab: Социальные сети
+        span: right
+        tab: App
     image_app_google:
         label: Image app google
         type: mediafinder
         mode: image
         maxItems: 1
-        span: right
+        span: left
         tab: App
     link_app_google:
         label: Link app google
         type: text
+        span: right
         tab: App
     link_in:
         label: In
