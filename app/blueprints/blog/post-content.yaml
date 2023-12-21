@@ -15,13 +15,13 @@ fields:
     banner_mini:
         tab: Manage
         label: Article Image mini
-        type: fileupload
+        type: mediafinder
         mode: image
         maxFiles: 1
     banner:
         tab: Manage
         label: Article Image
-        type: fileupload
+        type: mediafinder
         mode: image
         maxFiles: 1
     banner_alt:
