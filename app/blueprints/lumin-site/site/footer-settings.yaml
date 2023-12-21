@@ -50,8 +50,8 @@ fields:
         label: Instagram
         type: text
         tab: Social media
-    link_twitter_x:
-        label: Twitter(x)
+    link_twitter:
+        label: Twitter
         type: text
         tab: Social media
     mail_text:

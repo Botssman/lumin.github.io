@@ -107,8 +107,8 @@ fields:
     link_instagram:
         label: link_instagram
         type: text
-    link_twitter_x:
-        label: link_twitter(x)
+    link_twitter:
+        label: link_twitter
         type: text
     product_list:
         label: product_list
