@@ -1,14 +1,14 @@
 uuid: page_index
 handle: page_index
 type: single
-name: Main
+name: '{{ this.page.meta_title }}'
 drafts: false
 primaryNavigation:
     label: Страницы
     icon: icon-folder-open-o
     order: 205
 navigation:
-    label: Main
+    label: '{{ this.page.meta_title }}'
     parent: page_index
     icon: icon-file-text
     order: '10'
