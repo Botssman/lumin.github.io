@@ -446,7 +446,7 @@ default = 0
 			</div>
 		</header>
 		<main class="main">{% for block in page.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</main>
-		<footer class="footer section">
+<footer class="footer section">
 			<div class="container w-container">
 				<div>
 					<div class="footer__head">
@@ -456,11 +456,11 @@ default = 0
 								<div class="h-wrap h-wrap_mg-bt_10">
 									<div class="b-text b-text_size_14 b-text_gray b-text_semibold">Lumin App</div>
 								</div>
-								<div class="b-app b-app_mg-bt_30"><a href="#" class="b-app__app-store b-app__app-store_mg-rt_20 w-inline-block"><img src="{{ 'assets/images/app20store.png'|theme }}" loading="lazy" alt></a><a href="#" class="b-app__app-store w-inline-block"><img src="{{ 'assets/images/google-play.png'|theme }}" loading="lazy" alt></a></div>
+								<div class="b-app b-app_mg-bt_30"><a href="{{ footersettings.link_app_ios }}" class="b-app__app-store b-app__app-store_mg-rt_20 w-inline-block"><img src="{{ footersettings.image_app_ios|media }}" loading="lazy" alt></a><a href="{{ footersettings.link_app_google }}" class="b-app__app-store w-inline-block"><img src="{{ footersettings.image_app_google|media }}" loading="lazy" alt></a></div>
 								<div class="h-wrap h-wrap_mg-bt_10">
 									<div class="b-text b-text_size_14 b-text_gray b-text_semibold">We are in social</div>
 								</div>
-								<div class="b-social mob_mg-bt_40"><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/linkedin-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/fb-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/yt.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/inst.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/twitter-grey.svg'|theme }}" loading="lazy" alt></a></div>
+								<div class="b-social mob_mg-bt_40"><a href="{{ footersettings.link_in }}" class="b-social__link w-inline-block"><img src="{{ 'assets/images/linkedin-grey.svg'|theme }}" loading="lazy" alt></a><a href="{{ footersettings.link_facebook }}" class="b-social__link w-inline-block"><img src="{{ 'assets/images/fb-grey.svg'|theme }}" loading="lazy" alt></a><a href="{{ footersettings.link_youtube }}" class="b-social__link w-inline-block"><img src="{{ 'assets/images/yt.svg'|theme }}" loading="lazy" alt></a><a href="{{ footersettings.link_instagram }}" class="b-social__link w-inline-block"><img src="{{ 'assets/images/inst.svg'|theme }}" loading="lazy" alt></a><a href="{{ footersettings.link_twitter }}" class="b-social__link w-inline-block"><img src="{{ 'assets/images/twitter-grey.svg'|theme }}" loading="lazy" alt></a></div>
 							</div>
 							<div class="b-columns__col b-columns__col_20 mob_50 mob_center">
 								<div class="h-wrap h-wrap_mg-bt_10">
@@ -481,31 +481,31 @@ default = 0
 									<div class="b-text b-text_size_20 b-text_bold">Contacts</div>
 								</div>
 								<div class="h-wrap h-wrap_mg-bt_20">
-									<div class="b-text">501 Locust Ave, Floor 1, Suite 2 Charlottesville, Virginia 22902</div>
+									<div class="b-text">{{ footersettings.adress }}</div>
 								</div>
 								<ul role="list" class="b-list">
 									<li class="b-list__item b-list__item_mg-bt_10">
-										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left">
+										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_center">
 											<div class="b-list__circle v-4"><img src="{{ 'assets/images/icon-contact20(2).svg'|theme }}" loading="lazy" alt></div>
-											<div class="b-text b-text_size_20 b-text_bold"><a href="mailto:hello@luminsmart.com" class="b-text__phone">hello@luminsmart.com</a></div>
+											<div class="b-text b-text_size_20 b-text_bold"><a href="{{ footersettings.mail }}" class="b-text__phone">{{ footersettings.mail_text }}</a></div>
 										</div>
 									</li>
 									<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
 										<div class="h-wrap h-wrap_mg-bt_5">
 											<div class="b-text b-text_size_14 b-text_gray b-text_semibold">Technical Support:</div>
 										</div>
-										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left">
+										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_center">
 											<div class="b-list__circle v-4"><img src="{{ 'assets/images/icon-contact20(3).svg'|theme }}" loading="lazy" alt></div>
-											<div class="b-text b-text_size_20 b-text_bold"><a href="#" class="b-text__phone">888.421.0616</a></div>
+											<div class="b-text b-text_size_20 b-text_bold"><a href="{{ footersettings.technical_support_link }}" class="b-text__phone">{{ footersettings.technical_support }}</a></div>
 										</div>
 									</li>
 									<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
 										<div class="h-wrap h-wrap_mg-bt_5">
 											<div class="b-text b-text_size_14 b-text_gray b-text_semibold">Sales and Business:</div>
 										</div>
-										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left">
+										<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_center">
 											<div class="b-list__circle v-4"><img src="{{ 'assets/images/icon-contact20(3).svg'|theme }}" loading="lazy" alt></div>
-											<div class="b-text b-text_size_20 b-text_bold"><a href="#" class="b-text__phone">800.793.8013</a></div>
+											<div class="b-text b-text_size_20 b-text_bold"><a href="{{ footersettings.sales_and_business_link }}" class="b-text__phone">{{ footersettings.sales_and_business }}</a></div>
 										</div>
 									</li>
 								</ul>
@@ -515,10 +515,10 @@ default = 0
 					<div class="footer__bottom">
 						<div class="b-columns">
 							<div class="b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20">
-								<div class="b-text">© 2023 Lumin. All Rights Reserved</div>
+								<div class="b-text">{{ footersettings.copyright }}</div>
 							</div>
-							<div class="b-columns__col b-columns__col_10 mob_50 mob_center"><a href="#" class="b-link b-link_black">Terms of Use</a></div>
-							<div class="b-columns__col b-columns__col_10 b-columns__col_align-right mob_50"><a href="#" class="b-link b-link_black">Privacy Policy</a></div>
+							<div class="b-columns__col b-columns__col_10 mob_50 mob_center"><a href="{{ footersettings.terms_of_use_link }}" class="b-link b-link_black">{{ footersettings.terms_of_use_text }}</a></div>
+							<div class="b-columns__col b-columns__col_10 b-columns__col_align-right mob_50"><a href="{{ footersettings.privacy_policy_link }}" class="b-link b-link_black">{{ footersettings.privacy_policy }}</a></div>
 						</div>
 					</div>
 				</div>{% partial "site/scripts" %}</div>

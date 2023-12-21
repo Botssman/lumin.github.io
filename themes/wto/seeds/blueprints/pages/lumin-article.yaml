@@ -56,8 +56,8 @@ fields:
         type: mediafinder
         mode: image
         maxItems: '1'
-    blog/blocks:
-        label: blog/blocks
+    blocks:
+        label: blocks
         type: repeater
         displayMode: builder
         groups:

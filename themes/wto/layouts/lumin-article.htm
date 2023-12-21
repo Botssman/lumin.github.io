@@ -5,10 +5,10 @@ description = "{{ post.title }}"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Thu Dec 21 2023 22:48:14 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Thu Dec 21 2023 23:21:15 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ post.title }}</title>
+		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
 		<meta content="{{ post.meta_title }}" property="og:title">
 		<meta content="{{ post.meta_description }}" property="og:description">
 		<meta content="{{ post.meta_title }}" property="twitter:title">
@@ -61,7 +61,7 @@ default = 0
 								<div class="b-text b-text_size_14 b-text_gray">Published at <span>{{ post.published_at_date|date('j M Y') }}</span> by  •  <a href="#" class="post-link">Bazhinov Alex </a><span class="post-views">3067</span>  •  Last updated on <span>{{ post.published_at_date|date('j M Y') }}</span></div>
 							</div>
 							<div class="h-wrap h-wrap_mg-bt_30"><img class="b-card-post__image b-card-post__image_border-r_12" src="{{ post.banner|media }}" alt="{{ post.banner_alt }}" loading="lazy"></div>
-							<div>{% for block in post.blog/blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
+							<div>{% for block in post.blocks %}{% partial 'blog/blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
 							<div class="b-line"></div>
 							<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left h-wrap_pd-rt_50">
 								<div>
