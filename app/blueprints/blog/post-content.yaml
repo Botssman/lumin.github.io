@@ -12,6 +12,9 @@ fields:
         tab: Meta
         label: Description
         type: richeditor
+    meta_key:
+        label: Meta keywords
+        type: text
     banner_mini:
         tab: Manage
         label: Article Image mini
