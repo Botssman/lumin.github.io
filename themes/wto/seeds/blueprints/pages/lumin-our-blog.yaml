@@ -62,8 +62,8 @@ fields:
                     our_blog_posts_subtitle:
                         label: our_blog_posts_subtitle
                         type: text
-                    banner|media:
-                        label: banner|media
+                    banner:
+                        label: banner
                         type: mediafinder
                         mode: image
                         maxItems: '1'
