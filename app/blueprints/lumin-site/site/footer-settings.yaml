@@ -37,7 +37,7 @@ fields:
     link_in:
         label: In
         type: text
-        tab: App
+        tab: Social media
     link_facebook:
         label: Facebook
         type: text
