@@ -51,9 +51,6 @@ fields:
     title:
         label: Название
         type: text
-    published_at_date|date_j_m_y:
-        label: 'published_at_date|date(''j M Y'')'
-        type: text
     blocks:
         label: blocks
         type: repeater
