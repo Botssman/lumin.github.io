@@ -13,6 +13,7 @@ fields:
         label: Description
         type: richeditor
     meta_key:
+        tab: Meta
         label: Meta keywords
         type: text
     banner_mini:
