@@ -11,7 +11,7 @@ fields:
     meta_description:
         tab: Meta
         label: Description
-        type: richeditor
+        type: textarea
     meta_key:
         tab: Meta
         label: Meta keywords
