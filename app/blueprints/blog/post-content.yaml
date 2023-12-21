@@ -11,7 +11,7 @@ fields:
     meta_description:
         tab: Meta
         label: Description
-        type: textarea
+        type: richeditor
     banner_mini:
         tab: Manage
         label: Article Image mini
