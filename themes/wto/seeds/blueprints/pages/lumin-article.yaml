@@ -1,10 +1,10 @@
 uuid: page_lumin-article
 handle: page_lumin-article
 type: single
-name: '{{ this.page.meta_title }}'
+name: '{{ post.title }}'
 drafts: false
 navigation:
-    label: '{{ this.page.meta_title }}'
+    label: '{{ post.title }}'
     parent: page_index
     icon: icon-file-text
     order: '10'
@@ -51,6 +51,11 @@ fields:
     title:
         label: Название
         type: text
+    banner:
+        label: banner
+        type: mediafinder
+        mode: image
+        maxItems: '1'
     blocks:
         label: blocks
         type: repeater
@@ -73,8 +78,8 @@ fields:
                         text_list:
                             label: text_list
                             type: text
-            text_|_raw:
-                label: 'text | raw'
+            text|raw:
+                label: text|raw
                 type: text
             image:
                 label: Изображение
