@@ -14,17 +14,20 @@ fields:
         type: textarea
     banner_mini:
         tab: Manage
-        label: Banner mini
+        label: Article Image mini
         type: fileupload
         mode: image
         maxFiles: 1
     banner:
         tab: Manage
-        label: Banner big
+        label: Article Image
         type: fileupload
         mode: image
         maxFiles: 1
-
+    banner_alt:
+        tab: Manage
+        label: Image alt title
+        type: text
     author:
         tab: Manage
         label: Author

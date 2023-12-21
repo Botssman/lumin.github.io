@@ -60,7 +60,7 @@ default = 0
 							<div class="h-wrap h-wrap_mg-bt_30">
 								<div class="b-text b-text_size_14 b-text_gray">Published at <span>{{ post.published_at_date|date('j M Y') }}</span> by  •  <a href="#" class="post-link">Bazhinov Alex </a><span class="post-views">3067</span>  •  Last updated on <span>{{ post.published_at_date|date('j M Y') }}</span></div>
 							</div>
-							<div class="h-wrap h-wrap_mg-bt_30"><img class="b-card-post__image b-card-post__image_border-r_12" src="{{ post.banner|media }}" alt loading="lazy"></div>
+							<div class="h-wrap h-wrap_mg-bt_30"><img class="b-card-post__image b-card-post__image_border-r_12" src="{{ post.banner|media }}" alt="{{ post.banner_alt }}" loading="lazy"></div>
 							<div>{% for block in post.blog/blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
 							<div class="b-line"></div>
 							<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left h-wrap_pd-rt_50">
