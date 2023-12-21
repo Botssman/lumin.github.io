@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'image_extensions' => ['jpg', 'jpeg', 'bmp', 'png', 'webp', 'gif'],
+    'image_extensions' => ['jpg', 'jpeg', 'bmp', 'png', 'webp', 'gif', 'pdf'],
 
     /*
     |--------------------------------------------------------------------------
