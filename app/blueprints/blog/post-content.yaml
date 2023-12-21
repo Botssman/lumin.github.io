@@ -6,8 +6,8 @@ name: Blog Post Content
 fields:
     meta_title:
         tab: Meta
-        label: Description
-        type: textarea
+        label: Title
+        type: text
     meta_description:
         tab: Meta
         label: Description
