@@ -9,8 +9,8 @@ default = 0
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
-		<meta content="{{ this.page.meta_title }}" property="og:title">
-		<meta content="{{ this.page.meta_description }}" property="og:description">
+		<meta content="{{ post.title }}" property="og:title">
+		<meta content="{{ post.meta_description }}" property="og:description">
 		<meta content="{{ this.page.meta_title }}" property="twitter:title">
 		<meta content="{{ this.page.meta_description }}" property="twitter:description">
 		<meta property="og:type" content="website">
