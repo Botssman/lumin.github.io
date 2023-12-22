@@ -45,9 +45,9 @@ fields:
                                         characteristics_text:
                                             label: Characteristics desc
                                             type: text
-                text_documents:
-                    label: Text document
-                    type: text
-                documents_file:
-                  label: Document file
-                  type: mediafinder
+    text_documents:
+        label: Text document
+        type: text
+    documents_file:
+      label: Document file
+      type: mediafinder

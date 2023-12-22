@@ -27,3 +27,8 @@ fields:
         type: mediafinder
         mode: image
         maxItems: 1
+    learning_center_main_image_mob:
+        label: Image mobile
+        type: mediafinder
+        mode: image
+        maxItems: 1

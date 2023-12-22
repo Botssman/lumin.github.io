@@ -21,7 +21,7 @@ fields:
     lsp_installer_text_btn:
         label: Text button
         type: text
-    btn_link:
+    link_btn:
         label: Link btn
         type: text
     btn_modal:

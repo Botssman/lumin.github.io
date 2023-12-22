@@ -61,6 +61,11 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    learning_center_main_image_mob:
+                        label: learning_center_main_image_mob
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
                     learning_center_main_title:
                         label: learning_center_main_title
                         type: text

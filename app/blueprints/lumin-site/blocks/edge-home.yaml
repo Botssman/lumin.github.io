@@ -18,7 +18,7 @@ fields:
     text_btn:
         label: Text btn
         type: text
-    btn_link:
+    link_btn:
         label: Link btn
         type: text
     edge_home_btn_modal:
