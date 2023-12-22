@@ -7174,12 +7174,12 @@ h1 {
     width: 23.4%;
   }
 
-  .container.container_absolute.container_mg_5 {
-    margin-top: -2%;
+  .container {
+    max-width: 62.5vw;
   }
 
-  .container.container_align_center {
-    max-width: 62.5vw;
+  .container.container_absolute.container_mg_5 {
+    margin-top: -2%;
   }
 
   .b-image.b-image_stat {
