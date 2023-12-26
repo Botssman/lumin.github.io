@@ -67,9 +67,6 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
-                    title:
-                        label: Название
-                        type: text
             updates:
                 name: updates
                 fields:

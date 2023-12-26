@@ -5,7 +5,7 @@ name: Post
 drafts: true
 
 primaryNavigation:
-    label: Record type
+    label: Post types
     icon: octo-icon-file
     iconSvg: modules/tailor/assets/images/blog-icon.svg
     order: 95
