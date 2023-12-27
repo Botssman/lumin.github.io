@@ -1,0 +1,27 @@
+<div class="h-wrap h-wrap_mg-bt_60 tb_mg-bt_40">
+	<div class="b-grid b-grid_col_3 tb_2-col mob_1-col-ar">
+		{% for item in posts %}
+		<div id="w-node-_4498b601-7ea3-bd27-4702-1641a54ff2d2-7b12a40e" class="b-card-post">
+			<div class="b-card-post__head">
+				<img loading="lazy" alt="" src="{{ 'assets/images/img_post20(2).jpg'|theme }}" class="b-card-post__i">
+				<a href="{{ item.link }}" class="b-card-post__link w-inline-block"></a>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_5">
+				<div class="b-text b-text_size_14 b-text_gray b-text_bold">
+					{{ item.published_at_date|date('j M Y') }}
+				</div>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_5">
+				<div class="b-text b-text_size_20 b-text_bold mob_20">
+					{{ item.title }}
+				</div>
+			</div>
+			<div class="h-wrap h-wrap_mg-bt_30 h-wrap_max-width_970">
+				<div class="b-text">
+					{{ item.desc }}
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</div>

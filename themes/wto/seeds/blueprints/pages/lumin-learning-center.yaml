@@ -99,6 +99,15 @@ fields:
                     learning_center_tip_subtitle:
                         label: learning_center_tip_subtitle
                         type: text
+                    link:
+                        label: Ссылка
+                        type: text
+                    title:
+                        label: Название
+                        type: text
+                    desc:
+                        label: desc
+                        type: text
             learning_center_freshdesk:
                 name: learning-center-freshdesk
                 fields:

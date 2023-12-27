@@ -1,0 +1,24 @@
+uuid: post-video
+handle: Blog\PostVideo
+type: mixin
+name: Quick tips
+
+fields:
+    link:
+        tab: Manage
+        label: Url video
+        type: text
+    title:
+        tab: Manage
+        label: Title
+        type: text
+    desc:
+        tab: Manage
+        label: Title
+        type: text
+    image:
+        tab: Manage
+        label: Image video
+        type: mediafinder
+        mode: image
+        maxFiles: 1

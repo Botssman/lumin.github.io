@@ -32,13 +32,6 @@ fields:
         tab: Manage
         label: Image alt title
         type: text
-    author:
-        tab: Manage
-        label: Author
-        commentAbove: 'Select the author for this blog post'
-        type: entries
-        maxItems: 1
-        source: Blog\Author
 
     categories:
         tab: Manage
