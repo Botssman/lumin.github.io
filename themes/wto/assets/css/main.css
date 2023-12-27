@@ -2617,7 +2617,7 @@ h1 {
   max-width: 600px;
 }
 
-.h-wrap.h-wrap_mg-bt_40.mob_mg-bt_20.hide {
+.h-wrap.h-wrap_mg-bt_40.mob_mg-bt_20.hide, .h-wrap.h-wrap_mg-bt_40.hide {
   display: none;
 }
 
@@ -4545,6 +4545,10 @@ h1 {
 
 .b-grid.b-grid_blog {
   grid-template-rows: auto auto auto auto auto;
+}
+
+.b-grid.b-grid_blog.hide {
+  display: none;
 }
 
 .b-grid.b-grid_col_5 {
