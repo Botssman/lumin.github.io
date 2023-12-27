@@ -96,6 +96,9 @@
 				{% set posts = postsList.paginate(9) %}
 			</div>
 			{% ajaxPartial "records/posts-list" %}
+			<div>
+				{{ ajaxPager(posts) }}
+			</div>
 		</div>
 	</div>
 </section>
