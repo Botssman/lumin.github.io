@@ -20,7 +20,7 @@ fields:
         type: text
     desc:
         tab: Manage
-        label: Title
+        label: Description
         type: textarea
     image:
         tab: Manage
