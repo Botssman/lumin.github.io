@@ -1,6 +1,6 @@
 uuid: post-video
 handle: Blog\PostVideo
-type: mixin
+type: structure
 name: Quick tips
 
 fields:
