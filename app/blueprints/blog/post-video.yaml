@@ -4,7 +4,7 @@ type: structure
 name: Quick tips
 
 navigation:
-    label: Freshdesk post
+    label: Post video
     parent: Blog\BlogPost
     icon: octo-icon-pencil
     order: 100
