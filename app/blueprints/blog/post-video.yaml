@@ -3,6 +3,12 @@ handle: Blog\PostVideo
 type: structure
 name: Quick tips
 
+navigation:
+    label: Freshdesk post
+    parent: Blog\BlogPost
+    icon: octo-icon-pencil
+    order: 100
+
 fields:
     link:
         tab: Manage
