@@ -10,29 +10,8 @@ navigation:
     icon: octo-icon-pencil
     order: 100
 
-groups:
-    regular_post:
-        name: Regular Post
-        fields:
-            content:
-                tab: Edit
-                label: Content
-                type: richeditor
-                span: adaptive
-
-            _blog_post_content:
-                type: mixin
-                source: Blog\PostContent
-
-    markdown_post:
-        name: Markdown Post
-        fields:
-            content:
-                tab: Edit
-                label: Content
-                type: markdown
-                span: adaptive
-
-            _blog_post_content:
-                type: mixin
-                source: Blog\PostContent
+fields:
+    text:
+        tab: Manage
+        label: Text info
+        type: text
