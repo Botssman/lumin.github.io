@@ -21,7 +21,7 @@ fields:
     desc:
         tab: Manage
         label: Title
-        type: text
+        type: textarea
     image:
         tab: Manage
         label: Image video
