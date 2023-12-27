@@ -99,6 +99,11 @@ fields:
                     learning_center_tip_subtitle:
                         label: learning_center_tip_subtitle
                         type: text
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
                     link:
                         label: Ссылка
                         type: text
