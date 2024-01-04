@@ -51,8 +51,8 @@ fields:
     title:
         label: Название
         type: text
-    content:
-        label: content
+    text|raw:
+        label: text|raw
         type: text
     link_app_ios:
         label: link_app_ios

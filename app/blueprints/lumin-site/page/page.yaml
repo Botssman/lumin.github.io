@@ -11,7 +11,8 @@ navigation:
     order: 200
 
 fields:
-    content:
+    text:
         label: Text
+        tab: Content
         type: richeditor
         span: adaptive
