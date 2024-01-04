@@ -1,5 +1,5 @@
 uuid: pages
-handle: Pages\Page
+handle: Pages\Pages
 type: single
 name: Page
 multisite: true
