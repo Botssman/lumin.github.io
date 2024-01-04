@@ -5,7 +5,7 @@ name: Page
 multisite: true
 
 navigation:
-    label: Policy
+    label: Pages
     parent: Pages\Index
     icon: icon-video-camera
     order: 200
@@ -15,4 +15,3 @@ fields:
         label: Text
         tab: Content
         type: richeditor
-        span: adaptive
