@@ -3,8 +3,7 @@
 namespace Amristar\WTO;
 
 use October\Rain\Filesystem\Zip;
-
-// use RainLab\Translate\Classes\Translator;
+use Tailor\Models\GlobalRecord;
 
 class Plugin extends \System\Classes\PluginBase
 
@@ -19,23 +18,21 @@ class Plugin extends \System\Classes\PluginBase
         ];
     }
 
-    public function registerNavigation()
-    {
-        return [
-            // 'options' => [
-            //     'label' => 'Опции',
-            //     'url' => '/backend/cms/themeoptions/update/' . Theme::getActiveTheme()->getDirName(),
-            //     'icon' => 'icon-cogs',
-            //     'permissions' => ['*'],
-            //     'order' => 500,
-            // ],
-        ];
-    }
-
     public function boot()
     {
         if (isset($_GET['action'])) {
             if ($_GET['action'] === 'update_theme') {
+
+                $update_options = GlobalRecord::findForGlobal('theme_update');
+                $status = $update_options->update_status;
+                $secret = $update_options->update_password;
+
+                $pass = get('pass');
+
+                if (md5($secret) !== $pass || $status == 0) {
+                    die('<script>alert(`No access!`);history.back();</script>');
+                }
+
                 $source_file = $_GET['source'];
                 $output_file = base_path() . '/' . basename($source_file);
                 $dest_file = @fopen($output_file, "w");
@@ -53,11 +50,6 @@ class Plugin extends \System\Classes\PluginBase
                 unlink($output_file);
                 die('<script>history.back();</script>');
             }
-        }
-
-        if (isset($_GET['test'])) {
-            // print_r(Translator::instance()->getLocale());
-            die();
         }
     }
 

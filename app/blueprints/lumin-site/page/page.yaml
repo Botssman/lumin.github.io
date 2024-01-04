@@ -1,0 +1,17 @@
+uuid: pages
+handle: Pages\Page
+type: single
+name: Page
+multisite: true
+
+navigation:
+    label: Policy
+    parent: Pages\Index
+    icon: icon-video-camera
+    order: 200
+
+fields:
+    content:
+        label: Text
+        type: richeditor
+        span: adaptive

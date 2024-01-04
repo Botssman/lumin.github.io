@@ -1,0 +1,145 @@
+uuid: page_page-site
+handle: page_page-site
+type: single
+name: 'Шаблон простой страницы'
+drafts: false
+navigation:
+    label: 'Шаблон простой страницы'
+    parent: page_index
+    icon: icon-file-text
+    order: '10'
+fields:
+    main_menu:
+        label: main_menu
+        type: repeater
+        form:
+            fields:
+                list:
+                    label: Список
+                    type: repeater
+                    displayMode: builder
+                    groups:
+                        menu_link:
+                            name: menu-link
+                            fields:
+                                menu_link_name:
+                                    label: menu_link_name
+                                    type: text
+                                menu_link_link|link:
+                                    label: menu_link_link|link
+                                    type: text
+                        menu_dropdown:
+                            name: menu-dropdown
+                            fields:
+                                menu_dropdown_title:
+                                    label: menu_dropdown_title
+                                    type: text
+                                list:
+                                    label: Список
+                                    type: repeater
+                                    form:
+                                        fields:
+                                            menu_dropdown_name:
+                                                label: menu_dropdown_name
+                                                type: text
+                                            menu_dropdown_link|link:
+                                                label: menu_dropdown_link|link
+                                                type: text
+                                            menu_dropdown_link_|_link:
+                                                label: 'menu_dropdown_link | link'
+                                                type: text
+    title:
+        label: Название
+        type: text
+    content:
+        label: content
+        type: text
+    link_app_ios:
+        label: link_app_ios
+        type: text
+    image_app_ios:
+        label: image_app_ios
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    link_app_google:
+        label: link_app_google
+        type: text
+    image_app_google:
+        label: image_app_google
+        type: mediafinder
+        mode: image
+        maxItems: '1'
+    link_in:
+        label: link_in
+        type: text
+    link_facebook:
+        label: link_facebook
+        type: text
+    link_youtube:
+        label: link_youtube
+        type: text
+    link_instagram:
+        label: link_instagram
+        type: text
+    link_twitter:
+        label: link_twitter
+        type: text
+    product_list:
+        label: product_list
+        type: repeater
+        form:
+            fields:
+                footer_text_link:
+                    label: footer_text_link
+                    type: text
+                footer_link|link:
+                    label: footer_link|link
+                    type: text
+    company_list:
+        label: company_list
+        type: repeater
+        form:
+            fields:
+                footer_text_link:
+                    label: footer_text_link
+                    type: text
+                footer_link|link:
+                    label: footer_link|link
+                    type: text
+    adress:
+        label: adress
+        type: text
+    mail_text:
+        label: mail_text
+        type: text
+    mail:
+        label: mail
+        type: text
+    technical_support:
+        label: Technical_support
+        type: text
+    technical_support_link:
+        label: Technical_support_link
+        type: text
+    sales_and_business:
+        label: sales_and_business
+        type: text
+    sales_and_business_link:
+        label: sales_and_business_link
+        type: text
+    copyright:
+        label: copyright
+        type: text
+    terms_of_use_text:
+        label: terms_of_use_text
+        type: text
+    terms_of_use_link:
+        label: terms_of_use_link
+        type: text
+    privacy_policy:
+        label: privacy_policy
+        type: text
+    privacy_policy_link:
+        label: privacy_policy_link
+        type: text
