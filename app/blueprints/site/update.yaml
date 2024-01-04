@@ -1,0 +1,19 @@
+uuid: theme_update
+handle: theme_update
+type: global
+name: Обновление темы
+
+navigation:
+  icon: icon-refresh
+  order: 10
+
+fields:
+  update_status:
+    label: Обновлять
+    type: switch
+    default: true
+    tab: Обновление темы
+  update_password:
+    label: Пароль обновления
+    tab: Обновление темы
+    type: sensitive
