@@ -1,0 +1,17 @@
+uuid: consent-documentation
+handle: Pages\ConsentDocumentation
+type: single
+name: Page
+multisite: true
+
+navigation:
+    label: Сonsent documentation
+    parent: Pages\Index
+    icon: icon-video-camera
+    order: 200
+
+fields:
+    text:
+        label: Text
+        tab: Content
+        type: richeditor
