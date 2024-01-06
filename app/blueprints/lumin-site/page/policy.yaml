@@ -1,5 +1,5 @@
-uuid: pages
-handle: Pages\Pages
+uuid: policy
+handle: Pages\Policy
 type: single
 name: Page
 multisite: true
