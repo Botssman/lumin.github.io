@@ -90,6 +90,12 @@ fields:
                     technical_support_link:
                         label: Technical_support_link
                         type: text
+                    mail_text:
+                        label: mail_text
+                        type: text
+                    mail:
+                        label: mail
+                        type: text
             learning_center_tip:
                 name: learning-center-tip
                 fields:

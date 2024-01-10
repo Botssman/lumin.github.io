@@ -6517,6 +6517,12 @@ h1 {
   text-decoration: none;
 }
 
+.b-phone-link.mail {
+  background-image: url("../images/mail.svg");
+  padding-left: 30px;
+  font-size: 1.5em;
+}
+
 .b-modal__events-content {
   z-index: 1;
   width: 100%;
@@ -9726,6 +9732,10 @@ h1 {
   .image-2 {
     height: 100%;
     max-width: 110px;
+  }
+
+  .b-phone-link {
+    font-size: 2em;
   }
 
   .b-modal__events-content {

@@ -7,10 +7,122 @@
         blueprint_uuid: page_index
         update_existing: true
 -
-    name: page-site
+    name: lumin-lsp
     class: Tailor\Models\RecordImport
-    file: seeds/data/pages/page-site.json
+    file: seeds/data/pages/lumin-lsp.json
     attributes:
         file_format: json
-        blueprint_uuid: page_page-site
+        blueprint_uuid: page_lumin-lsp
+        update_existing: true
+-
+    name: lumin-installers
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-installers.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-installers
+        update_existing: true
+-
+    name: lumin-demand-response
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-demand-response.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-demand-response
+        update_existing: true
+-
+    name: lumin-electrification
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-electrification.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-electrification
+        update_existing: true
+-
+    name: lumin-learning-center
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-learning-center.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-learning-center
+        update_existing: true
+-
+    name: lumin-solar-edge
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-solar-edge.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-solar-edge
+        update_existing: true
+-
+    name: lumin-rebates
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-rebates.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-rebates
+        update_existing: true
+-
+    name: lumin-meet
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-meet.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-meet
+        update_existing: true
+-
+    name: lumin-our-blog
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-our-blog.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-our-blog
+        update_existing: true
+-
+    name: lumin-press-room
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-press-room.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-press-room
+        update_existing: true
+-
+    name: lumin-contact-us
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-contact-us.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-contact-us
+        update_existing: true
+-
+    name: lumin-careers
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-careers.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-careers
+        update_existing: true
+-
+    name: '404'
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/404.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_404
+        update_existing: true
+-
+    name: lumin-article
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-article.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-article
+        update_existing: true
+-
+    name: lumin-vacancy
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages/lumin-vacancy.json
+    attributes:
+        file_format: json
+        blueprint_uuid: page_lumin-vacancy
         update_existing: true
