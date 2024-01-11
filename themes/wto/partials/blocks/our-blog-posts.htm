@@ -97,7 +97,7 @@
 			</div>
 			{% ajaxPartial "records/posts-list" %}
 			<div>
-				{{ ajaxPager(posts) }}
+				{% partial "site/pagination" %}
 			</div>
 		</div>
 	</div>
