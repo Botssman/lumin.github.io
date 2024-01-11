@@ -73,6 +73,9 @@ fields:
                     contact_us_form_title:
                         label: contact_us_form_title
                         type: text
+    text_app:
+        label: text_app
+        type: text
     link_app_ios:
         label: link_app_ios
         type: text

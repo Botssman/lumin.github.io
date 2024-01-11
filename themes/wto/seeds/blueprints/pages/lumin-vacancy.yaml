@@ -9,6 +9,9 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    text_app:
+        label: text_app
+        type: text
     link_app_ios:
         label: link_app_ios
         type: text

@@ -220,6 +220,9 @@ fields:
                                 text_list:
                                     label: text_list
                                     type: text
+    text_app:
+        label: text_app
+        type: text
     link_app_ios:
         label: link_app_ios
         type: text

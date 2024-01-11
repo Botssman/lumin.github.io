@@ -151,6 +151,9 @@ fields:
                     press_room_pr_text_btn:
                         label: press_room_pr_text_btn
                         type: text
+    text_app:
+        label: text_app
+        type: text
     link_app_ios:
         label: link_app_ios
         type: text

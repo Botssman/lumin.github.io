@@ -407,6 +407,9 @@ fields:
                     modal_looking_subtitle:
                         label: modal_looking_subtitle
                         type: text
+    text_app:
+        label: text_app
+        type: text
     link_app_ios:
         label: link_app_ios
         type: text
