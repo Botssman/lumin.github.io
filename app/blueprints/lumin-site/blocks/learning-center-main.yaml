@@ -22,6 +22,12 @@ fields:
     link_btn:
         label: Link btn
         type: text
+    mail_text:
+        label: Text mail
+        type: text
+    mail:
+        label: Link mail
+        type: text
     learning_center_main_image:
         label: Image
         type: mediafinder
