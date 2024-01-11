@@ -110,6 +110,9 @@ fields:
         type: mediafinder
         mode: image
         maxItems: '1'
+    text_social:
+        label: text_social
+        type: text
     link_in:
         label: link_in
         type: text

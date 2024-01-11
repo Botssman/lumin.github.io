@@ -10,6 +10,10 @@ navigation:
     order: 200
 
 fields:
+    text_app:
+        label: Text app
+        type: text
+        tab: App
     image_app_ios:
         label: Image app ios
         type: mediafinder
@@ -34,6 +38,10 @@ fields:
         type: text
         span: right
         tab: App
+    text_social:
+        label: Text Social
+        type: text
+        tab: Social media
     link_in:
         label: In
         type: text
