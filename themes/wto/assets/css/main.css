@@ -8526,6 +8526,7 @@ h1 {
     object-fit: cover;
     object-position: 50% 50%;
     display: block;
+    top: -5%;
   }
 
   .b-image.b-image_yellow-fon.v-3.mob_show.v-4 {
