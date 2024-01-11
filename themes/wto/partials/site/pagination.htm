@@ -12,21 +12,11 @@
             <a href="{{ posts.url(currentPage - 1) }}"></a>
         </li>
 
-        {# Добавляем ссылку на первую страницу #}
-        <li class="page-item first {{ currentPage == 1 ? 'disabled' }}">
-            <a class="page-link" href="{{ posts.url(1) }}">««</a>
-        </li>
-
         {% for page in startPage..endPage %}
             <li class="page-item {{ page == currentPage ? 'active' }}">
                 <a class="page-link" href="{{ posts.url(page) }}">{{ page }}</a>
             </li>
         {% endfor %}
-
-        {# Добавляем ссылку на последнюю страницу #}
-        <li class="page-item last {{ currentPage == totalPages ? 'disabled' }}">
-            <a href="{{ posts.url(totalPages) }}">»»</a>
-        </li>
 
         {# Добавляем ссылку на следующую страницу #}
         <li class="page-item last {{ currentPage == totalPages ? 'disabled' }}">
