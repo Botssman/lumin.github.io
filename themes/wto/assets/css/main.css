@@ -3923,6 +3923,7 @@ h1 {
 
 .b-image.b-image_stat.v-2 {
   max-height: 395px;
+  top: -109px;
 }
 
 .b-image.b-image_stat.v-3 {
@@ -5063,6 +5064,10 @@ h1 {
   height: 50px;
 }
 
+.b-select.v-2.hide {
+  display: none;
+}
+
 .b-card-project {
   background-color: #fff;
   border-radius: 12px;
@@ -5841,7 +5846,7 @@ h1 {
   border-bottom-left-radius: 12px;
   margin-left: auto;
   position: absolute;
-  top: 22%;
+  top: 18%;
   right: 0;
 }
 
@@ -6115,6 +6120,10 @@ h1 {
   background-repeat: no-repeat;
   background-size: auto;
   text-decoration: none;
+}
+
+.b-table__td.b-table__td_border-bt.b-table__td_arrow.hide {
+  display: none;
 }
 
 .b-image-wrapper {
@@ -7183,6 +7192,10 @@ h1 {
     overflow: visible;
   }
 
+  .b-image.b-image_stat.v-2 {
+    top: -120px;
+  }
+
   .b-block.b-block_home {
     max-width: 34em;
   }
@@ -7309,7 +7322,6 @@ h1 {
 
   .b-element.b-element_v-1 {
     width: 37vw;
-    top: 31%;
   }
 }
 
