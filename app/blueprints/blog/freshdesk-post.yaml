@@ -14,4 +14,4 @@ fields:
     text:
         tab: Manage
         label: Text info
-        type: text
+        type: richeditor
