@@ -77,7 +77,7 @@ default = 0
 							<div class="h-wrap h-wrap_mg-bt_20">
 								<div class="b-text b-text_size_32 b-text_bold"><strong>Recent posts</strong></div>
 							</div>
-							<div>{% set posts = postsList.paginate(3) %}</div>
+							<div>{% set posts = postsArticles.paginate(3) %}</div>
 							{% ajaxPartial "records/posts-articles" %}
 						</div>
 					</div>
