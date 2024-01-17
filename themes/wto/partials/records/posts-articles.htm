@@ -1,0 +1,18 @@
+<div class="b-aside">
+    {% for item in posts %}
+	<div class="h-wrap h-wrap_mg-bt_20">
+        <a href="/blog/{{ item.slug }}" class="b-card-post w-inline-block">
+            <div class="b-card-post__head">
+                <img src="{{ item.banner|media }}" loading="lazy" alt class="b-card-post__image">
+                <div class="b-card-post__btn-cont">
+                    <div class="b-button b-button_blue b-button_height_45">Reаd more</div>
+                </div>
+            </div>
+            <div class="h-wrap h-wrap_mg-bt_5">
+                <div class="b-text b-text_size_14 b-text_gray b-text_semibold">{{ item.published_at_date|date('j M Y') }}</div>
+            </div>
+            <div class="b-text b-text_size_20 b-text_bold">{{ item.title }}</div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

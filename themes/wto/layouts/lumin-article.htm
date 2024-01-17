@@ -5,7 +5,7 @@ description = "{{ post.title }}"
 default = 0
 ==
 <!DOCTYPE html>
-<!-- Last Published: Thu Dec 21 2023 23:21:15 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
+<!-- Last Published: Wed Jan 17 2024 14:25:21 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a407" data-wf-site="64227e51ac84205a1ce228fa">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ this.page.meta_title ?: placeholder('pageTitle') }}</title>
@@ -75,13 +75,10 @@ default = 0
 						</div>
 						<div id="w-node-e8be9cfc-a604-28b6-f1ff-d398029f7106-7b12a407">
 							<div class="h-wrap h-wrap_mg-bt_20">
-								<div class="b-text b-text_size_32 b-text_bold"><strong>Related posts</strong></div>
+								<div class="b-text b-text_size_32 b-text_bold"><strong>Recent posts</strong></div>
 							</div>
-							<div class="b-aside">
-								<div class="h-wrap h-wrap_mg-bt_20"><a href="#" class="b-card-post w-inline-block"><div class="b-card-post__head"><img src="{{ 'assets/images/image2054.jpg'|theme }}" loading="lazy" alt class="b-card-post__image"><div class="b-card-post__btn-cont"><div class="b-button b-button_blue b-button_height_45">Reed more</div></div></div><div class="h-wrap h-wrap_mg-bt_5"><div class="b-text b-text_size_14 b-text_gray b-text_semibold">May 18, 2021</div></div><div class="b-text b-text_size_20 b-text_bold">How Microgrid Solar Systems Deliver Energy Independence</div></a></div>
-								<div class="h-wrap h-wrap_mg-bt_20"><a href="#" class="b-card-post w-inline-block"><div class="b-card-post__head"><img src="{{ 'assets/images/news__img.jpg'|theme }}" loading="lazy" alt class="b-card-post__image"><div class="b-card-post__btn-cont"><div class="b-button b-button_blue b-button_height_45">Reed more</div></div></div><div class="h-wrap h-wrap_mg-bt_5"><div class="b-text b-text_size_14 b-text_gray">May 18, 2021</div></div><div class="b-text b-text_size_20 b-text_bold">How Microgrid Solar Systems Deliver Energy Independence</div></a></div>
-								<div class="h-wrap h-wrap_mg-bt_20"><a href="#" class="b-card-post w-inline-block"><div class="b-card-post__head"><img src="{{ 'assets/images/news__img-1.jpg'|theme }}" loading="lazy" alt class="b-card-post__image"><div class="b-card-post__btn-cont"><div class="b-button b-button_blue b-button_height_45">Reed more</div></div></div><div class="h-wrap h-wrap_mg-bt_5"><div class="b-text b-text_size_14 b-text_gray b-text_semibold">May 18, 2021</div></div><div class="h-wrap h-wrap_mg-bt_5"><div class="b-text b-text_size_20 b-text_bold">Why is my electric bill so high with solar panels?</div></div></a></div>
-							</div>
+							<div>{% set posts = postsList.paginate(3) %}</div>
+							{% ajaxPartial "records/posts-articles" %}
 						</div>
 					</div>
 				</div>

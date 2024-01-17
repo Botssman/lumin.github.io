@@ -16377,10 +16377,10 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/trigger-events.ts
+  // packages/systems/ix2/shared-constants/trigger-events.ts
   var EventTypeConsts, EventAppliesTo, EventBasedOn, EventContinuousMouseAxes, EventLimitAffectedElements, QuickEffectIds, QuickEffectDirectionConsts;
   var init_trigger_events = __esm({
-    "packages/systems/ix2/shared/constants/trigger-events.ts"() {
+    "packages/systems/ix2/shared-constants/trigger-events.ts"() {
       "use strict";
       EventTypeConsts = {
         NAVBAR_OPEN: "NAVBAR_OPEN",
@@ -16465,10 +16465,10 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/animation-actions.ts
+  // packages/systems/ix2/shared-constants/animation-actions.ts
   var ActionTypeConsts, ActionAppliesTo;
   var init_animation_actions = __esm({
-    "packages/systems/ix2/shared/constants/animation-actions.ts"() {
+    "packages/systems/ix2/shared-constants/animation-actions.ts"() {
       "use strict";
       ActionTypeConsts = {
         TRANSFORM_MOVE: "TRANSFORM_MOVE",
@@ -16503,10 +16503,10 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/trigger-interactions.ts
+  // packages/systems/ix2/shared-constants/trigger-interactions.ts
   var InteractionTypeConsts;
   var init_trigger_interactions = __esm({
-    "packages/systems/ix2/shared/constants/trigger-interactions.ts"() {
+    "packages/systems/ix2/shared-constants/trigger-interactions.ts"() {
       "use strict";
       InteractionTypeConsts = {
         MOUSE_CLICK_INTERACTION: "MOUSE_CLICK_INTERACTION",
@@ -16527,10 +16527,10 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/reduced-motion.ts
+  // packages/systems/ix2/shared-constants/reduced-motion.ts
   var TRANSFORM_MOVE, TRANSFORM_SCALE, TRANSFORM_ROTATE, TRANSFORM_SKEW, STYLE_SIZE, STYLE_FILTER, STYLE_FONT_VARIATION, ReducedMotionTypes;
   var init_reduced_motion = __esm({
-    "packages/systems/ix2/shared/constants/reduced-motion.ts"() {
+    "packages/systems/ix2/shared-constants/reduced-motion.ts"() {
       "use strict";
       init_animation_actions();
       ({
@@ -16554,7 +16554,7 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/IX2EngineActionTypes.ts
+  // packages/systems/ix2/shared-constants/IX2EngineActionTypes.ts
   var IX2EngineActionTypes_exports = {};
   __export(IX2EngineActionTypes_exports, {
     IX2_ACTION_LIST_PLAYBACK_CHANGED: () => IX2_ACTION_LIST_PLAYBACK_CHANGED,
@@ -16580,7 +16580,7 @@
   });
   var IX2_RAW_DATA_IMPORTED, IX2_SESSION_INITIALIZED, IX2_SESSION_STARTED, IX2_SESSION_STOPPED, IX2_PREVIEW_REQUESTED, IX2_PLAYBACK_REQUESTED, IX2_STOP_REQUESTED, IX2_CLEAR_REQUESTED, IX2_EVENT_LISTENER_ADDED, IX2_EVENT_STATE_CHANGED, IX2_ANIMATION_FRAME_CHANGED, IX2_PARAMETER_CHANGED, IX2_INSTANCE_ADDED, IX2_INSTANCE_STARTED, IX2_INSTANCE_REMOVED, IX2_ELEMENT_STATE_CHANGED, IX2_ACTION_LIST_PLAYBACK_CHANGED, IX2_VIEWPORT_WIDTH_CHANGED, IX2_MEDIA_QUERIES_DEFINED, IX2_TEST_FRAME_RENDERED;
   var init_IX2EngineActionTypes = __esm({
-    "packages/systems/ix2/shared/constants/IX2EngineActionTypes.ts"() {
+    "packages/systems/ix2/shared-constants/IX2EngineActionTypes.ts"() {
       "use strict";
       IX2_RAW_DATA_IMPORTED = "IX2_RAW_DATA_IMPORTED";
       IX2_SESSION_INITIALIZED = "IX2_SESSION_INITIALIZED";
@@ -16605,7 +16605,7 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/IX2EngineConstants.ts
+  // packages/systems/ix2/shared-constants/IX2EngineConstants.ts
   var IX2EngineConstants_exports = {};
   __export(IX2EngineConstants_exports, {
     ABSTRACT_NODE: () => ABSTRACT_NODE,
@@ -16667,7 +16667,7 @@
   });
   var IX2_ID_DELIMITER, WF_PAGE, W_MOD_JS, W_MOD_IX, BOUNDARY_SELECTOR, CONFIG_X_VALUE, CONFIG_Y_VALUE, CONFIG_Z_VALUE, CONFIG_VALUE, CONFIG_X_UNIT, CONFIG_Y_UNIT, CONFIG_Z_UNIT, CONFIG_UNIT, TRANSFORM, TRANSLATE_X, TRANSLATE_Y, TRANSLATE_Z, TRANSLATE_3D, SCALE_X, SCALE_Y, SCALE_Z, SCALE_3D, ROTATE_X, ROTATE_Y, ROTATE_Z, SKEW, SKEW_X, SKEW_Y, OPACITY, FILTER, FONT_VARIATION_SETTINGS, WIDTH, HEIGHT, BACKGROUND_COLOR, BACKGROUND, BORDER_COLOR, COLOR, DISPLAY, FLEX, WILL_CHANGE, AUTO, COMMA_DELIMITER, COLON_DELIMITER, BAR_DELIMITER, CHILDREN, IMMEDIATE_CHILDREN, SIBLINGS, PARENT, PRESERVE_3D, HTML_ELEMENT, PLAIN_OBJECT, ABSTRACT_NODE, RENDER_TRANSFORM, RENDER_GENERAL, RENDER_STYLE, RENDER_PLUGIN;
   var init_IX2EngineConstants = __esm({
-    "packages/systems/ix2/shared/constants/IX2EngineConstants.ts"() {
+    "packages/systems/ix2/shared-constants/IX2EngineConstants.ts"() {
       "use strict";
       IX2_ID_DELIMITER = "|";
       WF_PAGE = "data-wf-page";
@@ -16728,9 +16728,9 @@
     }
   });
 
-  // packages/systems/ix2/shared/constants/index.ts
-  var constants_exports = {};
-  __export(constants_exports, {
+  // packages/systems/ix2/shared-constants/index.ts
+  var shared_constants_exports = {};
+  __export(shared_constants_exports, {
     ActionAppliesTo: () => ActionAppliesTo,
     ActionTypeConsts: () => ActionTypeConsts,
     EventAppliesTo: () => EventAppliesTo,
@@ -16745,8 +16745,8 @@
     QuickEffectIds: () => QuickEffectIds,
     ReducedMotionTypes: () => ReducedMotionTypes
   });
-  var init_constants = __esm({
-    "packages/systems/ix2/shared/constants/index.ts"() {
+  var init_shared_constants = __esm({
+    "packages/systems/ix2/shared-constants/index.ts"() {
       "use strict";
       init_trigger_events();
       init_animation_actions();
@@ -16754,6 +16754,8 @@
       init_reduced_motion();
       init_IX2EngineActionTypes();
       init_IX2EngineConstants();
+      init_animation_actions();
+      init_trigger_events();
     }
   });
 
@@ -16762,7 +16764,7 @@
   var init_IX2DataReducer = __esm({
     "packages/systems/ix2/engine/reducers/IX2DataReducer.ts"() {
       "use strict";
-      init_constants();
+      init_shared_constants();
       ({ IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED2 } = IX2EngineActionTypes_exports);
       ixData = (state = Object.freeze({}), action) => {
         switch (action.type) {
@@ -17039,7 +17041,7 @@
   var init_IX2RequestReducer = __esm({
     "packages/systems/ix2/engine/reducers/IX2RequestReducer.ts"() {
       "use strict";
-      init_constants();
+      init_shared_constants();
       import_timm = __toESM(require_timm());
       ({
         IX2_PREVIEW_REQUESTED: IX2_PREVIEW_REQUESTED2,
@@ -17074,7 +17076,7 @@
   var init_IX2SessionReducer = __esm({
     "packages/systems/ix2/engine/reducers/IX2SessionReducer.ts"() {
       "use strict";
-      init_constants();
+      init_shared_constants();
       import_timm2 = __toESM(require_timm());
       ({
         IX2_SESSION_INITIALIZED: IX2_SESSION_INITIALIZED2,
@@ -17718,7 +17720,7 @@
     "packages/systems/ix2/shared/reducers/IX2ElementsReducer.ts"() {
       "use strict";
       import_timm3 = __toESM(require_timm());
-      init_constants();
+      init_shared_constants();
       ({
         HTML_ELEMENT: HTML_ELEMENT2,
         PLAIN_OBJECT: PLAIN_OBJECT2,
@@ -18171,15 +18173,15 @@
         value: true
       });
       exports2.pluginMethodMap = void 0;
-      var _constants = (init_constants(), __toCommonJS(constants_exports));
+      var _sharedConstants = (init_shared_constants(), __toCommonJS(shared_constants_exports));
       var lottie2 = _interopRequireWildcard(require_IX2Lottie());
       var spline = _interopRequireWildcard(require_IX2Spline());
       var variable = _interopRequireWildcard(require_IX2Variable());
-      var pluginMethodMap2 = exports2.pluginMethodMap = /* @__PURE__ */ new Map([[_constants.ActionTypeConsts.PLUGIN_LOTTIE, {
+      var pluginMethodMap2 = exports2.pluginMethodMap = /* @__PURE__ */ new Map([[_sharedConstants.ActionTypeConsts.PLUGIN_LOTTIE, {
         ...lottie2
-      }], [_constants.ActionTypeConsts.PLUGIN_SPLINE, {
+      }], [_sharedConstants.ActionTypeConsts.PLUGIN_SPLINE, {
         ...spline
-      }], [_constants.ActionTypeConsts.PLUGIN_VARIABLE, {
+      }], [_sharedConstants.ActionTypeConsts.PLUGIN_VARIABLE, {
         ...variable
       }]]);
     }
@@ -19234,7 +19236,7 @@
       import_reduce = __toESM(require_reduce());
       import_findLast = __toESM(require_findLast());
       import_timm4 = __toESM(require_timm());
-      init_constants();
+      init_shared_constants();
       init_shallowEqual();
       init_IX2EasingUtils();
       init_IX2VanillaPlugins();
@@ -19486,7 +19488,7 @@
   var init_IX2InstancesReducer = __esm({
     "packages/systems/ix2/engine/reducers/IX2InstancesReducer.ts"() {
       "use strict";
-      init_constants();
+      init_shared_constants();
       import_shared = __toESM(require_shared2());
       import_timm5 = __toESM(require_timm());
       ({
@@ -19780,7 +19782,7 @@
   var init_IX2ParametersReducer = __esm({
     "packages/systems/ix2/engine/reducers/IX2ParametersReducer.ts"() {
       "use strict";
-      init_constants();
+      init_shared_constants();
       ({ IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED4, IX2_SESSION_STOPPED: IX2_SESSION_STOPPED5, IX2_PARAMETER_CHANGED: IX2_PARAMETER_CHANGED2 } = IX2EngineActionTypes_exports);
       ixParameters = (state = {
         /*mutable flat state*/
@@ -20468,7 +20470,7 @@
   var init_IX2EngineActions = __esm({
     "packages/systems/ix2/engine/actions/IX2EngineActions.ts"() {
       "use strict";
-      init_constants();
+      init_shared_constants();
       import_shared3 = __toESM(require_shared2());
       ({
         IX2_RAW_DATA_IMPORTED: IX2_RAW_DATA_IMPORTED5,
@@ -20759,7 +20761,7 @@
     "packages/systems/ix2/engine/logic/IX2BrowserApi.ts"() {
       "use strict";
       import_shared4 = __toESM(require_shared2());
-      init_constants();
+      init_shared_constants();
       ({ ELEMENT_MATCHES: ELEMENT_MATCHES2 } = import_shared4.IX2BrowserSupport);
       ({ IX2_ID_DELIMITER: IX2_ID_DELIMITER2, HTML_ELEMENT: HTML_ELEMENT3, PLAIN_OBJECT: PLAIN_OBJECT3, WF_PAGE: WF_PAGE2 } = IX2EngineConstants_exports);
       getClosestElement = Element.prototype.closest ? (element, selector) => {
@@ -21290,7 +21292,7 @@
       import_flow = __toESM(require_flow());
       import_get = __toESM(require_get());
       import_clamp = __toESM(require_clamp());
-      init_constants();
+      init_shared_constants();
       init_IX2VanillaEngine();
       init_IX2EngineActions();
       import_shared5 = __toESM(require_shared2());
@@ -22675,7 +22677,7 @@
       import_mapValues = __toESM(require_mapValues());
       import_forEach = __toESM(require_forEach());
       import_throttle = __toESM(require_throttle());
-      init_constants();
+      init_shared_constants();
       import_shared6 = __toESM(require_shared2());
       init_IX2EngineActions();
       init_IX2BrowserApi();
