@@ -4,7 +4,7 @@ type: global
 name: Настройки форм
 
 navigation:
-  label: Формы
+  label: Forms
   icon: icon-envelope-o
   order: 10
 
