@@ -188,6 +188,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\HaveQuestions
+            learning_center_freshdesk:
+                name: Section learning center freshdesk
+                description: Learning center freshdesk
+                icon: icon-refresh
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LearningCenterFreshdesk
             modal-installer:
                 name: Modal installer
                 icon: icon-question-circle
