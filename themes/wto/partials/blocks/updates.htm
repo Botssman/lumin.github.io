@@ -10,25 +10,8 @@
 				{{ block.updates_subtitle|raw }}
 			</div>
 		</div>
-		<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900">
-			<div class="b-form w-form">
-				<form data-name="Форма" id="email-form" name="email-form" method="get" class="b-form__form b-form__form_grid col_2" data-wf-page-id="648baa95d29f649e7b12a408" data-wf-element-id="9ebae1de-c39f-a704-3ff9-0742d5b4ea59">
-					<input class="b-input w-node-_9ebae1de-c39f-a704-3ff9-0742d5b4ea5a-d5b4ea4d w-input" maxlength="256" name="Enter-your-email-address-2" data-name="Enter Your Email Address 2" placeholder="Enter your email address..." type="text" id="Enter-your-email-address-2">
-					<input type="submit" data-wait="Please wait..." id="w-node-_9ebae1de-c39f-a704-3ff9-0742d5b4ea5b-d5b4ea4d" class="b-button b-button_blue b-button_height_56 w-button" value="Subscribe">
-				</form>
-				<div class="b-form__success-mes w-form-done">
-					<div>
-						Спасибо за заявку!
-						<br>
-						В ближайшее время мы свяжемся с вами
-					</div>
-				</div>
-				<div class="b-form__error-mes w-form-fail">
-					<div>
-						Ошибка! Что-то пошло не так.
-					</div>
-				</div>
-			</div>
+		<div pat_in="{% component 'updatesForm' %}" class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_900">
+			{% partial "updatesForm/default" %}
 		</div>
 	</div>
 </section>
