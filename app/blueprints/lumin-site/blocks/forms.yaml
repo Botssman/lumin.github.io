@@ -1,8 +1,7 @@
 uuid: wto_forms
 handle: wto_forms
 type: global
-name: Настройки форм
-
+name: Form setting
 navigation:
   label: Forms
   icon: icon-envelope-o
@@ -10,62 +9,62 @@ navigation:
 
 fields:
   forms:
-    label: Формы
+    label: Forms
     type: repeater
-    prompt: Добавить настройку формы
-    tab: Настройки форм
+    prompt: Add form setting
+    tab: Edit form
     form:
       fields:
         selector:
-          label: Отбор по CSS селектору
+          label: Select CSS class
         email_to:
-          label: Получатель
-          comment: Можно указать несколько адресов через запятую
+          label: Send to
+          comment: You can send multiple addresses separated by commas
           span: left
         template:
-          label: Шаблон письма
+          label: Email template
           span: right
-          comment: Название шаблона для письма
+          comment: Letter template name
         sender_name:
-          label: Имя отправителя
+          label: From
           span: left
         reply_to:
-          label: Адрес для ответа
+          label: Reply-to address
           span: right
         copy_cc:
-          label: Копия письма
+          label: CC
           span: left
         copy_bcc:
-          label: Скрытая копия
+          label: BCC
           span: right
         hide_form:
           type: checkbox
-          label: Прятать форму
+          label: Hide form
           span: left
         hide_lbox:
           type: checkbox
-          label: Прятать лайтбокс
+          label: Hide lightbox
           span: right
         hide_delay:
-          label: Задержка до исчезновения
+          label: Delay
           span: left
         lbox_selector:
-          label: Селектор лайтбокса
+          label: Select lightbox
           span: right
         redirect:
-          label: Перенаправлять на страницу
+          label: Forward to page after submission
           span: full
         new_window:
-          label: Перенаправлять в новом окне
+          label: Forward in the new window
           type: checkbox
           span: left
         success_message:
-          label: Сообщение об успешной отправке
+          label: Successfull submission message
           span: full
         error_message:
-          label: Сообщение об ошибке
+          label: Error submission message
           span: full
         sender_replay:
-          label: Ответ отправителю
+          label: Reply to the sender
           span: full
-          comment: Название шаблона для отправителя
+          comment: Name of template
