@@ -1,0 +1,16 @@
+uuid: pages-abb-support
+handle: Pages\AbbSupport
+type: single
+name: Lumin abb support
+drafts: true
+
+navigation:
+    label: Support abb support
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminLearningCenter
