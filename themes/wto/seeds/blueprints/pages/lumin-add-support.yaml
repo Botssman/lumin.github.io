@@ -1,0 +1,16 @@
+uuid: pages-lumin-lumin-add-support
+handle: Pages\LuminAddSupport
+type: single
+name: Lumin support
+drafts: true
+
+navigation:
+    label: Add support
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminLearningCenter
