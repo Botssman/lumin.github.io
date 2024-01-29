@@ -5,7 +5,7 @@ name: Lumin abb support
 drafts: true
 
 navigation:
-    label: Support abb support
+    label: Abb support
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200
