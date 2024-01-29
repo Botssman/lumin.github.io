@@ -2457,6 +2457,10 @@ h1 {
   font-weight: 700;
 }
 
+.b-text.b-text_bold.tb_show {
+  display: none;
+}
+
 .b-text.b-text_gray {
   color: var(--grey-2);
 }
@@ -6649,6 +6653,12 @@ h1 {
   background-size: auto;
 }
 
+.header__info {
+  background-color: var(--orange);
+  text-align: center;
+  padding: 3px 15px;
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 1.15vw;
@@ -7393,6 +7403,14 @@ h1 {
 
   .b-text.b-text_bold.mob_15 {
     font-size: .9375em;
+  }
+
+  .b-text.b-text_bold.tb_hide {
+    display: none;
+  }
+
+  .b-text.b-text_bold.tb_show {
+    display: block;
   }
 
   .b-text.b-text_size_40.b-text_extrabold.tb_26 {
@@ -8161,6 +8179,10 @@ h1 {
   .b-width.b-width_50 {
     font-size: .4em;
   }
+
+  .header__info {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -8220,6 +8242,10 @@ h1 {
 
   .b-text.b-text_size_30.b-text_extra-bold.mob_20 {
     font-size: 1.25em;
+  }
+
+  .b-text.b-text_bold.tb_show {
+    font-size: .8em;
   }
 
   .b-columns {
@@ -8446,7 +8472,8 @@ h1 {
   }
 
   .header {
-    height: 80px;
+    height: auto;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;

@@ -10,6 +10,12 @@ navigation:
     order: 200
 
 fields:
+    text:
+        label: Text info
+        type: text
+    text_mobile:
+        label: Text info text_mobile
+        type: text
     main_menu:
         type: repeater
         titleFrom: Menu items

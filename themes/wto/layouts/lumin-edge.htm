@@ -102,6 +102,10 @@ default = 0
 		<link href="{{'assets/css/main.css'|theme}}" rel="stylesheet">{% styles %}</head>
 	<body>{% partial "body" %}
 		<header data-w-id="47685c31-67c0-b229-1bc4-0880b56f554a" class="header">
+			<div class="header__info">
+				<div class="b-text b-text_bold tb_hide">{{ mainmenu.text }}</div>
+				<div class="b-text b-text_bold tb_show">{{ mainmenu.text_mobile }}</div>
+			</div>
 			<div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="b-menu w-nav">
 				<div class="b-menu__container w-container">
 					<div class="b-menu__button w-nav-button"><img src="{{ 'assets/images/burger.svg'|theme }}" loading="lazy" alt></div><a href="/" aria-current="page" class="b-menu__logo-link w-nav-brand w--current"><img src="{{ 'assets/images/logo202.svg'|theme }}" loading="lazy" alt class="b-menu__logo"></a>

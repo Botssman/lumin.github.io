@@ -9,6 +9,12 @@ navigation:
     icon: icon-file-text
     order: '10'
 fields:
+    text:
+        label: Текст
+        type: text
+    text_mobile:
+        label: text_mobile
+        type: text
     main_menu:
         label: main_menu
         type: repeater
