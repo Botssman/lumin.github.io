@@ -73,6 +73,18 @@ fields:
                         type: mediafinder
                         mode: image
                         maxItems: '1'
+                    url:
+                        label: url
+                        type: text
+                    position:
+                        label: position
+                        type: text
+                    department:
+                        label: department
+                        type: text
+                    location:
+                        label: location
+                        type: text
             careers_diversity:
                 name: careers-diversity
                 fields:

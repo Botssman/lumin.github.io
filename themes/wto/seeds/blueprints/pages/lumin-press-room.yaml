@@ -106,8 +106,8 @@ fields:
                                 title|raw:
                                     label: title|raw
                                     type: text
-                                text:
-                                    label: Текст
+                                text|raw:
+                                    label: text|raw
                                     type: text
             press_room_media_kit:
                 name: press-room-media-kit

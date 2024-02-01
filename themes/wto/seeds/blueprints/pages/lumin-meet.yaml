@@ -147,8 +147,8 @@ fields:
                     meet_help_title:
                         label: meet_help_title
                         type: text
-                    meet_help_text:
-                        label: meet_help_text
+                    meet_help_text|raw:
+                        label: meet_help_text|raw
                         type: text
                     meet_help_text_btn:
                         label: meet_help_text_btn

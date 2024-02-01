@@ -68,6 +68,25 @@ fields:
                     modal_sales_subtitle:
                         label: modal_sales_subtitle
                         type: text
+            main_index:
+                name: main-index
+                fields:
+                    title:
+                        label: Название
+                        type: text
+                    subtitle:
+                        label: Подзаголовок
+                        type: text
+                    image:
+                        label: Изображение
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
+                    lsp_home_image:
+                        label: lsp_home_image
+                        type: mediafinder
+                        mode: image
+                        maxItems: '1'
             lsp_home:
                 name: lsp-home
                 fields:

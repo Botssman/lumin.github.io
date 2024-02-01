@@ -19,6 +19,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\LuminHome
+            main_index:
+                name: Main lumin
+                description: Main lumin
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\MainIndex
             lumin_second:
                 name: Section animation second
                 description: Animation

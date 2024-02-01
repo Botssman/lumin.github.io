@@ -1,0 +1,17 @@
+uuid: sections-main-index
+name: Main index
+type: mixin
+handle: Blocks\MainIndex
+
+fields:
+    title:
+        label: Title
+        type: text
+    subtitle:
+        label: Subtitle
+        type: text
+    image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
