@@ -4314,6 +4314,10 @@ h1 {
   padding-top: 60px;
 }
 
+.main.main_contact {
+  padding-top: 5em;
+}
+
 .b-block.b-block_image {
   z-index: 0;
   justify-content: center;
