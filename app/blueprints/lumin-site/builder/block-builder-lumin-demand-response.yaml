@@ -27,6 +27,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\MainIndex
+            contact_us_form:
+                name: Section form
+                description: Section form
+                icon: icon-tasks
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ContactUsForm
             lsp_new_device:
                 name: New device
                 description: Block add new device
