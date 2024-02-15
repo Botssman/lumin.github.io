@@ -6,4 +6,4 @@ handle: Blocks\LearningCenterFreshdesk
 fields:
     learning_center_freshdesk_title:
         label: Title
-        type: textarea
+        type: text
