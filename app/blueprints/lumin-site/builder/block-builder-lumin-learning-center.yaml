@@ -20,8 +20,8 @@ fields:
                         type: mixin
                         source: Blocks\LearningCenterMain
             learning_center_main_abb_support:
-                name: Main section
-                description: Main section
+                name: Main section abb support
+                description: Main section abb support
                 icon: octo-icon-picture
                 fields:
                     _mixin:
