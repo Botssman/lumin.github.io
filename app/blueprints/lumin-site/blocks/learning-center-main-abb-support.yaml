@@ -1,0 +1,34 @@
+uuid: sections-lumin-learning-center-main-abb-support
+name: Main section lumin learning center abb support
+type: mixin
+handle: Blocks\LearningCenterMainAbbSupport
+
+fields:
+    learning_center_main_title:
+        label: Title
+        type: text
+    learning_center_main_subtitle:
+        label: Subtitle
+        type: text
+    learning_center_main_text_btn:
+        label: Text btn blue
+        type: text
+    learning_center_main_link_btn:
+        label: Link btn blue
+        type: text
+    text_btn:
+        label: Text btn
+        type: text
+    link_btn:
+        label: Link btn
+        type: text
+    learning_center_main_image:
+        label: Image
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    learning_center_main_image_mob:
+        label: Image mobile
+        type: mediafinder
+        mode: image
+        maxItems: 1
