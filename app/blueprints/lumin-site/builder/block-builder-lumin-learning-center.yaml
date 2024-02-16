@@ -19,6 +19,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\LearningCenterMain
+            learning_center_main_abb_support:
+                name: Main section
+                description: Main section
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\LearningCenterMainAbbSupport                       
             learning_center_tip:
                 name: Section learning center tip
                 description: Learning center tip
