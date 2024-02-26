@@ -1,0 +1,22 @@
+uuid: lever-post
+handle: Blog\LeverPost
+type: entry
+name: Lever post
+drafts: true
+
+navigation:
+    label: Lever posts
+    parent: Blog\BlogPost
+    icon: octo-icon-pencil
+    order: 100
+
+fields:
+    location:
+        label: Location
+    department:
+        label: Department
+    url:
+        label: URL
+    external_id:
+        label: Lever external ID
+        tab: Settings

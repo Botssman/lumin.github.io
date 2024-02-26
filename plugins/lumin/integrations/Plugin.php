@@ -2,7 +2,7 @@
 
 use Backend;
 use Lumin\Integrations\Console\Freshdesk;
-use Lumin\Integrations\Console\Lever;
+use Lumin\Integrations\Console\Sync;
 use Lumin\Integrations\Models\Settings;
 use System\Classes\PluginBase;
 
@@ -31,8 +31,7 @@ class Plugin extends PluginBase
      */
     public function register(): void
     {
-        $this->registerConsoleCommand('lumin.freshdesk', Freshdesk::class);
-        $this->registerConsoleCommand('lumin.lever', Lever::class);
+        $this->registerConsoleCommand('lumin.integrations.sync', Sync::class);
     }
 
     /**
@@ -59,7 +58,7 @@ class Plugin extends PluginBase
         return [
             'settings' => [
                 'label' => 'Integrations',
-                'description' => 'Integrations settings: Freshdesk, Lever etc.',
+                'description' => 'Integrations settings: Freshdesk, Sync etc.',
                 'category' => 'Integrations',
                 'icon' => 'icon-refresh',
                 'class' => Settings::class

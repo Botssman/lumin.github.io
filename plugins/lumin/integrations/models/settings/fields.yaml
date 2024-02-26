@@ -20,3 +20,6 @@ tabs:
             label: Lever API URL
             type: text
             tab: Lever
+        lever_posts_handle:
+            label: Lever Post Tailor model handle
+            tab: Lever

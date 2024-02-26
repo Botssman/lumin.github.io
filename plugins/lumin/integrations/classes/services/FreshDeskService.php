@@ -4,49 +4,32 @@ namespace Lumin\Integrations\Classes\Services;
 
 use ApplicationException;
 use Http;
+use Lumin\Integrations\Classes\Contracts\Integratable;
 use Lumin\Integrations\Models\Settings;
 use SystemException;
 use Tailor\Models\EntryRecord;
 
-class FreshDeskService
+class FreshDeskService extends IntegrationService implements Integratable
 {
-    private string $articlesUrl;
-
-    public array $articles;
-
-    /**
-     * @throws ApplicationException
-     */
-    public function __construct()
-    {
-        $this->articlesUrl = Settings::get('freshdesk_articles_api_url');
-
-        if (empty($this->articlesUrl)) {
-            throw new ApplicationException('Freshdesk articles API URL is not specified');
-        }
-
-        $this->articles = $this->get($this->articlesUrl);
-    }
-
 
     /**
      * @throws SystemException
      */
-    public function processArticle(array $data): void
+    public function processEntry(array $data): mixed
     {
         $handle = Settings::get('freshdesk_articles_handle', 'Blog\FreshdeskPost');
 
-        $article = EntryRecord::inSection($handle)
+        $entry = EntryRecord::inSection($handle)
             ->where('external_id', $data['id'])
             ->firstOr(fn() => EntryRecord::inSection($handle));
 
         // Skip if there's no changes
-        if ($article->updated_at >= $data['updated_at']) return;
+        if ($entry->updated_at >= $data['updated_at']) return null;
 
-        $article->title = $data['title'];
-        $article->slug = str_slug($data['title']);
-        $article->text = $data['description'];
-        $article->external_id = $data['id'];
+        $entry->title = $data['title'];
+        $entry->slug = str_slug($data['title']);
+        $entry->text = $data['description'];
+        $entry->external_id = $data['id'];
 
         $category = $this->processCategory([
             'title' => $data['category_name'],
@@ -54,9 +37,11 @@ class FreshDeskService
             'external_id' => $data['category_id']
         ]);
 
-        $article->category_id = $category;
+        $entry->category_id = $category;
 
-        $article->save();
+        $entry->save();
+
+        return $entry;
     }
 
     /**
@@ -78,16 +63,6 @@ class FreshDeskService
         $category->save();
 
         return $category;
-    }
-
-    /**
-     * @param string $url
-     * @return array
-     */
-    private function get(string $url) : array
-    {
-        $articlesResponse = Http::get($url);
-        return $articlesResponse->json();
     }
 
 
