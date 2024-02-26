@@ -30,6 +30,7 @@ class FreshDeskService extends IntegrationService implements Integratable
         $entry->slug = str_slug($data['title']);
         $entry->text = $data['description'];
         $entry->external_id = $data['id'];
+        $entry->is_enabled = 1;
 
         $category = $this->processCategory([
             'title' => $data['category_name'],

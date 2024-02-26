@@ -20,3 +20,8 @@ fields:
     external_id:
         label: FreshDesk Category ID
         tab: Settings
+    freshdesk_posts:
+        label: Freshdesk Posts
+        type: entries
+        source: Blog\FreshdeskPost
+        tab: Posts
