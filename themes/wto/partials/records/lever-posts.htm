@@ -1,0 +1,28 @@
+<div>
+	<div>
+		{% for item in posts %}
+		<a href="{{ record.url }}" class="b-table__td b-table__td_border-bt b-table__td_arrow w-inline-block">
+			<div class="b-columns">
+				<div class="b-columns__col b-columns__col_35 mob_100">
+					<div class="b-text b-text_size_18 mob_bold">
+						{{ item.title }}
+					</div>
+				</div>
+				<div class="b-columns__col b-columns__col_35 b-columns__col_allign_center mob_100">
+					<div class="b-text b-text_size_18 mob_dep">
+						{{ record.department }}
+					</div>
+				</div>
+				<div class="b-columns__col b-columns__col_30 b-columns__col_allign_center mob_100">
+					<div class="b-text b-text_size_18 mob_loc">
+						{{ item.location }}
+					</div>
+				</div>
+				<div class="b-learn-more v-3">
+					View position
+				</div>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+</div>

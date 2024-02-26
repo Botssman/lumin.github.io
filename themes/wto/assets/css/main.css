@@ -296,6 +296,10 @@ html[data-w-dynpage] [data-w-cloak] {
   margin: unset;
 }
 
+pre.w-code-block code {
+  all: inherit;
+}
+
 .w-webflow-badge, .w-webflow-badge * {
   z-index: auto;
   visibility: visible;
@@ -8906,7 +8910,7 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .b-grid.mob_1-col {
+  .b-grid.b-grid_col_2.b-grid_articles, .b-grid.mob_1-col {
     grid-template-columns: 1fr;
   }
 
