@@ -1,7 +1,7 @@
 <?php namespace Lumin\Seo\Classes\Events;
 
 use October\Rain\Events\Dispatcher;
-
+use Cms\Classes\Controller;
 class SeoHandler
 {
     /**

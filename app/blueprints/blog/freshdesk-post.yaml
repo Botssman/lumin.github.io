@@ -12,6 +12,15 @@ navigation:
 
 fields:
     text:
-        tab: Manage
         label: Text info
         type: richeditor
+        tab: Text
+    category_id:
+        label: Category
+        type: entries
+        source: Blog\Category
+        tab: Settings
+        maxItems: 1
+    external_id:
+        label: Freshdesk ID
+        tab: Settings

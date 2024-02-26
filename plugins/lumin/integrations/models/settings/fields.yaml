@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+        freshdesk_articles_handle:
+            label: FreshDesk Articles Tailor model handle
+            tab: Freshdesk
+            default: 'Blog\FreshdeskPost'
+        freshdesk_categories_handle:
+            label: FreshDesk Category Tailor model handle
+            tab: Freshdesk
+            default: 'Blog\Category'
+        freshdesk_articles_api_url:
+            label: FreshDesk Articles API URL
+            type: text
+            tab: Freshdesk
+        lever_api_url:
+            label: Lever API URL
+            type: text
+            tab: Lever
