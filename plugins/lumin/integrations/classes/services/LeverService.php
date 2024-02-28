@@ -20,9 +20,10 @@ class LeverService extends IntegrationService implements Integratable
             ->firstOr(fn() => EntryRecord::inSection($handle));
 
         $entry->title = $data['text'];
+        $entry->slug = str_slug($data['text']);
         $entry->department= $data['categories']['department'] ?? '';
         $entry->location= $data['categories']['location'] ?? '';
-        $entry->url= $data['applyUrl'];
+        $entry->url= $data['hostedUrl'];
         $entry->is_enabled = 1;
 
         $entry->save();
