@@ -21,10 +21,12 @@
 					<ul role="list" class="b-list">
 						{% for item in item.lists %}
 						<li class="b-list__item b-list__item_mg-bt_20">
+							{% if not item.hide_bullet %}
 							<div class="b-list__circle v-2"></div>
 							<div class="b-text b-text_size_20">
 								{{ item.text_list }}
 							</div>
+							{% endif %}
 						</li>
 						{% endfor %}
 					</ul>
