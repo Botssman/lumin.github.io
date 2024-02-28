@@ -13,7 +13,7 @@ fields:
     document_img_text_btn:
       label: Text document
       type: text
-    document_img_text_link:
+    document_img_link_btn:
       label: Text document
       type: text
     document_img_image:
