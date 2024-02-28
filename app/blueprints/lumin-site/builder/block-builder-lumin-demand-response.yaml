@@ -51,6 +51,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\DemandResponseWorks
+            utilities_works:
+                name: Block how it works no plus
+                description: Block how it works no plus
+                icon: icon-home
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\UtilitiesWorks
             demand_response_integrates:
                 name: Demand response integrates
                 description: Block demand response integrates
