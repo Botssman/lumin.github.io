@@ -11,6 +11,9 @@ navigation:
     order: 200
 
 fields:
+    is_active:
+        type: switch
+        label: Page visibility
     block_builder:
         type: mixin
         source: BlockBuilderLuminMeet
