@@ -14,7 +14,7 @@ fields:
       label: Text document
       type: text
     document_img_link_btn:
-      label: Text document
+      label: Link btn
       type: text
     document_img_image:
       label: Image
