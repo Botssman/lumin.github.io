@@ -13,6 +13,12 @@ fields:
     document_img_text_btn:
       label: Text document
       type: text
+    document_img_link_btn:
+      label: Link btn
+      type: text
+    hide_button:
+      type: switch
+      label: Hide btn
     document_img_image:
       label: Image
       type: mediafinder

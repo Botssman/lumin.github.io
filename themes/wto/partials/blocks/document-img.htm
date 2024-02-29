@@ -12,9 +12,11 @@
 						{{ block.document_img_subtitle|raw }}
 					</div>
 				</div>
-				<a data-w-id="2abe240e-feed-69ab-c82e-952d94506a3c" href="#" class="b-button b-button_blue b-button_maxw_320 b-button_align_left mob_center overflow w-button">
+				{% if not block.hide_button %}
+				<a data-w-id="2abe240e-feed-69ab-c82e-952d94506a3c" href="{{ block.document_img_link_btn }}" class="b-button b-button_blue b-button_maxw_320 b-button_align_left mob_center overflow w-button">
 					{{ block.document_img_text_btn }}
 				</a>
+				{% endif %}
 			</div>
 			<div class="b-columns__col b-columns__col_40 mob_100">
 				<img src="{{ block.document_img_image|media }}" loading="lazy" alt="" class="b-image b-image_paper">

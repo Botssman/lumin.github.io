@@ -25,6 +25,9 @@ fields:
                     type: repeater
                     form:
                         fields:
+                            hide_bullet:
+                                type: switch
+                                label: Hide bullet
                             text_list:
                                 label: Text list
                                 type: text
