@@ -24,6 +24,7 @@ class LeverService extends IntegrationService implements Integratable
         $entry->department= $data['categories']['department'] ?? '';
         $entry->location= $data['categories']['location'] ?? '';
         $entry->url= $data['hostedUrl'];
+        $entry->external_id= $data['id'];
         $entry->is_enabled = 1;
 
         $entry->save();
