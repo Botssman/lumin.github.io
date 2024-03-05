@@ -3,12 +3,12 @@
 		{{post.title}}
 	{%endfor %}
 {% endfor %} #}
-{% for item in posts %}
 <ul role="list" class="b-grid b-grid_col_2 b-grid_gap_40">
+{% for item in posts %}
 	<li class="b-card-post">
 		<a href="{{post.link}}" class="b-text b-text_size_18 b-text_bold b-text_icon">
 			{{post.title}}
 		</a>
 	</li>
+{% endfor %}    
 </ul>
-{% endfor %}
