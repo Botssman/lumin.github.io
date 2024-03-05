@@ -40,33 +40,8 @@
 				<div class="b-tabs__content w-tab-content">
 					<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active">
 						<div class="h-wrap h-wrap_mg-bt_30">
-							{% for category in categories %}
-    							{% for post in category.freshdesk_posts %}
-        							{{post.title}}
-    							{%endfor %}
-							{% endfor %}
-							<ul role="list" class="b-grid b-grid_col_2 b-grid_gap_40">
-								<li class="b-card-post">
-									<a href="#" class="b-text b-text_size_18 b-text_bold b-text_icon">
-										Text Link
-									</a>
-								</li>
-								<li class="b-card-post">
-									<a href="#" class="b-text b-text_size_18 b-text_bold">
-										Text Link
-									</a>
-								</li>
-								<li class="b-card-post">
-									<a href="#" class="b-text b-text_size_18 b-text_bold">
-										Text Link
-									</a>
-								</li>
-								<li class="b-card-post">
-									<a href="#" class="b-text b-text_size_18 b-text_bold">
-										Text Link
-									</a>
-								</li>
-							</ul>
+						{% set posts = freshdeskInstallation.paginate(9) %}
+						{% ajaxPartial "records/freshdesk/freshdesk-Installation" %}
 						</div>
 						<a href="#" class="b-link b-link_blue">
 							View all 11
