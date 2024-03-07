@@ -20,9 +20,11 @@
 					</li>
 					{% endfor %}
 				</ul>
+				{% if item.hide_button %}
 				<a id="showAllButton" href="#" class="b-button b-button_mini w-button">
-					{% if not item.hide_button %}
+					More items
 				</a>
+				{% endif %}
 			</div>
 		</div>
 	</div>
