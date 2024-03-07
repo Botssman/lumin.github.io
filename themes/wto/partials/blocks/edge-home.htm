@@ -4,12 +4,12 @@
 			<div class="b-columns__col b-columns__col_50 b-columns__col_align_center tb_100">
 				<div class="h-wrap h-wrap_mg-bt_15">
 					<h1 class="b-title tb_40">
-						{{ block.edge_home_title }}
+						{{ block.edge_home_title|raw }}
 					</h1>
 				</div>
 				<div class="h-wrap h-wrap_mg-bt_80 tb_mg-bt_30">
-					<div class="b-title b-title_mini b-title_yellow mob_26">
-						{{ block.edge_home_subtitle }}
+					<div class="b-text b-text_size_20">
+						{{ block.edge_home_subtitle|raw }}
 					</div>
 				</div>
 				<img src="{{ 'assets/images/lumin-first.png'|theme }}" loading="lazy" alt="" class="b-image tb_show">
