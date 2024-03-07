@@ -6914,6 +6914,10 @@ h1 {
     font-size: 1em;
   }
 
+  .b-list__circle {
+    margin-top: 7px;
+  }
+
   .b-horizontal {
     overflow: visible;
   }
