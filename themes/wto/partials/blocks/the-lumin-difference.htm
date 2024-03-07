@@ -21,7 +21,7 @@
 					{% endfor %}
 				</ul>
 				<a id="showAllButton" href="#" class="b-button b-button_mini w-button">
-					More items
+					{% if not item.hide_button %}
 				</a>
 			</div>
 		</div>

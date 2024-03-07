@@ -21,3 +21,6 @@ fields:
                 text_list:
                     label: Text list
                     type: textarea
+    hide_button:
+        type: switch
+        label: Скрыть кнопку
