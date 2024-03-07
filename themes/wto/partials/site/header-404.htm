@@ -1,21 +1,19 @@
-<header class="header">
-    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="b-menu b-menu_transparent w-nav">
-        <div class="b-menu__container w-container"><a href="/" class="b-menu__logo-link w-nav-brand"><img src="{{ 'assets/images/logo201.svg'|theme }}" loading="lazy" alt class="b-menu__logo"></a>
-            <nav role="navigation" class="b-menu__nav w-nav-menu">{% for item in mainmenu.main_menu %}
-                <div class="h-wrap h-wrap_menu h-wrap_menu_center">{% if block.type == "menu_link" %}
-                    <div class="h-wrap h-wrap_menu"><a href="{{ block.menu_link_link|link }}" class="b-menu__link b-menu__link_white w-nav-link">{{ block.menu_link_name }}</a></div>{% endif %} {% if block.type == "menu_dropdown" %}
-                    <div class="h-wrap h-wrap_menu">
-                        <div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
-                            <div class="b-menu__dropdown-toggle b-menu__dropdown-toggle_white w-dropdown-toggle">
-                                <div>{{ block.menu_dropdown_title }}</div><img src="{{ 'assets/images/Frame203.svg'|theme }}" loading="lazy" alt class="b-dropdown__icon"></div>
-                            <nav class="b-menu__dropdown-lists w-dropdown-list">
-                                <div class="b-dropdown__content b-dropdown__content_menu">{% for item in block.list %}<a href="{{ item.menu_dropdown_link|link }}" class="b-dropdown__link w-dropdown-link">{{ item.menu_dropdown_name }}</a>{% endfor %}</div>
-                            </nav>
-                        </div>
-                    </div>{% endif %}</div>{% endfor %}</nav><a href="https://nndvjzdqqmf.typeform.com/to/IK1v1FOH" target="_blank" class="b-button b-button_width_160 b-button_height_45 b-button_white w-button">Get Lumin</a>
-            <div class="b-menu__button w-nav-button">
-                <div class="w-icon-nav-menu"></div>
-            </div>
+<div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="b-menu b-menu_transparent w-nav">
+    <div class="b-menu__container w-container"><a href="/" class="b-menu__logo-link w-nav-brand"><img src="{{ 'assets/images/logo201.svg'|theme }}" loading="lazy" alt class="b-menu__logo"></a>
+        <nav role="navigation" class="b-menu__nav w-nav-menu">{% for item in mainmenu.main_menu %}
+            <div class="h-wrap h-wrap_menu h-wrap_menu_center">{% if block.type == "menu_link" %}
+                <div class="h-wrap h-wrap_menu"><a href="{{ block.menu_link_link|link }}" class="b-menu__link b-menu__link_white w-nav-link">{{ block.menu_link_name }}</a></div>{% endif %} {% if block.type == "menu_dropdown" %}
+                <div class="h-wrap h-wrap_menu">
+                    <div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
+                        <div class="b-menu__dropdown-toggle b-menu__dropdown-toggle_white w-dropdown-toggle">
+                            <div>{{ block.menu_dropdown_title }}</div><img src="{{ 'assets/images/Frame203.svg'|theme }}" loading="lazy" alt class="b-dropdown__icon"></div>
+                        <nav class="b-menu__dropdown-lists w-dropdown-list">
+                            <div class="b-dropdown__content b-dropdown__content_menu">{% for item in block.list %}<a href="{{ item.menu_dropdown_link|link }}" class="b-dropdown__link w-dropdown-link">{{ item.menu_dropdown_name }}</a>{% endfor %}</div>
+                        </nav>
+                    </div>
+                </div>{% endif %}</div>{% endfor %}</nav><a href="https://nndvjzdqqmf.typeform.com/to/IK1v1FOH" target="_blank" class="b-button b-button_width_160 b-button_height_45 b-button_white w-button">Get Lumin</a>
+        <div class="b-menu__button w-nav-button">
+            <div class="w-icon-nav-menu"></div>
         </div>
     </div>
-</header>
+</div>
