@@ -1,0 +1,19 @@
+<div class="h-wrap h-wrap_menu">
+	<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
+		<div class="b-menu__dropdown-toggle b-menu__dropdown-toggle_white w-dropdown-toggle">
+			<div>
+				{{ block.menu_dropdown_title }}
+			</div>
+			<img src="{{ 'assets/images/Frame203.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
+		</div>
+		<nav class="b-menu__dropdown-lists w-dropdown-list">
+			<div class="b-dropdown__content b-dropdown__content_menu">
+				{% for item in block.list %}
+				<a href="{{ item.menu_dropdown_link|link }}" class="b-dropdown__link w-dropdown-link">
+					{{ item.menu_dropdown_name }}
+				</a>
+				{% endfor %}
+			</div>
+		</nav>
+	</div>
+</div>
