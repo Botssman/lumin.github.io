@@ -5,7 +5,7 @@
 				<ul role="list" class="b-grid b-grid_col_2 b-grid_gap_40">
 					{% for post in categoryPosts %}
 						<li class="b-card-post">
-							<a href="{{ 'freshdesk-post' | page({'id':post.id}) }}" class="b-text b-text_size_18 b-text_bold b-text_icon">{{ post.title }}</a>
+							<<a href="{{ 'freshdesk-post' | page({'slug': post.slug}) }}" class="b-text b-text_size_18 b-text_bold b-text_icon">{{ post.title }}</a>
 						</li>
 					{% endfor %}
 				</ul>
