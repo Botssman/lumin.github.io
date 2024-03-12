@@ -40,14 +40,22 @@
 				<div class="b-tabs__content w-tab-content">
 					<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active">
 						<div class="h-wrap h-wrap_mg-bt_30">
-						{% set posts = freshdeskInstallation.paginate(9) %}
+						{% set posts = freshdeskInstallation.paginate(0) %}
 						{% ajaxPartial "records/freshdesk/freshdesk-Installation" %}
 						</div>
 						<a href="#" class="b-link b-link_blue">
 							View all 11
 						</a>
 					</div>
-					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane"></div>
+					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane">
+						<div class="h-wrap h-wrap_mg-bt_30">
+							{% set posts = freshdeskSetup.paginate(0) %}
+							{% ajaxPartial "records/freshdesk/freshdesk-Setup" %}
+							</div>
+							<a href="#" class="b-link b-link_blue">
+								View all 11
+							</a>
+					</div>
 					<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane"></div>
 					<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane"></div>
 				</div>
