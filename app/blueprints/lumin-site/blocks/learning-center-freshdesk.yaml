@@ -7,3 +7,6 @@ fields:
     learning_center_freshdesk_title:
         label: Title
         type: text
+    learning_center_freshdesk_subtitle:
+        label: Subtitle
+        type: text
