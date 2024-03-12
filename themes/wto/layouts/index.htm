@@ -3,6 +3,8 @@ description = "{{ this.page.meta_title }}"
 [forms]
 
 default = 0
+
+[cookiesBar]
 ==
 <!DOCTYPE html>
 <!-- Last Published: Wed Feb 07 2024 13:45:47 GMT+0000 (Coordinated Universal Time) --><html data-wf-page="648baa95d29f649e7b12a392" data-wf-site="64227e51ac84205a1ce228fa">
@@ -138,13 +140,13 @@ default = 0
                     transform: scale(1)!important;
                 }
             }
-        
+
 		</style>
 		<script type="text/javascript">
         function animateOneEdge() {
             const section = document.querySelector('[data-section="one-edge"]');
             const point = section.querySelector('.point')
-            
+
             point.ontransitionend = function () {
                 point.ontransitionend = null;
                 fullpage_api.setScrollingSpeed(0)
@@ -182,7 +184,7 @@ default = 0
             return true;
         }
 	});
-		
+
 		</script>
 		<script id="main" src="{{['assets/js/main.js']|theme}}"></script>
 		<script src="https://unpkg.com/vue@3"></script>
