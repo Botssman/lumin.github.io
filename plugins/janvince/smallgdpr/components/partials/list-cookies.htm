@@ -1,0 +1,33 @@
+{% partial '@list-cookies-' ~ cookiesSettingsGet('ui_style', 'default') disableSaveButton = disableSaveButton|default(false) customId = customId|default('custom') %}
+
+{% put scripts %}
+
+<script>
+
+    $('#cookies-manage-save{{ customId|default('custom') }}').click(function() {
+
+        {% partial '@set-cookies' setOnlyManageCookies = true %}
+
+        {% if disablePageReload == 0 %}
+
+            location.reload(true);
+
+        {% else %}
+
+            if( $('#cookies-bar').length )
+            {
+                $('#cookies-bar').hide();
+            }
+
+            if( $('#sg-settings-modal-{{ __SELF__ }}').length )
+            {
+                $('#sg-settings-modal-{{ __SELF__ }}').modal('hide');
+            }
+
+        {% endif %}
+
+    });
+
+</script>
+
+{% endput %}
