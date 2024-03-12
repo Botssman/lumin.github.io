@@ -49,39 +49,27 @@
 				<div class="b-tabs__content w-tab-content">
 					<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active">
 						<div class="h-wrap h-wrap_mg-bt_30">
-						{% set posts = freshdeskInstallation.paginate(0) %}
+						{% set posts = freshdeskInstallation.paginate(100) %}
 						{% ajaxPartial "records/freshdesk/freshdesk-Installation" %}
 						</div>
-						<a href="#" class="b-link b-link_blue">
-							View all 12
-						</a>
 					</div>
 					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane">
 						<div class="h-wrap h-wrap_mg-bt_30">
-							{% set posts = freshdeskSetup.paginate(0) %}
+							{% set posts = freshdeskSetup.paginate(100) %}
 							{% ajaxPartial "records/freshdesk/freshdesk-setup" %}
 							</div>
-							<a href="#" class="b-link b-link_blue">
-								View all 11
-							</a>
 					</div>
 					<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane">
 						<div class="h-wrap h-wrap_mg-bt_30">
-							{% set posts = freshdeskTroubleshooting.paginate(0) %}
+							{% set posts = freshdeskTroubleshooting.paginate(100) %}
 							{% ajaxPartial "records/freshdesk/freshdesk-troubleshooting" %}
 							</div>
-							<a href="#" class="b-link b-link_blue">
-								View all 9
-							</a>
 					</div>
 					<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane">
 						<div class="h-wrap h-wrap_mg-bt_30">
-							{% set posts = freshdeskAccounts.paginate(0) %}
+							{% set posts = freshdeskAccounts.paginate(100) %}
 							{% ajaxPartial "records/freshdesk/freshdesk-accounts" %}
 							</div>
-							<a href="#" class="b-link b-link_blue">
-								View all 1
-							</a>
 					</div>
 				</div>
 			</div>
