@@ -25,15 +25,24 @@
 						<div>
 							Setup
 						</div>
+						<div class="b-tabs__col">
+							(12)
+						</div>
 					</a>
 					<a data-w-tab="Tab 3" class="b-tabs__link b-tabs__link_form v-2 w-inline-block w-tab-link">
 						<div>
 							Troubleshooting
 						</div>
+						<div class="b-tabs__col">
+							(9)
+						</div>
 					</a>
 					<a data-w-tab="Tab 4" class="b-tabs__link b-tabs__link_form v-2 w-inline-block w-tab-link">
 						<div>
 							Account Recovery
+						</div>
+						<div class="b-tabs__col">
+							(1)
 						</div>
 					</a>
 				</div>
@@ -50,14 +59,30 @@
 					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane">
 						<div class="h-wrap h-wrap_mg-bt_30">
 							{% set posts = freshdeskSetup.paginate(0) %}
-							{% ajaxPartial "records/freshdesk/freshdesk-Setup" %}
+							{% ajaxPartial "records/freshdesk/freshdesk-setup" %}
 							</div>
 							<a href="#" class="b-link b-link_blue">
 								View all 11
 							</a>
 					</div>
-					<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane"></div>
-					<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane"></div>
+					<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane">
+						<div class="h-wrap h-wrap_mg-bt_30">
+							{% set posts = freshdeskTroubleshooting.paginate(0) %}
+							{% ajaxPartial "records/freshdesk/freshdesk-troubleshooting" %}
+							</div>
+							<a href="#" class="b-link b-link_blue">
+								View all 9
+							</a>
+					</div>
+					<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane">
+						<div class="h-wrap h-wrap_mg-bt_30">
+							{% set posts = freshdeskAccounts.paginate(0) %}
+							{% ajaxPartial "records/freshdesk/freshdesk-accounts" %}
+							</div>
+							<a href="#" class="b-link b-link_blue">
+								View all 1
+							</a>
+					</div>
 				</div>
 			</div>
 		</div>
