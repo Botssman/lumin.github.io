@@ -59,6 +59,7 @@ class FreshDeskService extends IntegrationService implements Integratable
             ->firstOr(fn() => EntryRecord::inSection($handle));
 
         $category->title = $data['title'];
+        $category->is_enabled = 1;
         $category->slug = str_slug($data['title']);
         $category->external_id = $data['external_id'];
         $category->save();

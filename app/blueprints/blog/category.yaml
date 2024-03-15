@@ -25,3 +25,8 @@ fields:
         type: entries
         source: Blog\FreshdeskPost
         tab: Posts
+test:
+    with_errors:
+        label: text
+        span: auto
+    slug: default
