@@ -1,5 +1,5 @@
 {% for category in categories %}
-	{% if category.title == 'Installation' %}
+	{% if category.title == 'Troubleshooting' %}
 		{% set categoryPosts = fresh.where('category_id_id', category.id).get() %}
 			{% if categoryPosts is not empty %}
 				<ul role="list" class="b-grid b-grid_col_2 b-grid_gap_40">

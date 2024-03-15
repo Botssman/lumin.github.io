@@ -8,7 +8,7 @@
 		<div class="b-block b-block_white v-2">
 			<div class="h-wrap h-wrap_mg-bt_30">
 				<div class="b-text b-text_size_30 b-text_extra-bold">
-					{{ block.learning_center_freshdesk_title }}
+					{{ block.learning_center_freshdesk_subtitle }}
 				</div>
 			</div>
 			<div data-duration-in="300" data-duration-out="100" data-current="Tab 1" data-easing="ease" class="b-tabs w-tabs">
@@ -18,38 +18,59 @@
 							Installation
 						</div>
 						<div class="b-tabs__col">
-							(10)
+							(12)
 						</div>
 					</a>
 					<a data-w-tab="Tab 2" class="b-tabs__link b-tabs__link_form v-2 w-inline-block w-tab-link">
 						<div>
 							Setup
 						</div>
+						<div class="b-tabs__col">
+							(12)
+						</div>
 					</a>
 					<a data-w-tab="Tab 3" class="b-tabs__link b-tabs__link_form v-2 w-inline-block w-tab-link">
 						<div>
 							Troubleshooting
+						</div>
+						<div class="b-tabs__col">
+							(9)
 						</div>
 					</a>
 					<a data-w-tab="Tab 4" class="b-tabs__link b-tabs__link_form v-2 w-inline-block w-tab-link">
 						<div>
 							Account Recovery
 						</div>
+						<div class="b-tabs__col">
+							(1)
+						</div>
 					</a>
 				</div>
 				<div class="b-tabs__content w-tab-content">
 					<div data-w-tab="Tab 1" class="b-tabs__pane w-tab-pane w--tab-active">
 						<div class="h-wrap h-wrap_mg-bt_30">
-						{% set posts = freshdeskInstallation.paginate(9) %}
+						{% set posts = freshdeskInstallation.paginate(100) %}
 						{% ajaxPartial "records/freshdesk/freshdesk-Installation" %}
 						</div>
-						<a href="#" class="b-link b-link_blue">
-							View all 11
-						</a>
 					</div>
-					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane"></div>
-					<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane"></div>
-					<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane"></div>
+					<div data-w-tab="Tab 2" class="b-tabs__pane w-tab-pane">
+						<div class="h-wrap h-wrap_mg-bt_30">
+							{% set posts = freshdeskSetup.paginate(100) %}
+							{% ajaxPartial "records/freshdesk/freshdesk-setup" %}
+							</div>
+					</div>
+					<div data-w-tab="Tab 3" class="b-tabs__pane w-tab-pane">
+						<div class="h-wrap h-wrap_mg-bt_30">
+							{% set posts = freshdeskTroubleshooting.paginate(100) %}
+							{% ajaxPartial "records/freshdesk/freshdesk-troubleshooting" %}
+							</div>
+					</div>
+					<div data-w-tab="Tab 4" class="b-tabs__pane w-tab-pane">
+						<div class="h-wrap h-wrap_mg-bt_30">
+							{% set posts = freshdeskAccounts.paginate(100) %}
+							{% ajaxPartial "records/freshdesk/freshdesk-accounts" %}
+							</div>
+					</div>
 				</div>
 			</div>
 		</div>
