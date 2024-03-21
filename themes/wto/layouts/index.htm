@@ -69,6 +69,7 @@ default = 0
 						<div class="h-wrap h-wrap_menu h-wrap_menu_center">{% for block in item.list %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>{% endfor %}</nav><a href="#" class="b-menu__cart w-inline-block"><img src="{{ 'assets/images/cart.svg'|theme }}" loading="lazy" alt><div class="b-menu__cart-count">1</div></a><a href="https://nndvjzdqqmf.typeform.com/to/IK1v1FOH" class="b-button b-button_width_160 b-button_height_45 mob_hide w-button">Get Lumin</a></div>
 			</div>
 		</header>
+
 		<div id="fullpage">
 			<div class="main-page">{% for block in page.blocks %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endfor %}</div>
 		</div>
