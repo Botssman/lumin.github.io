@@ -4,6 +4,113 @@ type: mixin
 handle: Blocks\MeetComand
 
 fields:
-    meet_comand_title:
+    title:
         label: Title
         type: text
+    subtitle:
+        label: Subtitle
+        type: text
+    logo:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    people1:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name1:
+        label: Employee name
+        type: text
+    job_title1:
+        label: Employee job title
+        type: text
+    people2:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name2:
+        label: Employee name
+        type: text
+    job_title2:
+        label: Employee job title
+        type: text      
+    people3:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name3:
+        label: Employee name
+        type: text
+    job_title3:
+        label: Employee job title
+        type: text
+    people4:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name4:
+        label: Employee name
+        type: text
+    job_title4:
+        label: Employee job title
+        type: text      
+    people5:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name5:
+        label: Employee name
+        type: text
+    job_title5:
+        label: Employee job title
+        type: text      
+    people6:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name6:
+        label: Employee name
+        type: text
+    job_title6:
+        label: Employee job title
+        type: text      
+    people7:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name7:
+        label: Employee name
+        type: text
+    job_title7:
+        label: Employee job title
+        type: text      
+    people8:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name8:
+        label: Employee name
+        type: text
+    job_title8:
+        label: Employee job title
+        type: text      
+    people9:
+        label: Image logo
+        type: mediafinder
+        mode: image
+        maxItems: 1
+    name9:
+        label: Employee name
+        type: text
+    job_title9:
+        label: Employee job title
+        type: text      
