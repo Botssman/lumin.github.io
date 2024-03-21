@@ -22,30 +22,21 @@ default = 0
 		<link href="https://assets-global.website-files.com/64227e51ac84205a1ce228fa/642cb71bfc53e9b68eb8fa56_favicon_mini.jpg" rel="shortcut icon" type="image/x-icon">
 		<link href="https://assets-global.website-files.com/64227e51ac84205a1ce228fa/642cb7176731c473ff332acc_favicon_big.jpg" rel="apple-touch-icon">
 		<meta name="description" content="{{ this.page.meta_description }}">{% partial "head" %}{% component "forms" %}
-		<link href="{{'assets/css/main.css'|theme}}" rel="stylesheet">{% styles %}</head>
+		<link href="{{'assets/css/main.css'|theme}}" rel="stylesheet">{% styles %}
+		<style>
+			.b-menu__link {
+				color: #fff !important;
+			}
+			.b-menu__dropdown-toggle {
+				color: #fff !important;
+			}
+		</style>
+	</head>
 	<body>{% partial "body" %}
-		<header class="header">
-			<div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="b-menu b-menu_transparent w-nav">
-				<div class="b-menu__container w-container"><a href="#" class="b-menu__logo-link w-nav-brand"><img src="{{ 'assets/images/logo201.svg'|theme }}" loading="lazy" alt class="b-menu__logo"></a>
-					<nav role="navigation" class="b-menu__nav w-nav-menu"><a href="#" class="b-menu__link b-menu__link_white w-nav-link">Grid Services</a><a href="#" class="b-menu__link b-menu__link_white w-nav-link">Solar+Storage</a><a href="#" class="b-menu__link b-menu__link_white w-nav-link">Electrification</a>
-						<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
-							<div class="b-menu__dropdown-toggle b-menu__dropdown-toggle_white w-dropdown-toggle">
-								<div>Products</div><img src="{{ 'assets/images/Frame203.svg'|theme }}" loading="lazy" alt class="b-dropdown__icon"></div>
-							<nav class="b-menu__dropdown-lists w-dropdown-list">
-								<div class="b-dropdown__content"></div><a href="#" class="b-dropdown__link w-dropdown-link">Link 1</a></nav>
-						</div>
-						<div data-hover="true" data-delay="0" class="b-menu__dropdown w-dropdown">
-							<div class="b-menu__dropdown-toggle b-menu__dropdown-toggle_white w-dropdown-toggle">
-								<div>About Us</div><img src="{{ 'assets/images/Frame203.svg'|theme }}" loading="lazy" alt class="b-dropdown__icon"></div>
-							<nav class="b-menu__dropdown-lists w-dropdown-list">
-								<div class="b-dropdown__content"></div><a href="#" class="b-dropdown__link w-dropdown-link">Link 1</a></nav>
-						</div><a href="#" class="b-menu__link b-menu__link_white w-nav-link">Partners</a><a href="#" class="b-menu__link b-menu__link_white w-nav-link">Contact Us</a></nav><a href="#" class="b-button b-button_width_160 b-button_height_45 b-button_white w-button">Get Lumin</a>
-					<div class="b-menu__button w-nav-button">
-						<div class="w-icon-nav-menu"></div>
-					</div>
-				</div>
-			</div>
-		</header><img class="b-image b-image_absolute v-2" src="{{ errorpage.image_fon|media }}" alt loading="lazy">
+		<header data-w-id="47685c31-67c0-b229-1bc4-0880b56f554a" class="header">
+            {% partial "site/header" %}
+		</header>
+		<img class="b-image b-image_absolute v-2" src="{{ errorpage.image_fon|media }}" alt loading="lazy">
 		<section class="section s-section_100vh s-section_tr">
 			<div class="container container_align_center w-container"><img src="{{ errorpage.image|media }}" loading="lazy" alt class="b-image b-image_404">
 				<div class="h-wrap h-wrap_mg-bt_20">
