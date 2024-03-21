@@ -16,7 +16,7 @@ fields:
         mode: image
         maxItems: 1
     people1:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -27,7 +27,7 @@ fields:
         label: Employee job title
         type: text
     people2:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -38,7 +38,7 @@ fields:
         label: Employee job title
         type: text      
     people3:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -49,7 +49,7 @@ fields:
         label: Employee job title
         type: text
     people4:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -60,7 +60,7 @@ fields:
         label: Employee job title
         type: text      
     people5:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -71,7 +71,7 @@ fields:
         label: Employee job title
         type: text      
     people6:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -82,7 +82,7 @@ fields:
         label: Employee job title
         type: text      
     people7:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -93,7 +93,7 @@ fields:
         label: Employee job title
         type: text      
     people8:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
@@ -104,7 +104,7 @@ fields:
         label: Employee job title
         type: text      
     people9:
-        label: Image logo
+        label: Image employee
         type: mediafinder
         mode: image
         maxItems: 1
