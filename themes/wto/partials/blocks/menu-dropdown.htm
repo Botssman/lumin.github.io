@@ -4,7 +4,11 @@
 			<div>
 				{{ block.menu_dropdown_title }}
 			</div>
-			<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
+			{% if this.page.code == '404' %}
+    			<img src="{{ 'assets/images/Frame203.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
+			{% else %}
+    			<img src="{{ 'assets/images/drop_arrow.svg'|theme }}" loading="lazy" alt="" class="b-dropdown__icon">
+			{% endif %}
 		</div>
 		<nav class="b-menu__dropdown-lists w-dropdown-list">
 			<div class="b-dropdown__content b-dropdown__content_menu">
