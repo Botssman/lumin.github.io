@@ -10,6 +10,8 @@ fields:
     careers_diversity_subtitle:
         label: Subtitle
         type: textarea
+    careers_diversity_title_benefits:
+        label: Title benefits
     careers_diversity_lists:
         type: repeater
         form:
