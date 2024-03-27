@@ -1,5 +1,27 @@
 wto_forms_init();
 
+const filterLinks = document.querySelectorAll('[data-filter]');
+
+filterLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const filterValue = event.target.getAttribute('data-filter');
+    const categoryBlocks = document.querySelectorAll('[data-category]');
+
+    categoryBlocks.forEach(block => {
+
+      block.style.display = 'none';
+
+      if (filterValue === '') {
+        block.removeAttribute('style');
+      } else if (block.getAttribute('data-category') === filterValue) {
+        block.removeAttribute('style');
+      }
+    });
+  });
+});
+
 document.querySelectorAll('select[v-model]').forEach(function (select) {
 
   const for_value = select.getAttribute('v-for');
@@ -19,6 +41,13 @@ document.querySelectorAll('select[v-model]').forEach(function (select) {
 
 });
 
+document.querySelectorAll('[data-v-bind]').forEach(function (el) {
+
+  el.innerHTML = '{{ ' + el.innerHTML + ' }}';
+  el.removeAttribute('data-v-bind');
+
+});
+
 var api_url = location.origin;
 
 const cart = Vue.createApp({
@@ -29,12 +58,15 @@ const cart = Vue.createApp({
 
     const items = Vue.ref(items_data);
 
-    const order = Vue.ref({}); //name: 'Антон', phone: '+79264631106', email: 'amristar@ya.ru', politic: true
+    const order = Vue.ref({});
 
     const orderComplete = Vue.ref(false);
 
+    updateCart();
+
     function removeCart(index) {
       items.value.splice(index, 1);
+      updateCart();
       saveCart();
     }
 
@@ -43,6 +75,7 @@ const cart = Vue.createApp({
       e.preventDefault();
       items.value.splice(0);
 
+      updateCart();
       saveCart();
 
     }
@@ -59,6 +92,7 @@ const cart = Vue.createApp({
         }
       })
 
+      updateCart();
       saveCart();
 
     }
@@ -66,6 +100,18 @@ const cart = Vue.createApp({
     function saveCart() {
       const storageData = JSON.stringify(items.value);
       localStorage.setItem('cart_data', storageData);
+    }
+
+    function updateCart() {
+      const cartCountEl = document.querySelectorAll('[data-bind=cartCount]');
+      cartCountEl.forEach(el => {
+        el.innerHTML = cartCount();
+      })
+
+      const cartTotalEl = document.querySelectorAll('[data-bind=cartTotal]');
+      cartTotalEl.forEach(el => {
+        el.innerHTML = cartTotal();
+      })
     }
 
     function addCart(product) {
@@ -86,12 +132,17 @@ const cart = Vue.createApp({
         items.value.push(product);
       }
 
+      updateCart();
       saveCart();
 
     }
 
     function cartCount() {
-      return items.value.length;
+      let cartCount = 0;
+      items.value.forEach((item) => {
+        cartCount += item.qty;
+      })
+      return cartCount;
     }
 
     function cartTotal() {
@@ -103,10 +154,7 @@ const cart = Vue.createApp({
         item.total = item.price * item.qty;
         cartTotal += item.price * item.qty;
         order.content += item.title + ' - ' + item.price + ' руб. | ' + item.qty + ' шт. | ' + item.total + " руб.  \n";
-        // order.items.push({ title: item.title, price: item.price, qty: item.qty, total: item.total });
       })
-
-      document.querySelector('.cart-count').innerHTML = cartCount();
 
       return cartTotal;
 
@@ -121,13 +169,12 @@ const cart = Vue.createApp({
           name: order.value.name,
           email: order.value.email,
           phone: order.value.phone,
-          politic: order.value.politic ? 'Да' : 'Нет',
+          address: order.value.address,
           content: order.content,
+          politic: order.value.politic ? 'Да' : 'Нет',
           total: cartTotal() + ' руб',
         },
         success: (result) => {
-
-          console.log(result);
 
           orderComplete.value = true;
 
@@ -142,6 +189,7 @@ const cart = Vue.createApp({
       setTimeout(() => {
         items.value.splice(0);
         cart.orderComplete = false;
+        updateCart();
         saveCart();
       }, 1000)
 
@@ -162,12 +210,21 @@ addCartEl.forEach(el => {
 
     const parent = el.closest('[data-prod-id]');
 
+    let image = '';
+    const imageEl = parent.querySelector('[data-bind="product.image"]');
+
+    if (imageEl.tagName === 'img') {
+      image = imageEl.getAttribute('src');
+    } else {
+      image = getImageUrlFromElement(imageEl);
+    }
+
     const product = {
       id: parent.getAttribute('data-prod-id'),
       title: parent.querySelector('[data-bind="product.title"]').innerText,
       desc: parent.querySelector('[data-bind="product.short_desc"]').innerText,
       price: parseInt(parent.querySelector('[data-bind="product.price"]').innerText),
-      image: parent.querySelector('[data-bind="product.image"]').getAttribute('src'),
+      image: image,
       qty: 1,
     }
 
@@ -275,4 +332,13 @@ function wto_form_send(el, form_id) {
         }
       }
     });
+}
+
+function getImageUrlFromElement(element) {
+
+  const style = window.getComputedStyle(element);
+  const backgroundImage = style.backgroundImage;
+  const url = backgroundImage.replace(/url\((['"])?(.*?)\1\)/gi, '$2');
+
+  return url;
 }
