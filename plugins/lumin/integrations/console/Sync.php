@@ -5,6 +5,7 @@ use Illuminate\Console\Command;
 use Lumin\Integrations\Classes\Services\FreshDeskService;
 use Lumin\Integrations\Classes\Services\LeverService;
 use Lumin\Integrations\Models\Settings;
+use Tailor\Models\EntryRecord;
 
 /**
  * Sync Command
@@ -26,10 +27,13 @@ class Sync extends Command
     /**
      * handle executes the console command.
      * @throws ApplicationException
+     * @throws \SystemException
      */
     public function handle(): void
     {
-        $service = match($this->argument('service')){
+        $serviceArg = $this->argument('service');
+
+        $service = match($serviceArg){
             'freshdesk' => new FreshDeskService(
                 Settings::get('freshdesk_articles_api_url')
             ),
@@ -44,6 +48,10 @@ class Sync extends Command
         $this->output->info("Sync started. Total number of articles: $count");
 
         $bar = $this->output->createProgressBar($count);
+
+        if ($serviceArg == 'lever') {
+            EntryRecord::inSection(Settings::get('lever_posts_handle', 'Blog\LeverPost'))->delete();
+        }
 
         foreach ($service->entries as $entry) {
             try {
