@@ -11,7 +11,7 @@ fields:
         type: repeater
         form:
             fields:
-                Link:
+                link:
                   label: Distributor link
                   type: text
                 image:
