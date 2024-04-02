@@ -7,7 +7,7 @@ fields:
     title:
       label: Title
       type: text
-    documents_rep:
+    lists:
         type: repeater
         form:
             fields:
