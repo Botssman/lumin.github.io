@@ -1,0 +1,20 @@
+uuid: sections-distributor
+name: Distributor
+type: mixin
+handle: Blocks\Distributor
+
+fields:
+    title:
+      label: Title
+      type: text
+    documents_rep:
+        type: repeater
+        form:
+            fields:
+                Link:
+                  label: Distributor link
+                  type: text
+                image:
+                  label: Distributor image
+                  type: mediafinder
+                   

@@ -1,0 +1,16 @@
+<section class="section s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_80 tm_mg_40">
+			<div class="b-title b-title_mini mob_30">
+				{{ block.title }}
+			</div>
+		</div>
+		<div class="b-grid b-grid_col_4 mob_col_2">
+			{% for item in block.lists %}
+			<a rel="nofollow" href="{{ item.link }}" target="_blank" class="b-grid__col b-grid__col_align_center w-inline-block">
+				<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-image b-image_partners">
+			</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>

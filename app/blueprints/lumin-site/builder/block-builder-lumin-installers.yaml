@@ -35,6 +35,14 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\InstallersMap
+            distributor:
+                name: Distributor
+                description: Distributor
+                icon: icon-map
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Distributor
             solar_edge_map:
                 name: Installers map
                 description: Installers map
