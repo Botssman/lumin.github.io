@@ -44,7 +44,7 @@
 			<div class="b-columns__col b-columns__col_20 mob_50 mob_center">
 				<div class="h-wrap h-wrap_mg-bt_10">
 					<div class="b-text b-text_size_20 b-text_bold">
-						Product
+						Quick Links
 					</div>
 				</div>
 				<ul role="list" class="b-list">
@@ -117,7 +117,7 @@
 					<li class="b-list__item b-list__item_mg-bt_10 b-list__item_flex-v">
 						<div class="h-wrap h-wrap_mg-bt_5">
 							<div class="b-text b-text_size_14 b-text_gray b-text_semibold">
-								Sales and Business:
+								Sales and Business Inquiries:
 							</div>
 						</div>
 						<div class="h-wrap h-wrap_flex_h h-wrap_align_center-left mob_center">
@@ -139,7 +139,8 @@
 		<div class="b-columns">
 			<div class="b-columns__col b-columns__col_80 mob_100 mob_center mob_mg-bt_20">
 				<div class="b-text">
-					{{ footersettings.copyright }}
+					{% set currentYear = now|date('Y') %}
+					© {{ currentYear }} {{ footersettings.copyright|raw }}
 				</div>
 			</div>
 			<div class="b-columns__col b-columns__col_10 mob_50 mob_center">
