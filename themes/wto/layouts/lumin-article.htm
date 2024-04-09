@@ -67,7 +67,13 @@ default = 0
 									</div>
 									<div class="b-text">Share it or subscribe to our newsletter</div>
 								</div>
-								<div class="b-social b-social_mg-lt_auto"><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/linkedin-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/fb-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/Reddit-grey.svg'|theme }}" loading="lazy" alt></a><a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/twitter-grey.svg'|theme }}" loading="lazy" alt></a></div><a href="#" class="b-button b_button_subscribe w-button">Subscribe Now</a></div>
+								<div class="b-social b-social_mg-lt_auto">
+
+									<a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/linkedin-grey.svg'|theme }}" loading="lazy" alt></a>
+									<a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/fb-grey.svg'|theme }}" loading="lazy" alt></a>
+									<a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/Reddit-grey.svg'|theme }}" loading="lazy" alt></a>
+									<a href="#" class="b-social__link w-inline-block"><img src="{{ 'assets/images/twitter-grey.svg'|theme }}" loading="lazy" alt></a>
+								</div><a href="#" class="b-button b_button_subscribe w-button">Subscribe Now</a></div>
 						</div>
 						<div id="w-node-e8be9cfc-a604-28b6-f1ff-d398029f7106-7b12a407">
 							<div class="h-wrap h-wrap_mg-bt_20">
@@ -112,5 +118,7 @@ default = 0
 		</script>
 		<script id="main" src="{{['assets/js/main.js']|theme}}"></script>
 		<script src="https://unpkg.com/vue@3"></script>
-		<script id="main" src="{{['assets/js/front.js']|theme}}"></script>{% scripts %} {% framework extras %} {% partial "footer" %}</body>
+		<script id="main" src="{{['assets/js/front.js']|theme}}"></script>{% scripts %} {% framework extras %} {% partial "footer" %}
+		<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+	</body>
 </html>
