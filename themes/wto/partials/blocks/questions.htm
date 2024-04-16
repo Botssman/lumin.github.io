@@ -12,9 +12,11 @@
 						{{ block.question_subtitle|raw }}
 					</div>
 				</div>
+				{% if not item.show_button %}
 				<a href="{{ block.question_link_btn }}" class="b-button b-button_width_210 tb_hide w-button">
 					More answers
 				</a>
+				{% endif %}
 			</div>
 			<div class="b-columns__col b-columns__col_60 tb_100 tb_border_top">
 				{% for item in block.question_lists %}
