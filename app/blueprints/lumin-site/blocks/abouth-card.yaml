@@ -1,0 +1,30 @@
+uuid: sections-lumin-abouth-card
+name: Section abouth card
+type: mixin
+handle: Blocks\AbouthCard
+
+fields:
+    cards:
+        label: Cards
+        type: repeater
+        titleFrom: Cards
+        form: 
+            fields:
+                title_card:
+                    label: Title card
+                    type: text
+                desc:
+                    label: Description card
+                    type: textarea
+                text_btn:
+                    label: Text btn
+                    type: text
+                btn_link:
+                    label: Link btn
+                    type: text
+                image:
+                    label: Image
+                    type: mediafinder
+                image_mob:
+                    label: Image mobile
+                    type: mediafinder

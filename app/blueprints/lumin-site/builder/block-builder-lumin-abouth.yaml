@@ -26,7 +26,22 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\AbouthInfo                   
+                        source: Blocks\AbouthInfo
+            abouth_cards:
+                name: Section abouth cards
+                description: Section abouth cards
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\AbouthCard
+            have_questions:
+                name: Block contact
+                icon: icon-question-circle
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\HaveQuestions
             forms:
                 name: Forms
                 icon: icon-columns
