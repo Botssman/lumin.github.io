@@ -15940,9 +15940,9 @@
     }
   });
 
-  // node_modules/symbol-observable/lib/ponyfill.js
+  // node_modules/redux/node_modules/symbol-observable/lib/ponyfill.js
   var require_ponyfill = __commonJS({
-    "node_modules/symbol-observable/lib/ponyfill.js"(exports2) {
+    "node_modules/redux/node_modules/symbol-observable/lib/ponyfill.js"(exports2) {
       "use strict";
       Object.defineProperty(exports2, "__esModule", {
         value: true
@@ -15966,9 +15966,9 @@
     }
   });
 
-  // node_modules/symbol-observable/lib/index.js
+  // node_modules/redux/node_modules/symbol-observable/lib/index.js
   var require_lib = __commonJS({
-    "node_modules/symbol-observable/lib/index.js"(exports2, module2) {
+    "node_modules/redux/node_modules/symbol-observable/lib/index.js"(exports2, module2) {
       "use strict";
       Object.defineProperty(exports2, "__esModule", {
         value: true

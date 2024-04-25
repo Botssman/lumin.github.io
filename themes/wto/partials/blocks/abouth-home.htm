@@ -1,0 +1,18 @@
+<section class="section s-section_100vh v-2">
+	<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-image b-image_installers v-2 mobp_hide">
+	<img src="{{ block.image_mob|media }}" loading="lazy" alt="" class="b-image b-image_installers v-2 mobp_show">
+	<div class="container w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_50 tb_100 tb_center">
+				<h1 class="b-title b-title_white b-title_center flex_v tb_36">
+					{{ block.title }}
+				</h1>
+			</div>
+			<div class="b-columns__col b-columns__col_50 tb_100 tb_center">
+				<div class="b-text b-text_size_20 b-text_white line-height_1-6">
+					{{ block.text|raw }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

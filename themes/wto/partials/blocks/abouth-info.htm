@@ -1,0 +1,18 @@
+<section class="section s-section_pd_12-5 section_pd-bt_0">
+	<div class="container w-container">
+		<div class="b-columns b-columns_space-between mob_revers">
+			<div class="b-columns__col b-columns__col_50 mob_100">
+				<div class="b-text b-text_size_20 line-height_1-6 tb_16">
+					{{ block.text|raw }}
+				</div>
+			</div>
+			<div class="b-columns__col b-columns__col_40 flex_center mob_100 mob_pd_80">
+				<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-image b-image_absolute v-4 mob_hide">
+				<img src="{{ block.image_mob|media }}" loading="lazy" alt="" class="b-image b-image_absolute v-4 mob_show">
+				<div class="b-title b-title_index_1 tb_36">
+					{{ block.title }}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

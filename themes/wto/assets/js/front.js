@@ -213,10 +213,12 @@ addCartEl.forEach(el => {
     let image = '';
     const imageEl = parent.querySelector('[data-bind="product.image"]');
 
-    if (imageEl.tagName === 'img') {
-      image = imageEl.getAttribute('src');
-    } else {
-      image = getImageUrlFromElement(imageEl);
+    if (imageEl != null) {
+      if (imageEl.tagName === 'img') {
+        image = imageEl.getAttribute('src');
+      } else {
+        image = getImageUrlFromElement(imageEl);
+      }
     }
 
     const product = {
