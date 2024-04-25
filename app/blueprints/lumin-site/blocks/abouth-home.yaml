@@ -6,7 +6,7 @@ handle: Blocks\AbouthHome
 fields:
     title:
         label: Title
-        type: text
+        type: richeditor
     text:
         label: Description
         type: richeditor
