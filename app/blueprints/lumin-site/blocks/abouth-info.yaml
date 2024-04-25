@@ -1,7 +1,7 @@
-uuid: sections-lumin-abouth-home
-name: Section abouth home
+uuid: sections-lumin-abouth-info
+name: Section abouth info
 type: mixin
-handle: Blocks\AbouthHome
+handle: Blocks\AbouthInfo
 
 fields:
     title:

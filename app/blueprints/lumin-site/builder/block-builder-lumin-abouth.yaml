@@ -18,7 +18,15 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Blocks\AbouthHome
+                        source: Blocks\AbouthHome
+            abouth_info:
+                name: Section abouth info
+                description: Section abouth info
+                icon: octo-icon-picture
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\AbouthInfo                   
             forms:
                 name: Forms
                 icon: icon-columns
