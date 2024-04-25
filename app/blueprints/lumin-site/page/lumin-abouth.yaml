@@ -1,0 +1,16 @@
+uuid: pages-abouth
+handle: Pages\LuminAbouth
+type: single
+name: Lumin abouth
+drafts: true
+
+navigation:
+    label: Abouth
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminAbouth
