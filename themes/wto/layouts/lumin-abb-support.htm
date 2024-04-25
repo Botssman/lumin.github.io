@@ -22,7 +22,8 @@ default = 0
 		<link href="https://assets-global.website-files.com/64227e51ac84205a1ce228fa/642cb71bfc53e9b68eb8fa56_favicon_mini.jpg" rel="shortcut icon" type="image/x-icon">
 		<link href="https://assets-global.website-files.com/64227e51ac84205a1ce228fa/642cb7176731c473ff332acc_favicon_big.jpg" rel="apple-touch-icon">
 		<meta name="description" content="{{ this.page.meta_description }}">{% partial "head" %}{% component "forms" %}
-		<link href="{{'assets/css/main.css'|theme}}" rel="stylesheet">{% styles %}</head>
+		{% styles %}
+	</head>
 	<body>{% partial "body" %}
 		<header data-w-id="47685c31-67c0-b229-1bc4-0880b56f554a" class="header">
             {% partial "site/header" %}
