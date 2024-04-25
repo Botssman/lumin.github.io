@@ -11,7 +11,7 @@ fields:
         span: adaptive
         tab: Blocks
         groups:
-            rebates_main:
+            abouth_home:
                 name: Section abouth home
                 description: Section abouth home
                 icon: octo-icon-picture
