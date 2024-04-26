@@ -6862,6 +6862,11 @@ h1 {
     padding-bottom: 11.25em;
   }
 
+  .section.s-section_pd_11-25.v-2 {
+    padding-top: 5.62em;
+    padding-bottom: 5.62em;
+  }
+
   .section.s-section_vertical.s-section_pd_11-25 {
     overflow: visible;
   }
