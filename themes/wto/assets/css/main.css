@@ -6648,7 +6648,7 @@ h1 {
 
 .b-block_col-left {
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 100%;
   padding: 2.5em 1.875em 2.5em 3.125em;
   display: flex;
@@ -6847,6 +6847,10 @@ h1 {
 
   .section.s-section_100vh.s-section_pd_home.v-2 {
     padding-bottom: 35em;
+  }
+
+  .section.s-section_100vh.v-2 {
+    overflow: hidden;
   }
 
   .section.s-section_yellow {
@@ -9410,7 +9414,12 @@ h1 {
     display: none;
   }
 
-  .b-image.b-image_installers.v-2.mobp_show, .b-image.b-image_cert.mob_show {
+  .b-image.b-image_installers.v-2.mobp_show {
+    width: 100%;
+    display: block;
+  }
+
+  .b-image.b-image_cert.mob_show {
     display: block;
   }
 
