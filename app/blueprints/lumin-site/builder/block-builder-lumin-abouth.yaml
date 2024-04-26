@@ -27,7 +27,7 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\AbouthInfo
-            abouth_cards:
+            abouth_card:
                 name: Section abouth cards
                 description: Section abouth cards
                 icon: octo-icon-picture
