@@ -3106,6 +3106,7 @@ h1 {
   align-items: center;
   max-height: 820px;
   padding-top: 13.75em;
+  overflow: hidden;
 }
 
 .section.s-section_70vh {
