@@ -3196,8 +3196,8 @@ h1 {
 }
 
 .section.s-section_pd_12-5 {
-  padding-top: 12.5vw;
-  padding-bottom: 12.5vw;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .section.s-section_pd_12-5.s-section_align_center {
@@ -3840,6 +3840,7 @@ h1 {
 .b-image.b-image_absolute.v-4.mob_hide {
   height: 38.3112vw;
   max-height: 490px;
+  top: -140px;
 }
 
 .b-image.b-image_installers {
@@ -7707,6 +7708,10 @@ h1 {
 
   .b-image.b-image_absolute.v-4 {
     top: -13.2vw;
+  }
+
+  .b-image.b-image_absolute.v-4.mob_hide {
+    top: -5em;
   }
 
   .b-image.b-image_cert {
