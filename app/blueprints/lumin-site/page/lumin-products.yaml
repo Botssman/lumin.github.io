@@ -5,7 +5,7 @@ name: Lumin products
 drafts: true
 
 navigation:
-    label: Abouth
+    label: Products
     parent: Pages\Index
     icon: icon-hdd-o
     order: 200
