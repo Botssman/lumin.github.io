@@ -9,7 +9,7 @@ fields:
         type: text
     subtitle:
         label: Subtitle
-        type: text
+        type: richeditor
     text_btn:
         label: Text btn
         type: text

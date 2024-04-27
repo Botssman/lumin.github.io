@@ -8,7 +8,7 @@ fields:
         type: text
     subtitle:
         label: Subtitle
-        type: text
+        type: richeditor
     image:
         label: Image
         type: mediafinder
