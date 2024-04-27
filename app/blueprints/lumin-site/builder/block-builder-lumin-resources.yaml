@@ -26,6 +26,20 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\ResourcesOurBlogPosts
+            resources_tc:
+                name: Section resources tc
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ResourcesTc
+            resources_support:
+                name: Section resources support
+                icon: icon-cloud-upload
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\ResourcesSupport
             questions:
                 name: Section question
                 icon: icon-question

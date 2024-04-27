@@ -3204,9 +3204,9 @@ h1 {
 }
 
 .section.section_maxh_920 {
+  background-image: linear-gradient(180deg, var(--transparent), #f7f7f7);
   height: 100vh;
   max-height: 920px;
-  padding-top: 9vw;
   display: flex;
 }
 
@@ -3869,7 +3869,7 @@ h1 {
   right: 0%;
 }
 
-.b-image.b-image_installers.mob_cover.mob_show, .b-image.b-image_installers.v-2.mobp_show {
+.b-image.b-image_installers.mob_cover.mob_show, .b-image.b-image_installers.v-2.mobp_show, .b-image.b-image_installers.mob_show {
   display: none;
 }
 

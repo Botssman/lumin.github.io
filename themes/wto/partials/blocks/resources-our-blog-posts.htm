@@ -11,7 +11,6 @@
 			</div>
 		</div>
 		<div class="h-wrap h-wrap_mg-bt_40">
-			{% set posts = postsList.paginate(3) %}
 			{% ajaxPartial "records/posts-list" %}
 			<div class="h-wrap h-wrap_flex_h center">
 				<a href="{{ block.link_btn }}" class="b-button b-button_blue b-button_maxw_210 mob_center w-button">
