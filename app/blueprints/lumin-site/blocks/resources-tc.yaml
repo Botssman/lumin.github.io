@@ -1,0 +1,20 @@
+uuid: sections-resources-tc
+name: Section resources tc
+type: mixin
+handle: Blocks\ResourcesTc
+fields:
+    title:
+        label: Title
+        type: text
+    subtitle:
+        label: Subtitle
+        type: text
+    image:
+        label: Image
+        type: mediafinder
+    text_btn:
+        label: Text btn
+        type: text
+    link_btn:
+        label: Link btn
+        type: text

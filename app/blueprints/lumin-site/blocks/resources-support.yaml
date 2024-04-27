@@ -1,0 +1,21 @@
+uuid: sections-resources-support
+name: Section resources support
+type: mixin
+handle: Blocks\ResourcesSupport
+
+fields:
+    title:
+        label: Title
+        type: text
+    subtitle:
+        label: Subtitle
+        type: text
+    image:
+        label: Image
+        type: mediafinder
+    text_btn:
+        label: Text btn
+        type: text
+    link_btn:
+        label: Link btn
+        type: text

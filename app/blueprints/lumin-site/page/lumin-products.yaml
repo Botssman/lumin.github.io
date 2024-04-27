@@ -1,0 +1,16 @@
+uuid: pages-products
+handle: Pages\LuminProducts
+type: single
+name: Lumin products
+drafts: true
+
+navigation:
+    label: Abouth
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminProducts

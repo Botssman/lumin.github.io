@@ -1,0 +1,24 @@
+<section class="section s-section_pd_11-25">
+	<div class="container container_align_center w-container">
+		<div class="h-wrap h-wrap_mg-bt_20">
+			<div class="b-title b-title_mini">
+				{{ block.title }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_30 h-wrap_max-width_770">
+			<div class="b-text b-text_size_20">
+				{{ block.subtitle|raw }}
+			</div>
+		</div>
+		<div class="h-wrap h-wrap_mg-bt_40">
+			{% set posts = postsList.paginate(3) %}
+			{% ajaxPartial "records/posts-list" %}
+			<div class="h-wrap h-wrap_flex_h center">
+				<a href="{{ block.link_btn }}" class="b-button b-button_blue b-button_maxw_210 mob_center w-button">
+					{{ block.text_btn }}
+				</a>
+			</div>
+		</div>
+		<div></div>
+	</div>
+</section>

@@ -1,0 +1,27 @@
+<section class="section s-section_pd_11-25">
+	<div class="container v-2 w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_50 tb_100 tb_center">
+				<div class="b-circle b-circle_yellow">
+					<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-image b-image_mac">
+					<img src="{{ block.document_img_image|media }}" loading="lazy" alt="" class="b-image">
+				</div>
+			</div>
+			<div class="b-columns__col b-columns__col_50 b-columns__col_align_center tb_100">
+				<div class="h-wrap h-wrap_mg-bt_20">
+					<div class="b-title b-title_mini mob_30">
+						{{ block.title|raw }}
+					</div>
+				</div>
+				<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_800">
+					<div class="b-text b-text_size_26 tb_16">
+						{{ block.subtitle|raw }}
+					</div>
+				</div>
+				<a href="{{ block.link_btn }}" class="b-button b-button_blue b-button_maxw_210 mob_center w-button">
+					{{ block.text_btn }}
+				</a>
+			</div>
+		</div>
+	</div>
+</section>

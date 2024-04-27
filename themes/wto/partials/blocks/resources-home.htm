@@ -1,0 +1,23 @@
+<section class="section section_maxh_920">
+	<img src="{{ block.image|media }}" loading="lazy" alt="" class="b-image b-image_installers mob_hide">
+	<img src="{{ block.image_mob|media }}" loading="lazy" alt="" class="b-image b-image_installers mob_show">
+	<div class="container w-container">
+		<div class="b-columns">
+			<div class="b-columns__col b-columns__col_51 b-columns__col_align_center tb_100">
+				<div class="h-wrap h-wrap_mg-bt_30 mob_mg-bt_20">
+					<h1 class="b-title mob_36">
+						{{ block.title|raw }}
+					</h1>
+				</div>
+				<div class="h-wrap h-wrap_mg-bt_40 h-wrap_max-width_400 mob_mg-bt_30">
+					<div class="b-text b-text_size_20">
+						{{ block.subtitle|raw }}
+					</div>
+				</div>
+			</div>
+			<div class="b-columns__col b-columns__col_49 mob_hide">
+				<div class="b-block b-block_image b-block_mg-bt_6"></div>
+			</div>
+		</div>
+	</div>
+</section>

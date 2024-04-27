@@ -1,0 +1,16 @@
+uuid: pages-resources
+handle: Pages\LuminResources
+type: single
+name: Lumin resources
+drafts: true
+
+navigation:
+    label: Resources
+    parent: Pages\Index
+    icon: icon-hdd-o
+    order: 200
+
+fields:
+    block_builder:
+        type: mixin
+        source: BlockBuilderLuminResources

@@ -1,0 +1,18 @@
+uuid: sections-resources-home
+name: Section resources home
+type: mixin
+handle: Blocks\ResourcesHome
+
+fields:
+    title:
+        label: Title
+        type: text
+    subtitle:
+        label: Subtitle
+        type: text
+    image:
+        label: Image
+        type: mediafinder
+    image_mob:
+        label: Image mobile
+        type: mediafinder
