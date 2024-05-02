@@ -5118,6 +5118,10 @@ h1 {
   box-shadow: inset 0 0 60px rgba(61, 15, 15, .07);
 }
 
+.b-card__down.b-card__down_maxh_none {
+  max-height: none;
+}
+
 .b-dropdown__icon-cont {
   background-color: #dedee2;
   border-radius: 100%;
