@@ -72,12 +72,19 @@ fields:
                         type: mixin
                         source: Blocks\LearningCenterFreshdesk         
             advantages:
-                name: Block product advantages
+                name: Section product advantages
                 icon: icon-database
                 fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Advantages  
+            press_releases:
+                name: Section press releases
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\PressReleases  
             forms:
                 name: Forms
                 icon: icon-columns

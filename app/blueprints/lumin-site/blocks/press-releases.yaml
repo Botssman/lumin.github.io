@@ -1,0 +1,33 @@
+uuid: sections-lumin-press-releases
+name: Section pressreleases
+type: mixin
+handle: Blocks\PressReleases
+
+fields:
+    title:
+        label: Title
+        type: text
+    slider:
+        label: Add slide
+        type: repeater
+        form:
+            fields:
+                avatar:
+                    label: Logo
+                    type: mediafinder
+                    maxItems: 1
+                    mode: image
+                date:
+                    label: Date
+                    type: text
+                title:
+                    label: Title
+                    type: text
+                text:
+                    label: Text
+                    type: textarea
+                image:
+                    label: Image
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1
