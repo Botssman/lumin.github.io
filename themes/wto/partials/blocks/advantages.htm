@@ -9,13 +9,11 @@
 						{{ item.title_card|raw }}
 					</div>
 				</div>
-				<div class="b-card__down">
+				<div class="b-card__down b-card__down_maxh_none">
 					<ul role="list" class="b-list">
 						{% for item in item.list %}
 						<li class="b-list__item b-list__item_mg-bt_20">
-							<div class="b-list__dot">
-								<img src="{{ 'assets/images/Dots.svg'|theme }}" loading="lazy" alt="">
-							</div>
+							<div class="b-list__dot b-list__dot_24"></div>
 							<div>
 								<div class="h-wrap h-wrap_mg-bt_5">
 									<div class="b-text b-text_size_20 b-text_bold">

@@ -6758,6 +6758,17 @@ h1 {
   top: -1px;
 }
 
+.b-list__dot.b-list__dot_24 {
+  background-image: url("../images/Dots.svg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 100%;
+  flex: none;
+  width: 24px;
+  height: 24px;
+}
+
 .b-card__title {
   color: var(--white);
   text-align: center;
