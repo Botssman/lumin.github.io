@@ -140,3 +140,8 @@ if(window.attachEvent) { window.attachEvent('onload', async_load); }
 	else { window.addEventListener('load', async_load, false); }
 })();
 </script>
+<script>
+$(document).ready(function() {
+$('.slide-card').last().append($('.card').clone()); Webflow.destroy(); Webflow.ready(); Webflow.require('ix2').init();
+})
+</script>
