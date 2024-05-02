@@ -9536,6 +9536,7 @@ h1 {
   }
 
   .section.section_maxh_920.mob_pd_10 {
+    height: 600px;
     padding-bottom: 10em;
   }
 
@@ -9802,6 +9803,10 @@ h1 {
 
   .b-slider__slide {
     margin-right: 4%;
+  }
+
+  .main.main_abouth {
+    padding-top: 0;
   }
 
   .b-block.b-block_image.b-block_mg-bt_6 {
