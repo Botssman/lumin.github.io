@@ -24,7 +24,7 @@ default = 0
 	</head>
 	<body>{% partial "body" %}
 		{% partial "site/header" %}
-		<main class="main">{% for block in page.blocks %}{% if block.hide_content == false %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endif %}{% endfor %}</main>
+		<main class="main main_resources">{% for block in page.blocks %}{% if block.hide_content == false %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endif %}{% endfor %}</main>
 		<footer class="footer section">
 			<div class="container w-container">{% partial "site/footer" %}{% partial "site/scripts" %}</div>
 		</footer>

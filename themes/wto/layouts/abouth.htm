@@ -26,7 +26,7 @@ default = 0
 		<header data-w-id="47685c31-67c0-b229-1bc4-0880b56f554a" class="header">
             {% partial "site/header" %}
 		</header>
-		<main class="main main_abouth">{% for block in page.blocks %}{% if block.hide_content == false %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endif %}{% endfor %}</main>
+		<main class="main">{% for block in page.blocks %}{% if block.hide_content == false %}{% partial 'blocks/' ~ str_slug(block.type) block=block %}{% endif %}{% endfor %}</main>
 		<footer class="footer section">
 			<div class="container w-container">{% partial "site/footer" %}{% partial "site/scripts" %}</div>
 		</footer>

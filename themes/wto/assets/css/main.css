@@ -9688,6 +9688,10 @@ h1 {
     display: block;
   }
 
+  .b-image.b-image_installers.mob_show {
+    top: auto;
+  }
+
   .b-image.b-image_cert.mob_show {
     display: block;
   }
@@ -9805,7 +9809,7 @@ h1 {
     margin-right: 4%;
   }
 
-  .main.main_abouth {
+  .main.main_resources {
     padding-top: 0;
   }
 
