@@ -70,14 +70,7 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\LearningCenterFreshdesk
-            feedbacks:
-                name: Block feedbacks
-                icon: icon-database
-                fields:
-                    _mixin:
-                        type: mixin
-                        source: Blocks\Through\Feedbacks            
+                        source: Blocks\LearningCenterFreshdesk         
             advantages:
                 name: Block product advantages
                 icon: icon-database
