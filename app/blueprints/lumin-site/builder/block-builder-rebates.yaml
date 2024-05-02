@@ -84,7 +84,7 @@ fields:
                 fields:
                     _mixin:
                         type: mixin
-                        source: Blocks\Through\Advantages  
+                        source: Blocks\Advantages  
             forms:
                 name: Forms
                 icon: icon-columns
