@@ -71,6 +71,13 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\LearningCenterFreshdesk
+            feedbacks:
+                name: Block feedbacks
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Feedbacks            
             forms:
                 name: Forms
                 icon: icon-columns
