@@ -1,0 +1,37 @@
+<section class="section s-section_vertical s-section_pd_11-25">
+	<div class="container w-container">
+		<div class="b-grid b-grid_col_2 mob_1-col">
+			{% for item in block.card %}
+			<div class="b-card b-card_100">
+				<div class="b-card__head pd_none">
+					<img src="{{ item.image|media }}" loading="lazy" alt="" class="b-card__img">
+					<div class="b-card__title">
+						{{ item.title_card|raw }}
+					</div>
+				</div>
+				<div class="b-card__down">
+					<ul role="list" class="b-list">
+						{% for item in item.list %}
+						<li class="b-list__item b-list__item_mg-bt_20">
+							<div class="b-list__dot">
+								<img src="{{ 'assets/images/Dots.svg'|theme }}" loading="lazy" alt="">
+							</div>
+							<div>
+								<div class="h-wrap h-wrap_mg-bt_5">
+									<div class="b-text b-text_size_20 b-text_bold">
+										{{ item.title_list }}
+									</div>
+								</div>
+								<div class="b-text">
+									{{ item.text|raw }}
+								</div>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

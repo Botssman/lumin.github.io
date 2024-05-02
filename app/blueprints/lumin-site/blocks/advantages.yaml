@@ -1,0 +1,29 @@
+uuid: sections-advantages
+name: Section product advantages
+type: mixin
+handle: Blocks\Advantages
+
+fields:
+    card:
+        label: Add card
+        type: repeater
+        form:
+            fields:
+                title_card:
+                    label: Title card
+                    type: text
+                    mode: image
+                image:
+                    label: Image card
+                    type: mediafinder
+                list:
+                    label: Add item
+                    type: repeater
+                    form:
+                        fields:
+                            title_list:
+                                label: Title item
+                                type: text
+                            text:
+                                label: Text item
+                                type: textarea

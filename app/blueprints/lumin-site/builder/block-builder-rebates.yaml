@@ -78,6 +78,13 @@ fields:
                     _mixin:
                         type: mixin
                         source: Blocks\Through\Feedbacks            
+            advantages:
+                name: Block product advantages
+                icon: icon-database
+                fields:
+                    _mixin:
+                        type: mixin
+                        source: Blocks\Through\Advantages  
             forms:
                 name: Forms
                 icon: icon-columns
