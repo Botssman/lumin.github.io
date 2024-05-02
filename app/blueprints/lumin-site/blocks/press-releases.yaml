@@ -31,3 +31,8 @@ fields:
                     type: mediafinder
                     mode: image
                     maxItems: 1
+                image_mob:
+                    label: Image mobile
+                    type: mediafinder
+                    mode: image
+                    maxItems: 1
