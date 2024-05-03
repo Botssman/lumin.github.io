@@ -14,6 +14,10 @@
 .fp-watermark {
     display: none !important;
 }
+
+.house-list:first-child {
+    display: block;
+}
 @media screen and (max-width: 767px) {
 .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow > .fp-overflow {
     display: block !important;

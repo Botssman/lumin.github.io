@@ -93,7 +93,7 @@
 				</div>
 			</div>
 			<div>
-				{% set posts = postsList.paginate(9) %}
+				{% set posts = postsList.orderBy('created_at', 'desc').paginate(9) %}
 			</div>
 			{% ajaxPartial "records/posts-list" %}{% partial "site/pagination" %}
 		</div>

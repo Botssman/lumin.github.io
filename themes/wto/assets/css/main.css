@@ -2847,6 +2847,10 @@ h1 {
   display: flex;
 }
 
+.h-wrap.h-wrap_maxw_320.house {
+  display: none;
+}
+
 .h-wrap.h-wrap_overflow_auto {
   overflow: auto;
 }
@@ -2915,6 +2919,13 @@ h1 {
   bottom: 50%;
   left: -15px;
   right: auto;
+}
+
+.b-modal__close.v-2 {
+  top: 20px;
+  bottom: auto;
+  left: auto;
+  right: 20px;
 }
 
 .b-form__success-mes {
@@ -3241,7 +3252,11 @@ h1 {
   right: 0%;
 }
 
-.b-modal.works, .b-modal.installer, .b-modal.utilities {
+.b-modal.works {
+  display: flex;
+}
+
+.b-modal.works.house, .b-modal.installer, .b-modal.utilities {
   display: none;
 }
 
@@ -6419,6 +6434,16 @@ h1 {
   justify-content: center;
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.b-block-bg.b-block-bg__modal.house {
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  max-width: 460px;
+  max-height: 530px;
+  margin-left: 0;
+  padding: 60px 70px;
 }
 
 .b-home-wrap {
