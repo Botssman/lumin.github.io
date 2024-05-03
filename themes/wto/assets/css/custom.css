@@ -15,7 +15,7 @@
     display: none !important;
 }
 
-.house-list:first-child {
+.house-list:nth-child(1) {
     display: block;
 }
 @media screen and (max-width: 767px) {
