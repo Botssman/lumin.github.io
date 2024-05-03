@@ -9,14 +9,11 @@
 
 .s-section_pd_home [data-list] > div.active {
     order: 1;
+    display: block;
 }
 
 .fp-watermark {
     display: none !important;
-}
-
-.house-list > div:first-child {
-    display: block;
 }
 @media screen and (max-width: 767px) {
 .fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow > .fp-overflow {
