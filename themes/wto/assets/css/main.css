@@ -2855,6 +2855,10 @@ h1 {
   overflow: auto;
 }
 
+.h-wrap.h-wrap_overflow_auto.house-list {
+  overflow: visible;
+}
+
 .h-wrap.h-wrap_width_300 {
   max-width: 300px;
 }
@@ -9505,6 +9509,13 @@ h1 {
     text-align: left;
   }
 
+  .h-wrap.h-wrap_overflow_auto.house-list {
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+
   .b-title.b-title_size_40.mobp_30 {
     font-size: 1.875em;
   }
@@ -10094,6 +10105,15 @@ h1 {
 
   .b-block-bg.b-block-bg__modal {
     padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .b-block-bg.b-block-bg__modal.house {
+    height: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 0;
     padding-left: 15px;
     padding-right: 15px;
   }
