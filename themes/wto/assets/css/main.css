@@ -6467,8 +6467,8 @@ h1 {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  width: 30px;
-  height: 30px;
+  width: 1.875em;
+  height: 1.875em;
   display: flex;
   position: absolute;
 }
@@ -6528,8 +6528,8 @@ h1 {
   border-radius: 100%;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 2.75em;
+  height: 2.75em;
   display: flex;
   position: absolute;
 }
@@ -7420,7 +7420,7 @@ h1 {
   }
 
   .section.s-section_100vh.s-section_pd_home.v-2 {
-    padding-bottom: 30em;
+    padding-bottom: 50em;
   }
 
   .section.s-section_70vh {
