@@ -2848,6 +2848,7 @@ h1 {
 }
 
 .h-wrap.h-wrap_maxw_320.house {
+  max-width: 20em;
   display: none;
 }
 
@@ -7745,6 +7746,10 @@ h1 {
     align-items: center;
   }
 
+  .h-wrap.h-wrap_maxw_320.house {
+    display: block;
+  }
+
   .h-wrap.h-wrap_width_400 {
     text-align: left;
   }
@@ -7807,6 +7812,10 @@ h1 {
   .section.s-section_100vh.s-section_pd_home {
     padding-top: 5em;
     padding-bottom: 5em;
+  }
+
+  .section.s-section_100vh.s-section_pd_home.v-2 {
+    padding-bottom: 45em;
   }
 
   .section.s-section_100vh.tb_pd_5 {
