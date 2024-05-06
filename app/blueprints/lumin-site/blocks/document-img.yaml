@@ -29,3 +29,6 @@ fields:
       type: mediafinder
       mode: image
       maxItems: 1
+    hide_img:
+      type: switch
+      label: Hide img
