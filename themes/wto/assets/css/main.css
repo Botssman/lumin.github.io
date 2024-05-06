@@ -3366,8 +3366,8 @@ h1 {
 }
 
 .b-button.b-button_blue.b-button_height_45 {
-  max-width: 160px;
-  height: 45px;
+  max-width: 10em;
+  height: 2.8125em;
 }
 
 .b-button.b-button_blue.b-button_maxw_320 {
@@ -6919,7 +6919,7 @@ h1 {
   }
 
   .h-wrap.h-wrap_mg-bt_50.h-wrap_max-width_800 {
-    max-width: 800px;
+    max-width: 50em;
   }
 
   .h-wrap.h-wrap_mg-bt_50.h-wrap_max-width_500 {
@@ -6927,7 +6927,7 @@ h1 {
   }
 
   .h-wrap.h-wrap_mg-bt_30.h-wrap_max-width_970 {
-    max-width: 970px;
+    max-width: 60.625em;
   }
 
   .h-wrap.h-wrap_mg-bt_30.h-wrap_max-width_770 {
@@ -8321,6 +8321,7 @@ h1 {
   }
 
   .b-horizontal {
+    grid-template-columns: 1fr 1fr;
     margin-left: 0;
     padding-bottom: 40px;
     overflow: auto;
@@ -8328,7 +8329,6 @@ h1 {
 
   .b-card.tb_maxw {
     width: 100%;
-    max-width: 350px;
   }
 
   .b-card__down {
@@ -9300,6 +9300,7 @@ h1 {
   }
 
   .b-horizontal {
+    grid-template-columns: 1fr;
     width: auto;
     padding-right: 0;
     position: static;
@@ -9313,12 +9314,6 @@ h1 {
   .b-card.b-card_product {
     max-width: 280px;
     margin-right: 30px;
-  }
-
-  .b-card.tb_maxw {
-    max-width: 280px;
-    margin-left: 20px;
-    margin-right: 20px;
   }
 
   .b-card__head.b-card__head_product {
