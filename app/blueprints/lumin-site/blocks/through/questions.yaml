@@ -20,6 +20,9 @@ fields:
     question_link_btn:
         label: Link btn
         type: text
+    hide_button:
+        type: switch
+        label: Hide btn
     question_lists:
         type: repeater
         titleFrom: Questions lists
